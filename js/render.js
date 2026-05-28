@@ -125,7 +125,7 @@ const Renderer = {
   // ━━━ SECTION: Hero Image ━━━
   renderHeroImage: (data) => {
     const inner = data.src
-      ? `<img class="hero-image-img" src="${esc(data.src)}" alt="${esc(data.placeholder || '')}">`
+      ? `<img class="hero-image-img" src="${esc(data.src)}" alt="${esc(data.placeholder || '')}" loading="lazy">`
       : `<div class="image-placeholder" ${bi(data.placeholder, data.placeholderEn)}>${data.placeholder}</div>`;
     return `
       <section class="hero-image-section" data-section="heroImage">
