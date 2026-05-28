@@ -40,6 +40,20 @@
       "image": "data/images/lead-capture.webp"
     },
     {
+      "eyebrow": "IA + LOGÍSTICA MÓVIL • 2024",
+      "eyebrowEn": "AI + MOBILE LOGISTICS • 2024",
+      "title": "Driver AI",
+      "titleEn": "Driver AI",
+      "subtitle": "Inteligencia de ubicación para última milla",
+      "subtitleEn": "Location intelligence for last mile",
+      "metric": "−10–20%",
+      "metricLabel": "tiempo en sitio",
+      "metricLabelEn": "time on site",
+      "slug": "driver-ai",
+      "device": "mobile",
+      "image": "data/images/driver-ai.webp"
+    },
+    {
       "eyebrow": "APLICACIÓN MÓVIL • 2023",
       "eyebrowEn": "MOBILE APP • 2023",
       "title": "On-Demand Routing",
@@ -80,20 +94,6 @@
       "slug": "async-reports",
       "device": "desktop",
       "image": "data/images/async-reports.webp"
-    },
-    {
-      "eyebrow": "IA + LOGÍSTICA MÓVIL • 2024",
-      "eyebrowEn": "AI + MOBILE LOGISTICS • 2024",
-      "title": "Driver AI",
-      "titleEn": "Driver AI",
-      "subtitle": "Inteligencia de ubicación para última milla",
-      "subtitleEn": "Location intelligence for last mile",
-      "metric": "−10–20%",
-      "metricLabel": "tiempo en sitio",
-      "metricLabelEn": "time on site",
-      "slug": "driver-ai",
-      "device": "mobile",
-      "image": "data/images/driver-ai.webp"
     }
   ],
   "ctaLabels": {
