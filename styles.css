@@ -684,6 +684,16 @@ body {
   overflow: hidden;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
 }
+.hero-image-frame:has(.device-desktop),
+.hero-image-frame:has(.device-mobile) {
+  aspect-ratio: unset;
+  overflow: visible;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  display: block;
+}
 
 /* ═══ WHY IT MATTERS ═══ */
 .why-matters {
@@ -1629,6 +1639,16 @@ body {
   justify-content: center;
   overflow: hidden;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+.design-image:has(.device-desktop),
+.design-image:has(.device-mobile) {
+  aspect-ratio: unset;
+  overflow: visible;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  display: block;
 }
 
 /* ═══ RESULTS ═══ */
