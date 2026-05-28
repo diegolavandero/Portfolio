@@ -3000,6 +3000,13 @@ body[data-scrolled="true"] .header-sticky {
 }
 
 @media (max-width: 960px) {
+  .role-stages {
+    grid-template-columns: 1fr;
+  }
+  .role-section .container {
+    padding: 0 var(--spacing-xl);
+  }
+
   .hero-main-title {
     font-size: 48px;
     letter-spacing: -1.4px;
@@ -3089,6 +3096,17 @@ body[data-scrolled="true"] .header-sticky {
 }
 
 @media (max-width: 768px) {
+  .role-card {
+    padding: var(--spacing-lg);
+  }
+  .role-title {
+    font-size: 22px;
+  }
+  .design-images-grid--2,
+  .design-images-grid--3 {
+    grid-template-columns: 1fr;
+  }
+
   .hero-main-title {
     font-size: 36px;
     letter-spacing: -1px;
