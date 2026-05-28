@@ -48,6 +48,7 @@ const Renderer = {
       let html = '';
       if (data.hero)                  html += Renderer.renderHero(data.hero);
       if (data.projectSpecs)          html += Renderer.renderProjectSpecs(data.projectSpecs);
+      if (data.roleNarrative)         html += Renderer.renderRoleNarrative(data.roleNarrative);
       if (data.heroImage)             html += Renderer.renderHeroImage(data.heroImage);
       if (data.whyItMatters)          html += Renderer.renderWhyItMatters(data.whyItMatters);
       if (data.problemAndObjectives)  html += Renderer.renderProblemAndObjectives(data.problemAndObjectives);
@@ -123,6 +124,33 @@ const Renderer = {
   },
 
   // ━━━ SECTION: Hero Image ━━━
+  // ━━━ SECTION: Role Narrative ━━━
+  renderRoleNarrative: (data) => {
+    const stages = (data.stages || []).map(s => `
+      <div class="role-stage">
+        <span class="role-stage-number">${s.number}</span>
+        <div class="role-stage-content">
+          <h4 class="role-stage-title" ${bi(s.title, s.titleEn)}>${s.title}</h4>
+          <p class="role-stage-desc" ${bi(s.description, s.descriptionEn)}>${s.description}</p>
+        </div>
+      </div>`).join('');
+    return `
+      <section class="role-section" data-section="roleNarrative">
+        <div class="container">
+          <div class="role-card">
+            <div class="role-header">
+              <span class="role-ai-badge">AI-Enhanced Process</span>
+              <h2 class="role-title" ${bi(data.title, data.titleEn)}>${data.title}</h2>
+              <p class="role-intro" ${bi(data.intro, data.introEn)}>${data.intro}</p>
+            </div>
+            <div class="role-stages">${stages}</div>
+            <p class="role-closing" ${bi(data.closing, data.closingEn)}>${data.closing}</p>
+          </div>
+        </div>
+      </section>
+    `;
+  },
+
   renderHeroImage: (data) => {
     const inner = data.src
       ? `<img class="hero-image-img" src="${esc(data.src)}" alt="${esc(data.placeholder || '')}" loading="lazy">`

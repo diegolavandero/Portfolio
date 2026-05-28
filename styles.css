@@ -546,6 +546,100 @@ body {
   filter: drop-shadow(0 12px 32px rgba(0,0,0,0.24));
 }
 
+/* ═══ ROLE NARRATIVE ═══ */
+.role-section {
+  padding: var(--spacing-4xl) 0;
+  background: var(--gray-50);
+}
+.role-section .container {
+  padding: 0 93.5px;
+  max-width: 1387px;
+}
+.role-card {
+  background: white;
+  border: 1px solid var(--gray-200);
+  border-radius: 20px;
+  padding: var(--spacing-2xl);
+}
+.role-header {
+  margin-bottom: var(--spacing-2xl);
+}
+.role-ai-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--indigo-50);
+  color: var(--indigo-600);
+  border: 1px solid var(--indigo-100);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  margin-bottom: var(--spacing-md);
+}
+.role-ai-badge::before {
+  content: '✦';
+  font-size: 9px;
+}
+.role-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--gray-900);
+  letter-spacing: -0.6px;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-md);
+}
+.role-intro {
+  font-size: 16px;
+  color: var(--gray-600);
+  line-height: 1.7;
+  max-width: 800px;
+}
+.role-stages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-2xl);
+}
+.role-stage {
+  display: flex;
+  gap: var(--spacing-md);
+  background: var(--gray-75);
+  border-radius: 14px;
+  padding: var(--spacing-lg);
+}
+.role-stage-number {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--indigo-500);
+  letter-spacing: 1px;
+  flex-shrink: 0;
+  padding-top: 3px;
+}
+.role-stage-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--gray-900);
+  line-height: 1.4;
+  margin-bottom: var(--spacing-xs);
+}
+.role-stage-desc {
+  font-size: 14px;
+  color: var(--gray-600);
+  line-height: 1.6;
+}
+.role-closing {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--gray-700);
+  line-height: 1.6;
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid var(--gray-200);
+  font-style: italic;
+}
+
 /* ═══ HERO PROJECT ═══ */
 .hero-project {
   padding: 128px 0 var(--spacing-4xl);
