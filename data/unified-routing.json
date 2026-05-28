@@ -59,7 +59,7 @@
     "placeholder": "Interfaz de Experiencia de Ruteo Unificada",
     "placeholderEn": "Unified Routing Experience interface",
     "device": "desktop",
-    "src": "data/images/unified-routing-hero.png"
+    "src": "data/images/unified-routing-hero.webp"
   },
   "whyItMatters": {
     "title": "Por qué importa",
@@ -591,7 +591,8 @@
         "description": "Los usuarios configuran parámetros y generan rutas automáticamente con visibilidad inmediata en mapa",
         "descriptionEn": "Users configure parameters and generate routes automatically with immediate map visibility",
         "placeholder": "Mockup: Pantalla de generación automática",
-        "placeholderEn": "Mockup: Automatic generation screen"
+        "placeholderEn": "Mockup: Automatic generation screen",
+        "src": "data/images/unified-routing-mockup-1.webp"
       },
       {
         "badge": "Paso 2",

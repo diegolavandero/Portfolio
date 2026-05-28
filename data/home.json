@@ -22,7 +22,7 @@
     "ctaEn": "View case study",
     "slug": "unified-routing",
     "device": "desktop",
-    "image": "data/images/unified-routing.png"
+    "image": "data/images/unified-routing.webp"
   },
   "projects": [
     {
@@ -37,7 +37,7 @@
       "metricLabelEn": "lead conversion",
       "slug": "lead-capture",
       "device": "desktop",
-      "image": "data/images/lead-capture.png"
+      "image": "data/images/lead-capture.webp"
     },
     {
       "eyebrow": "APLICACIÓN MÓVIL • 2023",
@@ -51,7 +51,7 @@
       "metricLabelEn": "assignment time",
       "slug": "on-demand-routing",
       "device": "desktop",
-      "image": "data/images/on-demand-routing.png"
+      "image": "data/images/on-demand-routing.webp"
     },
     {
       "eyebrow": "DATA PLATFORM • 2023",
@@ -65,7 +65,7 @@
       "metricLabelEn": "loading errors",
       "slug": "load-validation",
       "device": "mobile",
-      "image": "data/images/load-validation.png"
+      "image": "data/images/load-validation.webp"
     },
     {
       "eyebrow": "SISTEMA SAAS • 2022",
@@ -79,7 +79,7 @@
       "metricLabelEn": "workflow interruption",
       "slug": "async-reports",
       "device": "desktop",
-      "image": "data/images/async-reports.png"
+      "image": "data/images/async-reports.webp"
     },
     {
       "eyebrow": "IA + LOGÍSTICA MÓVIL • 2024",
@@ -93,7 +93,7 @@
       "metricLabelEn": "time on site",
       "slug": "driver-ai",
       "device": "mobile",
-      "image": "data/images/driver-ai.png"
+      "image": "data/images/driver-ai.webp"
     }
   ],
   "ctaLabels": {
