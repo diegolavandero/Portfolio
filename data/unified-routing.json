@@ -770,13 +770,6 @@
         "titleEn": "Prototyping & synthetic testing",
         "description": "Antes de las validaciones con usuarios reales, simulé sesiones de pensamiento en voz alta con perfiles sintéticos de dispatchers y jefes de planificación. Los insights priorizaron los puntos de fricción más críticos y permitieron iterar dos rondas de prototipo antes de tocar a un usuario real. El modelo híbrido wizard + consola emergió directamente de esta fase.",
         "descriptionEn": "Before real user validations, I simulated think-aloud sessions with synthetic dispatcher and planning manager profiles. The insights prioritized the most critical friction points and enabled two prototype iterations before touching a real user. The hybrid wizard + console model emerged directly from this phase."
-      },
-      {
-        "number": "04",
-        "title": "Desarrollo del portfolio con IA",
-        "titleEn": "Portfolio development with AI",
-        "description": "Este mismo portfolio fue construido con Claude Code como asistente de desarrollo: arquitectura modular JSON + JS, sistema de design tokens, animaciones scroll-triggered y componentes de UI. La IA me liberó de la implementación técnica para enfocarme en las decisiones de presentación y narrativa del caso de estudio.",
-        "descriptionEn": "This very portfolio was built with Claude Code as a development assistant: modular JSON + JS architecture, design token system, scroll-triggered animations, and UI components. AI freed me from technical implementation to focus on presentation decisions and case study narrative."
       }
     ],
     "closing": "La IA aportó velocidad y amplitud de exploración. Todas las decisiones de diseño — arquitectura de información, jerarquía visual, flujos de interacción y trade-offs de usabilidad — fueron tomadas y validadas por mí.",
