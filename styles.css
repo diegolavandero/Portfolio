@@ -1742,6 +1742,16 @@ body {
   border-radius: 0;
   display: block;
 }
+.design-image:has(> img) {
+  aspect-ratio: unset;
+  overflow: hidden;
+  align-items: flex-start;
+}
+.design-image > img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 .design-images-grid {
   display: grid;
