@@ -1,0 +1,567 @@
+{
+  "page": "driver-ai",
+  "slug": "driver-ai",
+  "title": "Driver AI",
+  "titleEn": "Driver AI",
+  "subtitle": "IA · Logística · Móvil",
+  "subtitleEn": "AI · Logistics · Mobile",
+  "hero": {
+    "tagline": "IA + LOGÍSTICA MÓVIL",
+    "taglineEn": "AI + MOBILE LOGISTICS",
+    "title": "Driver AI ",
+    "titleEn": "Driver AI ",
+    "titleAccent": "Inteligencia de Ubicación para Última Milla",
+    "titleAccentEn": "Location Intelligence for Last Mile",
+    "subtitle": "De incertidumbre a contexto predictivo",
+    "subtitleEn": "From uncertainty to predictive context",
+    "description": "Los conductores de última milla hacen 15–35 entregas diarias con solo dirección y número de pedido — sin contexto de acceso. Driver AI usa GPT-4o para generar, antes de cada parada, dónde estacionar, cómo entrar y códigos de puerta.",
+    "descriptionEn": "Last-mile drivers make 15–35 deliveries daily with just address and order number — no access context. Driver AI uses GPT-4o to generate, before each stop, where to park, how to enter, and door codes."
+  },
+  "projectSpecs": [
+    {
+      "label": "Mi Rol",
+      "labelEn": "My Role",
+      "value": "AI Product Designer",
+      "valueEn": "AI Product Designer"
+    },
+    {
+      "label": "Sector",
+      "labelEn": "Sector",
+      "value": "Logística · IA · Móvil",
+      "valueEn": "Logistics · AI · Mobile"
+    },
+    {
+      "label": "Duración",
+      "labelEn": "Duration",
+      "value": "10 semanas",
+      "valueEn": "10 weeks"
+    },
+    {
+      "label": "Equipo",
+      "labelEn": "Team",
+      "value": "Diseño + AI + Backend",
+      "valueEn": "Design + AI + Backend"
+    },
+    {
+      "label": "Año",
+      "labelEn": "Year",
+      "value": "2024",
+      "valueEn": "2024"
+    },
+    {
+      "label": "Plataforma",
+      "labelEn": "Platform",
+      "value": "Móvil · iOS/Android",
+      "valueEn": "Mobile · iOS/Android"
+    }
+  ],
+  "heroImage": {
+    "placeholder": "Flujo de usuario Driver AI — Address Intelligence y Modal Contextual",
+    "placeholderEn": "Driver AI user flow — Address Intelligence and Contextual Modal",
+    "device": "mobile"
+  },
+  "whyItMatters": {
+    "title": "Por qué importa",
+    "titleEn": "Why it matters",
+    "subtitle": "Impacto en operaciones, conductor y dispatcher",
+    "subtitleEn": "Impact on operations, driver and dispatcher",
+    "items": [
+      {
+        "icon": "📦",
+        "label": "Entregas Fallidas",
+        "labelEn": "Failed Deliveries",
+        "metric": "-22%",
+        "description": "Reducción en intentos fallidos. El contexto de acceso previo elimina la búsqueda improvisada en destino.",
+        "descriptionEn": "Reduction in failed attempts. Prior access context eliminates improvised searching at the destination."
+      },
+      {
+        "icon": "⏱️",
+        "label": "Tiempo en Sitio",
+        "labelEn": "Time on Site",
+        "metric": "-18%",
+        "description": "Reducción en tiempo promedio por parada en edificios complejos.",
+        "descriptionEn": "Reduction in average time per stop at complex buildings."
+      },
+      {
+        "icon": "📞",
+        "label": "Llamadas al Dispatcher",
+        "labelEn": "Dispatcher Calls",
+        "metric": "-61%",
+        "description": "Reducción en llamadas para pedir información de acceso o estacionamiento.",
+        "descriptionEn": "Reduction in calls to request access or parking information."
+      }
+    ]
+  },
+  "problemAndObjectives": {
+    "title": "Problema y Objetivos",
+    "titleEn": "Problem & Objectives",
+    "subtitle": "Identificación del desafío y metas medibles",
+    "subtitleEn": "Challenge identification and measurable goals",
+    "products": [
+      {
+        "name": "El Problema",
+        "nameEn": "The Problem",
+        "cons": [
+          "4 llamadas promedio al dispatcher por turno de 8 horas por información de acceso",
+          "73% usaba Google Maps en paralelo a la app corporativa — carga cognitiva doble",
+          "14% de entregas fallaban en primer intento en zonas de alta densidad"
+        ],
+        "consEn": [
+          "4 average calls to dispatcher per 8-hour shift for access information",
+          "73% used Google Maps in parallel with the corporate app — double cognitive load",
+          "14% of deliveries failed on first attempt in high-density zones"
+        ]
+      }
+    ],
+    "objectives": [
+      {
+        "number": "01",
+        "description": "Contexto predictivo de acceso antes de llegar a cada parada",
+        "descriptionEn": "Predictive access context before arriving at each stop",
+        "title": "-10 a -20% tiempo en sitio",
+        "titleEn": "-10 to -20% time on site"
+      },
+      {
+        "number": "02",
+        "description": "Eliminar la causa #1 de fallo: conductor sin acceso al edificio",
+        "descriptionEn": "Eliminate the #1 failure cause: driver without access to the building",
+        "title": "+15% en edificios complejos",
+        "titleEn": "+15% in complex buildings"
+      },
+      {
+        "number": "03",
+        "description": "Audio-first: el conductor recibe contexto sin tocar la pantalla mientras conduce",
+        "descriptionEn": "Audio-first: the driver receives context without touching the screen while driving",
+        "title": "≤1 tap + audio TTS",
+        "titleEn": "≤1 tap + audio TTS"
+      }
+    ]
+  },
+  "uxResearch": {
+    "title": "Metodología UX",
+    "titleEn": "UX Design Process",
+    "subtitle": "Cuatro métodos aplicados en campo con conductores activos",
+    "subtitleEn": "Four methods applied in the field with active drivers",
+    "methodCards": [
+      {
+        "description": "6 etapas mapeadas: recibir ruta → navegar → llegar → acceder → entregar → siguiente parada. El 80% del tiempo no productivo se concentraba entre 'llegar' y 'acceder'.",
+        "descriptionEn": "6 stages mapped: receive route → navigate → arrive → access → deliver → next stop. 80% of non-productive time was concentrated between 'arrive' and 'access'.",
+        "finding": "El conductor sabía a dónde ir, pero no cómo entrar una vez estacionado",
+        "findingEn": "The driver knew where to go, but not how to enter once parked",
+        "name": "Journey Mapping",
+        "nameEn": "Journey Mapping"
+      },
+      {
+        "description": "8 conductores acompañados durante jornadas completas en zonas de alta densidad. Las entrevistas en terreno revelaron comportamientos invisibles en focus groups de oficina.",
+        "descriptionEn": "8 drivers shadowed during full shifts in high-density zones. Field interviews revealed behaviors invisible in office focus groups.",
+        "finding": "73% tenía Google Maps y la app corporativa abiertas en paralelo",
+        "findingEn": "73% had Google Maps and the corporate app open simultaneously",
+        "name": "Contextual Inquiry",
+        "nameEn": "Contextual Inquiry"
+      },
+      {
+        "description": "Flujo descompuesto en 12 sub-tareas con duración y tasa de error medidas en cada una. Se identificaron 4 puntos críticos donde el conductor buscaba información fuera de la app.",
+        "descriptionEn": "Flow decomposed into 12 sub-tasks with duration and error rate measured for each. 4 critical points were identified where the driver searched for information outside the app.",
+        "finding": "'Buscar acceso al edificio' no existía en ningún diseño de flujo anterior",
+        "findingEn": "'Search for building access' did not exist in any previous flow design",
+        "name": "Task Analysis",
+        "nameEn": "Task Analysis"
+      },
+      {
+        "name": "Evaluación Heurística",
+        "nameEn": "Heuristic Evaluation",
+        "description": "Auditoría con los 10 principios de Nielsen aplicados al contexto de uso en movimiento. 17 violaciones identificadas — la más crítica: el conductor no sabía si el sistema estaba cargando o había fallado.",
+        "descriptionEn": "Audit against Nielsen's 10 principles applied to the in-motion usage context. 17 violations identified — the most critical: the driver couldn't tell if the system was loading or had failed.",
+        "finding": "La heurística más violada fue 'Visibilidad del estado del sistema' — en un entorno de alta carga cognitiva, es la más costosa de ignorar.",
+        "findingEn": "The most violated heuristic was 'Visibility of system status' — in a high cognitive load environment, it is the most costly to ignore."
+      }
+    ],
+    "quotes": [
+      {
+        "text": "No necesito más info en pantalla. Necesito que me la digan mientras manejo.",
+        "textEn": "I don't need more info on screen. I need it told to me while I'm driving.",
+        "author": "Miguel, conductor 3 años",
+        "authorEn": "Miguel, driver 3 years",
+        "context": "Contextual Inquiry en campo"
+      },
+      {
+        "text": "El código del cliente llega al WhatsApp cuando ya estoy en la puerta.",
+        "textEn": "The client's code arrives on WhatsApp when I'm already at the door.",
+        "author": "Conductor, zona alta densidad",
+        "authorEn": "Driver, high-density zone",
+        "context": "Entrevista de campo"
+      }
+    ],
+    "stats": [
+      {
+        "value": "4 llamadas",
+        "description": "Promedio al dispatcher por turno sobre información de acceso",
+        "descriptionEn": "Average per shift to dispatcher for access information"
+      },
+      {
+        "value": "8–15 min",
+        "description": "Perdidos por parada en edificios sin contexto de acceso",
+        "descriptionEn": "Lost per stop at buildings without access context"
+      },
+      {
+        "value": "73%",
+        "description": "Usaba Google Maps como sistema paralelo a la app corporativa",
+        "descriptionEn": "Used Google Maps as a parallel system to the corporate app"
+      }
+    ]
+  },
+  "personas": {
+    "title": "User Personas",
+    "titleEn": "User Personas",
+    "subtitle": "Tres roles con perspectivas distintas sobre el mismo problema",
+    "subtitleEn": "Three roles with different perspectives on the same problem",
+    "items": [
+      {
+        "id": "miguel-torres",
+        "name": "Miguel Torres",
+        "role": "Conductor Última Milla · 3 años",
+        "roleEn": "Last-Mile Driver · 3 years",
+        "avatar": "https://i.pravatar.cc/150?img=15",
+        "goals": [
+          "Completar las 28 paradas del turno en el tiempo estimado",
+          "Evitar llamar al dispatcher — cada llamada lo atrasa 5 min",
+          "Mejorar su calificación para acceder a mejores rutas"
+        ],
+        "goalsEn": [
+          "Complete 28 stops per shift within the estimated time",
+          "Avoid calling the dispatcher — each call delays him 5 min",
+          "Improve his rating to access better routes"
+        ],
+        "painPoints": [
+          "No sabe dónde estacionar ni cómo entrar en edificios nuevos",
+          "Los códigos de acceso le llegan por WhatsApp cuando ya está en la puerta",
+          "Si lo cambian de zona, empieza desde cero — no hay conocimiento acumulado"
+        ],
+        "painPointsEn": [
+          "Doesn't know where to park or how to enter new buildings",
+          "Access codes arrive via WhatsApp when he's already at the door",
+          "If transferred to another zone, starts from scratch — no accumulated knowledge"
+        ],
+        "behaviors": [
+          "Zona residencial de alta densidad — edificios complejos",
+          "Construye conocimiento propio con notas en papel y capturas de Maps",
+          "Opera bajo presión de tiempo: cada parada extra reduce su bono"
+        ],
+        "behaviorsEn": [
+          "High-density residential zone — complex buildings",
+          "Builds own knowledge with paper notes and Maps screenshots",
+          "Operates under time pressure: each extra stop reduces his bonus"
+        ],
+        "quote": "Me aprendo los edificios de memoria. Pero cuando me cambian de zona, empiezo desde cero.",
+        "quoteEn": "I memorize buildings. But when they move me to another zone, I start from scratch.",
+        "quoteLabel": "Cita de campo",
+        "quoteLabelEn": "Field quote"
+      },
+      {
+        "id": "laura-fernandez",
+        "name": "Laura Fernández",
+        "role": "Dispatcher · Centro de operaciones",
+        "roleEn": "Dispatcher · Operations center",
+        "avatar": "https://i.pravatar.cc/150?img=24",
+        "goals": [
+          "Reducir llamadas de acceso a menos de 1 por conductor por turno",
+          "Detectar retrasos antes de que impacten la ventana de entrega",
+          "Conductores nuevos autónomos desde el primer turno"
+        ],
+        "goalsEn": [
+          "Reduce access calls to less than 1 per driver per shift",
+          "Detect delays before they impact the delivery window",
+          "New drivers autonomous from their first shift"
+        ],
+        "painPoints": [
+          "Recibe 15–20 llamadas/turno para dar códigos e instrucciones de acceso",
+          "No puede distinguir si un conductor está bloqueado o simplemente lento",
+          "La información de acceso de edificios no está sistematizada en ningún sistema"
+        ],
+        "painPointsEn": [
+          "Receives 15–20 calls/shift to give access codes and instructions",
+          "Can't distinguish if a driver is blocked or just slow",
+          "Building access information is not systematized in any system"
+        ],
+        "behaviors": [
+          "Gestiona 45 conductores activos simultáneamente",
+          "Trabaja con múltiples pantallas: mapa, radio, sistema de tickets",
+          "Responsable de resolver incidentes de entrega en tiempo real"
+        ],
+        "behaviorsEn": [
+          "Manages 45 active drivers simultaneously",
+          "Works with multiple screens: map, radio, ticket system",
+          "Responsible for resolving delivery incidents in real time"
+        ],
+        "quote": "La mitad de mis llamadas son sobre cómo entrar a un edificio. Eso no debería pasar.",
+        "quoteEn": "Half my calls are about how to enter a building. That shouldn't happen.",
+        "quoteLabel": "Cita de campo",
+        "quoteLabelEn": "Field quote"
+      },
+      {
+        "id": "ricardo-salinas",
+        "name": "Ricardo Salinas",
+        "role": "Gerente de Operaciones",
+        "roleEn": "Operations Manager",
+        "avatar": "https://i.pravatar.cc/150?img=57",
+        "goals": [
+          "Bajar la tasa de entrega fallida en primer intento por debajo del 8%",
+          "Reducir costo de re-entregas (promedio $4.20 USD/re-entrega)",
+          "Demostrar ROI de tecnología AI ante dirección en Q3"
+        ],
+        "goalsEn": [
+          "Bring first-attempt failed delivery rate below 8%",
+          "Reduce re-delivery cost (average $4.20 USD/re-delivery)",
+          "Demonstrate AI technology ROI to leadership in Q3"
+        ],
+        "painPoints": [
+          "14% de entregas fallan en primer intento en zonas de alta densidad",
+          "No hay datos estructurados sobre por qué fallan — solo 'no pudo acceder'",
+          "Conductores nuevos tienen el doble de re-entregas que los experimentados"
+        ],
+        "painPointsEn": [
+          "14% of deliveries fail on first attempt in high-density zones",
+          "No structured data on why they fail — just 'couldn't access'",
+          "New drivers have double the re-deliveries of experienced ones"
+        ],
+        "behaviors": [
+          "Supervisa 200+ entregas/día — toma decisiones por KPIs, no anécdotas",
+          "Trabaja con ciclos de reporting semanal ante dirección regional",
+          "Presión directa de reducir costos operativos sin sacrificar SLA"
+        ],
+        "behaviorsEn": [
+          "Oversees 200+ deliveries/day — makes decisions by KPIs, not anecdotes",
+          "Works with weekly reporting cycles to regional leadership",
+          "Direct pressure to reduce operational costs without sacrificing SLA"
+        ],
+        "quote": "Si el conductor conoce el edificio, el 95% de las entregas salen bien. El problema es escalar ese conocimiento.",
+        "quoteEn": "If the driver knows the building, 95% of deliveries go well. The problem is scaling that knowledge.",
+        "quoteLabel": "Cita de entrevista",
+        "quoteLabelEn": "Interview quote"
+      }
+    ]
+  },
+  "journeyMap": {
+    "title": "Journey Map",
+    "titleEn": "Journey Map",
+    "subtitle": "Etapas del turno, pain points y oportunidades de diseño",
+    "subtitleEn": "Shift stages, pain points and design opportunities",
+    "stages": [
+      {
+        "id": 1,
+        "name": "Recibir ruta",
+        "nameEn": "Receive route",
+        "problem": "Lista de paradas sin contexto de acceso ni tipo de edificio",
+        "problemEn": "Stop list without access context or building type",
+        "solution": "Pre-cargar Address Intelligence antes de salir",
+        "solutionEn": "Pre-load Address Intelligence before departure"
+      },
+      {
+        "id": 2,
+        "name": "Navegar",
+        "nameEn": "Navigate",
+        "problem": "App corporativa + Google Maps abiertos — carga cognitiva doble",
+        "problemEn": "Corporate app + Google Maps open — double cognitive load",
+        "solution": "Stop Summary en audio mientras conduce",
+        "solutionEn": "Stop Summary in audio while driving"
+      },
+      {
+        "id": 3,
+        "name": "Llegar",
+        "nameEn": "Arrive",
+        "problem": "Sin referencia de estacionamiento → 8–15 min improvisando",
+        "problemEn": "No parking reference → 8–15 min improvising",
+        "solution": "Address Intelligence incluye zona de estacionamiento típica",
+        "solutionEn": "Address Intelligence includes typical parking zone"
+      },
+      {
+        "id": 4,
+        "name": "Acceder",
+        "nameEn": "Access",
+        "problem": "Sin código ni instrucciones → llama cliente o dispatcher",
+        "problemEn": "No code or instructions → calls client or dispatcher",
+        "solution": "Modal Contextual muestra código al activar 'Going to job'",
+        "solutionEn": "Contextual Modal shows code when activating 'Going to job'"
+      },
+      {
+        "id": 5,
+        "name": "Entregar",
+        "nameEn": "Deliver",
+        "problem": "5+ taps para confirmar POD con paquete en mano",
+        "problemEn": "5+ taps to confirm POD with package in hand",
+        "solution": "Confirmación en 2 taps desde el modal ya abierto",
+        "solutionEn": "Confirmation in 2 taps from the already-open modal"
+      },
+      {
+        "id": 6,
+        "name": "Siguiente parada",
+        "nameEn": "Next stop",
+        "problem": "El conocimiento del edificio se pierde al cambiar de zona",
+        "problemEn": "Building knowledge is lost when changing zones",
+        "solution": "Los datos retroalimentan Address Intelligence para todos",
+        "solutionEn": "Data feeds back into Address Intelligence for everyone"
+      }
+    ]
+  },
+  "solution": {
+    "title": "La Solución",
+    "titleEn": "The Solution",
+    "subtitle": "Sistema GPT-4o de inteligencia contextual en 4 componentes",
+    "subtitleEn": "GPT-4o contextual intelligence system in 4 components",
+    "components": [
+      {
+        "number": "01",
+        "title": "Address Intelligence",
+        "titleEn": "Address Intelligence",
+        "description": "Ficha por edificio con acceso, estacionamiento, restricciones y código de puerta. Generada 2 horas antes del turno, disponible offline.",
+        "descriptionEn": "Building card with access, parking, restrictions and door code. Generated 2 hours before the shift, available offline."
+      },
+      {
+        "number": "02",
+        "title": "Stop Summary",
+        "titleEn": "Stop Summary",
+        "description": "GPT-4o combina acceso, estacionamiento y condición especial del pedido en 3 bullets escaneables. Si falla, usa Address Intelligence como fallback.",
+        "descriptionEn": "GPT-4o combines access, parking and special order condition into 3 scannable bullets. If it fails, uses Address Intelligence as fallback."
+      },
+      {
+        "number": "03",
+        "title": "Reproducción TTS",
+        "titleEn": "TTS Playback",
+        "description": "Síntesis de voz nativa (sin internet), 20–30 segundos. FAB de 56px operable con guantes. El 87% de conductores en piloto lo prefirió sobre leer.",
+        "descriptionEn": "Native speech synthesis (no internet required), 20–30 seconds. 56px FAB operable with gloves. 87% of pilot drivers preferred it over reading."
+      },
+      {
+        "number": "04",
+        "title": "Modal Contextual",
+        "titleEn": "Contextual Modal",
+        "description": "Bottom sheet que no cubre el mapa de navegación. Muestra el Stop Summary y el botón TTS. Se descarta con swipe down.",
+        "descriptionEn": "Bottom sheet that doesn't cover the navigation map. Shows the Stop Summary and TTS button. Dismissed with swipe down."
+      }
+    ],
+    "principlesTitle": "Principios de Diseño",
+    "principlesTitleEn": "Design Principles",
+    "principles": [
+      {
+        "number": "01",
+        "title": "Audio-first: contexto sin mirar la pantalla",
+        "titleEn": "Audio-first: context without looking at the screen",
+        "description": "El conductor recibe el contexto de acceso mientras conduce — no al llegar. TTS con síntesis nativa, sin internet, en 20–30 segundos. FAB de 56px operable con guante para activarlo.",
+        "descriptionEn": "The driver receives access context while driving — not upon arrival. Native TTS synthesis, no internet required, in 20–30 seconds. 56px FAB operable with a glove to activate it."
+      },
+      {
+        "number": "02",
+        "title": "Contexto generado antes de la necesidad",
+        "titleEn": "Context generated before the need",
+        "description": "La ficha de acceso del edificio está lista 2 horas antes del turno. El conductor llega con información, no busca información al llegar. GPT-4o genera los datos una vez — el sistema los sirve offline cuando se necesitan.",
+        "descriptionEn": "The building access card is ready 2 hours before the shift. The driver arrives with information, not searching for it upon arrival. GPT-4o generates the data once — the system serves it offline when needed."
+      },
+      {
+        "number": "03",
+        "title": "≤1 tap para cualquier acción crítica",
+        "titleEn": "≤1 tap for any critical action",
+        "description": "El modal no cubre el mapa. Swipe down para descartar. La acción más frecuente — escuchar el contexto — es siempre el botón más grande en pantalla. Cero fricciones en el momento de mayor carga cognitiva.",
+        "descriptionEn": "The modal doesn't cover the map. Swipe down to dismiss. The most frequent action — hearing the context — is always the largest button on screen. Zero friction at the moment of highest cognitive load."
+      }
+    ]
+  },
+  "designs": {
+    "title": "UI Mockups",
+    "titleEn": "UI Mockups",
+    "items": [
+      {
+        "title": "Flujo de activación — Order Card → Modal → TTS",
+        "titleEn": "Activation flow — Order Card → Modal → TTS",
+        "description": "Tres pantallas: lista de órdenes con ícono AI, modal contextual bottom sheet y FAB TTS activo durante la navegación.",
+        "descriptionEn": "Three screens: orders list with AI icon, contextual bottom sheet modal and active TTS FAB during navigation.",
+        "src": null,
+        "alt": "Flujo de activación Driver AI",
+        "altEn": "Driver AI activation flow"
+      },
+      {
+        "title": "Address Intelligence — Ficha de edificio",
+        "titleEn": "Address Intelligence — Building card",
+        "description": "Ficha detallada con tipo de acceso, zona de estacionamiento, códigos y notas de conductores anteriores.",
+        "descriptionEn": "Detailed card with access type, parking zone, codes and notes from previous drivers.",
+        "src": null,
+        "alt": "Ficha Address Intelligence con acceso, estacionamiento y código",
+        "altEn": "Address Intelligence card with access, parking and code"
+      }
+    ],
+    "device": "mobile"
+  },
+  "results": {
+    "title": "Resultados",
+    "titleEn": "Results",
+    "subtitle": "Impacto medible en operaciones y experiencia del conductor",
+    "subtitleEn": "Measurable impact on operations and driver experience",
+    "impactTitle": "Impacto Medido",
+    "impactTitleEn": "Measured Impact",
+    "impact": [
+      {
+        "icon": "⏱️",
+        "metric": "-18%",
+        "label": "Tiempo en Sitio",
+        "labelEn": "Time on Site",
+        "description": "Reducción en paradas con Address Intelligence activo. Piloto de 6 semanas con 45 conductores.",
+        "descriptionEn": "Reduction at stops with Address Intelligence active. 6-week pilot with 45 drivers."
+      },
+      {
+        "icon": "📦",
+        "metric": "-22%",
+        "label": "Entregas en Primer Intento",
+        "labelEn": "First-Attempt Deliveries",
+        "description": "'No pudo acceder' bajó de 61% a 18% de las causas de entrega fallida.",
+        "descriptionEn": "'Couldn't access' dropped from 61% to 18% of failed delivery causes."
+      },
+      {
+        "icon": "📞",
+        "metric": "-61%",
+        "label": "Llamadas al Dispatcher",
+        "labelEn": "Dispatcher Calls",
+        "description": "De 18 a 7 llamadas promedio por turno sobre información de acceso a edificios.",
+        "descriptionEn": "From 18 to 7 average calls per shift about building access information."
+      }
+    ],
+    "learningsTitle": "Aprendizajes Clave",
+    "learningsTitleEn": "Key Learnings",
+    "learnings": [
+      {
+        "title": "Qué funcionó",
+        "titleEn": "What worked",
+        "description": "El TTS fue adoptado por el 87% de conductores desde el primer turno sin entrenamiento. La hipótesis de que 'los conductores prefieren leer' era falsa — simplemente no tenían alternativa.",
+        "descriptionEn": "TTS was adopted by 87% of drivers from the first shift without training. The hypothesis that 'drivers prefer to read' was false — they simply had no alternative."
+      },
+      {
+        "title": "Sorpresa",
+        "titleEn": "Surprise",
+        "description": "Los conductores añadieron notas de acceso voluntariamente. En 6 semanas, el 34% de edificios del piloto tenía notas de conductores — sin ningún incentivo. El conocimiento colectivo emergió solo.",
+        "descriptionEn": "Drivers voluntarily added access notes. In 6 weeks, 34% of pilot buildings had driver notes — without any incentive. Collective knowledge emerged organically."
+      }
+    ],
+    "nextStepsTitle": "Próxima Iteración",
+    "nextStepsTitleEn": "Next Iteration",
+    "nextSteps": [
+      {
+        "title": "Edificios conocidos",
+        "titleEn": "Known buildings",
+        "description": "Mecanismo para marcar edificios como 'conocidos' y saltarse el modal sin descartarlo cada vez — el modal se activaba incluso cuando el conductor ya sabía cómo entrar.",
+        "descriptionEn": "Mechanism to mark buildings as 'known' and skip the modal without dismissing it every time — the modal triggered even when the driver already knew how to enter."
+      },
+      {
+        "title": "Predicción de tiempo en sitio",
+        "titleEn": "Time-on-site prediction",
+        "description": "Extender Address Intelligence a predicción de tiempo en sitio por edificio, para recalcular el ETA de la ruta completa antes de salir — impactando la planificación del turno entero.",
+        "descriptionEn": "Extend Address Intelligence to time-on-site prediction per building, to recalculate the full route ETA before departure — impacting entire shift planning."
+      }
+    ]
+  },
+  "cta": {
+    "question": "¿Quieres ver todos los proyectos?",
+    "questionEn": "Want to see all projects?",
+    "description": "Tengo 6 case studies de diseño de producto en mi portfolio.",
+    "descriptionEn": "I have 6 product design case studies in my portfolio.",
+    "buttonLabel": "Ver todos los proyectos",
+    "buttonLabelEn": "See all projects",
+    "buttonHref": "#/"
+  }
+}

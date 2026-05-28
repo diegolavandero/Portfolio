@@ -1,0 +1,90 @@
+=== AUDIT COMPLETO DE IMÁGENES ===
+
+TYPE 1 — FEATURED CARD (Home, proyecto destacado)
+  Slot:  .featured-image dentro de grid 1fr 1fr
+  Container 1200px - gap 48px / 2 cols = ~576px por columna
+  Ratio: 16:10
+  Size:  576 × 360 px
+  Count: 1 imagen (unified-routing)
+  Status: placeholder hardcoded en router.js L110
+
+TYPE 2 — PROJECT GRID THUMBNAILS (Home, cuadrícula de 5 proyectos)
+  Slot:  .project-image dentro de grid 2fr, gap 32px
+  Container 1200px - gap 32px / 2 cols = ~584px por columna
+  Ratio: 16:10
+  Size:  584 × 365 px  (redondear a 600×375 @2x = 1200×750px)
+  Count: 5 imágenes
+  Status: placeholder hardcoded en router.js L84
+    [async-reports] → thumbnail 584×365px
+    [driver-ai] → thumbnail 584×365px
+    [lead-capture] → thumbnail 584×365px
+    [load-validation] → thumbnail 584×365px
+    [on-demand-routing] → thumbnail 584×365px
+    [unified-routing] → thumbnail 584×365px
+
+TYPE 3 — HERO IMAGE / FLUJO (al interior de cada proyecto)
+  Slot:  .hero-image-frame, sección post-specs
+  Container: max-width 1387px, padding 0 48px → content 1291px
+  Ratio: 1291:363 (exacto en el CSS)
+  Size:  1291 × 363 px
+  Uso:   Screenshot panorámico del flujo completo / wireframe principal
+  Count: 6 imágenes (1 por proyecto)
+    [async-reports] "Interfaz de reportes asincrónicos"
+    [driver-ai] "Flujo de usuario Driver AI — Address Intelligence y Modal Contextual"
+    [lead-capture] "Flujo de Usuario del Chat Widget"
+    [load-validation] "Interfaz de validación de carga pre-ruta"
+    [on-demand-routing] "Mockup principal — Asignación híbrida (auto + manual)"
+    [unified-routing] "Interfaz de Experiencia de Ruteo Unificada"
+
+TYPE 4 — UI MOCKUPS (sección Diseños al interior de cada proyecto)
+  Slot:  .design-image, full-width stack
+  Container 1200px
+  Ratio: 16:6
+  Size:  1200 × 450 px
+  Uso:   Screenshot de pantalla específica del producto / UI detallada
+
+  [async-reports] — 3 mockups:
+    "Solicitud de Reporte"
+    "Estados de Procesamiento"
+    "Centro de Notificaciones"
+  [driver-ai] — 2 mockups:
+    "Flujo de activación — Order Card → Modal → TTS"
+    "Address Intelligence — Ficha de edificio"
+  [lead-capture] — 2 mockups:
+    "Experiencia del Widget de Chat"
+    "Panel de Configuración Desktop"
+  [load-validation] — 3 mockups:
+    "Vista de Lista"
+    "Escaneo de Código"
+    "Firma Digital y Evidencia"
+  [on-demand-routing] — 3 mockups:
+    "Vista de Asignación Automática"
+    "Vista de Drag & Drop Manual"
+    "Simulación de Capacidad"
+  [unified-routing] — 6 mockups:
+    "Ruteo Automático: Generación Automática"
+    "Arrastrar y Soltar: Edición Visual"
+    "Asignar Pedidos: Control Granular"
+    "Validación de Datos"
+    "Confirmar Rutas: Cierre del Flujo"
+    "Flujo Completo de Usuario"
+  Total: 19 imágenes
+
+TYPE 5 — PERSONA AVATARS
+  Slot:  .persona-avatar, circular
+  Size:  64 × 64 px (se muestra circular con border-radius 50%)
+  Fetch: pravatar.cc/150?img=N → ya implementado en todos los proyectos ✓
+
+=== RESUMEN TOTAL ===
+  TYPE 1 — Featured card:        1 imagen  (576×360px)
+  TYPE 2 — Grid thumbnails:      5 imágenes  (584×365px)
+  TYPE 3 — Hero flow:            6 imágenes  (1291×363px)
+  TYPE 4 — UI Mockups:          19 imágenes  (1200×450px)
+  TYPE 5 — Avatares:             ya resueltos ✓
+  TOTAL PENDIENTES:              31 imágenes
+
+=== CAMBIOS DE CÓDIGO NECESARIOS ===
+  router.js L84 — .project-image: soportar img src desde home.json
+  router.js L110 — .featured-image: soportar img src desde home.json
+  render.js renderHeroImage() — soportar img src real cuando está disponible
+  render.js renderDesigns()   — soportar img src real cuando está disponible

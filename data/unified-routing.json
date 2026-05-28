@@ -1,0 +1,738 @@
+{
+  "page": "unified-routing",
+  "slug": "unified-routing",
+  "title": "Sistema de Ruteo Unificado",
+  "titleEn": "Unified Routing System",
+  "subtitle": "Plataforma Logística SaaS",
+  "subtitleEn": "Logistics SaaS Platform",
+  "hero": {
+    "tagline": "PLATAFORMA LOGÍSTICA SAAS",
+    "taglineEn": "LOGISTICS SAAS PLATFORM",
+    "title": "Rediseñando la ",
+    "titleEn": "Redesigning the ",
+    "titleAccent": "Experiencia de Ruteo Unificada",
+    "titleAccentEn": "Unified Routing Experience",
+    "subtitle": "De automatización a control operacional",
+    "subtitleEn": "From automation to operational control",
+    "description": "El ruteo es un sistema de decisiones en tiempo real, no un flujo estático. Este rediseño transforma la consola de planificación en una herramienta de control operacional adaptada a la realidad del terreno.",
+    "descriptionEn": "Routing is a real-time decision system, not a static flow. This redesign transforms the planning console into an operational control tool adapted to ground reality."
+  },
+  "projectSpecs": [
+    {
+      "label": "Mi Rol",
+      "labelEn": "Role",
+      "value": "Senior UX/UI Designer",
+      "valueEn": "Senior UX/UI Designer"
+    },
+    {
+      "label": "Contexto",
+      "labelEn": "Context",
+      "value": "Logística · SaaS · IA",
+      "valueEn": "Logistics · SaaS · AI"
+    },
+    {
+      "label": "Duración",
+      "labelEn": "Duration",
+      "value": "8 semanas",
+      "valueEn": "8 weeks"
+    },
+    {
+      "label": "Equipo",
+      "labelEn": "Team",
+      "value": "Multidisciplinario",
+      "valueEn": "Multidisciplinary"
+    },
+    {
+      "label": "Año",
+      "labelEn": "Year",
+      "value": "2026",
+      "valueEn": "2026"
+    },
+    {
+      "label": "Entregables",
+      "labelEn": "Deliverables",
+      "value": "Web · Escritorio",
+      "valueEn": "Web · Desktop"
+    }
+  ],
+  "heroImage": {
+    "placeholder": "Interfaz de Experiencia de Ruteo Unificada",
+    "placeholderEn": "Unified Routing Experience interface",
+    "device": "desktop",
+    "src": "data/images/unified-routing-hero.png"
+  },
+  "whyItMatters": {
+    "title": "Por qué importa",
+    "titleEn": "Why It Matters",
+    "subtitle": "Impacto estratégico en negocio, usuario y sistema",
+    "subtitleEn": "Strategic impact on business, user and system",
+    "items": [
+      {
+        "icon": "💼",
+        "label": "Impacto en Negocio",
+        "labelEn": "Business Impact",
+        "metric": "-35%",
+        "description": "Reducción de tiempo de planificación con mejora en escalabilidad para flotas de 300+ vehículos",
+        "descriptionEn": "Reduction in planning time with improved scalability for fleets of 300+ vehicles"
+      },
+      {
+        "icon": "👤",
+        "label": "Impacto en Usuario",
+        "labelEn": "User Impact",
+        "metric": "-42%",
+        "description": "Reducción de carga cognitiva y menor dependencia del soporte técnico",
+        "descriptionEn": "Reduced cognitive load and less dependency on technical support"
+      },
+      {
+        "icon": "⚙️",
+        "label": "Impacto en Sistema",
+        "labelEn": "System Impact",
+        "metric": "-65%",
+        "description": "Reducción de funcionalidades duplicadas al integrarse con Lastmile, el sistema principal de órdenes",
+        "descriptionEn": "Reduction of duplicated functionality by integrating with Lastmile, the main order system"
+      }
+    ]
+  },
+  "problemAndObjectives": {
+    "title": "Problema y Objetivos",
+    "titleEn": "Problem and Objectives",
+    "subtitle": "Identificación del desafío y metas medibles",
+    "subtitleEn": "Identification of the challenge and measurable goals",
+    "problemTitle": "El Problema",
+    "problemTitleEn": "The Problem",
+    "problemIntro": "El flujo actual de planificación presentaba una fragmentación crítica entre dos productos:",
+    "problemIntroEn": "The current planning flow had a critical fragmentation between two products:",
+    "products": [
+      {
+        "name": "PlannerPro (Producto Latam)",
+        "nameEn": "PlannerPro (Latam Product)",
+        "pros": [
+          "Rápido, eficiente, automatizado"
+        ],
+        "prosEn": [
+          "Fast, efficient, automated"
+        ],
+        "cons": [
+          "Poco flexible en escenarios complejos"
+        ],
+        "consEn": [
+          "Inflexible in complex scenarios"
+        ]
+      },
+      {
+        "name": "DispatchTrack (Producto Global)",
+        "nameEn": "DispatchTrack (Global Product)",
+        "pros": [
+          "Alta flexibilidad y control"
+        ],
+        "prosEn": [
+          "High flexibility and control"
+        ],
+        "cons": [
+          "Alta carga cognitiva"
+        ],
+        "consEn": [
+          "High cognitive load"
+        ]
+      }
+    ],
+    "consequencesLabel": "Esto generaba:",
+    "consequencesLabelEn": "This generated:",
+    "consequences": [
+      "Dependencia excesiva en intervención manual",
+      "Pérdida de visibilidad operacional",
+      "Riesgo de errores críticos (rutas no guardadas)"
+    ],
+    "consequencesEn": [
+      "Excessive dependency on manual intervention",
+      "Loss of operational visibility",
+      "Risk of critical errors (unsaved routes)"
+    ],
+    "objectivesTitle": "Objetivos Medibles",
+    "objectivesTitleEn": "Measurable Objectives",
+    "objectives": [
+      {
+        "number": "01",
+        "title": "Reducir tiempo de planificación",
+        "titleEn": "Reduce planning time",
+        "meta": "Meta: -50%",
+        "metaEn": "Goal: -50%",
+        "description": "Optimizar flujo para disminuir tiempo de setup y ejecución",
+        "descriptionEn": "Optimize flow to reduce setup and execution time"
+      },
+      {
+        "number": "02",
+        "title": "Permitir edición avanzada",
+        "titleEn": "Enable advanced editing",
+        "meta": "Sin aumentar complejidad",
+        "metaEn": "Without increasing complexity",
+        "description": "Habilitar control manual sin sacrificar velocidad operativa",
+        "descriptionEn": "Enable manual control without sacrificing operational speed"
+      },
+      {
+        "number": "03",
+        "title": "Modelo híbrido escalable",
+        "titleEn": "Scalable hybrid model",
+        "meta": "Wizard + Console",
+        "metaEn": "Wizard + Console",
+        "description": "Combinar automatización con flexibilidad en una experiencia unificada",
+        "descriptionEn": "Combine automation with flexibility in a unified experience"
+      }
+    ]
+  },
+  "uxResearch": {
+    "title": "Metodología UX",
+    "titleEn": "UX Design Process",
+    "subtitle": "Metodología, hipótesis e insights accionables",
+    "subtitleEn": "Methodology, hypotheses and actionable insights",
+    "hypothesisTitle": "Hipótesis",
+    "hypothesisTitleEn": "Hypotheses",
+    "hypothesis": [
+      "El asistente no soporta escenarios logísticos complejos",
+      "La consola es poderosa pero cognitivamente demandante",
+      "Un modelo híbrido progresivo puede equilibrar velocidad y control"
+    ],
+    "hypothesisEn": [
+      "The assistant doesn't support complex logistics scenarios",
+      "The console is powerful but cognitively demanding",
+      "A progressive hybrid model can balance speed and control"
+    ],
+    "methodsTitle": "Metodología",
+    "methodsTitleEn": "Methodology",
+    "methods": [
+      "6 entrevistas cualitativas con jefes de planificación",
+      "Observación directa de flujos reales",
+      "Análisis de comportamiento en plataforma",
+      "Validación heurística (Nielsen)"
+    ],
+    "methodsEn": [
+      "6 qualitative interviews with planning managers",
+      "Direct observation of real flows",
+      "Platform behavior analysis",
+      "Heuristic validation (Nielsen)"
+    ],
+    "insightsTitle": "Insights Clave",
+    "insightsTitleEn": "Key Insights",
+    "qualitativeLabel": "Cualitativos",
+    "qualitativeLabelEn": "Qualitative",
+    "quotes": [
+      {
+        "text": "Nuestra operación no es 100% automatizable",
+        "textEn": "Our operation is not 100% automatable"
+      },
+      {
+        "text": "Necesitamos ver todo al mismo tiempo",
+        "textEn": "We need to see everything at the same time"
+      },
+      {
+        "text": "La consola permite reaccionar, el wizard no",
+        "textEn": "The console allows reaction, the wizard does not"
+      }
+    ],
+    "quantitativeLabel": "Cuantitativos",
+    "quantitativeLabelEn": "Quantitative",
+    "stats": [
+      {
+        "value": "+70%",
+        "description": "de rutas requieren ajustes manuales",
+        "descriptionEn": "of routes require manual adjustments"
+      },
+      {
+        "value": "+40%",
+        "description": "del tiempo se pierde en edición post-ruteo",
+        "descriptionEn": "of time is lost in post-routing editing"
+      },
+      {
+        "value": "100%",
+        "description": "reportan necesidad de visibilidad en mapa",
+        "descriptionEn": "report a need for map visibility"
+      }
+    ]
+  },
+  "personas": {
+    "title": "User Personas",
+    "titleEn": "User Personas",
+    "subtitle": "Perfiles de usuario basados en investigación cualitativa",
+    "subtitleEn": "User profiles based on qualitative research",
+    "items": [
+      {
+        "id": "maria-delgado",
+        "name": "María Delgado",
+        "role": "Jefa de Planificación",
+        "roleEn": "Head of Planning",
+        "avatar": "https://i.pravatar.cc/150?img=44",
+        "goals": [
+          "Maximizar eficiencia de rutas",
+          "Minimizar tiempo de setup",
+          "Control sobre automatización"
+        ],
+        "goalsEn": [
+          "Maximize route efficiency",
+          "Minimize setup time",
+          "Control over automation"
+        ],
+        "painPoints": [
+          "Falta de control en procesos automáticos",
+          "Complejidad operativa alta",
+          "Necesidad de ajustes constantes"
+        ],
+        "painPointsEn": [
+          "Lack of control in automatic processes",
+          "High operational complexity",
+          "Need for constant adjustments"
+        ],
+        "behaviors": [
+          "Revisa todas las rutas manualmente",
+          "Prefiere visibilidad total",
+          "Usa múltiples herramientas"
+        ],
+        "behaviorsEn": [
+          "Reviews all routes manually",
+          "Prefers total visibility",
+          "Uses multiple tools"
+        ]
+      },
+      {
+        "id": "nicolas-zuniga",
+        "name": "Nicolás Zúñiga",
+        "role": "Jefe de Distribución",
+        "roleEn": "Distribution Manager",
+        "avatar": "https://i.pravatar.cc/150?img=52",
+        "goals": [
+          "Supervisión en tiempo real",
+          "Reducir errores de despacho",
+          "Visibilidad operacional"
+        ],
+        "goalsEn": [
+          "Real-time supervision",
+          "Reduce dispatch errors",
+          "Operational visibility"
+        ],
+        "painPoints": [
+          "Pérdida de contexto operativo",
+          "Falta de alertas tempranas",
+          "Dificultad para reaccionar"
+        ],
+        "painPointsEn": [
+          "Loss of operational context",
+          "Lack of early alerts",
+          "Difficulty reacting"
+        ],
+        "behaviors": [
+          "Monitoreo constante de KPIs",
+          "Intervención manual frecuente",
+          "Enfoque en ejecución"
+        ],
+        "behaviorsEn": [
+          "Constant KPI monitoring",
+          "Frequent manual intervention",
+          "Execution-focused"
+        ]
+      },
+      {
+        "id": "diego-campos",
+        "name": "Diego Campos",
+        "role": "Dispatcher Senior",
+        "roleEn": "Senior Dispatcher",
+        "avatar": "https://i.pravatar.cc/150?img=57",
+        "goals": [
+          "Editar rutas rápidamente",
+          "Minimizar pasos operativos",
+          "Prevenir errores críticos"
+        ],
+        "goalsEn": [
+          "Edit routes quickly",
+          "Minimize operational steps",
+          "Prevent critical errors"
+        ],
+        "painPoints": [
+          "Demasiados pasos para editar",
+          "Interfaz fragmentada",
+          "Alta carga cognitiva"
+        ],
+        "painPointsEn": [
+          "Too many steps to edit",
+          "Fragmented interface",
+          "High cognitive load"
+        ],
+        "behaviors": [
+          "Usuario experto de consola",
+          "Trabaja bajo presión de tiempo",
+          "Prefiere arrastrar y soltar"
+        ],
+        "behaviorsEn": [
+          "Expert console user",
+          "Works under time pressure",
+          "Prefers drag and drop"
+        ]
+      }
+    ]
+  },
+  "journeyMap": {
+    "title": "Journey Map",
+    "titleEn": "Journey Map",
+    "subtitle": "Etapas del proceso, pain points y oportunidades",
+    "subtitleEn": "Process stages, pain points and opportunities",
+    "stages": [
+      {
+        "id": 1,
+        "name": "Wizard",
+        "nameEn": "Wizard",
+        "problem": "Carga lenta, poca info, selección básica",
+        "problemEn": "Slow loading, scarce info, basic selection",
+        "solution": "Carga async, preselección, filtros persistentes",
+        "solutionEn": "Async loading, pre-selection, persistent filters"
+      },
+      {
+        "id": 2,
+        "name": "Crear rutas",
+        "nameEn": "Create routes",
+        "problem": "Sin preview, fechas fijas",
+        "problemEn": "No preview, fixed dates",
+        "solution": "Vista previa con órdenes y vehículos seleccionados antes de ejecutar",
+        "solutionEn": "Preview with selected orders and vehicles before executing"
+      },
+      {
+        "id": 3,
+        "name": "Resultados de planificación",
+        "nameEn": "Planning results",
+        "problem": "Fragmentada, dispersa, solo visual",
+        "problemEn": "Fragmented, scattered, visual-only",
+        "solution": "Centralizar edición, validación y alertas en una única vista",
+        "solutionEn": "Centralize editing, validation and alerts in a single view"
+      },
+      {
+        "id": 4,
+        "name": "Detalle de ruta",
+        "nameEn": "Route detail",
+        "problem": "Edición limitada a 2 rutas",
+        "problemEn": "Editing limited to 2 routes",
+        "solution": "Permitir edición simultánea de múltiples rutas con drag & drop",
+        "solutionEn": "Enable simultaneous editing of multiple routes with drag & drop"
+      },
+      {
+        "id": 5,
+        "name": "Resumen de planificación",
+        "nameEn": "Planning summary",
+        "problem": "Info poco relevante, no escala",
+        "problemEn": "Low-relevance info, doesn't scale",
+        "solution": "Formato tabular con métricas operativas y exportación directa",
+        "solutionEn": "Tabular format with operational metrics and direct export"
+      },
+      {
+        "id": 6,
+        "name": "Exportar a LastMile",
+        "nameEn": "Export to LastMile",
+        "problem": "Lento, parámetros duplicados",
+        "problemEn": "Slow, duplicated parameters",
+        "solution": "Sincronización automática sin re-ingreso de datos",
+        "solutionEn": "Automatic sync without re-entering data"
+      }
+    ]
+  },
+  "cardSorting": {
+    "title": "Card Sorting",
+    "titleEn": "Card Sorting",
+    "subtitle": "Agrupación de features y decisiones de arquitectura",
+    "subtitleEn": "Feature grouping and architecture decisions",
+    "clusters": [
+      {
+        "name": "Cluster 1: Entradas",
+        "nameEn": "Cluster 1: Inputs",
+        "color": "indigo",
+        "items": [
+          "Pedidos",
+          "Camiones",
+          "Restricciones",
+          "Parámetros"
+        ],
+        "itemsEn": [
+          "Orders",
+          "Trucks",
+          "Constraints",
+          "Parameters"
+        ]
+      },
+      {
+        "name": "Cluster 2: Visualización",
+        "nameEn": "Cluster 2: Visualization",
+        "color": "green",
+        "items": [
+          "Mapa interactivo",
+          "Rutas",
+          "Marcadores",
+          "Capas"
+        ],
+        "itemsEn": [
+          "Interactive map",
+          "Routes",
+          "Markers",
+          "Layers"
+        ]
+      },
+      {
+        "name": "Cluster 3: Control",
+        "nameEn": "Cluster 3: Control",
+        "color": "yellow",
+        "items": [
+          "Edición",
+          "KPIs",
+          "Alertas",
+          "Acciones"
+        ],
+        "itemsEn": [
+          "Editing",
+          "KPIs",
+          "Alerts",
+          "Actions"
+        ]
+      }
+    ],
+    "decision": {
+      "title": "Decisión: Consola Expandida Única",
+      "titleEn": "Decision: Single Expanded Console",
+      "description": "Consolidar todos los clusters en una vista única tipo consola expandida que permita ver y actuar sobre toda la información simultáneamente.",
+      "descriptionEn": "Consolidate all clusters into a single expanded-console view that allows seeing and acting on all information simultaneously.",
+      "principleLabel": "Principio de diseño:",
+      "principleLabelEn": "Design principle:",
+      "principle": "Ver todo, actuar al instante",
+      "principleEn": "See everything, act instantly",
+      "tradeoffsTitle": "Intercambios",
+      "tradeoffsTitleEn": "Tradeoffs",
+      "tradeoffs": [
+        {
+          "type": "positive",
+          "text": "Mayor poder y control para usuarios expertos",
+          "textEn": "More power and control for expert users"
+        },
+        {
+          "type": "negative",
+          "text": "Riesgo de sobrecarga visual",
+          "textEn": "Risk of visual overload"
+        }
+      ],
+      "mitigationLabel": "Mitigación:",
+      "mitigationLabelEn": "Mitigation:",
+      "mitigation": "Progressive disclosure + jerarquía visual clara + priorización de información",
+      "mitigationEn": "Progressive disclosure + clear visual hierarchy + information prioritization"
+    }
+  },
+  "solution": {
+    "title": "La Solución",
+    "titleEn": "The Solution",
+    "subtitle": "Modelo híbrido: Wizard para setup + Consola para control",
+    "subtitleEn": "Hybrid model: Wizard for setup + Console for control",
+    "principlesTitle": "Principios de Diseño",
+    "principlesTitleEn": "Design Principles",
+    "principles": [
+      {
+        "number": "01",
+        "title": "Ver todo, actuar al instante",
+        "titleEn": "See everything, act instantly",
+        "description": "Visibilidad total con capacidad de acción inmediata",
+        "descriptionEn": "Total visibility with immediate action capability"
+      },
+      {
+        "number": "02",
+        "title": "Reducir pasos, aumentar control",
+        "titleEn": "Reduce steps, increase control",
+        "description": "Menos pasos operativos con mayor control granular",
+        "descriptionEn": "Fewer operational steps with greater granular control"
+      },
+      {
+        "number": "03",
+        "title": "Visual > datos abstractos",
+        "titleEn": "Visual > abstract data",
+        "description": "Priorizar representación visual sobre datos abstractos",
+        "descriptionEn": "Prioritize visual representation over abstract data"
+      }
+    ],
+    "decisionsTitle": "Decisiones Clave de UX",
+    "decisionsTitleEn": "Key UX Decisions",
+    "decisions": [
+      {
+        "title": "Arrastrar y soltar directo en mapa",
+        "titleEn": "Direct drag and drop on map",
+        "justification": "Permite reasignación visual e intuitiva sin modales ni formularios",
+        "justificationEn": "Enables visual and intuitive reassignment without modals or forms",
+        "tradeoff": "Requiere precisión en interacciones, mitigado con feedback visual",
+        "tradeoffEn": "Requires interaction precision, mitigated with visual feedback"
+      },
+      {
+        "title": "Edición en contexto",
+        "titleEn": "In-context editing",
+        "justification": "Reducir cambios de contexto manteniendo el foco en el mapa",
+        "justificationEn": "Reduce context switches by keeping focus on the map",
+        "tradeoff": "Más información en pantalla, mitigado con progressive disclosure",
+        "tradeoffEn": "More on-screen information, mitigated with progressive disclosure"
+      },
+      {
+        "title": "Alertas visibles",
+        "titleEn": "Visible alerts",
+        "justification": "Feedback inmediato sobre errores o conflictos en tiempo real",
+        "justificationEn": "Immediate feedback on errors or conflicts in real time",
+        "tradeoff": "Puede generar ruido visual, mitigado con categorización por severidad",
+        "tradeoffEn": "Can generate visual noise, mitigated with severity-based categorization"
+      }
+    ]
+  },
+  "designs": {
+    "title": "UI Mockups",
+    "titleEn": "UI Mockups",
+    "subtitle": "Evolución del diseño desde wireframes hasta alta fidelidad",
+    "subtitleEn": "Design evolution from wireframes to high fidelity",
+    "items": [
+      {
+        "badge": "Paso 1",
+        "badgeEn": "Step 1",
+        "badgeStyle": "indigo",
+        "title": "Ruteo Automático: Generación Automática",
+        "titleEn": "Automatic Routing: Automatic Generation",
+        "description": "Los usuarios configuran parámetros y generan rutas automáticamente con visibilidad inmediata en mapa",
+        "descriptionEn": "Users configure parameters and generate routes automatically with immediate map visibility",
+        "placeholder": "Mockup: Pantalla de generación automática",
+        "placeholderEn": "Mockup: Automatic generation screen"
+      },
+      {
+        "badge": "Paso 2",
+        "badgeEn": "Step 2",
+        "badgeStyle": "indigo",
+        "title": "Arrastrar y Soltar: Edición Visual",
+        "titleEn": "Drag and Drop: Visual Editing",
+        "description": "Reasignación de pedidos arrastrando y soltando directamente sobre el mapa",
+        "descriptionEn": "Order reassignment by dragging and dropping directly on the map",
+        "placeholder": "Mockup: Edición drag & drop sobre mapa",
+        "placeholderEn": "Mockup: Drag & drop editing on map"
+      },
+      {
+        "badge": "Paso 3",
+        "badgeEn": "Step 3",
+        "badgeStyle": "indigo",
+        "title": "Asignar Pedidos: Control Granular",
+        "titleEn": "Assign Orders: Granular Control",
+        "description": "Asignación manual avanzada con vista de tabla y mapa sincronizada",
+        "descriptionEn": "Advanced manual assignment with synchronized table and map view",
+        "placeholder": "Mockup: Asignación granular tabla + mapa",
+        "placeholderEn": "Mockup: Granular assignment table + map"
+      },
+      {
+        "badge": "Paso 4",
+        "badgeEn": "Step 4",
+        "badgeStyle": "indigo",
+        "title": "Validación de Datos",
+        "titleEn": "Data Validation",
+        "description": "Vista de tabla para revisión detallada de rutas y validación de datos",
+        "descriptionEn": "Table view for detailed route review and data validation",
+        "placeholder": "Mockup: Tabla de validación de datos",
+        "placeholderEn": "Mockup: Data validation table"
+      },
+      {
+        "badge": "Paso 5",
+        "badgeEn": "Step 5",
+        "badgeStyle": "indigo",
+        "title": "Confirmar Rutas: Cierre del Flujo",
+        "titleEn": "Confirm Routes: Flow Closing",
+        "description": "Confirmación final con visibilidad de todas las rutas y alertas",
+        "descriptionEn": "Final confirmation with visibility of all routes and alerts",
+        "placeholder": "Mockup: Confirmación final",
+        "placeholderEn": "Mockup: Final confirmation"
+      },
+      {
+        "badge": "Vista Completa",
+        "badgeEn": "Complete View",
+        "badgeStyle": "green",
+        "title": "Flujo Completo de Usuario",
+        "titleEn": "Complete User Flow",
+        "description": "Arquitectura completa del flujo mostrando todos los estados y transiciones",
+        "descriptionEn": "Complete flow architecture showing all states and transitions",
+        "placeholder": "Mockup: Diagrama de flujo completo",
+        "placeholderEn": "Mockup: Complete flow diagram"
+      }
+    ],
+    "device": "desktop"
+  },
+  "results": {
+    "title": "Resultados e Impacto",
+    "titleEn": "Results and Impact",
+    "subtitle": "Métricas, aprendizajes y próximos pasos",
+    "subtitleEn": "Metrics, learnings and next steps",
+    "impactTitle": "Impacto Esperado",
+    "impactTitleEn": "Expected Impact",
+    "impact": [
+      {
+        "metric": "↓ 32%",
+        "label": "Tiempo de planificación",
+        "labelEn": "Planning time",
+        "description": "Reducción significativa en tiempo de setup y ejecución de rutas",
+        "descriptionEn": "Significant reduction in route setup and execution time"
+      },
+      {
+        "metric": "↑ 23%",
+        "label": "Eficiencia en despacho",
+        "labelEn": "Dispatch efficiency",
+        "description": "Mejora en velocidad y precisión del proceso de despacho",
+        "descriptionEn": "Improvement in dispatch process speed and precision"
+      },
+      {
+        "metric": "↓ 78%",
+        "label": "Errores críticos",
+        "labelEn": "Critical errors",
+        "description": "Eliminación de errores de rutas no guardadas y pedidos perdidos",
+        "descriptionEn": "Elimination of unsaved-route errors and lost orders"
+      }
+    ],
+    "learningsTitle": "Aprendizajes Clave",
+    "learningsTitleEn": "Key Learnings",
+    "learnings": [
+      {
+        "title": "Automatización con control",
+        "titleEn": "Automation with control",
+        "description": "La automatización sin control falla en logística real. Los usuarios necesitan poder intervenir.",
+        "descriptionEn": "Automation without control fails in real logistics. Users need to be able to intervene."
+      },
+      {
+        "title": "Visibilidad > Simplicidad",
+        "titleEn": "Visibility > Simplicity",
+        "description": "Para usuarios expertos, la visibilidad total es más valiosa que la simplicidad superficial.",
+        "descriptionEn": "For expert users, total visibility is more valuable than surface-level simplicity."
+      },
+      {
+        "title": "Poder sobre facilidad",
+        "titleEn": "Power over ease",
+        "description": "Usuarios expertos prefieren herramientas poderosas aunque tengan curva de aprendizaje.",
+        "descriptionEn": "Expert users prefer powerful tools even with a learning curve."
+      }
+    ],
+    "nextStepsTitle": "Próximos Pasos",
+    "nextStepsTitleEn": "Next Steps",
+    "nextSteps": [
+      {
+        "title": "Sugerencias Asistidas por IA",
+        "titleEn": "AI-Assisted Suggestions",
+        "description": "Integrar sugerencias inteligentes basadas en histórico y patrones",
+        "descriptionEn": "Integrate intelligent suggestions based on history and patterns"
+      },
+      {
+        "title": "Personalización por Rol",
+        "titleEn": "Role-based Personalization",
+        "description": "Permitir vistas personalizadas según el rol del usuario",
+        "descriptionEn": "Enable personalized views according to user role"
+      },
+      {
+        "title": "Alertas Inteligentes",
+        "titleEn": "Smart Alerts",
+        "description": "Optimizar sistema de alertas con machine learning predictivo",
+        "descriptionEn": "Optimize alert system with predictive machine learning"
+      }
+    ]
+  },
+  "cta": {
+    "question": "¿Quieres saber más sobre este proyecto?",
+    "questionEn": "Want to know more about this project?",
+    "description": "Contacta para discutir detalles técnicos, proceso de diseño o resultados.",
+    "descriptionEn": "Contact me to discuss technical details, design process or results.",
+    "buttonLabel": "Contactar",
+    "buttonLabelEn": "Contact",
+    "buttonHref": "#/about"
+  }
+}

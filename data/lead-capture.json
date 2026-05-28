@@ -1,0 +1,688 @@
+{
+  "page": "lead-capture",
+  "slug": "lead-capture",
+  "title": "Sistema de Captura de Leads en Tiempo Real mediante Chat",
+  "titleEn": "Real-time Lead Capture System via Chat",
+  "subtitle": "Plataforma B2B2C SaaS",
+  "subtitleEn": "B2B2C SaaS Platform",
+  "hero": {
+    "tagline": "PLATAFORMA B2B2C SAAS",
+    "taglineEn": "B2B2C SAAS PLATFORM",
+    "title": "Sistema de Captura de Leads ",
+    "titleEn": "Real-time Lead Capture System ",
+    "titleAccent": "en Tiempo Real mediante Chat",
+    "titleAccentEn": "via Chat",
+    "subtitle": "De formularios largos a contacto inmediato",
+    "subtitleEn": "From long forms to immediate contact",
+    "description": "Solución dual que permite a empresas capturar leads en tiempo real mediante un widget de chat personalizable, con plataforma de configuración desktop para control total sin necesidad de desarrollo.",
+    "descriptionEn": "Dual solution that lets companies capture leads in real time through a customizable chat widget, with a desktop configuration platform for total control without development."
+  },
+  "projectSpecs": [
+    {
+      "label": "Mi Rol",
+      "labelEn": "Role",
+      "value": "Senior UX/UI Designer",
+      "valueEn": "Senior UX/UI Designer"
+    },
+    {
+      "label": "Contexto",
+      "labelEn": "Context",
+      "value": "SaaS · B2B2C · Conversión",
+      "valueEn": "SaaS · B2B2C · Conversion"
+    },
+    {
+      "label": "Duración",
+      "labelEn": "Duration",
+      "value": "6 semanas",
+      "valueEn": "6 weeks"
+    },
+    {
+      "label": "Equipo",
+      "labelEn": "Team",
+      "value": "Diseño Individual",
+      "valueEn": "Solo Designer"
+    },
+    {
+      "label": "Año",
+      "labelEn": "Year",
+      "value": "2025",
+      "valueEn": "2025"
+    },
+    {
+      "label": "Entregables",
+      "labelEn": "Deliverables",
+      "value": "Web Desktop + Widget",
+      "valueEn": "Web Desktop + Widget"
+    }
+  ],
+  "heroImage": {
+    "placeholder": "Flujo de Usuario del Chat Widget",
+    "placeholderEn": "Chat Widget User Flow",
+    "device": "desktop"
+  },
+  "whyItMatters": {
+    "title": "Por qué importa",
+    "titleEn": "Why It Matters",
+    "subtitle": "Impacto estratégico en negocio, cliente y sistema",
+    "subtitleEn": "Strategic impact on business, client and system",
+    "items": [
+      {
+        "icon": "💼",
+        "label": "Impacto en Negocio",
+        "labelEn": "Business Impact",
+        "metric": "↑ Leads",
+        "description": "Incremento en generación de leads calificados y reducción de fricción en contacto cliente-empresa",
+        "descriptionEn": "Increase in qualified lead generation and reduced friction in client-company contact"
+      },
+      {
+        "icon": "🏢",
+        "label": "Impacto en Cliente",
+        "labelEn": "Client Impact",
+        "metric": "↑ Control",
+        "description": "Mayor control sobre interacción con clientes y configuración flexible sin necesidad de desarrollo",
+        "descriptionEn": "Greater control over client interaction and flexible configuration without development"
+      },
+      {
+        "icon": "⚙️",
+        "label": "Impacto en Sistema",
+        "labelEn": "System Impact",
+        "metric": "Dual",
+        "description": "Arquitectura dual con plataforma de configuración desktop y widget embebido como base para automatizaciones futuras",
+        "descriptionEn": "Dual architecture with desktop configuration platform and embedded widget as a base for future automation"
+      }
+    ]
+  },
+  "problemAndObjectives": {
+    "title": "Problema y Objetivos",
+    "titleEn": "Problem and Objectives",
+    "subtitle": "Identificación del desafío y metas medibles",
+    "subtitleEn": "Identification of the challenge and measurable goals",
+    "problemTitle": "El Problema",
+    "problemTitleEn": "The Problem",
+    "problemIntro": "Las empresas enfrentan fricción en la captura de leads que reduce conversión:",
+    "problemIntroEn": "Companies face friction in lead capture that reduces conversion:",
+    "products": [
+      {
+        "name": "Fricción en Captura",
+        "nameEn": "Capture Friction",
+        "cons": [
+          "Formularios largos → baja conversión",
+          "Contacto indirecto (email/phone) → alta fricción",
+          "Falta de personalización → menor confianza"
+        ],
+        "consEn": [
+          "Long forms → low conversion",
+          "Indirect contact (email/phone) → high friction",
+          "Lack of personalization → less trust"
+        ]
+      },
+      {
+        "name": "Problemas Adicionales",
+        "nameEn": "Additional Issues",
+        "cons": [
+          "No existe control simple sobre la experiencia de contacto",
+          "Dependencia técnica para implementar soluciones"
+        ],
+        "consEn": [
+          "No simple control over the contact experience",
+          "Technical dependency to implement solutions"
+        ]
+      }
+    ],
+    "objectivesTitle": "Objetivos Medibles",
+    "objectivesTitleEn": "Measurable Objectives",
+    "objectives": [
+      {
+        "number": "01",
+        "title": "Aumentar conversión de leads",
+        "titleEn": "Increase lead conversion",
+        "meta": "Meta: desde web",
+        "metaEn": "Goal: from web",
+        "description": "Incrementar la tasa de conversión de visitantes web a leads calificados",
+        "descriptionEn": "Increase the conversion rate of web visitors to qualified leads"
+      },
+      {
+        "number": "02",
+        "title": "Reducir fricción en contacto",
+        "titleEn": "Reduce contact friction",
+        "meta": "Contacto inmediato",
+        "metaEn": "Immediate contact",
+        "description": "Minimizar pasos y tiempo entre intención y contacto inicial",
+        "descriptionEn": "Minimize steps and time between intent and initial contact"
+      },
+      {
+        "number": "03",
+        "title": "Personalización sin código",
+        "titleEn": "No-code personalization",
+        "meta": "Control total",
+        "metaEn": "Full control",
+        "description": "Permitir configuración completa sin necesidad de desarrollo técnico",
+        "descriptionEn": "Enable full configuration without technical development"
+      }
+    ]
+  },
+  "uxResearch": {
+    "title": "Metodología UX",
+    "titleEn": "UX Design Process",
+    "subtitle": "Metodología, hipótesis e insights accionables",
+    "subtitleEn": "Methodology, hypotheses and actionable insights",
+    "hypothesis": [
+      "Los usuarios prefieren contacto inmediato vs formularios",
+      "La simplicidad aumenta la tasa de conversión",
+      "La personalización aumenta la confianza del usuario final"
+    ],
+    "hypothesisEn": [
+      "Users prefer immediate contact over forms",
+      "Simplicity increases conversion rate",
+      "Personalization increases end-user trust"
+    ],
+    "methods": [
+      "Entrevistas con clientes (empresas)",
+      "Identificación de puntos de contacto con usuarios finales",
+      "Testeo de prototipos en Figma",
+      "Evaluación cualitativa de completitud de flujo"
+    ],
+    "methodsEn": [
+      "Interviews with clients (companies)",
+      "Identification of touchpoints with end users",
+      "Prototype testing in Figma",
+      "Qualitative evaluation of flow completeness"
+    ],
+    "quotes": [
+      {
+        "text": "Si tengo que llenar un formulario largo, abandono",
+        "textEn": "If I have to fill out a long form, I leave"
+      },
+      {
+        "text": "Prefiero escribir rápido y que me contacten",
+        "textEn": "I prefer to type quickly and have them contact me"
+      },
+      {
+        "text": "El diseño influye en la confianza",
+        "textEn": "Design influences trust"
+      }
+    ],
+    "stats": [
+      {
+        "value": "↓ 40%",
+        "description": "abandono en contacto inicial",
+        "descriptionEn": "drop in initial contact"
+      },
+      {
+        "value": "↑",
+        "description": "tasa de inicio de conversación",
+        "descriptionEn": "conversation start rate"
+      },
+      {
+        "value": "↑",
+        "description": "completitud de datos básicos",
+        "descriptionEn": "basic data completion"
+      }
+    ]
+  },
+  "personas": {
+    "title": "User Personas",
+    "titleEn": "User Personas",
+    "subtitle": "Perfiles de usuario basados en investigación cualitativa",
+    "subtitleEn": "User profiles based on qualitative research",
+    "items": [
+      {
+        "id": "carolina-ruiz",
+        "name": "Carolina Ruiz",
+        "role": "Marketing Manager",
+        "roleEn": "Marketing Manager",
+        "avatar": "https://i.pravatar.cc/128?img=44",
+        "goals": [
+          "Generar leads calificados",
+          "Aumentar conversión web",
+          "Control del canal de contacto"
+        ],
+        "goalsEn": [
+          "Generate qualified leads",
+          "Increase web conversion",
+          "Control of contact channel"
+        ],
+        "painPoints": [
+          "Baja conversión en formularios",
+          "Falta de personalización",
+          "Dependencia técnica"
+        ],
+        "painPointsEn": [
+          "Low form conversion",
+          "Lack of personalization",
+          "Technical dependency"
+        ],
+        "behaviors": [
+          "Enfocada en métricas",
+          "Busca soluciones no-code",
+          "Valora la autonomía"
+        ],
+        "behaviorsEn": [
+          "Metrics-focused",
+          "Seeks no-code solutions",
+          "Values autonomy"
+        ]
+      },
+      {
+        "id": "javier-medina",
+        "name": "Javier Medina",
+        "role": "Operador Comercial",
+        "roleEn": "Sales Operator",
+        "avatar": "https://i.pravatar.cc/128?img=12",
+        "goals": [
+          "Responder rápidamente",
+          "Obtener contexto del cliente",
+          "Cerrar ventas eficientemente"
+        ],
+        "goalsEn": [
+          "Respond quickly",
+          "Get client context",
+          "Close sales efficiently"
+        ],
+        "painPoints": [
+          "Falta de contexto del lead",
+          "Información incompleta",
+          "Leads de baja calidad"
+        ],
+        "painPointsEn": [
+          "Lack of lead context",
+          "Incomplete information",
+          "Low quality leads"
+        ],
+        "behaviors": [
+          "Revisa leads constantemente",
+          "Prioriza respuesta rápida",
+          "Necesita información clara"
+        ],
+        "behaviorsEn": [
+          "Constantly reviews leads",
+          "Prioritizes fast response",
+          "Needs clear information"
+        ]
+      },
+      {
+        "id": "ana-torres",
+        "name": "Ana Torres",
+        "role": "Cliente Web",
+        "roleEn": "Web Client",
+        "avatar": "https://i.pravatar.cc/128?img=47",
+        "goals": [
+          "Resolver duda rápidamente",
+          "Contacto sin fricción",
+          "Feedback instantáneo"
+        ],
+        "goalsEn": [
+          "Resolve doubts quickly",
+          "Frictionless contact",
+          "Instant feedback"
+        ],
+        "painPoints": [
+          "Procesos largos y poco claros",
+          "Formularios extensos",
+          "Espera sin respuesta"
+        ],
+        "painPointsEn": [
+          "Long and unclear processes",
+          "Extensive forms",
+          "Waiting without response"
+        ],
+        "behaviors": [
+          "Baja tolerancia a fricción",
+          "Busca inmediatez",
+          "Abandona si es complejo"
+        ],
+        "behaviorsEn": [
+          "Low friction tolerance",
+          "Seeks immediacy",
+          "Leaves if complex"
+        ]
+      }
+    ]
+  },
+  "journeyMap": {
+    "title": "Journey Map",
+    "titleEn": "Journey Map",
+    "subtitle": "Flujo dual: empresa configurando y cliente final usando el widget",
+    "subtitleEn": "Dual flow: company configuring and end client using the widget",
+    "stages": [
+      {
+        "id": 1,
+        "name": "A. Acceso a settings",
+        "nameEn": "A. Access settings",
+        "problem": "Configuración compleja",
+        "problemEn": "Complex configuration",
+        "solution": "Interfaz simple y clara",
+        "solutionEn": "Simple and clear interface"
+      },
+      {
+        "id": 2,
+        "name": "A. Configura widget",
+        "nameEn": "A. Configure widget",
+        "problem": "Falta de preview",
+        "problemEn": "No preview",
+        "solution": "Preview en tiempo real",
+        "solutionEn": "Real-time preview"
+      },
+      {
+        "id": 3,
+        "name": "A. Personaliza branding",
+        "nameEn": "A. Customize branding",
+        "problem": "Inconsistencia visual",
+        "problemEn": "Visual inconsistency",
+        "solution": "Personalización completa",
+        "solutionEn": "Full customization"
+      },
+      {
+        "id": 4,
+        "name": "A. Define campos",
+        "nameEn": "A. Define fields",
+        "problem": "Setup complejo",
+        "problemEn": "Complex setup",
+        "solution": "Campos predefinidos",
+        "solutionEn": "Predefined fields"
+      },
+      {
+        "id": 5,
+        "name": "B. Ve botón flotante",
+        "nameEn": "B. Sees floating button",
+        "problem": "Poco visible",
+        "problemEn": "Not very visible",
+        "solution": "Botón persistente y claro",
+        "solutionEn": "Persistent and clear button"
+      },
+      {
+        "id": 6,
+        "name": "B. Abre chat",
+        "nameEn": "B. Opens chat",
+        "problem": "Carga lenta",
+        "problemEn": "Slow loading",
+        "solution": "Apertura instantánea",
+        "solutionEn": "Instant opening"
+      },
+      {
+        "id": 7,
+        "name": "B. Completa datos",
+        "nameEn": "B. Fills data",
+        "problem": "Fricción en ingreso",
+        "problemEn": "Entry friction",
+        "solution": "Campos mínimos validados",
+        "solutionEn": "Minimum validated fields"
+      },
+      {
+        "id": 8,
+        "name": "B. Envía mensaje",
+        "nameEn": "B. Sends message",
+        "problem": "Sin confirmación",
+        "problemEn": "No confirmation",
+        "solution": "Feedback inmediato",
+        "solutionEn": "Immediate feedback"
+      }
+    ]
+  },
+  "cardSorting": {
+    "title": "Card Sorting",
+    "titleEn": "Card Sorting",
+    "subtitle": "Agrupación de features y decisiones de arquitectura",
+    "subtitleEn": "Feature grouping and architecture decisions",
+    "clusters": [
+      {
+        "name": "Cluster 1: Configuración",
+        "nameEn": "Cluster 1: Configuration",
+        "color": "indigo",
+        "items": [
+          "Texto",
+          "Colores",
+          "Logo",
+          "Campos"
+        ],
+        "itemsEn": [
+          "Text",
+          "Colors",
+          "Logo",
+          "Fields"
+        ]
+      },
+      {
+        "name": "Cluster 2: Interacción",
+        "nameEn": "Cluster 2: Interaction",
+        "color": "green",
+        "items": [
+          "Campos de input",
+          "Mensajes",
+          "Estados",
+          "Validación"
+        ],
+        "itemsEn": [
+          "Input fields",
+          "Messages",
+          "States",
+          "Validation"
+        ]
+      },
+      {
+        "name": "Cluster 3: Feedback",
+        "nameEn": "Cluster 3: Feedback",
+        "color": "yellow",
+        "items": [
+          "Confirmación",
+          "Errores",
+          "Estado de envío",
+          "Preview"
+        ],
+        "itemsEn": [
+          "Confirmation",
+          "Errors",
+          "Send state",
+          "Preview"
+        ]
+      }
+    ],
+    "decision": {
+      "title": "Decisión: Sistema Dual Integrado",
+      "titleEn": "Decision: Integrated Dual System",
+      "description": "Separar claramente entre plataforma de configuración (desktop) y widget (cliente final) manteniendo consistencia visual y funcional.",
+      "descriptionEn": "Clearly separate the configuration platform (desktop) and the widget (end client) while keeping visual and functional consistency.",
+      "principle": "Configura y ve el resultado al instante",
+      "principleEn": "Configure and see the result instantly",
+      "tradeoffs": [
+        {
+          "type": "positive",
+          "text": "Claridad de sistema y separación de contextos",
+          "textEn": "System clarity and context separation"
+        },
+        {
+          "type": "negative",
+          "text": "Doble contexto mental para configurar",
+          "textEn": "Double mental context to configure"
+        }
+      ],
+      "mitigation": "Preview en tiempo real que sincroniza cambios de configuración con vista del widget",
+      "mitigationEn": "Real-time preview that syncs configuration changes with the widget view"
+    }
+  },
+  "solution": {
+    "title": "La Solución",
+    "titleEn": "The Solution",
+    "subtitle": "Sistema dual: Plataforma de configuración + Widget embebido",
+    "subtitleEn": "Dual system: Configuration platform + Embedded widget",
+    "principles": [
+      {
+        "number": "01",
+        "title": "Reduce friction, increase conversion",
+        "titleEn": "Reduce friction, increase conversion",
+        "description": "Minimizar pasos para maximizar conversión",
+        "descriptionEn": "Minimize steps to maximize conversion"
+      },
+      {
+        "number": "02",
+        "title": "Immediate interaction over delayed contact",
+        "titleEn": "Immediate interaction over delayed contact",
+        "description": "Contacto instantáneo vs esperas prolongadas",
+        "descriptionEn": "Instant contact vs prolonged waits"
+      },
+      {
+        "number": "03",
+        "title": "Visual trust through branding",
+        "titleEn": "Visual trust through branding",
+        "description": "Confianza mediante identidad visual",
+        "descriptionEn": "Trust through visual identity"
+      },
+      {
+        "number": "04",
+        "title": "Feedback at every step",
+        "titleEn": "Feedback at every step",
+        "description": "Validación y confirmación continua",
+        "descriptionEn": "Continuous validation and confirmation"
+      }
+    ],
+    "decisionsTitle": "Funcionalidades Clave",
+    "decisionsTitleEn": "Key Features",
+    "decisionLabelA": "Descripción:",
+    "decisionLabelAEn": "Description:",
+    "decisionLabelB": "Beneficio:",
+    "decisionLabelBEn": "Benefit:",
+    "decisions": [
+      {
+        "title": "Customización completa del widget",
+        "titleEn": "Full widget customization",
+        "justification": "Branding adaptable con colores dinámicos e identidad visual consistente",
+        "justificationEn": "Adaptable branding with dynamic colors and consistent visual identity",
+        "tradeoff": "Genera confianza y reconocimiento de marca",
+        "tradeoffEn": "Generates trust and brand recognition"
+      },
+      {
+        "title": "Preview en tiempo real",
+        "titleEn": "Real-time preview",
+        "justification": "Vista previa instantánea de cambios en configuración",
+        "justificationEn": "Instant preview of configuration changes",
+        "tradeoff": "Reduce incertidumbre y mejora velocidad de configuración",
+        "tradeoffEn": "Reduces uncertainty and improves configuration speed"
+      },
+      {
+        "title": "Validación en inputs",
+        "titleEn": "Input validation",
+        "justification": "Errores visibles con feedback inmediato",
+        "justificationEn": "Visible errors with immediate feedback",
+        "tradeoff": "Previene errores silenciosos y mejora calidad de datos",
+        "tradeoffEn": "Prevents silent errors and improves data quality"
+      },
+      {
+        "title": "Flujo corto de contacto",
+        "titleEn": "Short contact flow",
+        "justification": "Campos mínimos necesarios para captura inicial",
+        "justificationEn": "Minimum fields required for initial capture",
+        "tradeoff": "Maximiza conversión con captura progresiva posterior",
+        "tradeoffEn": "Maximizes conversion with later progressive capture"
+      }
+    ]
+  },
+  "designs": {
+    "title": "UI Mockups",
+    "titleEn": "UI Mockups",
+    "subtitle": "Flujo completo del widget y plataforma de configuración",
+    "subtitleEn": "Complete widget and configuration platform flow",
+    "items": [
+      {
+        "badge": "Flujo Cliente",
+        "badgeEn": "Client Flow",
+        "badgeStyle": "indigo",
+        "title": "Experiencia del Widget de Chat",
+        "titleEn": "Chat Widget Experience",
+        "description": "Flujo completo desde botón flotante hasta confirmación final",
+        "descriptionEn": "Complete flow from floating button to final confirmation",
+        "placeholder": "Mockup: Widget de chat — flujo cliente",
+        "placeholderEn": "Mockup: Chat widget — client flow"
+      },
+      {
+        "badge": "Plataforma Settings",
+        "badgeEn": "Settings Platform",
+        "badgeStyle": "indigo",
+        "title": "Panel de Configuración Desktop",
+        "titleEn": "Desktop Configuration Panel",
+        "description": "Plataforma de configuración con preview en tiempo real",
+        "descriptionEn": "Configuration platform with real-time preview",
+        "placeholder": "Mockup: Panel desktop con preview",
+        "placeholderEn": "Mockup: Desktop panel with preview"
+      }
+    ],
+    "device": "desktop"
+  },
+  "results": {
+    "title": "Resultados e Impacto",
+    "titleEn": "Results and Impact",
+    "subtitle": "Métricas esperadas, aprendizajes y próximos pasos",
+    "subtitleEn": "Expected metrics, learnings and next steps",
+    "impact": [
+      {
+        "metric": "↑",
+        "label": "Conversión de leads",
+        "labelEn": "Lead conversion",
+        "description": "Incremento significativo en generación de leads desde tráfico web",
+        "descriptionEn": "Significant increase in lead generation from web traffic"
+      },
+      {
+        "metric": "↓ 40%",
+        "label": "Abandono en contacto",
+        "labelEn": "Contact abandonment",
+        "description": "Reducción de fricción en proceso de contacto inicial",
+        "descriptionEn": "Friction reduction in the initial contact process"
+      },
+      {
+        "metric": "↑",
+        "label": "Velocidad de interacción",
+        "labelEn": "Interaction speed",
+        "description": "Contacto más rápido entre cliente potencial y empresa",
+        "descriptionEn": "Faster contact between potential client and company"
+      }
+    ],
+    "learnings": [
+      {
+        "title": "La fricción inicial define la conversión",
+        "titleEn": "Initial friction defines conversion",
+        "description": "Cada paso adicional en el proceso de contacto reduce dramáticamente la tasa de conversión.",
+        "descriptionEn": "Each additional step in the contact process dramatically reduces the conversion rate."
+      },
+      {
+        "title": "La personalización genera confianza",
+        "titleEn": "Personalization generates trust",
+        "description": "Los usuarios finales confían más cuando el widget refleja la identidad visual de la empresa.",
+        "descriptionEn": "End users trust more when the widget reflects the company's visual identity."
+      },
+      {
+        "title": "El preview reduce errores",
+        "titleEn": "Preview reduces errors",
+        "description": "Ver el resultado en tiempo real durante configuración mejora precisión y velocidad.",
+        "descriptionEn": "Seeing the result in real time during configuration improves precision and speed."
+      }
+    ],
+    "nextSteps": [
+      {
+        "title": "Integración con CRM",
+        "titleEn": "CRM Integration",
+        "description": "Sincronización automática de leads capturados con sistemas CRM existentes",
+        "descriptionEn": "Automatic synchronization of captured leads with existing CRM systems"
+      },
+      {
+        "title": "Automatización de respuestas",
+        "titleEn": "Response Automation",
+        "description": "Respuestas automáticas inteligentes basadas en contexto del mensaje",
+        "descriptionEn": "Intelligent automatic responses based on message context"
+      },
+      {
+        "title": "AI Chat Assistant",
+        "titleEn": "AI Chat Assistant",
+        "description": "Asistente conversacional con IA para calificación y respuesta de leads",
+        "descriptionEn": "AI conversational assistant for lead qualification and response"
+      }
+    ]
+  },
+  "cta": {
+    "question": "¿Quieres saber más sobre este proyecto?",
+    "questionEn": "Want to know more about this project?",
+    "description": "Contacta para discutir detalles técnicos, proceso de diseño o resultados.",
+    "descriptionEn": "Contact me to discuss technical details, design process or results.",
+    "buttonLabel": "Contactar",
+    "buttonLabelEn": "Contact",
+    "buttonHref": "#/about"
+  }
+}

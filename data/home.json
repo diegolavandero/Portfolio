@@ -1,0 +1,103 @@
+{
+  "page": "home",
+  "hero": {
+    "titleStart": "Diseñando productos impulsados por ",
+    "titleStartEn": "Designing products powered by ",
+    "titleAccent": "IA y sistemas complejos",
+    "titleAccentEn": "AI and complex systems",
+    "subtitle": "Senior AI Product Designer con más de 10 años de experiencia en UX research, diseño data-driven y optimización de workflows complejos.",
+    "subtitleEn": "Senior AI Product Designer with 10+ years of experience in UX research, data-driven design, and complex workflow optimization."
+  },
+  "featured": {
+    "eyebrow": "PROYECTO DESTACADO",
+    "eyebrowEn": "FEATURED PROJECT",
+    "title": "Sistema de Ruteo Unificado",
+    "titleEn": "Unified Routing System",
+    "subtitle": "Wizard híbrido + Consola para logística compleja",
+    "subtitleEn": "Hybrid wizard + Console for complex logistics",
+    "metric": "↓ 50%",
+    "metricLabel": "tiempo de planificación",
+    "metricLabelEn": "planning time",
+    "cta": "Ver caso de estudio",
+    "ctaEn": "View case study",
+    "slug": "unified-routing",
+    "device": "desktop",
+    "image": "data/images/unified-routing.png"
+  },
+  "projects": [
+    {
+      "eyebrow": "PLATAFORMA B2B2C • 2025",
+      "eyebrowEn": "B2B2C PLATFORM • 2025",
+      "title": "Sistema de Captura de Leads en Tiempo Real",
+      "titleEn": "Real-time Lead Capture System",
+      "subtitle": "Plataforma de widget de chat pre-venta configurable",
+      "subtitleEn": "Configurable pre-sales chat widget platform",
+      "metric": "↑ 40%",
+      "metricLabel": "conversión leads",
+      "metricLabelEn": "lead conversion",
+      "slug": "lead-capture",
+      "device": "desktop",
+      "image": "data/images/lead-capture.png"
+    },
+    {
+      "eyebrow": "APLICACIÓN MÓVIL • 2023",
+      "eyebrowEn": "MOBILE APP • 2023",
+      "title": "On-Demand Routing",
+      "titleEn": "On-Demand Routing",
+      "subtitle": "Sistema de asignación manual y automática en tiempo real",
+      "subtitleEn": "Real-time manual and automatic assignment system",
+      "metric": "↓ 38%",
+      "metricLabel": "tiempo de asignación",
+      "metricLabelEn": "assignment time",
+      "slug": "on-demand-routing",
+      "device": "desktop",
+      "image": "data/images/on-demand-routing.png"
+    },
+    {
+      "eyebrow": "DATA PLATFORM • 2023",
+      "eyebrowEn": "DATA PLATFORM • 2023",
+      "title": "Validación de Carga",
+      "titleEn": "Load Validation",
+      "subtitle": "Sistema de verificación pre-ruta",
+      "subtitleEn": "Pre-route verification system",
+      "metric": "↓ 45%",
+      "metricLabel": "errores de carga",
+      "metricLabelEn": "loading errors",
+      "slug": "load-validation",
+      "device": "mobile",
+      "image": "data/images/load-validation.png"
+    },
+    {
+      "eyebrow": "SISTEMA SAAS • 2022",
+      "eyebrowEn": "SAAS SYSTEM • 2022",
+      "title": "Reportes Asincrónicos",
+      "titleEn": "Asynchronous Reports",
+      "subtitle": "Procesamiento de datos sin bloqueos",
+      "subtitleEn": "Non-blocking data processing",
+      "metric": "↓ 70%",
+      "metricLabel": "interrupción del flujo",
+      "metricLabelEn": "workflow interruption",
+      "slug": "async-reports",
+      "device": "desktop",
+      "image": "data/images/async-reports.png"
+    },
+    {
+      "eyebrow": "IA + LOGÍSTICA MÓVIL • 2024",
+      "eyebrowEn": "AI + MOBILE LOGISTICS • 2024",
+      "title": "Driver AI",
+      "titleEn": "Driver AI",
+      "subtitle": "Inteligencia de ubicación para última milla",
+      "subtitleEn": "Location intelligence for last mile",
+      "metric": "−10–20%",
+      "metricLabel": "tiempo en sitio",
+      "metricLabelEn": "time on site",
+      "slug": "driver-ai",
+      "device": "mobile",
+      "image": "data/images/driver-ai.png"
+    }
+  ],
+  "ctaLabels": {
+    "viewProject": "Ver proyecto",
+    "viewProjectEn": "View project"
+  }
+}

@@ -1,0 +1,666 @@
+{
+  "page": "load-validation",
+  "slug": "load-validation",
+  "title": "Validación de Carga Pre-Ruta",
+  "titleEn": "Pre-Route Load Validation",
+  "subtitle": "Logística · Móvil · Campo",
+  "subtitleEn": "Logistics · Mobile · Field",
+  "hero": {
+    "tagline": "VALIDACIÓN Y TRAZABILIDAD",
+    "taglineEn": "VALIDATION & TRACEABILITY",
+    "title": "Sistema de ",
+    "titleEn": "Pre-Route ",
+    "titleAccent": "Validación de Carga Pre-Ruta",
+    "titleAccentEn": "Load Validation System",
+    "subtitle": "De errores tardíos a validación temprana",
+    "subtitleEn": "From late errors to early validation",
+    "description": "Diseñé un sistema móvil de validación de carga que permite a los conductores y supervisores verificar el 100% de las cargas antes de salir de bodega, eliminando discrepancias en ruta y creando trazabilidad digital completa.",
+    "descriptionEn": "I designed a mobile load validation system that enables drivers and supervisors to verify 100% of loads before leaving the warehouse, eliminating in-route discrepancies and creating complete digital traceability."
+  },
+  "projectSpecs": [
+    {
+      "label": "Mi Rol",
+      "labelEn": "My Role",
+      "value": "Senior UX/UI Designer",
+      "valueEn": "Senior UX/UI Designer"
+    },
+    {
+      "label": "Contexto",
+      "labelEn": "Context",
+      "value": "Logística · Móvil · Campo",
+      "valueEn": "Logistics · Mobile · Field"
+    },
+    {
+      "label": "Duración",
+      "labelEn": "Duration",
+      "value": "5 semanas",
+      "valueEn": "5 weeks"
+    },
+    {
+      "label": "Equipo",
+      "labelEn": "Team",
+      "value": "Diseño + Desarrollo",
+      "valueEn": "Design + Engineering"
+    },
+    {
+      "label": "Año",
+      "labelEn": "Year",
+      "value": "2024",
+      "valueEn": "2024"
+    },
+    {
+      "label": "Entregables",
+      "labelEn": "Deliverables",
+      "value": "Móvil · iOS/Android",
+      "valueEn": "Mobile · iOS/Android"
+    }
+  ],
+  "heroImage": {
+    "placeholder": "Interfaz de validación de carga pre-ruta",
+    "placeholderEn": "Pre-route load validation interface",
+    "device": "mobile"
+  },
+  "whyItMatters": {
+    "title": "¿Por qué importa?",
+    "titleEn": "Why it matters",
+    "subtitle": "Antes de este sistema, validar una carga tomaba 40 minutos de papeleo manual. El 12% de las cargas salía con discrepancias detectadas solo en destino.",
+    "subtitleEn": "Before this system, validating a load took 40 minutes of manual paperwork. 12% of loads left with discrepancies detected only at destination.",
+    "items": [
+      {
+        "icon": "⏱️",
+        "label": "Tiempo de Validación",
+        "labelEn": "Validation Time",
+        "metric": "40 min → 6 min",
+        "description": "Reducción de tiempo promedio de validación por conductor por ruta",
+        "descriptionEn": "Average validation time reduction per driver per route"
+      },
+      {
+        "icon": "🎯",
+        "label": "Errores Detectados en Origen",
+        "labelEn": "Errors Caught at Source",
+        "metric": "91%",
+        "description": "De los errores se detectan antes de salir de bodega vs. el 23% anterior",
+        "descriptionEn": "Errors detected before leaving the warehouse vs. 23% previously"
+      },
+      {
+        "icon": "📋",
+        "label": "Cargas sin Docs Completos",
+        "labelEn": "Loads with Incomplete Docs",
+        "metric": "0.3%",
+        "description": "Tasa de cargas que salen sin documentación completa (antes: 8.7%)",
+        "descriptionEn": "Rate of loads leaving without complete documentation (previously: 8.7%)"
+      }
+    ]
+  },
+  "problemAndObjectives": {
+    "title": "Problema",
+    "titleEn": "Problem",
+    "subtitle": "El proceso de validación de carga era completamente manual. Listas en papel, firmas físicas y verificaciones visuales sin registro digital resultaban en un 12% de discrepancias detectadas tardíamente en destino.",
+    "subtitleEn": "The load validation process was entirely manual. Paper checklists, physical signatures, and visual checks with no digital record resulted in 12% of discrepancies detected late at destination.",
+    "products": [
+      {
+        "name": "Proceso Actual",
+        "nameEn": "Current Process",
+        "cons": [
+          "34% de errores de carga se detectan después de salir de bodega",
+          "Sin registro digital de validación o responsables",
+          "8.7% de cargas con documentación incompleta al llegar a destino"
+        ],
+        "consEn": [
+          "34% of load errors detected after leaving the warehouse",
+          "No digital record of validation or accountability",
+          "8.7% of loads arrive at destination with incomplete documentation"
+        ]
+      }
+    ],
+    "objectives": [
+      {
+        "number": "01",
+        "description": "Validar el 100% de las cargas antes de salir de bodega con confirmación digital",
+        "descriptionEn": "Validate 100% of loads before leaving the warehouse with digital confirmation",
+        "title": "Validación completa",
+        "titleEn": "Full validation"
+      },
+      {
+        "number": "02",
+        "description": "Reducir las discrepancias detectadas en ruta en al menos un 80%",
+        "descriptionEn": "Reduce in-route discrepancies by at least 80%",
+        "title": "Reducir discrepancias",
+        "titleEn": "Reduce discrepancies"
+      },
+      {
+        "number": "03",
+        "description": "Crear un registro digital inmutable de cada validación con firma y evidencia fotográfica",
+        "descriptionEn": "Create an immutable digital record of each validation with signature and photographic evidence",
+        "title": "Trazabilidad digital",
+        "titleEn": "Digital traceability"
+      }
+    ]
+  },
+  "uxResearch": {
+    "title": "Metodología UX",
+    "titleEn": "UX Design Process",
+    "subtitle": "Metodologías aplicadas para entender el flujo real de validación en bodega y campo",
+    "subtitleEn": "Applied methodologies to understand the real validation flow in warehouse and field settings",
+    "methodCards": [
+      {
+        "name": "Task Analysis",
+        "nameEn": "Task Analysis",
+        "description": "Descompusimos el flujo completo de validación pre-ruta en subtareas con sus condiciones de éxito, puntos de decisión y carga cognitiva. Identificamos 7 momentos críticos donde podía ocurrir un error — 5 de ellos en los primeros 3 pasos del flujo.",
+        "descriptionEn": "We decomposed the complete pre-route validation flow into subtasks with their success conditions, decision points and cognitive load. We identified 7 critical moments where an error could occur — 5 of them in the first 3 steps of the flow.",
+        "finding": "El conductor hacía la comparación manifiesto–carga en su cabeza. No existía ningún soporte cognitivo externo para esa tarea.",
+        "findingEn": "The driver was making the manifest–load comparison in their head. No external cognitive support existed for that task."
+      },
+      {
+        "name": "Tree Testing",
+        "nameEn": "Tree Testing",
+        "description": "Testeamos 3 versiones de la estructura de navegación con n=8 conductores en 3 rondas. El foco: encontrar un ítem específico, reportar una discrepancia y llegar a la firma digital. En la v1, \"reportar discrepancia\" solo se encontraba a la primera en el 43% de los casos.",
+        "descriptionEn": "We tested 3 versions of the navigation structure with n=8 drivers across 3 rounds. The focus: find a specific item, report a discrepancy and reach the digital signature. In v1, \"report discrepancy\" was found on the first try in only 43% of cases.",
+        "finding": "Los conductores buscaban \"problema\" o \"faltante\", no \"discrepancia\" — el vocabulario del sistema no coincidía con el del usuario.",
+        "findingEn": "Drivers searched for \"problem\" or \"missing\", not \"discrepancy\" — the system vocabulary didn't match the user's vocabulary."
+      },
+      {
+        "name": "Field Research",
+        "nameEn": "Field Research",
+        "description": "3 días de observación en 2 centros de distribución: 28 salidas observadas, 14 entrevistas a conductores y supervisores. El contexto reveló restricciones críticas: luz solar directa sobre pantallas, guantes puestos, presión de tiempo y camiones con motores encendidos.",
+        "descriptionEn": "3 days of observation in 2 distribution centers: 28 departures observed, 14 interviews with drivers and supervisors. The context revealed critical constraints: direct sunlight on screens, gloves on, time pressure and trucks with engines running.",
+        "finding": "El 78% de los conductores sostenía el teléfono con una mano mientras verificaba con la otra — la UI tenía que funcionar con thumb zone y guantes.",
+        "findingEn": "78% of drivers held the phone with one hand while verifying with the other — the UI had to work within the thumb zone and with gloves."
+      }
+    ],
+    "quotes": [
+      {
+        "text": "A veces firmamos el papel sin revisar todo. Si no salimos a tiempo, nos descuentan.",
+        "textEn": "Sometimes we sign the paper without checking everything. If we don't leave on time, they dock our pay.",
+        "author": "Conductor, 6 años de experiencia",
+        "authorEn": "Driver, 6 years of experience",
+        "context": "Entrevista de campo"
+      }
+    ],
+    "stats": [
+      {
+        "value": "12%",
+        "description": "Cargas con discrepancias en destino",
+        "descriptionEn": "Loads with discrepancies at destination"
+      },
+      {
+        "value": "40 min",
+        "description": "Tiempo promedio de validación manual",
+        "descriptionEn": "Average manual validation time"
+      },
+      {
+        "value": "8.7%",
+        "description": "Cargas con documentación incompleta",
+        "descriptionEn": "Loads with incomplete documentation"
+      }
+    ]
+  },
+  "personas": {
+    "title": "User Personas",
+    "titleEn": "User Personas",
+    "subtitle": "Dos perfiles con necesidades opuestas pero igualmente críticas",
+    "subtitleEn": "Two profiles with opposing but equally critical needs",
+    "items": [
+      {
+        "id": "miguel-soto",
+        "name": "Miguel Soto",
+        "role": "Supervisor de Andén",
+        "roleEn": "Dock Supervisor",
+        "avatar": "https://i.pravatar.cc/150?img=11",
+        "goals": [
+          "Validar cargas rápido para no retrasar la flota",
+          "Tener evidencia ante reclamos de clientes",
+          "Reducir el trabajo administrativo post-ruta"
+        ],
+        "goalsEn": [
+          "Validate loads quickly to avoid fleet delays",
+          "Have evidence in case of client complaints",
+          "Reduce post-route administrative work"
+        ],
+        "painPoints": [
+          "Las listas en papel se pierden o se mojan",
+          "No puede verificar quién firmó qué desde oficina",
+          "Los errores se reportan 3 días después del evento"
+        ],
+        "painPointsEn": [
+          "Paper checklists get lost or wet",
+          "Can't verify who signed what from the office",
+          "Errors are reported 3 days after the event"
+        ],
+        "behaviors": [
+          "Trabaja con guantes en entorno de bodega",
+          "Maneja 15-20 rutas simultáneas por turno",
+          "Prefiere confirmación rápida sobre detalle"
+        ],
+        "behaviorsEn": [
+          "Works with gloves in warehouse environment",
+          "Manages 15-20 simultaneous routes per shift",
+          "Prefers fast confirmation over detail"
+        ],
+        "quote": "Necesito algo que no se pueda ignorar cuando hay un error. El papel se puede perder, pero una foto no.",
+        "quoteEn": "I need something that can't be ignored when there's an error. Paper can get lost, but a photo can't.",
+        "quoteLabel": "Cita de investigación",
+        "quoteLabelEn": "Research quote"
+      },
+      {
+        "id": "elena-vargas",
+        "name": "Elena Vargas",
+        "role": "Compliance Officer",
+        "roleEn": "Compliance Officer",
+        "avatar": "https://i.pravatar.cc/150?img=47",
+        "goals": [
+          "Tener trazabilidad completa de cada carga",
+          "Generar reportes de auditoría sin esfuerzo manual",
+          "Demostrar cumplimiento ante reguladores"
+        ],
+        "goalsEn": [
+          "Have complete traceability for each load",
+          "Generate audit reports without manual effort",
+          "Demonstrate compliance to regulators"
+        ],
+        "painPoints": [
+          "Los registros en papel no son auditables digitalmente",
+          "Debe reconstruir incidentes manualmente desde correos",
+          "No existe timestamp confiable de las validaciones"
+        ],
+        "painPointsEn": [
+          "Paper records are not digitally auditable",
+          "Must manually reconstruct incidents from emails",
+          "No reliable timestamp for validations exists"
+        ],
+        "behaviors": [
+          "Trabaja desde oficina central, no en campo",
+          "Maneja múltiples regulaciones simultáneas",
+          "Prioriza la precisión sobre la velocidad"
+        ],
+        "behaviorsEn": [
+          "Works from central office, not in the field",
+          "Manages multiple simultaneous regulations",
+          "Prioritizes accuracy over speed"
+        ],
+        "quote": "Necesito un rastro de papel que no requiera papel.",
+        "quoteEn": "I need a paper trail that doesn't require paper.",
+        "quoteLabel": "Cita de investigación",
+        "quoteLabelEn": "Research quote"
+      }
+    ]
+  },
+  "taskAnalysis": {
+    "title": "Task Analysis",
+    "titleEn": "Task Analysis",
+    "subtitle": "Descomposición del flujo de validación en subtareas, decisiones y carga cognitiva",
+    "subtitleEn": "Decomposition of the validation flow into subtasks, decisions and cognitive load",
+    "headerNumber": "#",
+    "headerSubtask": "SUBTAREA",
+    "headerSubtaskEn": "SUBTASK",
+    "headerLoad": "CARGA COGNITIVA",
+    "headerLoadEn": "COGNITIVE LOAD",
+    "headerFriction": "FRICCIÓN IDENTIFICADA",
+    "headerFrictionEn": "FRICTION IDENTIFIED",
+    "tasks": [
+      {
+        "number": "01",
+        "subtask": "Recuperar manifiesto de carga",
+        "subtaskEn": "Retrieve load manifest",
+        "load": "Alta",
+        "loadEn": "High",
+        "loadLevel": "high",
+        "friction": "Impreso en papel o en PDF del correo — no integrado al flujo",
+        "frictionEn": "Printed on paper or PDF from email — not integrated into the flow"
+      },
+      {
+        "number": "02",
+        "subtask": "Identificar ítems esperados por orden",
+        "subtaskEn": "Identify expected items by order",
+        "load": "Alta",
+        "loadEn": "High",
+        "loadLevel": "high",
+        "friction": "El conductor memorizaba o anotaba a mano la lista de ítems",
+        "frictionEn": "The driver memorized or manually wrote down the item list"
+      },
+      {
+        "number": "03",
+        "subtask": "Comparar físico vs manifiesto",
+        "subtaskEn": "Compare physical vs manifest",
+        "load": "Muy alta",
+        "loadEn": "Very high",
+        "loadLevel": "very-high",
+        "friction": "Comparación mental sin soporte — fuente principal de errores",
+        "frictionEn": "Mental comparison without support — primary source of errors"
+      },
+      {
+        "number": "04",
+        "subtask": "Detectar y registrar discrepancia",
+        "subtaskEn": "Detect and record discrepancy",
+        "load": "Media",
+        "loadEn": "Medium",
+        "loadLevel": "medium",
+        "friction": "Sin flujo claro: algunos llamaban al supervisor, otros simplemente salían",
+        "frictionEn": "No clear flow: some called the supervisor, others simply left"
+      },
+      {
+        "number": "05",
+        "subtask": "Escalar o aprobar la excepción",
+        "subtaskEn": "Escalate or approve the exception",
+        "load": "Media",
+        "loadEn": "Medium",
+        "loadLevel": "medium",
+        "friction": "Sin canal definido: WhatsApp, llamada o presencia física del supervisor",
+        "frictionEn": "No defined channel: WhatsApp, call or physical presence of supervisor"
+      },
+      {
+        "number": "06",
+        "subtask": "Firmar el checklist de salida",
+        "subtaskEn": "Sign the departure checklist",
+        "load": "Baja",
+        "loadEn": "Low",
+        "loadLevel": "low",
+        "friction": "En papel: se perdía, era ilegible o se omitía en días de alta presión",
+        "frictionEn": "On paper: it got lost, was illegible or was skipped on high-pressure days"
+      },
+      {
+        "number": "07",
+        "subtask": "Archivar documentación de carga",
+        "subtaskEn": "Archive load documentation",
+        "load": "Baja",
+        "loadEn": "Low",
+        "loadLevel": "low",
+        "friction": "Carpetas físicas, escaneos inconsistentes, sin indexación útil",
+        "frictionEn": "Physical folders, inconsistent scans, no useful indexing"
+      }
+    ],
+    "distribution": {
+      "title": "Distribución de tiempo en el flujo original",
+      "titleEn": "Time distribution in the original flow",
+      "bars": [
+        {
+          "label": "Recuperar y leer el manifiesto",
+          "labelEn": "Retrieve and read the manifest",
+          "value": 35,
+          "color": "red"
+        },
+        {
+          "label": "Comparar físico vs lista (mentalmente)",
+          "labelEn": "Compare physical vs list (mentally)",
+          "value": 30,
+          "color": "amber"
+        },
+        {
+          "label": "Registrar y escalar discrepancias",
+          "labelEn": "Record and escalate discrepancies",
+          "value": 20,
+          "color": "amber"
+        },
+        {
+          "label": "Firma y cierre del proceso",
+          "labelEn": "Signature and process closure",
+          "value": 15,
+          "color": "green"
+        }
+      ],
+      "note": "% del tiempo total de validación (promedio 40 min pre-implementación)",
+      "noteEn": "% of total validation time (average 40 min pre-implementation)",
+      "insightLabel": "INSIGHT CLAVE",
+      "insightLabelEn": "KEY INSIGHT",
+      "insight": "El 65% del tiempo de validación ocurría en las tareas 1–3 — y las 3 eran completamente eliminables con un sistema que conecte el TMS al checklist digital y escaneo de código de barras.",
+      "insightEn": "65% of validation time occurred in tasks 1–3 — and all 3 were completely eliminable with a system connecting the TMS to the digital checklist and barcode scanning."
+    }
+  },
+  "treeTesting": {
+    "title": "Tree Testing",
+    "titleEn": "Tree Testing",
+    "subtitle": "Validación de estructura de navegación con conductores reales — 3 rondas, n=8",
+    "subtitleEn": "Navigation structure validation with real drivers — 3 rounds, n=8",
+    "barNote": "% éxito en primer intento",
+    "barNoteEn": "% first-try success",
+    "learningLabel": "APRENDIZAJE",
+    "learningLabelEn": "LEARNING",
+    "tasks": [
+      {
+        "task": "Encontrar ítem específico en la lista",
+        "taskEn": "Find a specific item in the list",
+        "bars": [
+          {
+            "version": "V1",
+            "value": 61,
+            "color": "red"
+          },
+          {
+            "version": "V2",
+            "value": 78,
+            "color": "amber"
+          },
+          {
+            "version": "V3",
+            "value": 94,
+            "color": "green"
+          }
+        ],
+        "learning": "Los conductores buscaban por nombre del cliente, no por número de orden — reorganamos la jerarquía",
+        "learningEn": "Drivers searched by client name, not order number — we reorganized the hierarchy"
+      },
+      {
+        "task": "Reportar un ítem faltante o dañado",
+        "taskEn": "Report a missing or damaged item",
+        "bars": [
+          {
+            "version": "V1",
+            "value": 43,
+            "color": "red"
+          },
+          {
+            "version": "V2",
+            "value": 71,
+            "color": "amber"
+          },
+          {
+            "version": "V3",
+            "value": 89,
+            "color": "green"
+          }
+        ],
+        "learning": "\"Discrepancia\" era lenguaje del sistema — los conductores buscaban \"problema\", \"faltante\" o \"dañado\"",
+        "learningEn": "\"Discrepancy\" was system language — drivers searched for \"problem\", \"missing\" or \"damaged\""
+      },
+      {
+        "task": "Llegar a la firma digital de salida",
+        "taskEn": "Reach the digital departure signature",
+        "bars": [
+          {
+            "version": "V1",
+            "value": 52,
+            "color": "red"
+          },
+          {
+            "version": "V2",
+            "value": 83,
+            "color": "amber"
+          },
+          {
+            "version": "V3",
+            "value": 96,
+            "color": "green"
+          }
+        ],
+        "learning": "La firma estaba enterrada en un submenú de \"Finalizar\" — pasó al CTA principal de la última pantalla",
+        "learningEn": "The signature was buried in a \"Finalize\" submenu — it moved to the main CTA on the last screen"
+      }
+    ],
+    "decision": {
+      "label": "DECISIÓN ARQUITECTÓNICA DERIVADA DEL TREE TESTING",
+      "labelEn": "ARCHITECTURAL DECISION DERIVED FROM TREE TESTING",
+      "text": "Las 3 rondas revelaron un patrón consistente: los conductores navegaban por cliente y destino, nunca por número de orden. La arquitectura final organiza la lista de validación por cliente → pedido → ítem, en lugar de la jerarquía original orden → cliente → ítem. Este cambio elevó el first-try success promedio de 52% a 93%.",
+      "textEn": "The 3 rounds revealed a consistent pattern: drivers navigated by client and destination, never by order number. The final architecture organizes the validation list by client → order → item, instead of the original order → client → item hierarchy. This change raised the average first-try success from 52% to 93%."
+    }
+  },
+  "solution": {
+    "title": "Solución",
+    "titleEn": "Solution",
+    "subtitle": "Una app móvil de validación en 4 pasos: lista de órdenes, escaneo, evidencia y firma. Diseñada para entornos de campo con guantes y presión de tiempo.",
+    "subtitleEn": "A 4-step mobile validation app: order list, scanning, evidence, and signature. Designed for field environments with gloves and time pressure.",
+    "components": [
+      {
+        "number": "01",
+        "title": "Lista de Órdenes",
+        "titleEn": "Order List",
+        "description": "Vista priorizada de cargas pendientes con estado visual claro. Acceso con un toque al flujo de validación.",
+        "descriptionEn": "Prioritized view of pending loads with clear visual status. One-tap access to the validation flow."
+      },
+      {
+        "number": "02",
+        "title": "Escaneo de Código de Barras",
+        "titleEn": "Barcode Scanning",
+        "description": "Validación instantánea ítem por ítem. Feedback auditivo y visual para uso con guantes y sin mirar la pantalla.",
+        "descriptionEn": "Instant item-by-item validation. Auditory and visual feedback for gloved use and eyes-free operation."
+      },
+      {
+        "number": "03",
+        "title": "Input Manual Alternativo",
+        "titleEn": "Manual Input Alternative",
+        "description": "Entrada manual de códigos cuando el escáner no puede leer el barcode. Flujo simplificado para no interrumpir el ritmo.",
+        "descriptionEn": "Manual code entry when the scanner can't read the barcode. Simplified flow to avoid interrupting the rhythm."
+      },
+      {
+        "number": "04",
+        "title": "Firma Digital + Evidencia",
+        "titleEn": "Digital Signature + Evidence",
+        "description": "Captura de firma táctil y foto de la carga como evidencia. Timestamp automático e inmutable para auditoría.",
+        "descriptionEn": "Tactile signature capture and load photo as evidence. Automatic immutable timestamp for audit."
+      }
+    ],
+    "principlesTitle": "Principios de Diseño",
+    "principlesTitleEn": "Design Principles",
+    "principles": [
+      {
+        "number": "01",
+        "title": "Cero comparación mental",
+        "titleEn": "Zero mental comparison",
+        "description": "El checklist se auto-puebla desde el TMS. El conductor compara físico vs. pantalla, no físico vs. memoria. La app hace el trabajo cognitivo pesado.",
+        "descriptionEn": "The checklist is auto-populated from the TMS. The driver compares physical vs. screen, not physical vs. memory. The app does the heavy cognitive work."
+      },
+      {
+        "number": "02",
+        "title": "Diseño para una mano, con guante",
+        "titleEn": "Design for one hand, with glove",
+        "description": "Targets mínimos de 56px, acciones confirmadas con feedback auditivo, thumb zone respetada. El sistema funciona en las condiciones reales del campo, no en las del laboratorio.",
+        "descriptionEn": "Minimum 56px targets, actions confirmed with audio feedback, thumb zone respected. The system works in real field conditions, not in lab conditions."
+      },
+      {
+        "number": "03",
+        "title": "Evidencia inmutable antes de salir",
+        "titleEn": "Immutable evidence before departure",
+        "description": "Foto + firma + timestamp automático son el contrato digital entre conductor, supervisor y cliente. El flujo no permite saltar estos pasos — son la trazabilidad del sistema.",
+        "descriptionEn": "Photo + signature + automatic timestamp are the digital contract between driver, supervisor and client. The flow cannot skip these steps — they are the system's traceability."
+      }
+    ]
+  },
+  "designs": {
+    "title": "UI Mockups",
+    "titleEn": "UI Mockups",
+    "items": [
+      {
+        "title": "Vista de Lista",
+        "titleEn": "List View",
+        "description": "Dashboard de órdenes pendientes con priorización automática y estado visual por colores",
+        "descriptionEn": "Pending orders dashboard with automatic prioritization and color-coded visual status",
+        "src": null,
+        "alt": "Vista de lista de órdenes de carga",
+        "altEn": "Load order list view"
+      },
+      {
+        "title": "Escaneo de Código",
+        "titleEn": "Code Scanning",
+        "description": "Interfaz de escaneo optimizada para uso con guantes: targets grandes, feedback auditivo, sin menús",
+        "descriptionEn": "Scanning interface optimized for gloved use: large targets, auditory feedback, no menus",
+        "src": null,
+        "alt": "Interfaz de escaneo de código de barras",
+        "altEn": "Barcode scanning interface"
+      },
+      {
+        "title": "Firma Digital y Evidencia",
+        "titleEn": "Digital Signature & Evidence",
+        "description": "Captura de firma y foto de confirmación con timestamp inmutable para trazabilidad completa",
+        "descriptionEn": "Signature and confirmation photo capture with immutable timestamp for complete traceability",
+        "src": null,
+        "alt": "Pantalla de firma digital y evidencia fotográfica",
+        "altEn": "Digital signature and photographic evidence screen"
+      }
+    ],
+    "device": "mobile"
+  },
+  "results": {
+    "title": "Resultados",
+    "titleEn": "Results",
+    "subtitle": "Métricas medidas 60 días post-lanzamiento en flota piloto de 40 conductores",
+    "subtitleEn": "Metrics measured 60 days post-launch in a pilot fleet of 40 drivers",
+    "impactTitle": "Impacto Medido",
+    "impactTitleEn": "Measured Impact",
+    "impact": [
+      {
+        "icon": "📦",
+        "metric": "-45%",
+        "label": "Discrepancias en Destino",
+        "labelEn": "Destination Discrepancies",
+        "description": "Reducción de cargas con errores detectados en el punto de entrega",
+        "descriptionEn": "Reduction in loads with errors detected at delivery point"
+      },
+      {
+        "icon": "🎫",
+        "metric": "-32%",
+        "label": "Reclamos de Clientes",
+        "labelEn": "Customer Claims",
+        "description": "Caída en reclamos formales relacionados con contenido o documentación de carga",
+        "descriptionEn": "Drop in formal complaints related to load content or documentation"
+      },
+      {
+        "icon": "✅",
+        "metric": "+60%",
+        "label": "Cargas 100% Validadas",
+        "labelEn": "100% Validated Loads",
+        "description": "Aumento en rutas completadas con validación digital completa antes de salida",
+        "descriptionEn": "Increase in routes completed with full digital validation before departure"
+      }
+    ],
+    "learningsTitle": "Aprendizajes Clave",
+    "learningsTitleEn": "Key Learnings",
+    "nextStepsTitle": "Próxima Iteración",
+    "nextStepsTitleEn": "Next Iteration",
+    "learnings": [
+      {
+        "title": "La foto de evidencia superó las expectativas de compliance",
+        "titleEn": "Evidence photo exceeded compliance expectations",
+        "description": "Diseñado como fallback para cuando el escáner falla, el módulo fotográfico se convirtió en el diferenciador más valorado para auditorías y resolución de disputas con clientes.",
+        "descriptionEn": "Designed as a fallback when the scanner fails, the photo module became the most valued differentiator for audits and client dispute resolution."
+      },
+      {
+        "title": "La firma táctil generó más fricción de la esperada en campo",
+        "titleEn": "Tactile signature created more friction than expected in the field",
+        "description": "Con guantes de bodega, la firma táctil producía re-intentos y ralentizaba el flujo. Se iteró a un PIN de confirmación como alternativa, reduciendo el tiempo del paso de 45 s a 8 s.",
+        "descriptionEn": "With warehouse gloves, the tactile signature produced retries and slowed the flow. Iterated to a confirmation PIN as an alternative, reducing the step time from 45 s to 8 s."
+      }
+    ],
+    "nextSteps": [
+      {
+        "title": "Dashboard de supervisor en tiempo real",
+        "titleEn": "Real-time supervisor dashboard",
+        "description": "Vista centralizada del estado de validación de toda la flota por turno. Hoy el supervisor consulta cada ruta individualmente — el dashboard eliminaría esa carga operacional.",
+        "descriptionEn": "Centralized view of validation status for the entire fleet by shift. Today supervisors check each route individually — the dashboard would eliminate that operational overhead."
+      },
+      {
+        "title": "Integración con ERP para pre-llenado de datos",
+        "titleEn": "ERP integration for data pre-filling",
+        "description": "Conectar directamente con el WMS eliminaría la entrada manual del número de orden. Estimado de ahorro: 30 s por validación × 40 conductores × 5 rutas diarias.",
+        "descriptionEn": "Connecting directly to the WMS would eliminate manual order number entry. Estimated saving: 30 s per validation × 40 drivers × 5 daily routes."
+      }
+    ]
+  },
+  "cta": {
+    "question": "¿Listo para ver cómo diseñé reportes que no bloquean la interfaz?",
+    "questionEn": "Ready to see how I designed reports that don't block the interface?",
+    "description": "El siguiente proyecto: Sistema de Reportes Asincrónicos.",
+    "descriptionEn": "Next project: Asynchronous Reporting System.",
+    "buttonLabel": "Ver siguiente proyecto",
+    "buttonLabelEn": "See next project",
+    "buttonHref": "#/async-reports"
+  }
+}

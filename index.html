@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Lavandero — AI Product Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Sticky -->
+    <header id="header" class="header-sticky">
+        <div class="header-container">
+            <div class="brand">Diego Lavandero</div>
+            <nav class="nav-main">
+                <a href="#/" class="nav-link" data-page="home" data-es="Proyectos" data-en="Projects">Proyectos</a>
+                <a href="#/about" class="nav-link" data-page="about" data-es="Sobre mí" data-en="About">Sobre mí</a>
+            </nav>
+            <div class="lang-toggle" id="lang-toggle" role="group" aria-label="Language">
+                <button class="lang-option active" data-lang="es" type="button">ES</button>
+                <button class="lang-option" data-lang="en" type="button">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor principal para renderizado dinámico -->
+    <main id="app" class="app-container"></main>
+
+    <!-- Scripts -->
+    <script src="js/interactions.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/render.js"></script>
+    <script>
+        // Inicializar app
+        document.addEventListener('DOMContentLoaded', () => {
+            Router.init();
+        });
+    </script>
+</body>
+</html>

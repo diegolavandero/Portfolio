@@ -1,0 +1,135 @@
+{
+  "page": "about",
+  "title": "Sobre mí",
+  "titleEn": "About me",
+  "intro": [
+    "Senior AI Product Designer con más de 10 años de experiencia diseñando plataformas impulsadas por IA. Experto en UX research, diseño data-driven y optimización de workflows complejos.",
+    "Especializado en sistemas human-in-the-loop y en traducir outputs algorítmicos en experiencias de usuario accionables."
+  ],
+  "introEn": [
+    "Senior AI Product Designer with 10+ years of experience designing AI-powered platforms. Expert in UX research, data-driven design and complex workflow optimization.",
+    "Specialized in human-in-the-loop systems and in translating algorithmic outputs into actionable user experiences."
+  ],
+  "achievementsTitle": "Logros Clave",
+  "achievementsTitleEn": "Key Achievements",
+  "achievements": [
+    {
+      "es": "Lideré la creación de Design Systems para Bestrack y DispatchTrack, habilitando productos escalables y consistentes",
+      "en": "Led the creation of Design Systems for Bestrack and DispatchTrack, enabling scalable and consistent products"
+    },
+    {
+      "es": "Rediseñé la aplicación móvil basándome en analítica cuantitativa, investigación cualitativa y entrevistas con gerentes de logística, mejorando usabilidad y eficiencia operacional",
+      "en": "Redesigned the mobile app based on quantitative analytics, qualitative research and interviews with logistics managers, improving usability and operational efficiency"
+    },
+    {
+      "es": "Rediseñé el módulo de planificación de rutas desktop, incrementando flexibilidad para editar y optimizar rutas después de la optimización algorítmica automatizada",
+      "en": "Redesigned the desktop route planning module, increasing flexibility to edit and optimize routes after automated algorithmic optimization"
+    }
+  ],
+  "competenciesTitle": "Competencias Core",
+  "competenciesTitleEn": "Core Competencies",
+  "competencies": [
+    { "es": "Diseño de Productos IA", "en": "AI Product Design" },
+    { "es": "Investigación UX", "en": "UX Research" },
+    { "es": "Sistemas Human-in-the-loop", "en": "Human-in-the-loop Systems" },
+    { "es": "Sistemas de Diseño", "en": "Design Systems" },
+    { "es": "Diseño de Interacción", "en": "Interaction Design" },
+    { "es": "Análisis de Datos", "en": "Data Analysis" },
+    { "es": "Testing de Usabilidad", "en": "Usability Testing" },
+    { "es": "Figma", "en": "Figma" }
+  ],
+  "experienceTitle": "Experiencia",
+  "experienceTitleEn": "Experience",
+  "experience": [
+    {
+      "company": "DispatchTrack",
+      "role": "Diseñador de Producto Senior",
+      "roleEn": "Senior Product Designer",
+      "period": "2019 — Presente",
+      "periodEn": "2019 — Present",
+      "description": "Lidero UX para plataformas Last Mile y PlannerPro, enfocándome en routing asistido por IA, workflows de conductores y eficiencia operacional.",
+      "descriptionEn": "Leading UX for Last Mile and PlannerPro platforms, focusing on AI-assisted routing, driver workflows and operational efficiency."
+    },
+    {
+      "company": "Bestrack / Anastasia AI",
+      "role": "Diseñador UX",
+      "roleEn": "UX Designer",
+      "period": "2016 — 2019",
+      "periodEn": "2016 — 2019",
+      "description": "Diseñé herramientas logísticas impulsadas por IA, dashboards y visualizaciones de datos operacionales y comportamentales.",
+      "descriptionEn": "Designed AI-powered logistics tools, dashboards and operational and behavioral data visualizations."
+    },
+    {
+      "company": "DIRECTV",
+      "role": "Diseñador UX/UI",
+      "roleEn": "UX/UI Designer",
+      "period": "2016 — 2018",
+      "periodEn": "2016 — 2018",
+      "description": "Usabilidad web",
+      "descriptionEn": "Web usability"
+    },
+    {
+      "company": "Adhoc Soluciones LTDA",
+      "role": "Diseñador UX",
+      "roleEn": "UX Designer",
+      "period": "2013 — 2015",
+      "periodEn": "2013 — 2015",
+      "description": "Diseño web / front-end. Packaging y diseño de etiquetas. POP y marketing digital.",
+      "descriptionEn": "Web / front-end design. Packaging and label design. POP and digital marketing."
+    }
+  ],
+  "softwareTitle": "Software",
+  "softwareTitleEn": "Software",
+  "software": [
+    "Figma",
+    "Adobe Photoshop",
+    "Illustrator",
+    "InDesign",
+    "Premiere",
+    "Dreamweaver",
+    "FreeHand",
+    "Flash",
+    "AE",
+    "Sketch",
+    "InVision",
+    "Wordpress",
+    "Office"
+  ],
+  "educationTitle": "Educación",
+  "educationTitleEn": "Education",
+  "education": [
+    {
+      "institution": "Pontificia Universidad Católica de Chile",
+      "degree": "Diploma en diseño web · Título universitario en diseño gráfico y web",
+      "degreeEn": "Diploma in web design · Bachelor's degree in graphic and web design",
+      "period": "2004 — 2009"
+    },
+    {
+      "institution": "MAC Academy",
+      "degree": "Diploma en diseño web · HTML y CSS coding",
+      "degreeEn": "Diploma in web design · HTML and CSS coding",
+      "period": "2009"
+    },
+    {
+      "institution": "Universidad Diego Portales",
+      "degree": "Licenciatura en derecho",
+      "degreeEn": "Bachelor's degree in law",
+      "period": "2002 — 2003"
+    }
+  ],
+  "languagesTitle": "Idiomas",
+  "languagesTitleEn": "Languages",
+  "languages": [
+    { "name": "Español", "nameEn": "Spanish", "level": "Nativo", "levelEn": "Native" },
+    { "name": "Inglés", "nameEn": "English", "level": "Competente", "levelEn": "Professional" }
+  ],
+  "contactTitle": "Contacto",
+  "contactTitleEn": "Contact",
+  "contact": {
+    "location": "Santiago, Chile",
+    "email": "dlavand@gmail.com",
+    "behance": "behance.net/dlavand0ce0",
+    "behanceUrl": "https://behance.net/dlavand0ce0",
+    "phone": "+56 9 5679 3200"
+  }
+}
