@@ -586,68 +586,76 @@
         "badge": "Paso 1",
         "badgeEn": "Step 1",
         "badgeStyle": "indigo",
-        "title": "Ruteo Automático: Generación Automática",
-        "titleEn": "Automatic Routing: Automatic Generation",
-        "description": "Los usuarios configuran parámetros y generan rutas automáticamente con visibilidad inmediata en mapa",
-        "descriptionEn": "Users configure parameters and generate routes automatically with immediate map visibility",
-        "placeholder": "Mockup: Pantalla de generación automática",
-        "placeholderEn": "Mockup: Automatic generation screen",
-        "src": "data/images/unified-routing-mockup-1.webp"
+        "title": "Wizard de planificación",
+        "titleEn": "Planning Wizard",
+        "description": "Tienes 3 pasos para generar tu planificación, seleccionando órdenes, vehículos y parámetros.",
+        "descriptionEn": "You have 3 steps to generate your planning, selecting orders, vehicles and parameters.",
+        "srcs": [
+          "data/images/unified-routing-mockup-1.webp"
+        ]
       },
       {
         "badge": "Paso 2",
         "badgeEn": "Step 2",
         "badgeStyle": "indigo",
-        "title": "Arrastrar y Soltar: Edición Visual",
-        "titleEn": "Drag and Drop: Visual Editing",
-        "description": "Reasignación de pedidos arrastrando y soltando directamente sobre el mapa",
-        "descriptionEn": "Order reassignment by dragging and dropping directly on the map",
-        "placeholder": "Mockup: Edición drag & drop sobre mapa",
-        "placeholderEn": "Mockup: Drag & drop editing on map"
+        "title": "Drag & Drop",
+        "titleEn": "Drag & Drop",
+        "description": "Reasignación de órdenes arrastrando y soltando pins desde el mapa o cards de órdenes sin asignar o de una ruta a otra ruta.",
+        "descriptionEn": "Order reassignment by dragging and dropping pins from the map or unassigned order cards from one route to another.",
+        "srcs": [
+          "data/images/unified-routing-mockup-2.webp"
+        ]
       },
       {
         "badge": "Paso 3",
         "badgeEn": "Step 3",
         "badgeStyle": "indigo",
-        "title": "Asignar Pedidos: Control Granular",
-        "titleEn": "Assign Orders: Granular Control",
-        "description": "Asignación manual avanzada con vista de tabla y mapa sincronizada",
-        "descriptionEn": "Advanced manual assignment with synchronized table and map view",
-        "placeholder": "Mockup: Asignación granular tabla + mapa",
-        "placeholderEn": "Mockup: Granular assignment table + map"
+        "title": "Asignación por lazo",
+        "titleEn": "Lasso Assignment",
+        "description": "Puedes modificar los resultados manualmente en el mapa seleccionando órdenes con el lazo y luego asignarlas o reasignarlas con el modal de asignación.",
+        "descriptionEn": "You can manually modify results on the map by selecting orders with the lasso and then assigning or reassigning them with the assignment modal.",
+        "srcs": [
+          "data/images/unified-routing-mockup-3.webp",
+          "data/images/unified-routing-mockup-4.webp"
+        ]
       },
       {
         "badge": "Paso 4",
         "badgeEn": "Step 4",
         "badgeStyle": "indigo",
-        "title": "Validación de Datos",
-        "titleEn": "Data Validation",
-        "description": "Vista de tabla para revisión detallada de rutas y validación de datos",
-        "descriptionEn": "Table view for detailed route review and data validation",
-        "placeholder": "Mockup: Tabla de validación de datos",
-        "placeholderEn": "Mockup: Data validation table"
+        "title": "Cambiar visualización de planificador",
+        "titleEn": "Switch Planner View",
+        "description": "Puedes ver la planificación de forma visual como mapa o, para quienes se manejan principalmente con data, visualizarlo como tablas drag & drop que tienen las mismas propiedades que las cards.",
+        "descriptionEn": "You can view the planning visually as a map or, for data-driven users, as drag & drop tables with the same properties as the cards.",
+        "srcs": [
+          "data/images/unified-routing-mockup-5.webp",
+          "data/images/unified-routing-mockup-6.webp"
+        ]
       },
       {
         "badge": "Paso 5",
         "badgeEn": "Step 5",
         "badgeStyle": "indigo",
-        "title": "Confirmar Rutas: Cierre del Flujo",
-        "titleEn": "Confirm Routes: Flow Closing",
-        "description": "Confirmación final con visibilidad de todas las rutas y alertas",
-        "descriptionEn": "Final confirmation with visibility of all routes and alerts",
-        "placeholder": "Mockup: Confirmación final",
-        "placeholderEn": "Mockup: Final confirmation"
+        "title": "Confirmar rutas",
+        "titleEn": "Confirm Routes",
+        "description": "Puedes confirmar rutas generando una notificación push a los conductores que reciben la ruta en su app móvil para aceptarla. Pueden confirmarse de manera individual, no solo grupal, por lo que no hay que esperar a que todas las rutas estén listas.",
+        "descriptionEn": "You can confirm routes, sending a push notification to drivers who receive the route in their mobile app to accept it. Routes can be confirmed individually, not just as a group, so there's no need to wait for all routes to be ready.",
+        "srcs": [
+          "data/images/unified-routing-mockup-7.webp",
+          "data/images/unified-routing-mockup-8.webp"
+        ]
       },
       {
-        "badge": "Vista Completa",
-        "badgeEn": "Complete View",
+        "badge": "Flujo completo",
+        "badgeEn": "Full Flow",
         "badgeStyle": "green",
-        "title": "Flujo Completo de Usuario",
+        "title": "Flujo completo usuario",
         "titleEn": "Complete User Flow",
-        "description": "Arquitectura completa del flujo mostrando todos los estados y transiciones",
-        "descriptionEn": "Complete flow architecture showing all states and transitions",
-        "placeholder": "Mockup: Diagrama de flujo completo",
-        "placeholderEn": "Mockup: Complete flow diagram"
+        "description": "",
+        "descriptionEn": "",
+        "srcs": [
+          "data/images/unified-routing-mockup-9.webp"
+        ]
       }
     ],
     "device": "desktop"

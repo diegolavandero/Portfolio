@@ -1649,6 +1649,13 @@ body {
   display: block;
 }
 
+.design-images-grid {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+.design-images-grid--2 { grid-template-columns: 1fr 1fr; }
+.design-images-grid--3 { grid-template-columns: repeat(3, 1fr); }
+
 /* ═══ RESULTS ═══ */
 .results-section {
   padding: var(--spacing-4xl) 0;

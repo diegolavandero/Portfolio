@@ -978,31 +978,42 @@ const Renderer = {
   // ━━━ SECTION: Designs ━━━
   renderDesigns: (data) => {
     const screenContent = (src, ph, phEn) =>
-      src ? `<img src="${esc(src)}" alt="${esc(ph || '')}">` :
+      src ? `<img src="${esc(src)}" alt="${esc(ph || '')}" loading="lazy">` :
             `<div class="image-placeholder" ${bi(ph || 'Mockup pendiente', phEn || 'Mockup pending')}>${ph || 'Mockup pendiente'}</div>`;
+
+    const renderOneImage = (src, device, ph, phEn) => {
+      const imageClass = `design-image${device === 'mobile' ? ' design-image--mobile' : ''}`;
+      let inner;
+      if (device === 'desktop') {
+        inner = `<div class="device device-desktop">${screenContent(src, ph, phEn)}</div>`;
+      } else if (device === 'mobile') {
+        inner = `<div class="device device-mobile"><div class="device-screen">${screenContent(src, ph, phEn)}</div></div>`;
+      } else {
+        inner = screenContent(src, ph, phEn);
+      }
+      return `<div class="${imageClass}">${inner}</div>`;
+    };
+
     const items = (data.items || []).map(item => {
       const badgeClass = `design-badge-${item.badgeStyle || 'indigo'}`;
       const device = item.device || data.device;
-      const imageClass = `design-image${device === 'mobile' ? ' design-image--mobile' : ''}`;
-      let imageInner;
-      if (device === 'desktop') {
-        imageInner = `<div class="device device-desktop">${screenContent(item.src, item.placeholder, item.placeholderEn)}</div>`;
-      } else if (device === 'mobile') {
-        imageInner = `<div class="device device-mobile"><div class="device-screen">${screenContent(item.src, item.placeholder, item.placeholderEn)}</div></div>`;
-      } else if (device === 'both') {
-        imageInner = `<div class="device-duo">
-          <div class="device device-desktop">${screenContent(item.src, item.placeholder, item.placeholderEn)}</div>
-          <div class="device device-mobile"><div class="device-screen">${screenContent(item.srcMobile, item.placeholder, item.placeholderEn)}</div></div>
+      const srcs = item.srcs || (item.src ? [item.src] : []);
+
+      let imagesHtml;
+      if (srcs.length >= 2) {
+        imagesHtml = `<div class="design-images-grid design-images-grid--${Math.min(srcs.length, 3)}">
+          ${srcs.map(src => renderOneImage(src, device, item.placeholder, item.placeholderEn)).join('')}
         </div>`;
       } else {
-        imageInner = screenContent(item.src, item.placeholder, item.placeholderEn);
+        imagesHtml = renderOneImage(srcs[0] || null, device, item.placeholder, item.placeholderEn);
       }
+
       return `
         <article class="design-item">
           ${item.badge ? `<span class="design-badge ${badgeClass}" ${bi(item.badge, item.badgeEn)}>${item.badge}</span>` : ''}
           <h3 class="design-title" ${bi(item.title, item.titleEn)}>${item.title}</h3>
           ${item.description ? `<p class="design-desc" ${bi(item.description, item.descriptionEn)}>${item.description}</p>` : ''}
-          <div class="${imageClass}">${imageInner}</div>
+          ${imagesHtml}
         </article>
       `;
     }).join('');
