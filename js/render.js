@@ -124,28 +124,13 @@ const Renderer = {
 
   // ━━━ SECTION: Hero Image ━━━
   renderHeroImage: (data) => {
-    const device = data.device;
-    const frameClass = `hero-image-frame${device === 'mobile' ? ' hero-image-frame--mobile' : ''}`;
-    const screenContent = (src, ph, phEn) =>
-      src ? `<img src="${esc(src)}" alt="${esc(ph || '')}">` :
-            `<div class="image-placeholder" ${bi(ph, phEn)}>${ph}</div>`;
-    let inner;
-    if (device === 'desktop') {
-      inner = `<div class="device device-desktop">${screenContent(data.src, data.placeholder, data.placeholderEn)}</div>`;
-    } else if (device === 'mobile') {
-      inner = `<div class="device device-mobile"><div class="device-screen">${screenContent(data.src, data.placeholder, data.placeholderEn)}</div></div>`;
-    } else if (device === 'both') {
-      inner = `<div class="device-duo">
-        <div class="device device-desktop">${screenContent(data.src, data.placeholder, data.placeholderEn)}</div>
-        <div class="device device-mobile"><div class="device-screen">${screenContent(data.srcMobile, data.placeholder, data.placeholderEn)}</div></div>
-      </div>`;
-    } else {
-      inner = screenContent(data.src, data.placeholder, data.placeholderEn);
-    }
+    const inner = data.src
+      ? `<img class="hero-image-img" src="${esc(data.src)}" alt="${esc(data.placeholder || '')}">`
+      : `<div class="image-placeholder" ${bi(data.placeholder, data.placeholderEn)}>${data.placeholder}</div>`;
     return `
       <section class="hero-image-section" data-section="heroImage">
         <div class="container">
-          <div class="${frameClass}">${inner}</div>
+          <div class="hero-image-frame">${inner}</div>
         </div>
       </section>
     `;

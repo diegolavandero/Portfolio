@@ -674,25 +674,23 @@ body {
 }
 
 .hero-image-frame {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+  line-height: 0;
+}
+.hero-image-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hero-image-frame .image-placeholder {
+  aspect-ratio: 1291 / 363;
   background: white;
   border: 1px solid var(--gray-200);
-  border-radius: 16px;
-  aspect-ratio: 1291 / 363;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
-}
-.hero-image-frame:has(.device-desktop),
-.hero-image-frame:has(.device-mobile) {
-  aspect-ratio: unset;
-  overflow: visible;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  border-radius: 0;
-  display: block;
 }
 
 /* ═══ WHY IT MATTERS ═══ */
