@@ -1150,7 +1150,7 @@ const Renderer = {
         <div class="cta-content">
           <h2 class="cta-question" ${bi(data.question, data.questionEn)}>${data.question}</h2>
           ${data.description ? `<p class="cta-description" ${bi(data.description, data.descriptionEn)}>${data.description}</p>` : ''}
-          <a class="cta-button" href="${esc(data.buttonHref || '#/about')}" ${bi(data.buttonLabel, data.buttonLabelEn)}>${data.buttonLabel}</a>
+          <a class="cta-button" href="${esc(data.buttonHref || '/about')}" ${bi(data.buttonLabel, data.buttonLabelEn)}>${data.buttonLabel}</a>
         </div>
       </div>
     </section>
