@@ -58,7 +58,8 @@
   "heroImage": {
     "placeholder": "Mockup principal — Asignación híbrida (auto + manual)",
     "placeholderEn": "Main mockup — Hybrid assignment (auto + manual)",
-    "device": "desktop"
+    "device": "desktop",
+    "src": "data/images/on-demand-routing-hero.webp"
   },
   "whyItMatters": {
     "title": "Por qué importa",
@@ -497,19 +498,22 @@
         "title": "Vista de Asignación Automática",
         "titleEn": "Automatic Assignment View",
         "placeholder": "Mockup de asignación automática",
-        "placeholderEn": "Automatic assignment mockup"
+        "placeholderEn": "Automatic assignment mockup",
+        "src": "data/images/on-demand-mockup-1.webp"
       },
       {
         "title": "Vista de Drag & Drop Manual",
         "titleEn": "Manual Drag & Drop View",
         "placeholder": "Mockup de asignación manual",
-        "placeholderEn": "Manual assignment mockup"
+        "placeholderEn": "Manual assignment mockup",
+        "src": "data/images/on-demand-mockup-2.webp"
       },
       {
         "title": "Simulación de Capacidad",
         "titleEn": "Capacity Simulation",
         "placeholder": "Mockup de simulación",
-        "placeholderEn": "Simulation mockup"
+        "placeholderEn": "Simulation mockup",
+        "src": "data/images/on-demand-mockup-3.webp"
       }
     ],
     "device": "desktop"
