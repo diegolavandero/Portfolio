@@ -4,19 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego Lavandero — AI Product Designer</title>
+    <meta name="description" content="Diego Lavandero, AI Product Designer en Santiago. Portafolio de diseño UX/UI con casos de estudio en productos de IA, fintech y SaaS.">
+    <meta name="author" content="Diego Lavandero">
+    <link rel="canonical" href="https://diegolavandero.com">
+    <meta property="og:title" content="Diego Lavandero — AI Product Designer">
+    <meta property="og:description" content="Portafolio de diseño UX/UI con casos de estudio en productos de IA, fintech y SaaS.">
+    <meta property="og:url" content="https://diegolavandero.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://diegolavandero.com/data/images/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Diego Lavandero — AI Product Designer">
+    <meta name="twitter:description" content="Portafolio de diseño UX/UI con casos de estudio en productos de IA, fintech y SaaS.">
+    <meta name="twitter:image" content="https://diegolavandero.com/data/images/og-image.png">
+    <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Diego Lavandero",
+      "jobTitle": "AI Product Designer",
+      "url": "https://diegolavandero.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/diegolavandero",
+        "https://www.behance.net/diegolavandero"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Santiago",
+        "addressCountry": "CL"
+      }
+    }
+    </script>
 </head>
 <body>
-    <!-- Header Sticky -->
     <header id="header" class="header-sticky">
         <div class="header-container">
             <div class="brand"><span class="brand-full">Diego Lavandero</span><span class="brand-short">DL</span></div>
             <nav class="nav-main">
-                <a href="#/" class="nav-link" data-page="home" data-es="Proyectos" data-en="Projects">Proyectos</a>
-                <a href="#/about" class="nav-link" data-page="about" data-es="Sobre mí" data-en="About">Sobre mí</a>
+                <a href="/" class="nav-link" data-page="home" data-es="Proyectos" data-en="Projects">Proyectos</a>
+                <a href="/about" class="nav-link" data-page="about" data-es="Sobre mí" data-en="About">Sobre mí</a>
             </nav>
             <div class="lang-toggle" id="lang-toggle" role="group" aria-label="Language">
                 <button class="lang-option active" data-lang="es" type="button">ES</button>
@@ -24,16 +54,11 @@
             </div>
         </div>
     </header>
-
-    <!-- Contenedor principal para renderizado dinámico -->
     <main id="app" class="app-container"></main>
-
-    <!-- Scripts -->
     <script src="js/interactions.js"></script>
     <script src="js/router.js"></script>
     <script src="js/render.js"></script>
     <script>
-        // Inicializar app
         document.addEventListener('DOMContentLoaded', () => {
             Router.init();
         });
