@@ -1,8 +1,8 @@
 {
-  "rewrites": [
-    {
-      "source": "/((?!sitemap.xml|robots.txt|favicon.png|data/|js/|styles.css).*)",
-      "destination": "/index.html"
-    }
+  "routes": [
+    { "src": "/sitemap.xml", "dest": "/sitemap.xml" },
+    { "src": "/robots.txt", "dest": "/robots.txt" },
+    { "src": "/favicon.png", "dest": "/favicon.png" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
