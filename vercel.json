@@ -1,6 +1,7 @@
 {
   "routes": [
-    { "src": "/index.html", "dest": "/" },
+    { "src": "/index.html", "dest": "/", "status": 301 },
+    { "src": "/web/(.*)", "dest": "/", "status": 301 },
     { "src": "/sitemap.xml", "dest": "/sitemap.xml" },
     { "src": "/robots.txt", "dest": "/robots.txt" },
     { "src": "/favicon.png", "dest": "/favicon.png" },
