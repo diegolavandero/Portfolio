@@ -3,6 +3,9 @@
     { "src": "/sitemap.xml", "dest": "/sitemap.xml" },
     { "src": "/robots.txt", "dest": "/robots.txt" },
     { "src": "/favicon.png", "dest": "/favicon.png" },
+    { "src": "/styles.css", "dest": "/styles.css" },
+    { "src": "/js/(.*)", "dest": "/js/$1" },
+    { "src": "/data/(.*)", "dest": "/data/$1" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
