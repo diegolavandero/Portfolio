@@ -3,125 +3,219 @@
   "title": "Sobre mí",
   "titleEn": "About me",
   "intro": [
-    "Senior AI Product Designer con más de 10 años de experiencia diseñando plataformas impulsadas por IA. Experto en UX research, diseño data-driven y optimización de workflows complejos.",
-    "Especializado en sistemas human-in-the-loop y en traducir outputs algorítmicos en experiencias de usuario accionables."
+    "Llevo más de una década diseñando productos digitales. En el último año algo cambió: pasé de ser un UX/UI Designer tradicional a un Product Builder. Diseño y prototipo interfaces funcionales usando IA — copilots, agentes, flujos conversacionales, interfaces LLM donde el modelo es parte del sistema, no un add-on.",
+    "Trabajo end-to-end: research, wireframes, UI, prototipos funcionales, handoff. Puedo hacer graphic design clásico, pero donde agrego valor real ahora es llevando productos a producción — no solo Figma.",
+    "Uso Claude Code como infraestructura de pensamiento: construyo frameworks internos para democratizar la creación de features con stakeholders en contextos de cliente, genero usuarios sintéticos para validar flujos antes de llegar a usuarios reales, y comprimo el ciclo de diseño de semanas a días."
   ],
   "introEn": [
-    "Senior AI Product Designer with 10+ years of experience designing AI-powered platforms. Expert in UX research, data-driven design and complex workflow optimization.",
-    "Specialized in human-in-the-loop systems and in translating algorithmic outputs into actionable user experiences."
+    "I've been designing digital products for over a decade. In the last year something shifted: I went from being a traditional UX/UI designer to a Product Builder. I design and prototype functional interfaces using AI — copilots, agents, conversational features, LLM-powered flows where the model is part of the system, not an add-on.",
+    "I work end-to-end: research, wireframes, UI, working prototypes, handoff. Comfortable in classic graphic design too, but where I add real value now is taking products to production — not just Figma.",
+    "I use Claude Code as a thinking infrastructure: I build internal frameworks to democratize feature creation with stakeholders in client-facing contexts, generate synthetic users to validate flows before reaching real users, and compress the design cycle from weeks to days."
   ],
   "achievementsTitle": "Logros Clave",
   "achievementsTitleEn": "Key Achievements",
   "achievements": [
     {
-      "es": "Lideré la creación de Design Systems para Bestrack y DispatchTrack, habilitando productos escalables y consistentes",
-      "en": "Led the creation of Design Systems for Bestrack and DispatchTrack, enabling scalable and consistent products"
+      "es": "Construí el DispatchTrack Design System desde cero — biblioteca de componentes, arquitectura de tokens y documentación. Hoy es la base compartida entre web y mobile, usada por producto e ingeniería como fuente única de verdad.",
+      "en": "Built the DispatchTrack Design System from scratch — component library, token architecture, and documentation. Now the shared foundation across web and mobile, used by product and engineering as a single source of truth."
     },
     {
-      "es": "Rediseñé la aplicación móvil basándome en analítica cuantitativa, investigación cualitativa y entrevistas con gerentes de logística, mejorando usabilidad y eficiencia operacional",
-      "en": "Redesigned the mobile app based on quantitative analytics, qualitative research and interviews with logistics managers, improving usability and operational efficiency"
+      "es": "Migré de Figma-only handoff a prototipado funcional con Claude, Cursor, v0, React y TailwindCSS — entregando interfaces que funcionan, no mockups. Esto colapsó el loop entre diseño e ingeniería y permitió testear cada concepto frente a usuarios casi de inmediato.",
+      "en": "Shifted from traditional Figma-only handoff to functional prototyping with Claude, Cursor, v0, React and TailwindCSS — shipping working interfaces, not mockups. This collapsed the loop between design and engineering and made every concept testable in front of users almost immediately."
     },
     {
-      "es": "Rediseñé el módulo de planificación de rutas desktop, incrementando flexibilidad para editar y optimizar rutas después de la optimización algorítmica automatizada",
-      "en": "Redesigned the desktop route planning module, increasing flexibility to edit and optimize routes after automated algorithmic optimization"
+      "es": "Diseñé el módulo de planificación de rutas alrededor de un modelo human-in-the-loop. El problema central no era técnico — era confianza: los despachadores necesitaban entender por qué el algoritmo tomó una decisión antes de sentirse seguros al sobreescribirla.",
+      "en": "Redesigned the route planning module around a human-in-the-loop model. The core problem wasn't technical — it was trust: dispatchers needed to understand why the algorithm made a decision before they'd feel safe overriding it."
+    },
+    {
+      "es": "Desarrollé con Claude Code un framework interno para democratizar la creación de features: stakeholders pueden explorar y validar propuestas de producto directamente frente a clientes, sin depender del ciclo de diseño formal.",
+      "en": "Developed with Claude Code an internal framework to democratize feature creation: stakeholders can explore and validate product proposals directly in front of clients, without depending on the formal design cycle."
+    },
+    {
+      "es": "Implementé pipelines de usuarios sintéticos para testeo de flujos previo a investigación real, comprimiendo semanas de validación a horas y mejorando la calidad de las hipótesis que llegan a los usuarios.",
+      "en": "Implemented synthetic user pipelines for flow testing prior to real user research, compressing weeks of validation to hours and improving the quality of hypotheses that reach actual users."
     }
   ],
-  "competenciesTitle": "Competencias Core",
-  "competenciesTitleEn": "Core Competencies",
+  "competenciesTitle": "Habilidades",
+  "competenciesTitleEn": "Skills",
+  "competencyGroups": [
+    {
+      "group": "IA y Diseño de Agentes",
+      "groupEn": "AI & Agent Design",
+      "items": [
+        { "es": "AI Product Design", "en": "AI Product Design" },
+        { "es": "Diseño de Agentes", "en": "Agent Design" },
+        { "es": "LLMs e Interfaces de Agentes", "en": "LLMs & Agent Interfaces" },
+        { "es": "IA Generativa", "en": "Generative AI" },
+        { "es": "UI Conversacional", "en": "Conversational UI" },
+        { "es": "Human-in-the-Loop", "en": "Human-in-the-Loop" },
+        { "es": "UX de Interpretabilidad del Modelo", "en": "Model Interpretability UX" },
+        { "es": "Prototipado IA", "en": "AI Prototyping" }
+      ]
+    },
+    {
+      "group": "Frontend y Prototipado Funcional",
+      "groupEn": "Frontend & Functional Prototyping",
+      "items": [
+        { "es": "Claude Code", "en": "Claude Code" },
+        { "es": "React", "en": "React" },
+        { "es": "TailwindCSS", "en": "TailwindCSS" },
+        { "es": "Claude / Cursor / v0 / Lovable", "en": "Claude / Cursor / v0 / Lovable" },
+        { "es": "HTML · CSS", "en": "HTML · CSS" },
+        { "es": "Desarrollo Frontend", "en": "Frontend Development" }
+      ]
+    },
+    {
+      "group": "UX Research",
+      "groupEn": "UX Research",
+      "items": [
+        { "es": "Investigación UX", "en": "UX Research" },
+        { "es": "Customer Discovery", "en": "Customer Discovery" },
+        { "es": "Entrevistas con Usuarios", "en": "User Interviews" },
+        { "es": "Usuarios Sintéticos", "en": "Synthetic Users" },
+        { "es": "Testing de Usabilidad", "en": "Usability Testing" },
+        { "es": "Análisis Heurístico", "en": "Heuristic Analysis" },
+        { "es": "Arquitectura de Información", "en": "Information Architecture" },
+        { "es": "Análisis Competitivo", "en": "Competitive Analysis" },
+        { "es": "Hotjar · Maze", "en": "Hotjar · Maze" }
+      ]
+    },
+    {
+      "group": "Diseño y Producto",
+      "groupEn": "Design & Product",
+      "items": [
+        { "es": "Design Systems", "en": "Design Systems" },
+        { "es": "Diseño de Interacción", "en": "Interaction Design" },
+        { "es": "Wireframing y Prototipado", "en": "Wireframing & Prototyping" },
+        { "es": "Diseño Mobile", "en": "Mobile App Design" },
+        { "es": "Web Responsive", "en": "Responsive Web" },
+        { "es": "B2B SaaS", "en": "B2B SaaS" },
+        { "es": "Figma", "en": "Figma" },
+        { "es": "Adobe CC", "en": "Adobe CC" },
+        { "es": "Notion · Linear", "en": "Notion · Linear" }
+      ]
+    }
+  ],
   "competencies": [
-    { "es": "Diseño de Productos IA", "en": "AI Product Design" },
+    { "es": "AI Product Design", "en": "AI Product Design" },
+    { "es": "Diseño de Agentes LLM", "en": "LLM Agent Design" },
+    { "es": "UI Conversacional", "en": "Conversational UI" },
+    { "es": "Human-in-the-Loop", "en": "Human-in-the-Loop" },
+    { "es": "UX de Interpretabilidad del Modelo", "en": "Model Interpretability UX" },
+    { "es": "Claude Code", "en": "Claude Code" },
+    { "es": "Prototipado Funcional con IA", "en": "AI Functional Prototyping" },
+    { "es": "Usuarios Sintéticos", "en": "Synthetic Users" },
+    { "es": "Frameworks para Stakeholders", "en": "Stakeholder Frameworks" },
+    { "es": "React · TailwindCSS", "en": "React · TailwindCSS" },
     { "es": "Investigación UX", "en": "UX Research" },
-    { "es": "Sistemas Human-in-the-loop", "en": "Human-in-the-loop Systems" },
-    { "es": "Sistemas de Diseño", "en": "Design Systems" },
-    { "es": "Diseño de Interacción", "en": "Interaction Design" },
-    { "es": "Análisis de Datos", "en": "Data Analysis" },
+    { "es": "Customer Discovery", "en": "Customer Discovery" },
     { "es": "Testing de Usabilidad", "en": "Usability Testing" },
-    { "es": "Figma", "en": "Figma" }
+    { "es": "Análisis Heurístico", "en": "Heuristic Analysis" },
+    { "es": "Arquitectura de Información", "en": "Information Architecture" },
+    { "es": "Design Systems", "en": "Design Systems" },
+    { "es": "Diseño de Interacción", "en": "Interaction Design" },
+    { "es": "B2B SaaS", "en": "B2B SaaS" },
+    { "es": "Figma", "en": "Figma" },
+    { "es": "Hotjar · Maze", "en": "Hotjar · Maze" }
   ],
   "experienceTitle": "Experiencia",
   "experienceTitleEn": "Experience",
   "experience": [
     {
       "company": "DispatchTrack",
-      "role": "Diseñador de Producto Senior",
-      "roleEn": "Senior Product Designer",
+      "role": "Senior Product Designer (UX/UI) — AI-Native Product Builder",
+      "roleEn": "Senior Product Designer (UX/UI) — AI-Native Product Builder",
       "period": "2019 — Presente",
       "periodEn": "2019 — Present",
-      "description": "Lidero UX para plataformas Last Mile y PlannerPro, enfocándome en routing asistido por IA, workflows de conductores y eficiencia operacional.",
-      "descriptionEn": "Leading UX for Last Mile and PlannerPro platforms, focusing on AI-assisted routing, driver workflows and operational efficiency."
+      "description": "UX owner de Last Mile y PlannerPro — plataformas de routing asistidas por IA que cubren la superficie operacional completa: app móvil para conductores, herramientas de planificación desktop y dashboards de despacho. Rediseñé el módulo de rutas alrededor de un modelo human-in-the-loop centrado en confianza, no en automatización. Construí el Design System de DispatchTrack desde cero y migré el flujo de trabajo a prototipado funcional con Claude, Cursor, v0 y React — acortando el ciclo diseño-ingeniería. Diseñé features conversacionales y basadas en agentes donde el modelo LLM es parte del sistema.",
+      "descriptionEn": "Owned UX across Last Mile and PlannerPro — AI-assisted routing platforms covering the full operational surface: driver mobile app, desktop planning tools, and dispatch dashboards. Redesigned the route planning module around a human-in-the-loop model centered on trust, not automation. Built the DispatchTrack Design System from scratch and shifted to functional prototyping with Claude, Cursor, v0 and React — collapsing the design-to-engineering loop. Designed conversational and agent-based features where the LLM model is part of the system."
     },
     {
-      "company": "Bestrack / Anastasia AI",
-      "role": "Diseñador UX",
+      "company": "Beetrack",
+      "role": "UX Designer",
       "roleEn": "UX Designer",
-      "period": "2016 — 2019",
-      "periodEn": "2016 — 2019",
-      "description": "Diseñé herramientas logísticas impulsadas por IA, dashboards y visualizaciones de datos operacionales y comportamentales.",
-      "descriptionEn": "Designed AI-powered logistics tools, dashboards and operational and behavioral data visualizations."
+      "period": "2017 — 2019",
+      "periodEn": "2017 — 2019",
+      "description": "Diseñé el dashboard de operaciones y las herramientas para conductores de una plataforma SaaS de última milla en crecimiento acelerado. Construí el Beetrack Design System desde cero — el primer lenguaje de diseño estructurado de la empresa. Conduje estudios de usabilidad y entrevistas de campo con gerentes de operaciones y conductores; los hallazgos moldearon directamente las prioridades de iteración y el roadmap de producto.",
+      "descriptionEn": "Designed the operations dashboard and driver-facing tools for a fast-growing last-mile SaaS platform. Built the Beetrack Design System from zero — the first structured design language the company had. Conducted usability studies and field interviews with operations managers and drivers; findings directly shaped iteration priorities and informed the product roadmap."
     },
     {
-      "company": "DIRECTV",
+      "company": "Anastasia AI",
+      "role": "UX Designer",
+      "roleEn": "UX Designer",
+      "period": "2015 — 2017",
+      "periodEn": "2015 — 2017",
+      "description": "Diseñé la interfaz de una plataforma de analytics predictivos cuyo producto central era hacer legibles y accionables los outputs de forecasting de demanda para equipos de retail y supply chain — usuarios que no eran data scientists. Creé el Design System de Anastasia desde cero, definiendo el lenguaje visual y el modelo de interacción para mostrar datos probabilísticos sin abrumar a usuarios no técnicos.",
+      "descriptionEn": "Designed the interface for a predictive analytics platform whose core product was making demand forecasting outputs readable and actionable for retail and supply chain teams — users who weren't data scientists. Created the Anastasia Design System from scratch, defining the visual language and interaction model for surfacing probabilistic data without overwhelming non-technical users."
+    },
+    {
+      "company": "DIRECTV Latin America",
       "role": "Diseñador UX/UI",
       "roleEn": "UX/UI Designer",
       "period": "2016 — 2018",
       "periodEn": "2016 — 2018",
-      "description": "Usabilidad web",
-      "descriptionEn": "Web usability"
+      "description": "Rediseñé directv.cl — reestructura completa de arquitectura de información y rediseño de interacción para un sitio de consumo de alto tráfico.",
+      "descriptionEn": "Redesigned directv.cl — full information architecture restructure and interaction redesign for a high-traffic consumer site."
     },
     {
-      "company": "Adhoc Soluciones LTDA",
-      "role": "Diseñador UX",
-      "roleEn": "UX Designer",
+      "company": "Adhoc Soluciones",
+      "role": "Diseñador UX/UI",
+      "roleEn": "UX/UI Designer",
       "period": "2013 — 2015",
       "periodEn": "2013 — 2015",
-      "description": "Diseño web / front-end. Packaging y diseño de etiquetas. POP y marketing digital.",
-      "descriptionEn": "Web / front-end design. Packaging and label design. POP and digital marketing."
+      "description": "Diseño web, desarrollo front-end, packaging y campañas de marketing digital para clientes B2B.",
+      "descriptionEn": "Web design, front-end development, packaging and digital marketing campaigns for B2B clients."
+    },
+    {
+      "company": "Kennedy Miller Mitchell — Mad Max: Fury Road",
+      "role": "Diseñador Gráfico Freelance",
+      "roleEn": "Freelance Graphic Designer",
+      "period": "2012",
+      "periodEn": "2012",
+      "description": "Retoque fotográfico y diseño de concepto de personajes para Mad Max: Fury Road (Warner Bros., 2015). Sydney, Australia.",
+      "descriptionEn": "Photo retouching and character concept design for Mad Max: Fury Road (Warner Bros., 2015). Sydney, Australia."
     }
   ],
-  "softwareTitle": "Software",
-  "softwareTitleEn": "Software",
+  "softwareTitle": "Herramientas",
+  "softwareTitleEn": "Tools",
   "software": [
     "Figma",
-    "Adobe Photoshop",
-    "Illustrator",
-    "InDesign",
-    "Premiere",
-    "Dreamweaver",
-    "FreeHand",
-    "Flash",
-    "AE",
-    "Sketch",
-    "InVision",
-    "Wordpress",
-    "Office"
+    "Claude",
+    "Claude Code",
+    "Cursor",
+    "v0",
+    "Lovable",
+    "ChatGPT",
+    "React",
+    "TailwindCSS",
+    "HTML · CSS",
+    "Adobe CC",
+    "Hotjar",
+    "Maze",
+    "Notion",
+    "Linear"
   ],
   "educationTitle": "Educación",
   "educationTitleEn": "Education",
   "education": [
     {
       "institution": "Pontificia Universidad Católica de Chile",
-      "degree": "Diploma en diseño web · Título universitario en diseño gráfico y web",
-      "degreeEn": "Diploma in web design · Bachelor's degree in graphic and web design",
+      "degree": "Título Universitario — Diseño Gráfico y Web",
+      "degreeEn": "Bachelor's Degree — Graphic and Web Design",
       "period": "2004 — 2009"
     },
     {
       "institution": "MAC Academy",
-      "degree": "Diploma en diseño web · HTML y CSS coding",
-      "degreeEn": "Diploma in web design · HTML and CSS coding",
+      "degree": "Diploma en Diseño Web · HTML y CSS",
+      "degreeEn": "Diploma in Web Design · HTML & CSS",
       "period": "2009"
-    },
-    {
-      "institution": "Universidad Diego Portales",
-      "degree": "Licenciatura en derecho",
-      "degreeEn": "Bachelor's degree in law",
-      "period": "2002 — 2003"
     }
   ],
   "languagesTitle": "Idiomas",
   "languagesTitleEn": "Languages",
   "languages": [
     { "name": "Español", "nameEn": "Spanish", "level": "Nativo", "levelEn": "Native" },
-    { "name": "Inglés", "nameEn": "English", "level": "Competente", "levelEn": "Professional" }
+    { "name": "Inglés", "nameEn": "English", "level": "Profesional", "levelEn": "Professional" }
   ],
   "contactTitle": "Contacto",
   "contactTitleEn": "Contact",
