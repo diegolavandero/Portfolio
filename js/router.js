@@ -1,6 +1,7 @@
 /**
  * ROUTER.JS
  * Maneja navegación SPA — carga páginas dinámicamente
+ * Usa History API (URLs limpias sin #)
  */
 
 const Router = {
@@ -8,16 +9,15 @@ const Router = {
   currentLang: localStorage.getItem('lang') || 'es',
 
   init: () => {
-    // Setear idioma al inicio
     Router.setLanguage(Router.currentLang);
-    
-    // Escuchar cambios de hash
-    window.addEventListener('hashchange', Router.handleRoute);
-    
+
+    // Escuchar navegación con botones atrás/adelante
+    window.addEventListener('popstate', Router.handleRoute);
+
     // Evento inicial
     Router.handleRoute();
-    
-    // Toggle de idioma (pill ES/EN)
+
+    // Toggle de idioma
     document.querySelectorAll('.lang-option').forEach(btn => {
       btn.addEventListener('click', () => Router.setLanguage(btn.dataset.lang));
     });
@@ -27,24 +27,26 @@ const Router = {
       link.addEventListener('click', (e) => {
         e.preventDefault();
         const page = link.dataset.page;
-        window.location.hash = page === 'home' ? '/' : `/${page}`;
+        Router.navigate(page === 'home' ? '/' : `/${page}`);
       });
     });
   },
 
+  navigate: (path) => {
+    window.history.pushState({}, '', path);
+    Router.handleRoute();
+  },
+
   handleRoute: () => {
-    const hash = window.location.hash.slice(1) || '/';
+    const path = window.location.pathname;
     let page = 'home';
-    
-    if (hash === '/') {
+
+    if (path === '/' || path === '') {
       page = 'home';
-    } else if (hash.startsWith('/')) {
-      page = hash.slice(1); // Quitar la barra inicial
     } else {
-      page = hash;
+      page = path.slice(1); // quitar la barra inicial
     }
-    
-    // Si es un slug de proyecto, cargarlo
+
     if (page && page !== 'home' && page !== 'about') {
       Router.loadProject(page);
     } else if (page === 'about') {
@@ -52,7 +54,7 @@ const Router = {
     } else {
       Router.loadHome();
     }
-    
+
     Router.currentPage = page;
     Router.updateActiveNav();
   },
@@ -62,7 +64,7 @@ const Router = {
     app.innerHTML = '<div class="loading">Cargando...</div>';
 
     try {
-      const response = await fetch('data/home.json');
+      const response = await fetch('/data/home.json');
       const data = await response.json();
       const ctaView = data.ctaLabels?.viewProject || 'Ver proyecto';
       const ctaViewEn = data.ctaLabels?.viewProjectEn || 'View project';
@@ -75,8 +77,9 @@ const Router = {
         if (device === 'mobile')  return `<div class="device device-mobile"><div class="device-screen">${inner}</div></div>`;
         return ph;
       };
+
       const projectsHTML = data.projects.map(p => `
-        <article class="project-card" onclick="window.location.hash='/${p.slug}'">
+        <article class="project-card" onclick="Router.navigate('/${p.slug}')">
           <div class="project-info">
             <p class="card-eyebrow" data-es="${p.eyebrow}" data-en="${p.eyebrowEn}">${p.eyebrow}</p>
             <h3 class="project-title" data-es="${p.title}" data-en="${p.titleEn}">${p.title}</h3>
@@ -100,7 +103,7 @@ const Router = {
         </section>
         <section class="featured-section">
           <div class="container">
-            <article class="featured-card-large" onclick="window.location.hash='/${featured.slug}'">
+            <article class="featured-card-large" onclick="Router.navigate('/${featured.slug}')">
               <div class="featured-content">
                 <p class="card-eyebrow" data-es="${featured.eyebrow}" data-en="${featured.eyebrowEn}">${featured.eyebrow}</p>
                 <h2 class="featured-title" data-es="${featured.title}" data-en="${featured.titleEn}">${featured.title}</h2>
@@ -137,7 +140,6 @@ const Router = {
   loadProject: async (slug) => {
     const app = document.getElementById('app');
     app.innerHTML = '<div class="loading">Cargando proyecto...</div>';
-    
     await Renderer.renderPage(slug);
     Router.applyLanguage();
   },
@@ -147,7 +149,7 @@ const Router = {
     app.innerHTML = '<div class="loading">Cargando...</div>';
 
     try {
-      const response = await fetch('data/about.json');
+      const response = await fetch('/data/about.json');
       const data = await response.json();
 
       const introHTML = data.intro.map((p, i) =>
@@ -201,70 +203,47 @@ const Router = {
             ${introHTML}
           </div>
         </section>
-
         <section class="about-section">
           <div class="container container-narrow">
             <h2 class="about-section-title" data-es="${data.achievementsTitle}" data-en="${data.achievementsTitleEn}">${data.achievementsTitle}</h2>
-            <ul class="achievements-list">
-              ${achievementsHTML}
-            </ul>
+            <ul class="achievements-list">${achievementsHTML}</ul>
           </div>
         </section>
-
         <hr class="about-divider" />
-
         <section class="about-section">
           <div class="container container-narrow">
             <h2 class="about-section-title" data-es="${data.competenciesTitle}" data-en="${data.competenciesTitleEn}">${data.competenciesTitle}</h2>
-            <div class="competencies-grid">
-              ${competenciesHTML}
-            </div>
+            <div class="competencies-grid">${competenciesHTML}</div>
           </div>
         </section>
-
         <hr class="about-divider" />
-
         <section class="about-section">
           <div class="container container-narrow">
             <h2 class="about-section-title" data-es="${data.experienceTitle}" data-en="${data.experienceTitleEn}">${data.experienceTitle}</h2>
-            <div class="experience-list">
-              ${experienceHTML}
-            </div>
+            <div class="experience-list">${experienceHTML}</div>
           </div>
         </section>
-
         <hr class="about-divider" />
-
         <section class="about-section">
           <div class="container container-narrow">
             <h2 class="about-section-title" data-es="${data.softwareTitle}" data-en="${data.softwareTitleEn}">${data.softwareTitle}</h2>
-            <div class="software-tags">
-              ${softwareHTML}
-            </div>
+            <div class="software-tags">${softwareHTML}</div>
           </div>
         </section>
-
         <hr class="about-divider" />
-
         <section class="about-section">
           <div class="container container-narrow">
             <h2 class="about-section-title" data-es="${data.educationTitle}" data-en="${data.educationTitleEn}">${data.educationTitle}</h2>
-            <div class="experience-list">
-              ${educationHTML}
-            </div>
+            <div class="experience-list">${educationHTML}</div>
           </div>
         </section>
-
         <hr class="about-divider" />
-
         <section class="about-section about-footer">
           <div class="container container-narrow">
             <div class="about-footer-grid">
               <div class="about-footer-block">
                 <h2 class="about-section-title" data-es="${data.languagesTitle}" data-en="${data.languagesTitleEn}">${data.languagesTitle}</h2>
-                <div class="languages-list">
-                  ${languagesHTML}
-                </div>
+                <div class="languages-list">${languagesHTML}</div>
               </div>
               <div class="about-footer-block">
                 <h2 class="about-section-title" data-es="${data.contactTitle}" data-en="${data.contactTitleEn}">${data.contactTitle}</h2>
@@ -311,11 +290,10 @@ const Router = {
   applyLanguage: () => {
     const lang = Router.currentLang;
     const attr = lang === 'es' ? 'data-es' : 'data-en';
-    
+
     document.querySelectorAll('[data-es][data-en]').forEach(el => {
       const text = el.getAttribute(attr);
       if (text) {
-        // Si es input, actualizar valor
         if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
           el.value = text;
         } else {

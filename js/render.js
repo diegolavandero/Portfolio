@@ -42,7 +42,7 @@ const Renderer = {
   renderPage: async (slug) => {
     const app = document.getElementById('app');
     try {
-      const response = await fetch(`data/${slug}.json`);
+      const response = await fetch(`/data/${slug}.json`);
       const data = await response.json();
 
       let html = '';
