@@ -79,7 +79,7 @@ const Router = {
       };
 
       const projectsHTML = data.projects.map(p => `
-        <article class="project-card" onclick="Router.navigate('/${p.slug}')">
+        <article class="project-card" onclick="${p.externalUrl ? `window.open('${p.externalUrl}','_blank')` : `Router.navigate('/${p.slug}')`}">
           <div class="project-info">
             <p class="card-eyebrow" data-es="${p.eyebrow}" data-en="${p.eyebrowEn}">${p.eyebrow}</p>
             <h3 class="project-title" data-es="${p.title}" data-en="${p.titleEn}">${p.title}</h3>

@@ -94,6 +94,21 @@
       "slug": "async-reports",
       "device": "desktop",
       "image": "data/images/async-reports.webp"
+    },
+    {
+      "eyebrow": "DESIGN SYSTEM • 2024–2025",
+      "eyebrowEn": "DESIGN SYSTEM • 2024–2025",
+      "title": "DispatchTrack Design System",
+      "titleEn": "DispatchTrack Design System",
+      "subtitle": "Sistema de componentes, tokens y patrones para productos Last Mile",
+      "subtitleEn": "Component library, tokens and patterns for Last Mile products",
+      "metric": "30+",
+      "metricLabel": "componentes documentados",
+      "metricLabelEn": "documented components",
+      "slug": "design-system",
+      "externalUrl": "https://dt-design-system-tawny.vercel.app",
+      "device": "desktop",
+      "image": "data/images/design-system.webp"
     }
   ],
   "ctaLabels": {
