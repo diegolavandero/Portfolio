@@ -1668,6 +1668,119 @@ body {
   font-weight: 400;
 }
 
+/* ═══ LIVE PROTOTYPE ═══ */
+.live-proto-section {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--gray-900);
+}
+
+.live-proto-section .section-header h2,
+.live-proto-section .section-header p {
+  color: var(--gray-50);
+}
+.live-proto-section .section-header p {
+  color: var(--gray-400);
+}
+
+.live-proto-frame {
+  display: block;
+  max-width: 480px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  text-decoration: none;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.live-proto-frame:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 32px 72px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.live-proto-chrome {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: var(--gray-100);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.live-proto-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--gray-300);
+  flex-shrink: 0;
+}
+
+.live-proto-chrome .live-proto-url {
+  margin-left: auto;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--gray-500);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: monospace;
+}
+
+.live-proto-poster {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: var(--gray-100);
+}
+
+.live-proto-poster img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.live-proto-cta {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: linear-gradient(180deg, rgba(10, 12, 20, 0.15) 0%, rgba(10, 12, 20, 0.55) 100%);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.live-proto-play {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--indigo-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding-left: 3px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  transition: transform var(--transition);
+}
+.live-proto-frame:hover .live-proto-play {
+  transform: scale(1.08);
+}
+
+.live-proto-note {
+  max-width: 640px;
+  margin: var(--spacing-lg) auto 0;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--gray-400);
+}
+
 /* ═══ DESIGNS ═══ */
 .designs-section {
   padding: var(--spacing-4xl) 0;
