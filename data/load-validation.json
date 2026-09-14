@@ -604,8 +604,8 @@
       {
         "title": "4 · Despacho a ruta",
         "titleEn": "4 · Dispatch to route",
-        "description": "Al confirmar, el conductor pasa directo a la vista En Ruta (mapa + bottom sheet de órdenes) mientras el equipo de despacho recibe la notificación de carga validada en tiempo real — sin llamadas ni WhatsApp.",
-        "descriptionEn": "On confirmation, the driver moves straight into the On Route view (map + order bottom sheet) while the dispatch team gets the validated-load notification in real time — no calls, no WhatsApp.",
+        "description": "Al confirmar, el conductor pasa directo al DTMBottomSheet de 3 alturas montado sobre el mapa — media por defecto, lista completa con scroll interno, o mapa completo con solo el header de ruta — mientras el equipo de despacho recibe la notificación de carga validada en tiempo real.",
+        "descriptionEn": "On confirmation, the driver moves straight into the 3-height DTMBottomSheet mounted over the map — media by default, a full scrollable list, or map-only with just the route header — while the dispatch team gets the validated-load notification in real time.",
         "src": "data/images/load-validation-onroute.png",
         "alt": "Vista en ruta con mapa y bottom sheet de órdenes",
         "altEn": "On-route view with map and order bottom sheet"
