@@ -517,8 +517,8 @@
         "number": "03",
         "title": "Input Manual Alternativo",
         "titleEn": "Manual Input Alternative",
-        "description": "Entrada manual de códigos cuando el escáner no puede leer el barcode. Flujo simplificado para no interrumpir el ritmo.",
-        "descriptionEn": "Manual code entry when the scanner can't read the barcode. Simplified flow to avoid interrupting the rhythm."
+        "description": "Al tocar el lápiz de un ítem se abre un modal para registrar la cantidad entregada (ej. 6 de 12), dejar un comentario y adjuntar una foto de respaldo — el mismo camino para un ítem que el escáner no pudo leer o que llegó incompleto.",
+        "descriptionEn": "Tapping an item's pencil opens a modal to record the quantity actually delivered (e.g. 6 of 12), leave a comment and attach a backup photo — the same path for an item the scanner couldn't read or that arrived incomplete."
       },
       {
         "number": "04",
