@@ -63,32 +63,32 @@
   "whyItMatters": {
     "title": "¿Por qué importa?",
     "titleEn": "Why it matters",
-    "subtitle": "Antes de este sistema, validar una carga tomaba 40 minutos de papeleo manual. El 12% de las cargas salía con discrepancias detectadas solo en destino.",
-    "subtitleEn": "Before this system, validating a load took 40 minutes of manual paperwork. 12% of loads left with discrepancies detected only at destination.",
+    "subtitle": "Hoy, validar una carga con checklist en papel toma cerca de 40 minutos y deja hasta un 12% de discrepancias sin detectar hasta destino — números típicos de operaciones last-mile sin verificación digital. Las metas de abajo son estimaciones de diseño, no resultados medidos.",
+    "subtitleEn": "Today, validating a load with a paper checklist takes about 40 minutes and leaves up to 12% of discrepancies undetected until destination — typical numbers for last-mile operations without digital verification. The targets below are design estimates, not measured results.",
     "items": [
       {
         "icon": "⏱️",
-        "label": "Tiempo de Validación",
-        "labelEn": "Validation Time",
-        "metric": "40 min → 6 min",
-        "description": "Reducción de tiempo promedio de validación por conductor por ruta",
-        "descriptionEn": "Average validation time reduction per driver per route"
+        "label": "Tiempo de Validación (meta)",
+        "labelEn": "Validation Time (target)",
+        "metric": "40 min → 8–12 min",
+        "description": "Meta de diseño al reemplazar el checklist en papel por escaneo + auto-poblado desde el TMS",
+        "descriptionEn": "Design target when replacing the paper checklist with scanning + TMS auto-populate"
       },
       {
         "icon": "🎯",
-        "label": "Errores Detectados en Origen",
-        "labelEn": "Errors Caught at Source",
-        "metric": "91%",
-        "description": "De los errores se detectan antes de salir de bodega vs. el 23% anterior",
-        "descriptionEn": "Errors detected before leaving the warehouse vs. 23% previously"
+        "label": "Errores Detectados en Origen (est.)",
+        "labelEn": "Errors Caught at Source (est.)",
+        "metric": "80–90%",
+        "description": "Rango reportado en la industria al pasar de verificación visual a escaneo obligatorio de código de barras",
+        "descriptionEn": "Industry-reported range when moving from visual checks to mandatory barcode scanning"
       },
       {
         "icon": "📋",
-        "label": "Cargas sin Docs Completos",
-        "labelEn": "Loads with Incomplete Docs",
-        "metric": "0.3%",
-        "description": "Tasa de cargas que salen sin documentación completa (antes: 8.7%)",
-        "descriptionEn": "Rate of loads leaving without complete documentation (previously: 8.7%)"
+        "label": "Cargas sin Docs Completos (est.)",
+        "labelEn": "Loads with Incomplete Docs (est.)",
+        "metric": "< 2%",
+        "description": "Meta de diseño vs. el ~8.7% típico de checklists en papel sin validación forzada",
+        "descriptionEn": "Design target vs. the ~8.7% typical of paper checklists without enforced validation"
       }
     ]
   },
@@ -517,8 +517,8 @@
         "number": "03",
         "title": "Input Manual Alternativo",
         "titleEn": "Manual Input Alternative",
-        "description": "Entrada manual de códigos cuando el escáner no puede leer el barcode. Flujo simplificado para no interrumpir el ritmo.",
-        "descriptionEn": "Manual code entry when the scanner can't read the barcode. Simplified flow to avoid interrupting the rhythm."
+        "description": "Al tocar el lápiz de un ítem se abre un modal para registrar la cantidad entregada (ej. 6 de 12), dejar un comentario y adjuntar una foto de respaldo — el mismo camino para un ítem que el escáner no pudo leer o que llegó incompleto.",
+        "descriptionEn": "Tapping an item's pencil opens a modal to record the quantity actually delivered (e.g. 6 of 12), leave a comment and attach a backup photo — the same path for an item the scanner couldn't read or that arrived incomplete."
       },
       {
         "number": "04",
@@ -526,6 +526,20 @@
         "titleEn": "Digital Signature + Evidence",
         "description": "Captura de firma táctil y foto de la carga como evidencia. Timestamp automático e inmutable para auditoría.",
         "descriptionEn": "Tactile signature capture and load photo as evidence. Automatic immutable timestamp for audit."
+      },
+      {
+        "number": "05",
+        "title": "Política de Escaneo desde Escritorio",
+        "titleEn": "Desktop-Configured Scan Policy",
+        "description": "El supervisor define, desde la app de escritorio, para qué conductores o rutas el escaneo es obligatorio. El conductor no puede desactivarlo ni saltarlo desde el teléfono — la política vive en el servidor, no en el dispositivo.",
+        "descriptionEn": "The supervisor sets, from the desktop app, which drivers or routes require mandatory scanning. The driver can't disable or bypass it from the phone — the policy lives on the server, not on the device."
+      },
+      {
+        "number": "06",
+        "title": "Resumen por Orden + Despacho a Ruta",
+        "titleEn": "Order Summary + Dispatch to Route",
+        "description": "Cada orden se resume en un estado de un vistazo (verde/ámbar/rojo). Al confirmar, el equipo de despacho recibe la notificación de carga validada en tiempo real y el conductor pasa directo a la vista En Ruta.",
+        "descriptionEn": "Each order rolls up to an at-a-glance status (green/amber/red). On confirmation, the dispatch team gets the validated-load notification in real time and the driver moves straight into the On Route view."
       }
     ],
     "principlesTitle": "Principios de Diseño",
@@ -555,88 +569,111 @@
     ]
   },
   "designs": {
-    "title": "UI Mockups",
-    "titleEn": "UI Mockups",
+    "title": "UI del Flujo",
+    "titleEn": "Flow UI",
+    "subtitle": "Las 4 pantallas núcleo del flujo, construidas 100% con tokens y componentes de DispatchTrack Design System (checkbox, badges, botones, banners y mapa).",
+    "subtitleEn": "The 4 core screens of the flow, built entirely with DispatchTrack Design System tokens and components (checkbox, badges, buttons, banners and map).",
     "items": [
       {
-        "title": "Vista de Lista",
-        "titleEn": "List View",
-        "description": "Dashboard de órdenes pendientes con priorización automática y estado visual por colores",
-        "descriptionEn": "Pending orders dashboard with automatic prioritization and color-coded visual status",
-        "src": null,
-        "alt": "Vista de lista de órdenes de carga",
-        "altEn": "Load order list view"
+        "title": "1 · Validación de ítems",
+        "titleEn": "1 · Item validation",
+        "description": "Lista de ítems por retirar con checkbox manual o escaneo. El badge \"Requerido\" aparece cuando el escaneo es obligatorio — un ajuste que el supervisor define desde la app de escritorio, no el conductor.",
+        "descriptionEn": "List of items to pick up with manual checkbox or scan. The \"Required\" badge appears when scanning is mandatory — a setting the supervisor defines from the desktop app, not the driver.",
+        "src": "data/images/load-validation-item-list.png",
+        "alt": "Lista de validación de ítems con checkbox y escaneo requerido",
+        "altEn": "Item validation list with checkbox and required scan"
       },
       {
-        "title": "Escaneo de Código",
-        "titleEn": "Code Scanning",
-        "description": "Interfaz de escaneo optimizada para uso con guantes: targets grandes, feedback auditivo, sin menús",
-        "descriptionEn": "Scanning interface optimized for gloved use: large targets, auditory feedback, no menus",
-        "src": null,
-        "alt": "Interfaz de escaneo de código de barras",
-        "altEn": "Barcode scanning interface"
+        "title": "2 · Escaneo de código de barras",
+        "titleEn": "2 · Barcode scanning",
+        "description": "Visor de cámara con marco de encuadre y confirmación auditiva + visual inmediata. Diseñado para usarse con guantes, sin necesidad de precisión táctil.",
+        "descriptionEn": "Camera viewfinder with framing guide and immediate auditory + visual confirmation. Designed for gloved use, with no need for touch precision.",
+        "src": "data/images/load-validation-scanner.png",
+        "alt": "Escáner de código de barras con confirmación de ítem",
+        "altEn": "Barcode scanner with item confirmation"
       },
       {
-        "title": "Firma Digital y Evidencia",
-        "titleEn": "Digital Signature & Evidence",
-        "description": "Captura de firma y foto de confirmación con timestamp inmutable para trazabilidad completa",
-        "descriptionEn": "Signature and confirmation photo capture with immutable timestamp for complete traceability",
-        "src": null,
-        "alt": "Pantalla de firma digital y evidencia fotográfica",
-        "altEn": "Digital signature and photographic evidence screen"
+        "title": "3 · Resumen por orden",
+        "titleEn": "3 · Order-level summary",
+        "description": "Cada orden se resume con un punto de estado: verde (100% validada), ámbar (parcial) o rojo (sin validar). El supervisor puede expandir cualquier orden para ver qué ítem específico quedó pendiente antes de firmar.",
+        "descriptionEn": "Each order rolls up to a status dot: green (100% validated), amber (partial) or red (not validated). The supervisor can expand any order to see exactly which item is still pending before signing.",
+        "src": "data/images/load-validation-summary.png",
+        "alt": "Resumen de validación con estado por color por orden",
+        "altEn": "Validation summary with color-coded status per order"
+      },
+      {
+        "title": "4 · Despacho a ruta",
+        "titleEn": "4 · Dispatch to route",
+        "description": "Al confirmar, el conductor pasa directo al DTMBottomSheet de 3 alturas montado sobre el mapa — media por defecto, lista completa con scroll interno, o mapa completo con solo el header de ruta — mientras el equipo de despacho recibe la notificación de carga validada en tiempo real.",
+        "descriptionEn": "On confirmation, the driver moves straight into the 3-height DTMBottomSheet mounted over the map — media by default, a full scrollable list, or map-only with just the route header — while the dispatch team gets the validated-load notification in real time.",
+        "src": "data/images/load-validation-onroute.png",
+        "alt": "Vista en ruta con mapa y bottom sheet de órdenes",
+        "altEn": "On-route view with map and order bottom sheet"
       }
     ],
     "device": "mobile"
   },
+  "livePrototype": {
+    "title": "Prototipo interactivo",
+    "titleEn": "Interactive prototype",
+    "subtitle": "Probá el flujo completo — activá/desactivá el escaneo obligatorio, validá ítems y mirá cómo cambia el estado por orden en tiempo real.",
+    "subtitleEn": "Try the full flow — toggle mandatory scanning, validate items and watch the per-order status change live.",
+    "url": "https://claude.ai/code/artifact/2fa4af6b-3ad0-4669-a836-7bbb7ec87a0a",
+    "poster": "data/images/load-validation-summary.png",
+    "ctaLabel": "Abrir prototipo interactivo",
+    "ctaLabelEn": "Open interactive prototype",
+    "note": "Construido en React sobre los tokens del DispatchTrack Design System. No usa frameworks en el resto del portfolio — se aísla como demo embebida por ser la única pieza del sitio que necesita estado interactivo en vivo.",
+    "noteEn": "Built in React on top of the DispatchTrack Design System tokens. The rest of the portfolio stays framework-free — this is isolated as an embedded demo because it's the only piece of the site that needs live interactive state."
+  },
   "results": {
-    "title": "Resultados",
-    "titleEn": "Results",
-    "subtitle": "Métricas medidas 60 días post-lanzamiento en flota piloto de 40 conductores",
-    "subtitleEn": "Metrics measured 60 days post-launch in a pilot fleet of 40 drivers",
-    "impactTitle": "Impacto Medido",
-    "impactTitleEn": "Measured Impact",
+    "title": "Impacto Proyectado",
+    "titleEn": "Projected Impact",
+    "subtitle": "Este flujo aún no tiene un piloto medido en producción. Las cifras de abajo son una proyección construida a partir de benchmarks públicos de la industria last-mile/parcel (adopción de escaneo de código de barras vs. checklist manual en picking y carga, y su efecto reportado en discrepancias OS&D — overage/shortage/damage). Se muestran como rango conservador, no como resultado medido.",
+    "subtitleEn": "This flow doesn't have a measured production pilot yet. The figures below are a projection built from public last-mile/parcel industry benchmarks (barcode-scan adoption vs. manual checklists in picking and loading, and their reported effect on OS&D — overage/shortage/damage — discrepancies). Shown as a conservative range, not a measured outcome.",
+    "impactTitle": "Estimación de Impacto (benchmark de industria)",
+    "impactTitleEn": "Estimated Impact (industry benchmark)",
     "impact": [
       {
         "icon": "📦",
-        "metric": "-45%",
-        "label": "Discrepancias en Destino",
-        "labelEn": "Destination Discrepancies",
-        "description": "Reducción de cargas con errores detectados en el punto de entrega",
-        "descriptionEn": "Reduction in loads with errors detected at delivery point"
+        "metric": "-40% a -60%",
+        "label": "Discrepancias en Destino (est.)",
+        "labelEn": "Destination Discrepancies (est.)",
+        "description": "Rango típico reportado al pasar de checklist manual a verificación por escaneo en picking/carga last-mile",
+        "descriptionEn": "Typical reported range when moving from manual checklists to scan-based verification in last-mile picking/loading"
       },
       {
         "icon": "🎫",
-        "metric": "-32%",
-        "label": "Reclamos de Clientes",
-        "labelEn": "Customer Claims",
-        "description": "Caída en reclamos formales relacionados con contenido o documentación de carga",
-        "descriptionEn": "Drop in formal complaints related to load content or documentation"
+        "metric": "-20% a -30%",
+        "label": "Reclamos de Clientes (est.)",
+        "labelEn": "Customer Claims (est.)",
+        "description": "Estimado a partir de la correlación entre trazabilidad de carga con evidencia y menor tasa de disputas por contenido faltante o dañado",
+        "descriptionEn": "Estimated from the correlation between load traceability with evidence and lower dispute rates for missing or damaged content"
       },
       {
-        "icon": "✅",
-        "metric": "+60%",
-        "label": "Cargas 100% Validadas",
-        "labelEn": "100% Validated Loads",
-        "description": "Aumento en rutas completadas con validación digital completa antes de salida",
-        "descriptionEn": "Increase in routes completed with full digital validation before departure"
+        "icon": "⏱️",
+        "metric": "-70% a -80%",
+        "label": "Tiempo de Validación (est.)",
+        "labelEn": "Validation Time (est.)",
+        "description": "De ~40 min de checklist en papel a validación asistida por escaneo — consistente con lo observado en el rediseño de Task Analysis de este mismo proyecto",
+        "descriptionEn": "From ~40 min of paper checklist to scan-assisted validation — consistent with what this project's own Task Analysis redesign showed"
       }
     ],
-    "learningsTitle": "Aprendizajes Clave",
-    "learningsTitleEn": "Key Learnings",
+    "learningsTitle": "Riesgos de Diseño a Validar",
+    "learningsTitleEn": "Design Risks to Validate",
     "nextStepsTitle": "Próxima Iteración",
     "nextStepsTitleEn": "Next Iteration",
     "learnings": [
       {
-        "title": "La foto de evidencia superó las expectativas de compliance",
-        "titleEn": "Evidence photo exceeded compliance expectations",
-        "description": "Diseñado como fallback para cuando el escáner falla, el módulo fotográfico se convirtió en el diferenciador más valorado para auditorías y resolución de disputas con clientes.",
-        "descriptionEn": "Designed as a fallback when the scanner fails, the photo module became the most valued differentiator for audits and client dispute resolution."
+        "title": "La firma táctil puede ser el cuello de botella real, no el escaneo",
+        "titleEn": "The tactile signature may be the real bottleneck, not the scanning",
+        "description": "El Field Research mostró conductores con guantes y prisa: una firma táctil probablemente produzca re-intentos. Hipótesis a testear en el primer piloto: un PIN de confirmación como alternativa más rápida a la firma dibujada.",
+        "descriptionEn": "Field research showed drivers wearing gloves and under time pressure: a tactile signature will likely produce retries. Hypothesis to test in the first pilot: a confirmation PIN as a faster alternative to a drawn signature."
       },
       {
-        "title": "La firma táctil generó más fricción de la esperada en campo",
-        "titleEn": "Tactile signature created more friction than expected in the field",
-        "description": "Con guantes de bodega, la firma táctil producía re-intentos y ralentizaba el flujo. Se iteró a un PIN de confirmación como alternativa, reduciendo el tiempo del paso de 45 s a 8 s.",
-        "descriptionEn": "With warehouse gloves, the tactile signature produced retries and slowed the flow. Iterated to a confirmation PIN as an alternative, reducing the step time from 45 s to 8 s."
+        "title": "El estado ámbar necesita una acción clara, no solo un color",
+        "titleEn": "The amber state needs a clear action, not just a color",
+        "description": "Mostrar \"parcial\" sin decirle al supervisor qué hacer a continuación (¿bloquear la salida? ¿dejar constancia y avanzar?) puede convertir el semáforo en ruido. Este flujo de decisión post-ámbar es lo primero a validar con supervisores reales antes de escalar.",
+        "descriptionEn": "Showing \"partial\" without telling the supervisor what to do next (block departure? log it and proceed?) risks turning the status dot into noise. That post-amber decision flow is the first thing to validate with real supervisors before scaling."
       }
     ],
     "nextSteps": [

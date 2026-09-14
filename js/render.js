@@ -62,6 +62,7 @@ const Renderer = {
       if (data.cardSorting)           html += Renderer.renderCardSorting(data.cardSorting);
       if (data.solution)              html += Renderer.renderSolution(data.solution);
       if (data.designs)               html += Renderer.renderDesigns(data.designs);
+      if (data.livePrototype)         html += Renderer.renderLivePrototype(data.livePrototype);
       if (data.results)               html += Renderer.renderResults(data.results);
       if (data.cta)                   html += Renderer.renderCTA(data.cta);
 
@@ -998,6 +999,37 @@ const Renderer = {
             <h3 class="card-inner-title" ${bi(decisionsTitle, decisionsTitleEn)}>${decisionsTitle}</h3>
             <div class="decisions-stack">${decisions}</div>
           </article>
+        </div>
+      </section>
+    `;
+  },
+
+  // ━━━ SECTION: Live Prototype ━━━
+  renderLivePrototype: (data) => {
+    const ctaLabel   = data.ctaLabel   || 'Abrir prototipo interactivo';
+    const ctaLabelEn = data.ctaLabelEn || 'Open interactive prototype';
+
+    return `
+      <section class="live-proto-section" data-section="livePrototype">
+        <div class="container">
+          <div class="section-header">
+            <h2 ${bi(data.title, data.titleEn)}>${data.title}</h2>
+            ${data.subtitle ? `<p ${bi(data.subtitle, data.subtitleEn)}>${data.subtitle}</p>` : ''}
+          </div>
+          <a class="live-proto-frame" href="${esc(data.url)}" target="_blank" rel="noopener">
+            <div class="live-proto-chrome">
+              <span class="live-proto-dot"></span><span class="live-proto-dot"></span><span class="live-proto-dot"></span>
+              <span class="live-proto-url">claude.ai/code/artifact/…</span>
+            </div>
+            <div class="live-proto-poster">
+              ${data.poster ? `<img src="${esc(data.poster)}" alt="">` : ''}
+              <div class="live-proto-cta">
+                <span class="live-proto-play">▶</span>
+                <span ${bi(ctaLabel, ctaLabelEn)}>${ctaLabel}</span>
+              </div>
+            </div>
+          </a>
+          ${data.note ? `<p class="live-proto-note" ${bi(data.note, data.noteEn)}>${data.note}</p>` : ''}
         </div>
       </section>
     `;
