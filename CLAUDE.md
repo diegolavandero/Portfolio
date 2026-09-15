@@ -108,6 +108,38 @@ portfolio-web/
 
 ---
 
+## 🔗 Design System del Producto (DispatchTrack) — Fuente de Verdad
+
+Distinto de los "🎨 Design Tokens" de arriba: esos son los tokens del **sitio del
+portfolio** (indigo/gray, chrome del propio site). Esta sección es sobre los tokens
+del **producto DispatchTrack** que aparecen DENTRO de un case study — cualquier
+mockup, prototipo interactivo o pantalla que simule la app real de DT (ej. el
+prototipo embebido en `load-validation`).
+
+**Regla:** para ese tipo de contenido, los colores/tipografía NUNCA se hardcodean
+acá. Se linkean en vivo desde el design system real:
+
+```html
+<link rel="stylesheet" href="https://dt-design-system-tawny.vercel.app/colors_and_type.css">
+```
+
+Si el prototipo usa nombres de variable propios (ej. `--dt-b6` en vez de `--b6`,
+para no chocar con los tokens del chrome del portfolio), agregar solo un bloque
+`:root` que haga *alias* (`--dt-b6: var(--b6);`) — nunca un valor hex nuevo. Ver
+`prototypes/load-validation-es.html` / `-en.html` como referencia del patrón.
+
+Por qué importa: esto ya se rompió una vez en esta sesión — un prototipo se
+armó con `--dt-b6:#1F60ED` tipeado a mano, un valor que no coincidía con el
+`colors_and_type.css` real del repo del design system. Un valor copiado a mano
+queda desactualizado apenas el design system cambia; un `<link>` no puede
+desactualizarse porque no hay copia.
+
+Fuente real del design system: `github.com/diegolavandero/dt-design-system`
+(deploy: `dt-design-system-tawny.vercel.app`). Ese repo tiene su propio
+`CLAUDE.md` con las reglas de esa fuente — no se duplican acá.
+
+---
+
 ## 📊 Estado por Sesión
 
 ### ✅ Sesión 01 (2026-04-28) — Génesis
