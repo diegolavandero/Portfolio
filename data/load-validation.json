@@ -554,6 +554,17 @@
       }
     ]
   },
+  "livePrototype": {
+    "title": "Prototipo Interactivo",
+    "titleEn": "Interactive Prototype",
+    "subtitle": "Probá el flujo real: validá ítems por escaneo o manualmente, confirmá el resumen y despachá la ruta.",
+    "subtitleEn": "Try the real flow: validate items by scanning or manually, confirm the summary, and dispatch the route.",
+    "badge": "Prototipo funcional",
+    "badgeEn": "Functional prototype",
+    "srcEs": "/prototypes/load-validation-es.html",
+    "srcEn": "/prototypes/load-validation-en.html",
+    "height": 1180
+  },
   "designs": {
     "title": "UI Mockups",
     "titleEn": "UI Mockups",

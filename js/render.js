@@ -61,6 +61,7 @@ const Renderer = {
       if (data.journeyMap)            html += Renderer.renderJourneyMap(data.journeyMap);
       if (data.cardSorting)           html += Renderer.renderCardSorting(data.cardSorting);
       if (data.solution)              html += Renderer.renderSolution(data.solution);
+      if (data.livePrototype)         html += Renderer.renderLivePrototype(data.livePrototype);
       if (data.designs)               html += Renderer.renderDesigns(data.designs);
       if (data.results)               html += Renderer.renderResults(data.results);
       if (data.cta)                   html += Renderer.renderCTA(data.cta);
@@ -1004,6 +1005,44 @@ const Renderer = {
   },
 
   // ━━━ SECTION: Designs ━━━
+  // ━━━ SECTION: Live Prototype ━━━
+  // Embeds a self-hosted (same-origin) interactive prototype in an <iframe>.
+  // Language swap: the iframe carries data-src-es/data-src-en (NOT the generic
+  // data-es/data-en text-swap used elsewhere, since applyLanguage() sets
+  // textContent — wrong for an iframe). Router.applyLanguage() has a matching
+  // branch that swaps the iframe's src instead. Must stay same-origin: Claude
+  // artifact URLs send X-Frame-Options: SAMEORIGIN and refuse to load in a
+  // cross-origin iframe, which is why this prototype's code lives in
+  // /prototypes/ on this site rather than being pointed at claude.ai directly.
+  renderLivePrototype: (data) => {
+    const lang = (typeof Router !== 'undefined' && Router.currentLang) || 'es';
+    const initialSrc = lang === 'en' ? (data.srcEn || data.srcEs) : (data.srcEs || data.srcEn);
+    const height = data.height || 1100;
+
+    return `
+      <section class="live-prototype-section" data-section="livePrototype">
+        <div class="container">
+          <div class="section-header">
+            ${data.badge ? `<span class="design-badge design-badge-green" ${bi(data.badge, data.badgeEn)}>${data.badge}</span>` : ''}
+            <h2 ${bi(data.title, data.titleEn)}>${data.title}</h2>
+            ${data.subtitle ? `<p ${bi(data.subtitle, data.subtitleEn)}>${data.subtitle}</p>` : ''}
+          </div>
+          <div class="live-prototype-frame-wrap">
+            <iframe
+              class="live-prototype-frame"
+              src="${esc(initialSrc)}"
+              data-src-es="${esc(data.srcEs)}"
+              data-src-en="${esc(data.srcEn)}"
+              style="height:${height}px"
+              loading="lazy"
+              title="${esc(t(data.title, data.titleEn))}"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    `;
+  },
+
   renderDesigns: (data) => {
     const screenContent = (src, ph, phEn) =>
       src ? `<img src="${esc(src)}" alt="${esc(ph || '')}" loading="lazy">` :
