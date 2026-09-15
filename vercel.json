@@ -8,6 +8,7 @@
     { "src": "/styles.css", "dest": "/styles.css" },
     { "src": "/js/(.*)", "dest": "/js/$1" },
     { "src": "/data/(.*)", "dest": "/data/$1" },
+    { "src": "/prototypes/(.*)", "dest": "/prototypes/$1" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }

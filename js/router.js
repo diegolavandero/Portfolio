@@ -301,6 +301,13 @@ const Router = {
         }
       }
     });
+
+    // Live prototype iframes: swap src (not text) to the matching language build.
+    const srcAttr = lang === 'es' ? 'data-src-es' : 'data-src-en';
+    document.querySelectorAll('iframe[data-src-es][data-src-en]').forEach(el => {
+      const src = el.getAttribute(srcAttr);
+      if (src && el.getAttribute('src') !== src) el.setAttribute('src', src);
+    });
   },
 
   updateActiveNav: () => {

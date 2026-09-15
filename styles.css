@@ -1674,6 +1674,25 @@ body {
   background-color: var(--gray-50);
 }
 
+.live-prototype-section {
+  padding: var(--spacing-4xl) 0;
+}
+
+.live-prototype-frame-wrap {
+  margin-top: var(--spacing-lg);
+  border-radius: 14px;
+  border: 1px solid var(--gray-200);
+  background: var(--gray-75);
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.live-prototype-frame {
+  display: block;
+  width: 100%;
+  border: none;
+}
+
 .designs-stack {
   display: flex;
   flex-direction: column;
