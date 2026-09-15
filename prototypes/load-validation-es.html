@@ -3,6 +3,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://dt-design-system-tawny.vercel.app/colors_and_type.css">
 <style>
 /* ============ OUTER CHROME TOKENS (studio, theme-aware) ============ */
 :root{
@@ -38,16 +39,22 @@
   --studio-accent-ink:#adc7ff;
 }
 
-/* ============ DT PRODUCT TOKENS (fixed — the app's own design system) ============ */
+/* ============ DT PRODUCT TOKENS — sourced live from the design system ============
+   No color values are duplicated here. colors_and_type.css (linked in <head>,
+   below) is the actual dt-design-system repo's token file — this block only
+   aliases those --xx names to the --dt-xx names this prototype's markup uses.
+   If the design system's tokens change, this page updates with them; nothing
+   here needs hand-editing to stay in sync. */
 :root{
-  --dt-indigo:#132045;
-  --dt-n1:#F5F6FA;--dt-n2:#F0F2F5;--dt-n3:#E1E6ED;--dt-n4:#C5D2E7;--dt-n45:#8FA0BA;--dt-n5:#67768D;--dt-n6:#4B5564;--dt-n7:#39414D;
-  --dt-b1:#EDF5FF;--dt-b2:#D1E0FF;--dt-b6:#1F60ED;--dt-b7:#0052CC;
-  --dt-g1:#E3FCEF;--dt-g5:#36B37E;--dt-g6:#00875A;
-  --dt-r1:#FFEBE6;--dt-r5:#FF5630;--dt-r6:#DE350B;
-  --dt-o1:#FFFAE6;--dt-o5:#FFAB00;--dt-o7:#8A5B00;
-  --dt-font:'DM Sans',system-ui,sans-serif;
-  --dt-mono:'Roboto Mono',ui-monospace,monospace;
+  --dt-indigo: var(--indigo);
+  --dt-n1: var(--n1); --dt-n2: var(--n2); --dt-n3: var(--n3); --dt-n4: var(--n4);
+  --dt-n45: var(--n4-5); --dt-n5: var(--n5); --dt-n6: var(--n6); --dt-n7: var(--n7);
+  --dt-b1: var(--b1); --dt-b2: var(--b2); --dt-b6: var(--b6); --dt-b7: var(--b7);
+  --dt-g1: var(--g1); --dt-g5: var(--g5); --dt-g6: var(--g6);
+  --dt-r1: var(--r1); --dt-r5: var(--r5); --dt-r6: var(--r6);
+  --dt-o1: var(--o1); --dt-o5: var(--o5); --dt-o7: var(--o7);
+  --dt-font: var(--font-sans);
+  --dt-mono:'Roboto Mono',ui-monospace,monospace; /* no mono token in the DS yet — worth adding one */
 }
 
 *,*::before,*::after{box-sizing:border-box}
