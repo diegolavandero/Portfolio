@@ -56,9 +56,9 @@
     }
   ],
   "heroImage": {
-    "placeholder": "Interfaz de validación de carga pre-ruta",
-    "placeholderEn": "Pre-route load validation interface",
-    "device": "mobile"
+    "src": "data/images/load-validation-flow.png",
+    "placeholder": "Diagrama de flujo: Login → Validación de carga → Pre-ruta",
+    "placeholderEn": "Flow diagram: Login → Load Validation → Pre-route"
   },
   "whyItMatters": {
     "title": "¿Por qué importa?",
@@ -570,13 +570,24 @@
     "titleEn": "UI Mockups",
     "items": [
       {
-        "title": "Vista de Lista",
-        "titleEn": "List View",
-        "description": "Dashboard de órdenes pendientes con priorización automática y estado visual por colores",
-        "descriptionEn": "Pending orders dashboard with automatic prioritization and color-coded visual status",
-        "src": null,
-        "alt": "Vista de lista de órdenes de carga",
-        "altEn": "Load order list view"
+        "pairGroup": "list-view-cases",
+        "title": "Validación por orden",
+        "titleEn": "Validation by order",
+        "description": "Cuando la orden no tiene desglose de ítems —se maneja como bulto o paquete único— la validación ocurre a nivel de orden completa, no por SKU.",
+        "descriptionEn": "When the order has no item breakdown — handled as a single bag or package — validation happens at the whole-order level instead of per SKU.",
+        "src": "data/images/load-validation-by-order.png",
+        "alt": "Vista de lista de órdenes de carga, validación a nivel de orden",
+        "altEn": "Load order list view, order-level validation"
+      },
+      {
+        "pairGroup": "list-view-cases",
+        "title": "Validación por ítem",
+        "titleEn": "Validation by item",
+        "description": "Cuando la orden trae el detalle de SKUs, cada ítem se valida individualmente: cantidad, código y estado quedan registrados por línea.",
+        "descriptionEn": "When the order includes SKU-level detail, each item is validated individually — quantity, code and status are recorded per line.",
+        "src": "data/images/load-validation-by-item.png",
+        "alt": "Vista de lista de ítems de carga, validación a nivel de SKU",
+        "altEn": "Load item list view, SKU-level validation"
       },
       {
         "title": "Escaneo de Código",
