@@ -1061,7 +1061,7 @@ const Renderer = {
       return `<div class="${imageClass}">${inner}</div>`;
     };
 
-    const items = (data.items || []).map(item => {
+    const renderItem = (item) => {
       const badgeClass = `design-badge-${item.badgeStyle || 'indigo'}`;
       const device = item.device || data.device;
       const srcs = item.srcs || (item.src ? [item.src] : []);
@@ -1083,7 +1083,24 @@ const Renderer = {
           ${imagesHtml}
         </article>
       `;
-    }).join('');
+    };
+
+    // Consecutive items sharing the same item.pairGroup render side by side
+    // (2-col row) instead of stacked full-width — e.g. two "case" variants
+    // meant to be compared at a glance.
+    const groups = [];
+    (data.items || []).forEach(item => {
+      const last = groups[groups.length - 1];
+      if (item.pairGroup && last && last.pairGroup === item.pairGroup) {
+        last.items.push(item);
+      } else {
+        groups.push({ pairGroup: item.pairGroup || null, items: [item] });
+      }
+    });
+    const items = groups.map(g => g.items.length > 1
+      ? `<div class="design-items-row">${g.items.map(renderItem).join('')}</div>`
+      : renderItem(g.items[0])
+    ).join('');
 
     return `
       <section class="designs-section" data-section="designs">
