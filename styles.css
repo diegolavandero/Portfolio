@@ -1780,6 +1780,36 @@ body {
 .design-images-grid--2 { grid-template-columns: 1fr 1fr; }
 .design-images-grid--3 { grid-template-columns: repeat(3, 1fr); }
 
+/* Two design-items placed side by side (item.pairGroup in render.js) —
+   e.g. two case variants meant to be compared at a glance, instead of
+   the default full-width stack. */
+.design-items-row {
+  display: flex;
+  gap: var(--spacing-2xl);
+  align-items: flex-start;
+}
+.design-items-row .design-item {
+  flex: 1 1 0;
+  min-width: 0;
+}
+/* Phone mockups shrink to fit two per row instead of full-width */
+.design-items-row .design-image--mobile {
+  min-height: 360px;
+}
+.design-items-row .device-mobile {
+  width: 100%;
+  max-width: 240px;
+  margin: 0 auto;
+}
+@media (max-width: 760px) {
+  .design-items-row {
+    flex-direction: column;
+  }
+  .design-items-row .device-mobile {
+    max-width: 280px;
+  }
+}
+
 /* ═══ RESULTS ═══ */
 .results-section {
   padding: var(--spacing-4xl) 0;
