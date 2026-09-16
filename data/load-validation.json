@@ -614,13 +614,26 @@
         "altEn": "Manual verification modal with an empty code field"
       },
       {
-        "title": "Firma Digital y Evidencia",
-        "titleEn": "Digital Signature & Evidence",
-        "description": "Captura de firma y foto de confirmación con timestamp inmutable para trazabilidad completa",
-        "descriptionEn": "Signature and confirmation photo capture with immutable timestamp for complete traceability",
-        "src": null,
-        "alt": "Pantalla de firma digital y evidencia fotográfica",
-        "altEn": "Digital signature and photographic evidence screen"
+        "pairGroup": "signature-cases",
+        "device": "none",
+        "title": "Firma pendiente",
+        "titleEn": "Signature pending",
+        "description": "La validación queda parcial hasta que el supervisor firma; el estado de cada orden se ve de un vistazo antes de firmar.",
+        "descriptionEn": "Validation stays partial until the supervisor signs; each order's status is visible at a glance before signing.",
+        "src": "data/images/load-validation-signature-empty.png",
+        "alt": "Pantalla de firma digital, estado vacío antes de firmar",
+        "altEn": "Digital signature screen, empty state before signing"
+      },
+      {
+        "pairGroup": "signature-cases",
+        "device": "none",
+        "title": "Firma completada",
+        "titleEn": "Signature completed",
+        "description": "Firma capturada en el dispositivo, con timestamp automático como evidencia inmutable de la validación.",
+        "descriptionEn": "Signature captured on-device, with an automatic timestamp as immutable evidence of the validation.",
+        "src": "data/images/load-validation-signature-completed.png",
+        "alt": "Pantalla de firma digital con firma capturada",
+        "altEn": "Digital signature screen with a captured signature"
       }
     ],
     "device": "mobile"
