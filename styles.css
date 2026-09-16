@@ -446,34 +446,34 @@ body {
 }
 
 /* Mobile — iPhone-style bezel */
+/* Matches .phone-wrap in prototypes/load-validation-*.html exactly —
+   same gradient, radius, padding and shadow as the live interactive
+   preview, so static mockup screenshots use the identical device frame. */
 .device-mobile {
-  background: linear-gradient(160deg, #303030 0%, #1c1c1c 100%);
-  border-radius: 16px;
-  padding: 3px;
-  box-shadow:
-    inset 0 0 0 0.5px rgba(255,255,255,0.12),
-    0 8px 24px rgba(0,0,0,0.22),
-    0 2px 6px rgba(0,0,0,0.12);
+  background: linear-gradient(160deg, #2b2b2b, #141414);
+  border-radius: 34px;
+  padding: 9px;
+  box-shadow: 0 24px 60px rgba(10,14,30,.35), 0 4px 14px rgba(10,14,30,.25);
   position: relative;
   display: inline-flex;
   flex-direction: column;
 }
-/* Dynamic Island pill */
+/* Dynamic Island pill — matches .notch in the live prototype */
 .device-mobile::before {
   content: '';
   position: absolute;
-  top: 5px;
+  top: 8px;
   left: 50%;
   transform: translateX(-50%);
-  width: 30px;
-  height: 8px;
-  background: #111;
-  border-radius: 8px;
+  width: 110px;
+  height: 22px;
+  background: #141414;
+  border-radius: 14px;
   z-index: 2;
   pointer-events: none;
 }
 .device-screen {
-  border-radius: 13px;
+  border-radius: 26px;
   overflow: hidden;
   background: #000;
   position: relative;
@@ -500,17 +500,27 @@ body {
   justify-content: center;
 }
 
-/* Mobile inside fixed-ratio containers (home thumbnails) */
+/* Mobile inside fixed-ratio containers (home thumbnails) — the base
+   .device-mobile frame is sized for the ~240-360px mockups/prototype;
+   scaled down proportionally here so a 116px-wide thumbnail doesn't
+   inherit a bezel/radius meant for something 2-3x larger. */
 .project-image .device-mobile,
 .featured-image .device-mobile {
   width: 116px;
   height: auto;
+  border-radius: 12px;
+  padding: 3px;
+}
+.project-image .device-screen,
+.featured-image .device-screen {
+  border-radius: 9px;
 }
 .project-image .device-mobile::before,
 .featured-image .device-mobile::before {
   width: 22px;
   height: 6px;
   top: 3px;
+  border-radius: 8px;
 }
 
 /* Hero frame modifier for mobile projects */
@@ -1800,6 +1810,18 @@ body {
   width: 100%;
   max-width: 240px;
   margin: 0 auto;
+  padding: 2px;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(10,14,30,.18), 0 2px 6px rgba(10,14,30,.12);
+}
+.design-items-row .device-screen {
+  border-radius: 11px;
+}
+.design-items-row .device-mobile::before {
+  width: 36px;
+  height: 8px;
+  top: 4px;
+  border-radius: 6px;
 }
 @media (max-width: 760px) {
   .design-items-row {
@@ -1807,6 +1829,17 @@ body {
   }
   .design-items-row .device-mobile {
     max-width: 280px;
+    padding: 3px;
+    border-radius: 16px;
+  }
+  .design-items-row .device-screen {
+    border-radius: 13px;
+  }
+  .design-items-row .device-mobile::before {
+    width: 40px;
+    height: 9px;
+    top: 4px;
+    border-radius: 7px;
   }
 }
 

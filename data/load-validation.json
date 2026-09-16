@@ -571,6 +571,7 @@
     "items": [
       {
         "pairGroup": "list-view-cases",
+        "device": "none",
         "title": "Validación por orden",
         "titleEn": "Validation by order",
         "description": "Cuando la orden no tiene desglose de ítems —se maneja como bulto o paquete único— la validación ocurre a nivel de orden completa, no por SKU.",
@@ -581,6 +582,7 @@
       },
       {
         "pairGroup": "list-view-cases",
+        "device": "none",
         "title": "Validación por ítem",
         "titleEn": "Validation by item",
         "description": "Cuando la orden trae el detalle de SKUs, cada ítem se valida individualmente: cantidad, código y estado quedan registrados por línea.",
@@ -590,13 +592,26 @@
         "altEn": "Load item list view, SKU-level validation"
       },
       {
-        "title": "Escaneo de Código",
-        "titleEn": "Code Scanning",
-        "description": "Interfaz de escaneo optimizada para uso con guantes: targets grandes, feedback auditivo, sin menús",
-        "descriptionEn": "Scanning interface optimized for gloved use: large targets, auditory feedback, no menus",
-        "src": null,
+        "pairGroup": "code-scanning-cases",
+        "device": "none",
+        "title": "Escaneo de código",
+        "titleEn": "Code scanning",
+        "description": "Escaneo por cámara para verificar ítems rápidamente, con feedback auditivo y visual inmediato al detectar el código.",
+        "descriptionEn": "Camera-based scanning to verify items quickly, with immediate audio and visual feedback on a successful read.",
+        "src": "data/images/load-validation-scanning.png",
         "alt": "Interfaz de escaneo de código de barras",
         "altEn": "Barcode scanning interface"
+      },
+      {
+        "pairGroup": "code-scanning-cases",
+        "device": "none",
+        "title": "Verificación manual",
+        "titleEn": "Manual verification",
+        "description": "Cuando el escaneo es obligatorio pero falla, se puede verificar tocando la orden o el ítem específico e ingresando el código a mano.",
+        "descriptionEn": "When scanning is mandatory but fails, you can verify by tapping the specific order or item and typing the code in by hand.",
+        "src": "data/images/load-validation-manual-verification.png",
+        "alt": "Modal de verificación manual con campo de código vacío",
+        "altEn": "Manual verification modal with an empty code field"
       },
       {
         "title": "Firma Digital y Evidencia",
