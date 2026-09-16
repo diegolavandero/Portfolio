@@ -570,6 +570,7 @@
     "titleEn": "UI Mockups",
     "items": [
       {
+        "pairGroup": "list-view-cases",
         "title": "Validación por orden",
         "titleEn": "Validation by order",
         "description": "Cuando la orden no tiene desglose de ítems —se maneja como bulto o paquete único— la validación ocurre a nivel de orden completa, no por SKU.",
@@ -579,6 +580,7 @@
         "altEn": "Load order list view, order-level validation"
       },
       {
+        "pairGroup": "list-view-cases",
         "title": "Validación por ítem",
         "titleEn": "Validation by item",
         "description": "Cuando la orden trae el detalle de SKUs, cada ítem se valida individualmente: cantidad, código y estado quedan registrados por línea.",
