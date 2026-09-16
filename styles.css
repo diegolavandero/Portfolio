@@ -1806,17 +1806,45 @@ body {
 .design-items-row .design-image--mobile {
   min-height: 360px;
 }
+/* .device-mobile's padding/radius/notch (below) are sized for a
+   360px-wide phone (matching the live prototype's .phone-wrap at its
+   native size). This row renders it at 240px, so those absolute px
+   values are scaled down here (×240/360 ≈ 0.667) — copying them
+   as-is looked proportionally thicker, not thinner, at the smaller size. */
 .design-items-row .device-mobile {
   width: 100%;
   max-width: 240px;
   margin: 0 auto;
+  padding: 6px;
+  border-radius: 23px;
+}
+.design-items-row .device-screen {
+  border-radius: 17px;
+}
+.design-items-row .device-mobile::before {
+  width: 73px;
+  height: 15px;
+  top: 5px;
+  border-radius: 9px;
 }
 @media (max-width: 760px) {
   .design-items-row {
     flex-direction: column;
   }
+  /* Back near full width when stacked — scale (×280/360 ≈ 0.778) instead */
   .design-items-row .device-mobile {
     max-width: 280px;
+    padding: 7px;
+    border-radius: 26px;
+  }
+  .design-items-row .device-screen {
+    border-radius: 20px;
+  }
+  .design-items-row .device-mobile::before {
+    width: 86px;
+    height: 17px;
+    top: 6px;
+    border-radius: 11px;
   }
 }
 
