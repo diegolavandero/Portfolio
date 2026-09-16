@@ -571,6 +571,7 @@
     "items": [
       {
         "pairGroup": "list-view-cases",
+        "device": "none",
         "title": "Validación por orden",
         "titleEn": "Validation by order",
         "description": "Cuando la orden no tiene desglose de ítems —se maneja como bulto o paquete único— la validación ocurre a nivel de orden completa, no por SKU.",
@@ -581,6 +582,7 @@
       },
       {
         "pairGroup": "list-view-cases",
+        "device": "none",
         "title": "Validación por ítem",
         "titleEn": "Validation by item",
         "description": "Cuando la orden trae el detalle de SKUs, cada ítem se valida individualmente: cantidad, código y estado quedan registrados por línea.",
@@ -591,6 +593,7 @@
       },
       {
         "pairGroup": "code-scanning-cases",
+        "device": "none",
         "title": "Escaneo de código",
         "titleEn": "Code scanning",
         "description": "Escaneo por cámara para verificar ítems rápidamente, con feedback auditivo y visual inmediato al detectar el código.",
@@ -601,6 +604,7 @@
       },
       {
         "pairGroup": "code-scanning-cases",
+        "device": "none",
         "title": "Verificación manual",
         "titleEn": "Manual verification",
         "description": "Cuando el escaneo es obligatorio pero falla, se puede verificar tocando la orden o el ítem específico e ingresando el código a mano.",
