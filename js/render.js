@@ -1121,8 +1121,6 @@ const Renderer = {
   //   - Metric cards estilo Why (icon + label + metric + desc) sin learnings/nextSteps (OD)
   // Detecta automáticamente: si los items de impact tienen `icon`, usa metric-cards.
   renderResults: (data) => {
-    const impactTitle      = data.impactTitle      || 'Impacto Esperado';
-    const impactTitleEn    = data.impactTitleEn    || 'Expected Impact';
     const learningsTitle   = data.learningsTitle   || 'Aprendizajes Clave';
     const learningsTitleEn = data.learningsTitleEn || 'Key Learnings';
     const nextStepsTitle   = data.nextStepsTitle   || 'Próximos Pasos';
@@ -1168,7 +1166,6 @@ const Renderer = {
     const impactWrapper = isMetricCards
       ? `<div class="impact-grid">${impact}</div>`
       : `<article class="impact-card-wrap">
-          <h3 class="card-inner-title" ${bi(impactTitle, impactTitleEn)}>${impactTitle}</h3>
           <div class="impact-row">${impact}</div>
         </article>`;
 
