@@ -350,3 +350,5 @@ PAGE Sobre mí (🟡 placeholder)
 ---
 
 _Última actualización: 2026-04-28 — Sesión 02 — v0.2.0_
+
+<!-- deploy nudge: forcing a fresh webhook event after Vercel stopped picking up pushes -->
