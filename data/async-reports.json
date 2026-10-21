@@ -549,7 +549,7 @@
         "titleEn": "Report Request",
         "description": "Configuración de reporte mediante templates personalizables. Selección de período, filtros y formato de salida en 3 pasos.",
         "descriptionEn": "Report configuration via customizable templates. Period selection, filters and output format in 3 steps.",
-        "srcs": ["data/images/async-report-01.png", "data/images/async-report-02.png"],
+        "srcs": ["data/images/async-report-02.png", "data/images/async-report-01.png"],
         "alt": "Mockup de configuración de reporte",
         "altEn": "Report configuration mockup"
       },
@@ -558,7 +558,7 @@
         "titleEn": "Processing States",
         "description": "Sistema de estados visual: en cola, procesando con porcentaje de avance, listo para descarga y error accionable.",
         "descriptionEn": "Visual status system: queued, processing with progress percentage, ready to download and actionable error.",
-        "src": null,
+        "srcs": ["data/images/async-report-03.png", "data/images/async-report-04.png"],
         "alt": "Mockup de estados del sistema",
         "altEn": "System states mockup"
       },
@@ -567,7 +567,7 @@
         "titleEn": "Notification Center",
         "description": "Centro de reportes con historial de 90 días, badges de estado y descarga directa desde la notificación sin navegación adicional.",
         "descriptionEn": "Reports center with 90-day history, status badges and direct download from the notification without additional navigation.",
-        "src": null,
+        "src": "data/images/async-report-05.png",
         "alt": "Mockup de notificaciones",
         "altEn": "Notifications mockup"
       }
