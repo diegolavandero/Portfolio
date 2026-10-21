@@ -549,7 +549,7 @@
         "titleEn": "Report Request",
         "description": "Configuración de reporte mediante templates personalizables. Selección de período, filtros y formato de salida en 3 pasos.",
         "descriptionEn": "Report configuration via customizable templates. Period selection, filters and output format in 3 steps.",
-        "src": null,
+        "srcs": ["data/images/async-report-01.png", "data/images/async-report-02.png"],
         "alt": "Mockup de configuración de reporte",
         "altEn": "Report configuration mockup"
       },
