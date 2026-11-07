@@ -1793,72 +1793,46 @@ body {
 /* Two design-items placed side by side (item.pairGroup in render.js) —
    e.g. two case variants meant to be compared at a glance, instead of
    the default full-width stack. */
-/* Fila de pares: scroll horizontal con snap — cada card conserva su ancho
-   completo; el usuario hace scroll/swipe para ver la siguiente */
+/* Fila de pares: 2 columnas iguales, cards stretcheadas para alinear
+   título / descripción / imagen entre columnas izquierda y derecha */
 .design-items-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: var(--spacing-2xl);
-  align-items: flex-start;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  /* Fade lateral para indicar que hay más contenido */
-  -webkit-mask-image: linear-gradient(to right, transparent 0, black 24px, black calc(100% - 48px), transparent 100%);
-  mask-image: linear-gradient(to right, transparent 0, black 24px, black calc(100% - 48px), transparent 100%);
-  /* Ocultar scrollbar visualmente pero mantener funcionalidad */
-  scrollbar-width: none;
-  padding-bottom: 4px;
+  align-items: stretch;
 }
-.design-items-row::-webkit-scrollbar {
-  display: none;
-}
+/* Cada card es flex-column para empujar la imagen al fondo */
 .design-items-row .design-item {
-  flex: 0 0 auto;
-  scroll-snap-align: start;
-  /* Ancho por defecto para items sin mockup (device:none, imágenes planas) */
-  width: min(340px, 85vw);
+  display: flex;
+  flex-direction: column;
 }
-/* Items con mockup mobile: ancho fijo al tamaño del frame */
-.design-items-row .design-item:has(.design-image--mobile) {
-  width: 300px;
+.design-items-row .design-item .design-image,
+.design-items-row .design-item .design-images-grid {
+  margin-top: auto;
 }
-/* En pantallas anchas (≥ 900px) se muestran 2 columnas sin scroll */
-@media (min-width: 900px) {
-  .design-items-row {
-    overflow-x: visible;
-    -webkit-mask-image: none;
-    mask-image: none;
-    flex-wrap: wrap;
-  }
-  .design-items-row .design-item {
-    flex: 1 1 calc(50% - var(--spacing-2xl) / 2);
-    max-width: calc(50% - var(--spacing-2xl) / 2);
-    width: auto;
-  }
-  /* En pantallas anchas el mockup ocupa todo el ancho de su columna */
-  .design-items-row .device-mobile {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    border-radius: 34px;
-    padding: 9px;
-    box-shadow: 0 24px 60px rgba(10,14,30,.35), 0 4px 14px rgba(10,14,30,.25);
-  }
-  .design-items-row .device-screen {
-    border-radius: 26px;
-  }
+/* Mockup mobile en la fila: tamaño fijo igual al de 1 columna (~280px),
+   centrado — no ocupa todo el ancho de la columna */
+.design-items-row .device-mobile {
+  width: 280px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 34px;
+  padding: 9px;
+  box-shadow: 0 24px 60px rgba(10,14,30,.35), 0 4px 14px rgba(10,14,30,.25);
+}
+.design-items-row .device-screen {
+  border-radius: 26px;
 }
 @media (max-width: 760px) {
   .design-items-row {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
   .design-items-row .device-mobile {
-    max-width: 280px;
-    padding: 3px;
-    border-radius: 16px;
+    width: 100%;
+    max-width: 320px;
   }
   .design-items-row .device-screen {
-    border-radius: 13px;
+    border-radius: 26px;
   }
   .design-items-row .device-mobile::before {
     width: 40px;
