@@ -1794,12 +1794,16 @@ body {
    e.g. two case variants meant to be compared at a glance, instead of
    the default full-width stack. */
 /* Fila de pares: 2 columnas iguales, cards stretcheadas para alinear
-   título / descripción / imagen entre columnas izquierda y derecha */
+   título / descripción / imagen entre columnas izquierda y derecha.
+   max-width limita el contenedor para que los mockups no queden gigantes. */
 .design-items-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-2xl);
   align-items: stretch;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Cada card es flex-column para empujar la imagen al fondo */
 .design-items-row .design-item {
@@ -1810,11 +1814,11 @@ body {
 .design-items-row .design-item .design-images-grid {
   margin-top: auto;
 }
-/* Mockup mobile en la fila: tamaño fijo igual al de 1 columna (~280px),
-   centrado — no ocupa todo el ancho de la columna */
+/* Mockup mobile en la fila: ocupa todo el ancho de su columna (≤360px)
+   con el bezel completo — igual que en 1 columna */
 .design-items-row .device-mobile {
-  width: 280px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 360px;
   margin: 0 auto;
   border-radius: 34px;
   padding: 9px;
