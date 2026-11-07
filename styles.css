@@ -1792,58 +1792,81 @@ body {
 .design-images-grid--2 { grid-template-columns: 1fr 1fr; }
 .design-images-grid--3 { grid-template-columns: repeat(3, 1fr); }
 
-/* Two design-items placed side by side (item.pairGroup in render.js) —
-   e.g. two case variants meant to be compared at a glance, instead of
-   the default full-width stack. */
-/* Fila de pares: 2 columnas iguales alineadas al borde izquierdo del
-   contenedor (igual que las cards de 1 columna). max-width en cada
-   columna limita el ancho del mockup sin centrar el grid. */
+/* ── 2-col design row ────────────────────────────────────────────────
+   Subgrid: la fila define 3 filas implícitas (badge | título+desc | imagen).
+   Cada .design-item participa de esas filas → badge alineado con badge,
+   título/desc con título/desc, imagen con imagen.
+   ──────────────────────────────────────────────────────────────────── */
 .design-items-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-2xl);
-  align-items: stretch; /* columnas misma altura */
+  grid-template-rows: auto auto auto; /* badge | texto | imagen */
+  column-gap: var(--spacing-2xl);
+  row-gap: 0;
+  align-items: start;
 }
-/* Cada card es flex-column; texto arriba, mockup al fondo */
+
+/* Cada .design-item usa subgrid para las 3 filas de la fila padre */
 .design-items-row .design-item {
+  display: grid;
+  grid-row: span 3;           /* ocupa las 3 filas */
+  grid-template-rows: subgrid; /* hereda las 3 filas del padre */
+  align-items: start;
+  gap: var(--spacing-md);
+}
+
+/* Badge → fila 1. Placeholder mantiene la fila aunque no haya badge */
+.design-items-row .design-item .design-badge,
+.design-items-row .design-item .design-badge-placeholder {
+  align-self: start;
+}
+.design-badge-placeholder {
+  display: block;
+  height: 0;
+}
+
+/* Título + descripción → fila 2 (van juntos en un wrapper) */
+.design-items-row .design-item .design-item__text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  gap: var(--spacing-sm);
+  align-self: start;
 }
-/* El wrapper de imagen empuja hacia abajo cuando el texto de la otra
-   columna es más alto — mockups siempre alineados entre sí */
-.design-items-row .design-image,
-.design-items-row .design-image--mobile {
-  margin-top: auto;
+
+/* Imagen → fila 3, arranca desde arriba (alineada con la otra columna) */
+.design-items-row .design-item .design-image,
+.design-items-row .design-item .design-image--mobile {
+  align-self: start;
+  margin-top: var(--spacing-md);
 }
-/* Mockup mobile en la fila: ocupa todo el ancho de su columna (≤360px)
-   pegado al borde izquierdo, igual que en 1 columna */
+
+/* Mockup: 360px fijo, pegado a la izquierda, display block */
 .design-items-row .device-mobile {
-  display: block; /* override inline-flex — se estira al ancho de la columna */
-  width: 100%;
-  max-width: 360px;
-  margin: 0; /* sin auto — izquierda, no centrado */
+  display: block;
+  width: 360px;
+  flex-shrink: 0;
   box-sizing: border-box;
 }
+
 .design-items-row .device-screen {
   border-radius: 26px;
 }
+
 @media (max-width: 760px) {
   .design-items-row {
     grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+  .design-items-row .design-item {
+    grid-row: auto;
+    grid-template-rows: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
   }
   .design-items-row .device-mobile {
     width: 100%;
     max-width: 320px;
-  }
-  .design-items-row .device-screen {
-    border-radius: 26px;
-  }
-  .design-items-row .device-mobile::before {
-    width: 40px;
-    height: 9px;
-    top: 4px;
-    border-radius: 7px;
   }
 }
 

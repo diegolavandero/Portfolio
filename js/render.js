@@ -1078,9 +1078,11 @@ const Renderer = {
 
       return `
         <article class="design-item">
-          ${item.badge ? `<span class="design-badge ${badgeClass}" ${bi(item.badge, item.badgeEn)}>${item.badge}</span>` : ''}
-          <h3 class="design-title" ${bi(item.title, item.titleEn)}>${item.title}</h3>
-          ${item.description ? `<p class="design-desc" ${bi(item.description, item.descriptionEn)}>${item.description}</p>` : ''}
+          ${item.badge ? `<span class="design-badge ${badgeClass}" ${bi(item.badge, item.badgeEn)}>${item.badge}</span>` : '<span class="design-badge-placeholder"></span>'}
+          <div class="design-item__text">
+            <h3 class="design-title" ${bi(item.title, item.titleEn)}>${item.title}</h3>
+            ${item.description ? `<p class="design-desc" ${bi(item.description, item.descriptionEn)}>${item.description}</p>` : ''}
+          </div>
           ${imagesHtml}
         </article>
       `;
