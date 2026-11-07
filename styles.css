@@ -3017,8 +3017,13 @@ body {
   transform: translateX(2px);
 }
 
-/* Designs: isla dinámica oculta dentro de la galería de pantallas
-   (el notch es útil en prototipos interactivos pero ensucia las capturas) */
+/* Designs: todos los mockups son 360px fijos, display block.
+   La isla dinámica se oculta (útil en prototipos, ensucia capturas) */
+.designs-section .device-mobile {
+  display: block;
+  width: 360px;
+  box-sizing: border-box;
+}
 .designs-section .device-mobile::before {
   display: none;
 }
