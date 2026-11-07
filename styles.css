@@ -1814,8 +1814,13 @@ body {
 }
 .design-items-row .design-item {
   flex: 0 0 auto;
-  width: 340px;
   scroll-snap-align: start;
+  /* Ancho por defecto para items sin mockup (device:none, imágenes planas) */
+  width: min(340px, 85vw);
+}
+/* Items con mockup mobile: ancho fijo al tamaño del frame */
+.design-items-row .design-item:has(.design-image--mobile) {
+  width: 300px;
 }
 /* En pantallas anchas (≥ 900px) se muestran 2 columnas sin scroll */
 @media (min-width: 900px) {
