@@ -96,6 +96,20 @@
       "image": "data/images/async-reports.webp"
     },
     {
+      "eyebrow": "B2C E-COMMERCE • 2025",
+      "eyebrowEn": "B2C E-COMMERCE • 2025",
+      "title": "Piso Ideal — Falabella",
+      "titleEn": "Ideal Floor — Falabella",
+      "subtitle": "Asistente de compra con recomendación por IA para categoría pisos",
+      "subtitleEn": "AI-powered purchase assistant for flooring category",
+      "metric": "↑ 20%",
+      "metricLabel": "conversión de categoría",
+      "metricLabelEn": "category conversion",
+      "slug": "falabella",
+      "device": "mobile",
+      "image": "data/images/falabella.webp"
+    },
+    {
       "eyebrow": "DESIGN SYSTEM • 2024–2026",
       "eyebrowEn": "DESIGN SYSTEM • 2024–2026",
       "title": "DispatchTrack Design System",

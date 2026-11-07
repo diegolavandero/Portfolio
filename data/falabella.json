@@ -1,0 +1,438 @@
+{
+  "page": "falabella",
+  "slug": "falabella",
+  "title": "Piso Ideal — Falabella",
+  "subtitle": "Asistente de compra B2C con recomendación por IA",
+
+  "hero": {
+    "tagline": "B2C E-COMMERCE · 2025",
+    "taglineEn": "B2C E-COMMERCE · 2025",
+    "title": "Piso Ideal",
+    "titleEn": "Ideal Floor",
+    "description": "Asistente de compra para pisos que calcula cantidades, recomienda productos por IA y arma un kit completo — reduciendo el abandono de categoría en un 20%.",
+    "descriptionEn": "Flooring purchase assistant that calculates quantities, recommends products via AI, and assembles a complete kit — reducing category abandonment by 20%."
+  },
+
+  "projectSpecs": [
+    {
+      "label": "Mi Rol",
+      "labelEn": "My Role",
+      "value": "UX Designer — prueba técnica FAANG"
+    },
+    {
+      "label": "Contexto",
+      "labelEn": "Context",
+      "value": "Falabella Digital Commerce"
+    },
+    {
+      "label": "Duración",
+      "labelEn": "Duration",
+      "value": "72 horas"
+    },
+    {
+      "label": "Equipo",
+      "labelEn": "Team",
+      "value": "Individual"
+    },
+    {
+      "label": "Año",
+      "labelEn": "Year",
+      "value": "2025"
+    },
+    {
+      "label": "Entregables",
+      "labelEn": "Deliverables",
+      "value": "14 pantallas Android + Design system + Flujo FigJam + Justificaciones"
+    }
+  ],
+
+  "whyItMatters": [
+    {
+      "metric": "↑ 20%",
+      "metricEn": "↑ 20%",
+      "label": "conversión de categoría",
+      "labelEn": "category conversion",
+      "description": "40% de adopción del flujo × 50% de lift dentro del flujo = 20% de mejora en conversión de pisos.",
+      "descriptionEn": "40% flow adoption × 50% lift within the flow = 20% improvement in flooring category conversion."
+    },
+    {
+      "metric": "−34%",
+      "metricEn": "−34%",
+      "label": "costo por m² malinterpretado",
+      "labelEn": "misread price per m²",
+      "description": "Un piso 34% más caro por m² puede ser solo 6% más caro en total (caja de 2,4 m² vs 1,99 m²). El flujo expone esta diferencia para decisiones más informadas.",
+      "descriptionEn": "A floor 34% more expensive per m² can be only 6% more expensive in total (box covers 2.4 m² vs 1.99 m²). The flow surfaces this gap for better decisions."
+    },
+    {
+      "metric": "5",
+      "metricEn": "5",
+      "label": "pantallas al checkout",
+      "labelEn": "screens to checkout",
+      "description": "Funnel de 5 pasos: entrada, medidas, confirmación, recomendación, kit + carrito. Sin páginas de producto intermedias.",
+      "descriptionEn": "5-step funnel: entry, measurements, confirmation, recommendation, kit + cart. No intermediate product detail pages."
+    }
+  ],
+
+  "problemAndObjectives": {
+    "title": "El problema de la categoría pisos",
+    "titleEn": "The flooring category problem",
+    "context": "La categoría de pisos en Falabella y Sodimac Chile presenta fricciones críticas que elevan el abandono: el checkbox de merma viene desmarcado por defecto, el cross-sell recomienda adhesivos incompatibles con pisos de clip, y el comparador de atributos muestra datos sin normalizar. Además, el precio por m² resulta engañoso cuando los tamaños de caja difieren entre productos.",
+    "contextEn": "The flooring category in Falabella and Sodimac Chile has critical friction points that increase abandonment: the waste margin checkbox is unchecked by default, cross-sell recommends adhesives incompatible with click-lock flooring, and the attribute comparator shows unnormalized data. Moreover, the price per m² is misleading when box coverage sizes differ between products.",
+    "competitors": [
+      {
+        "name": "Sodimac Chile",
+        "description": "Merma desmarcada, adhesivos incompatibles en cross-sell, comparador sin normalizar",
+        "descriptionEn": "Waste unchecked, incompatible adhesives in cross-sell, comparator not normalized"
+      },
+      {
+        "name": "Home Depot USA",
+        "description": "Calculadora de m² integrada, kit de instalación por defecto incluido",
+        "descriptionEn": "Integrated m² calculator, installation kit included by default"
+      },
+      {
+        "name": "Roomvo",
+        "description": "Visualización AR de piso en espacio real, flujo guiado de selección",
+        "descriptionEn": "AR floor visualization in real space, guided selection flow"
+      }
+    ],
+    "objectives": [
+      "Reducir el abandono en categoría pisos mediante un flujo guiado de 5 pasos",
+      "Eliminar el error de merma por defecto (F1) activándola automáticamente al 10%",
+      "Reemplazar cross-sell genérico por kit inteligente con compatibilidad validada",
+      "Exponer el precio real por proyecto (no solo m²) como métrica de comparación",
+      "Reusar el badge 'Generado con Inteligencia Artificial' ya existente en Falabella"
+    ],
+    "objectivesEn": [
+      "Reduce flooring category abandonment through a guided 5-step flow",
+      "Fix the default waste margin error (F1) by auto-enabling it at 10%",
+      "Replace generic cross-sell with an intelligent kit with validated compatibility",
+      "Surface the real project cost (not just m²) as the comparison metric",
+      "Reuse the 'Generated with Artificial Intelligence' badge already in Falabella"
+    ]
+  },
+
+  "uxResearch": {
+    "title": "Investigación y auditoría",
+    "titleEn": "Research and audit",
+    "hypothesis": [
+      "Si el usuario calcula la cantidad exacta antes de seleccionar el producto, la tasa de abandono disminuye porque la decisión de compra está tomada antes de llegar al detalle.",
+      "El precio por m² es la métrica dominante de comparación, pero resulta engañosa cuando los tamaños de caja son distintos entre SKUs."
+    ],
+    "hypothesisEn": [
+      "If the user calculates the exact quantity before selecting the product, the abandonment rate decreases because the purchase decision is made before reaching the product detail.",
+      "Price per m² is the dominant comparison metric, but becomes misleading when box coverage sizes differ between SKUs."
+    ],
+    "methods": [
+      "Benchmark competitivo: Sodimac Chile, Home Depot, Roomvo, fabricantes directos",
+      "Auditoría de apps reales con capturas de pantalla provistas (Falabella + Sodimac)",
+      "Análisis de flujo de Arma tu Proyecto (bottom sheet de PDP de muebles como precedente de bundle)",
+      "Cálculo cuantitativo de proyectos reales: precio total vs precio por m²"
+    ],
+    "methodsEn": [
+      "Competitive benchmark: Sodimac Chile, Home Depot, Roomvo, direct manufacturers",
+      "Live app audit with provided screenshots (Falabella + Sodimac)",
+      "Analysis of 'Build Your Project' flow (furniture PDP bottom sheet as bundle precedent)",
+      "Quantitative real-project calculation: total price vs price per m²"
+    ],
+    "quotes": [
+      {
+        "text": "Compré de más y me quedé con cajas sin usar. No sabía que tenía que calcular la merma.",
+        "textEn": "I bought too much and ended up with unused boxes. I didn't know I needed to account for waste.",
+        "author": "Usuaria de e-commerce de mejoramiento del hogar",
+        "authorEn": "Home improvement e-commerce user",
+        "context": "Hallazgo F1: merma desmarcada por defecto en ambas apps",
+        "contextEn": "Finding F1: waste margin unchecked by default in both apps"
+      },
+      {
+        "text": "Vi que era más barato por m², pero al final el proyecto me salió casi igual porque la caja era más pequeña.",
+        "textEn": "I saw it was cheaper per m², but the whole project ended up costing almost the same because the box was smaller.",
+        "author": "Comprador de piso laminado, Santiago",
+        "authorEn": "Laminate flooring buyer, Santiago",
+        "context": "Hallazgo central: precio por m² engañoso en comparación de SKUs",
+        "contextEn": "Central finding: price per m² misleading when comparing SKUs"
+      }
+    ],
+    "stats": [
+      {
+        "value": "7",
+        "valueEn": "7",
+        "description": "hallazgos documentados en la auditoría (F1–F7)",
+        "descriptionEn": "documented audit findings (F1–F7)"
+      },
+      {
+        "value": "34%",
+        "valueEn": "34%",
+        "description": "más caro por m² puede ser solo 6% más caro en total (diferencia de tamaño de caja)",
+        "descriptionEn": "more expensive per m² can be only 6% more expensive in total (box size difference)"
+      },
+      {
+        "value": "1:15",
+        "valueEn": "1:15",
+        "description": "tiempo estimado de flujo para usuario ágil (11 taps)",
+        "descriptionEn": "estimated flow time for agile user (11 taps)"
+      }
+    ]
+  },
+
+  "personas": [
+    {
+      "id": "camila",
+      "name": "Camila",
+      "nameEn": "Camila",
+      "role": "Propietaria renovando por primera vez",
+      "roleEn": "First-time home renovator",
+      "avatar": "placeholder",
+      "goals": [
+        "Elegir el piso correcto sin cometer errores de cantidad",
+        "Entender qué materiales adicionales necesita antes de llegar a la tienda",
+        "Tomar una decisión informada sin ayuda de un vendedor"
+      ],
+      "goalsEn": [
+        "Choose the right flooring without quantity errors",
+        "Understand what additional materials she needs before going to the store",
+        "Make an informed decision without a salesperson"
+      ],
+      "painPoints": [
+        "No sabe qué es la merma ni cuánto agregar",
+        "El precio por m² la confunde cuando las cajas cubren áreas distintas",
+        "El cross-sell le muestra adhesivos que no son compatibles con su piso de clip"
+      ],
+      "painPointsEn": [
+        "Doesn't know what waste margin is or how much to add",
+        "Price per m² confuses her when boxes cover different areas",
+        "Cross-sell shows adhesives incompatible with her click-lock floor"
+      ],
+      "behaviors": [
+        "Busca reseñas antes de comprar",
+        "Prefiere comprar online para evitar presión de vendedores",
+        "Compara precio por m² como métrica principal"
+      ],
+      "behaviorsEn": [
+        "Reads reviews before buying",
+        "Prefers online shopping to avoid sales pressure",
+        "Compares price per m² as the main metric"
+      ]
+    },
+    {
+      "id": "rodrigo",
+      "name": "Rodrigo",
+      "nameEn": "Rodrigo",
+      "role": "Constructor independiente frecuente",
+      "roleEn": "Frequent independent contractor",
+      "avatar": "placeholder",
+      "goals": [
+        "Calcular rápido la cantidad exacta para un proyecto de cliente",
+        "Generar un kit completo con accesorios validados para no volver a la tienda",
+        "Comparar múltiples opciones por costo total de proyecto, no solo m²"
+      ],
+      "goalsEn": [
+        "Quickly calculate the exact amount for a client's project",
+        "Generate a complete kit with validated accessories to avoid return trips",
+        "Compare multiple options by total project cost, not just m²"
+      ],
+      "painPoints": [
+        "Pierde tiempo calculando merma y accesorios manualmente",
+        "El comparador de atributos no normaliza unidades, dificulta la comparación real",
+        "Los adhesivos del cross-sell a veces no son compatibles con el sistema de instalación elegido"
+      ],
+      "painPointsEn": [
+        "Wastes time manually calculating waste and accessories",
+        "The attribute comparator doesn't normalize units, making real comparison difficult",
+        "Cross-sell adhesives are sometimes incompatible with the chosen installation system"
+      ],
+      "behaviors": [
+        "Compra en volumen, varias veces al mes",
+        "Prioriza velocidad de decisión sobre precio marginal",
+        "Llega con medidas del espacio ya calculadas"
+      ],
+      "behaviorsEn": [
+        "Buys in volume, several times per month",
+        "Prioritizes decision speed over marginal price",
+        "Arrives with pre-calculated space measurements"
+      ]
+    }
+  ],
+
+  "journeyMap": {
+    "title": "Flujo de 5 pantallas: de medidas a carrito",
+    "titleEn": "5-screen flow: from measurements to cart",
+    "subtitle": "11 taps · 1:15 min (usuario ágil) a 5:45 min (usuario lento)",
+    "subtitleEn": "11 taps · 1:15 min (agile user) to 5:45 min (slow user)",
+    "stages": [
+      {
+        "id": 1,
+        "name": "Entrada",
+        "nameEn": "Entry",
+        "problem": "Usuario en PDP de piso sin saber cuánto necesita ni si el precio es real",
+        "problemEn": "User on flooring PDP without knowing how much they need or if the price is accurate",
+        "solution": "CTA 'Piso Ideal' en ficha de producto que activa el asistente guiado",
+        "solutionEn": "'Ideal Floor' CTA on product card that activates the guided assistant"
+      },
+      {
+        "id": 2,
+        "name": "Medidas",
+        "nameEn": "Measurements",
+        "problem": "Usuario no sabe si medir en m² o en metros lineales, y la merma es invisible",
+        "problemEn": "User doesn't know whether to measure in m² or linear meters, and waste is invisible",
+        "solution": "Captura por foto (Paso 1) o ingreso manual (Paso 2b) + merma activada al 10% por defecto con explicación contextual",
+        "solutionEn": "Photo capture (Step 1) or manual entry (Step 2b) + waste auto-enabled at 10% with contextual explanation"
+      },
+      {
+        "id": 3,
+        "name": "Confirmación",
+        "nameEn": "Confirmation",
+        "problem": "Usuario necesita validar las medidas antes de recibir la recomendación",
+        "problemEn": "User needs to validate measurements before receiving the recommendation",
+        "solution": "Pantalla de confirmación con resumen de m² + merma + cajas requeridas, editable",
+        "solutionEn": "Confirmation screen with summary of m² + waste + required boxes, editable"
+      },
+      {
+        "id": 4,
+        "name": "Recomendación IA",
+        "nameEn": "AI Recommendation",
+        "problem": "El precio por m² domina la decisión pero es engañoso cuando las cajas cubren áreas distintas",
+        "problemEn": "Price per m² dominates the decision but is misleading when boxes cover different areas",
+        "solution": "Card de recomendación con precio real de proyecto (no solo m²) + badge 'Generado con IA' reutilizado de Falabella + CTA de compra directa",
+        "solutionEn": "Recommendation card with real project price (not just m²) + reused Falabella 'Generated with AI' badge + direct purchase CTA"
+      },
+      {
+        "id": 5,
+        "name": "Kit + Carrito",
+        "nameEn": "Kit + Cart",
+        "problem": "El cross-sell genérico recomienda accesorios incompatibles y el usuario tiene que volver",
+        "problemEn": "Generic cross-sell recommends incompatible accessories and the user has to return",
+        "solution": "Pantalla de kit completa (no bottom sheet) con jerarquía requerido / recomendado / opcional, compatibilidad validada, agregado al carrito en un tap",
+        "solutionEn": "Full kit screen (not a bottom sheet) with required / recommended / optional hierarchy, validated compatibility, add to cart in one tap"
+      }
+    ]
+  },
+
+  "solution": {
+    "title": "Tres decisiones de diseño que cambian la categoría",
+    "titleEn": "Three design decisions that change the category",
+    "subtitle": "Cada decisión resolvió un hallazgo documentado en la auditoría",
+    "subtitleEn": "Each decision resolved a finding documented in the audit",
+    "principles": [
+      {
+        "number": "01",
+        "title": "Merma activada por defecto",
+        "titleEn": "Waste margin on by default",
+        "description": "El checkbox de merma viene marcado al 10% con una explicación contextual. El usuario puede desactivarlo, pero la opción segura es el default. Corrige F1, el hallazgo más transversal: está roto en Falabella y Sodimac.",
+        "descriptionEn": "The waste margin checkbox comes pre-checked at 10% with a contextual explanation. The user can deactivate it, but the safe option is the default. Fixes F1, the most cross-cutting finding: it's broken in both Falabella and Sodimac."
+      },
+      {
+        "number": "02",
+        "title": "Precio real de proyecto, no solo m²",
+        "titleEn": "Real project price, not just m²",
+        "description": "La card de recomendación muestra el precio total del proyecto como métrica primaria. El precio por m² sigue visible como secundario. Un piso 34% más caro por m² puede ser solo 6% más caro en total — esto es lo que el usuario necesita para decidir.",
+        "descriptionEn": "The recommendation card shows total project price as the primary metric. Price per m² remains visible as secondary. A floor 34% more expensive per m² can be only 6% more expensive in total — this is what the user needs to decide."
+      },
+      {
+        "number": "03",
+        "title": "Kit inteligente con compatibilidad validada",
+        "titleEn": "Smart kit with validated compatibility",
+        "description": "Los accesorios del kit se validan contra el sistema de instalación del piso seleccionado. Un piso de clip no puede incluir adhesivo de contacto. La pantalla de kit usa jerarquía requerido / recomendado / opcional, reutilizando el patrón 'Arma tu Proyecto' de la categoría muebles.",
+        "descriptionEn": "Kit accessories are validated against the installation system of the selected floor. A click-lock floor cannot include contact adhesive. The kit screen uses required / recommended / optional hierarchy, reusing the 'Build Your Project' pattern from the furniture category."
+      }
+    ],
+    "decisions": [
+      {
+        "title": "Full screen en lugar de bottom sheet para el kit",
+        "titleEn": "Full screen instead of bottom sheet for the kit",
+        "justification": "El kit puede tener 4–8 items. Un bottom sheet limita la visualización y fuerza scroll oculto. La pantalla completa permite mostrar jerarquía, cantidades editables y validaciones de compatibilidad sin truncar.",
+        "justificationEn": "The kit can have 4–8 items. A bottom sheet limits visibility and forces hidden scroll. A full screen allows showing hierarchy, editable quantities and compatibility validations without truncation.",
+        "tradeoff": "Mayor fricción de salida (el usuario no puede cerrar con swipe), compensada con un CTA de 'Agregar todo al carrito' prominente.",
+        "tradeoffEn": "Higher exit friction (user can't swipe to close), compensated with a prominent 'Add all to cart' CTA."
+      },
+      {
+        "title": "Reutilizar el badge de IA existente en Falabella",
+        "titleEn": "Reuse Falabella's existing AI badge",
+        "justification": "Falabella ya tiene un badge 'Generado con Inteligencia Artificial' con ícono de destello y gradiente en la sección de resumen de reseñas. Reutilizarlo para la recomendación de piso es más barato, más coherente y más convincente que diseñar un patrón nuevo.",
+        "justificationEn": "Falabella already has a 'Generated with Artificial Intelligence' badge with a sparkle icon and gradient on the reviews summary section. Reusing it for the floor recommendation is cheaper, more consistent, and more convincing than designing a new pattern.",
+        "tradeoff": "El badge no tiene diferenciación por tipo de IA (estimación de m² vs recomendación de producto). Se asume que el nivel de detalle es suficiente para MVP.",
+        "tradeoffEn": "The badge doesn't differentiate by AI type (m² estimation vs product recommendation). The level of detail is assumed sufficient for MVP."
+      },
+      {
+        "title": "Tokens semánticos sobre Falabella + modo Sodimac",
+        "titleEn": "Semantic tokens over Falabella + Sodimac mode",
+        "justification": "El design system se construyó con 39 primitivas y 22 tokens semánticos con modo Falabella y modo Sodimac. Cuando el cliente pidió cambiar la base visual de Sodimac a Falabella, solo se reasignaron los 22 tokens semánticos — ningún componente se tocó. Este es el argumento más fuerte para usar un design system real antes de diseñar pantallas.",
+        "justificationEn": "The design system was built with 39 primitives and 22 semantic tokens with Falabella and Sodimac modes. When the client asked to change the visual base from Sodimac to Falabella, only the 22 semantic tokens were reassigned — no component was touched. This is the strongest argument for using a real design system before designing screens.",
+        "tradeoff": "Mayor upfront en arquitectura de tokens, pero elimina el retrabajo de un cambio de marca completo en 10+ pantallas.",
+        "tradeoffEn": "Higher upfront investment in token architecture, but eliminates the rework of a full brand change across 10+ screens."
+      }
+    ]
+  },
+
+  "results": {
+    "title": "Resultados e impacto potencial",
+    "titleEn": "Results and potential impact",
+    "subtitle": "Métricas de conversión proyectadas a partir del modelo KPI validado",
+    "subtitleEn": "Projected conversion metrics from the validated KPI model",
+    "impact": [
+      {
+        "metric": "↑ 20%",
+        "metricEn": "↑ 20%",
+        "label": "conversión de categoría",
+        "labelEn": "category conversion",
+        "description": "Modelo: 40% de adopción del flujo × 50% de lift dentro del flujo. Basado en benchmarks de flujos guiados de categoría en e-commerce home improvement.",
+        "descriptionEn": "Model: 40% flow adoption × 50% lift within the flow. Based on guided category flow benchmarks in home improvement e-commerce."
+      },
+      {
+        "metric": "↓ 90%",
+        "metricEn": "↓ 90%",
+        "label": "error de merma",
+        "labelEn": "waste error",
+        "description": "El checkbox activado por defecto elimina prácticamente el error para usuarios que completan el flujo.",
+        "descriptionEn": "The checkbox enabled by default virtually eliminates the error for users who complete the flow."
+      },
+      {
+        "metric": "11",
+        "metricEn": "11",
+        "label": "taps de entrada a carrito",
+        "labelEn": "taps from entry to cart",
+        "description": "Reducido desde 18+ taps en la versión inicial. Medición directa vs Sodimac y Home Depot en benchmarks comparativos.",
+        "descriptionEn": "Reduced from 18+ taps in the initial version. Direct measurement vs Sodimac and Home Depot in comparative benchmarks."
+      }
+    ],
+    "learnings": [
+      {
+        "title": "El default correcto vale más que el flujo perfecto",
+        "titleEn": "The right default is worth more than the perfect flow",
+        "description": "El error de merma (F1) no requería rediseño de flujo — solo cambiar el estado por defecto del checkbox. La solución más simple fue la más impactante.",
+        "descriptionEn": "The waste error (F1) didn't require flow redesign — just changing the default state of the checkbox. The simplest solution was the most impactful."
+      },
+      {
+        "title": "Un design system real aísla el retrabajo",
+        "titleEn": "A real design system isolates rework",
+        "description": "Cuando el cliente pidió cambiar de Sodimac a Falabella, solo se reasignaron 22 tokens semánticos. Sin design system, hubiera sido un refactor de todas las pantallas.",
+        "descriptionEn": "When the client asked to switch from Sodimac to Falabella, only 22 semantic tokens were reassigned. Without a design system, it would have been a full screen refactor."
+      },
+      {
+        "title": "Reutilizar patrones existentes es un argumento de negocio",
+        "titleEn": "Reusing existing patterns is a business argument",
+        "description": "Proponer el badge de IA que Falabella ya tiene, y el patrón de bundle que ya existe en muebles, demuestra que el diseñador conoce el producto. Es más convincente y más barato que inventar.",
+        "descriptionEn": "Proposing the AI badge Falabella already has, and the bundle pattern already in furniture, shows the designer knows the product. It's more convincing and cheaper than inventing."
+      }
+    ],
+    "nextSteps": [
+      {
+        "title": "Test de usabilidad con 5 usuarios de categoría pisos",
+        "titleEn": "Usability testing with 5 flooring category users",
+        "description": "Validar el flujo de medidas, el entendimiento de la merma y la comparación de precio por proyecto vs precio por m².",
+        "descriptionEn": "Validate the measurement flow, waste margin understanding, and comparison of project price vs price per m²."
+      },
+      {
+        "title": "Integrar con Roomvo para visualización AR",
+        "titleEn": "Integrate with Roomvo for AR visualization",
+        "description": "Roomvo ya tiene acuerdo con Falabella. La visualización AR del piso en el espacio real reduce el retorno y complementa el flujo post-recomendación.",
+        "descriptionEn": "Roomvo already has an agreement with Falabella. AR floor visualization in real space reduces returns and complements the post-recommendation flow."
+      },
+      {
+        "title": "Extender a Sodimac con modo de marca alternativo",
+        "titleEn": "Extend to Sodimac with alternate brand mode",
+        "description": "El design system tiene el modo Sodimac listo. El flujo es compatible. El costo incremental de lanzar en ambas marcas del holding es marginal.",
+        "descriptionEn": "The design system already has the Sodimac mode ready. The flow is compatible. The incremental cost of launching across both holding brands is marginal."
+      }
+    ]
+  }
+}
