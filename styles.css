@@ -1802,20 +1802,26 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-2xl);
-  align-items: start;
+  align-items: stretch; /* columnas misma altura */
 }
-/* Cada card es flex-column; imagen siempre al top */
+/* Cada card es flex-column; texto arriba, mockup al fondo */
 .design-items-row .design-item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
+/* El wrapper de imagen empuja hacia abajo cuando el texto de la otra
+   columna es más alto — mockups siempre alineados entre sí */
+.design-items-row .design-image,
+.design-items-row .design-image--mobile {
+  margin-top: auto;
+}
 /* Mockup mobile en la fila: ocupa todo el ancho de su columna (≤360px)
-   con el bezel completo — igual que en 1 columna */
+   pegado al borde izquierdo, igual que en 1 columna */
 .design-items-row .device-mobile {
   width: 100%;
   max-width: 360px;
-  margin: 0 auto;
+  margin: 0; /* sin auto — izquierda, no centrado */
   border-radius: 34px;
   padding: 9px;
   box-shadow: 0 24px 60px rgba(10,14,30,.35), 0 4px 14px rgba(10,14,30,.25);
