@@ -71,7 +71,7 @@
         "icon": "💼",
         "label": "Impacto en Negocio",
         "labelEn": "Business Impact",
-        "metric": "-35%",
+        "metric": "-32%",
         "description": "Reducción de tiempo de planificación con mejora en escalabilidad para flotas de 300+ vehículos",
         "descriptionEn": "Reduction in planning time with improved scalability for fleets of 300+ vehicles"
       },
@@ -155,8 +155,8 @@
         "number": "01",
         "title": "Reducir tiempo de planificación",
         "titleEn": "Reduce planning time",
-        "meta": "Meta: -50%",
-        "metaEn": "Goal: -50%",
+        "meta": "Meta: -32%",
+        "metaEn": "Goal: -32%",
         "description": "Optimizar flujo para disminuir tiempo de setup y ejecución",
         "descriptionEn": "Optimize flow to reduce setup and execution time"
       },
