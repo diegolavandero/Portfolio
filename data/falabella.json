@@ -436,7 +436,13 @@
     ]
   },
 
-  "designs": [
+  "designs": {
+    "title": "Pantallas del flujo",
+    "titleEn": "Flow screens",
+    "subtitle": "14 pantallas Android 360×800 · Design system con 39 primitivas y 22 tokens semánticos",
+    "subtitleEn": "14 Android screens 360×800 · Design system with 39 primitives and 22 semantic tokens",
+    "device": "mobile",
+    "items": [
     {
       "title": "Entrada: Encuentra tu piso ideal",
       "titleEn": "Entry: Find your ideal floor",
@@ -501,4 +507,5 @@
       "badge": null
     }
   ]
+  }
 }
