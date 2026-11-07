@@ -1819,12 +1819,11 @@ body {
 /* Mockup mobile en la fila: ocupa todo el ancho de su columna (≤360px)
    pegado al borde izquierdo, igual que en 1 columna */
 .design-items-row .device-mobile {
+  display: block; /* override inline-flex — se estira al ancho de la columna */
   width: 100%;
   max-width: 360px;
   margin: 0; /* sin auto — izquierda, no centrado */
-  border-radius: 34px;
-  padding: 9px;
-  box-shadow: 0 24px 60px rgba(10,14,30,.35), 0 4px 14px rgba(10,14,30,.25);
+  box-sizing: border-box;
 }
 .design-items-row .device-screen {
   border-radius: 26px;
