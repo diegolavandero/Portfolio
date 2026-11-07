@@ -434,5 +434,71 @@
         "descriptionEn": "The design system already has the Sodimac mode ready. The flow is compatible. The incremental cost of launching across both holding brands is marginal."
       }
     ]
-  }
+  },
+
+  "designs": [
+    {
+      "title": "Entrada: Encuentra tu piso ideal",
+      "titleEn": "Entry: Find your ideal floor",
+      "description": "Hero en el listado de categoría. CTA 'Empezar' activa el asistente guiado de 3 pasos.",
+      "descriptionEn": "Hero in the category listing. 'Start' CTA activates the guided 3-step assistant.",
+      "src": "data/images/falabella-01-listado.webp",
+      "device": "mobile",
+      "badge": null
+    },
+    {
+      "title": "Paso 1: ¿Qué espacio vas a renovar?",
+      "titleEn": "Step 1: Which space are you renovating?",
+      "description": "Selección de habitación + captura de m² por foto o ingreso manual. Merma activada al 10% por defecto.",
+      "descriptionEn": "Room selection + m² capture by photo or manual entry. Waste margin auto-enabled at 10%.",
+      "src": "data/images/falabella-02-paso1.webp",
+      "device": "mobile",
+      "badge": null
+    },
+    {
+      "title": "Paso 1b: Estimación por foto con badge IA",
+      "titleEn": "Step 1b: Photo estimation with AI badge",
+      "description": "La foto genera una estimación de m². El badge 'Generado con Inteligencia Artificial' reutiliza el patrón ya existente en la app de Falabella.",
+      "descriptionEn": "Photo generates an m² estimate. The 'Generated with Artificial Intelligence' badge reuses the pattern already in the Falabella app.",
+      "src": "data/images/falabella-02b-foto-tomada.webp",
+      "device": "mobile",
+      "badge": "IA"
+    },
+    {
+      "title": "Paso 2: Condiciones derivadas por IA",
+      "titleEn": "Step 2: AI-derived conditions",
+      "description": "Supuestos de tránsito, humedad y mascotas derivados del espacio elegido. El usuario confirma o corrige — no llena un formulario.",
+      "descriptionEn": "Traffic, humidity, and pet conditions derived from the chosen space. User confirms or corrects — no form to fill.",
+      "src": "data/images/falabella-03-condiciones.webp",
+      "device": "mobile",
+      "badge": "IA"
+    },
+    {
+      "title": "Paso 3: Tus 3 opciones que sí sirven",
+      "titleEn": "Step 3: Your 3 options that actually work",
+      "description": "Las 3 recomendaciones muestran precio real de proyecto (no solo m²). El argumento cuantitativo: 34% más por m² puede ser solo 6% más en total.",
+      "descriptionEn": "3 recommendations show real project price (not just m²). The quantitative argument: 34% more per m² can be only 6% more in total.",
+      "src": "data/images/falabella-04-opciones.webp",
+      "device": "mobile",
+      "badge": "IA"
+    },
+    {
+      "title": "Kit: Arma tu proyecto",
+      "titleEn": "Kit: Build your project",
+      "description": "Pantalla completa con jerarquía requerido / recomendado / opcional. Accesorios validados por compatibilidad de instalación. CTA 'Agregar todo al carro'.",
+      "descriptionEn": "Full screen with required / recommended / optional hierarchy. Accessories validated for installation compatibility. 'Add all to cart' CTA.",
+      "src": "data/images/falabella-05-kit.webp",
+      "device": "mobile",
+      "badge": null
+    },
+    {
+      "title": "Carro: Proyecto · Living 18,5 m²",
+      "titleEn": "Cart: Project · Living 18.5 m²",
+      "description": "El carro muestra el contexto del proyecto (espacio + m²) y advierte si cambiar cantidades rompe el balance calculado.",
+      "descriptionEn": "Cart shows the project context (space + m²) and warns if changing quantities breaks the calculated balance.",
+      "src": "data/images/falabella-06-carro.webp",
+      "device": "mobile",
+      "badge": null
+    }
+  ]
 }
