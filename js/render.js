@@ -1048,8 +1048,9 @@ const Renderer = {
       src ? `<img src="${esc(src)}" alt="${esc(ph || '')}" loading="lazy">` :
             `<div class="image-placeholder" ${bi(ph || 'Mockup pendiente', phEn || 'Mockup pending')}>${ph || 'Mockup pendiente'}</div>`;
 
-    const renderOneImage = (src, device, ph, phEn) => {
-      const imageClass = `design-image${device === 'mobile' ? ' design-image--mobile' : ''}`;
+    const renderOneImage = (src, device, ph, phEn, scrollable) => {
+      let imageClass = `design-image${device === 'mobile' ? ' design-image--mobile' : ''}`;
+      if (scrollable) imageClass += ' design-image--scrollable';
       let inner;
       if (device === 'desktop') {
         inner = `<div class="device device-desktop">${screenContent(src, ph, phEn)}</div>`;
@@ -1069,10 +1070,10 @@ const Renderer = {
       let imagesHtml;
       if (srcs.length >= 2) {
         imagesHtml = `<div class="design-images-grid design-images-grid--${Math.min(srcs.length, 3)}">
-          ${srcs.map(src => renderOneImage(src, device, item.placeholder, item.placeholderEn)).join('')}
+          ${srcs.map(src => renderOneImage(src, device, item.placeholder, item.placeholderEn, item.scrollable)).join('')}
         </div>`;
       } else {
-        imagesHtml = renderOneImage(srcs[0] || null, device, item.placeholder, item.placeholderEn);
+        imagesHtml = renderOneImage(srcs[0] || null, device, item.placeholder, item.placeholderEn, item.scrollable);
       }
 
       return `

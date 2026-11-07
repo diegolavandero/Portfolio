@@ -450,7 +450,8 @@
       "descriptionEn": "Hero in the category listing. 'Start' CTA activates the guided 3-step assistant.",
       "src": "data/images/falabella-01-listado.webp",
       "device": "mobile",
-      "badge": null
+      "badge": null,
+      "pairGroup": "row-a"
     },
     {
       "title": "Paso 1: ¿Qué espacio vas a renovar?",
@@ -459,7 +460,8 @@
       "descriptionEn": "Room selection + m² capture by photo or manual entry. Waste margin auto-enabled at 10%.",
       "src": "data/images/falabella-02-paso1.webp",
       "device": "mobile",
-      "badge": null
+      "badge": null,
+      "pairGroup": "row-a"
     },
     {
       "title": "Paso 1b: Estimación por foto con badge IA",
@@ -468,7 +470,8 @@
       "descriptionEn": "Photo generates an m² estimate. The 'Generated with Artificial Intelligence' badge reuses the pattern already in the Falabella app.",
       "src": "data/images/falabella-02b-foto-tomada.webp",
       "device": "mobile",
-      "badge": "IA"
+      "badge": "IA",
+      "pairGroup": "row-b"
     },
     {
       "title": "Paso 2: Condiciones derivadas por IA",
@@ -477,7 +480,8 @@
       "descriptionEn": "Traffic, humidity, and pet conditions derived from the chosen space. User confirms or corrects — no form to fill.",
       "src": "data/images/falabella-03-condiciones.webp",
       "device": "mobile",
-      "badge": "IA"
+      "badge": "IA",
+      "pairGroup": "row-b"
     },
     {
       "title": "Paso 3: Tus 3 opciones que sí sirven",
@@ -486,7 +490,9 @@
       "descriptionEn": "3 recommendations show real project price (not just m²). The quantitative argument: 34% more per m² can be only 6% more in total.",
       "src": "data/images/falabella-04-opciones.webp",
       "device": "mobile",
-      "badge": "IA"
+      "badge": "IA",
+      "scrollable": true,
+      "pairGroup": "row-c"
     },
     {
       "title": "Kit: Arma tu proyecto",
@@ -495,7 +501,8 @@
       "descriptionEn": "Full screen with required / recommended / optional hierarchy. Accessories validated for installation compatibility. 'Add all to cart' CTA.",
       "src": "data/images/falabella-05-kit.webp",
       "device": "mobile",
-      "badge": null
+      "badge": null,
+      "pairGroup": "row-c"
     },
     {
       "title": "Carro: Proyecto · Living 18,5 m²",

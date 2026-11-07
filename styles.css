@@ -2990,6 +2990,27 @@ body {
   transform: translateX(2px);
 }
 
+/* Designs: isla dinámica oculta dentro de la galería de pantallas
+   (el notch es útil en prototipos interactivos pero ensucia las capturas) */
+.designs-section .device-mobile::before {
+  display: none;
+}
+
+/* Pantalla larga con scroll interno (ej. listado extenso de opciones) */
+.design-image--scrollable .device-screen {
+  max-height: 760px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gray-200) transparent;
+}
+.design-image--scrollable .device-screen::-webkit-scrollbar {
+  width: 4px;
+}
+.design-image--scrollable .device-screen::-webkit-scrollbar-thumb {
+  background: var(--gray-200);
+  border-radius: 2px;
+}
+
 /* Designs: hover sobre la imagen levanta y suaviza la sombra */
 .design-image {
   transition:
@@ -2998,11 +3019,18 @@ body {
   will-change: transform;
 }
 
-.design-item:hover .design-image {
+/* Hover solo en la imagen, no en el contenedor padre — evita que el
+   box-shadow se aplique a toda la card en lugar de al mockup */
+.design-item:hover .design-image--mobile .device-mobile,
+.design-item:hover .design-image--desktop .device-desktop,
+.design-item:hover .design-image:not(.design-image--mobile):not(.design-image--desktop) {
   transform: translateY(-3px);
   box-shadow:
     0 18px 40px -12px rgba(0, 0, 0, 0.18),
     0 4px 6px -4px rgba(0, 0, 0, 0.08);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
 }
 
 /* Persona avatar hover dentro del card */
