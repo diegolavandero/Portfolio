@@ -1793,35 +1793,55 @@ body {
 /* Two design-items placed side by side (item.pairGroup in render.js) —
    e.g. two case variants meant to be compared at a glance, instead of
    the default full-width stack. */
+/* Fila de pares: scroll horizontal con snap — cada card conserva su ancho
+   completo; el usuario hace scroll/swipe para ver la siguiente */
 .design-items-row {
   display: flex;
   gap: var(--spacing-2xl);
   align-items: flex-start;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  /* Fade lateral para indicar que hay más contenido */
+  -webkit-mask-image: linear-gradient(to right, transparent 0, black 24px, black calc(100% - 48px), transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, black 24px, black calc(100% - 48px), transparent 100%);
+  /* Ocultar scrollbar visualmente pero mantener funcionalidad */
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+.design-items-row::-webkit-scrollbar {
+  display: none;
 }
 .design-items-row .design-item {
-  flex: 1 1 0;
-  min-width: 0;
+  flex: 0 0 auto;
+  width: 340px;
+  scroll-snap-align: start;
 }
-/* Phone mockups shrink to fit two per row instead of full-width */
-.design-items-row .design-image--mobile {
-  min-height: 360px;
-}
-.design-items-row .device-mobile {
-  width: 100%;
-  max-width: 240px;
-  margin: 0 auto;
-  padding: 2px;
-  border-radius: 14px;
-  box-shadow: 0 6px 16px rgba(10,14,30,.18), 0 2px 6px rgba(10,14,30,.12);
-}
-.design-items-row .device-screen {
-  border-radius: 11px;
-}
-.design-items-row .device-mobile::before {
-  width: 36px;
-  height: 8px;
-  top: 4px;
-  border-radius: 6px;
+/* En pantallas anchas (≥ 900px) se muestran 2 columnas sin scroll */
+@media (min-width: 900px) {
+  .design-items-row {
+    overflow-x: visible;
+    -webkit-mask-image: none;
+    mask-image: none;
+    flex-wrap: wrap;
+  }
+  .design-items-row .design-item {
+    flex: 1 1 calc(50% - var(--spacing-2xl) / 2);
+    max-width: calc(50% - var(--spacing-2xl) / 2);
+    width: auto;
+  }
+  /* En pantallas anchas el mockup ocupa todo el ancho de su columna */
+  .design-items-row .device-mobile {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 34px;
+    padding: 9px;
+    box-shadow: 0 24px 60px rgba(10,14,30,.35), 0 4px 14px rgba(10,14,30,.25);
+  }
+  .design-items-row .device-screen {
+    border-radius: 26px;
+  }
 }
 @media (max-width: 760px) {
   .design-items-row {
