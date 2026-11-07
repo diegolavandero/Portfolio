@@ -61,7 +61,8 @@ const Router = {
 
   loadHome: async () => {
     const app = document.getElementById('app');
-    app.innerHTML = '<div class="loading">Cargando...</div>';
+    const loadingText = Router.currentLang === 'en' ? 'Loading...' : 'Cargando...';
+    app.innerHTML = `<div class="loading">${loadingText}</div>`;
 
     try {
       const response = await fetch('/data/home.json');
@@ -133,20 +134,22 @@ const Router = {
 
     } catch (error) {
       console.error('Error loading home:', error);
-      app.innerHTML = `<div class="error">Error cargando la página de inicio</div>`;
+      app.innerHTML = `<div class="error">${Router.currentLang === 'en' ? 'Error loading home page' : 'Error cargando la página de inicio'}</div>`;
     }
   },
 
   loadProject: async (slug) => {
     const app = document.getElementById('app');
-    app.innerHTML = '<div class="loading">Cargando proyecto...</div>';
+    const loadingText = Router.currentLang === 'en' ? 'Loading project...' : 'Cargando proyecto...';
+    app.innerHTML = `<div class="loading">${loadingText}</div>`;
     await Renderer.renderPage(slug);
     Router.applyLanguage();
   },
 
   loadAbout: async () => {
     const app = document.getElementById('app');
-    app.innerHTML = '<div class="loading">Cargando...</div>';
+    const loadingText = Router.currentLang === 'en' ? 'Loading...' : 'Cargando...';
+    app.innerHTML = `<div class="loading">${loadingText}</div>`;
 
     try {
       const response = await fetch('/data/about.json');
@@ -265,7 +268,7 @@ const Router = {
 
     } catch (error) {
       console.error('Error loading about:', error);
-      app.innerHTML = `<div class="error">Error cargando la página About</div>`;
+      app.innerHTML = `<div class="error">${Router.currentLang === 'en' ? 'Error loading About page' : 'Error cargando la página About'}</div>`;
     }
   },
 

@@ -70,7 +70,7 @@ const Renderer = {
       Renderer.attachListeners();
     } catch (error) {
       console.error(`Error cargando ${slug}:`, error);
-      app.innerHTML = `<section class="error"><p>Error cargando la página</p></section>`;
+      app.innerHTML = `<section class="error"><p>${Router.currentLang === 'en' ? 'Error loading page' : 'Error cargando la página'}</p></section>`;
     }
   },
 
