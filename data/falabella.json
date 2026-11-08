@@ -100,14 +100,14 @@
       "Eliminar el error de merma por defecto (F1) activándola automáticamente al 10%",
       "Reemplazar cross-sell genérico por kit inteligente con compatibilidad validada",
       "Exponer el precio real por proyecto (no solo m²) como métrica de comparación",
-      "Reusar el badge 'Generado con Inteligencia Artificial' ya existente en Falabella"
+      "Señalar la IA de forma ambiental y consistente en el flujo, sin convertirla en una feature con botón aparte"
     ],
     "objectivesEn": [
       "Reduce flooring category abandonment through a guided 5-step flow",
       "Fix the default waste margin error (F1) by auto-enabling it at 10%",
       "Replace generic cross-sell with an intelligent kit with validated compatibility",
       "Surface the real project cost (not just m²) as the comparison metric",
-      "Reuse the 'Generated with Artificial Intelligence' badge already in Falabella"
+      "Signal AI ambiently and consistently across the flow, not as a separate button-driven feature"
     ]
   },
 
@@ -292,8 +292,8 @@
         "nameEn": "AI Recommendation",
         "problem": "El precio por m² domina la decisión pero es engañoso cuando las cajas cubren áreas distintas",
         "problemEn": "Price per m² dominates the decision but is misleading when boxes cover different areas",
-        "solution": "Card de recomendación con precio real de proyecto (no solo m²) + badge 'Generado con IA' reutilizado de Falabella + CTA de compra directa",
-        "solutionEn": "Recommendation card with real project price (not just m²) + reused Falabella 'Generated with AI' badge + direct purchase CTA"
+        "solution": "Card de recomendación con precio real de proyecto (no solo m²) + indicador 'Generado con IA' ambiental + CTA de compra directa",
+        "solutionEn": "Recommendation card with real project price (not just m²) + ambient 'Generated with AI' indicator + direct purchase CTA"
       },
       {
         "id": 5,
@@ -345,12 +345,12 @@
         "tradeoffEn": "Higher exit friction (user can't swipe to close), compensated with a prominent 'Add all to cart' CTA."
       },
       {
-        "title": "Reutilizar el badge de IA existente en Falabella",
-        "titleEn": "Reuse Falabella's existing AI badge",
-        "justification": "Falabella ya tiene un badge 'Generado con Inteligencia Artificial' con ícono de destello y gradiente en la sección de resumen de reseñas. Reutilizarlo para la recomendación de piso es más barato, más coherente y más convincente que diseñar un patrón nuevo.",
-        "justificationEn": "Falabella already has a 'Generated with Artificial Intelligence' badge with a sparkle icon and gradient on the reviews summary section. Reusing it for the floor recommendation is cheaper, more consistent, and more convincing than designing a new pattern.",
-        "tradeoff": "El badge no tiene diferenciación por tipo de IA (estimación de m² vs recomendación de producto). Se asume que el nivel de detalle es suficiente para MVP.",
-        "tradeoffEn": "The badge doesn't differentiate by AI type (m² estimation vs product recommendation). The level of detail is assumed sufficient for MVP."
+        "title": "Señalar la IA de forma ambiental, no como feature aparte",
+        "titleEn": "Signal AI ambiently, not as a separate feature",
+        "justification": "La IA aparece solo donde aporta: un indicador 'Generado con IA' con destello, presente en la estimación de m² y en la recomendación, cuyo microcopy admite el margen de error. Señalarla de forma ambiental reduce la carga cognitiva y construye más confianza que un botón de IA aislado.",
+        "justificationEn": "AI appears only where it adds value: a 'Generated with AI' indicator with a sparkle, present in the m² estimate and the recommendation, whose microcopy owns the margin of error. Signaling it ambiently reduces cognitive load and builds more trust than an isolated AI button.",
+        "tradeoff": "El indicador no diferencia por tipo de IA (estimación de m² vs recomendación de producto). Se asume que el nivel de detalle es suficiente para MVP.",
+        "tradeoffEn": "The indicator doesn't differentiate by AI type (m² estimation vs product recommendation). The level of detail is assumed sufficient for MVP."
       },
       {
         "title": "Tokens semánticos sobre Falabella + modo Sodimac",
@@ -398,8 +398,8 @@
       {
         "title": "El default correcto vale más que el flujo perfecto",
         "titleEn": "The right default is worth more than the perfect flow",
-        "description": "El error de merma (F1) no requería rediseño de flujo — solo cambiar el estado por defecto del checkbox. La solución más simple fue la más impactante.",
-        "descriptionEn": "The waste error (F1) didn't require flow redesign — just changing the default state of the checkbox. The simplest solution was the most impactful."
+        "description": "El error de merma (F1) no requería rearmar el flujo — solo cambiar el estado por defecto del checkbox. La solución más simple fue la más impactante.",
+        "descriptionEn": "The waste error (F1) didn't require reworking the flow — just changing the default state of the checkbox. The simplest solution was the most impactful."
       },
       {
         "title": "Un design system real aísla el retrabajo",
@@ -410,8 +410,8 @@
       {
         "title": "Reutilizar patrones existentes es un argumento de negocio",
         "titleEn": "Reusing existing patterns is a business argument",
-        "description": "Proponer el badge de IA que Falabella ya tiene, y el patrón de bundle que ya existe en muebles, demuestra que el diseñador conoce el producto. Es más convincente y más barato que inventar.",
-        "descriptionEn": "Proposing the AI badge Falabella already has, and the bundle pattern already in furniture, shows the designer knows the product. It's more convincing and cheaper than inventing."
+        "description": "Proponer el patrón de bundle que ya existe en la categoría muebles ('Arma tu proyecto'), y anclar cada decisión en datos reales de la app, demuestra que el diseñador conoce el producto. Es más convincente y más barato que inventar desde cero.",
+        "descriptionEn": "Proposing the bundle pattern already in the furniture category ('Build your project'), and grounding every decision in the app's real data, shows the designer knows the product. It's more convincing and cheaper than inventing from scratch."
       }
     ],
     "nextSteps": [
@@ -464,10 +464,10 @@
       "pairGroup": "row-a"
     },
     {
-      "title": "Paso 1b: Estimación por foto con badge IA",
-      "titleEn": "Step 1b: Photo estimation with AI badge",
-      "description": "La foto genera una estimación de m². El badge 'Generado con Inteligencia Artificial' reutiliza el patrón ya existente en la app de Falabella.",
-      "descriptionEn": "Photo generates an m² estimate. The 'Generated with Artificial Intelligence' badge reuses the pattern already in the Falabella app.",
+      "title": "Paso 1b: Estimación por foto con IA ambiental",
+      "titleEn": "Step 1b: Photo estimation with ambient AI",
+      "description": "La foto genera una estimación de m² editable. El indicador 'Generado con IA' es ambiental —sin botón de IA aislado— y el microcopy admite el margen de error: la asistencia se siente parte del flujo, no una feature aparte.",
+      "descriptionEn": "The photo generates an editable m² estimate. The 'Generated with AI' indicator is ambient — no isolated AI button — and the microcopy owns the margin of error: assistance feels part of the flow, not a separate feature.",
       "src": "data/images/falabella-02b-foto-tomada.webp?v=2",
       "device": "mobile",
       "badge": null,
