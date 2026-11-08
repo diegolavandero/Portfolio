@@ -1801,7 +1801,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto; /* badge | texto | imagen */
-  column-gap: var(--spacing-2xl);
+  column-gap: 80px;
   row-gap: 0;
   align-items: start;
 }
