@@ -8,8 +8,8 @@
     "taglineEn": "B2C E-COMMERCE · HOME IMPROVEMENT · 2025",
     "title": "Piso Ideal",
     "titleEn": "Ideal Floor",
-    "description": "Un copiloto que arma el proyecto completo —cantidad, piso, accesorios e instalación— según tu espacio y tu uso, y muestra el precio final antes del carro.",
-    "descriptionEn": "A copilot that builds the complete project — quantity, floor, accessories and installation — around your space and how you use it, and shows the final price before the cart."
+    "description": "Un copiloto que arma el proyecto completo —cantidad, piso y kit de instalación— según tu espacio y tu uso, y muestra el precio final antes del carro.",
+    "descriptionEn": "A copilot that builds the complete project — quantity, floor and installation kit — around your space and how you use it, and shows the final price before the cart."
   },
   "projectSpecs": [
     {
@@ -153,10 +153,10 @@
         "number": "03",
         "title": "Menos devoluciones",
         "titleEn": "Fewer returns",
-        "meta": "Meta: −30% por faltantes o incompatibilidad",
-        "metaEn": "Goal: −30% from shortages or incompatibility",
-        "description": "Proyectos completos y coherentes, sin accesorios que sobran o faltan.",
-        "descriptionEn": "Complete, consistent projects, with no surplus or missing accessories."
+        "meta": "Meta: 19% → ~15% (−20% relativo)",
+        "metaEn": "Goal: 19% → ~15% (−20% relative)",
+        "description": "Referencia: ~19% de las ventas online se devuelve (NRF, 2025). Un kit completo y coherente apunta a faltantes e incompatibilidad.",
+        "descriptionEn": "Benchmark: ~19% of online sales are returned (NRF, 2025). A complete, consistent kit targets shortages and incompatibility."
       },
       {
         "number": "04",
@@ -385,8 +385,8 @@
         "number": "02",
         "title": "Proyectos completos",
         "titleEn": "Complete projects",
-        "description": "Cada alternativa incluye piso, accesorios calculados e instalación, con precio final.",
-        "descriptionEn": "Each alternative includes the floor, calculated accessories and installation, with a final price."
+        "description": "Cada alternativa incluye piso y kit de instalación calculado desde tus medidas, con precio final.",
+        "descriptionEn": "Each alternative includes the floor and an installation kit calculated from your measurements, with a final price."
       },
       {
         "number": "03",
@@ -438,12 +438,12 @@
         "descriptionEn": "From 30% to 36%: 40% flow adoption × 50% lift within the flow."
       },
       {
-        "metric": "↓ 30%",
-        "metricEn": "↓ 30%",
-        "label": "devoluciones por faltantes (meta)",
-        "labelEn": "returns from shortages (goal)",
-        "description": "Proyectos completos y coherentes, sin accesorios que sobran, faltan o no sirven.",
-        "descriptionEn": "Complete, consistent projects, with no surplus, missing or unsuitable accessories."
+        "metric": "↓ 20%",
+        "metricEn": "↓ 20%",
+        "label": "devoluciones online (meta)",
+        "labelEn": "online returns (goal)",
+        "description": "De ~19% a ~15% en la categoría, frente a la referencia online del retail (NRF, 2025). Un kit completo y coherente apunta a faltantes e incompatibilidad.",
+        "descriptionEn": "From ~19% to ~15% in the category, against the online retail benchmark (NRF, 2025). A complete, consistent kit targets shortages and incompatibility."
       },
       {
         "metric": "11",
