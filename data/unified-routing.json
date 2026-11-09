@@ -665,8 +665,8 @@
     "titleEn": "Results and Impact",
     "subtitle": "Métricas, aprendizajes y próximos pasos",
     "subtitleEn": "Metrics, learnings and next steps",
-    "impactTitle": "Impacto Esperado",
-    "impactTitleEn": "Expected Impact",
+    "impactTitle": "Impacto",
+    "impactTitleEn": "Impact",
     "impact": [
       {
         "metric": "↓ 32%",

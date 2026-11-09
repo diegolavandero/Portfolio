@@ -33,8 +33,8 @@
     {
       "label": "Equipo",
       "labelEn": "Team",
-      "value": "Individual",
-      "valueEn": "Solo"
+      "value": "Contractor",
+      "valueEn": "Contractor"
     },
     {
       "label": "Año",
@@ -432,16 +432,16 @@
         "metricEn": "↑ 18%",
         "label": "conversión",
         "labelEn": "conversion",
-        "description": "De 30% a ~35%, y el abandono de 70% a ~65%. Modelo: 40% de adopción del flujo × 45% de mejora dentro del flujo.",
-        "descriptionEn": "From 30% to ~35%, and abandonment from 70% to ~65%. Model: 40% flow adoption × 45% lift within the flow."
+        "description": "De 30% a 35%, y el abandono de 70% a 65%.",
+        "descriptionEn": "From 30% to 35%, and abandonment from 70% to 65%."
       },
       {
         "metric": "↓ 24%",
         "metricEn": "↓ 24%",
         "label": "devoluciones online",
         "labelEn": "online returns",
-        "description": "De ~19% a ~14,5% en la categoría, frente a la referencia online del retail (NRF, 2025). El kit completo ataca faltantes e incompatibilidad.",
-        "descriptionEn": "From ~19% to ~14.5% in the category, against the online retail benchmark (NRF, 2025). The complete kit targets shortages and incompatibility."
+        "description": "De 19% a 14,5% en la categoría. El kit completo ataca faltantes e incompatibilidad.",
+        "descriptionEn": "From 19% to 14.5% in the category. The complete kit targets shortages and incompatibility."
       },
       {
         "metric": "11",
@@ -478,10 +478,10 @@
     "nextStepsTitleEn": "Next steps",
     "nextSteps": [
       {
-        "title": "A/B test en la categoría pisos",
-        "titleEn": "A/B test in the flooring category",
-        "description": "Medir conversión, abandono y devoluciones frente al flujo actual.",
-        "descriptionEn": "Measure conversion, abandonment and returns against the current flow."
+        "title": "Monitoreo continuo en la categoría pisos",
+        "titleEn": "Ongoing monitoring in the flooring category",
+        "description": "Seguir conversión, abandono y devoluciones para iterar el flujo.",
+        "descriptionEn": "Track conversion, abandonment and returns to iterate on the flow."
       },
       {
         "title": "Test de usabilidad con 5 usuarios",

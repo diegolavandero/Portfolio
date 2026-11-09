@@ -6,8 +6,8 @@
   "subtitle": "Analítica · SaaS · Datos",
   "subtitleEn": "Analytics · SaaS · Data",
   "hero": {
-    "tagline": "DT GLOBAL DESKTOP APP • 2022",
-    "taglineEn": "DT GLOBAL DESKTOP APP • 2022",
+    "tagline": "DT GLOBAL DESKTOP APP • 2024",
+    "taglineEn": "DT GLOBAL DESKTOP APP • 2024",
     "title": "Sistema de ",
     "titleEn": "Asynchronous ",
     "titleAccent": "Reportes Asincrónicos",
@@ -45,7 +45,7 @@
     {
       "label": "Año",
       "labelEn": "Year",
-      "value": "2022",
+      "value": "2024",
       "valueEn": "2025"
     },
     {
