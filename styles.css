@@ -657,11 +657,6 @@ body {
   background-color: var(--gray-50);
 }
 
-.hero-project .container {
-  max-width: 1387px;
-  padding: 0 193.5px;
-}
-
 .hero-content {
   max-width: 1000px;
 }
@@ -804,6 +799,7 @@ body {
   background-color: var(--gray-75);
 }
 
+.hero-project .container,
 .why-matters .container,
 .problem-objectives .container,
 .ux-research .container,
