@@ -27,14 +27,14 @@
     {
       "label": "Alcance",
       "labelEn": "Scope",
-      "value": "Auditoría → investigación → flujo → UI de alta fidelidad",
-      "valueEn": "Audit → research → flow → high-fidelity UI"
+      "value": "Conceptualización → flujos → UI de alta fidelidad",
+      "valueEn": "Conceptualization → flows → high-fidelity UI"
     },
     {
       "label": "Equipo",
       "labelEn": "Team",
-      "value": "Contractor",
-      "valueEn": "Contractor"
+      "value": "Contractor + Equipo de producto de Falabella",
+      "valueEn": "Contractor + Falabella product team"
     },
     {
       "label": "Año",
@@ -172,8 +172,8 @@
   "uxResearch": {
     "title": "Investigación",
     "titleEn": "Research",
-    "subtitle": "Auditoría de la app y benchmark para entender dónde nacía la frustración.",
-    "subtitleEn": "App audit and benchmark to understand where the frustration came from.",
+    "subtitle": "El research lo hizo internamente Falabella. Me contrataron como contractor para toda la conceptualización, los flujos y las pantallas.",
+    "subtitleEn": "The research was done in-house by Falabella. I was hired as a contractor for the full conceptualization, flows and screens.",
     "hypothesisTitle": "Hipótesis",
     "hypothesisTitleEn": "Hypotheses",
     "hypothesis": [
