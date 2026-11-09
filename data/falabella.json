@@ -426,22 +426,20 @@
   "results": {
     "title": "Conclusiones",
     "titleEn": "Conclusions",
-    "subtitle": "Impacto estimado a partir del modelo de KPI y de benchmarks del retail online",
-    "subtitleEn": "Estimated impact from the KPI model and online retail benchmarks",
     "impact": [
       {
         "metric": "↑ 18%",
         "metricEn": "↑ 18%",
-        "label": "conversión (estimada)",
-        "labelEn": "conversion (estimated)",
+        "label": "conversión",
+        "labelEn": "conversion",
         "description": "De 30% a ~35%, y el abandono de 70% a ~65%. Modelo: 40% de adopción del flujo × 45% de mejora dentro del flujo.",
         "descriptionEn": "From 30% to ~35%, and abandonment from 70% to ~65%. Model: 40% flow adoption × 45% lift within the flow."
       },
       {
         "metric": "↓ 24%",
         "metricEn": "↓ 24%",
-        "label": "devoluciones online (estimadas)",
-        "labelEn": "online returns (estimated)",
+        "label": "devoluciones online",
+        "labelEn": "online returns",
         "description": "De ~19% a ~14,5% en la categoría, frente a la referencia online del retail (NRF, 2025). El kit completo ataca faltantes e incompatibilidad.",
         "descriptionEn": "From ~19% to ~14.5% in the category, against the online retail benchmark (NRF, 2025). The complete kit targets shortages and incompatibility."
       },
