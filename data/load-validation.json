@@ -123,8 +123,8 @@
       },
       {
         "number": "02",
-        "description": "Reducir las discrepancias detectadas en ruta en al menos un 80% con el despliegue completo",
-        "descriptionEn": "Reduce in-route discrepancies by at least 80% at full rollout",
+        "description": "Reducir las discrepancias detectadas en ruta en al menos un 80%. La meta se mide con el despliegue completo, cuando se valida el 100% de las cargas.",
+        "descriptionEn": "Reduce in-route discrepancies by at least 80%. The goal is measured at full rollout, when 100% of loads are validated.",
         "title": "Reducir discrepancias",
         "titleEn": "Reduce discrepancies"
       },
@@ -651,8 +651,8 @@
         "metric": "-45%",
         "label": "Discrepancias en Destino",
         "labelEn": "Destination Discrepancies",
-        "description": "Reducción de cargas con errores detectados en el punto de entrega. Primera lectura a 60 días: 45% de avance frente a la meta de −80%, que apunta al despliegue completo; el piloto aún no valida el 100% de las cargas.",
-        "descriptionEn": "Reduction in loads with errors detected at delivery point. First 60-day reading: 45% against the −80% goal, which targets full rollout; the pilot doesn't yet validate 100% of loads."
+        "description": "Reducción de cargas con errores detectados en el punto de entrega. Primera lectura a 60 días, con el piloto en curso: −45% frente a una meta de −80%, es decir, el 56% de la meta. La meta de −80% corresponde al despliegue completo; hoy el piloto aún no valida el 100% de las cargas, por lo que el resultado final depende de ampliar la cobertura.",
+        "descriptionEn": "Reduction in loads with errors detected at delivery point. First 60-day reading, with the pilot still running: −45% against a −80% goal, or 56% of the goal. The −80% goal applies to full rollout; the pilot doesn't yet validate 100% of loads, so the final result depends on expanding coverage."
       },
       {
         "icon": "🎫",
