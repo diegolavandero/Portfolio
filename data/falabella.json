@@ -60,8 +60,8 @@
         "metricEn": "~70%",
         "label": "abandono en el funnel de compra",
         "labelEn": "purchase funnel abandonment",
-        "description": "Referencia típica del retail online, home incluido. Parte de este abandono se debía a fricciones propias de pisos.",
-        "descriptionEn": "Typical benchmark for online retail, home included. Part of it came from flooring-specific friction."
+        "description": "Parte de este abandono se debía a fricciones propias de pisos.",
+        "descriptionEn": "Part of it came from flooring-specific friction."
       },
       {
         "metric": "↑ 20%",
@@ -155,8 +155,8 @@
         "titleEn": "Fewer returns",
         "meta": "Meta: 19% → ~15% (−20% relativo)",
         "metaEn": "Goal: 19% → ~15% (−20% relative)",
-        "description": "Referencia: ~19% de las ventas online se devuelve (NRF, 2025). Un kit completo y coherente apunta a faltantes e incompatibilidad.",
-        "descriptionEn": "Benchmark: ~19% of online sales are returned (NRF, 2025). A complete, consistent kit targets shortages and incompatibility."
+        "description": "Hoy cerca del 19% de las ventas online se devuelve. Un kit completo y coherente apunta a faltantes e incompatibilidad.",
+        "descriptionEn": "Today about 19% of online sales are returned. A complete, consistent kit targets shortages and incompatibility."
       },
       {
         "number": "04",
@@ -232,8 +232,8 @@
       {
         "value": "~70%",
         "valueEn": "~70%",
-        "description": "abandono típico del retail online (referencia)",
-        "descriptionEn": "typical online retail abandonment (benchmark)"
+        "description": "abandono en el funnel de compra",
+        "descriptionEn": "purchase funnel abandonment"
       },
       {
         "value": "34% → 6%",
