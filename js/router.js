@@ -254,7 +254,6 @@ const Router = {
                   <li><span class="contact-icon" aria-hidden="true">📍</span><span>${data.contact.location}</span></li>
                   <li><span class="contact-icon" aria-hidden="true">✉️</span><a href="mailto:${data.contact.email}">${data.contact.email}</a></li>
                   <li><span class="contact-icon" aria-hidden="true">🌐</span><a href="${data.contact.behanceUrl}" target="_blank" rel="noopener noreferrer">${data.contact.behance}</a></li>
-                  <li><span class="contact-icon" aria-hidden="true">📞</span><a href="tel:${data.contact.phone.replace(/ /g, '')}">${data.contact.phone}</a></li>
                 </ul>
               </div>
             </div>

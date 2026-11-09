@@ -43,80 +43,236 @@
       "group": "IA y Diseño de Agentes",
       "groupEn": "AI & Agent Design",
       "items": [
-        { "es": "AI Product Design", "en": "AI Product Design" },
-        { "es": "Diseño de Agentes", "en": "Agent Design" },
-        { "es": "LLMs e Interfaces de Agentes", "en": "LLMs & Agent Interfaces" },
-        { "es": "IA Generativa", "en": "Generative AI" },
-        { "es": "UI Conversacional", "en": "Conversational UI" },
-        { "es": "Human-in-the-Loop", "en": "Human-in-the-Loop" },
-        { "es": "UX de Interpretabilidad del Modelo", "en": "Model Interpretability UX" },
-        { "es": "Prototipado IA", "en": "AI Prototyping" }
+        {
+          "es": "AI Product Design",
+          "en": "AI Product Design"
+        },
+        {
+          "es": "Diseño de Agentes",
+          "en": "Agent Design"
+        },
+        {
+          "es": "LLMs e Interfaces de Agentes",
+          "en": "LLMs & Agent Interfaces"
+        },
+        {
+          "es": "IA Generativa",
+          "en": "Generative AI"
+        },
+        {
+          "es": "UI Conversacional",
+          "en": "Conversational UI"
+        },
+        {
+          "es": "Human-in-the-Loop",
+          "en": "Human-in-the-Loop"
+        },
+        {
+          "es": "UX de Interpretabilidad del Modelo",
+          "en": "Model Interpretability UX"
+        },
+        {
+          "es": "Prototipado IA",
+          "en": "AI Prototyping"
+        }
       ]
     },
     {
       "group": "Frontend y Prototipado Funcional",
       "groupEn": "Frontend & Functional Prototyping",
       "items": [
-        { "es": "Claude Code", "en": "Claude Code" },
-        { "es": "React", "en": "React" },
-        { "es": "TailwindCSS", "en": "TailwindCSS" },
-        { "es": "Claude / Cursor / v0 / Lovable", "en": "Claude / Cursor / v0 / Lovable" },
-        { "es": "HTML · CSS", "en": "HTML · CSS" },
-        { "es": "Desarrollo Frontend", "en": "Frontend Development" }
+        {
+          "es": "Claude Code",
+          "en": "Claude Code"
+        },
+        {
+          "es": "React",
+          "en": "React"
+        },
+        {
+          "es": "TailwindCSS",
+          "en": "TailwindCSS"
+        },
+        {
+          "es": "Claude / Cursor / v0 / Lovable",
+          "en": "Claude / Cursor / v0 / Lovable"
+        },
+        {
+          "es": "HTML · CSS",
+          "en": "HTML · CSS"
+        },
+        {
+          "es": "Desarrollo Frontend",
+          "en": "Frontend Development"
+        }
       ]
     },
     {
       "group": "UX Research",
       "groupEn": "UX Research",
       "items": [
-        { "es": "Investigación UX", "en": "UX Research" },
-        { "es": "Customer Discovery", "en": "Customer Discovery" },
-        { "es": "Entrevistas con Usuarios", "en": "User Interviews" },
-        { "es": "Usuarios Sintéticos", "en": "Synthetic Users" },
-        { "es": "Testing de Usabilidad", "en": "Usability Testing" },
-        { "es": "Análisis Heurístico", "en": "Heuristic Analysis" },
-        { "es": "Arquitectura de Información", "en": "Information Architecture" },
-        { "es": "Análisis Competitivo", "en": "Competitive Analysis" },
-        { "es": "Hotjar · Maze", "en": "Hotjar · Maze" }
+        {
+          "es": "Investigación UX",
+          "en": "UX Research"
+        },
+        {
+          "es": "Customer Discovery",
+          "en": "Customer Discovery"
+        },
+        {
+          "es": "Entrevistas con Usuarios",
+          "en": "User Interviews"
+        },
+        {
+          "es": "Usuarios Sintéticos",
+          "en": "Synthetic Users"
+        },
+        {
+          "es": "Testing de Usabilidad",
+          "en": "Usability Testing"
+        },
+        {
+          "es": "Análisis Heurístico",
+          "en": "Heuristic Analysis"
+        },
+        {
+          "es": "Arquitectura de Información",
+          "en": "Information Architecture"
+        },
+        {
+          "es": "Análisis Competitivo",
+          "en": "Competitive Analysis"
+        },
+        {
+          "es": "Hotjar · Maze",
+          "en": "Hotjar · Maze"
+        }
       ]
     },
     {
       "group": "Diseño y Producto",
       "groupEn": "Design & Product",
       "items": [
-        { "es": "Design Systems", "en": "Design Systems" },
-        { "es": "Diseño de Interacción", "en": "Interaction Design" },
-        { "es": "Wireframing y Prototipado", "en": "Wireframing & Prototyping" },
-        { "es": "Diseño Mobile", "en": "Mobile App Design" },
-        { "es": "Web Responsive", "en": "Responsive Web" },
-        { "es": "B2B SaaS", "en": "B2B SaaS" },
-        { "es": "Figma", "en": "Figma" },
-        { "es": "Adobe CC", "en": "Adobe CC" },
-        { "es": "Notion · Linear", "en": "Notion · Linear" }
+        {
+          "es": "Design Systems",
+          "en": "Design Systems"
+        },
+        {
+          "es": "Diseño de Interacción",
+          "en": "Interaction Design"
+        },
+        {
+          "es": "Wireframing y Prototipado",
+          "en": "Wireframing & Prototyping"
+        },
+        {
+          "es": "Diseño Mobile",
+          "en": "Mobile App Design"
+        },
+        {
+          "es": "Web Responsive",
+          "en": "Responsive Web"
+        },
+        {
+          "es": "B2B SaaS",
+          "en": "B2B SaaS"
+        },
+        {
+          "es": "Figma",
+          "en": "Figma"
+        },
+        {
+          "es": "Adobe CC",
+          "en": "Adobe CC"
+        },
+        {
+          "es": "Notion · Linear",
+          "en": "Notion · Linear"
+        }
       ]
     }
   ],
   "competencies": [
-    { "es": "AI Product Design", "en": "AI Product Design" },
-    { "es": "Diseño de Agentes LLM", "en": "LLM Agent Design" },
-    { "es": "UI Conversacional", "en": "Conversational UI" },
-    { "es": "Human-in-the-Loop", "en": "Human-in-the-Loop" },
-    { "es": "UX de Interpretabilidad del Modelo", "en": "Model Interpretability UX" },
-    { "es": "Claude Code", "en": "Claude Code" },
-    { "es": "Prototipado Funcional con IA", "en": "AI Functional Prototyping" },
-    { "es": "Usuarios Sintéticos", "en": "Synthetic Users" },
-    { "es": "Frameworks para Stakeholders", "en": "Stakeholder Frameworks" },
-    { "es": "React · TailwindCSS", "en": "React · TailwindCSS" },
-    { "es": "Investigación UX", "en": "UX Research" },
-    { "es": "Customer Discovery", "en": "Customer Discovery" },
-    { "es": "Testing de Usabilidad", "en": "Usability Testing" },
-    { "es": "Análisis Heurístico", "en": "Heuristic Analysis" },
-    { "es": "Arquitectura de Información", "en": "Information Architecture" },
-    { "es": "Design Systems", "en": "Design Systems" },
-    { "es": "Diseño de Interacción", "en": "Interaction Design" },
-    { "es": "B2B SaaS", "en": "B2B SaaS" },
-    { "es": "Figma", "en": "Figma" },
-    { "es": "Hotjar · Maze", "en": "Hotjar · Maze" }
+    {
+      "es": "AI Product Design",
+      "en": "AI Product Design"
+    },
+    {
+      "es": "Diseño de Agentes LLM",
+      "en": "LLM Agent Design"
+    },
+    {
+      "es": "UI Conversacional",
+      "en": "Conversational UI"
+    },
+    {
+      "es": "Human-in-the-Loop",
+      "en": "Human-in-the-Loop"
+    },
+    {
+      "es": "UX de Interpretabilidad del Modelo",
+      "en": "Model Interpretability UX"
+    },
+    {
+      "es": "Claude Code",
+      "en": "Claude Code"
+    },
+    {
+      "es": "Prototipado Funcional con IA",
+      "en": "AI Functional Prototyping"
+    },
+    {
+      "es": "Usuarios Sintéticos",
+      "en": "Synthetic Users"
+    },
+    {
+      "es": "Frameworks para Stakeholders",
+      "en": "Stakeholder Frameworks"
+    },
+    {
+      "es": "React · TailwindCSS",
+      "en": "React · TailwindCSS"
+    },
+    {
+      "es": "Investigación UX",
+      "en": "UX Research"
+    },
+    {
+      "es": "Customer Discovery",
+      "en": "Customer Discovery"
+    },
+    {
+      "es": "Testing de Usabilidad",
+      "en": "Usability Testing"
+    },
+    {
+      "es": "Análisis Heurístico",
+      "en": "Heuristic Analysis"
+    },
+    {
+      "es": "Arquitectura de Información",
+      "en": "Information Architecture"
+    },
+    {
+      "es": "Design Systems",
+      "en": "Design Systems"
+    },
+    {
+      "es": "Diseño de Interacción",
+      "en": "Interaction Design"
+    },
+    {
+      "es": "B2B SaaS",
+      "en": "B2B SaaS"
+    },
+    {
+      "es": "Figma",
+      "en": "Figma"
+    },
+    {
+      "es": "Hotjar · Maze",
+      "en": "Hotjar · Maze"
+    }
   ],
   "experienceTitle": "Experiencia",
   "experienceTitleEn": "Experience",
@@ -214,8 +370,18 @@
   "languagesTitle": "Idiomas",
   "languagesTitleEn": "Languages",
   "languages": [
-    { "name": "Español", "nameEn": "Spanish", "level": "Nativo", "levelEn": "Native" },
-    { "name": "Inglés", "nameEn": "English", "level": "Profesional", "levelEn": "Professional" }
+    {
+      "name": "Español",
+      "nameEn": "Spanish",
+      "level": "Nativo",
+      "levelEn": "Native"
+    },
+    {
+      "name": "Inglés",
+      "nameEn": "English",
+      "level": "Profesional",
+      "levelEn": "Professional"
+    }
   ],
   "contactTitle": "Contacto",
   "contactTitleEn": "Contact",
@@ -223,7 +389,6 @@
     "location": "Santiago, Chile",
     "email": "dlavand@gmail.com",
     "behance": "behance.net/dlavand0ce0",
-    "behanceUrl": "https://behance.net/dlavand0ce0",
-    "phone": "+56 9 5679 3200"
+    "behanceUrl": "https://behance.net/dlavand0ce0"
   }
 }

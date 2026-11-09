@@ -88,8 +88,8 @@
         "label": "Impacto en Sistema",
         "labelEn": "System Impact",
         "metric": "-65%",
-        "description": "Reducción de funcionalidades duplicadas al integrarse con Lastmile, el sistema principal de órdenes",
-        "descriptionEn": "Reduction of duplicated functionality by integrating with Lastmile, the main order system"
+        "description": "Reducción de funcionalidades duplicadas al integrarse con LastMile, el sistema principal de órdenes",
+        "descriptionEn": "Reduction of duplicated functionality by integrating with LastMile, the main order system"
       }
     ]
   },
@@ -173,7 +173,7 @@
         "number": "03",
         "title": "Modelo híbrido escalable",
         "titleEn": "Scalable hybrid model",
-        "meta": "Wizard + Console",
+        "meta": "Asistente + Consola",
         "metaEn": "Wizard + Console",
         "description": "Combinar automatización con flexibilidad en una experiencia unificada",
         "descriptionEn": "Combine automation with flexibility in a unified experience"

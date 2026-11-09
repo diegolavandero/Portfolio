@@ -88,8 +88,8 @@
         "label": "Llamadas al Dispatcher",
         "labelEn": "Dispatcher Calls",
         "metric": "-61%",
-        "description": "Reducción en llamadas para pedir información de acceso o estacionamiento.",
-        "descriptionEn": "Reduction in calls to request access or parking information."
+        "description": "Reducción en llamadas por dispatcher para pedir información de acceso o estacionamiento.",
+        "descriptionEn": "Reduction in calls per dispatcher to request access or parking information."
       }
     ]
   },
@@ -103,12 +103,12 @@
         "name": "El Problema",
         "nameEn": "The Problem",
         "cons": [
-          "4 llamadas promedio al dispatcher por turno de 8 horas por información de acceso",
+          "Cada dispatcher recibe 15–20 llamadas por turno solo por información de acceso",
           "73% usaba Google Maps en paralelo a la app corporativa — carga cognitiva doble",
           "14% de entregas fallaban en primer intento en zonas de alta densidad"
         ],
         "consEn": [
-          "4 average calls to dispatcher per 8-hour shift for access information",
+          "Each dispatcher receives 15–20 calls per shift just for access information",
           "73% used Google Maps in parallel with the corporate app — double cognitive load",
           "14% of deliveries failed on first attempt in high-density zones"
         ]
@@ -149,7 +149,7 @@
         "descriptionEn": "6 stages mapped: receive route → navigate → arrive → access → deliver → next stop. 80% of non-productive time was concentrated between 'arrive' and 'access'.",
         "finding": "El conductor sabía a dónde ir, pero no cómo entrar una vez estacionado",
         "findingEn": "The driver knew where to go, but not how to enter once parked",
-        "name": "Journey Mapping",
+        "name": "Mapeo del journey",
         "nameEn": "Journey Mapping"
       },
       {
@@ -157,7 +157,7 @@
         "descriptionEn": "8 drivers shadowed during full shifts in high-density zones. Field interviews revealed behaviors invisible in office focus groups.",
         "finding": "73% tenía Google Maps y la app corporativa abiertas en paralelo",
         "findingEn": "73% had Google Maps and the corporate app open simultaneously",
-        "name": "Contextual Inquiry",
+        "name": "Indagación contextual",
         "nameEn": "Contextual Inquiry"
       },
       {
@@ -195,9 +195,9 @@
     ],
     "stats": [
       {
-        "value": "4 llamadas",
-        "description": "Promedio al dispatcher por turno sobre información de acceso",
-        "descriptionEn": "Average per shift to dispatcher for access information"
+        "value": "18 llamadas",
+        "description": "Promedio por dispatcher y turno solo por información de acceso",
+        "descriptionEn": "Average per dispatcher per shift just for access information"
       },
       {
         "value": "8–15 min",
@@ -265,12 +265,12 @@
         "roleEn": "Dispatcher · Operations center",
         "avatar": "https://i.pravatar.cc/150?img=24",
         "goals": [
-          "Reducir llamadas de acceso a menos de 1 por conductor por turno",
+          "Bajar las llamadas de acceso a menos de 8 por turno",
           "Detectar retrasos antes de que impacten la ventana de entrega",
           "Conductores nuevos autónomos desde el primer turno"
         ],
         "goalsEn": [
-          "Reduce access calls to less than 1 per driver per shift",
+          "Bring access calls below 8 per shift",
           "Detect delays before they impact the delivery window",
           "New drivers autonomous from their first shift"
         ],
@@ -509,18 +509,18 @@
       {
         "icon": "📦",
         "metric": "-22%",
-        "label": "Entregas en Primer Intento",
-        "labelEn": "First-Attempt Deliveries",
-        "description": "'No pudo acceder' bajó de 61% a 18% de las causas de entrega fallida.",
-        "descriptionEn": "'Couldn't access' dropped from 61% to 18% of failed delivery causes."
+        "label": "Entregas Fallidas en Primer Intento",
+        "labelEn": "First-Attempt Failed Deliveries",
+        "description": "La tasa de falla bajó de 14% a ~11%. 'No pudo acceder' pasó de 61% a 18% de las causas.",
+        "descriptionEn": "The failure rate fell from 14% to ~11%. 'Couldn't access' dropped from 61% to 18% of causes."
       },
       {
         "icon": "📞",
         "metric": "-61%",
         "label": "Llamadas al Dispatcher",
         "labelEn": "Dispatcher Calls",
-        "description": "De 18 a 7 llamadas promedio por turno sobre información de acceso a edificios.",
-        "descriptionEn": "From 18 to 7 average calls per shift about building access information."
+        "description": "De 18 a 7 llamadas promedio por dispatcher y turno sobre información de acceso a edificios.",
+        "descriptionEn": "From 18 to 7 average calls per dispatcher per shift about building access information."
       }
     ],
     "learningsTitle": "Aprendizajes Clave",
@@ -559,8 +559,8 @@
   "cta": {
     "question": "¿Quieres ver todos los proyectos?",
     "questionEn": "Want to see all projects?",
-    "description": "Tengo 6 case studies de diseño de producto en mi portfolio.",
-    "descriptionEn": "I have 6 product design case studies in my portfolio.",
+    "description": "Tengo 8 case studies de diseño de producto en mi portfolio.",
+    "descriptionEn": "I have 8 product design case studies in my portfolio.",
     "buttonLabel": "Ver todos los proyectos",
     "buttonLabelEn": "See all projects",
     "buttonHref": "#/"

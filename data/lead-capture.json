@@ -461,7 +461,7 @@
         ]
       },
       {
-        "name": "Cluster 3: Feedback",
+        "name": "Cluster 3: Retroalimentación",
         "nameEn": "Cluster 3: Feedback",
         "color": "yellow",
         "items": [
@@ -509,28 +509,28 @@
     "principles": [
       {
         "number": "01",
-        "title": "Reduce friction, increase conversion",
+        "title": "Reducir la fricción, aumentar la conversión",
         "titleEn": "Reduce friction, increase conversion",
         "description": "Minimizar pasos para maximizar conversión",
         "descriptionEn": "Minimize steps to maximize conversion"
       },
       {
         "number": "02",
-        "title": "Immediate interaction over delayed contact",
+        "title": "Interacción inmediata en vez de contacto diferido",
         "titleEn": "Immediate interaction over delayed contact",
         "description": "Contacto instantáneo vs esperas prolongadas",
         "descriptionEn": "Instant contact vs prolonged waits"
       },
       {
         "number": "03",
-        "title": "Visual trust through branding",
+        "title": "Confianza visual a través de la marca",
         "titleEn": "Visual trust through branding",
         "description": "Confianza mediante identidad visual",
         "descriptionEn": "Trust through visual identity"
       },
       {
         "number": "04",
-        "title": "Feedback at every step",
+        "title": "Retroalimentación en cada paso",
         "titleEn": "Feedback at every step",
         "description": "Validación y confirmación continua",
         "descriptionEn": "Continuous validation and confirmation"
@@ -678,7 +678,7 @@
         "descriptionEn": "Intelligent automatic responses based on message context"
       },
       {
-        "title": "AI Chat Assistant",
+        "title": "Asistente de chat con IA",
         "titleEn": "AI Chat Assistant",
         "description": "Asistente conversacional con IA para calificación y respuesta de leads",
         "descriptionEn": "AI conversational assistant for lead qualification and response"

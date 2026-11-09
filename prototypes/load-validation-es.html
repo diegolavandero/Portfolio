@@ -436,7 +436,7 @@ function EditItemModal({item, onCancel, onConfirm}){
         </div>
 
         <div className="edit-row">
-          <span>Entregado</span>
+          <span>Validado</span>
           <div className="stepper">
             <button onClick={dec} disabled={entregado <= 0}>−</button>
             <span className="val">{entregado}</span>
@@ -556,7 +556,7 @@ function ItemValidationScreen({orders, setOrders, scanMandatory, onContinue}){
                     <div className="qtyrow">
                       <div className="qty">
                         <span>Cantidad <b>{it.qty}</b></span>
-                        <span>Entregado <b>{it.entregado}</b></span>
+                        <span>Validado <b>{it.entregado}</b></span>
                         {partial && <WarningIcon/>}
                         {it.photo && <PhotoIcon/>}
                         {it.comment && <CommentIcon/>}

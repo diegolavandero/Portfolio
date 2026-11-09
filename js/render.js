@@ -140,7 +140,7 @@ const Renderer = {
         <div class="container">
           <div class="role-card">
             <div class="role-header">
-              <span class="role-ai-badge">AI-Enhanced Process</span>
+              <span class="role-ai-badge" ${bi('Proceso con IA', 'AI-Enhanced Process')}>Proceso con IA</span>
               <h2 class="role-title" ${bi(data.title, data.titleEn)}>${data.title}</h2>
               <p class="role-intro" ${bi(data.intro, data.introEn)}>${data.intro}</p>
             </div>

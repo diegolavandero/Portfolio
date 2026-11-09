@@ -123,8 +123,8 @@
       },
       {
         "number": "02",
-        "description": "Reducir las discrepancias detectadas en ruta en al menos un 80%",
-        "descriptionEn": "Reduce in-route discrepancies by at least 80%",
+        "description": "Reducir las discrepancias detectadas en ruta en al menos un 80% con el despliegue completo",
+        "descriptionEn": "Reduce in-route discrepancies by at least 80% at full rollout",
         "title": "Reducir discrepancias",
         "titleEn": "Reduce discrepancies"
       },
@@ -557,7 +557,7 @@
   "livePrototype": {
     "title": "Prototipo Interactivo",
     "titleEn": "Interactive Prototype",
-    "subtitle": "Probá el flujo real: validá ítems por escaneo o manualmente, confirmá el resumen y despachá la ruta.",
+    "subtitle": "Prueba el flujo real: valida ítems por escaneo o manualmente, confirma el resumen y despacha la ruta.",
     "subtitleEn": "Try the real flow: validate items by scanning or manually, confirm the summary, and dispatch the route.",
     "badge": "Prototipo funcional",
     "badgeEn": "Functional prototype",
@@ -651,8 +651,8 @@
         "metric": "-45%",
         "label": "Discrepancias en Destino",
         "labelEn": "Destination Discrepancies",
-        "description": "Reducción de cargas con errores detectados en el punto de entrega",
-        "descriptionEn": "Reduction in loads with errors detected at delivery point"
+        "description": "Reducción de cargas con errores detectados en el punto de entrega. Primera lectura a 60 días: 45% de avance frente a la meta de −80%, que apunta al despliegue completo; el piloto aún no valida el 100% de las cargas.",
+        "descriptionEn": "Reduction in loads with errors detected at delivery point. First 60-day reading: 45% against the −80% goal, which targets full rollout; the pilot doesn't yet validate 100% of loads."
       },
       {
         "icon": "🎫",
@@ -697,8 +697,8 @@
         "descriptionEn": "Centralized view of validation status for the entire fleet by shift. Today supervisors check each route individually — the dashboard would eliminate that operational overhead."
       },
       {
-        "title": "Integración con ERP para pre-llenado de datos",
-        "titleEn": "ERP integration for data pre-filling",
+        "title": "Integración con WMS para pre-llenado de datos",
+        "titleEn": "WMS integration for data pre-filling",
         "description": "Conectar directamente con el WMS eliminaría la entrada manual del número de orden. Estimado de ahorro: 30 s por validación × 40 conductores × 5 rutas diarias.",
         "descriptionEn": "Connecting directly to the WMS would eliminate manual order number entry. Estimated saving: 30 s per validation × 40 drivers × 5 daily routes."
       }

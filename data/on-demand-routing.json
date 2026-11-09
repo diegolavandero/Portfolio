@@ -157,7 +157,7 @@
     "subtitleEn": "Three methods to map, structure and validate the hybrid system",
     "methodCards": [
       {
-        "name": "Journey Mapping",
+        "name": "Mapeo del journey",
         "nameEn": "Journey Mapping",
         "description": "Mapeamos las 6 etapas del flujo completo de asignación — desde recibir las órdenes del día hasta confirmar el despacho. El pain point crítico emergió entre \"asignar automáticamente\" y \"revisar y corregir\": el 70% del tiempo de fricción ocurría en esa transición.",
         "descriptionEn": "We mapped the 6 stages of the complete assignment flow — from receiving the day's orders to confirming dispatch. The critical pain point emerged between \"auto-assign\" and \"review and correct\": 70% of friction time occurred in that transition.",
@@ -173,7 +173,7 @@
         "findingEn": "Creating the \"Route\" entity as visible and editable was the most important architectural decision of the project."
       },
       {
-        "name": "Usability Testing",
+        "name": "Pruebas de usabilidad",
         "nameEn": "Usability Testing",
         "description": "Testeamos 3 flujos con n=12 operadores: asignación 100% manual, 100% automática y modo híbrido. El híbrido fue 2.4× más rápido que el manual y generó 68% menos correcciones post-asignación que el automático solo.",
         "descriptionEn": "We tested 3 flows with n=12 operators: 100% manual assignment, 100% automatic, and hybrid mode. The hybrid was 2.4× faster than manual and generated 68% fewer post-assignment corrections than automatic alone.",
@@ -438,7 +438,7 @@
         "descriptionEn": "Each route is a named entity with state, assigned driver, used capacity and a reorderable list of orders. The operator can create, edit, split or merge routes at any time before dispatch."
       },
       {
-        "title": "Auto Assignment",
+        "title": "Asignación automática",
         "titleEn": "Auto Assignment",
         "tagline": "El algoritmo explica sus decisiones — el operador acepta, ajusta o rechaza con contexto.",
         "taglineEn": "The algorithm explains its decisions — the operator accepts, adjusts or rejects with context.",

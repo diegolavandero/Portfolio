@@ -99,8 +99,8 @@
     "subtitleEn": "Challenge identification and measurable goals",
     "products": [
       {
-        "name": "El Problema",
-        "nameEn": "The Problem",
+        "name": "Lo que mostraban los datos",
+        "nameEn": "What the data showed",
         "cons": [
           "34 timeouts registrados en un solo día de cierre de mes — récord pre-migración",
           "68% de abandono en reportes con espera mayor a 2 minutos",
@@ -172,15 +172,6 @@
         "findingLabelEn": "Finding",
         "finding": "78% prefirió async — pero el 22% restante eran managers que necesitaban el resultado inmediato",
         "findingEn": "78% preferred async — but the remaining 22% were managers who needed the result immediately"
-      }
-    ],
-    "quotes": [
-      {
-        "text": "Debería estar usando mi cerebro para el análisis, no para copiar y pegar gráficos en una plantilla cada lunes en la mañana.",
-        "textEn": "I should be using my brain for analysis, not copying and pasting charts into a template every Monday morning.",
-        "author": "Daniel, Logistics Analyst",
-        "authorEn": "Daniel, Logistics Analyst",
-        "context": "Entrevista de usuario"
       }
     ],
     "stats": [
@@ -433,7 +424,7 @@
       },
       {
         "value": "+34%",
-        "label": "task completion",
+        "label": "tareas completadas",
         "labelEn": "task completion",
         "color": "green"
       },
@@ -444,8 +435,8 @@
         "color": "amber"
       }
     ],
-    "insight": "El 22% que prefirió el modo síncrono revelaron un patrón clave: eran managers que ejecutaban reportes en tiempo real durante reuniones. Esto derivó en la decisión de ofrecer ambos modos — async por defecto con opción de modo inmediato para reportes livianos.",
-    "insightEn": "The 22% who preferred synchronous mode revealed a key pattern: they were managers running reports in real time during meetings. This led to the decision to offer both modes — async by default with an immediate mode option for lightweight reports."
+    "insight": "El 22% que prefirió el modo síncrono reveló un patrón clave: eran managers que ejecutaban reportes en tiempo real durante reuniones. Esto derivó en una sola decisión: async por defecto, con modo inmediato opcional para reportes livianos (tiempo estimado de generación corto).",
+    "insightEn": "The 22% who preferred synchronous mode revealed a key pattern: they were managers running reports in real time during meetings. This led to a single decision: async by default, with an optional immediate mode for lightweight reports (short estimated generation time)."
   },
   "solution": {
     "title": "La Solución",
@@ -492,8 +483,8 @@
       {
         "title": "¿Bloqueante o asíncrono en la UI?",
         "titleEn": "Blocking or async in the UI?",
-        "justification": "Testeamos 2 patrones: (A) spinner bloqueante con barra de progreso, (B) notificación push cuando el reporte está listo. El 78% de usuarios prefirió B porque podían seguir trabajando. Pero el 22% que prefirió A eran managers que querían estar frente al resultado inmediatamente — solución: ambos modos según perfil de usuario.",
-        "justificationEn": "We tested 2 patterns: (A) blocking spinner with progress bar, (B) push notification when report is ready. 78% of users preferred B because they could keep working. But the 22% who preferred A were managers who wanted to be in front of the result immediately — solution: both modes based on user profile.",
+        "justification": "Testeamos 2 patrones: (A) spinner bloqueante con barra de progreso, (B) notificación push cuando el reporte está listo. El 78% de usuarios prefirió B porque podían seguir trabajando. Pero el 22% que prefirió A eran managers que querían estar frente al resultado inmediatamente — solución: async por defecto, con modo inmediato opcional para reportes livianos (tiempo estimado de generación corto).",
+        "justificationEn": "We tested 2 patterns: (A) blocking spinner with progress bar, (B) push notification when report is ready. 78% of users preferred B because they could keep working. But the 22% who preferred A were managers who wanted to be in front of the result immediately — solution: async by default, with an optional immediate mode for lightweight reports (short estimated generation time).",
         "tradeoff": "El usuario async pierde el resultado inmediato en pantalla — requiere cambio de hábito y confianza en el sistema de notificaciones.",
         "tradeoffEn": "The async user loses the immediate on-screen result — requires habit change and trust in the notification system."
       },
@@ -549,7 +540,10 @@
         "titleEn": "Report Request",
         "description": "Configuración de reporte mediante templates personalizables. Selección de período, filtros y formato de salida en 3 pasos.",
         "descriptionEn": "Report configuration via customizable templates. Period selection, filters and output format in 3 steps.",
-        "srcs": ["data/images/async-report-02.png", "data/images/async-report-01.png"],
+        "srcs": [
+          "data/images/async-report-02.png",
+          "data/images/async-report-01.png"
+        ],
         "alt": "Mockup de configuración de reporte",
         "altEn": "Report configuration mockup"
       },
@@ -558,7 +552,10 @@
         "titleEn": "Processing States",
         "description": "Sistema de estados visual: en cola, procesando con porcentaje de avance, listo para descarga y error accionable.",
         "descriptionEn": "Visual status system: queued, processing with progress percentage, ready to download and actionable error.",
-        "srcs": ["data/images/async-report-03.png", "data/images/async-report-04.png"],
+        "srcs": [
+          "data/images/async-report-03.png",
+          "data/images/async-report-04.png"
+        ],
         "alt": "Mockup de estados del sistema",
         "altEn": "System states mockup"
       },
@@ -615,8 +612,8 @@
       {
         "title": "El 22% que prefirió modo síncrono reveló un segmento no anticipado",
         "titleEn": "The 22% who preferred synchronous mode revealed an unanticipated segment",
-        "description": "Los managers que necesitaban el resultado inmediato mostraron un caso de uso distinto, no solo una preferencia. La solución fue ofrecer ambos modos según el tiempo estimado de generación del reporte.",
-        "descriptionEn": "Managers who needed the immediate result showed a distinct use case, not just a preference. The solution was to offer both modes depending on the estimated report generation time."
+        "description": "Los managers que necesitaban el resultado inmediato mostraron un caso de uso distinto, no solo una preferencia. La solución fue async por defecto, con modo inmediato opcional para reportes livianos (tiempo estimado de generación corto).",
+        "descriptionEn": "Managers who needed the immediate result showed a distinct use case, not just a preference. The solution was async by default, with an optional immediate mode for lightweight reports (short estimated generation time)."
       },
       {
         "title": "El historial de reportes se convirtió en un caso de uso principal no planificado",
