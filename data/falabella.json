@@ -312,84 +312,90 @@
       }
     ]
   },
-  "personas": [
-    {
-      "id": "camila",
-      "name": "Camila",
-      "nameEn": "Camila",
-      "role": "Propietaria renovando por primera vez",
-      "roleEn": "First-time home renovator",
-      "avatar": "placeholder",
-      "goals": [
-        "Elegir el piso correcto sin cometer errores de cantidad",
-        "Entender qué materiales adicionales necesita antes de llegar a la tienda",
-        "Tomar una decisión informada sin ayuda de un vendedor"
-      ],
-      "goalsEn": [
-        "Choose the right flooring without quantity errors",
-        "Understand what additional materials she needs before going to the store",
-        "Make an informed decision without a salesperson"
-      ],
-      "painPoints": [
-        "No sabe qué es la merma ni cuánto agregar",
-        "El precio por m² la confunde cuando las cajas cubren áreas distintas",
-        "El cross-sell le muestra adhesivos que no son compatibles con su piso de clip"
-      ],
-      "painPointsEn": [
-        "Doesn't know what waste margin is or how much to add",
-        "Price per m² confuses her when boxes cover different areas",
-        "Cross-sell shows adhesives incompatible with her click-lock floor"
-      ],
-      "behaviors": [
-        "Busca reseñas antes de comprar",
-        "Prefiere comprar online para evitar presión de vendedores",
-        "Compara precio por m² como métrica principal"
-      ],
-      "behaviorsEn": [
-        "Reads reviews before buying",
-        "Prefers online shopping to avoid sales pressure",
-        "Compares price per m² as the main metric"
-      ]
-    },
-    {
-      "id": "rodrigo",
-      "name": "Rodrigo",
-      "nameEn": "Rodrigo",
-      "role": "Constructor independiente frecuente",
-      "roleEn": "Frequent independent contractor",
-      "avatar": "placeholder",
-      "goals": [
-        "Calcular rápido la cantidad exacta para un proyecto de cliente",
-        "Generar un kit completo con accesorios validados para no volver a la tienda",
-        "Comparar múltiples opciones por costo total de proyecto, no solo m²"
-      ],
-      "goalsEn": [
-        "Quickly calculate the exact amount for a client's project",
-        "Generate a complete kit with validated accessories to avoid return trips",
-        "Compare multiple options by total project cost, not just m²"
-      ],
-      "painPoints": [
-        "Pierde tiempo calculando merma y accesorios manualmente",
-        "El comparador de atributos no normaliza unidades, dificulta la comparación real",
-        "Los adhesivos del cross-sell a veces no son compatibles con el sistema de instalación elegido"
-      ],
-      "painPointsEn": [
-        "Wastes time manually calculating waste and accessories",
-        "The attribute comparator doesn't normalize units, making real comparison difficult",
-        "Cross-sell adhesives are sometimes incompatible with the chosen installation system"
-      ],
-      "behaviors": [
-        "Compra en volumen, varias veces al mes",
-        "Prioriza velocidad de decisión sobre precio marginal",
-        "Llega con medidas del espacio ya calculadas"
-      ],
-      "behaviorsEn": [
-        "Buys in volume, several times per month",
-        "Prioritizes decision speed over marginal price",
-        "Arrives with pre-calculated space measurements"
-      ]
-    }
-  ],
+  "personas": {
+    "title": "Personas",
+    "titleEn": "Personas",
+    "subtitle": "Perfiles construidos a partir de la auditoría de la app y del benchmark",
+    "subtitleEn": "Profiles built from the app audit and the benchmark",
+    "items": [
+      {
+        "id": "camila",
+        "name": "Camila",
+        "nameEn": "Camila",
+        "role": "Propietaria renovando por primera vez",
+        "roleEn": "First-time home renovator",
+        "avatar": "https://i.pravatar.cc/150?img=47",
+        "goals": [
+          "Elegir el piso correcto sin cometer errores de cantidad",
+          "Entender qué materiales adicionales necesita antes de llegar a la tienda",
+          "Tomar una decisión informada sin ayuda de un vendedor"
+        ],
+        "goalsEn": [
+          "Choose the right flooring without quantity errors",
+          "Understand what additional materials she needs before going to the store",
+          "Make an informed decision without a salesperson"
+        ],
+        "painPoints": [
+          "No sabe qué es la merma ni cuánto agregar",
+          "El precio por m² la confunde cuando las cajas cubren áreas distintas",
+          "El cross-sell le muestra adhesivos que no son compatibles con su piso de clip"
+        ],
+        "painPointsEn": [
+          "Doesn't know what waste margin is or how much to add",
+          "Price per m² confuses her when boxes cover different areas",
+          "Cross-sell shows adhesives incompatible with her click-lock floor"
+        ],
+        "behaviors": [
+          "Busca reseñas antes de comprar",
+          "Prefiere comprar online para evitar presión de vendedores",
+          "Compara precio por m² como métrica principal"
+        ],
+        "behaviorsEn": [
+          "Reads reviews before buying",
+          "Prefers online shopping to avoid sales pressure",
+          "Compares price per m² as the main metric"
+        ]
+      },
+      {
+        "id": "rodrigo",
+        "name": "Rodrigo",
+        "nameEn": "Rodrigo",
+        "role": "Constructor independiente frecuente",
+        "roleEn": "Frequent independent contractor",
+        "avatar": "https://i.pravatar.cc/150?img=52",
+        "goals": [
+          "Calcular rápido la cantidad exacta para un proyecto de cliente",
+          "Generar un kit completo con accesorios validados para no volver a la tienda",
+          "Comparar múltiples opciones por costo total de proyecto, no solo m²"
+        ],
+        "goalsEn": [
+          "Quickly calculate the exact amount for a client's project",
+          "Generate a complete kit with validated accessories to avoid return trips",
+          "Compare multiple options by total project cost, not just m²"
+        ],
+        "painPoints": [
+          "Pierde tiempo calculando merma y accesorios manualmente",
+          "El comparador de atributos no normaliza unidades, dificulta la comparación real",
+          "Los adhesivos del cross-sell a veces no son compatibles con el sistema de instalación elegido"
+        ],
+        "painPointsEn": [
+          "Wastes time manually calculating waste and accessories",
+          "The attribute comparator doesn't normalize units, making real comparison difficult",
+          "Cross-sell adhesives are sometimes incompatible with the chosen installation system"
+        ],
+        "behaviors": [
+          "Compra en volumen, varias veces al mes",
+          "Prioriza velocidad de decisión sobre precio marginal",
+          "Llega con medidas del espacio ya calculadas"
+        ],
+        "behaviorsEn": [
+          "Buys in volume, several times per month",
+          "Prioritizes decision speed over marginal price",
+          "Arrives with pre-calculated space measurements"
+        ]
+      }
+    ]
+  },
   "journeyMap": {
     "title": "Desarrollo del flujo: de la duda de cantidad al checkout",
     "titleEn": "Flow development: from quantity doubt to checkout",
