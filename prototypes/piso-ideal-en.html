@@ -1,0 +1,616 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Piso Ideal — Prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#17191c;--m1:#4f545b;--m2:#6b7078;--m3:#9aa0a8;--m4:#4a4f57;
+  --line:#ecedef;--hero:#f2f8e0;--dark:#1e1f22;--lime:#c9ed5b;--cream:#f6f2e9;
+  --chip:#f1f3f5;--cmr-bg:#e7f0e9;--cmr-tx:#2e6b49;--field:#edeff1;
+  --green:#2e6b49;--warn-bg:#faf1d8;--warn-tx:#8a6d2f;--req-bg:#f6ead0;--req-tx:#9a6a1e;
+  --sh-card:0 2px 8px rgba(20,22,26,.05),0 1px 2px rgba(20,22,26,.04);
+  --sh-hero:0 4px 12px rgba(20,22,26,.07),0 20px 48px -16px rgba(20,22,26,.16);
+  --sh-prod:0 2px 6px rgba(20,22,26,.05),0 8px 24px -8px rgba(20,22,26,.12);
+  --studio-bg:#eef0f5;--studio-bg2:#e3e7ef;--studio-ink:#132045;--studio-soft:#5a6685;
+  --studio-line:#d4dae6;--studio-card:#fff;--studio-accent:#17191c;
+}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --studio-bg:#0d1120;--studio-bg2:#141a2e;--studio-ink:#eef1f8;--studio-soft:#93a0c2;--studio-line:#26304a;--studio-card:#171d33;--studio-accent:#c9ed5b;}}
+body{background:var(--studio-bg);color:var(--studio-ink);font-family:Inter,sans-serif;min-height:100vh;
+  padding:26px 16px 46px;display:flex;flex-direction:column;align-items:center;gap:20px}
+.rig{width:100%;max-width:940px;display:flex;flex-direction:column;gap:16px}
+.rig-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px}
+.rig-head .eyebrow{font:600 11px Inter;letter-spacing:.09em;text-transform:uppercase;color:var(--studio-soft);margin:0 0 4px}
+.rig-head h1{font-size:20px;font-weight:700;letter-spacing:-.01em;margin:0}
+.rig-head p{margin:5px 0 0;font-size:13px;color:var(--studio-soft);max-width:60ch;line-height:1.5}
+.reset-btn{font:600 12px Inter;color:var(--studio-ink);background:transparent;border:1px solid var(--studio-line);padding:8px 14px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.reset-btn:hover{background:var(--studio-bg2)}
+.panel{background:var(--studio-card);border:1px solid var(--studio-line);border-radius:14px;padding:12px 15px;display:flex;flex-wrap:wrap;align-items:center;gap:16px;justify-content:space-between}
+.steps{display:flex;align-items:center;flex-wrap:wrap}
+.step{display:flex;align-items:center;gap:8px;padding:5px 10px 5px 5px}
+.step .num{width:22px;height:22px;border-radius:999px;display:flex;align-items:center;justify-content:center;font:700 11px Inter;background:var(--studio-line);color:var(--studio-soft);flex-shrink:0;transition:.2s}
+.step.on .num{background:var(--studio-accent);color:#fff}
+.step.done .num{background:#2e6b49;color:#fff}
+.step .lbl{font:600 12.5px Inter;color:var(--studio-soft)}
+.step.on .lbl{color:var(--studio-ink)}
+.step-sep{width:16px;height:1px;background:var(--studio-line)}
+.scn{display:flex;flex-wrap:wrap;gap:8px}
+.scn .sw{display:flex;align-items:center;gap:8px;padding:7px 11px;border-radius:10px;background:var(--studio-bg2);border:1px solid var(--studio-line);cursor:pointer}
+.scn .sw .k{font:600 11.5px Inter;color:var(--studio-ink)}
+.toggle{width:34px;height:20px;border-radius:999px;background:#c3ccdd;position:relative;flex-shrink:0;transition:.15s}
+.toggle.on{background:#2e6b49}
+.toggle::after{content:"";position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:999px;background:#fff;transition:.15s;box-shadow:0 1px 2px rgba(0,0,0,.3)}
+.toggle.on::after{left:16px}
+.stage{display:flex;flex-direction:column;align-items:center;gap:16px}
+.phone-wrap{filter:drop-shadow(0 30px 60px rgba(19,32,69,.28))}
+.phone{width:360px;height:800px;background:#fff;border-radius:30px;overflow:hidden;position:relative;
+  font-family:Inter,sans-serif;color:var(--ink);display:flex;flex-direction:column;border:7px solid #0d0f12}
+.notch{position:absolute;top:6px;left:50%;transform:translateX(-50%);width:120px;height:24px;background:#0d0f12;border-radius:0 0 16px 16px;z-index:60}
+.serif{font-family:Fraunces,serif;font-variation-settings:"SOFT" 0,"WONK" 1}
+svg,img{display:block}
+.caption{font-size:12.5px;color:var(--studio-soft);text-align:center;max-width:62ch;line-height:1.5}
+.caption b{color:var(--studio-ink);font-weight:700}
+.footnote{width:100%;max-width:940px;text-align:center;font-size:11.5px;color:var(--studio-soft)}
+
+/* ====== APP (inside phone) ====== */
+.scr{flex:1;display:flex;flex-direction:column;min-height:0}
+.status{height:42px;display:flex;align-items:center;justify-content:space-between;padding:6px 22px 0;flex:0 0 auto}
+.status .t{font-weight:600;font-size:14px;letter-spacing:.14px}
+.status .ic{display:flex;gap:6px;align-items:center}
+.topbar{display:flex;gap:8px;align-items:center;padding:6px 14px 10px;flex:0 0 auto}
+.ibtn{width:34px;height:34px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;background:none;border:0;cursor:pointer}
+.topbar .title{font-weight:600;font-size:16px;color:var(--ink);white-space:nowrap}
+.topbar .sp{flex:1}
+.topbar .grp{display:flex;gap:2px;align-items:center}
+.cartbadge{position:relative}
+.cartbadge .b{position:absolute;top:-2px;right:-1px;min-width:15px;height:15px;padding:0 3px;border-radius:999px;background:var(--lime);color:#17191c;font:700 9px Inter;display:flex;align-items:center;justify-content:center}
+.search{flex:1;min-width:0;height:42px;display:flex;gap:9px;align-items:center;padding:0 14px;background:#fff;border:1px solid var(--line);border-radius:999px;box-shadow:var(--sh-card)}
+.search .q{flex:1;min-width:0;font-weight:500;font-size:14px;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.progress{padding:0 16px 14px;flex:0 0 auto}
+.progress .track{height:5px;background:var(--line);border-radius:999px;overflow:hidden}
+.progress .fill{height:5px;background:var(--dark);border-radius:999px;transition:width .4s cubic-bezier(.3,.8,.3,1)}
+.scrbody{flex:1;overflow-y:auto;padding:0 16px 16px;display:flex;flex-direction:column;gap:14px}
+.scrbody>*{flex-shrink:0}
+.scrbody.nopad{padding:0}
+.footer{padding:12px 16px 16px;background:#fff;border-top:1px solid var(--line);flex:0 0 auto;display:flex;flex-direction:column;gap:8px}
+.ftxt{font-size:11px;color:var(--m3);text-align:center}
+.h-fraunces{font-weight:600;letter-spacing:-.02em;line-height:1.06;color:var(--ink)}
+.btn{height:52px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:8px;font:600 15px Inter;border:1px solid transparent;cursor:pointer;width:100%;background:none}
+.btn.pri{background:var(--dark);color:#fff}
+.btn.sec{background:#fff;color:var(--ink);border-color:var(--line)}
+.btn.sec2{background:#fff;color:var(--ink);border:1.5px solid var(--ink)}
+.btn.ghost{background:var(--field);color:var(--m3)}
+.btn.sm{height:46px;font-size:14px}
+.loc{display:flex;gap:8px;align-items:center;padding:2px 20px 12px;flex:0 0 auto}
+.loc .l{flex:1;font-weight:500;font-size:13px}
+.hero{background:var(--hero);border:1px solid var(--line);border-radius:26px;padding:22px 20px 20px;display:flex;flex-direction:column;gap:14px;box-shadow:var(--sh-hero)}
+.badge-sq{width:26px;height:26px;border-radius:9px;background:var(--dark);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.eyerow{display:flex;gap:8px;align-items:center}
+.eyerow .tx{font-weight:600;font-size:11px;letter-spacing:.14em;color:var(--m1)}
+.ai-pill{display:inline-flex;gap:7px;align-items:center;align-self:flex-start;background:var(--hero);border-radius:999px;padding:7px 13px 7px 8px}
+.ai-pill .sq{width:22px;height:22px;border-radius:7px;background:var(--dark);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.ai-pill .tx{font-weight:600;font-size:12.5px;color:var(--ink)}
+.cta{height:50px;display:inline-flex;gap:10px;align-items:center;padding:0 8px 0 22px;background:var(--dark);border-radius:999px;box-shadow:0 8px 20px -8px rgba(20,22,26,.5);border:0;cursor:pointer}
+.cta .tx{font-weight:600;font-size:15px;color:var(--cream)}
+.cta .arr{width:26px;height:26px;border-radius:999px;background:var(--lime);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.prog2{display:flex;gap:6px;align-items:center}.prog2 .dots{display:flex;gap:4px}.prog2 i{width:5px;height:5px;border-radius:999px;background:var(--dark)}
+.prog2 .tx{font-weight:500;font-size:12px;color:var(--m1);white-space:nowrap}
+.chips{display:flex;gap:8px;align-items:center;flex-wrap:nowrap;overflow:hidden}
+.chip{height:36px;display:inline-flex;gap:7px;align-items:center;padding:0 15px;border-radius:999px;background:#fff;border:1px solid var(--line);box-shadow:var(--sh-card);font-weight:600;font-size:13px;color:var(--ink);white-space:nowrap;flex:0 0 auto;cursor:pointer}
+.chip.dark{background:var(--dark);border-color:var(--dark);color:var(--cream)}
+.chip.sel{background:var(--lime);border-color:var(--lime);color:var(--ink)}
+.grid{display:flex;gap:14px;align-items:stretch}
+.pcard{flex:1;min-width:0;background:#fff;border:1px solid var(--line);border-radius:20px;padding:10px 10px 14px;display:flex;flex-direction:column;gap:9px;box-shadow:var(--sh-prod)}
+.photo{height:118px;border-radius:13px;position:relative;overflow:hidden;background:#eee}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.fav{position:absolute;top:8px;right:8px;width:28px;height:28px;border-radius:999px;z-index:2;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;box-shadow:var(--sh-card)}
+.brand{font-weight:700;font-size:10px;letter-spacing:.1em;color:var(--m3)}
+.pname{font-weight:500;font-size:13px;line-height:1.3;color:var(--ink)}
+.by{font-weight:500;font-size:11px;color:var(--m3)}
+.tags{display:flex;gap:5px}.tag{padding:3px 8px;border-radius:999px;font-weight:600;font-size:10px;background:var(--chip);color:var(--m4)}.tag.cmr{background:var(--cmr-bg);color:var(--cmr-tx)}
+.price{display:flex;gap:4px;align-items:baseline}.price .v{font-weight:600;font-size:21px;letter-spacing:-.01em;color:var(--ink)}.price .u{font-weight:600;font-size:11px;color:var(--m2)}
+.proj{font-weight:500;font-size:11px;color:var(--m2)}
+.nav{height:70px;background:rgba(255,255,255,.96);border-top:1px solid var(--line);display:flex;justify-content:space-between;padding:9px 10px 0;flex:0 0 auto}
+.nav .it{width:58px;display:flex;flex-direction:column;gap:4px;align-items:center;position:relative}
+.nav .it .lb{font-weight:600;font-size:10px;color:var(--m3)}.nav .it.on .lb{color:var(--ink)}
+.nav .it .dot{width:5px;height:5px;border-radius:999px;background:#8bbf2e;position:absolute;top:-6px}
+.ctx{display:flex;align-items:center;gap:8px;background:var(--field);border-radius:12px;padding:9px 14px}
+.ctx .t{flex:1;font-weight:500;font-size:12px;color:var(--m2)}
+.ctx .e{font-weight:600;font-size:13px;color:var(--green);cursor:pointer}
+.roomchips{display:flex;flex-direction:column;gap:10px}.roomrow{display:flex;gap:10px;flex-wrap:wrap}
+.rchip{height:42px;display:flex;align-items:center;padding:0 18px;border-radius:999px;background:#fff;border:1px solid var(--line);box-shadow:var(--sh-card);font-weight:600;font-size:14px;color:var(--ink);cursor:pointer}
+.rchip.sel{background:var(--lime);border-color:var(--lime)}
+.field{background:#fff;border:1px solid var(--line);border-radius:14px;height:52px;display:flex;align-items:center;padding:0 16px;font-weight:500;font-size:15px}
+.field.err{border-color:#e7000b}
+.field input{border:0;outline:0;font:500 15px Inter;color:var(--ink);width:100%;background:none}
+.photo-card{background:var(--field);border-radius:20px;padding:18px 16px;display:flex;flex-direction:column;gap:12px;align-items:center}
+.estcard{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--sh-prod)}
+.estcard .ph{height:150px;position:relative;overflow:hidden}.estcard .ph img{width:100%;height:100%;object-fit:cover}
+.estcard .bd{padding:16px;display:flex;flex-direction:column;gap:11px}
+.rowcard{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.crow{display:flex;align-items:center;gap:12px;padding:13px 15px}
+.crow+.crow{border-top:1px solid var(--line)}
+.crow .lbl{font-size:11px;color:var(--m3);margin-bottom:2px}
+.crow .val{font-weight:600;font-size:14px;color:var(--ink)}
+.crow .ch{font-weight:600;font-size:13px;color:var(--green);cursor:pointer}
+.infobox{background:var(--hero);border-radius:14px;padding:13px 15px;font-size:13px;line-height:1.45;color:var(--m4)}
+.infobox b{color:var(--ink)}
+.warnbox{background:var(--warn-bg);border-radius:14px;padding:13px 15px;display:flex;gap:10px}
+.warnbox .wt{font-weight:700;font-size:13.5px;color:#7a5e12;margin-bottom:3px}
+.warnbox .wd{font-size:12.5px;line-height:1.45;color:#8a6d2f}
+.optcard{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--sh-prod);display:flex;flex-direction:column}
+.optcard .ph{height:168px;position:relative;overflow:hidden}.optcard .ph img{width:100%;height:100%;object-fit:cover}
+.optcard .flag{position:absolute;top:14px;left:14px;background:var(--dark);color:var(--cream);font:700 10px Inter;letter-spacing:.06em;padding:6px 11px;border-radius:999px}
+.optcard .bd{padding:16px;display:flex;flex-direction:column;gap:11px}
+.why{background:var(--hero);border-radius:12px;padding:12px 14px}
+.why .t{font-weight:700;font-size:12.5px;color:var(--ink);margin-bottom:4px}
+.why .d{font-size:12.5px;line-height:1.45;color:var(--m4)}
+.kititem{background:#fff;border:1px solid var(--line);border-radius:16px;padding:13px;display:flex;gap:12px;align-items:flex-start}
+.kititem .thumb{width:52px;height:52px;border-radius:11px;overflow:hidden;flex:0 0 auto;background:#eee}
+.kititem .thumb img{width:100%;height:100%;object-fit:cover}
+.chk{width:26px;height:26px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;cursor:pointer;background:var(--dark)}
+.chk.off{background:#fff;border:1.5px solid var(--line)}
+.req{display:inline-block;background:var(--req-bg);color:var(--req-tx);font:700 9.5px Inter;letter-spacing:.05em;padding:3px 8px;border-radius:999px;margin-bottom:5px}
+.greenban{background:var(--cmr-bg);border-radius:14px;padding:12px 14px;display:flex;gap:9px;align-items:center}
+.greenban .t{font-weight:700;font-size:13px;color:var(--green)}
+.totrow{display:flex;align-items:baseline;justify-content:space-between}
+.totrow .k{font-weight:500;font-size:14px;color:var(--ink)}
+.totrow .v{font-weight:600;font-size:26px;letter-spacing:-.02em;color:var(--ink)}
+.stepper{display:flex;align-items:center;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex:0 0 auto}
+.stepper button{width:34px;height:34px;background:#fff;border:0;font-size:18px;color:var(--m2);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.stepper .v{min-width:30px;text-align:center;font-weight:700;font-size:14px;color:var(--ink)}
+.optrow{background:#fff;border:1px solid var(--line);border-radius:16px;padding:15px;cursor:pointer}
+.optrow .t{font-weight:700;font-size:15px;color:var(--ink);margin-bottom:5px}
+.optrow .d{font-size:12.5px;line-height:1.45;color:var(--m2)}
+.toggle2{display:flex;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px;box-shadow:var(--sh-card)}
+.toggle2 button{flex:1;height:36px;border:0;background:none;border-radius:999px;font:600 13px Inter;color:var(--m3);cursor:pointer}
+.toggle2 button.on{background:var(--field);color:var(--ink)}
+.skel{background:linear-gradient(90deg,#edeff1 25%,#f6f7f9 50%,#edeff1 75%);background-size:200% 100%;animation:sh 1.3s infinite;border-radius:16px}
+@keyframes sh{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.spinner{width:34px;height:34px;border:3px solid var(--line);border-top-color:var(--dark);border-radius:999px;animation:sp .8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+</style></head>
+<body>
+<div id="root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.24.7/babel.min.js"></script>
+<script type="text/babel" data-presets="react">
+const {useState,useMemo} = React;
+const A="assets/piso/";
+const clp = n => "$"+Math.round(n).toLocaleString("es-CL");
+// ===== Icons (brand icons = exact from Figma; UI glyphs = clean recreations) =====
+const I = {
+  sparkle:(c="#C9ED5B")=><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 1.25L8.625 5.125L12.5 6.25L8.625 7.375L7.5 11.25L6.375 7.375L2.5 6.25L6.375 5.125L7.5 1.25Z" fill={c}/></svg>,
+  arrow:(c="#1E1F22")=><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M3.125 7.5H11.875M8.125 11.25L11.875 7.5L8.125 3.75" strokeWidth="1.375" strokeLinecap="round" strokeLinejoin="round" stroke={c}/></svg>,
+  filter:(c="#C9ED5B")=><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M1.875 3.125H13.125M3.75 7.5H11.25M6.25 11.875H8.75" strokeWidth="1.25" strokeLinecap="round" stroke={c}/></svg>,
+  heart:(c="#17191C",s=21)=><svg width={s} height={s} viewBox="0 0 15 15" fill="none"><path d="M7.49999 12.5C7.49999 12.5 3.12499 9.62499 3.12499 6.56249C2.87634 5.98232 2.86836 5.32715 3.10278 4.7411C3.3372 4.15505 3.79482 3.68613 4.37499 3.43749C4.95515 3.18884 5.61032 3.18086 6.19637 3.41528C6.78242 3.6497 7.25134 4.10732 7.49999 4.68749C7.74863 4.10732 8.21755 3.6497 8.8036 3.41528C9.38965 3.18086 10.0448 3.18884 10.625 3.43749C11.2051 3.68613 11.6628 4.15505 11.8972 4.7411C12.1316 5.32715 12.1236 5.98232 11.875 6.56249C11.875 9.62499 7.49999 12.5 7.49999 12.5Z" strokeWidth="1.125" strokeLinejoin="round" stroke={c}/></svg>,
+  home:(c="#17191C")=><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M3.66667 10.0834L11 3.66669L18.3333 10.0834" strokeWidth="1.74" strokeLinecap="round" strokeLinejoin="round" stroke={c}/><path d="M5.5 9.16669V17.4167H16.5V9.16669" strokeWidth="1.74" strokeLinejoin="round" stroke={c}/></svg>,
+  category:(c="#9AA0A8")=><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M5.5 3.667h2.75A1.83 1.83 0 0110.083 5.5v2.75a1.83 1.83 0 01-1.833 1.833H5.5A1.83 1.83 0 013.667 8.25V5.5A1.83 1.83 0 015.5 3.667Z" strokeWidth="1.74" stroke={c}/><path d="M13.75 3.667h2.75A1.83 1.83 0 0118.333 5.5v2.75a1.83 1.83 0 01-1.833 1.833h-2.75A1.83 1.83 0 0111.917 8.25V5.5a1.83 1.83 0 011.833-1.833Z" strokeWidth="1.74" stroke={c}/><path d="M5.5 11.917h2.75a1.83 1.83 0 011.833 1.833v2.75A1.83 1.83 0 018.25 18.333H5.5a1.83 1.83 0 01-1.833-1.833v-2.75a1.83 1.83 0 011.833-1.833Z" strokeWidth="1.74" stroke={c}/><path d="M13.75 11.917h2.75a1.83 1.83 0 011.833 1.833v2.75a1.83 1.83 0 01-1.833 1.833h-2.75a1.83 1.83 0 01-1.833-1.833v-2.75a1.83 1.83 0 011.833-1.833Z" strokeWidth="1.74" stroke={c}/></svg>,
+  store:(c="#9AA0A8")=><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M3.667 7.333H18.333V17.417H3.667V7.333Z" strokeWidth="1.74" strokeLinejoin="round" stroke={c}/><path d="M3.667 7.333L5.5 3.667H16.5L18.333 7.333" strokeWidth="1.74" strokeLinejoin="round" stroke={c}/></svg>,
+  more:(c="#9AA0A8")=><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="4.583" cy="11" r="1.558" fill={c}/><circle cx="11" cy="11" r="1.558" fill={c}/><circle cx="17.417" cy="11" r="1.558" fill={c}/></svg>,
+  back:(c="#17191c")=><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M13.5 5 7.5 11l6 6" stroke={c} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>,
+  search:(c="#6b7078")=><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="8" cy="8" r="6" stroke={c} strokeWidth="1.6"/><path d="m13 13 3 3" stroke={c} strokeWidth="1.6" strokeLinecap="round"/></svg>,
+  x:(c="#6b7078",s=16)=><svg width={s} height={s} viewBox="0 0 16 16" fill="none"><path d="m4 4 8 8M12 4l-8 8" stroke={c} strokeWidth="1.5" strokeLinecap="round"/></svg>,
+  bell:(c="#17191c")=><svg width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M6 8a4.5 4.5 0 0 1 9 0c0 4 1.5 5.5 1.5 5.5h-12S6 12 6 8Z" stroke={c} strokeWidth="1.5" strokeLinejoin="round"/><path d="M9 16.5a1.5 1.5 0 0 0 3 0" stroke={c} strokeWidth="1.5" strokeLinecap="round"/></svg>,
+  cart:(c="#17191c")=><svg width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M3 3h2l1.8 9.4a1.5 1.5 0 0 0 1.5 1.2h7a1.5 1.5 0 0 0 1.5-1.2L18 6H6" stroke={c} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><circle cx="8.5" cy="17.5" r="1.3" fill={c}/><circle cx="15.5" cy="17.5" r="1.3" fill={c}/></svg>,
+  pin:(c="#6b7078")=><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 15s5-4.2 5-8A5 5 0 0 0 3 7c0 3.8 5 8 5 8Z" stroke={c} strokeWidth="1.5" strokeLinejoin="round"/><circle cx="8" cy="7" r="1.8" stroke={c} strokeWidth="1.5"/></svg>,
+  chevR:(c="#9aa0a8",s=18)=><svg width={s} height={s} viewBox="0 0 18 18" fill="none"><path d="m7 5 4 4-4 4" stroke={c} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>,
+  chevD:(c="#17191c")=><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="m5 7 4 4 4-4" stroke={c} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>,
+  camera:(c="#17191c",s=19)=><svg width={s} height={s} viewBox="0 0 19 19" fill="none"><path d="M2.5 6.5A1.5 1.5 0 0 1 4 5h1.2l.9-1.4h6.8L14.8 5H16a1.5 1.5 0 0 1 1.5 1.5v7A1.5 1.5 0 0 1 16 15H4a1.5 1.5 0 0 1-1.5-1.5v-7Z" stroke={c} strokeWidth="1.4" strokeLinejoin="round"/><circle cx="9.75" cy="9.75" r="2.75" stroke={c} strokeWidth="1.4"/></svg>,
+  cameraW:(c="#f6f2e9")=><svg width="13" height="13" viewBox="0 0 19 19" fill="none"><path d="M2.5 6.5A1.5 1.5 0 0 1 4 5h1.2l.9-1.4h6.8L14.8 5H16a1.5 1.5 0 0 1 1.5 1.5v7A1.5 1.5 0 0 1 16 15H4a1.5 1.5 0 0 1-1.5-1.5v-7Z" stroke={c} strokeWidth="1.5" strokeLinejoin="round"/><circle cx="9.75" cy="9.75" r="2.6" stroke={c} strokeWidth="1.5"/></svg>,
+  check:(c="#fff",s=15)=><svg width={s} height={s} viewBox="0 0 15 15" fill="none"><path d="M3.5 7.8 6.3 10.5 11.5 4.8" stroke={c} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>,
+  checkC:()=><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#2e6b49"/><path d="M5.8 10.2 8.6 13 14 7.2" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>,
+  eye:(c="#17191c")=><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M1.5 9S4.5 3.5 9 3.5 16.5 9 16.5 9 13.5 14.5 9 14.5 1.5 9 1.5 9Z" stroke={c} strokeWidth="1.5" strokeLinejoin="round"/><circle cx="9" cy="9" r="2.4" stroke={c} strokeWidth="1.5"/></svg>,
+  warn:(c="#c79a2e")=><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 3.5 19.5 18H2.5L11 3.5Z" stroke={c} strokeWidth="1.6" strokeLinejoin="round"/><path d="M11 9v4" stroke={c} strokeWidth="1.6" strokeLinecap="round"/><circle cx="11" cy="15.5" r="1" fill={c}/></svg>,
+  ruler:(c="#f6f2e9")=><svg width="13" height="13" viewBox="0 0 15 15" fill="none"><rect x="2" y="5" width="11" height="5" rx="1" stroke={c} strokeWidth="1.3"/><path d="M5 5v2M7.5 5v2.6M10 5v2" stroke={c} strokeWidth="1.1" strokeLinecap="round"/></svg>,
+};
+const StatusBar = () => (
+  <div className="status"><span className="t">9:41</span><span className="ic">
+    <svg width="17" height="11" viewBox="0 0 17 11"><g fill="#17191c"><rect x="0" y="7" width="3" height="4" rx="1"/><rect x="4.5" y="5" width="3" height="6" rx="1"/><rect x="9" y="2.5" width="3" height="8.5" rx="1"/><rect x="13.5" y="0" width="3" height="11" rx="1"/></g></svg>
+    <svg width="16" height="11" viewBox="0 0 16 11" fill="none"><path d="M8 10.2 1 3.3a9.7 9.7 0 0 1 14 0L8 10.2Z" stroke="#17191c" strokeWidth="1.4" strokeLinejoin="round"/></svg>
+    <svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x="1" y="1" width="20" height="10" rx="2.6" stroke="#17191c" strokeWidth="1.1" opacity=".5"/><rect x="2.6" y="2.6" width="15.5" height="6.8" rx="1.6" fill="#17191c"/><rect x="22.4" y="4" width="1.6" height="4" rx=".8" fill="#17191c" opacity=".5"/></svg>
+  </span></div>
+);
+const TopIcons = ({cart=0,onCart}) => (
+  <div className="grp">
+    <button className="ibtn">{I.heart("#17191c",21)}</button>
+    <button className="ibtn">{I.bell()}</button>
+    <button className="ibtn cartbadge" onClick={onCart}>{I.cart()}{cart>0&&<span className="b">{cart}</span>}</button>
+  </div>
+);
+const StepTop = ({label,cart,onBack,onCart}) => (
+  <div className="topbar"><button className="ibtn" onClick={onBack}>{I.back()}</button>
+    <span className="title">{label}</span><span className="sp"></span><TopIcons cart={cart} onCart={onCart}/></div>
+);
+const Progress = ({pct}) => <div className="progress"><div className="track"><div className="fill" style={{width:pct+"%"}}/></div></div>;
+const BottomNav = () => (
+  <div className="nav">
+    <div className="it on"><span className="dot"></span>{I.home()}<span className="lb">Home</span></div>
+    <div className="it"><img src={A+"icons/mi-cuenta.png"} width="22" height="22" alt=""/><span className="lb">Account</span></div>
+    <div className="it">{I.category()}<span className="lb">Categories</span></div>
+    <div className="it">{I.store()}<span className="lb">In store</span></div>
+    <div className="it">{I.more()}<span className="lb">More</span></div>
+  </div>
+);
+
+// ===== Pricing model =====
+const UNIT = { ppm2:8389, cajaM2:1.99, boxPrice:Math.round(1.99*8389), roll:15, rollPrice:11990, tira:2.4, tiraPrice:4490, perfil:12490 };
+function calc(m2){
+  const need=m2*1.10;
+  const cajas=Math.max(1,Math.ceil(need/UNIT.cajaM2));
+  const piso=cajas*UNIT.boxPrice;
+  const rollos=Math.max(1,Math.ceil(m2/UNIT.roll));
+  const espuma=rollos*UNIT.rollPrice;
+  const w=Math.sqrt(m2*1.6),h=Math.sqrt(m2/1.6);const perim=Math.round((2*(w+h))*10)/10;
+  const tiras=Math.max(1,Math.ceil(perim/UNIT.tira));
+  const guarda=tiras*UNIT.tiraPrice;
+  const perfil=UNIT.perfil;
+  return {need,cajas,piso,rollos,espuma,perim,tiras,guarda,perfil,total:piso+espuma+guarda+perfil};
+}
+
+// ===== Screens =====
+function Entrada({go}){return(
+ <div className="scr">
+  <StatusBar/>
+  <div className="topbar"><button className="ibtn">{I.back()}</button>
+    <div className="search">{I.search()}<span className="q">floating floor</span>{I.x()}</div>
+    <TopIcons/></div>
+  <div className="loc">{I.pin()}<span className="l">Enter your location</span>{I.chevR()}</div>
+  <div className="scrbody">
+    <div className="hero">
+      <div className="eyerow"><div className="badge-sq">{I.sparkle()}</div><span className="tx">YOUR FLOORING GUIDE</span></div>
+      <div className="title serif" style={{fontSize:31,letterSpacing:"-.018em",lineHeight:1.04}}>Find your<br/>ideal floor</div>
+      <div style={{fontWeight:400,fontSize:13.5,lineHeight:1.5,color:"var(--m1)"}}>We tell you which one fits your space, how much to buy and what you need to install it.</div>
+      <div style={{display:"flex",gap:12,alignItems:"center"}}>
+        <button className="cta" onClick={()=>go("paso1")}><span className="tx">Start</span><span className="arr">{I.arrow()}</span></button>
+        <div className="prog2"><span className="dots"><i></i><i></i></span><span className="tx">3 steps · 2 min</span></div>
+      </div>
+    </div>
+    <div className="chips">
+      <div className="chip dark">{I.filter()}Filter</div><div className="chip">Brand</div><div className="chip">Top brands</div><div className="chip">Durable</div>
+    </div>
+    <div className="grid">
+      {[["room-oak.avif","Oak Brown","$8.389","$242.566"],["room-grey.webp","Grey Stone","$10.989","$256.400"]].map((p,i)=>(
+       <div className="pcard" key={i} onClick={()=>go("paso1")}>
+        <div className="photo"><img src={A+p[0]} alt=""/><div className="fav">{I.heart("#17191c",15)}</div></div>
+        <div className="brand">HOLZTEK</div><div className="pname">8 mm Floating Floor {p[1]}</div><div className="by">By Sodimac</div>
+        <div className="tags"><span className="tag">Único</span><span className="tag cmr">CMR</span></div>
+        <div className="price"><span className="v serif">{p[2]}</span><span className="u">/m²</span></div>
+        <div className="proj">Project ≈ {p[3]}</div>
+       </div>))}
+    </div>
+  </div>
+  <BottomNav/>
+ </div>);}
+
+function Paso1({go,m2,setM2,room,setRoom,photoOk}){
+  const [val,setVal]=useState(m2>0?String(m2).replace(".",","):"");
+  const rooms=[["Living","Dormitorio","Baño"],["Cocina","Exterior","Escritorio"]];
+  const num=parseFloat((val||"0").replace(",","."))||0;
+  const ok=num>0;
+  return(
+  <div className="scr">
+   <StatusBar/>
+   <StepTop label="Step 1 of 3" onBack={()=>go("entrada")}/>
+   <Progress pct={33}/>
+   <div className="scrbody">
+    <div className="h-fraunces serif" style={{fontSize:25}}>Which space are you renovating?</div>
+    <div className="roomchips">{rooms.map((r,i)=>(<div className="roomrow" key={i}>{r.map(x=>(
+      <div key={x} className={"rchip"+(room===x?" sel":"")} onClick={()=>setRoom(x)}>{x}</div>))}</div>))}</div>
+    <div style={{fontWeight:600,fontSize:17,marginTop:2}}>How big is it?</div>
+    <div className="photo-card">
+      <div className="eyerow"><div className="badge-sq" style={{width:22,height:22,borderRadius:7}}>{I.ruler()}</div>
+        <span style={{fontWeight:600,fontSize:13.5}}>Take a photo and we estimate the m²</span></div>
+      <div style={{fontSize:12,color:"var(--m2)",textAlign:"center"}}>Frame the floor wall to wall.</div>
+      <button className="btn sec2 sm" onClick={()=>go("estimando")}>{I.camera()}Take photo</button>
+      <div style={{fontSize:11,color:"var(--m3)",textAlign:"center"}}>We use it only to estimate. It is not stored.</div>
+    </div>
+    <div style={{fontWeight:500,fontSize:12,color:"var(--m3)",textAlign:"center"}}>or enter them by hand</div>
+    <div style={{display:"flex",flexDirection:"column",gap:7}}>
+      <span style={{fontWeight:500,fontSize:12,color:"var(--m2)"}}>Surface to cover</span>
+      <div className="field"><input inputMode="decimal" placeholder="0 m²" value={val} onChange={e=>setVal(e.target.value)}/><span style={{color:"var(--m3)",fontSize:15}}>m²</span></div>
+    </div>
+   </div>
+   <div className="footer">
+     <button className={"btn "+(ok?"pri":"ghost")} disabled={!ok} onClick={()=>{if(ok){setM2(num);go("condiciones");}}}>Continue</button>
+     <div className="ftxt">{ok?"Ready to calculate your project":"Take a photo or enter the m² to continue"}</div>
+   </div>
+  </div>);}
+
+function Estimando({go,setM2,photoOk}){
+  React.useEffect(()=>{const t=setTimeout(()=>{ if(photoOk){setM2(18.5);go("foto");} else {go("fotoError");} },2100);return()=>clearTimeout(t);},[]);
+  return(
+  <div className="scr">
+   <StatusBar/><StepTop label="Step 1 of 3" cart={1} onBack={()=>go("paso1")}/><Progress pct={33}/>
+   <div className="scrbody">
+     <div className="skel" style={{height:170}}></div>
+     <div className="skel" style={{height:14,width:"55%",borderRadius:7}}></div>
+     <div style={{fontWeight:700,fontSize:18,marginTop:6}}>Estimating your living room surface…</div>
+     <div style={{fontSize:13,color:"var(--m2)",lineHeight:1.5}}>It takes a few seconds. You will be able to review and correct the number before continuing.</div>
+     <div style={{display:"flex",justifyContent:"center",marginTop:10}}><div className="spinner"></div></div>
+   </div>
+   <div className="footer"><button className="btn sec" onClick={()=>go("paso1")}>Cancel and measure by hand</button></div>
+  </div>);}
+
+function Foto({go,m2,setM2}){
+  const [val,setVal]=useState(String(m2).replace(".",","));
+  return(
+  <div className="scr">
+   <StatusBar/><StepTop label="Step 1 of 3" cart={1} onBack={()=>go("paso1")}/><Progress pct={33}/>
+   <div className="scrbody">
+    <div className="h-fraunces serif" style={{fontSize:25}}>Which space are you renovating?</div>
+    <div className="roomchips"><div className="roomrow">
+      <div className="rchip sel">Living</div><div className="rchip">Bedroom</div><div className="rchip">Bathroom</div></div></div>
+    <div style={{fontWeight:600,fontSize:17,marginTop:2}}>How big is it?</div>
+    <div className="estcard">
+      <div className="ph"><img src={A+"room-green.jpg"} alt=""/></div>
+      <div className="bd">
+        <div className="h-fraunces serif" style={{fontSize:22}}>We estimate {val} m²</div>
+        <div className="ai-pill"><span className="sq">{I.sparkle()}</span><span className="tx">AI-generated</span></div>
+        <div style={{fontSize:12.5,color:"var(--m2)",lineHeight:1.5}}>It is an estimate, not a measurement. Review and correct it if it is off: the boxes you buy depend on this number.</div>
+        <div style={{display:"flex",gap:10}}>
+          <button className="btn sec sm" onClick={()=>go("estimando")}>Retake photo</button>
+          <button className="btn sec sm" onClick={()=>go("paso1")}>Remove photo</button>
+        </div>
+      </div>
+    </div>
+    <div style={{display:"flex",flexDirection:"column",gap:7}}>
+      <span style={{fontWeight:500,fontSize:12,color:"var(--m2)"}}>Surface to cover · you can adjust it</span>
+      <div className="field"><input inputMode="decimal" value={val} onChange={e=>setVal(e.target.value)}/><span style={{color:"var(--m3)",fontSize:15}}>m²</span></div>
+    </div>
+   </div>
+   <div className="footer">
+     <button className="btn pri" onClick={()=>{setM2(parseFloat(val.replace(",","."))||m2);go("condiciones");}}>Continue</button>
+     <div className="ftxt">Projects of {val} m² from {clp(calc(parseFloat(val.replace(",","."))||m2).total*0.6)}</div>
+   </div>
+  </div>);}
+
+function FotoError({go,m2,setM2}){
+  const [val,setVal]=useState("");
+  const num=parseFloat((val||"0").replace(",","."))||0;const ok=num>0;
+  return(
+  <div className="scr">
+   <StatusBar/><StepTop label="Step 1 of 3" cart={1} onBack={()=>go("paso1")}/><Progress pct={33}/>
+   <div className="scrbody">
+    <div className="h-fraunces serif" style={{fontSize:25}}>How big is your living room?</div>
+    <div className="estcard"><div className="ph"><img src={A+"room-green.jpg"} alt="" style={{filter:"brightness(.7)"}}/></div></div>
+    <div className="warnbox"><div style={{flex:"0 0 auto"}}>{I.warn()}</div><div>
+      <div className="wt">We couldn't estimate the m² from this photo</div>
+      <div className="wd">It usually happens in low light or when the full floor isn't visible. You can retake it framing wall to wall, or enter the measurement by hand: the result is the same.</div></div></div>
+    <div style={{display:"flex",flexDirection:"column",gap:7}}>
+      <span style={{fontWeight:500,fontSize:12,color:"var(--m2)"}}>Surface to cover</span>
+      <div className={"field"+(ok?"":" err")}><input inputMode="decimal" placeholder="0 m²" value={val} onChange={e=>setVal(e.target.value)}/><span style={{color:"var(--m3)",fontSize:15}}>m²</span></div>
+      {!ok&&<span style={{fontSize:12,color:"#e7000b"}}>Enter a surface greater than 0 to calculate your project</span>}
+    </div>
+   </div>
+   <div className="footer" style={{gap:10}}>
+     <button className="btn pri" onClick={()=>go("estimando")}>Retake photo</button>
+     <button className="btn sec" onClick={()=>{if(ok){setM2(num);go("condiciones");}}} style={{opacity:ok?1:.5}}>Enter the m² by hand</button>
+   </div>
+  </div>);}
+
+function Condiciones({go,m2,room}){
+  const bano=room==="Baño";
+  const rows=[["Surface",m2.toString().replace(".",",")+" m² · estimated from your photo"],["Traffic","High · it's a living room"],["Humidity",bano?"Yes · permanent":"No · indoor space"],["Pets or kids","Yes · most common"]];
+  return(
+  <div className="scr">
+   <StatusBar/><StepTop label="Step 2 of 3" onBack={()=>go("paso1")}/><Progress pct={66}/>
+   <div className="scrbody">
+    <div className="h-fraunces serif" style={{fontSize:25}}>This is what we assume about your {room.toLowerCase()}</div>
+    <div style={{fontSize:13,color:"var(--m2)",lineHeight:1.5}}>We derive it from the space you picked. If something is off, correct it: which floors we show depends on this.</div>
+    <div className="ai-pill"><span className="sq">{I.sparkle()}</span><span className="tx">Assumptions generated by AI</span></div>
+    <div className="rowcard">{rows.map((r,i)=>(<div className="crow" key={i}><div style={{flex:1}}><div className="lbl">{r[0]}</div><div className="val">{r[1]}</div></div><div className="ch">Change</div></div>))}</div>
+    <div className="infobox">With this we will prioritize <b>AC-4 or higher</b> floors, which resist high traffic and pet scratching.</div>
+   </div>
+   <div className="footer">
+     <button className="btn pri" onClick={()=>go(bano?"sinCoincidencias":"opciones")}>See my 3 options</button>
+     <div className="ftxt">Of 1,240 floors, 3 fit</div>
+   </div>
+  </div>);}
+
+function Opciones({go,m2,setFloor,stockOk}){
+  const c=calc(m2);
+  const opts=[
+    {flag:"BEST VALUE",img:"room-scandi.webp",name:"Oak Brown DRK",cajaM2:1.99,ppm2:8389,why:"Resists high traffic and humidity, so it handles pets. Cheapest per m² and overall.",total:c.total},
+    {flag:"MOST DURABLE",img:"room-oak.avif",name:"Roble Natural AC5",cajaM2:2.4,ppm2:11289,why:"AC-5 takes the most wear. 34% pricier per m², but covers more per box.",total:c.total*1.004},
+    {flag:"BEST LOOK",img:"room-grey.webp",name:"Grey Stone",cajaM2:1.99,ppm2:10989,why:"Cool tone that makes the living room feel bigger. AC-4 rating, fit for your high traffic with pets.",total:c.total*1.013},
+  ];
+  return(
+  <div className="scr">
+   <StatusBar/><StepTop label="Step 3 of 3" onBack={()=>go("condiciones")}/><Progress pct={100}/>
+   <div className="scrbody">
+    <div className="ctx"><span className="t">Living · {m2.toString().replace(".",",")} m² · high traffic · with pets</span><span className="e">Edit</span></div>
+    <div className="h-fraunces serif" style={{fontSize:25}}>3 floors that actually work</div>
+    <div className="ai-pill"><span className="sq">{I.sparkle()}</span><span className="tx">Selection generated by AI</span></div>
+    {opts.map((o,i)=>{const cajas=Math.ceil(m2*1.10/o.cajaM2);return(
+     <div className="optcard" key={i}>
+      <div className="ph"><img src={A+o.img} alt=""/><div className="flag">{o.flag}</div></div>
+      <div className="bd">
+        <div className="brand">HOLZTEK</div>
+        <div style={{fontWeight:600,fontSize:17,color:"var(--ink)"}}>8 mm Floating Floor {o.name} <span style={{color:"var(--m3)"}}>{o.cajaM2.toString().replace(".",",")} m²</span></div>
+        <div className="price"><span className="v serif" style={{fontSize:24}}>{clp(o.ppm2)}</span><span className="u">per m²</span></div>
+        <div style={{fontSize:12,color:"var(--m2)"}}>{cajas} boxes of {o.cajaM2.toString().replace(".",",")} m² · includes 10% waste</div>
+        <div className="why"><div className="t">Why we recommend it</div><div className="d">{o.why}</div></div>
+        <div style={{fontSize:13,color:"var(--m2)"}}>Complete project: <b className="serif" style={{fontSize:16,color:"var(--ink)"}}>{clp(o.total)}</b></div>
+        <button className="btn pri" onClick={()=>{setFloor(o);go(stockOk?"kit":"stockError");}}>Build this project</button>
+        <button className="btn sec sm" onClick={()=>{setFloor(o);go("ar");}}>{I.eye()}See it in my living room</button>
+      </div>
+     </div>);})}
+    <button className="btn sec">See all 142 living-room floors</button>
+   </div>
+  </div>);}
+
+function AR({go,m2,floor}){const c=calc(m2);const cajas=Math.ceil(m2*1.1/(floor?.cajaM2||1.99));
+  return(
+  <div className="scr">
+   <StatusBar/><StepTop label="See it in my living room" cart={1} onBack={()=>go("opciones")}/>
+   <div className="scrbody">
+    <div className="estcard"><div className="ph" style={{height:210}}><img src={A+"room-green.jpg"} alt=""/></div></div>
+    <div className="toggle2"><button className="on">Your photo</button><button>Catalog setting</button></div>
+    <div className="ai-pill"><span className="sq">{I.sparkle()}</span><span className="tx">Visualization generated by AI</span></div>
+    <div style={{fontSize:13,color:"var(--m2)",lineHeight:1.5}}>It is a simulation of color and grain. The real tone may vary with your home's light.</div>
+    <div className="brand">HOLZTEK</div>
+    <div style={{fontWeight:600,fontSize:17}}>8 mm Floating Floor {floor?.name||"Oak Brown"} <span style={{color:"var(--m3)"}}>{(floor?.cajaM2||1.99).toString().replace(".",",")} m²</span></div>
+    <div className="price"><span className="v serif" style={{fontSize:22}}>{clp(floor?.ppm2||8389)}</span><span className="u">per m²</span></div>
+    <div style={{fontSize:12,color:"var(--m2)"}}>{cajas} boxes · includes 10% waste</div>
+   </div>
+   <div className="footer">
+    <div className="totrow"><span className="k">Complete project</span><span className="v serif">{clp(floor?.total||c.total)}</span></div>
+    <button className="btn pri" onClick={()=>go("kit")}>Build this project</button>
+    <button className="btn sec" onClick={()=>go("opciones")}>Back to the 3 options</button>
+   </div>
+  </div>);}
+
+function Kit({go,m2,floor,coverageOk}){
+  const c=calc(m2);
+  const items=[
+    ["3 mm leveling underlay · 15 m² roll",c.rollos+" rolls · calculated from "+m2.toString().replace(".",",")+" m²",c.espuma],
+    ["Pine skirting 2.4 m",c.tiras+" strips · estimated perimeter "+c.perim.toString().replace(".",",")+" m",c.guarda],
+    ["Aluminum transition profile","1 unit · for the living-room doorway",c.perfil],
+  ];
+  return(
+  <div className="scr">
+   <StatusBar/><StepTop label="Step 3 of 3" onBack={()=>go("opciones")}/><Progress pct={100}/>
+   <div className="scrbody">
+    <div className="h-fraunces serif" style={{fontSize:25}}>Build your project</div>
+    <div style={{fontSize:13,color:"var(--m2)",lineHeight:1.5}}>Living · {m2.toString().replace(".",",")} m² · floor {floor?.name||"Oak Brown"}. Quantities come from your measurements.</div>
+    <div className="greenban">{I.checkC()}<span className="t">Everything required is selected</span></div>
+    {items.map((it,i)=>(
+     <div className="kititem" key={i}>
+       <div className="chk">{I.check()}</div>
+       <div className="thumb"><img src={A+"kit-roll.jpg"} alt=""/></div>
+       <div style={{flex:1}}>
+         <span className="req">REQUIRED</span>
+         <div style={{fontWeight:600,fontSize:13.5,lineHeight:1.3}}>{it[0]}</div>
+         <div style={{fontSize:12,color:"var(--m2)",margin:"3px 0 5px"}}>{it[1]}</div>
+         <div style={{fontWeight:600,fontSize:15}}>{clp(it[2])}</div>
+       </div>
+     </div>))}
+   </div>
+   <div className="footer">
+     <div className="totrow"><span className="k">Project total</span><span className="v serif">{clp(c.total)}</span></div>
+     <div style={{fontSize:12,color:"var(--green)",fontWeight:500}}>All 3 required items are included. Your project is complete.</div>
+     <button className="btn pri" onClick={()=>go(coverageOk?"carro":"sinCobertura")}>Add everything to cart</button>
+   </div>
+  </div>);}
+
+function Carro({go,m2,floor}){
+  const c=calc(m2);const cajas=c.cajas;
+  const [q,setQ]=useState({piso:cajas,espuma:c.rollos,guarda:c.tiras,perfil:1});
+  const prices={piso:UNIT.boxPrice,espuma:UNIT.rollPrice,guarda:UNIT.tiraPrice,perfil:UNIT.perfil};
+  const total=Object.keys(q).reduce((s,k)=>s+q[k]*prices[k],0);
+  const upd=(k,d)=>setQ(o=>({...o,[k]:Math.max(1,o[k]+d)}));
+  const rows=[
+    ["piso","8 mm Floating Floor "+(floor?.name||"Oak Brown"),"HOLZTEK · Color: "+(floor?.name||"Oak Brown")],
+    ["espuma","3 mm leveling underlay","HOLZTEK · 15 m² roll"],
+    ["guarda","Pine skirting 2.4 m","GENÉRICO"],
+    ["perfil","Aluminum transition profile","GENÉRICO"],
+  ];
+  return(
+  <div className="scr">
+   <StatusBar/><StepTop label="Cart (4 products)" cart={4} onBack={()=>go("kit")}/>
+   <div className="scrbody" style={{paddingTop:12}}>
+    <div className="greenban"><span style={{flex:"0 0 auto"}}>{I.checkC()}</span><div><div className="t">Free shipping with Plus+!</div><div style={{fontSize:12,color:"var(--m2)"}}>Your project is over $49,990: shipping is free.</div></div></div>
+    <div className="infobox" style={{display:"flex",flexDirection:"column",gap:3}}>
+      <div style={{display:"flex",justifyContent:"space-between"}}><b>Project · Living {m2.toString().replace(".",",")} m²</b><span style={{color:"var(--green)",fontWeight:600}}>Edit</span></div>
+      <div style={{fontSize:12.5}}>All 4 products are calculated for this space. If you change a quantity, the total recalculates.</div>
+    </div>
+    {rows.map(r=>(
+     <div className="kititem" key={r[0]} style={{alignItems:"center"}}>
+       <div className="chk" style={{width:22,height:22}}>{I.check("#fff",13)}</div>
+       <div className="thumb"><img src={A+"kit-roll.jpg"} alt=""/></div>
+       <div style={{flex:1}}>
+         <div style={{fontWeight:600,fontSize:13,lineHeight:1.3}}>{r[1]}</div>
+         <div style={{fontSize:11,color:"var(--m3)",margin:"2px 0 4px"}}>{r[2]}</div>
+         <div style={{fontWeight:600,fontSize:14}}>{clp(q[r[0]]*prices[r[0]])}</div>
+       </div>
+       <div className="stepper"><button onClick={()=>upd(r[0],-1)}>−</button><span className="v">{q[r[0]]}</span><button onClick={()=>upd(r[0],1)}>+</button></div>
+     </div>))}
+   </div>
+   <div className="footer">
+     <div className="totrow"><span className="k" style={{fontWeight:600}}>Total:</span><span className="v serif">{clp(total)}</span></div>
+     <button className="btn pri">Continue to checkout</button>
+   </div>
+  </div>);}
+
+function Branch({label,title,sub,opts,cta,onBack,pct,warn}){return(
+  <div className="scr">
+   <StatusBar/><StepTop label={label} cart={1} onBack={onBack}/>{pct&&<Progress pct={pct}/>}
+   <div className="scrbody" style={{paddingTop:12}}>
+     {warn&&<div className="warnbox"><div style={{flex:"0 0 auto"}}>{I.warn()}</div><div><div className="wt">{warn[0]}</div><div className="wd">{warn[1]}</div></div></div>}
+     {title&&<div className="h-fraunces serif" style={{fontSize:24}}>{title}</div>}
+     {sub&&<div style={{fontSize:13,color:"var(--m2)",lineHeight:1.5}}>{sub}</div>}
+     {opts.map((o,i)=>(<div className="optrow" key={i}><div className="t">{o[0]}</div><div className="d">{o[1]}</div></div>))}
+   </div>
+   <div className="footer" style={{gap:10}}>{cta.map((b,i)=>(<button key={i} className={"btn "+(i===0?"pri":"sec")}>{b}</button>))}</div>
+  </div>);}
+
+// ===== App =====
+const STEPS=[["entrada","Start"],["paso1","Space"],["condiciones","Conditions"],["opciones","Options"],["kit","Kit"],["carro","Cart"]];
+const STEPIDX={entrada:0,paso1:1,estimando:1,foto:1,fotoError:1,condiciones:2,sinCoincidencias:2,opciones:3,ar:3,stockError:3,kit:4,sinCobertura:4,carro:5};
+const CAPS={
+ entrada:<>Hero in the flooring listing. <b>Start</b> opens the assistant — AI is the precondition for the whole flow.</>,
+ paso1:<>Step 1 — pick the space and set the <b>m²</b>: by photo (AI estimate) or by hand. Nothing advances without the measurement.</>,
+ estimando:<>AI estimates the m² from the photo. You can cancel and measure by hand.</>,
+ foto:<>The photo gives an <b>editable</b> m², marked as AI-generated and with the margin of error explicit: the boxes come from this number.</>,
+ fotoError:<>Real state: if the photo fails, the flow doesn't break — it offers retry or manual input, without losing the project.</>,
+ condiciones:<>Step 2 — traffic, humidity and pets are <b>derived</b> from the space; the user confirms or corrects before seeing floors.</>,
+ opciones:<>Step 3 — three <b>complete projects</b> (not loose floors) with a final price and the why behind each recommendation.</>,
+ ar:<>AR branch — preview the floor on your own photo before deciding.</>,
+ kit:<>The <b>kit is calculated from your measurements</b> (underlay by rolls, skirting by perimeter). Change the m² and watch it recalculate.</>,
+ carro:<>The cart keeps the project context and <b>recalculates the total</b> when you edit any quantity.</>,
+ sinCoincidencias:<>Real state — if no option qualifies (wet bathroom + exterior), it offers ways out instead of an empty result.</>,
+ stockError:<>Real state — insufficient stock: reserve, switch to an equivalent, or store pickup.</>,
+ sinCobertura:<>Real state — no installation coverage: the click kit allows self-installation.</>,
+};
+function App(){
+  const [screen,setScreen]=useState("entrada");
+  const [m2,setM2]=useState(0);
+  const [room,setRoom]=useState("Living");
+  const [floor,setFloor]=useState(null);
+  const [photoOk,setPhotoOk]=useState(true);
+  const [stockOk,setStockOk]=useState(true);
+  const [coverageOk,setCoverageOk]=useState(true);
+  const go=s=>{document.querySelector(".scrbody")?.scrollTo(0,0);setScreen(s);};
+  const reset=()=>{setScreen("entrada");setM2(0);setRoom("Living");setFloor(null);};
+  React.useEffect(()=>{window.__nav=(s,o={})=>{if(o.m2!=null)setM2(o.m2);if(o.room)setRoom(o.room);if(o.floor)setFloor(o.floor);setScreen(s);};},[]);
+  const idx=STEPIDX[screen]??0;
+  const P={go,m2,setM2,room,setRoom,floor,setFloor,photoOk,stockOk,coverageOk};
+  const screens={
+    entrada:<Entrada {...P}/>,paso1:<Paso1 {...P}/>,estimando:<Estimando {...P}/>,foto:<Foto {...P}/>,
+    fotoError:<FotoError {...P}/>,condiciones:<Condiciones {...P}/>,opciones:<Opciones {...P}/>,ar:<AR {...P}/>,
+    kit:<Kit {...P}/>,carro:<Carro {...P}/>,
+    sinCoincidencias:<Branch label="Your options" onBack={()=>go("condiciones")} title="No floor meets all 4 conditions" sub="Permanent humidity plus outdoor use rules out the entire floating-floor catalog. Here are your ways out:" opts={[["Switch to porcelain","It's the category built for humidity and outdoors. 84 options qualify and we keep your calculation."],["Drop the outdoor condition","If the bathroom is covered, there are 12 water-resistant floating floors that work."]]} cta={["See the 84 porcelain options","Change my answers"]}/>,
+    stockError:<Branch label="Your 3 options" cart={1} onBack={()=>go("opciones")} warn={["7 of the 11 boxes you need are left","There is only stock for 13.9 m² of the "+m2.toString().replace(".",",")+" m² of your project. Buying too few means stopping the install halfway."]} opts={[["Reserve the 7 and wait for the other 4","They arrive Aug 22. The floor is installed in one go, so it's worth waiting for the full batch."],["Switch to Tecnoxpert Moka","Full stock for your "+m2.toString().replace(".",",")+" m². It was your second option and meets the same conditions."],["Store pickup","Sodimac La Reina has all 11 boxes available today."]]} cta={["Switch to Tecnoxpert Moka"]}/>,
+    sinCobertura:<Branch label="Installation" cart={1} onBack={()=>go("kit")} warn={["We don't install in your district","The install service covers 23 districts of the Metropolitan Region and yours isn't one of them. Materials do ship with no problem."]} opts={[["Take it with the install kit","We add wedges, a tapping block and transition profile to the project. The click system needs no glue or power tools."],["Find an installer yourself","We send you the product's technical guide to pass on to whoever installs it."]]} cta={["Continue with the install kit"]}/>,
+  };
+  // stockError CTA → kit ; sinCobertura CTA → carro ; sinCoincidencias handled as dead-ends for demo
+  return(
+   <div className="rig">
+    <div className="rig-head">
+      <div><p className="eyebrow">Falabella · Sodimac · Interactive prototype</p>
+        <h1>Piso Ideal — shopping assistant</h1>
+        <p>The real assistant flow: you define your space, AI estimates the m², and you get a complete project —flooring + a kit calculated from your measurements— with a final price before the cart. Built with the real tokens, icons and screens from Figma.</p></div>
+      <button className="reset-btn" onClick={reset}>↺ Reset</button>
+    </div>
+    <div className="panel">
+      <div className="steps">{STEPS.map(([k,l],i)=>(
+        <React.Fragment key={k}><div className={"step"+(i===idx?" on":"")+(i<idx?" done":"")}><span className="num">{i<idx?"✓":i+1}</span><span className="lbl">{l}</span></div>{i<STEPS.length-1&&<div className="step-sep"></div>}</React.Fragment>))}</div>
+      <div className="scn">
+        <div className="sw" onClick={()=>setPhotoOk(v=>!v)}><span className="k">Photo readable</span><span className={"toggle"+(photoOk?" on":"")}></span></div>
+        <div className="sw" onClick={()=>setStockOk(v=>!v)}><span className="k">Full stock</span><span className={"toggle"+(stockOk?" on":"")}></span></div>
+        <div className="sw" onClick={()=>setCoverageOk(v=>!v)}><span className="k">Install coverage</span><span className={"toggle"+(coverageOk?" on":"")}></span></div>
+      </div>
+    </div>
+    <div className="stage">
+      <div className="phone-wrap"><div className="phone"><div className="notch"></div>{screens[screen]}</div></div>
+      <p className="caption">{CAPS[screen]}</p>
+    </div>
+    <p className="footnote">Functional prototype on the real Sodimac/Falabella design system. Data is for demo; the recalculation (m² → kit → total) is live. Toggle the switches to see the real error states.</p>
+   </div>);
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
+</script>
+</body></html>

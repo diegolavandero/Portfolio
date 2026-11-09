@@ -497,6 +497,17 @@
       }
     ]
   },
+  "livePrototype": {
+    "title": "Prototipo interactivo",
+    "titleEn": "Interactive prototype",
+    "subtitle": "Prueba el flujo real: define tu espacio, deja que la IA estime los m² y mira cómo el kit y el precio se recalculan solos. Activa los switches para ver los estados de error reales.",
+    "subtitleEn": "Try the real flow: define your space, let AI estimate the m², and watch the kit and price recalculate on their own. Toggle the switches to see the real error states.",
+    "badge": "Prototipo funcional",
+    "badgeEn": "Functional prototype",
+    "srcEs": "/prototypes/piso-ideal-es.html",
+    "srcEn": "/prototypes/piso-ideal-en.html",
+    "height": 1260
+  },
   "designs": {
     "title": "Pantallas del flujo",
     "titleEn": "Flow screens",
