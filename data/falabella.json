@@ -2,14 +2,14 @@
   "page": "falabella",
   "slug": "falabella",
   "title": "Piso Ideal — Falabella",
-  "subtitle": "Copiloto de decisión de compra para pisos: cantidad, compatibilidad y kit completo hasta el checkout",
+  "subtitle": "Copiloto de compra que arma el proyecto de piso completo, con precio final antes del carro",
   "hero": {
     "tagline": "B2C E-COMMERCE · HOME IMPROVEMENT · 2025",
     "taglineEn": "B2C E-COMMERCE · HOME IMPROVEMENT · 2025",
     "title": "Piso Ideal",
     "titleEn": "Ideal Floor",
-    "description": "Comprar piso no es elegir un color: es calcular cuánto necesitas y confirmar que sirve para tu espacio. Piso Ideal es un copiloto de decisión guiada que resuelve cantidad (m², merma, cajas) y compatibilidad de uso (tráfico, humedad, mascotas), y lleva la compra completa —con su kit— hasta el checkout.",
-    "descriptionEn": "Buying flooring isn't picking a color: it's working out how much you need and confirming it suits your space. Ideal Floor is a guided decision copilot that solves quantity (m², waste, boxes) and use compatibility (traffic, moisture, pets), and takes the whole purchase — kit included — all the way to checkout."
+    "description": "Un copiloto que arma el proyecto completo —cantidad, piso, accesorios e instalación— según tu espacio y tu uso, y muestra el precio final antes del carro.",
+    "descriptionEn": "A copilot that builds the complete project — quantity, floor, accessories and installation — around your space and how you use it, and shows the final price before the cart."
   },
   "projectSpecs": [
     {
@@ -21,8 +21,8 @@
     {
       "label": "Contexto",
       "labelEn": "Context",
-      "value": "Falabella Digital Commerce · Home improvement (Falabella y Sodimac Chile)",
-      "valueEn": "Falabella Digital Commerce · Home improvement (Falabella and Sodimac Chile)"
+      "value": "Falabella · Sodimac Chile",
+      "valueEn": "Falabella · Sodimac Chile"
     },
     {
       "label": "Alcance",
@@ -45,270 +45,201 @@
     {
       "label": "Entregables",
       "labelEn": "Deliverables",
-      "value": "14 pantallas Android + Design system + Flujo FigJam + Justificaciones",
-      "valueEn": "14 Android screens + Design system + FigJam flow + Design rationale"
+      "value": "14 pantallas · Design system · Flujo",
+      "valueEn": "14 screens · Design system · Flow"
     }
   ],
   "whyItMatters": {
-    "title": "Introducción: un proyecto técnico, no una compra estética",
-    "titleEn": "Introduction: a technical project, not an aesthetic purchase",
-    "subtitle": "En pisos el error casi nunca es de gusto: es de cálculo y de compatibilidad. Eso permite justificar el KPI con lógica, no con voluntarismo.",
-    "subtitleEn": "With flooring, the mistake is rarely about taste: it's about calculation and compatibility. That lets the KPI be justified with logic, not wishful thinking.",
+    "title": "Contexto",
+    "titleEn": "Context",
+    "subtitle": "El funnel de pisos perdía a la mayoría de sus compradores antes del pago. El objetivo: subir la conversión un 20%.",
+    "subtitleEn": "The flooring funnel lost most of its buyers before payment. The goal: lift conversion by 20%.",
     "items": [
       {
-        "metric": "3",
-        "metricEn": "3",
-        "label": "variables que el usuario calcula solo",
-        "labelEn": "variables users calculate on their own",
-        "description": "m², merma y cajas. Si alguna falla, la compra queda corta, sobra material o termina en devolución — antes de que el color o el precio importen.",
-        "descriptionEn": "m², waste and boxes. If any of them is off, the purchase falls short, leaves leftover material or ends in a return — before color or price even matter."
-      },
-      {
-        "metric": "34% → 6%",
-        "metricEn": "34% → 6%",
-        "label": "sobrecosto por m² vs. sobrecosto real del proyecto",
-        "labelEn": "per-m² premium vs. real project premium",
-        "description": "Un piso 34% más caro por m² puede ser solo 6% más caro en total (caja de 2,4 m² vs 1,99 m²). La métrica que domina la comparación es la que más engaña.",
-        "descriptionEn": "A floor 34% more expensive per m² can be only 6% more expensive overall (2.4 m² box vs 1.99 m²). The metric that dominates comparison is the one that misleads most."
+        "metric": "~70%",
+        "metricEn": "~70%",
+        "label": "abandono en el funnel de compra",
+        "labelEn": "purchase funnel abandonment",
+        "description": "Referencia típica del retail online, home incluido. Parte de este abandono se debía a fricciones propias de pisos.",
+        "descriptionEn": "Typical benchmark for online retail, home included. Part of it came from flooring-specific friction."
       },
       {
         "metric": "↑ 20%",
         "metricEn": "↑ 20%",
-        "label": "conversión de categoría (proyectada)",
-        "labelEn": "category conversion (projected)",
-        "description": "40% de adopción del flujo × 50% de lift dentro del flujo. Un KPI derivado de un problema medible, no de una aspiración.",
-        "descriptionEn": "40% flow adoption × 50% lift within the flow. A KPI derived from a measurable problem, not an aspiration."
+        "label": "conversión: objetivo",
+        "labelEn": "conversion: goal",
+        "description": "De 30% a 36% de compradores que llegan a la etapa de pago y completan. Equivale a bajar el abandono de 70% a 64%.",
+        "descriptionEn": "From 30% to 36% of shoppers who reach the payment stage and complete. Equivalent to cutting abandonment from 70% to 64%."
+      },
+      {
+        "metric": "4",
+        "metricEn": "4",
+        "label": "puntos de fricción antes del pago",
+        "labelEn": "friction points before payment",
+        "description": "Stock online, aptitud de uso, cross-sell sin relación y un precio que crece en el carro.",
+        "descriptionEn": "Online stock, suitability, unrelated cross-sell and a price that grows in the cart."
       }
     ]
   },
   "problemAndObjectives": {
     "title": "El problema",
     "titleEn": "The problem",
-    "subtitle": "No faltan features: faltan decisiones guiadas. Las piezas existen, pero fallan por el default, por la compatibilidad y por la normalización del dato.",
-    "subtitleEn": "It's not missing features: it's missing guided decisions. The pieces exist, but they fail on defaults, compatibility and data normalization.",
-    "problemTitle": "Qué pasa hoy en la app",
-    "problemTitleEn": "What happens today in the app",
-    "problemIntro": "El principal motivo de abandono y de devolución en pisos no es la estética: es el cálculo de cantidad (m², merma, cajas) y la compatibilidad de uso (tráfico, humedad, mascotas). Al auditar la app de Sodimac Chile (mismo holding que Falabella) aparecen tres piezas ya en producción —calculadora, comparador y cross-sell con checkbox— y las tres fallan. Y el patrón de agrupación por proyecto, 'Arma tu Proyecto', ya existe en muebles, pero no en pisos: la única categoría donde el proyecto es realmente técnico.",
-    "problemIntroEn": "The main reason for abandonment and returns in flooring isn't aesthetics: it's quantity calculation (m², waste, boxes) and use compatibility (traffic, moisture, pets). Auditing the Sodimac Chile app (same holding as Falabella) reveals three pieces already in production — calculator, comparator and cross-sell with a checkbox — and all three fail. And the project-grouping pattern, 'Build Your Project', already exists in furniture, but not in flooring: the one category where the project is truly technical.",
-    "products": [
+    "subtitle": "Los compradores elegían el piso primero y descubrían los problemas después.",
+    "subtitleEn": "Shoppers picked the floor first and found the problems afterwards.",
+    "problemTitle": "Cómo se compraba",
+    "problemTitleEn": "How shopping worked",
+    "problemIntro": "Cada paso agregaba una mala noticia, y el costo real solo se veía en el carro.",
+    "problemIntroEn": "Each step added bad news, and the real cost only showed up in the cart.",
+    "competitors": [
       {
-        "name": "Calculadora de m²",
-        "nameEn": "m² calculator",
-        "pros": [
-          "Existe en producción: el usuario puede estimar superficie"
-        ],
-        "prosEn": [
-          "Exists in production: users can estimate surface area"
-        ],
-        "cons": [
-          "La merma viene desmarcada por defecto: el error de cantidad nace de la omisión, no de la decisión del usuario"
-        ],
-        "consEn": [
-          "Waste margin is unchecked by default: the quantity error comes from omission, not from the user's decision"
-        ]
+        "name": "1 · Stock",
+        "nameEn": "1 · Stock",
+        "description": "Tras elegir el piso, el sistema avisaba que no había esos m² disponibles online.",
+        "descriptionEn": "After picking the floor, the system said those m² weren't available online."
       },
       {
-        "name": "Comparador de atributos",
-        "nameEn": "Attribute comparator",
-        "pros": [
-          "Existe y permite contrastar productos lado a lado"
-        ],
-        "prosEn": [
-          "Exists and lets users compare products side by side"
-        ],
-        "cons": [
-          "Datos sin normalizar: 'Espesor: 8.3' frente a '3.2 mm'",
-          "'Resistencia al desgaste: 0.3' frente a 'AC-3 (uso doméstico intenso)'",
-          "Atributos de catálogo marketplace, heterogéneos e incompletos: el usuario no puede comparar de verdad"
-        ],
-        "consEn": [
-          "Unnormalized data: 'Thickness: 8.3' vs '3.2 mm'",
-          "'Wear resistance: 0.3' vs 'AC-3 (heavy domestic use)'",
-          "Marketplace catalog attributes, heterogeneous and incomplete: users can't truly compare"
-        ]
+        "name": "2 · Aptitud",
+        "nameEn": "2 · Suitability",
+        "description": "En las especificaciones se veía que no era apto para mascotas.",
+        "descriptionEn": "The specs revealed it wasn't suitable for pets."
       },
       {
-        "name": "Cross-sell 'Complementa tu compra'",
-        "nameEn": "'Complete your purchase' cross-sell",
-        "pros": [
-          "Existe, con selección por checkbox"
-        ],
-        "prosEn": [
-          "Exists, with checkbox selection"
-        ],
-        "cons": [
-          "Para un piso flotante con sistema click ofrece dos adhesivos de montaje Agorex; un piso flotante no se pega, y la propia ficha dice 'Sistema de instalación: Click'",
-          "Lo que el proyecto sí necesita —espuma niveladora, guardapolvos, perfiles de transición— no aparece en ningún lado"
-        ],
-        "consEn": [
-          "For a click-lock floating floor it offers two Agorex mounting adhesives; a floating floor isn't glued, and the product page itself says 'Installation system: Click'",
-          "What the project actually needs — underlayment foam, baseboards, transition profiles — appears nowhere"
-        ]
+        "name": "3 · Cross-sell",
+        "nameEn": "3 · Cross-sell",
+        "description": "Un piso flotante click, que no usa adhesivo, ofrecía un adhesivo como producto relacionado. En pisos que sí lo necesitaban, no decía cuánto adhesivo ni espuma niveladora hacía falta.",
+        "descriptionEn": "A click-lock floating floor, which needs no adhesive, offered adhesive as a related product. For floors that did need it, there was no indication of how much adhesive or underlayment foam was required."
       },
       {
-        "name": "'Arma tu Proyecto'",
-        "nameEn": "'Build Your Project'",
-        "pros": [
-          "En la ficha de muebles (p. ej. un futón) hay una píldora con dos miniaturas y '+2': el patrón de agrupación por proyecto ya está en producción"
-        ],
-        "prosEn": [
-          "On the furniture page (e.g. a futon) there's a pill with two thumbnails and '+2': the project-grouping pattern is already in production"
-        ],
-        "cons": [
-          "No existe en la ficha de piso, justo donde el proyecto no es estético sino técnico"
-        ],
-        "consEn": [
-          "It doesn't exist on the flooring page, precisely where the project isn't aesthetic but technical"
-        ]
+        "name": "4 · Carro",
+        "nameEn": "4 · Cart",
+        "description": "El total subía con cada producto sugerido, justo antes de pagar.",
+        "descriptionEn": "The total climbed with every suggested product, right before paying."
       }
     ],
-    "consequencesLabel": "Esto produce:",
-    "consequencesLabelEn": "This produces:",
+    "consequencesLabel": "Resultado:",
+    "consequencesLabelEn": "Result:",
     "consequences": [
-      "Cantidades erradas: faltan cajas o sobran sin uso, con compra incompleta o devolución",
-      "Un cross-sell que puede arruinar la instalación en vez de ayudarla",
-      "Comparaciones imposibles: ni el usuario ni una regla de negocio pueden ordenar datos heterogéneos",
-      "Accesorios indispensables invisibles, que obligan a una segunda compra o visita"
+      "Frustración y sorpresa de precio en el carro",
+      "Abandono antes del pago",
+      "Devoluciones por faltantes o accesorios que no servían"
     ],
     "consequencesEn": [
-      "Wrong quantities: missing boxes or unused leftovers, leading to an incomplete purchase or a return",
-      "A cross-sell that can ruin the installation instead of supporting it",
-      "Impossible comparisons: neither users nor a business rule can rank heterogeneous data",
-      "Essential accessories that stay invisible and force a second purchase or trip"
+      "Frustration and price surprise in the cart",
+      "Abandonment before payment",
+      "Returns from shortages or accessories that didn't fit"
     ],
-    "objectivesTitle": "Reencuadre y objetivos",
-    "objectivesTitleEn": "Reframing and objectives",
+    "objectivesTitle": "Objetivos",
+    "objectivesTitleEn": "Goals",
     "objectives": [
       {
         "number": "01",
-        "title": "Orquestar, no construir",
-        "titleEn": "Orchestrate, don't build",
-        "meta": "Reencuadre",
-        "metaEn": "Reframing",
-        "description": "No se propone inventar un 'carro de proyecto': se orquestan calculadora, comparador, cross-sell y 'Arma tu Proyecto' alrededor de la decisión. Baja el costo percibido de implementación.",
-        "descriptionEn": "The goal isn't to invent a 'project cart': it's to orchestrate the calculator, comparator, cross-sell and 'Build Your Project' around the decision. It lowers perceived implementation cost."
+        "title": "Subir la conversión un 20%",
+        "titleEn": "Lift conversion by 20%",
+        "meta": "KPI principal · 30% → 36%",
+        "metaEn": "Main KPI · 30% → 36%",
+        "description": "Menos abandono entre la elección y el pago.",
+        "descriptionEn": "Less abandonment between choice and payment."
       },
       {
         "number": "02",
-        "title": "Eliminar el error de cantidad",
-        "titleEn": "Eliminate the quantity error",
-        "meta": "KPI: ↓ error de merma",
-        "metaEn": "KPI: ↓ waste error",
-        "description": "Calcular m², merma (10% por defecto) y cajas antes de ver productos.",
-        "descriptionEn": "Calculate m², waste (10% by default) and boxes before seeing products."
+        "title": "Precio final antes del carro",
+        "titleEn": "Final price before the cart",
+        "meta": "0 sorpresas en el carro",
+        "metaEn": "0 cart surprises",
+        "description": "El usuario ve el costo completo desde que elige.",
+        "descriptionEn": "Users see the full cost from the moment they choose."
       },
       {
         "number": "03",
-        "title": "Recomendar solo lo que sirve para el espacio",
-        "titleEn": "Recommend only what suits the space",
-        "meta": "Compatibilidad: tráfico · humedad · mascotas",
-        "metaEn": "Compatibility: traffic · moisture · pets",
-        "description": "Normalizar atributos de catálogo con IA para filtrar y comparar por uso real, y validar el kit contra el sistema de instalación.",
-        "descriptionEn": "Normalize catalog attributes with AI to filter and compare by real use, and validate the kit against the installation system."
+        "title": "Menos devoluciones",
+        "titleEn": "Fewer returns",
+        "meta": "Meta: −30% por faltantes o incompatibilidad",
+        "metaEn": "Goal: −30% from shortages or incompatibility",
+        "description": "Proyectos completos y coherentes, sin accesorios que sobran o faltan.",
+        "descriptionEn": "Complete, consistent projects, with no surplus or missing accessories."
       },
       {
         "number": "04",
-        "title": "Comparar por costo real de proyecto",
-        "titleEn": "Compare by real project cost",
-        "meta": "Métrica primaria: precio total",
-        "metaEn": "Primary metric: total price",
-        "description": "El precio total del proyecto pasa a primer plano; el precio por m² queda como dato secundario.",
-        "descriptionEn": "Total project price moves to the foreground; price per m² becomes secondary data."
-      },
-      {
-        "number": "05",
-        "title": "Llegar al checkout con una decisión completa",
-        "titleEn": "Reach checkout with a complete decision",
-        "meta": "KPI: ↑ 20% conversión de categoría",
-        "metaEn": "KPI: ↑ 20% category conversion",
-        "description": "No es un visualizador: es una decisión de compra completa —cantidad, producto, kit y carro— con la IA señalada de forma ambiental, no como feature aparte.",
-        "descriptionEn": "It's not a visualizer: it's a complete purchase decision — quantity, product, kit and cart — with AI signaled ambiently, not as a separate feature."
+        "title": "Menos pasos",
+        "titleEn": "Fewer steps",
+        "meta": "11 taps · antes 18+",
+        "metaEn": "11 taps · previously 18+",
+        "description": "De la entrada al carro, sin páginas de producto intermedias.",
+        "descriptionEn": "From entry to cart, with no intermediate product pages."
       }
     ]
   },
   "uxResearch": {
     "title": "Investigación",
     "titleEn": "Research",
-    "subtitle": "Auditoría de producto real, análisis del patrón existente, benchmark y cálculo de proyectos: cada hipótesis se puede refutar.",
-    "subtitleEn": "Real-product audit, analysis of the existing pattern, benchmark and project calculations: every hypothesis can be refuted.",
-    "hypothesisTitle": "Hipótesis falsables",
-    "hypothesisTitleEn": "Falsifiable hypotheses",
+    "subtitle": "Auditoría de la app y benchmark para entender dónde nacía la frustración.",
+    "subtitleEn": "App audit and benchmark to understand where the frustration came from.",
+    "hypothesisTitle": "Hipótesis",
+    "hypothesisTitleEn": "Hypotheses",
     "hypothesis": [
-      "El abandono y la devolución en pisos se originan más en errores de cantidad y de compatibilidad que en la estética. Si es cierto, corregir el default de merma y validar el kit reduce devoluciones sin tocar el catálogo.",
-      "Si el usuario calcula la cantidad exacta antes de elegir producto, el abandono baja, porque la decisión se toma antes de llegar al detalle.",
-      "El precio por m² es la métrica dominante de comparación, pero engaña cuando la cobertura de caja difiere entre SKUs.",
-      "No hace falta construir capacidad nueva: orquestar calculadora, comparador, cross-sell y 'Arma tu Proyecto' alrededor de la decisión es suficiente."
+      "La frustración nace de elegir primero y validar después: stock, aptitud y accesorios aparecen tarde.",
+      "Si el usuario define su espacio primero y recibe un proyecto completo con precio final, baja el abandono y bajan las devoluciones."
     ],
     "hypothesisEn": [
-      "Abandonment and returns in flooring stem more from quantity and compatibility errors than from aesthetics. If true, fixing the waste default and validating the kit reduces returns without touching the catalog.",
-      "If users calculate the exact quantity before choosing a product, abandonment drops, because the decision is made before reaching product detail.",
-      "Price per m² is the dominant comparison metric, but it misleads when box coverage differs across SKUs.",
-      "No new capability needs to be built: orchestrating the calculator, comparator, cross-sell and 'Build Your Project' around the decision is enough."
+      "Frustration comes from choosing first and validating later: stock, suitability and accessories show up too late.",
+      "If users define their space first and get a complete project with a final price, abandonment and returns drop."
     ],
     "methodsTitle": "Metodología",
     "methodsTitleEn": "Methodology",
     "methods": [
-      "Auditoría de la app real (Sodimac y Falabella) sobre ficha de piso, comparador y 'Complementa tu compra'",
-      "Análisis de 'Arma tu Proyecto' en la ficha de muebles como precedente de agrupación por proyecto",
-      "Benchmark competitivo: Home Depot (calculadora + kit por defecto), Roomvo (visualización AR) y fabricantes directos",
-      "Cálculo cuantitativo de proyectos reales: precio total vs precio por m²"
+      "Auditoría de la app real: ficha de piso, comparador y cross-sell",
+      "Análisis de 'Arma tu Proyecto' en muebles como precedente",
+      "Benchmark: Home Depot (calculadora y kit) y Roomvo (visualización AR)"
     ],
     "methodsEn": [
-      "Live app audit (Sodimac and Falabella) of the flooring page, comparator and 'Complete your purchase'",
-      "Analysis of 'Build Your Project' on the furniture page as a precedent for project grouping",
-      "Competitive benchmark: Home Depot (calculator + default kit), Roomvo (AR visualization) and direct manufacturers",
-      "Quantitative calculation of real projects: total price vs price per m²"
+      "Live app audit: flooring page, comparator and cross-sell",
+      "Analysis of 'Build Your Project' in furniture as a precedent",
+      "Benchmark: Home Depot (calculator and kit) and Roomvo (AR visualization)"
     ],
-    "insightsTitle": "Hallazgos clave",
-    "insightsTitleEn": "Key findings",
-    "qualitativeLabel": "Evidencia observada en la app",
-    "qualitativeLabelEn": "Evidence observed in the app",
+    "insightsTitle": "Hallazgos",
+    "insightsTitleEn": "Findings",
+    "qualitativeLabel": "Evidencia en la app",
+    "qualitativeLabelEn": "Evidence in the app",
     "quantitativeLabel": "Cuantitativos",
     "quantitativeLabelEn": "Quantitative",
     "quotes": [
       {
         "text": "Sistema de instalación: Click",
         "textEn": "Installation system: Click",
-        "author": "Descripción de la ficha de un piso flotante",
-        "authorEn": "Product description of a floating floor",
-        "context": "En esa misma ficha, 'Complementa tu compra' ofrece dos adhesivos de montaje Agorex. El cross-sell contradice al producto y puede arruinar la instalación.",
-        "contextEn": "On that same page, 'Complete your purchase' offers two Agorex mounting adhesives. The cross-sell contradicts the product and can ruin the installation."
+        "author": "Ficha de un piso flotante",
+        "authorEn": "Floating floor product page",
+        "context": "Debajo, el cross-sell ofrece dos adhesivos de montaje.",
+        "contextEn": "Below it, the cross-sell offers two mounting adhesives."
       },
       {
         "text": "Espesor: 8.3  ·  3.2 mm",
         "textEn": "Thickness: 8.3  ·  3.2 mm",
         "author": "Comparador de atributos",
         "authorEn": "Attribute comparator",
-        "context": "Lo mismo ocurre con 'Resistencia al desgaste: 0.3' frente a 'AC-3 (uso doméstico intenso)'. Normalizar esto es trabajo para un LLM, no para una regla de negocio.",
-        "contextEn": "Same with 'Wear resistance: 0.3' vs 'AC-3 (heavy domestic use)'. Normalizing this is a job for an LLM, not a business rule."
+        "context": "Datos sin normalizar: no se pueden comparar de verdad.",
+        "contextEn": "Unnormalized data: can't be truly compared."
       },
       {
         "text": "Arma tu Proyecto · +2",
         "textEn": "Build Your Project · +2",
-        "author": "Ficha de muebles (futón)",
-        "authorEn": "Furniture page (futon)",
-        "context": "El patrón de agrupación por proyecto ya existe en producción; en la ficha de piso no. La propuesta pasa de 'inventar un carro' a 'llevar el patrón donde el proyecto es técnico'.",
-        "contextEn": "The project-grouping pattern already exists in production; on the flooring page it doesn't. The proposal shifts from 'inventing a cart' to 'taking the pattern where the project is technical'."
+        "author": "Ficha de muebles",
+        "authorEn": "Furniture page",
+        "context": "El patrón ya existía, pero solo para decisiones estéticas.",
+        "contextEn": "The pattern already existed, but only for aesthetic decisions."
       }
     ],
     "stats": [
       {
-        "value": "3 de 3",
-        "valueEn": "3 of 3",
-        "description": "piezas ya en producción (calculadora, comparador, cross-sell) fallan por default, compatibilidad o dato sin normalizar",
-        "descriptionEn": "pieces already in production (calculator, comparator, cross-sell) fail on defaults, compatibility or unnormalized data"
+        "value": "~70%",
+        "valueEn": "~70%",
+        "description": "abandono típico del retail online (referencia)",
+        "descriptionEn": "typical online retail abandonment (benchmark)"
       },
       {
         "value": "34% → 6%",
         "valueEn": "34% → 6%",
-        "description": "sobrecosto por m² frente al sobrecosto total del proyecto (diferencia de cobertura de caja)",
-        "descriptionEn": "per-m² premium versus total project premium (box coverage difference)"
-      },
-      {
-        "value": "7",
-        "valueEn": "7",
-        "description": "hallazgos documentados en la auditoría (F1–F7)",
-        "descriptionEn": "documented audit findings (F1–F7)"
+        "description": "más caro por m² frente a más caro en el proyecto completo",
+        "descriptionEn": "more expensive per m² versus more expensive in the complete project"
       }
     ]
   },
@@ -327,33 +258,27 @@
         "avatar": "https://i.pravatar.cc/150?img=47",
         "goals": [
           "Elegir el piso correcto sin cometer errores de cantidad",
-          "Entender qué materiales adicionales necesita antes de llegar a la tienda",
-          "Tomar una decisión informada sin ayuda de un vendedor"
+          "Entender qué materiales adicionales necesita antes de llegar a la tienda"
         ],
         "goalsEn": [
           "Choose the right flooring without quantity errors",
-          "Understand what additional materials she needs before going to the store",
-          "Make an informed decision without a salesperson"
+          "Understand what additional materials she needs before going to the store"
         ],
         "painPoints": [
           "No sabe qué es la merma ni cuánto agregar",
-          "El precio por m² la confunde cuando las cajas cubren áreas distintas",
-          "El cross-sell le muestra adhesivos que no son compatibles con su piso de clip"
+          "El precio por m² la confunde cuando las cajas cubren áreas distintas"
         ],
         "painPointsEn": [
           "Doesn't know what waste margin is or how much to add",
-          "Price per m² confuses her when boxes cover different areas",
-          "Cross-sell shows adhesives incompatible with her click-lock floor"
+          "Price per m² confuses her when boxes cover different areas"
         ],
         "behaviors": [
           "Busca reseñas antes de comprar",
-          "Prefiere comprar online para evitar presión de vendedores",
-          "Compara precio por m² como métrica principal"
+          "Prefiere comprar online para evitar presión de vendedores"
         ],
         "behaviorsEn": [
           "Reads reviews before buying",
-          "Prefers online shopping to avoid sales pressure",
-          "Compares price per m² as the main metric"
+          "Prefers online shopping to avoid sales pressure"
         ]
       },
       {
@@ -365,40 +290,34 @@
         "avatar": "https://i.pravatar.cc/150?img=52",
         "goals": [
           "Calcular rápido la cantidad exacta para un proyecto de cliente",
-          "Generar un kit completo con accesorios validados para no volver a la tienda",
-          "Comparar múltiples opciones por costo total de proyecto, no solo m²"
+          "Generar un kit completo con accesorios validados para no volver a la tienda"
         ],
         "goalsEn": [
           "Quickly calculate the exact amount for a client's project",
-          "Generate a complete kit with validated accessories to avoid return trips",
-          "Compare multiple options by total project cost, not just m²"
+          "Generate a complete kit with validated accessories to avoid return trips"
         ],
         "painPoints": [
           "Pierde tiempo calculando merma y accesorios manualmente",
-          "El comparador de atributos no normaliza unidades, dificulta la comparación real",
-          "Los adhesivos del cross-sell a veces no son compatibles con el sistema de instalación elegido"
+          "El comparador de atributos no normaliza unidades, dificulta la comparación real"
         ],
         "painPointsEn": [
           "Wastes time manually calculating waste and accessories",
-          "The attribute comparator doesn't normalize units, making real comparison difficult",
-          "Cross-sell adhesives are sometimes incompatible with the chosen installation system"
+          "The attribute comparator doesn't normalize units, making real comparison difficult"
         ],
         "behaviors": [
           "Compra en volumen, varias veces al mes",
-          "Prioriza velocidad de decisión sobre precio marginal",
-          "Llega con medidas del espacio ya calculadas"
+          "Prioriza velocidad de decisión sobre precio marginal"
         ],
         "behaviorsEn": [
           "Buys in volume, several times per month",
-          "Prioritizes decision speed over marginal price",
-          "Arrives with pre-calculated space measurements"
+          "Prioritizes decision speed over marginal price"
         ]
       }
     ]
   },
   "journeyMap": {
-    "title": "Desarrollo del flujo: de la duda de cantidad al checkout",
-    "titleEn": "Flow development: from quantity doubt to checkout",
+    "title": "El flujo, de la entrada al carro",
+    "titleEn": "The flow, from entry to cart",
     "subtitle": "11 taps · 1:15 min (usuario ágil) a 5:45 min (usuario lento)",
     "subtitleEn": "11 taps · 1:15 min (agile user) to 5:45 min (slow user)",
     "stages": [
@@ -406,212 +325,192 @@
         "id": 1,
         "name": "Entrada",
         "nameEn": "Entry",
-        "problem": "Usuario en PDP de piso sin saber cuánto necesita ni si el precio es real",
-        "problemEn": "User on flooring PDP without knowing how much they need or if the price is accurate",
-        "solution": "CTA 'Piso Ideal' en ficha de producto que activa el asistente guiado",
-        "solutionEn": "'Ideal Floor' CTA on product card that activates the guided assistant"
+        "problem": "Llega a la ficha de piso sin saber cuánto necesita ni cuánto costará todo.",
+        "problemEn": "Arrives at the flooring page without knowing how much they need or what everything will cost.",
+        "solution": "CTA 'Piso Ideal' que inicia el asistente.",
+        "solutionEn": "'Ideal Floor' CTA that starts the assistant."
       },
       {
         "id": 2,
-        "name": "Medidas",
-        "nameEn": "Measurements",
-        "problem": "Usuario no sabe si medir en m² o en metros lineales, y la merma es invisible",
-        "problemEn": "User doesn't know whether to measure in m² or linear meters, and waste is invisible",
-        "solution": "Captura por foto (Paso 1) o ingreso manual (Paso 2b) + merma activada al 10% por defecto con explicación contextual",
-        "solutionEn": "Photo capture (Step 1) or manual entry (Step 2b) + waste auto-enabled at 10% with contextual explanation"
+        "name": "Parámetros",
+        "nameEn": "Parameters",
+        "problem": "Elegir primero y validar después genera sorpresas.",
+        "problemEn": "Choosing first and validating later creates surprises.",
+        "solution": "Eliges espacio y m² (foto o manual); la merma va al 10% por defecto.",
+        "solutionEn": "Pick the space and m² (photo or manual); waste defaults to 10%."
       },
       {
         "id": 3,
         "name": "Confirmación",
         "nameEn": "Confirmation",
-        "problem": "El usuario no sabe traducir su espacio a requisitos técnicos (tráfico, humedad, mascotas) y necesita validar sus medidas antes de ver recomendaciones",
-        "problemEn": "Users can't translate their space into technical requirements (traffic, moisture, pets) and need to validate their measurements before seeing recommendations",
-        "solution": "Resumen de m² + merma + cajas, y condiciones de uso derivadas por IA ('Esto asumimos de tu living') que el usuario confirma o corrige",
-        "solutionEn": "Summary of m² + waste + boxes, and AI-derived usage conditions ('This is what we assume about your living room') that the user confirms or corrects"
+        "problem": "No sabe traducir su espacio a requisitos técnicos.",
+        "problemEn": "Can't translate their space into technical requirements.",
+        "solution": "Tránsito, humedad y mascotas o niños se derivan por IA; el usuario confirma o corrige.",
+        "solutionEn": "Traffic, moisture and pets or kids are derived by AI; the user confirms or corrects."
       },
       {
         "id": 4,
-        "name": "Recomendación IA",
-        "nameEn": "AI Recommendation",
-        "problem": "El precio por m² domina la decisión pero es engañoso cuando las cajas cubren áreas distintas",
-        "problemEn": "Price per m² dominates the decision but is misleading when boxes cover different areas",
-        "solution": "Tres opciones que sí sirven, con atributos normalizados por IA, precio real de proyecto (no solo m²), indicador 'Generado con IA' ambiental y CTA de compra directa",
-        "solutionEn": "Three options that actually fit, with AI-normalized attributes, real project price (not just m²), ambient 'Generated with AI' indicator and direct purchase CTA"
+        "name": "Proyectos",
+        "nameEn": "Projects",
+        "problem": "Comparar pisos sueltos por precio por m² engaña.",
+        "problemEn": "Comparing single floors by price per m² misleads.",
+        "solution": "3 proyectos de distinto precio, con ventajas y desventajas y precio final.",
+        "solutionEn": "3 projects at different prices, with pros and cons and a final price."
       },
       {
         "id": 5,
-        "name": "Kit + Carrito",
+        "name": "Kit + Carro",
         "nameEn": "Kit + Cart",
-        "problem": "El cross-sell genérico recomienda accesorios incompatibles (adhesivo en piso click) y omite los que el proyecto sí necesita; el usuario tiene que volver",
-        "problemEn": "Generic cross-sell recommends incompatible accessories (adhesive for a click-lock floor) and omits the ones the project does need; users have to come back",
-        "solution": "Pantalla de kit completa (no bottom sheet) con espuma niveladora, guardapolvos y perfiles de transición, jerarquía requerido / recomendado / opcional, compatibilidad validada y agregado al carrito en un tap",
-        "solutionEn": "Full kit screen (not a bottom sheet) with underlayment foam, baseboards and transition profiles, required / recommended / optional hierarchy, validated compatibility and one-tap add to cart"
+        "problem": "Accesorios incompatibles o sin cantidades, y un total que crece.",
+        "problemEn": "Incompatible accessories or missing quantities, and a growing total.",
+        "solution": "Kit calculado y editable; el carro mantiene el total del proyecto.",
+        "solutionEn": "Calculated, editable kit; the cart keeps the project total."
       }
     ]
   },
   "solution": {
-    "title": "Desarrollo: orquestar lo que ya existe alrededor de la decisión",
-    "titleEn": "Development: orchestrating what already exists around the decision",
-    "subtitle": "Cada decisión responde a un hallazgo documentado en la auditoría",
-    "subtitleEn": "Each decision answers a finding documented in the audit",
+    "title": "Solución",
+    "titleEn": "Solution",
+    "subtitle": "Se invirtió la lógica: primero tu espacio, después un proyecto completo.",
+    "subtitleEn": "The logic was inverted: your space first, then a complete project.",
     "principles": [
       {
         "number": "01",
-        "title": "Merma activada por defecto",
-        "titleEn": "Waste margin on by default",
-        "description": "El checkbox de merma viene marcado al 10% con una explicación contextual. El usuario puede desactivarlo, pero la opción segura es el default. Corrige F1, el hallazgo más transversal: está roto en Falabella y Sodimac.",
-        "descriptionEn": "The waste margin checkbox comes pre-checked at 10% with a contextual explanation. The user can deactivate it, but the safe option is the default. Fixes F1, the most cross-cutting finding: it's broken in both Falabella and Sodimac."
+        "title": "Parámetros primero",
+        "titleEn": "Parameters first",
+        "description": "m², mascotas o niños y humedad filtran el catálogo antes de mostrar un piso.",
+        "descriptionEn": "m², pets or kids and moisture filter the catalog before any floor is shown."
       },
       {
         "number": "02",
-        "title": "Comparar por proyecto, sobre datos normalizados",
-        "titleEn": "Compare by project, on normalized data",
-        "description": "La IA normaliza los atributos heterogéneos del catálogo ('8.3' vs '3.2 mm', '0.3' vs 'AC-3') y la card muestra el precio total del proyecto como métrica primaria; el precio por m² queda como secundario. Un piso 34% más caro por m² puede ser solo 6% más caro en total.",
-        "descriptionEn": "AI normalizes the catalog's heterogeneous attributes ('8.3' vs '3.2 mm', '0.3' vs 'AC-3') and the card shows total project price as the primary metric; price per m² stays secondary. A floor 34% more expensive per m² can be only 6% more expensive overall."
+        "title": "Proyectos completos",
+        "titleEn": "Complete projects",
+        "description": "Cada alternativa incluye piso, accesorios calculados e instalación, con precio final.",
+        "descriptionEn": "Each alternative includes the floor, calculated accessories and installation, with a final price."
       },
       {
         "number": "03",
-        "title": "Kit inteligente con compatibilidad validada",
-        "titleEn": "Smart kit with validated compatibility",
-        "description": "Los accesorios se validan contra el sistema de instalación del piso elegido: un piso click no lleva adhesivo, y sí lleva espuma niveladora, guardapolvos y perfiles de transición. La pantalla usa jerarquía requerido / recomendado / opcional y reutiliza 'Arma tu Proyecto', patrón que hoy vive en muebles, llevado a pisos.",
-        "descriptionEn": "Accessories are validated against the chosen floor's installation system: a click floor takes no adhesive, and does need underlayment foam, baseboards and transition profiles. The screen uses a required / recommended / optional hierarchy and reuses 'Build Your Project', a pattern that lives in furniture today, brought to flooring."
+        "title": "Ventajas y desventajas a la vista",
+        "titleEn": "Pros and cons in view",
+        "description": "Tres opciones —economía, resistencia, look— que explican por qué se recomiendan.",
+        "descriptionEn": "Three options — economy, durability, look — that explain why they're recommended."
       }
     ],
     "decisions": [
       {
-        "title": "La IA como condición de posibilidad, no como adorno",
-        "titleEn": "AI as a precondition, not decoration",
-        "justification": "El comparador mezcla unidades y escalas ('Espesor: 8.3' vs '3.2 mm'; 'Resistencia al desgaste: 0.3' vs 'AC-3'). Normalizar atributos de catálogo heterogéneos e incompletos es lo que un LLM hace bien y ninguna regla de negocio resuelve a escala. Sin esa normalización la recomendación no puede existir: por eso la IA es la condición de posibilidad del feature.",
-        "justificationEn": "The comparator mixes units and scales ('Thickness: 8.3' vs '3.2 mm'; 'Wear resistance: 0.3' vs 'AC-3'). Normalizing heterogeneous, incomplete catalog attributes is what an LLM does well and no business rule solves at scale. Without that normalization the recommendation can't exist: that's why AI is the feature's precondition.",
-        "tradeoff": "La calidad de la recomendación depende de la calidad del catálogo. Cuando un atributo no se puede inferir con confianza, la interfaz lo muestra como dato faltante en lugar de inventarlo.",
-        "tradeoffEn": "Recommendation quality depends on catalog quality. When an attribute can't be inferred with confidence, the interface shows it as missing data instead of inventing it."
+        "title": "Invertir la lógica del cross-sell",
+        "titleEn": "Invert the cross-sell logic",
+        "justification": "En lugar de sugerir accesorios después de elegir, se llevó 'Arma tu Proyecto' (hoy en muebles, solo estético) a pisos, con parámetros técnicos.",
+        "justificationEn": "Instead of suggesting accessories after choosing, 'Build Your Project' (today in furniture, aesthetic only) was brought to flooring, with technical parameters.",
+        "tradeoff": "Se piden datos antes de mostrar producto; se compensa con un precio final desde el inicio.",
+        "tradeoffEn": "Data is requested before showing products; offset by a final price from the start."
       },
       {
-        "title": "Full screen en lugar de bottom sheet para el kit",
-        "titleEn": "Full screen instead of bottom sheet for the kit",
-        "justification": "El kit puede tener 4–8 items. Un bottom sheet limita la visualización y fuerza scroll oculto. La pantalla completa permite mostrar jerarquía, cantidades editables y validaciones de compatibilidad sin truncar.",
-        "justificationEn": "The kit can have 4–8 items. A bottom sheet limits visibility and forces hidden scroll. A full screen allows showing hierarchy, editable quantities and compatibility validations without truncation.",
-        "tradeoff": "Mayor fricción de salida (el usuario no puede cerrar con swipe), compensada con un CTA de 'Agregar todo al carrito' prominente.",
-        "tradeoffEn": "Higher exit friction (user can't swipe to close), compensated with a prominent 'Add all to cart' CTA."
+        "title": "Personalizable, no cerrado",
+        "titleEn": "Customizable, not closed",
+        "justification": "El usuario puede quitar líneas o instalar por su cuenta. El carro recalcula el resto para que el proyecto siga siendo coherente.",
+        "justificationEn": "Users can remove lines or self-install. The cart recalculates the rest so the project stays consistent.",
+        "tradeoff": "Más control implica más casos a validar en el recálculo.",
+        "tradeoffEn": "More control means more cases to validate in the recalculation."
       },
       {
-        "title": "Señalar la IA de forma ambiental, no como feature aparte",
-        "titleEn": "Signal AI ambiently, not as a separate feature",
-        "justification": "La IA aparece solo donde aporta: un indicador 'Generado con IA' con destello, presente en la estimación de m² y en la recomendación, cuyo microcopy admite el margen de error. Señalarla de forma ambiental reduce la carga cognitiva y construye más confianza que un botón de IA aislado.",
-        "justificationEn": "AI appears only where it adds value: a 'Generated with AI' indicator with a sparkle, present in the m² estimate and the recommendation, whose microcopy owns the margin of error. Signaling it ambiently reduces cognitive load and builds more trust than an isolated AI button.",
-        "tradeoff": "El indicador no diferencia por tipo de IA (estimación de m² vs recomendación de producto). Se asume que el nivel de detalle es suficiente para MVP.",
-        "tradeoffEn": "The indicator doesn't differentiate by AI type (m² estimation vs product recommendation). The level of detail is assumed sufficient for MVP."
-      },
-      {
-        "title": "Tokens semánticos sobre Falabella + modo Sodimac",
-        "titleEn": "Semantic tokens over Falabella + Sodimac mode",
-        "justification": "El design system se construyó con 39 primitivas y 22 tokens semánticos, con modo Falabella y modo Sodimac. Cuando la base visual pasó de Sodimac a Falabella, solo se reasignaron los 22 tokens semánticos y ningún componente se tocó. Es el argumento más fuerte para trabajar sobre un design system real antes de diseñar pantallas.",
-        "justificationEn": "The design system was built with 39 primitives and 22 semantic tokens, with Falabella and Sodimac modes. When the visual base moved from Sodimac to Falabella, only the 22 semantic tokens were reassigned and no component was touched. It's the strongest argument for working on a real design system before designing screens.",
-        "tradeoff": "Mayor upfront en arquitectura de tokens, pero elimina el retrabajo de un cambio de marca completo en 10+ pantallas.",
-        "tradeoffEn": "Higher upfront investment in token architecture, but eliminates the rework of a full brand change across 10+ screens."
+        "title": "IA ambiental, no una feature aparte",
+        "titleEn": "Ambient AI, not a separate feature",
+        "justification": "La IA normaliza atributos de catálogo y deriva los supuestos de uso. Se señala con un indicador 'Generado con IA' donde aporta, sin botón propio.",
+        "justificationEn": "AI normalizes catalog attributes and derives usage assumptions. It's flagged with a 'Generated with AI' indicator where it helps, with no dedicated button.",
+        "tradeoff": "El indicador no distingue entre tipos de IA; es suficiente para un MVP.",
+        "tradeoffEn": "The indicator doesn't distinguish between AI types; enough for an MVP."
       }
     ]
   },
   "results": {
     "title": "Conclusiones",
     "titleEn": "Conclusions",
-    "subtitle": "Impacto esperado a partir del modelo de KPI y lo que el caso deja como criterio de producto",
-    "subtitleEn": "Expected impact from the KPI model and what the case leaves as product judgment",
+    "subtitle": "Metas del modelo de KPI; aún no son resultados medidos.",
+    "subtitleEn": "Goals from the KPI model; not yet measured results.",
     "impact": [
       {
         "metric": "↑ 20%",
         "metricEn": "↑ 20%",
-        "label": "conversión de categoría (proyectada)",
-        "labelEn": "category conversion (projected)",
-        "description": "Modelo: 40% de adopción del flujo × 50% de lift dentro del flujo, con benchmarks de flujos guiados en e-commerce de mejoramiento del hogar. Hipótesis a validar con datos de categoría.",
-        "descriptionEn": "Model: 40% flow adoption × 50% lift within the flow, using guided-flow benchmarks in home improvement e-commerce. A hypothesis to validate with category data."
+        "label": "conversión (meta)",
+        "labelEn": "conversion (goal)",
+        "description": "De 30% a 36%: 40% de adopción del flujo × 50% de mejora dentro del flujo.",
+        "descriptionEn": "From 30% to 36%: 40% flow adoption × 50% lift within the flow."
       },
       {
-        "metric": "↓ 90%",
-        "metricEn": "↓ 90%",
-        "label": "error de merma (estimado)",
-        "labelEn": "waste error (estimated)",
-        "description": "Con el checkbox activado por defecto, el error se elimina casi por completo para quienes completan el flujo.",
-        "descriptionEn": "With the checkbox enabled by default, the error is almost entirely eliminated for users who complete the flow."
+        "metric": "↓ 30%",
+        "metricEn": "↓ 30%",
+        "label": "devoluciones por faltantes (meta)",
+        "labelEn": "returns from shortages (goal)",
+        "description": "Proyectos completos y coherentes, sin accesorios que sobran, faltan o no sirven.",
+        "descriptionEn": "Complete, consistent projects, with no surplus, missing or unsuitable accessories."
       },
       {
         "metric": "11",
         "metricEn": "11",
-        "label": "taps de entrada a carrito",
+        "label": "taps de entrada a carro",
         "labelEn": "taps from entry to cart",
-        "description": "Desde 18+ taps en la versión inicial del flujo. Medido contra Sodimac y Home Depot en el benchmark comparativo.",
-        "descriptionEn": "Down from 18+ taps in the initial flow version. Measured against Sodimac and Home Depot in the comparative benchmark."
+        "description": "Antes 18+. Precio final visible desde la elección.",
+        "descriptionEn": "Previously 18+. Final price visible from the moment of choice."
       }
     ],
     "learningsTitle": "Aprendizajes",
     "learningsTitleEn": "Learnings",
     "learnings": [
       {
-        "title": "El problema no era falta de features, era falta de orquestación",
-        "titleEn": "The problem wasn't missing features, it was missing orchestration",
-        "description": "Calculadora, comparador, cross-sell y 'Arma tu Proyecto' ya existían; fallaban por el default, la compatibilidad y la normalización del dato. Reencuadrar de 'agregar un carro de proyecto' a 'llevar el patrón a pisos' baja el costo percibido de implementación y demuestra conocimiento del producto real.",
-        "descriptionEn": "The calculator, comparator, cross-sell and 'Build Your Project' already existed; they failed on defaults, compatibility and data normalization. Reframing from 'add a project cart' to 'bring the pattern to flooring' lowers perceived implementation cost and shows knowledge of the real product."
+        "title": "Invertir la lógica vale más que parchar el cross-sell",
+        "titleEn": "Inverting the logic beats patching the cross-sell",
+        "description": "El problema no eran las sugerencias, sino el orden: elegir primero y validar después.",
+        "descriptionEn": "The problem wasn't the suggestions, it was the order: choosing first and validating later."
       },
       {
-        "title": "El default correcto vale más que el flujo perfecto",
-        "titleEn": "The right default is worth more than the perfect flow",
-        "description": "El error de merma (F1) no requería rearmar el flujo, solo cambiar el estado por defecto del checkbox. La solución más simple fue la más impactante.",
-        "descriptionEn": "The waste error (F1) didn't require reworking the flow, only changing the checkbox's default state. The simplest solution was the most impactful."
-      },
-      {
-        "title": "La IA justifica su lugar cuando habilita lo imposible sin ella",
-        "titleEn": "AI earns its place when it enables what's impossible without it",
-        "description": "Normalizar atributos heterogéneos es lo que vuelve posible la recomendación. Con ese criterio, la IA deja de ser una capa decorativa y pasa a ser infraestructura del feature, señalada de forma ambiental.",
-        "descriptionEn": "Normalizing heterogeneous attributes is what makes the recommendation possible. With that criterion, AI stops being a decorative layer and becomes the feature's infrastructure, signaled ambiently."
+        "title": "Reutilizar un patrón existente baja el costo",
+        "titleEn": "Reusing an existing pattern lowers the cost",
+        "description": "'Arma tu Proyecto' ya estaba en producción; se llevó a pisos, donde el proyecto es técnico.",
+        "descriptionEn": "'Build Your Project' was already in production; it was brought to flooring, where the project is technical."
       },
       {
         "title": "Un design system real aísla el retrabajo",
         "titleEn": "A real design system isolates rework",
-        "description": "Al pasar de la base visual Sodimac a Falabella solo se reasignaron 22 tokens semánticos. Sin design system habría sido un refactor de todas las pantallas.",
-        "descriptionEn": "Moving from the Sodimac to the Falabella visual base only required reassigning 22 semantic tokens. Without a design system it would have been a refactor of every screen."
+        "description": "Al cambiar la base visual de Sodimac a Falabella solo se reasignaron 22 tokens semánticos.",
+        "descriptionEn": "Switching the visual base from Sodimac to Falabella only required reassigning 22 semantic tokens."
       }
     ],
     "nextStepsTitle": "Próximos pasos",
     "nextStepsTitleEn": "Next steps",
     "nextSteps": [
       {
-        "title": "Validar la tesis con datos de categoría",
-        "titleEn": "Validate the thesis with category data",
-        "description": "Medir qué proporción de abandono y devoluciones en pisos se explica por cantidad y compatibilidad frente a otras causas: es la hipótesis que sostiene el KPI.",
-        "descriptionEn": "Measure what share of flooring abandonment and returns is explained by quantity and compatibility versus other causes: it's the hypothesis that underpins the KPI."
+        "title": "A/B test en la categoría pisos",
+        "titleEn": "A/B test in the flooring category",
+        "description": "Medir conversión, abandono y devoluciones frente al flujo actual.",
+        "descriptionEn": "Measure conversion, abandonment and returns against the current flow."
       },
       {
-        "title": "Test de usabilidad con 5 usuarios de categoría pisos",
-        "titleEn": "Usability testing with 5 flooring category users",
-        "description": "Validar el flujo de medidas, el entendimiento de la merma, los supuestos de uso derivados por IA y la comparación de precio por proyecto vs precio por m².",
-        "descriptionEn": "Validate the measurement flow, waste margin understanding, AI-derived usage assumptions and the comparison of project price vs price per m²."
+        "title": "Test de usabilidad con 5 usuarios",
+        "titleEn": "Usability test with 5 users",
+        "description": "Validar parámetros, supuestos por IA y comparación de proyectos.",
+        "descriptionEn": "Validate parameters, AI assumptions and project comparison."
       },
       {
-        "title": "Complementar con visualización AR (Roomvo)",
-        "titleEn": "Complement with AR visualization (Roomvo)",
-        "description": "Roomvo ya tiene acuerdo con Falabella. La visualización responde a 'cómo se ve' y complementa a Piso Ideal, que responde a 'cuánto necesito y si sirve'.",
-        "descriptionEn": "Roomvo already has an agreement with Falabella. Visualization answers 'how will it look' and complements Ideal Floor, which answers 'how much do I need and does it work'."
-      },
-      {
-        "title": "Extender a Sodimac con modo de marca alternativo",
-        "titleEn": "Extend to Sodimac with alternate brand mode",
-        "description": "El design system ya tiene el modo Sodimac y el flujo es compatible: el costo incremental de lanzar en ambas marcas del holding es marginal.",
-        "descriptionEn": "The design system already has Sodimac mode and the flow is compatible: the incremental cost of launching across both holding brands is marginal."
+        "title": "Extender a Sodimac y sumar visualización AR",
+        "titleEn": "Extend to Sodimac and add AR visualization",
+        "description": "Modo de marca Sodimac listo; Roomvo como complemento ('cómo se ve').",
+        "descriptionEn": "Sodimac brand mode is ready; Roomvo as a complement ('how it looks')."
       }
     ]
   },
   "designs": {
     "title": "Pantallas del flujo",
     "titleEn": "Flow screens",
-    "subtitle": "14 pantallas Android 360×800 · Design system con 39 primitivas y 22 tokens semánticos",
-    "subtitleEn": "14 Android screens 360×800 · Design system with 39 primitives and 22 semantic tokens",
+    "subtitle": "14 pantallas Android · Design system con 39 primitivas y 22 tokens semánticos",
+    "subtitleEn": "14 Android screens · Design system with 39 primitives and 22 semantic tokens",
     "device": "mobile",
     "items": [
       {
         "title": "Entrada: Encuentra tu piso ideal",
         "titleEn": "Entry: Find your ideal floor",
-        "description": "Hero en el listado de categoría. CTA 'Empezar' activa el asistente guiado de 3 pasos.",
-        "descriptionEn": "Hero in the category listing. 'Start' CTA activates the guided 3-step assistant.",
+        "description": "Hero en el listado de categoría; 'Empezar' inicia el asistente.",
+        "descriptionEn": "Hero on the category listing; 'Start' launches the assistant.",
         "src": "data/images/falabella-01-listado.webp?v=2",
         "device": "mobile",
         "badge": null,
@@ -620,8 +519,8 @@
       {
         "title": "Paso 1: ¿Qué espacio vas a renovar?",
         "titleEn": "Step 1: Which space are you renovating?",
-        "description": "Selección de habitación + captura de m² por foto o ingreso manual. Merma activada al 10% por defecto.",
-        "descriptionEn": "Room selection + m² capture by photo or manual entry. Waste margin auto-enabled at 10%.",
+        "description": "Habitación y m² por foto o ingreso manual, con merma al 10% por defecto.",
+        "descriptionEn": "Room and m² by photo or manual entry, with waste at 10% by default.",
         "src": "data/images/falabella-02-paso1.webp?v=2",
         "device": "mobile",
         "badge": null,
@@ -630,8 +529,8 @@
       {
         "title": "Paso 1b: Estimación por foto con IA ambiental",
         "titleEn": "Step 1b: Photo estimation with ambient AI",
-        "description": "La foto genera una estimación de m² editable. El indicador 'Generado con IA' es ambiental —sin botón de IA aislado— y el microcopy admite el margen de error: la asistencia se siente parte del flujo, no una feature aparte.",
-        "descriptionEn": "The photo generates an editable m² estimate. The 'Generated with AI' indicator is ambient — no isolated AI button — and the microcopy owns the margin of error: assistance feels part of the flow, not a separate feature.",
+        "description": "La foto genera un m² editable, señalado como 'Generado con IA' y con margen de error explícito.",
+        "descriptionEn": "The photo yields an editable m², flagged 'Generated with AI' with an explicit margin of error.",
         "src": "data/images/falabella-02b-foto-tomada.webp?v=2",
         "device": "mobile",
         "badge": null,
@@ -640,8 +539,8 @@
       {
         "title": "Paso 2: Condiciones derivadas por IA",
         "titleEn": "Step 2: AI-derived conditions",
-        "description": "Supuestos de tránsito, humedad y mascotas derivados del espacio elegido. El usuario confirma o corrige — no llena un formulario.",
-        "descriptionEn": "Traffic, humidity, and pet conditions derived from the chosen space. User confirms or corrects — no form to fill.",
+        "description": "Tránsito, humedad y mascotas se derivan del espacio; el usuario confirma o corrige.",
+        "descriptionEn": "Traffic, moisture and pets are derived from the space; users confirm or correct.",
         "src": "data/images/falabella-03-condiciones.webp?v=2",
         "device": "mobile",
         "badge": null,
@@ -650,8 +549,8 @@
       {
         "title": "Paso 3: Tus 3 opciones que sí sirven",
         "titleEn": "Step 3: Your 3 options that actually work",
-        "description": "Las 3 recomendaciones muestran precio real de proyecto (no solo m²) sobre atributos normalizados. El argumento cuantitativo: 34% más por m² puede ser solo 6% más en total.",
-        "descriptionEn": "The 3 recommendations show real project price (not just m²) on normalized attributes. The quantitative argument: 34% more per m² can be only 6% more overall.",
+        "description": "Tres proyectos de distinto precio, con por qué se recomiendan y precio final.",
+        "descriptionEn": "Three projects at different prices, with why they're recommended and a final price.",
         "src": "data/images/falabella-04-opciones.webp?v=2",
         "device": "mobile",
         "badge": null,
@@ -661,8 +560,8 @@
       {
         "title": "Kit: Arma tu proyecto",
         "titleEn": "Kit: Build your project",
-        "description": "Pantalla completa con jerarquía requerido / recomendado / opcional: espuma niveladora, guardapolvos y perfil de transición calculados desde las medidas y validados por sistema de instalación. CTA 'Agregar todo al carro'.",
-        "descriptionEn": "Full screen with a required / recommended / optional hierarchy: underlayment foam, baseboard and transition profile calculated from the measurements and validated against the installation system. CTA 'Add all to cart'.",
+        "description": "Accesorios requeridos, calculados desde tus medidas y editables.",
+        "descriptionEn": "Required accessories, calculated from your measurements and editable.",
         "src": "data/images/falabella-05-kit.webp?v=2",
         "device": "mobile",
         "badge": null,
@@ -671,8 +570,8 @@
       {
         "title": "Carro: Proyecto · Living 18,5 m²",
         "titleEn": "Cart: Project · Living 18.5 m²",
-        "description": "El carro muestra el contexto del proyecto (espacio + m²) y advierte si cambiar cantidades rompe el balance calculado.",
-        "descriptionEn": "Cart shows the project context (space + m²) and warns if changing quantities breaks the calculated balance.",
+        "description": "El carro mantiene el contexto del proyecto y recalcula si cambias una cantidad.",
+        "descriptionEn": "The cart keeps the project context and recalculates if you change a quantity.",
         "src": "data/images/falabella-06-carro.webp?v=2",
         "device": "mobile",
         "badge": null
