@@ -146,6 +146,10 @@
         {
           "es": "Hotjar · Maze",
           "en": "Hotjar · Maze"
+        },
+        {
+          "es": "A/B Testing",
+          "en": "A/B Testing"
         }
       ]
     },
@@ -188,6 +192,18 @@
         {
           "es": "Notion · Linear",
           "en": "Notion · Linear"
+        },
+        {
+          "es": "JTBD (Jobs-to-be-Done)",
+          "en": "JTBD (Jobs-to-be-Done)"
+        },
+        {
+          "es": "Design Tokens · Design Ops",
+          "en": "Design Tokens · Design Ops"
+        },
+        {
+          "es": "Accesibilidad · WCAG 2.2",
+          "en": "Accessibility · WCAG 2.2"
         }
       ]
     }
@@ -281,17 +297,17 @@
       "company": "DispatchTrack",
       "role": "Senior Product Designer (UX/UI) — AI-Native Product Builder",
       "roleEn": "Senior Product Designer (UX/UI) — AI-Native Product Builder",
-      "period": "2019 — Presente",
-      "periodEn": "2019 — Present",
-      "description": "UX owner de Last Mile y PlannerPro — plataformas de routing asistidas por IA que cubren la superficie operacional completa: app móvil para conductores, herramientas de planificación desktop y dashboards de despacho. Rediseñé el módulo de rutas alrededor de un modelo human-in-the-loop centrado en confianza, no en automatización. Construí el Design System de DispatchTrack desde cero y migré el flujo de trabajo a prototipado funcional con Claude, Cursor, v0 y React — acortando el ciclo diseño-ingeniería. Diseñé features conversacionales y basadas en agentes donde el modelo LLM es parte del sistema.",
-      "descriptionEn": "Owned UX across Last Mile and PlannerPro — AI-assisted routing platforms covering the full operational surface: driver mobile app, desktop planning tools, and dispatch dashboards. Redesigned the route planning module around a human-in-the-loop model centered on trust, not automation. Built the DispatchTrack Design System from scratch and shifted to functional prototyping with Claude, Cursor, v0 and React — collapsing the design-to-engineering loop. Designed conversational and agent-based features where the LLM model is part of the system."
+      "period": "2023 — Presente",
+      "periodEn": "2023 — Present",
+      "description": "UX owner de Last Mile y PlannerPro — plataformas de routing asistidas por IA que cubren la superficie operacional completa: app móvil para conductores, herramientas de planificación desktop y dashboards de despacho. Discovery basado en JTBD, con A/B testing para validar cambios antes del despliegue. Lideré el rediseño de Unified Routing de punta a punta: 6 entrevistas cualitativas con dispatchers y un modelo híbrido asistente + consola proyectado para reducir el tiempo de planificación ~32% y los errores críticos ~78%. Rediseñé el módulo de rutas alrededor de un modelo human-in-the-loop centrado en confianza, no en automatización. Rediseñé la app móvil de punta a punta con análisis de sesiones en Hotjar y entrevistas directas con conductores y gerentes logísticos. Construí el Design System de DispatchTrack desde cero y migré el flujo de trabajo a prototipado funcional con Claude, Cursor, v0 y React — acortando el ciclo diseño-ingeniería. Diseñé features conversacionales y basadas en agentes donde el modelo LLM es parte del sistema.",
+      "descriptionEn": "Owned UX across Last Mile and PlannerPro — AI-assisted routing platforms covering the full operational surface: driver mobile app, desktop planning tools, and dispatch dashboards. Discovery grounded in JTBD framing, with A/B testing to validate changes before rollout. Led the Unified Routing redesign end-to-end: 6 qualitative interviews with dispatchers, shipping a hybrid wizard + console model projected to cut planning time by ~32% and critical errors by ~78%. Redesigned the route planning module around a human-in-the-loop model centered on trust, not automation. Ran the mobile app redesign end-to-end — Hotjar session analysis, direct interviews with drivers and logistics managers. Built the DispatchTrack Design System from scratch and shifted to functional prototyping with Claude, Cursor, v0 and React — collapsing the design-to-engineering loop. Designed conversational and agent-based features where the LLM model is part of the system."
     },
     {
       "company": "Beetrack",
       "role": "UX Designer",
       "roleEn": "UX Designer",
-      "period": "2017 — 2019",
-      "periodEn": "2017 — 2019",
+      "period": "2019 — 2023",
+      "periodEn": "2019 — 2023",
       "description": "Diseñé el dashboard de operaciones y las herramientas para conductores de una plataforma SaaS de última milla en crecimiento acelerado. Construí el Beetrack Design System desde cero — el primer lenguaje de diseño estructurado de la empresa. Conduje estudios de usabilidad y entrevistas de campo con gerentes de operaciones y conductores; los hallazgos moldearon directamente las prioridades de iteración y el roadmap de producto.",
       "descriptionEn": "Designed the operations dashboard and driver-facing tools for a fast-growing last-mile SaaS platform. Built the Beetrack Design System from zero — the first structured design language the company had. Conducted usability studies and field interviews with operations managers and drivers; findings directly shaped iteration priorities and informed the product roadmap."
     },
@@ -299,8 +315,8 @@
       "company": "Anastasia AI",
       "role": "UX Designer",
       "roleEn": "UX Designer",
-      "period": "2015 — 2017",
-      "periodEn": "2015 — 2017",
+      "period": "2018 — 2019",
+      "periodEn": "2018 — 2019",
       "description": "Diseñé la interfaz de una plataforma de analytics predictivos cuyo producto central era hacer legibles y accionables los outputs de forecasting de demanda para equipos de retail y supply chain — usuarios que no eran data scientists. Creé el Design System de Anastasia desde cero, definiendo el lenguaje visual y el modelo de interacción para mostrar datos probabilísticos sin abrumar a usuarios no técnicos.",
       "descriptionEn": "Designed the interface for a predictive analytics platform whose core product was making demand forecasting outputs readable and actionable for retail and supply chain teams — users who weren't data scientists. Created the Anastasia Design System from scratch, defining the visual language and interaction model for surfacing probabilistic data without overwhelming non-technical users."
     },
@@ -308,8 +324,8 @@
       "company": "DIRECTV Latin America",
       "role": "Diseñador UX/UI",
       "roleEn": "UX/UI Designer",
-      "period": "2016 — 2018",
-      "periodEn": "2016 — 2018",
+      "period": "2015 — 2017",
+      "periodEn": "2015 — 2017",
       "description": "Rediseñé directv.cl — reestructura completa de arquitectura de información y rediseño de interacción para un sitio de consumo de alto tráfico.",
       "descriptionEn": "Redesigned directv.cl — full information architecture restructure and interaction redesign for a high-traffic consumer site."
     },
@@ -323,6 +339,15 @@
       "descriptionEn": "Web design, front-end development, packaging and digital marketing campaigns for B2B clients."
     },
     {
+      "company": "OzeIT",
+      "role": "Diseñador Web",
+      "roleEn": "Web Designer",
+      "period": "2012",
+      "periodEn": "2012",
+      "description": "Sydney, Australia.",
+      "descriptionEn": "Sydney, Australia."
+    },
+    {
       "company": "Kennedy Miller Mitchell — Mad Max: Fury Road",
       "role": "Diseñador Gráfico Freelance",
       "roleEn": "Freelance Graphic Designer",
@@ -330,6 +355,15 @@
       "periodEn": "2012",
       "description": "Retoque fotográfico y diseño de concepto de personajes para Mad Max: Fury Road (Warner Bros., 2015). Sydney, Australia.",
       "descriptionEn": "Photo retouching and character concept design for Mad Max: Fury Road (Warner Bros., 2015). Sydney, Australia."
+    },
+    {
+      "company": "Tres Pasos",
+      "role": "Diseñador Gráfico y Web",
+      "roleEn": "Graphic & Web Designer",
+      "period": "2010 — 2011",
+      "periodEn": "2010 — 2011",
+      "description": "Agencia de publicidad · Santiago, Chile.",
+      "descriptionEn": "Ad agency · Santiago, Chile."
     }
   ],
   "softwareTitle": "Herramientas",
