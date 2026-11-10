@@ -219,7 +219,7 @@
       "metricLabel": "componentes documentados",
       "metricLabelEn": "documented components",
       "slug": "design-system",
-      "externalUrl": "/prototypes/dt-ds/index.html#/docs",
+      "externalUrl": "/prototypes/dt-ds/index.html",
       "device": "desktop",
       "image": "data/images/design-system.png",
       "stack": [
