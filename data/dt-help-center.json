@@ -1,0 +1,91 @@
+{
+  "page": "dt-help-center",
+  "slug": "dt-help-center",
+  "title": "Centro de ayuda y onboarding",
+  "subtitle": "Centro de ayuda contextual con 49 tutoriales en tres niveles, video, quiz y progreso, que acompaña al usuario sin sacarlo de su pantalla.",
+  "hero": {
+    "tagline": "B2B SaaS · LAST MILE · ONBOARDING",
+    "taglineEn": "B2B SaaS · LAST MILE · ONBOARDING",
+    "title": "Centro de ayuda y onboarding",
+    "titleEn": "Help center & onboarding",
+    "description": "Centro de ayuda contextual con 49 tutoriales en tres niveles, video, quiz y progreso, que acompaña al usuario sin sacarlo de su pantalla.",
+    "descriptionEn": "Contextual help center with 49 tutorials across three levels, video, quiz and progress, guiding users without taking them off their screen."
+  },
+  "projectSpecs": [
+    {
+      "label": "Mi Rol",
+      "labelEn": "My Role",
+      "value": "Senior AI Product Designer + implementación front-end",
+      "valueEn": "Senior AI Product Designer + front-end implementation"
+    },
+    {
+      "label": "Contexto",
+      "labelEn": "Context",
+      "value": "Producto de logística de última milla (prototipo de portafolio)",
+      "valueEn": "Last-mile logistics product (portfolio prototype)"
+    },
+    {
+      "label": "Stack",
+      "labelEn": "Stack",
+      "value": "React 18 · TypeScript · Tailwind · Design System propio",
+      "valueEn": "React 18 · TypeScript · Tailwind · in-house Design System"
+    },
+    {
+      "label": "Entregables",
+      "labelEn": "Deliverables",
+      "value": "Pantalla funcional · Drawer de ayuda · Quiz · Estados vacío/anuncio",
+      "valueEn": "Working screen · Help drawer · Quiz · Empty/announcement states"
+    }
+  ],
+  "solution": {
+    "title": "Qué puedes probar",
+    "titleEn": "What you can try",
+    "subtitle": "Es un prototipo funcional, no un mockup: interactúa con él.",
+    "subtitleEn": "A working prototype, not a mockup: interact with it.",
+    "components": [
+      {
+        "title": "Drawer contextual",
+        "titleEn": "Contextual drawer",
+        "tagline": "Ayuda sin perder el lugar",
+        "taglineEn": "Help without losing your place",
+        "description": "Un panel lateral con navegación interna y retorno con Esc.",
+        "descriptionEn": "A side panel with in-panel navigation and Esc to go back."
+      },
+      {
+        "title": "Catálogo por niveles",
+        "titleEn": "Levelled catalog",
+        "tagline": "49 tutoriales, 3 niveles",
+        "taglineEn": "49 tutorials, 3 levels",
+        "description": "Chips de progreso y secciones que se marcan como completadas.",
+        "descriptionEn": "Progress chips and sections that mark themselves complete."
+      },
+      {
+        "title": "Quiz con reintento",
+        "titleEn": "Quiz with retry",
+        "tagline": "Verificar, reintentar, finalizar",
+        "taglineEn": "Verify, retry, finish",
+        "description": "El resultado actualiza el anillo de progreso y el estado «Aprobada».",
+        "descriptionEn": "The result updates the progress ring and the “Passed” state."
+      },
+      {
+        "title": "Estados de producto",
+        "titleEn": "Product states",
+        "tagline": "Vacío, anuncio, tutorial nuevo",
+        "taglineEn": "Empty, announcement, new tutorial",
+        "description": "El selector de demo recorre los estados que un usuario real encontraría.",
+        "descriptionEn": "The demo selector walks through the states a real user would meet."
+      }
+    ]
+  },
+  "livePrototype": {
+    "title": "Prototipo interactivo",
+    "titleEn": "Interactive prototype",
+    "subtitle": "Abre el menú Ayuda → Help Center, navega los tutoriales, mira un video simulado, responde el quiz y observa cómo avanza tu progreso. Usa el selector de demo para ver los estados.",
+    "subtitleEn": "Open Help → Help Center, browse tutorials, watch a simulated video, take the quiz and watch your progress advance. Use the demo selector to see the states.",
+    "badge": "Prototipo funcional",
+    "badgeEn": "Functional prototype",
+    "srcEs": "/prototypes/dt-ds/index.html#/ayuda",
+    "srcEn": "/prototypes/dt-ds/index.html#/ayuda",
+    "height": 860
+  }
+}

@@ -85,10 +85,10 @@ const Router = {
             <p class="card-eyebrow" data-es="${p.eyebrow}" data-en="${p.eyebrowEn}">${p.eyebrow}</p>
             <h3 class="project-title" data-es="${p.title}" data-en="${p.titleEn}">${p.title}</h3>
             <p class="project-subtitle" data-es="${p.subtitle}" data-en="${p.subtitleEn}">${p.subtitle}</p>
-            <div class="metric-pill">
+            ${p.metric ? `<div class="metric-pill">
               <span class="metric-value">${p.metric}</span>
               <span class="metric-label" data-es="${p.metricLabel}" data-en="${p.metricLabelEn}">${p.metricLabel}</span>
-            </div>
+            </div>` : ''}
             ${p.stack ? `<ul class="stack-chips">${p.stack.map(s => `<li data-es="${s.es}" data-en="${s.en}">${s.es}</li>`).join('')}</ul>` : ''}
             <a class="card-cta" data-es="${ctaView}" data-en="${ctaViewEn}">${ctaView}</a>
           </div>

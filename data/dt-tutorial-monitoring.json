@@ -1,0 +1,91 @@
+{
+  "page": "dt-tutorial-monitoring",
+  "slug": "dt-tutorial-monitoring",
+  "title": "Monitoreo de tutoriales",
+  "subtitle": "Panel para que un administrador vea quién completó el entrenamiento de la plataforma, dónde se atasca el equipo y qué tutoriales necesitan refuerzo.",
+  "hero": {
+    "tagline": "B2B SaaS · LAST MILE · ADMIN ANALYTICS",
+    "taglineEn": "B2B SaaS · LAST MILE · ADMIN ANALYTICS",
+    "title": "Monitoreo de tutoriales",
+    "titleEn": "Tutorial monitoring",
+    "description": "Panel para que un administrador vea quién completó el entrenamiento de la plataforma, dónde se atasca el equipo y qué tutoriales necesitan refuerzo.",
+    "descriptionEn": "A panel for admins to see who completed platform training, where the team gets stuck and which tutorials need reinforcement."
+  },
+  "projectSpecs": [
+    {
+      "label": "Mi Rol",
+      "labelEn": "My Role",
+      "value": "Senior AI Product Designer + implementación front-end",
+      "valueEn": "Senior AI Product Designer + front-end implementation"
+    },
+    {
+      "label": "Contexto",
+      "labelEn": "Context",
+      "value": "Producto de logística de última milla (prototipo de portafolio)",
+      "valueEn": "Last-mile logistics product (portfolio prototype)"
+    },
+    {
+      "label": "Stack",
+      "labelEn": "Stack",
+      "value": "React 18 · TypeScript · Tailwind · Design System propio",
+      "valueEn": "React 18 · TypeScript · Tailwind · in-house Design System"
+    },
+    {
+      "label": "Entregables",
+      "labelEn": "Deliverables",
+      "value": "Pantalla funcional · Resumen + Tutoriales · Vista admin/usuario",
+      "valueEn": "Working screen · Summary + Tutorials · Admin/user view"
+    }
+  ],
+  "solution": {
+    "title": "Qué puedes probar",
+    "titleEn": "What you can try",
+    "subtitle": "Es un prototipo funcional, no un mockup: interactúa con él.",
+    "subtitleEn": "A working prototype, not a mockup: interact with it.",
+    "components": [
+      {
+        "title": "Resumen con KPIs",
+        "titleEn": "Summary with KPIs",
+        "tagline": "Qué mide el equipo",
+        "taglineEn": "What the team measures",
+        "description": "Cuatro KPIs, dona de completitud y barras por módulo: la respuesta a «¿cómo vamos?» sin abrir una tabla.",
+        "descriptionEn": "Four KPIs, a completion donut and per-module bars: the answer to “how are we doing?” without opening a table."
+      },
+      {
+        "title": "Tabla ordenable y filtrable",
+        "titleEn": "Sortable, filterable table",
+        "tagline": "Encontrar a quien necesita ayuda",
+        "taglineEn": "Find who needs help",
+        "description": "Orden por columna, filtros de estado y fecha, y restablecer en un clic.",
+        "descriptionEn": "Column sorting, status and date filters, one-click reset."
+      },
+      {
+        "title": "Acciones masivas",
+        "titleEn": "Bulk actions",
+        "tagline": "Actuar sobre varios a la vez",
+        "taglineEn": "Act on many at once",
+        "description": "Al seleccionar filas aparece una barra con acciones y confirmación por toast.",
+        "descriptionEn": "Selecting rows reveals an action bar with toast confirmation."
+      },
+      {
+        "title": "Vista admin / usuario",
+        "titleEn": "Admin / user view",
+        "tagline": "Mismo componente, dos permisos",
+        "taglineEn": "Same component, two permission levels",
+        "description": "El switch de demo muestra cómo cambia la pantalla según el rol.",
+        "descriptionEn": "The demo switch shows how the screen changes by role."
+      }
+    ]
+  },
+  "livePrototype": {
+    "title": "Prototipo interactivo",
+    "titleEn": "Interactive prototype",
+    "subtitle": "Cambia entre Resumen y Tutoriales, ordena y filtra la tabla, selecciona filas para acciones masivas y alterna la vista admin / usuario.",
+    "subtitleEn": "Switch between Summary and Tutorials, sort and filter the table, select rows for bulk actions and toggle admin / user view.",
+    "badge": "Prototipo funcional",
+    "badgeEn": "Functional prototype",
+    "srcEs": "/prototypes/dt-ds/index.html#/monitoreo",
+    "srcEn": "/prototypes/dt-ds/index.html#/monitoreo",
+    "height": 860
+  }
+}

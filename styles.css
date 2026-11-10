@@ -3436,3 +3436,5 @@ body[data-scrolled="true"] .header-sticky {
     padding: 0 var(--spacing-lg);
   }
 }
+
+.project-subtitle + .stack-chips { margin-top: var(--spacing-md); }
