@@ -219,9 +219,23 @@
       "metricLabel": "componentes documentados",
       "metricLabelEn": "documented components",
       "slug": "design-system",
-      "externalUrl": "https://dt-design-system-tawny.vercel.app",
+      "externalUrl": "/prototypes/dt-ds/index.html#/docs",
       "device": "desktop",
-      "image": "data/images/design-system.png"
+      "image": "data/images/design-system.png",
+      "stack": [
+        {
+          "es": "React",
+          "en": "React"
+        },
+        {
+          "es": "Tailwind",
+          "en": "Tailwind"
+        },
+        {
+          "es": "Tokens semánticos",
+          "en": "Semantic tokens"
+        }
+      ]
     }
   ],
   "ctaLabels": {
