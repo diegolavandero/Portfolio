@@ -15,8 +15,8 @@
     {
       "label": "Mi Rol",
       "labelEn": "My Role",
-      "value": "Product Designer (UX/UI) · end-to-end",
-      "valueEn": "Product Designer (UX/UI) · end-to-end"
+      "value": "Product Designer (UX/UI)",
+      "valueEn": "Product Designer (UX/UI)"
     },
     {
       "label": "Contexto",
@@ -56,8 +56,8 @@
     "subtitleEn": "The flooring funnel lost most of its buyers before payment. The goal: lift conversion by 20%.",
     "items": [
       {
-        "metric": "~70%",
-        "metricEn": "~70%",
+        "metric": "70%",
+        "metricEn": "70%",
         "label": "abandono en el funnel de compra",
         "labelEn": "purchase funnel abandonment",
         "description": "Parte de este abandono se debía a fricciones propias de pisos.",
@@ -230,8 +230,8 @@
     ],
     "stats": [
       {
-        "value": "~70%",
-        "valueEn": "~70%",
+        "value": "70%",
+        "valueEn": "70%",
         "description": "abandono en el funnel de compra",
         "descriptionEn": "purchase funnel abandonment"
       },
@@ -432,8 +432,8 @@
         "metricEn": "↑ 18%",
         "label": "conversión",
         "labelEn": "conversion",
-        "description": "De 30% a 35%, y el abandono de 70% a 65%.",
-        "descriptionEn": "From 30% to 35%, and abandonment from 70% to 65%."
+        "description": "De 30% a 35,4%, y el abandono de 70% a 64,6%.",
+        "descriptionEn": "From 30% to 35.4%, and abandonment from 70% to 64.6%."
       },
       {
         "metric": "↓ 24%",

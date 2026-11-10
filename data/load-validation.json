@@ -14,8 +14,8 @@
     "titleAccentEn": "Load Validation System",
     "subtitle": "De errores tardíos a validación temprana",
     "subtitleEn": "From late errors to early validation",
-    "description": "Diseñé un sistema móvil de validación de carga que permite a los conductores y supervisores verificar el 100% de las cargas antes de salir de bodega, eliminando discrepancias en ruta y creando trazabilidad digital completa.",
-    "descriptionEn": "I designed a mobile load validation system that enables drivers and supervisors to verify 100% of loads before leaving the warehouse, eliminating in-route discrepancies and creating complete digital traceability."
+    "description": "Diseñé un sistema móvil de validación de carga que permite a los conductores y supervisores verificar el 100% de las cargas antes de salir de bodega, reduciendo las discrepancias en ruta y creando trazabilidad digital completa.",
+    "descriptionEn": "I designed a mobile load validation system that enables drivers and supervisors to verify 100% of loads before leaving the warehouse, reducing in-route discrepancies and creating complete digital traceability."
   },
   "projectSpecs": [
     {
@@ -46,7 +46,7 @@
       "label": "Año",
       "labelEn": "Year",
       "value": "2023",
-      "valueEn": "2024"
+      "valueEn": "2023"
     },
     {
       "label": "Entregables",
@@ -86,9 +86,10 @@
         "icon": "📋",
         "label": "Cargas sin Docs Completos",
         "labelEn": "Loads with Incomplete Docs",
-        "metric": "0.3%",
-        "description": "Tasa de cargas que salen sin documentación completa (antes: 8.7%)",
-        "descriptionEn": "Rate of loads leaving without complete documentation (previously: 8.7%)"
+        "metric": "0,3%",
+        "description": "Tasa de cargas que salen sin documentación completa (antes: 8,7%)",
+        "descriptionEn": "Rate of loads leaving without complete documentation (previously: 8.7%)",
+        "metricEn": "0.3%"
       }
     ]
   },
@@ -104,7 +105,7 @@
         "cons": [
           "34% de errores de carga se detectan después de salir de bodega",
           "Sin registro digital de validación o responsables",
-          "8.7% de cargas con documentación incompleta al llegar a destino"
+          "8,7% de cargas con documentación incompleta al llegar a destino"
         ],
         "consEn": [
           "34% of load errors detected after leaving the warehouse",
@@ -174,7 +175,8 @@
         "textEn": "Sometimes we sign the paper without checking everything. If we don't leave on time, they dock our pay.",
         "author": "Conductor, 6 años de experiencia",
         "authorEn": "Driver, 6 years of experience",
-        "context": "Entrevista de campo"
+        "context": "Entrevista de campo",
+        "contextEn": "Field interview"
       }
     ],
     "stats": [
@@ -189,9 +191,10 @@
         "descriptionEn": "Average manual validation time"
       },
       {
-        "value": "8.7%",
+        "value": "8,7%",
         "description": "Cargas con documentación incompleta",
-        "descriptionEn": "Loads with incomplete documentation"
+        "descriptionEn": "Loads with incomplete documentation",
+        "valueEn": "8.7%"
       }
     ]
   },
@@ -699,8 +702,8 @@
       {
         "title": "Integración con WMS para pre-llenado de datos",
         "titleEn": "WMS integration for data pre-filling",
-        "description": "Conectar directamente con el WMS eliminaría la entrada manual del número de orden. Estimado de ahorro: 30 s por validación × 40 conductores × 5 rutas diarias.",
-        "descriptionEn": "Connecting directly to the WMS would eliminate manual order number entry. Estimated saving: 30 s per validation × 40 drivers × 5 daily routes."
+        "description": "Conectar directamente con el WMS permitiría evitar la entrada manual del número de orden, que hoy toma 30 s por validación (40 conductores × 5 rutas diarias).",
+        "descriptionEn": "Connecting directly to the WMS would remove manual order number entry, which today takes 30 s per validation (40 drivers × 5 daily routes)."
       }
     ]
   },

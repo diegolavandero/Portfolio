@@ -108,7 +108,7 @@
         "nameEn": "Capture Friction",
         "cons": [
           "Formularios largos → baja conversión",
-          "Contacto indirecto (email/phone) → alta fricción",
+          "Contacto indirecto (email/teléfono) → alta fricción",
           "Falta de personalización → menor confianza"
         ],
         "consEn": [
@@ -137,8 +137,8 @@
         "number": "01",
         "title": "Aumentar conversión de leads",
         "titleEn": "Increase lead conversion",
-        "meta": "Meta: desde web",
-        "metaEn": "Goal: from web",
+        "meta": "Foco: tráfico web",
+        "metaEn": "Focus: web traffic",
         "description": "Incrementar la tasa de conversión de visitantes web a leads calificados",
         "descriptionEn": "Increase the conversion rate of web visitors to qualified leads"
       },
@@ -168,7 +168,7 @@
     "subtitle": "Metodología, hipótesis e insights accionables",
     "subtitleEn": "Methodology, hypotheses and actionable insights",
     "hypothesis": [
-      "Los usuarios prefieren contacto inmediato vs formularios",
+      "Los usuarios prefieren contacto inmediato frente a formularios",
       "La simplicidad aumenta la tasa de conversión",
       "La personalización aumenta la confianza del usuario final"
     ],
@@ -640,8 +640,8 @@
         "metric": "↑",
         "label": "Velocidad de interacción",
         "labelEn": "Interaction speed",
-        "description": "Contacto más rápido entre cliente potencial y empresa",
-        "descriptionEn": "Faster contact between potential client and company"
+        "description": "Contacto más rápido entre el cliente y la empresa",
+        "descriptionEn": "Faster contact between the client and the company"
       }
     ],
     "learnings": [

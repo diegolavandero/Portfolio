@@ -139,12 +139,12 @@
     "consequencesLabel": "Esto generaba:",
     "consequencesLabelEn": "This generated:",
     "consequences": [
-      "Dependencia excesiva en intervención manual",
+      "Dependencia excesiva de la intervención manual",
       "Pérdida de visibilidad operacional",
       "Riesgo de errores críticos (rutas no guardadas)"
     ],
     "consequencesEn": [
-      "Excessive dependency on manual intervention",
+      "Excessive reliance on manual intervention",
       "Loss of operational visibility",
       "Risk of critical errors (unsaved routes)"
     ],
@@ -686,8 +686,8 @@
         "metric": "↓ 78%",
         "label": "Errores críticos",
         "labelEn": "Critical errors",
-        "description": "Eliminación de errores de rutas no guardadas y pedidos perdidos",
-        "descriptionEn": "Elimination of unsaved-route errors and lost orders"
+        "description": "Reducción de errores de rutas no guardadas y pedidos perdidos",
+        "descriptionEn": "Reduction of unsaved-route errors and lost orders"
       }
     ],
     "learningsTitle": "Aprendizajes Clave",

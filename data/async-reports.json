@@ -46,7 +46,7 @@
       "label": "Año",
       "labelEn": "Year",
       "value": "2024",
-      "valueEn": "2025"
+      "valueEn": "2024"
     },
     {
       "label": "Plataforma",
@@ -176,19 +176,22 @@
     ],
     "stats": [
       {
-        "value": "8.4 min",
+        "value": "8,4 min",
         "description": "Tiempo promedio de ejecución pre-migración",
-        "descriptionEn": "Average execution time pre-migration"
+        "descriptionEn": "Average execution time pre-migration",
+        "valueEn": "8.4 min"
       },
       {
         "value": "68%",
         "description": "Tasa de abandono en reportes con espera >2 min",
-        "descriptionEn": "Abandonment rate in reports with >2 min wait"
+        "descriptionEn": "Abandonment rate in reports with >2 min wait",
+        "valueEn": "68%"
       },
       {
-        "value": "2.8×",
+        "value": "2,8×",
         "description": "Re-ejecuciones promedio por reporte sin feedback de estado",
-        "descriptionEn": "Average re-runs per report without status feedback"
+        "descriptionEn": "Average re-runs per report without status feedback",
+        "valueEn": "2.8×"
       }
     ]
   },
@@ -289,20 +292,23 @@
     "subtitleEn": "Real behavior measured in logs, Hotjar and session recordings",
     "stats": [
       {
-        "value": "8.4 min",
+        "value": "8,4 min",
         "label": "Tiempo de ejecución promedio de reportes complejos pre-migración",
-        "labelEn": "Average execution time of complex reports pre-migration"
+        "labelEn": "Average execution time of complex reports pre-migration",
+        "valueEn": "8.4 min"
       },
       {
         "value": "68%",
         "label": "Tasa de abandono en reportes con espera mayor a 2 minutos",
         "labelEn": "Abandonment rate in reports with waits exceeding 2 minutes",
-        "color": "red"
+        "color": "red",
+        "valueEn": "68%"
       },
       {
-        "value": "2.8×",
+        "value": "2,8×",
         "label": "Re-ejecuciones promedio por reporte — el usuario no sabía si había fallado",
-        "labelEn": "Average re-runs per report — the user didn't know if it had failed"
+        "labelEn": "Average re-runs per report — the user didn't know if it had failed",
+        "valueEn": "2.8×"
       }
     ],
     "patternsTitle": "Patrones Identificados en Session Recordings",
@@ -311,7 +317,7 @@
     "behaviorsLabelEn": "OBSERVED BEHAVIORS",
     "behaviors": [
       {
-        "text": "\"Rage-click\" en el botón de generar reporte — 4.2 clics promedio sobre un botón deshabilitado durante la carga",
+        "text": "\"Rage-click\" en el botón de generar reporte — 4,2 clics promedio sobre un botón deshabilitado durante la carga",
         "textEn": "\"Rage-click\" on the generate report button — 4.2 average clicks on a disabled button during load"
       },
       {
@@ -397,7 +403,7 @@
         },
         {
           "type": "positive",
-          "text": "Notificación push al completar + descarga directa con 1 click",
+          "text": "Notificación push al completar + descarga directa con 1 clic",
           "textEn": "Push notification on completion + direct download with 1 click"
         },
         {
@@ -414,29 +420,33 @@
         "value": "78%",
         "label": "prefirió Variante B",
         "labelEn": "preferred Variant B",
-        "color": "indigo"
+        "color": "indigo",
+        "valueEn": "78%"
       },
       {
         "value": "-61%",
         "label": "abandono de reportes",
         "labelEn": "report abandonment",
-        "color": "green"
+        "color": "green",
+        "valueEn": "-61%"
       },
       {
         "value": "+34%",
         "label": "tareas completadas",
         "labelEn": "task completion",
-        "color": "green"
+        "color": "green",
+        "valueEn": "+34%"
       },
       {
         "value": "22%",
         "label": "prefirió A (managers con necesidad de resultado inmediato)",
         "labelEn": "preferred A (managers needing immediate result)",
-        "color": "amber"
+        "color": "amber",
+        "valueEn": "22%"
       }
     ],
-    "insight": "El 22% que prefirió el modo síncrono reveló un patrón clave: eran managers que ejecutaban reportes en tiempo real durante reuniones. Esto derivó en una sola decisión: async por defecto, con modo inmediato opcional para reportes livianos (tiempo estimado de generación corto).",
-    "insightEn": "The 22% who preferred synchronous mode revealed a key pattern: they were managers running reports in real time during meetings. This led to a single decision: async by default, with an optional immediate mode for lightweight reports (short estimated generation time)."
+    "insight": "El 22% que prefirió el modo síncrono reveló un patrón clave: eran managers que ejecutaban reportes en tiempo real durante reuniones. Esto derivó en una sola decisión: async por defecto, con modo inmediato opcional para reportes livianos (generación rápida).",
+    "insightEn": "The 22% who preferred synchronous mode revealed a key pattern: they were managers running reports in real time during meetings. This led to a single decision: async by default, with an optional immediate mode for lightweight reports (fast generation)."
   },
   "solution": {
     "title": "La Solución",
@@ -483,8 +493,8 @@
       {
         "title": "¿Bloqueante o asíncrono en la UI?",
         "titleEn": "Blocking or async in the UI?",
-        "justification": "Testeamos 2 patrones: (A) spinner bloqueante con barra de progreso, (B) notificación push cuando el reporte está listo. El 78% de usuarios prefirió B porque podían seguir trabajando. Pero el 22% que prefirió A eran managers que querían estar frente al resultado inmediatamente — solución: async por defecto, con modo inmediato opcional para reportes livianos (tiempo estimado de generación corto).",
-        "justificationEn": "We tested 2 patterns: (A) blocking spinner with progress bar, (B) push notification when report is ready. 78% of users preferred B because they could keep working. But the 22% who preferred A were managers who wanted to be in front of the result immediately — solution: async by default, with an optional immediate mode for lightweight reports (short estimated generation time).",
+        "justification": "Testeamos 2 patrones: (A) spinner bloqueante con barra de progreso, (B) notificación push cuando el reporte está listo. El 78% de usuarios prefirió B porque podían seguir trabajando. Pero el 22% que prefirió A eran managers que querían estar frente al resultado inmediatamente — solución: async por defecto, con modo inmediato opcional para reportes livianos (generación rápida).",
+        "justificationEn": "We tested 2 patterns: (A) blocking spinner with progress bar, (B) push notification when report is ready. 78% of users preferred B because they could keep working. But the 22% who preferred A were managers who wanted to be in front of the result immediately — solution: async by default, with an optional immediate mode for lightweight reports (fast generation).",
         "tradeoff": "El usuario async pierde el resultado inmediato en pantalla — requiere cambio de hábito y confianza en el sistema de notificaciones.",
         "tradeoffEn": "The async user loses the immediate on-screen result — requires habit change and trust in the notification system."
       },
@@ -612,8 +622,8 @@
       {
         "title": "El 22% que prefirió modo síncrono reveló un segmento no anticipado",
         "titleEn": "The 22% who preferred synchronous mode revealed an unanticipated segment",
-        "description": "Los managers que necesitaban el resultado inmediato mostraron un caso de uso distinto, no solo una preferencia. La solución fue async por defecto, con modo inmediato opcional para reportes livianos (tiempo estimado de generación corto).",
-        "descriptionEn": "Managers who needed the immediate result showed a distinct use case, not just a preference. The solution was async by default, with an optional immediate mode for lightweight reports (short estimated generation time)."
+        "description": "Los managers que necesitaban el resultado inmediato mostraron un caso de uso distinto, no solo una preferencia. La solución fue async por defecto, con modo inmediato opcional para reportes livianos (generación rápida).",
+        "descriptionEn": "Managers who needed the immediate result showed a distinct use case, not just a preference. The solution was async by default, with an optional immediate mode for lightweight reports (fast generation)."
       },
       {
         "title": "El historial de reportes se convirtió en un caso de uso principal no planificado",

@@ -183,14 +183,16 @@
         "textEn": "I don't need more info on screen. I need it told to me while I'm driving.",
         "author": "Miguel, conductor 3 años",
         "authorEn": "Miguel, driver 3 years",
-        "context": "Contextual Inquiry en campo"
+        "context": "Contextual Inquiry en campo",
+        "contextEn": "Contextual inquiry in the field"
       },
       {
         "text": "El código del cliente llega al WhatsApp cuando ya estoy en la puerta.",
         "textEn": "The client's code arrives on WhatsApp when I'm already at the door.",
         "author": "Conductor, zona alta densidad",
         "authorEn": "Driver, high-density zone",
-        "context": "Entrevista de campo"
+        "context": "Entrevista de campo",
+        "contextEn": "Field interview"
       }
     ],
     "stats": [
@@ -224,12 +226,12 @@
         "roleEn": "Last-Mile Driver · 3 years",
         "avatar": "https://i.pravatar.cc/150?img=15",
         "goals": [
-          "Completar las 28 paradas del turno en el tiempo estimado",
+          "Completar las 28 paradas del turno en el tiempo asignado",
           "Evitar llamar al dispatcher — cada llamada lo atrasa 5 min",
           "Mejorar su calificación para acceder a mejores rutas"
         ],
         "goalsEn": [
-          "Complete 28 stops per shift within the estimated time",
+          "Complete 28 stops per shift within the allotted time",
           "Avoid calling the dispatcher — each call delays him 5 min",
           "Improve his rating to access better routes"
         ],
@@ -307,7 +309,7 @@
         "avatar": "https://i.pravatar.cc/150?img=57",
         "goals": [
           "Bajar la tasa de entrega fallida en primer intento por debajo del 8%",
-          "Reducir costo de re-entregas (promedio $4.20 USD/re-entrega)",
+          "Reducir costo de re-entregas (promedio US$4,20/re-entrega)",
           "Demostrar ROI de tecnología AI ante dirección en Q3"
         ],
         "goalsEn": [
@@ -511,8 +513,8 @@
         "metric": "-22%",
         "label": "Entregas Fallidas en Primer Intento",
         "labelEn": "First-Attempt Failed Deliveries",
-        "description": "La tasa de falla bajó de 14% a ~11%. 'No pudo acceder' pasó de 61% a 18% de las causas.",
-        "descriptionEn": "The failure rate fell from 14% to ~11%. 'Couldn't access' dropped from 61% to 18% of causes."
+        "description": "La tasa de falla bajó de 14% a 10,9%. 'No pudo acceder' pasó de 61% a 18% de las causas.",
+        "descriptionEn": "The failure rate fell from 14% to 10.9%. 'Couldn't access' dropped from 61% to 18% of causes."
       },
       {
         "icon": "📞",
