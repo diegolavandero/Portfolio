@@ -6,8 +6,8 @@
   "subtitle": "Aplicación Web Logística",
   "subtitleEn": "Logistics Web App",
   "hero": {
-    "tagline": "QUICKCOMMERCE • 2023",
-    "taglineEn": "QUICKCOMMERCE • 2023",
+    "tagline": "QUICKCOMMERCE · 2023",
+    "taglineEn": "QUICKCOMMERCE · 2023",
     "title": "Sistema de ",
     "titleEn": "System of ",
     "titleAccent": "Asignación Manual & Automática",
@@ -21,8 +21,8 @@
     {
       "label": "Mi Rol",
       "labelEn": "Role",
-      "value": "Senior UX/UI Designer",
-      "valueEn": "Senior UX/UI Designer"
+      "value": "Senior AI Product Designer",
+      "valueEn": "Senior AI Product Designer"
     },
     {
       "label": "Contexto",
@@ -56,8 +56,8 @@
     }
   ],
   "heroImage": {
-    "placeholder": "Mockup principal — Asignación híbrida (auto + manual)",
-    "placeholderEn": "Main mockup — Hybrid assignment (auto + manual)",
+    "placeholder": "Mockup principal · Asignación híbrida (auto + manual)",
+    "placeholderEn": "Main mockup · Hybrid assignment (auto + manual)",
     "device": "desktop",
     "src": "data/images/on-demand-routing-hero.webp"
   },

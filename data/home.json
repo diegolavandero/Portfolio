@@ -26,8 +26,8 @@
   },
   "projects": [
     {
-      "eyebrow": "PLATAFORMA B2B2C • 2025",
-      "eyebrowEn": "B2B2C PLATFORM • 2025",
+      "eyebrow": "PLATAFORMA B2B2C · 2025",
+      "eyebrowEn": "B2B2C PLATFORM · 2025",
       "title": "Sistema de Captura de Leads en Tiempo Real",
       "titleEn": "Real-time Lead Capture System",
       "subtitle": "Plataforma de widget de chat pre-venta configurable",
@@ -40,10 +40,10 @@
       "image": "data/images/lead-capture.webp"
     },
     {
-      "eyebrow": "B2C E-COMMERCE • 2025",
-      "eyebrowEn": "B2C E-COMMERCE • 2025",
-      "title": "Piso Ideal — Falabella",
-      "titleEn": "Ideal Floor — Falabella",
+      "eyebrow": "B2C E-COMMERCE · 2025",
+      "eyebrowEn": "B2C E-COMMERCE · 2025",
+      "title": "Piso Ideal · Falabella",
+      "titleEn": "Ideal Floor · Falabella",
       "subtitle": "Asistente de compra con recomendación por IA para categoría pisos",
       "subtitleEn": "AI-powered purchase assistant for flooring category",
       "metric": "↑ 18%",
@@ -51,11 +51,25 @@
       "metricLabelEn": "category conversion",
       "slug": "falabella",
       "device": "mobile",
-      "image": "data/images/falabella.webp?v=2"
+      "image": "data/images/falabella.webp?v=2",
+      "stack": [
+        {
+          "es": "Prototipo funcional",
+          "en": "Live prototype"
+        },
+        {
+          "es": "React",
+          "en": "React"
+        },
+        {
+          "es": "Claude Code",
+          "en": "Claude Code"
+        }
+      ]
     },
     {
-      "eyebrow": "DT GLOBAL MOBILE APP • 2024",
-      "eyebrowEn": "DT GLOBAL MOBILE APP • 2024",
+      "eyebrow": "DT GLOBAL MOBILE APP · 2024",
+      "eyebrowEn": "DT GLOBAL MOBILE APP · 2024",
       "title": "Driver AI",
       "titleEn": "Driver AI",
       "subtitle": "Inteligencia de ubicación para última milla",
@@ -68,8 +82,8 @@
       "image": "data/images/driver-ai.webp"
     },
     {
-      "eyebrow": "QUICKCOMMERCE • 2023",
-      "eyebrowEn": "QUICKCOMMERCE • 2023",
+      "eyebrow": "QUICKCOMMERCE · 2023",
+      "eyebrowEn": "QUICKCOMMERCE · 2023",
       "title": "On-Demand Routing",
       "titleEn": "On-Demand Routing",
       "subtitle": "Sistema de asignación manual y automática en tiempo real",
@@ -82,8 +96,8 @@
       "image": "data/images/on-demand-routing.webp"
     },
     {
-      "eyebrow": "DT GLOBAL MOBILE APP • 2023",
-      "eyebrowEn": "DT GLOBAL MOBILE APP • 2023",
+      "eyebrow": "DT GLOBAL MOBILE APP · 2023",
+      "eyebrowEn": "DT GLOBAL MOBILE APP · 2023",
       "title": "Validación de Carga",
       "titleEn": "Load Validation",
       "subtitle": "Sistema de verificación pre-ruta",
@@ -93,11 +107,21 @@
       "metricLabelEn": "loading errors",
       "slug": "load-validation",
       "device": "mobile",
-      "image": "data/images/load-validation.webp"
+      "image": "data/images/load-validation.webp",
+      "stack": [
+        {
+          "es": "Prototipo funcional",
+          "en": "Live prototype"
+        },
+        {
+          "es": "React",
+          "en": "React"
+        }
+      ]
     },
     {
-      "eyebrow": "DT GLOBAL DESKTOP APP • 2024",
-      "eyebrowEn": "DT GLOBAL DESKTOP APP • 2024",
+      "eyebrow": "DT GLOBAL DESKTOP APP · 2024",
+      "eyebrowEn": "DT GLOBAL DESKTOP APP · 2024",
       "title": "Reportes Asincrónicos",
       "titleEn": "Asynchronous Reports",
       "subtitle": "Procesamiento de datos sin bloqueos",
@@ -110,8 +134,8 @@
       "image": "data/images/async-reports.webp"
     },
     {
-      "eyebrow": "DESIGN SYSTEM • 2024–2026",
-      "eyebrowEn": "DESIGN SYSTEM • 2024–2026",
+      "eyebrow": "DESIGN SYSTEM · 2024–2026",
+      "eyebrowEn": "DESIGN SYSTEM · 2024–2026",
       "title": "DispatchTrack Design System",
       "titleEn": "DispatchTrack Design System",
       "subtitle": "Sistema de componentes, tokens y patrones para productos Last Mile",
@@ -128,5 +152,12 @@
   "ctaLabels": {
     "viewProject": "Ver proyecto",
     "viewProjectEn": "View project"
+  },
+  "buildNote": {
+    "es": "Este portafolio está programado a mano con HTML, CSS y JavaScript, y desarrollado con Claude Code.",
+    "en": "This portfolio is hand-coded in HTML, CSS and vanilla JavaScript, built with Claude Code.",
+    "cta": "Ver código en GitHub",
+    "ctaEn": "View source on GitHub",
+    "url": "https://github.com/diegolavandero/Portfolio"
   }
 }

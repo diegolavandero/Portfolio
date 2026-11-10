@@ -6,7 +6,7 @@
 
 const Router = {
   currentPage: 'home',
-  currentLang: localStorage.getItem('lang') || 'es',
+  currentLang: localStorage.getItem('lang') || 'en',
 
   init: () => {
     Router.setLanguage(Router.currentLang);
@@ -89,6 +89,7 @@ const Router = {
               <span class="metric-value">${p.metric}</span>
               <span class="metric-label" data-es="${p.metricLabel}" data-en="${p.metricLabelEn}">${p.metricLabel}</span>
             </div>
+            ${p.stack ? `<ul class="stack-chips">${p.stack.map(s => `<li data-es="${s.es}" data-en="${s.en}">${s.es}</li>`).join('')}</ul>` : ''}
             <a class="card-cta" data-es="${ctaView}" data-en="${ctaViewEn}">${ctaView}</a>
           </div>
           <div class="project-image">${mkThumb(p.device, p.image)}</div>
@@ -124,6 +125,7 @@ const Router = {
             <div class="projects-grid">
               ${projectsHTML}
             </div>
+            ${data.buildNote ? `<p class="build-note"><span data-es="${data.buildNote.es}" data-en="${data.buildNote.en}">${data.buildNote.es}</span> <a href="${data.buildNote.url}" target="_blank" rel="noopener" data-es="${data.buildNote.cta}" data-en="${data.buildNote.ctaEn}">${data.buildNote.cta}</a></p>` : ''}
           </div>
         </section>
       `;

@@ -265,6 +265,40 @@ body {
   color: var(--gray-600);
 }
 
+.stack-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--spacing-lg);
+}
+
+.stack-chips li {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gray-700);
+  background: var(--gray-100);
+  border: 1px solid var(--gray-200);
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.build-note {
+  margin-top: var(--spacing-2xl);
+  font-size: 13px;
+  color: var(--gray-500);
+  text-align: center;
+}
+
+.build-note a {
+  color: var(--indigo-700);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.build-note a:hover { text-decoration: underline; }
+
 .card-cta {
   display: inline-block;
   font-size: 14px;

@@ -21,8 +21,8 @@
     {
       "label": "Mi Rol",
       "labelEn": "Role",
-      "value": "Senior UX/UI Designer",
-      "valueEn": "Senior UX/UI Designer"
+      "value": "Senior AI Product Designer",
+      "valueEn": "Senior AI Product Designer"
     },
     {
       "label": "Contexto",
@@ -595,8 +595,8 @@
           "data/images/lead-capture-mockup-1.webp",
           "data/images/lead-capture-mockup-2.webp"
         ],
-        "placeholder": "Mockup: Widget de chat — flujo cliente",
-        "placeholderEn": "Mockup: Chat widget — client flow"
+        "placeholder": "Mockup: Widget de chat · flujo cliente",
+        "placeholderEn": "Mockup: Chat widget · client flow"
       },
       {
         "badge": "Plataforma Settings",

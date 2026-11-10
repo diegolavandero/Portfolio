@@ -6,8 +6,8 @@
   "subtitle": "IA · Logística · Móvil",
   "subtitleEn": "AI · Logistics · Mobile",
   "hero": {
-    "tagline": "DT GLOBAL MOBILE APP • 2024",
-    "taglineEn": "DT GLOBAL MOBILE APP • 2024",
+    "tagline": "DT GLOBAL MOBILE APP · 2024",
+    "taglineEn": "DT GLOBAL MOBILE APP · 2024",
     "title": "Driver AI ",
     "titleEn": "Driver AI ",
     "titleAccent": "Inteligencia de Ubicación para Última Milla",
@@ -21,8 +21,8 @@
     {
       "label": "Mi Rol",
       "labelEn": "My Role",
-      "value": "AI Product Designer",
-      "valueEn": "AI Product Designer"
+      "value": "Senior AI Product Designer",
+      "valueEn": "Senior AI Product Designer"
     },
     {
       "label": "Sector",
@@ -57,8 +57,8 @@
   ],
   "heroImage": {
     "src": "data/images/driver-ai-hero.webp",
-    "placeholder": "Flujo de usuario Driver AI — Address Intelligence y Modal Contextual",
-    "placeholderEn": "Driver AI user flow — Address Intelligence and Contextual Modal",
+    "placeholder": "Flujo de usuario Driver AI · Address Intelligence y Modal Contextual",
+    "placeholderEn": "Driver AI user flow · Address Intelligence and Contextual Modal",
     "device": "mobile"
   },
   "whyItMatters": {
@@ -472,8 +472,8 @@
     "titleEn": "UI Mockups",
     "items": [
       {
-        "title": "Flujo de activación — Order Card → Modal → TTS",
-        "titleEn": "Activation flow — Order Card → Modal → TTS",
+        "title": "Flujo de activación · Order Card → Modal → TTS",
+        "titleEn": "Activation flow · Order Card → Modal → TTS",
         "description": "Tres pantallas: lista de órdenes con ícono AI, modal contextual bottom sheet y FAB TTS activo durante la navegación.",
         "descriptionEn": "Three screens: orders list with AI icon, contextual bottom sheet modal and active TTS FAB during navigation.",
         "src": "data/images/driver-ai-mockup-1.webp",
@@ -481,8 +481,8 @@
         "altEn": "Driver AI activation flow"
       },
       {
-        "title": "Address Intelligence — Ficha de edificio",
-        "titleEn": "Address Intelligence — Building card",
+        "title": "Address Intelligence · Ficha de edificio",
+        "titleEn": "Address Intelligence · Building card",
         "description": "Ficha detallada con tipo de acceso, zona de estacionamiento, códigos y notas de conductores anteriores.",
         "descriptionEn": "Detailed card with access type, parking zone, codes and notes from previous drivers.",
         "src": "data/images/driver-ai-mockup-2.webp",

@@ -6,8 +6,8 @@
   "subtitle": "Analítica · SaaS · Datos",
   "subtitleEn": "Analytics · SaaS · Data",
   "hero": {
-    "tagline": "DT GLOBAL DESKTOP APP • 2024",
-    "taglineEn": "DT GLOBAL DESKTOP APP • 2024",
+    "tagline": "DT GLOBAL DESKTOP APP · 2024",
+    "taglineEn": "DT GLOBAL DESKTOP APP · 2024",
     "title": "Sistema de ",
     "titleEn": "Asynchronous ",
     "titleAccent": "Reportes Asincrónicos",
@@ -21,8 +21,8 @@
     {
       "label": "Mi Rol",
       "labelEn": "My Role",
-      "value": "Senior UX/UI Designer",
-      "valueEn": "Senior UX/UI Designer"
+      "value": "Senior AI Product Designer",
+      "valueEn": "Senior AI Product Designer"
     },
     {
       "label": "Sector",
@@ -362,8 +362,8 @@
     "subtitle": "Modo síncrono vs asíncrono — n=42 usuarios, 2 semanas en staging",
     "subtitleEn": "Synchronous vs asynchronous mode — n=42 users, 2 weeks in staging",
     "variantA": {
-      "label": "VARIANTE A — MODO SÍNCRONO (CONTROL)",
-      "labelEn": "VARIANT A — SYNCHRONOUS MODE (CONTROL)",
+      "label": "VARIANTE A · MODO SÍNCRONO (CONTROL)",
+      "labelEn": "VARIANT A · SYNCHRONOUS MODE (CONTROL)",
       "items": [
         {
           "type": "negative",
@@ -388,8 +388,8 @@
       ]
     },
     "variantB": {
-      "label": "VARIANTE B — MODO ASÍNCRONO (TEST)",
-      "labelEn": "VARIANT B — ASYNCHRONOUS MODE (TEST)",
+      "label": "VARIANTE B · MODO ASÍNCRONO (TEST)",
+      "labelEn": "VARIANT B · ASYNCHRONOUS MODE (TEST)",
       "items": [
         {
           "type": "positive",
