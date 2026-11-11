@@ -766,7 +766,8 @@ body {
 }
 
 .specs-section .container {
-  padding: 0 48px;
+  /* mismo contenedor que hero/role/why-matters: la fila nunca excede el margen del texto */
+  padding: 0 93.5px;
   max-width: 1387px;
 }
 
