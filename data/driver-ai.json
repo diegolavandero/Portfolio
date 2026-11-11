@@ -560,8 +560,8 @@
       {
         "title": "Predicción de tiempo por parada",
         "titleEn": "Time-per-stop prediction",
-        "description": "Extender Address Intelligence a predicción de tiempo por parada por edificio, para recalcular el ETA de la ruta completa antes de salir — impactando la planificación del turno entero.",
-        "descriptionEn": "Extend Address Intelligence to time-per-stop prediction per building, to recalculate the full route ETA before departure — impacting entire shift planning."
+        "description": "Extender Address Intelligence a predicción de tiempo por parada en cada edificio, para recalcular el ETA de la ruta completa antes de salir — impactando la planificación del turno entero.",
+        "descriptionEn": "Extend Address Intelligence to time-per-stop prediction for each building, to recalculate the full route ETA before departure — impacting entire shift planning."
       }
     ]
   },
