@@ -104,7 +104,7 @@
       "subtitleEn": "A panel for admins to see who completed platform training, where the team gets stuck and which tutorials need reinforcement.",
       "slug": "dt-tutorial-monitoring",
       "device": "desktop",
-      "image": "data/images/dt-tutorial-monitoring.webp",
+      "image": "data/images/dt-tutorial-monitoring.webp?v=2",
       "metric": "↑ 48 pp",
       "metricLabel": "onboardings completados",
       "metricLabelEn": "onboardings completed"
