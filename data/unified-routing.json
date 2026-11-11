@@ -51,15 +51,14 @@
     {
       "label": "Entregables",
       "labelEn": "Deliverables",
-      "value": "Web · Prototipo en Figma · Documentación UX en Jira",
-      "valueEn": "Web · Figma prototype · UX Jira documentation"
+      "value": "Prototipo Figma · Docs Jira",
+      "valueEn": "Figma prototype · Jira docs"
     },
     {
       "label": "Herramientas",
       "labelEn": "Tools",
       "value": "Claude · Figma MCP",
-      "valueEn": "Claude · Figma MCP",
-      "wide": true
+      "valueEn": "Claude · Figma MCP"
     }
   ],
   "heroImage": {

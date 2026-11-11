@@ -39,8 +39,8 @@
     {
       "label": "Equipo",
       "labelEn": "Team",
-      "value": "Diseño Individual",
-      "valueEn": "Solo Designer"
+      "value": "Diseño individual",
+      "valueEn": "Solo designer"
     },
     {
       "label": "Año",
@@ -51,15 +51,14 @@
     {
       "label": "Entregables",
       "labelEn": "Deliverables",
-      "value": "Web Desktop + Widget · Prototipo en Figma",
-      "valueEn": "Web Desktop + Widget · Figma prototype"
+      "value": "Prototipo Figma · Widget",
+      "valueEn": "Figma prototype · Widget"
     },
     {
       "label": "Herramientas",
       "labelEn": "Tools",
       "value": "Figma",
-      "valueEn": "Figma",
-      "wide": true
+      "valueEn": "Figma"
     }
   ],
   "heroImage": {

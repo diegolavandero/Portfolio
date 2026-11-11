@@ -21,20 +21,20 @@
     {
       "label": "Contexto",
       "labelEn": "Context",
-      "value": "Falabella · Sodimac Chile",
-      "valueEn": "Falabella · Sodimac Chile"
+      "value": "Falabella · Sodimac",
+      "valueEn": "Falabella · Sodimac"
     },
     {
       "label": "Alcance",
       "labelEn": "Scope",
-      "value": "Conceptualización → flujos → UI de alta fidelidad",
-      "valueEn": "Conceptualization → flows → high-fidelity UI"
+      "value": "Concepto → UI hi-fi",
+      "valueEn": "Concept → hi-fi UI"
     },
     {
       "label": "Equipo",
       "labelEn": "Team",
-      "value": "Contractor + Equipo de producto de Falabella",
-      "valueEn": "Contractor + Falabella product team"
+      "value": "Contractor + Falabella",
+      "valueEn": "Contractor + Falabella"
     },
     {
       "label": "Año",
@@ -45,15 +45,14 @@
     {
       "label": "Entregables",
       "labelEn": "Deliverables",
-      "value": "14 pantallas · Prototipo en Figma · Documentación UX en Jira",
-      "valueEn": "14 screens · Figma prototype · UX Jira documentation"
+      "value": "14 pantallas · Prototipo · Jira",
+      "valueEn": "14 screens · Prototype · Jira"
     },
     {
       "label": "Herramientas",
       "labelEn": "Tools",
       "value": "Claude · Figma MCP",
-      "valueEn": "Claude · Figma MCP",
-      "wide": true
+      "valueEn": "Claude · Figma MCP"
     }
   ],
   "whyItMatters": {

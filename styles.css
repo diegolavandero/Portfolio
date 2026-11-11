@@ -766,18 +766,15 @@ body {
 }
 
 .specs-section .container {
-  padding: 0 93.5px;
+  padding: 0 48px;
   max-width: 1387px;
 }
 
 .specs-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: var(--spacing-xl);
-}
-
-.spec-item--wide {
-  grid-column: 1 / -1;
+  /* 7 specs en una sola fila: Rol · Contexto · Duración · Equipo · Año · Entregables · Herramientas */
+  grid-template-columns: 1.5fr 1.4fr 0.9fr 1.2fr 0.6fr 1.7fr 1.3fr;
+  gap: var(--spacing-lg);
 }
 
 .spec-item {
@@ -787,7 +784,7 @@ body {
 }
 
 .spec-label {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -795,7 +792,8 @@ body {
 }
 
 .spec-value {
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 1.4;
   font-weight: 500;
   color: var(--gray-900);
 }

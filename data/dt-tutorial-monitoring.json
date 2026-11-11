@@ -25,8 +25,8 @@
     {
       "label": "Contexto",
       "labelEn": "Context",
-      "value": "SaaS B2B · Logística · Web admin",
-      "valueEn": "B2B SaaS · Logistics · Admin web"
+      "value": "SaaS B2B · Logística",
+      "valueEn": "B2B SaaS · Logistics"
     },
     {
       "label": "Duración",
@@ -49,15 +49,14 @@
     {
       "label": "Entregables",
       "labelEn": "Deliverables",
-      "value": "Web · Prototipo funcional · Investigación UX · Documentación Jira",
-      "valueEn": "Web · Working prototype · UX research · Jira documentation"
+      "value": "Prototipo · Research · Jira",
+      "valueEn": "Prototype · Research · Jira"
     },
     {
       "label": "Herramientas",
       "labelEn": "Tools",
-      "value": "Claude · Cursor · React + Tailwind",
-      "valueEn": "Claude · Cursor · React + Tailwind",
-      "wide": true
+      "value": "Claude · Cursor · React",
+      "valueEn": "Claude · Cursor · React"
     }
   ],
   "solution": {

@@ -51,15 +51,14 @@
     {
       "label": "Entregables",
       "labelEn": "Deliverables",
-      "value": "Mobile · Prototipo en Figma",
-      "valueEn": "Mobile · Figma prototype"
+      "value": "Prototipo Figma",
+      "valueEn": "Figma prototype"
     },
     {
       "label": "Herramientas",
       "labelEn": "Tools",
       "value": "Figma",
-      "valueEn": "Figma",
-      "wide": true
+      "valueEn": "Figma"
     }
   ],
   "heroImage": {
