@@ -155,8 +155,8 @@
         "nameEn": "Task Analysis",
         "description": "Descompusimos el flujo completo de validación pre-ruta en subtareas con sus condiciones de éxito, puntos de decisión y carga cognitiva. Identificamos 7 momentos críticos donde podía ocurrir un error — 5 de ellos en los primeros 3 pasos del flujo.",
         "descriptionEn": "We decomposed the complete pre-route validation flow into subtasks with their success conditions, decision points and cognitive load. We identified 7 critical moments where an error could occur — 5 of them in the first 3 steps of the flow.",
-        "finding": "El conductor hacía la comparación manifiesto–carga en su cabeza. No existía ningún soporte cognitivo externo para esa tarea.",
-        "findingEn": "The driver was making the manifest–load comparison in their head. No external cognitive support existed for that task."
+        "finding": "El conductor hacía la comparación manifiesto-carga en su cabeza. No existía ningún soporte cognitivo externo para esa tarea.",
+        "findingEn": "The driver was making the manifest-to-load comparison in their head. No external cognitive support existed for that task."
       },
       {
         "name": "Tree Testing",
@@ -238,12 +238,12 @@
         ],
         "behaviors": [
           "Trabaja con guantes en entorno de bodega",
-          "Maneja 15-20 rutas simultáneas por turno",
+          "Maneja 15–20 rutas simultáneas por turno",
           "Prefiere confirmación rápida sobre detalle"
         ],
         "behaviorsEn": [
           "Works with gloves in warehouse environment",
-          "Manages 15-20 simultaneous routes per shift",
+          "Manages 15–20 simultaneous routes per shift",
           "Prefers fast confirmation over detail"
         ],
         "quote": "Necesito algo que no se pueda ignorar cuando hay un error. El papel se puede perder, pero una foto no.",
@@ -585,7 +585,7 @@
         "device": "none",
         "title": "Validación por orden",
         "titleEn": "Validation by order",
-        "description": "Cuando la orden no tiene desglose de ítems —se maneja como bulto o paquete único— la validación ocurre a nivel de orden completa, no por SKU.",
+        "description": "Cuando la orden no tiene desglose de ítems — se maneja como bulto o paquete único — la validación ocurre a nivel de orden completa, no por SKU.",
         "descriptionEn": "When the order has no item breakdown — handled as a single bag or package — validation happens at the whole-order level instead of per SKU.",
         "src": "data/images/load-validation-by-order.png",
         "alt": "Vista de lista de órdenes de carga, validación a nivel de orden",

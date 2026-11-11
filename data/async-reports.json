@@ -342,17 +342,17 @@
     "distributionNoteEn": "% of users who abandon before the report finishes",
     "distribution": [
       {
-        "range": "0-30s",
+        "range": "0–30s",
         "value": 8,
         "color": "green"
       },
       {
-        "range": "30-90s",
+        "range": "30–90s",
         "value": 24,
         "color": "amber"
       },
       {
-        "range": "90-120s",
+        "range": "90–120s",
         "value": 68,
         "color": "red"
       },
