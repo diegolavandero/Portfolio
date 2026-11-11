@@ -26,6 +26,31 @@
   },
   "projects": [
     {
+      "eyebrow": "DT LASTMILE DESKTOP · 2026",
+      "eyebrowEn": "DT LASTMILE DESKTOP · 2026",
+      "title": "Monitoreo de tutoriales",
+      "titleEn": "Tutorial monitoring",
+      "subtitle": "Panel para que un administrador vea quién completó el entrenamiento de la plataforma, dónde se atasca el equipo y qué tutoriales necesitan refuerzo.",
+      "subtitleEn": "A panel for admins to see who completed platform training, where the team gets stuck and which tutorials need reinforcement.",
+      "slug": "dt-tutorial-monitoring",
+      "device": "desktop",
+      "image": "data/images/dt-tutorial-monitoring.webp?v=2",
+      "metric": "34% → 82%",
+      "metricLabel": "onboardings completados",
+      "metricLabelEn": "onboardings completed"
+    },
+    {
+      "eyebrow": "DT LASTMILE DESKTOP · 2026",
+      "eyebrowEn": "DT LASTMILE DESKTOP · 2026",
+      "title": "Centro de ayuda y onboarding",
+      "titleEn": "Help center & onboarding",
+      "subtitle": "Centro de ayuda contextual con 49 tutoriales en tres niveles, video, quiz y progreso, que acompaña al usuario sin sacarlo de su pantalla.",
+      "subtitleEn": "Contextual help center with 49 tutorials across three levels, video, quiz and progress, guiding users without taking them off their screen.",
+      "slug": "dt-help-center",
+      "device": "desktop",
+      "image": "data/images/dt-help-center.webp?v=2"
+    },
+    {
       "eyebrow": "PLATAFORMA B2B2C · 2025",
       "eyebrowEn": "B2B2C PLATFORM · 2025",
       "title": "Sistema de Captura de Leads en Tiempo Real",
@@ -94,31 +119,6 @@
       "slug": "load-validation",
       "device": "mobile",
       "image": "data/images/load-validation.webp"
-    },
-    {
-      "eyebrow": "DT LASTMILE DESKTOP · 2024",
-      "eyebrowEn": "DT LASTMILE DESKTOP · 2024",
-      "title": "Monitoreo de tutoriales",
-      "titleEn": "Tutorial monitoring",
-      "subtitle": "Panel para que un administrador vea quién completó el entrenamiento de la plataforma, dónde se atasca el equipo y qué tutoriales necesitan refuerzo.",
-      "subtitleEn": "A panel for admins to see who completed platform training, where the team gets stuck and which tutorials need reinforcement.",
-      "slug": "dt-tutorial-monitoring",
-      "device": "desktop",
-      "image": "data/images/dt-tutorial-monitoring.webp?v=2",
-      "metric": "34% → 82%",
-      "metricLabel": "onboardings completados",
-      "metricLabelEn": "onboardings completed"
-    },
-    {
-      "eyebrow": "DT LASTMILE DESKTOP · 2024",
-      "eyebrowEn": "DT LASTMILE DESKTOP · 2024",
-      "title": "Centro de ayuda y onboarding",
-      "titleEn": "Help center & onboarding",
-      "subtitle": "Centro de ayuda contextual con 49 tutoriales en tres niveles, video, quiz y progreso, que acompaña al usuario sin sacarlo de su pantalla.",
-      "subtitleEn": "Contextual help center with 49 tutorials across three levels, video, quiz and progress, guiding users without taking them off their screen.",
-      "slug": "dt-help-center",
-      "device": "desktop",
-      "image": "data/images/dt-help-center.webp?v=2"
     },
     {
       "eyebrow": "DT GLOBAL APP DESKTOP · 2024",
