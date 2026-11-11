@@ -232,11 +232,11 @@
     "subtitleEn": "Two profiles with different needs: the one who needs to see progress and the one who creates it",
     "items": [
       {
-        "id": "admin-cuenta",
-        "name": "Administrador de cuenta",
-        "role": "Jefe de operaciones · empresa cliente",
-        "roleEn": "Operations lead · client company",
-        "avatar": "data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20150%20150%27%3E%3Crect%20width%3D%27150%27%20height%3D%27150%27%20fill%3D%27%234f46e5%27/%3E%3Ctext%20x%3D%2775%27%20y%3D%2775%27%20dy%3D%27.35em%27%20text-anchor%3D%27middle%27%20font-family%3D%27Plus%20Jakarta%20Sans%2CArial%2Csans-serif%27%20font-size%3D%2752%27%20font-weight%3D%27700%27%20fill%3D%27%23fff%27%3EAD%3C/text%3E%3C/svg%3E",
+        "id": "valentina-rojas",
+        "name": "Valentina Rojas",
+        "role": "Jefa de Operaciones",
+        "roleEn": "Head of Operations",
+        "avatar": "https://i.pravatar.cc/150?img=36",
         "goals": [
           "Confirmar que cada operario nuevo realizó el onboarding",
           "Seguir el avance de los operadores como ya sigue el de los conductores",
@@ -267,14 +267,14 @@
           "Reviews delivered orders, on-time compliance and evaluations",
           "Rotates staff and repeats the induction often"
         ],
-        "nameEn": "Account administrator"
+        "nameEn": "Valentina Rojas"
       },
       {
-        "id": "operador-nuevo",
-        "name": "Operador logístico nuevo",
-        "role": "Operario recién incorporado",
-        "roleEn": "Newly hired operator",
-        "avatar": "data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20150%20150%27%3E%3Crect%20width%3D%27150%27%20height%3D%27150%27%20fill%3D%27%230ea5e9%27/%3E%3Ctext%20x%3D%2775%27%20y%3D%2775%27%20dy%3D%27.35em%27%20text-anchor%3D%27middle%27%20font-family%3D%27Plus%20Jakarta%20Sans%2CArial%2Csans-serif%27%20font-size%3D%2752%27%20font-weight%3D%27700%27%20fill%3D%27%23fff%27%3EOP%3C/text%3E%3C/svg%3E",
+        "id": "matias-soto",
+        "name": "Matías Soto",
+        "role": "Operador Logístico Junior",
+        "roleEn": "Junior Logistics Operator",
+        "avatar": "https://i.pravatar.cc/150?img=68",
         "goals": [
           "Aprender la plataforma para operar con autonomía",
           "Saber qué le falta completar del programa"
@@ -299,7 +299,7 @@
           "Uses the Help Center irregularly",
           "Progresses at their own pace, unnoticed"
         ],
-        "nameEn": "New logistics operator"
+        "nameEn": "Matías Soto"
       }
     ]
   },
