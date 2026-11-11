@@ -51,8 +51,15 @@
     {
       "label": "Entregables",
       "labelEn": "Deliverables",
-      "value": "Web Desktop + Widget",
-      "valueEn": "Web Desktop + Widget"
+      "value": "Web Desktop + Widget · Prototipo en Figma",
+      "valueEn": "Web Desktop + Widget · Figma prototype"
+    },
+    {
+      "label": "Herramientas",
+      "labelEn": "Tools",
+      "value": "Figma",
+      "valueEn": "Figma",
+      "wide": true
     }
   ],
   "heroImage": {

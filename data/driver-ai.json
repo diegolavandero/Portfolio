@@ -49,10 +49,17 @@
       "valueEn": "2024"
     },
     {
-      "label": "Plataforma",
-      "labelEn": "Platform",
-      "value": "Móvil · iOS/Android",
-      "valueEn": "Mobile · iOS/Android"
+      "label": "Entregables",
+      "labelEn": "Deliverables",
+      "value": "Mobile · Prototipo en Figma",
+      "valueEn": "Mobile · Figma prototype"
+    },
+    {
+      "label": "Herramientas",
+      "labelEn": "Tools",
+      "value": "Figma",
+      "valueEn": "Figma",
+      "wide": true
     }
   ],
   "heroImage": {

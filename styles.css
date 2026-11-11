@@ -776,6 +776,10 @@ body {
   gap: var(--spacing-xl);
 }
 
+.spec-item--wide {
+  grid-column: 1 / -1;
+}
+
 .spec-item {
   display: flex;
   flex-direction: column;

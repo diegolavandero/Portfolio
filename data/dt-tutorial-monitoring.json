@@ -49,8 +49,15 @@
     {
       "label": "Entregables",
       "labelEn": "Deliverables",
-      "value": "Web · Prototipo funcional",
-      "valueEn": "Web · Working prototype"
+      "value": "Web · Prototipo funcional · Investigación UX · Documentación Jira",
+      "valueEn": "Web · Working prototype · UX research · Jira documentation"
+    },
+    {
+      "label": "Herramientas",
+      "labelEn": "Tools",
+      "value": "Claude · Cursor · React + Tailwind",
+      "valueEn": "Claude · Cursor · React + Tailwind",
+      "wide": true
     }
   ],
   "solution": {

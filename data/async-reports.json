@@ -49,10 +49,17 @@
       "valueEn": "2024"
     },
     {
-      "label": "Plataforma",
-      "labelEn": "Platform",
-      "value": "Web · Escritorio",
-      "valueEn": "Web · Desktop"
+      "label": "Entregables",
+      "labelEn": "Deliverables",
+      "value": "Web · Prototipo en Figma",
+      "valueEn": "Web · Figma prototype"
+    },
+    {
+      "label": "Herramientas",
+      "labelEn": "Tools",
+      "value": "Figma",
+      "valueEn": "Figma",
+      "wide": true
     }
   ],
   "heroImage": {

@@ -51,8 +51,15 @@
     {
       "label": "Entregables",
       "labelEn": "Deliverables",
-      "value": "Móvil · iOS/Android",
-      "valueEn": "Mobile · iOS/Android"
+      "value": "Mobile · Prototipo en Figma",
+      "valueEn": "Mobile · Figma prototype"
+    },
+    {
+      "label": "Herramientas",
+      "labelEn": "Tools",
+      "value": "Figma",
+      "valueEn": "Figma",
+      "wide": true
     }
   ],
   "heroImage": {

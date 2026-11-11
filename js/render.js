@@ -109,7 +109,7 @@ const Renderer = {
   // ━━━ SECTION: Project Specs ━━━
   renderProjectSpecs: (specs) => {
     const items = specs.map(spec => `
-      <div class="spec-item">
+      <div class="spec-item${spec.wide ? ' spec-item--wide' : ''}">
         <span class="spec-label" ${bi(spec.label, spec.labelEn)}>${spec.label}</span>
         <span class="spec-value" ${bi(spec.value, spec.valueEn)}>${spec.value}</span>
       </div>

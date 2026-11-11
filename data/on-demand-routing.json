@@ -51,8 +51,15 @@
     {
       "label": "Entregables",
       "labelEn": "Deliverables",
-      "value": "Web · Escritorio",
-      "valueEn": "Web · Desktop"
+      "value": "Web · Prototipo en Figma · Documentación UX en Jira",
+      "valueEn": "Web · Figma prototype · UX Jira documentation"
+    },
+    {
+      "label": "Herramientas",
+      "labelEn": "Tools",
+      "value": "Figma",
+      "valueEn": "Figma",
+      "wide": true
     }
   ],
   "heroImage": {

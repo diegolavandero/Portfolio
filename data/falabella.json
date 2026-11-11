@@ -45,8 +45,15 @@
     {
       "label": "Entregables",
       "labelEn": "Deliverables",
-      "value": "14 pantallas · Design system · Flujo",
-      "valueEn": "14 screens · Design system · Flow"
+      "value": "14 pantallas · Prototipo en Figma · Documentación UX en Jira",
+      "valueEn": "14 screens · Figma prototype · UX Jira documentation"
+    },
+    {
+      "label": "Herramientas",
+      "labelEn": "Tools",
+      "value": "Claude · Figma MCP",
+      "valueEn": "Claude · Figma MCP",
+      "wide": true
     }
   ],
   "whyItMatters": {
