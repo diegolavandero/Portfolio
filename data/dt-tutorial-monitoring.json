@@ -432,12 +432,6 @@
         "titleEn": "Reminders for lagging users",
         "description": "Los rage clicks sobre usuarios rezagados mostraron que los admins quieren avisarles desde el propio panel, en lugar de gestionarlo por fuera.",
         "descriptionEn": "Rage clicks on lagging users showed admins want to nudge them from the panel itself, instead of handling it outside."
-      },
-      {
-        "title": "Metas de completitud por cargo",
-        "titleEn": "Completion goals per role",
-        "description": "Definir qué tutoriales debe completar cada cargo y medir el cumplimiento contra esa meta.",
-        "descriptionEn": "Define which tutorials each role must complete and measure compliance against that goal."
       }
     ]
   },
