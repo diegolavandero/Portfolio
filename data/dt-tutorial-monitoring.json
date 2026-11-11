@@ -405,12 +405,12 @@
     ]
   },
   "cta": {
-    "question": "¿Quieres ver cómo diseñé la gestión de usuarios?",
-    "questionEn": "Want to see how I designed user management?",
-    "description": "El siguiente proyecto: Configuración de usuarios web.",
-    "descriptionEn": "Next project: Web users settings.",
+    "question": "¿Quieres ver cómo diseñé el Centro de Ayuda?",
+    "questionEn": "Want to see how I designed the Help Center?",
+    "description": "El siguiente proyecto: Centro de Ayuda.",
+    "descriptionEn": "Next project: Help Center.",
     "buttonLabel": "Ver siguiente proyecto",
     "buttonLabelEn": "See next project",
-    "buttonHref": "#/dt-web-users"
+    "buttonHref": "#/dt-help-center"
   }
 }

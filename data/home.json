@@ -112,17 +112,6 @@
     {
       "eyebrow": "DT LASTMILE DESKTOP · 2024",
       "eyebrowEn": "DT LASTMILE DESKTOP · 2024",
-      "title": "Configuración de usuarios web",
-      "titleEn": "Web users settings",
-      "subtitle": "Gestión de usuarios y permisos para administradores: lista, filtros, selección masiva y acciones por fila, construida solo con componentes del design system.",
-      "subtitleEn": "User and permission management for admins: list, filters, bulk selection and row actions, built only from design system components.",
-      "slug": "dt-web-users",
-      "device": "desktop",
-      "image": "data/images/dt-web-users.webp"
-    },
-    {
-      "eyebrow": "DT LASTMILE DESKTOP · 2024",
-      "eyebrowEn": "DT LASTMILE DESKTOP · 2024",
       "title": "Centro de ayuda y onboarding",
       "titleEn": "Help center & onboarding",
       "subtitle": "Centro de ayuda contextual con 49 tutoriales en tres niveles, video, quiz y progreso, que acompaña al usuario sin sacarlo de su pantalla.",
