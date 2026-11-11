@@ -235,14 +235,48 @@
   "livePrototype": {
     "title": "Prototipo interactivo",
     "titleEn": "Interactive prototype",
-    "subtitle": "Abre el sidebar desde el chip de tutoriales de la barra superior, o desde el ícono de tutorial junto a la descripción de «Órdenes/guías». Mira el video, responde el cuestionario y observa cómo avanza tu progreso.",
-    "subtitleEn": "Open the sidebar from the tutorials chip in the top bar, or from the tutorial icon next to the “Orders/guides” description. Watch the video, take the quiz and watch your progress advance.",
+    "subtitle": "Abre el sidebar desde el chip de tutoriales de la barra superior, o desde el ícono de tutorial junto a la descripción de «Órdenes/guías». Mira el video, responde el cuestionario y observa cómo avanza tu progreso. Usa las variantes para ver los otros estados.",
+    "subtitleEn": "Open the sidebar from the tutorials chip in the top bar, or from the tutorial icon next to the “Orders/guides” description. Watch the video, take the quiz and watch your progress advance. Use the variants to see the other states.",
     "badge": "Prototipo funcional",
     "badgeEn": "Functional prototype",
     "srcEs": "/prototypes/dt-ds/index.html#/ayuda",
     "srcEn": "/prototypes/dt-ds/index.html#/ayuda",
     "repoUrl": "https://github.com/diegolavandero/dt-design-system-package/tree/main/src/screens/HelpCenter",
-    "height": 860
+    "height": 860,
+    "controls": {
+      "label": "Variantes",
+      "labelEn": "Variants",
+      "items": [
+        {
+          "type": "segmented",
+          "id": "state",
+          "options": [
+            {
+              "value": "data",
+              "label": "Con datos",
+              "labelEn": "With data"
+            },
+            {
+              "value": "new-user",
+              "label": "Usuario nuevo",
+              "labelEn": "New user"
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "id": "announce",
+          "label": "Anuncio de función nueva",
+          "labelEn": "New feature announcement"
+        },
+        {
+          "type": "button",
+          "id": "add-tutorial",
+          "label": "Tutorial nuevo",
+          "labelEn": "New tutorial"
+        }
+      ]
+    }
   },
   "designs": {
     "title": "Pantallas",

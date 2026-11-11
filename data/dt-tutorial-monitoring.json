@@ -125,14 +125,36 @@
   "livePrototype": {
     "title": "Prototipo interactivo",
     "titleEn": "Interactive prototype",
-    "subtitle": "Cambia entre Resumen y Por tutorial, ordena y filtra la tabla y usa «Ver como» para alternar entre la vista de administrador y la de un usuario sin acceso.",
-    "subtitleEn": "Switch between Summary and By tutorial, sort and filter the table, and use “View as” to toggle between the admin view and a no-access user.",
+    "subtitle": "Cambia entre Resumen y Por tutorial, ordena y filtra la tabla, y usa las variantes para alternar entre la vista de administrador y la de un usuario sin acceso.",
+    "subtitleEn": "Switch between Summary and By tutorial, sort and filter the table, and use the variants to toggle between the admin view and a no-access user.",
     "badge": "Prototipo funcional",
     "badgeEn": "Functional prototype",
     "srcEs": "/prototypes/dt-ds/index.html#/monitoreo",
     "srcEn": "/prototypes/dt-ds/index.html#/monitoreo",
     "repoUrl": "https://github.com/diegolavandero/dt-design-system-package/tree/main/src/screens/TutorialMonitoring",
-    "height": 860
+    "height": 860,
+    "controls": {
+      "label": "Variantes",
+      "labelEn": "Variants",
+      "items": [
+        {
+          "type": "segmented",
+          "id": "role",
+          "options": [
+            {
+              "value": "admin",
+              "label": "Administrador",
+              "labelEn": "Admin"
+            },
+            {
+              "value": "user",
+              "label": "Usuario sin acceso",
+              "labelEn": "No-access user"
+            }
+          ]
+        }
+      ]
+    }
   },
   "subtitleEn": "From blind onboarding to tracked adoption",
   "heroImage": {
