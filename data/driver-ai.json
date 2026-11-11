@@ -14,8 +14,8 @@
     "titleAccentEn": "Location Intelligence for Last Mile",
     "subtitle": "De incertidumbre a contexto predictivo",
     "subtitleEn": "From uncertainty to predictive context",
-    "description": "Los conductores de última milla hacen 15–35 entregas diarias con solo dirección y número de pedido — sin contexto de acceso. Driver AI usa GPT-4o para generar, antes de cada parada, dónde estacionar, cómo entrar y códigos de puerta.",
-    "descriptionEn": "Last-mile drivers make 15–35 deliveries daily with just address and order number — no access context. Driver AI uses GPT-4o to generate, before each stop, where to park, how to enter, and door codes."
+    "description": "Los conductores de última milla hacen 15–35 entregas diarias con solo dirección y número de pedido, sin contexto de acceso. Driver AI usa GPT-4o para generar, antes de cada parada, dónde estacionar, cómo entrar y códigos de puerta.",
+    "descriptionEn": "Last-mile drivers make 15–35 deliveries daily with just address and order number, no access context. Driver AI uses GPT-4o to generate, before each stop, where to park, how to enter, and door codes."
   },
   "projectSpecs": [
     {
@@ -110,12 +110,12 @@
         "nameEn": "The Problem",
         "cons": [
           "Cada dispatcher recibe 15–20 llamadas por turno solo por información de acceso",
-          "73% usaba Google Maps en paralelo a la app corporativa — carga cognitiva doble",
+          "73% usaba Google Maps en paralelo a la app corporativa, carga cognitiva doble",
           "14% de entregas fallaban en primer intento en zonas de alta densidad"
         ],
         "consEn": [
           "Each dispatcher receives 15–20 calls per shift just for access information",
-          "73% used Google Maps in parallel with the corporate app — double cognitive load",
+          "73% used Google Maps in parallel with the corporate app, double cognitive load",
           "14% of deliveries failed on first attempt in high-density zones"
         ]
       }
@@ -177,10 +177,10 @@
       {
         "name": "Evaluación Heurística",
         "nameEn": "Heuristic Evaluation",
-        "description": "Auditoría con los 10 principios de Nielsen aplicados al contexto de uso en movimiento. 17 violaciones identificadas — la más crítica: el conductor no sabía si el sistema estaba cargando o había fallado.",
-        "descriptionEn": "Audit against Nielsen's 10 principles applied to the in-motion usage context. 17 violations identified — the most critical: the driver couldn't tell if the system was loading or had failed.",
-        "finding": "La heurística más violada fue 'Visibilidad del estado del sistema' — en un entorno de alta carga cognitiva, es la más costosa de ignorar.",
-        "findingEn": "The most violated heuristic was 'Visibility of system status' — in a high cognitive load environment, it is the most costly to ignore."
+        "description": "Auditoría con los 10 principios de Nielsen aplicados al contexto de uso en movimiento. 17 violaciones identificadas, la más crítica: el conductor no sabía si el sistema estaba cargando o había fallado.",
+        "descriptionEn": "Audit against Nielsen's 10 principles applied to the in-motion usage context. 17 violations identified, the most critical: the driver couldn't tell if the system was loading or had failed.",
+        "finding": "La heurística más violada fue 'Visibilidad del estado del sistema': en un entorno de alta carga cognitiva, es la más costosa de ignorar.",
+        "findingEn": "The most violated heuristic was 'Visibility of system status': in a high cognitive load environment, it is the most costly to ignore."
       }
     ],
     "quotes": [
@@ -234,31 +234,31 @@
         "avatar": "https://i.pravatar.cc/150?img=15",
         "goals": [
           "Completar las 28 paradas del turno en el tiempo asignado",
-          "Evitar llamar al dispatcher — cada llamada lo atrasa 5 min",
+          "Evitar llamar al dispatcher: cada llamada lo atrasa 5 min",
           "Mejorar su calificación para acceder a mejores rutas"
         ],
         "goalsEn": [
           "Complete 28 stops per shift within the allotted time",
-          "Avoid calling the dispatcher — each call delays him 5 min",
+          "Avoid calling the dispatcher: each call delays him 5 min",
           "Improve his rating to access better routes"
         ],
         "painPoints": [
           "No sabe dónde estacionar ni cómo entrar en edificios nuevos",
           "Los códigos de acceso le llegan por WhatsApp cuando ya está en la puerta",
-          "Si lo cambian de zona, empieza desde cero — no hay conocimiento acumulado"
+          "Si lo cambian de zona, empieza desde cero: no hay conocimiento acumulado"
         ],
         "painPointsEn": [
           "Doesn't know where to park or how to enter new buildings",
           "Access codes arrive via WhatsApp when he's already at the door",
-          "If transferred to another zone, starts from scratch — no accumulated knowledge"
+          "If transferred to another zone, starts from scratch: no accumulated knowledge"
         ],
         "behaviors": [
-          "Zona residencial de alta densidad — edificios complejos",
+          "Zona residencial de alta densidad, edificios complejos",
           "Construye conocimiento propio con notas en papel y capturas de Maps",
           "Opera bajo presión de tiempo: cada parada extra reduce su bono"
         ],
         "behaviorsEn": [
-          "High-density residential zone — complex buildings",
+          "High-density residential zone, complex buildings",
           "Builds own knowledge with paper notes and Maps screenshots",
           "Operates under time pressure: each extra stop reduces his bonus"
         ],
@@ -326,21 +326,21 @@
         ],
         "painPoints": [
           "14% de entregas fallan en primer intento en zonas de alta densidad",
-          "No hay datos estructurados sobre por qué fallan — solo 'no pudo acceder'",
+          "No hay datos estructurados sobre por qué fallan, solo 'no pudo acceder'",
           "Conductores nuevos tienen el doble de re-entregas que los experimentados"
         ],
         "painPointsEn": [
           "14% of deliveries fail on first attempt in high-density zones",
-          "No structured data on why they fail — just 'couldn't access'",
+          "No structured data on why they fail, just 'couldn't access'",
           "New drivers have double the re-deliveries of experienced ones"
         ],
         "behaviors": [
-          "Supervisa 200+ entregas/día — toma decisiones por KPIs, no anécdotas",
+          "Supervisa 200+ entregas/día: toma decisiones por KPIs, no anécdotas",
           "Trabaja con ciclos de reporting semanal ante dirección regional",
           "Presión directa de reducir costos operativos sin sacrificar SLA"
         ],
         "behaviorsEn": [
-          "Oversees 200+ deliveries/day — makes decisions by KPIs, not anecdotes",
+          "Oversees 200+ deliveries/day: makes decisions by KPIs, not anecdotes",
           "Works with weekly reporting cycles to regional leadership",
           "Direct pressure to reduce operational costs without sacrificing SLA"
         ],
@@ -370,8 +370,8 @@
         "id": 2,
         "name": "Navegar",
         "nameEn": "Navigate",
-        "problem": "App corporativa + Google Maps abiertos — carga cognitiva doble",
-        "problemEn": "Corporate app + Google Maps open — double cognitive load",
+        "problem": "App corporativa + Google Maps abiertos, carga cognitiva doble",
+        "problemEn": "Corporate app + Google Maps open, double cognitive load",
         "solution": "Stop Summary en audio mientras conduce",
         "solutionEn": "Stop Summary in audio while driving"
       },
@@ -455,22 +455,22 @@
         "number": "01",
         "title": "Audio-first: contexto sin mirar la pantalla",
         "titleEn": "Audio-first: context without looking at the screen",
-        "description": "El conductor recibe el contexto de acceso mientras conduce — no al llegar. TTS con síntesis nativa, sin internet, en 20–30 segundos. FAB de 56px operable con guante para activarlo.",
-        "descriptionEn": "The driver receives access context while driving — not upon arrival. Native TTS synthesis, no internet required, in 20–30 seconds. 56px FAB operable with a glove to activate it."
+        "description": "El conductor recibe el contexto de acceso mientras conduce, no al llegar. TTS con síntesis nativa, sin internet, en 20–30 segundos. FAB de 56px operable con guante para activarlo.",
+        "descriptionEn": "The driver receives access context while driving, not upon arrival. Native TTS synthesis, no internet required, in 20–30 seconds. 56px FAB operable with a glove to activate it."
       },
       {
         "number": "02",
         "title": "Contexto generado antes de la necesidad",
         "titleEn": "Context generated before the need",
-        "description": "La ficha de acceso del edificio está lista 2 horas antes del turno. El conductor llega con información, no busca información al llegar. GPT-4o genera los datos una vez — el sistema los sirve offline cuando se necesitan.",
-        "descriptionEn": "The building access card is ready 2 hours before the shift. The driver arrives with information, not searching for it upon arrival. GPT-4o generates the data once — the system serves it offline when needed."
+        "description": "La ficha de acceso del edificio está lista 2 horas antes del turno. El conductor llega con información, no busca información al llegar. GPT-4o genera los datos una vez: el sistema los sirve offline cuando se necesitan.",
+        "descriptionEn": "The building access card is ready 2 hours before the shift. The driver arrives with information, not searching for it upon arrival. GPT-4o generates the data once: the system serves it offline when needed."
       },
       {
         "number": "03",
         "title": "≤1 tap para cualquier acción crítica",
         "titleEn": "≤1 tap for any critical action",
-        "description": "El modal no cubre el mapa. Swipe down para descartar. La acción más frecuente — escuchar el contexto — es siempre el botón más grande en pantalla. Cero fricciones en el momento de mayor carga cognitiva.",
-        "descriptionEn": "The modal doesn't cover the map. Swipe down to dismiss. The most frequent action — hearing the context — is always the largest button on screen. Zero friction at the moment of highest cognitive load."
+        "description": "El modal no cubre el mapa. Swipe down para descartar. La acción más frecuente (escuchar el contexto) es siempre el botón más grande en pantalla. Cero fricciones en el momento de mayor carga cognitiva.",
+        "descriptionEn": "The modal doesn't cover the map. Swipe down to dismiss. The most frequent action (hearing the context) is always the largest button on screen. Zero friction at the moment of highest cognitive load."
       }
     ]
   },
@@ -538,14 +538,14 @@
       {
         "title": "Qué funcionó",
         "titleEn": "What worked",
-        "description": "El TTS fue adoptado por el 87% de conductores desde el primer turno sin entrenamiento. La hipótesis de que 'los conductores prefieren leer' era falsa — simplemente no tenían alternativa.",
-        "descriptionEn": "TTS was adopted by 87% of drivers from the first shift without training. The hypothesis that 'drivers prefer to read' was false — they simply had no alternative."
+        "description": "El TTS fue adoptado por el 87% de conductores desde el primer turno sin entrenamiento. La hipótesis de que 'los conductores prefieren leer' era falsa: simplemente no tenían alternativa.",
+        "descriptionEn": "TTS was adopted by 87% of drivers from the first shift without training. The hypothesis that 'drivers prefer to read' was false: they simply had no alternative."
       },
       {
         "title": "Sorpresa",
         "titleEn": "Surprise",
-        "description": "Los conductores añadieron notas de acceso voluntariamente. En 6 semanas, el 34% de edificios del piloto tenía notas de conductores — sin ningún incentivo. El conocimiento colectivo emergió solo.",
-        "descriptionEn": "Drivers voluntarily added access notes. In 6 weeks, 34% of pilot buildings had driver notes — without any incentive. Collective knowledge emerged organically."
+        "description": "Los conductores añadieron notas de acceso voluntariamente. En 6 semanas, el 34% de edificios del piloto tenía notas de conductores, sin ningún incentivo. El conocimiento colectivo emergió solo.",
+        "descriptionEn": "Drivers voluntarily added access notes. In 6 weeks, 34% of pilot buildings had driver notes, without any incentive. Collective knowledge emerged organically."
       }
     ],
     "nextStepsTitle": "Próxima Iteración",
@@ -554,14 +554,14 @@
       {
         "title": "Edificios conocidos",
         "titleEn": "Known buildings",
-        "description": "Mecanismo para marcar edificios como 'conocidos' y saltarse el modal sin descartarlo cada vez — el modal se activaba incluso cuando el conductor ya sabía cómo entrar.",
-        "descriptionEn": "Mechanism to mark buildings as 'known' and skip the modal without dismissing it every time — the modal triggered even when the driver already knew how to enter."
+        "description": "Mecanismo para marcar edificios como 'conocidos' y saltarse el modal sin descartarlo cada vez; el modal se activaba incluso cuando el conductor ya sabía cómo entrar.",
+        "descriptionEn": "Mechanism to mark buildings as 'known' and skip the modal without dismissing it every time; the modal triggered even when the driver already knew how to enter."
       },
       {
         "title": "Predicción de tiempo por parada",
         "titleEn": "Time-per-stop prediction",
-        "description": "Extender Address Intelligence a predicción de tiempo por parada en cada edificio, para recalcular el ETA de la ruta completa antes de salir — impactando la planificación del turno entero.",
-        "descriptionEn": "Extend Address Intelligence to time-per-stop prediction for each building, to recalculate the full route ETA before departure — impacting entire shift planning."
+        "description": "Extender Address Intelligence a predicción de tiempo por parada en cada edificio, para recalcular el ETA de la ruta completa antes de salir, impactando la planificación del turno entero.",
+        "descriptionEn": "Extend Address Intelligence to time-per-stop prediction for each building, to recalculate the full route ETA before departure, impacting entire shift planning."
       }
     ]
   },

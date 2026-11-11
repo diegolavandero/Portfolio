@@ -109,12 +109,12 @@
         "name": "Lo que mostraban los datos",
         "nameEn": "What the data showed",
         "cons": [
-          "34 timeouts registrados en un solo día de cierre de mes — récord pre-migración",
+          "34 timeouts registrados en un solo día de cierre de mes, récord pre-migración",
           "68% de abandono en reportes con espera mayor a 2 minutos",
           "Los analistas re-ejecutaban el mismo reporte 2–3 veces por sesión sin saber si había fallado"
         ],
         "consEn": [
-          "34 timeouts recorded in a single month-end day — pre-migration record",
+          "34 timeouts recorded in a single month-end day, pre-migration record",
           "68% abandonment rate in reports with waits exceeding 2 minutes",
           "Analysts re-ran the same report 2–3 times per session without knowing if it had failed"
         ]
@@ -167,8 +167,8 @@
         "descriptionEn": "Audit of the reporting flow against Nielsen's 10 principles. The system failed 3 critical heuristics: no status feedback, no user control to cancel, and non-actionable error messages.",
         "findingLabel": "Hallazgo",
         "findingLabelEn": "Finding",
-        "finding": "Un timeout mostraba el mismo mensaje genérico que un error de permisos — imposible distinguirlos",
-        "findingEn": "A timeout showed the same generic message as a permission error — impossible to tell them apart"
+        "finding": "Un timeout mostraba el mismo mensaje genérico que un error de permisos, imposible distinguirlos",
+        "findingEn": "A timeout showed the same generic message as a permission error, impossible to tell them apart"
       },
       {
         "name": "A/B Testing",
@@ -177,8 +177,8 @@
         "descriptionEn": "Comparative test between synchronous mode (blocking spinner) and asynchronous mode (notification when ready) with n=42 real users in a staging environment for 2 weeks.",
         "findingLabel": "Hallazgo",
         "findingLabelEn": "Finding",
-        "finding": "78% prefirió async — pero el 22% restante eran managers que necesitaban el resultado inmediato",
-        "findingEn": "78% preferred async — but the remaining 22% were managers who needed the result immediately"
+        "finding": "78% prefirió async, pero el 22% restante eran managers que necesitaban el resultado inmediato",
+        "findingEn": "78% preferred async, but the remaining 22% were managers who needed the result immediately"
       }
     ],
     "stats": [
@@ -226,13 +226,13 @@
         ],
         "painPoints": [
           "Pasa 4–5 horas cada lunes construyendo el mismo reporte en formatos variables según quién lo pida",
-          "Cuando está de vacaciones, los reportes no salen — o un colega tiene que reconstruirlos desde cero",
-          "Los stakeholders piden \"pequeños cambios\" al formato — cada solicitud se convierte en una hora de trabajo"
+          "Cuando está de vacaciones, los reportes no salen, o un colega tiene que reconstruirlos desde cero",
+          "Los stakeholders piden \"pequeños cambios\" al formato: cada solicitud se convierte en una hora de trabajo"
         ],
         "painPointsEn": [
           "Spends 4–5 hours every Monday building the same report in varying formats depending on who asks",
-          "When on vacation, reports don't go out — or a colleague has to rebuild them from scratch",
-          "Stakeholders request \"small changes\" to the format — each request turns into an hour of work"
+          "When on vacation, reports don't go out, or a colleague has to rebuild them from scratch",
+          "Stakeholders request \"small changes\" to the format: each request turns into an hour of work"
         ],
         "behaviors": [
           "Reporta a VP de Operaciones, flota de 280 camiones",
@@ -257,22 +257,22 @@
         "avatar": "https://i.pravatar.cc/150?img=36",
         "goals": [
           "Recibir un resumen de performance consistente y confiable cada lunes sin pedírselo a Daniel",
-          "Saber cuándo fueron actualizados los datos — ¿está viendo la realidad de ayer o de la semana pasada?",
+          "Saber cuándo fueron actualizados los datos: ¿está viendo la realidad de ayer o de la semana pasada?",
           "Poder reenviar el reporte a su CEO y clientes sin reformatear"
         ],
         "goalsEn": [
           "Receive a consistent, reliable performance summary every Monday without asking Daniel",
-          "Know when the data was last updated — is she seeing yesterday's or last week's reality?",
+          "Know when the data was last updated: is she seeing yesterday's or last week's reality?",
           "Be able to forward the report to her CEO and clients without reformatting"
         ],
         "painPoints": [
-          "Tiene que pedirle el reporte a Daniel — y a veces llega tarde o incompleto",
-          "No siempre es claro si los datos son de esta semana o de la anterior — socava la confianza en los números",
+          "Tiene que pedirle el reporte a Daniel, y a veces llega tarde o incompleto",
+          "No siempre es claro si los datos son de esta semana o de la anterior, socava la confianza en los números",
           "Los reportes de diferentes períodos tienen inconsistencias sutiles que afectan su credibilidad con ejecutivos"
         ],
         "painPointsEn": [
-          "Has to ask Daniel for the report — and sometimes it arrives late or incomplete",
-          "It's not always clear if data is from this week or last — it undermines trust in the numbers",
+          "Has to ask Daniel for the report, and sometimes it arrives late or incomplete",
+          "It's not always clear if data is from this week or last: it undermines trust in the numbers",
           "Reports from different periods have subtle inconsistencies that affect her credibility with executives"
         ],
         "behaviors": [
@@ -313,8 +313,8 @@
       },
       {
         "value": "2,8×",
-        "label": "Re-ejecuciones promedio por reporte — el usuario no sabía si había fallado",
-        "labelEn": "Average re-runs per report — the user didn't know if it had failed",
+        "label": "Re-ejecuciones promedio por reporte: el usuario no sabía si había fallado",
+        "labelEn": "Average re-runs per report: the user didn't know if it had failed",
         "valueEn": "2.8×"
       }
     ],
@@ -324,8 +324,8 @@
     "behaviorsLabelEn": "OBSERVED BEHAVIORS",
     "behaviors": [
       {
-        "text": "\"Rage-click\" en el botón de generar reporte — 4,2 clics promedio sobre un botón deshabilitado durante la carga",
-        "textEn": "\"Rage-click\" on the generate report button — 4.2 average clicks on a disabled button during load"
+        "text": "\"Rage-click\" en el botón de generar reporte: 4,2 clics promedio sobre un botón deshabilitado durante la carga",
+        "textEn": "\"Rage-click\" on the generate report button: 4.2 average clicks on a disabled button during load"
       },
       {
         "text": "Cambio de pestaña del navegador durante la espera → pérdida de contexto al volver",
@@ -366,8 +366,8 @@
   "abTesting": {
     "title": "A/B Testing",
     "titleEn": "A/B Testing",
-    "subtitle": "Modo síncrono vs asíncrono — n=42 usuarios, 2 semanas en staging",
-    "subtitleEn": "Synchronous vs asynchronous mode — n=42 users, 2 weeks in staging",
+    "subtitle": "Modo síncrono vs asíncrono: n=42 usuarios, 2 semanas en staging",
+    "subtitleEn": "Synchronous vs asynchronous mode: n=42 users, 2 weeks in staging",
     "variantA": {
       "label": "VARIANTE A · MODO SÍNCRONO (CONTROL)",
       "labelEn": "VARIANT A · SYNCHRONOUS MODE (CONTROL)",
@@ -379,8 +379,8 @@
         },
         {
           "type": "negative",
-          "text": "Sin estimación de tiempo de espera — spinner indefinido",
-          "textEn": "No wait time estimate — indefinite spinner"
+          "text": "Sin estimación de tiempo de espera, spinner indefinido",
+          "textEn": "No wait time estimate, indefinite spinner"
         },
         {
           "type": "negative",
@@ -415,8 +415,8 @@
         },
         {
           "type": "neutral",
-          "text": "El resultado no está frente al usuario en ese momento — requiere cambio de hábito",
-          "textEn": "The result is not in front of the user at that moment — requires habit change"
+          "text": "El resultado no está frente al usuario en ese momento, requiere cambio de hábito",
+          "textEn": "The result is not in front of the user at that moment, requires habit change"
         }
       ]
     },
@@ -500,26 +500,26 @@
       {
         "title": "¿Bloqueante o asíncrono en la UI?",
         "titleEn": "Blocking or async in the UI?",
-        "justification": "Testeamos 2 patrones: (A) spinner bloqueante con barra de progreso, (B) notificación push cuando el reporte está listo. El 78% de usuarios prefirió B porque podían seguir trabajando. Pero el 22% que prefirió A eran managers que querían estar frente al resultado inmediatamente — solución: async por defecto, con modo inmediato opcional para reportes livianos (generación rápida).",
-        "justificationEn": "We tested 2 patterns: (A) blocking spinner with progress bar, (B) push notification when report is ready. 78% of users preferred B because they could keep working. But the 22% who preferred A were managers who wanted to be in front of the result immediately — solution: async by default, with an optional immediate mode for lightweight reports (fast generation).",
-        "tradeoff": "El usuario async pierde el resultado inmediato en pantalla — requiere cambio de hábito y confianza en el sistema de notificaciones.",
-        "tradeoffEn": "The async user loses the immediate on-screen result — requires habit change and trust in the notification system."
+        "justification": "Testeamos 2 patrones: (A) spinner bloqueante con barra de progreso, (B) notificación push cuando el reporte está listo. El 78% de usuarios prefirió B porque podían seguir trabajando. Pero el 22% que prefirió A eran managers que querían estar frente al resultado inmediatamente. Solución: async por defecto, con modo inmediato opcional para reportes livianos (generación rápida).",
+        "justificationEn": "We tested 2 patterns: (A) blocking spinner with progress bar, (B) push notification when report is ready. 78% of users preferred B because they could keep working. But the 22% who preferred A were managers who wanted to be in front of the result immediately. Solution: async by default, with an optional immediate mode for lightweight reports (fast generation).",
+        "tradeoff": "El usuario async pierde el resultado inmediato en pantalla, requiere cambio de hábito y confianza en el sistema de notificaciones.",
+        "tradeoffEn": "The async user loses the immediate on-screen result, requires habit change and trust in the notification system."
       },
       {
         "title": "Templates vs. Builder libre",
         "titleEn": "Templates vs. Free builder",
-        "justification": "El primer prototipo era un builder de queries 100% flexible. En testing, el 85% usaba solo 8 combinaciones distintas de campos. Pivotamos a un sistema de templates con personalización de filtros — 3x más rápido de usar y redujo errores de configuración a casi cero.",
-        "justificationEn": "The first prototype was a 100% flexible query builder. In testing, 85% used only 8 different field combinations. We pivoted to a template system with filter customization — 3x faster to use and reduced configuration errors to near zero.",
-        "tradeoff": "Los power users con necesidades atípicas perdieron flexibilidad — mitigado con modo avanzado accesible desde configuración.",
-        "tradeoffEn": "Power users with atypical needs lost flexibility — mitigated with advanced mode accessible from settings."
+        "justification": "El primer prototipo era un builder de queries 100% flexible. En testing, el 85% usaba solo 8 combinaciones distintas de campos. Pivotamos a un sistema de templates con personalización de filtros, 3x más rápido de usar y redujo errores de configuración a casi cero.",
+        "justificationEn": "The first prototype was a 100% flexible query builder. In testing, 85% used only 8 different field combinations. We pivoted to a template system with filter customization, 3x faster to use and reduced configuration errors to near zero.",
+        "tradeoff": "Los power users con necesidades atípicas perdieron flexibilidad, mitigado con modo avanzado accesible desde configuración.",
+        "tradeoffEn": "Power users with atypical needs lost flexibility, mitigated with advanced mode accessible from settings."
       },
       {
         "title": "Historial de reportes: ¿cuánto guardar?",
         "titleEn": "Report history: how much to keep?",
-        "justification": "Los usuarios querían acceso ilimitado al historial. IT quería 30 días máximo. Solución: 90 días activos + archive bajo demanda con costo visible de almacenamiento. Los usuarios eligieron qué archivar — nadie archivó nada, pero la transparencia eliminó el conflicto.",
-        "justificationEn": "Users wanted unlimited history access. IT wanted 30 days maximum. Solution: 90 active days + on-demand archive with visible storage cost. Users chose what to archive — nobody archived anything, but the transparency eliminated the conflict.",
-        "tradeoff": "Complejidad de UI adicional para el flujo de archivado — aceptable dado que en práctica casi no se usa.",
-        "tradeoffEn": "Additional UI complexity for the archiving flow — acceptable given it's rarely used in practice."
+        "justification": "Los usuarios querían acceso ilimitado al historial. IT quería 30 días máximo. Solución: 90 días activos + archive bajo demanda con costo visible de almacenamiento. Los usuarios eligieron qué archivar: nadie archivó nada, pero la transparencia eliminó el conflicto.",
+        "justificationEn": "Users wanted unlimited history access. IT wanted 30 days maximum. Solution: 90 active days + on-demand archive with visible storage cost. Users chose what to archive: nobody archived anything, but the transparency eliminated the conflict.",
+        "tradeoff": "Complejidad de UI adicional para el flujo de archivado, aceptable dado que en práctica casi no se usa.",
+        "tradeoffEn": "Additional UI complexity for the archiving flow, acceptable given it's rarely used in practice."
       }
     ],
     "principlesTitle": "Principios de Diseño",
@@ -536,8 +536,8 @@
         "number": "02",
         "title": "El estado siempre visible, nunca ambiguo",
         "titleEn": "Status always visible, never ambiguous",
-        "description": "Cuatro estados diferenciados — En cola, Procesando, Listo, Error — cada uno con color, ícono y acción primaria distinta. Un timeout y un error de permisos no pueden verse igual.",
-        "descriptionEn": "Four differentiated states — Queued, Processing, Ready, Error — each with distinct color, icon and primary action. A timeout and a permissions error cannot look the same."
+        "description": "Cuatro estados diferenciados (En cola, Procesando, Listo, Error), cada uno con color, ícono y acción primaria distinta. Un timeout y un error de permisos no pueden verse igual.",
+        "descriptionEn": "Four differentiated states (Queued, Processing, Ready, Error), each with distinct color, icon and primary action. A timeout and a permissions error cannot look the same."
       },
       {
         "number": "03",
@@ -635,8 +635,8 @@
       {
         "title": "El historial de reportes se convirtió en un caso de uso principal no planificado",
         "titleEn": "Report history became an unplanned primary use case",
-        "description": "Los usuarios usaban el historial para comparar períodos y compartir versiones previas — un comportamiento no anticipado que redefinió el centro de notificaciones como un hub de reportes, no solo una bandeja de completados.",
-        "descriptionEn": "Users used the history to compare periods and share previous versions — unanticipated behavior that redefined the notification center as a report hub, not just a completed-items inbox."
+        "description": "Los usuarios usaban el historial para comparar períodos y compartir versiones previas: un comportamiento no anticipado que redefinió el centro de notificaciones como un hub de reportes, no solo una bandeja de completados.",
+        "descriptionEn": "Users used the history to compare periods and share previous versions: unanticipated behavior that redefined the notification center as a report hub, not just a completed-items inbox."
       }
     ],
     "nextSteps": [

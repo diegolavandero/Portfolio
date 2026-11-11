@@ -153,8 +153,8 @@
       {
         "name": "Task Analysis",
         "nameEn": "Task Analysis",
-        "description": "Descompusimos el flujo completo de validación pre-ruta en subtareas con sus condiciones de éxito, puntos de decisión y carga cognitiva. Identificamos 7 momentos críticos donde podía ocurrir un error — 5 de ellos en los primeros 3 pasos del flujo.",
-        "descriptionEn": "We decomposed the complete pre-route validation flow into subtasks with their success conditions, decision points and cognitive load. We identified 7 critical moments where an error could occur — 5 of them in the first 3 steps of the flow.",
+        "description": "Descompusimos el flujo completo de validación pre-ruta en subtareas con sus condiciones de éxito, puntos de decisión y carga cognitiva. Identificamos 7 momentos críticos donde podía ocurrir un error, 5 de ellos en los primeros 3 pasos del flujo.",
+        "descriptionEn": "We decomposed the complete pre-route validation flow into subtasks with their success conditions, decision points and cognitive load. We identified 7 critical moments where an error could occur, 5 of them in the first 3 steps of the flow.",
         "finding": "El conductor hacía la comparación manifiesto-carga en su cabeza. No existía ningún soporte cognitivo externo para esa tarea.",
         "findingEn": "The driver was making the manifest-to-load comparison in their head. No external cognitive support existed for that task."
       },
@@ -163,16 +163,16 @@
         "nameEn": "Tree Testing",
         "description": "Testeamos 3 versiones de la estructura de navegación con n=8 conductores en 3 rondas. El foco: encontrar un ítem específico, reportar una discrepancia y llegar a la firma digital. En la v1, \"reportar discrepancia\" solo se encontraba a la primera en el 43% de los casos.",
         "descriptionEn": "We tested 3 versions of the navigation structure with n=8 drivers across 3 rounds. The focus: find a specific item, report a discrepancy and reach the digital signature. In v1, \"report discrepancy\" was found on the first try in only 43% of cases.",
-        "finding": "Los conductores buscaban \"problema\" o \"faltante\", no \"discrepancia\" — el vocabulario del sistema no coincidía con el del usuario.",
-        "findingEn": "Drivers searched for \"problem\" or \"missing\", not \"discrepancy\" — the system vocabulary didn't match the user's vocabulary."
+        "finding": "Los conductores buscaban \"problema\" o \"faltante\", no \"discrepancia\"; el vocabulario del sistema no coincidía con el del usuario.",
+        "findingEn": "Drivers searched for \"problem\" or \"missing\", not \"discrepancy\"; the system vocabulary didn't match the user's vocabulary."
       },
       {
         "name": "Field Research",
         "nameEn": "Field Research",
         "description": "3 días de observación en 2 centros de distribución: 28 salidas observadas, 14 entrevistas a conductores y supervisores. El contexto reveló restricciones críticas: luz solar directa sobre pantallas, guantes puestos, presión de tiempo y camiones con motores encendidos.",
         "descriptionEn": "3 days of observation in 2 distribution centers: 28 departures observed, 14 interviews with drivers and supervisors. The context revealed critical constraints: direct sunlight on screens, gloves on, time pressure and trucks with engines running.",
-        "finding": "El 78% de los conductores sostenía el teléfono con una mano mientras verificaba con la otra — la UI tenía que funcionar con thumb zone y guantes.",
-        "findingEn": "78% of drivers held the phone with one hand while verifying with the other — the UI had to work within the thumb zone and with gloves."
+        "finding": "El 78% de los conductores sostenía el teléfono con una mano mientras verificaba con la otra; la UI tenía que funcionar con thumb zone y guantes.",
+        "findingEn": "78% of drivers held the phone with one hand while verifying with the other; the UI had to work within the thumb zone and with gloves."
       }
     ],
     "quotes": [
@@ -314,8 +314,8 @@
         "load": "Alta",
         "loadEn": "High",
         "loadLevel": "high",
-        "friction": "Impreso en papel o en PDF del correo — no integrado al flujo",
-        "frictionEn": "Printed on paper or PDF from email — not integrated into the flow"
+        "friction": "Impreso en papel o en PDF del correo: no integrado al flujo",
+        "frictionEn": "Printed on paper or PDF from email: not integrated into the flow"
       },
       {
         "number": "02",
@@ -334,8 +334,8 @@
         "load": "Muy alta",
         "loadEn": "Very high",
         "loadLevel": "very-high",
-        "friction": "Comparación mental sin soporte — fuente principal de errores",
-        "frictionEn": "Mental comparison without support — primary source of errors"
+        "friction": "Comparación mental sin soporte, fuente principal de errores",
+        "frictionEn": "Mental comparison without support, primary source of errors"
       },
       {
         "number": "04",
@@ -411,15 +411,15 @@
       "noteEn": "% of total validation time (average 40 min pre-implementation)",
       "insightLabel": "INSIGHT CLAVE",
       "insightLabelEn": "KEY INSIGHT",
-      "insight": "El 65% del tiempo de validación ocurría en las tareas 1–3 — y las 3 eran completamente eliminables con un sistema que conecte el TMS al checklist digital y escaneo de código de barras.",
-      "insightEn": "65% of validation time occurred in tasks 1–3 — and all 3 could be eliminated with a system connecting the TMS to the digital checklist and barcode scanning."
+      "insight": "El 65% del tiempo de validación ocurría en las tareas 1–3, y las 3 eran completamente eliminables con un sistema que conecte el TMS al checklist digital y escaneo de código de barras.",
+      "insightEn": "65% of validation time occurred in tasks 1–3, and all 3 could be eliminated with a system connecting the TMS to the digital checklist and barcode scanning."
     }
   },
   "treeTesting": {
     "title": "Tree Testing",
     "titleEn": "Tree Testing",
-    "subtitle": "Validación de estructura de navegación con conductores reales — 3 rondas, n=8",
-    "subtitleEn": "Navigation structure validation with real drivers — 3 rounds, n=8",
+    "subtitle": "Validación de estructura de navegación con conductores reales: 3 rondas, n=8",
+    "subtitleEn": "Navigation structure validation with real drivers: 3 rounds, n=8",
     "barNote": "% éxito en primer intento",
     "barNoteEn": "% first-try success",
     "learningLabel": "APRENDIZAJE",
@@ -445,8 +445,8 @@
             "color": "green"
           }
         ],
-        "learning": "Los conductores buscaban por nombre del cliente, no por número de orden — reorganizamos la jerarquía",
-        "learningEn": "Drivers searched by client name, not order number — we reorganized the hierarchy"
+        "learning": "Los conductores buscaban por nombre del cliente, no por número de orden; reorganizamos la jerarquía",
+        "learningEn": "Drivers searched by client name, not order number; we reorganized the hierarchy"
       },
       {
         "task": "Reportar un ítem faltante o dañado",
@@ -468,8 +468,8 @@
             "color": "green"
           }
         ],
-        "learning": "\"Discrepancia\" era lenguaje del sistema — los conductores buscaban \"problema\", \"faltante\" o \"dañado\"",
-        "learningEn": "\"Discrepancy\" was system language — drivers searched for \"problem\", \"missing\" or \"damaged\""
+        "learning": "\"Discrepancia\" era lenguaje del sistema: los conductores buscaban \"problema\", \"faltante\" o \"dañado\"",
+        "learningEn": "\"Discrepancy\" was system language: drivers searched for \"problem\", \"missing\" or \"damaged\""
       },
       {
         "task": "Llegar a la firma digital de salida",
@@ -491,8 +491,8 @@
             "color": "green"
           }
         ],
-        "learning": "La firma estaba enterrada en un submenú de \"Finalizar\" — pasó al CTA principal de la última pantalla",
-        "learningEn": "The signature was buried in a \"Finalize\" submenu — it moved to the main CTA on the last screen"
+        "learning": "La firma estaba enterrada en un submenú de \"Finalizar\", pasó al CTA principal de la última pantalla",
+        "learningEn": "The signature was buried in a \"Finalize\" submenu; it moved to the main CTA on the last screen"
       }
     ],
     "decision": {
@@ -558,8 +558,8 @@
         "number": "03",
         "title": "Evidencia inmutable antes de salir",
         "titleEn": "Immutable evidence before departure",
-        "description": "Foto + firma + timestamp automático son el contrato digital entre conductor, supervisor y cliente. El flujo no permite saltar estos pasos — son la trazabilidad del sistema.",
-        "descriptionEn": "Photo + signature + automatic timestamp are the digital contract between driver, supervisor and client. The flow cannot skip these steps — they are the system's traceability."
+        "description": "Foto + firma + timestamp automático son el contrato digital entre conductor, supervisor y cliente. El flujo no permite saltar estos pasos: son la trazabilidad del sistema.",
+        "descriptionEn": "Photo + signature + automatic timestamp are the digital contract between driver, supervisor and client. The flow cannot skip these steps: they are the system's traceability."
       }
     ]
   },
@@ -585,8 +585,8 @@
         "device": "none",
         "title": "Validación por orden",
         "titleEn": "Validation by order",
-        "description": "Cuando la orden no tiene desglose de ítems — se maneja como bulto o paquete único — la validación ocurre a nivel de orden completa, no por SKU.",
-        "descriptionEn": "When the order has no item breakdown — handled as a single bag or package — validation happens at the whole-order level instead of per SKU.",
+        "description": "Cuando la orden no tiene desglose de ítems (se maneja como bulto o paquete único), la validación ocurre a nivel de orden completa, no por SKU.",
+        "descriptionEn": "When the order has no item breakdown (handled as a single bag or package), validation happens at the whole-order level instead of per SKU.",
         "src": "data/images/load-validation-by-order.png",
         "alt": "Vista de lista de órdenes de carga, validación a nivel de orden",
         "altEn": "Load order list view, order-level validation"
@@ -597,7 +597,7 @@
         "title": "Validación por ítem",
         "titleEn": "Validation by item",
         "description": "Cuando la orden trae el detalle de SKUs, cada ítem se valida individualmente: cantidad, código y estado quedan registrados por línea.",
-        "descriptionEn": "When the order includes SKU-level detail, each item is validated individually — quantity, code and status are recorded per line.",
+        "descriptionEn": "When the order includes SKU-level detail, each item is validated individually: quantity, code and status are recorded per line.",
         "src": "data/images/load-validation-by-item.png",
         "alt": "Vista de lista de ítems de carga, validación a nivel de SKU",
         "altEn": "Load item list view, SKU-level validation"
@@ -704,8 +704,8 @@
       {
         "title": "Dashboard de supervisor en tiempo real",
         "titleEn": "Real-time supervisor dashboard",
-        "description": "Vista centralizada del estado de validación de toda la flota por turno. Hoy el supervisor consulta cada ruta individualmente — el dashboard eliminaría esa carga operacional.",
-        "descriptionEn": "Centralized view of validation status for the entire fleet by shift. Today supervisors check each route individually — the dashboard would eliminate that operational overhead."
+        "description": "Vista centralizada del estado de validación de toda la flota por turno. Hoy el supervisor consulta cada ruta individualmente: el dashboard eliminaría esa carga operacional.",
+        "descriptionEn": "Centralized view of validation status for the entire fleet by shift. Today supervisors check each route individually: the dashboard would eliminate that operational overhead."
       },
       {
         "title": "Integración con WMS para pre-llenado de datos",
