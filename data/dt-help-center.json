@@ -33,20 +33,20 @@
     {
       "label": "Duración",
       "labelEn": "Duration",
-      "value": "—",
-      "valueEn": "—"
+      "value": "3 semanas",
+      "valueEn": "3 weeks"
     },
     {
       "label": "Equipo",
       "labelEn": "Team",
-      "value": "—",
-      "valueEn": "—"
+      "value": "Diseñador único",
+      "valueEn": "Solo designer"
     },
     {
       "label": "Año",
       "labelEn": "Year",
-      "value": "—",
-      "valueEn": "—"
+      "value": "2026",
+      "valueEn": "2026"
     },
     {
       "label": "Entregables",
@@ -297,7 +297,7 @@
         "titleEn": "Quiz",
         "description": "Preguntas simples sobre el video, con verificación y reintento guiado.",
         "descriptionEn": "Simple questions about the video, with verification and guided retry.",
-        "src": "data/images/dt-help-center-03-quiz.webp",
+        "src": "data/images/dt-help-center-03-quiz.webp?v=2",
         "alt": "Cuestionario de un tutorial",
         "altEn": "Tutorial quiz"
       },
@@ -344,22 +344,6 @@
         "metric": "2.4x",
         "description": "(1.8 → 4.3 por operario en su primer mes): de consultas reactivas a rutas completas.",
         "descriptionEn": "(1.8 → 4.3 per operator in their first month): from reactive lookups to full learning paths."
-      },
-      {
-        "icon": "🎯",
-        "label": "Aprobación al primer intento",
-        "labelEn": "First-attempt pass rate",
-        "metric": "79%",
-        "description": "Reveló 2 tutoriales críticos que necesitaban refuerzo.",
-        "descriptionEn": "Revealed 2 critical tutorials that needed reinforcement."
-      },
-      {
-        "icon": "🎧",
-        "label": "Tickets de soporte N1",
-        "labelEn": "Basic support tickets",
-        "metric": "-28%",
-        "description": "en consultas repetitivas de operarios con menos de 30 días.",
-        "descriptionEn": "in repetitive queries from operators under 30 days on the platform."
       }
     ],
     "learningsTitle": "Aprendizajes Clave",
@@ -370,12 +354,6 @@
         "titleEn": "Help works best where people work",
         "description": "Los operadores se frustraban con un Help Center aparte. Llevarlo a la plataforma, con un tutorial por sección, evitó buscar y leer fuera de contexto.",
         "descriptionEn": "Operators were frustrated by a separate Help Center. Bringing it into the platform, with one tutorial per section, avoided searching and reading out of context."
-      },
-      {
-        "title": "El cuestionario también mide los tutoriales",
-        "titleEn": "The quiz also measures the tutorials",
-        "description": "La aprobación al primer intento (79%) señaló 2 tutoriales críticos donde el equipo necesitaba reforzar el contenido.",
-        "descriptionEn": "First-attempt pass rate (79%) flagged 2 critical tutorials where the team needed to reinforce the content."
       }
     ],
     "nextSteps": []

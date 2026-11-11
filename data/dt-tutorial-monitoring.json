@@ -31,20 +31,20 @@
     {
       "label": "Duración",
       "labelEn": "Duration",
-      "value": "—",
-      "valueEn": "—"
+      "value": "3 semanas",
+      "valueEn": "3 weeks"
     },
     {
       "label": "Equipo",
       "labelEn": "Team",
-      "value": "—",
-      "valueEn": "—"
+      "value": "Diseñador único",
+      "valueEn": "Solo designer"
     },
     {
       "label": "Año",
       "labelEn": "Year",
-      "value": "—",
-      "valueEn": "—"
+      "value": "2026",
+      "valueEn": "2026"
     },
     {
       "label": "Entregables",
