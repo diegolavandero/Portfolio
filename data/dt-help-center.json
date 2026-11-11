@@ -114,8 +114,8 @@
   "uxResearch": {
     "title": "Metodología UX",
     "titleEn": "UX Design Process",
-    "subtitle": "Entrevistas exploratorias con operadores",
-    "subtitleEn": "Exploratory interviews with operators",
+    "subtitle": "Entrevistas exploratorias con operadores y medición en 5 cuentas piloto",
+    "subtitleEn": "Exploratory interviews with operators and measurement across 5 pilot accounts",
     "methodCards": [
       {
         "name": "Entrevistas exploratorias con operadores",
@@ -124,6 +124,14 @@
         "descriptionEn": "Operators described their frustration with entering a Help Center separate from the platform: they had to go to another section, search for a specific problem and read text.",
         "finding": "La ayuda debía vivir dentro de la plataforma, no al lado. De ahí la decisión de un sidebar.",
         "findingEn": "Help had to live inside the platform, not beside it. Hence the decision for a sidebar."
+      },
+      {
+        "name": "Cómo medimos el impacto",
+        "nameEn": "How we measured impact",
+        "description": "Durante 60 días, en las mismas 5 cuentas piloto, comparamos a los operadores nuevos con el historial previo. La línea base salió de los datos del Help Center anterior; el piloto, de los eventos del sidebar.",
+        "descriptionEn": "For 60 days, across the same 5 pilot accounts, we compared new operators against the previous history. The baseline came from the old Help Center data; the pilot, from sidebar events.",
+        "finding": "Onboardings: operadores nuevos que completan el nivel inicial en 15 días ÷ operadores nuevos. Adopción: mediana de días hábiles desde la creación de la cuenta hasta la primera ruta asignada sin ayuda. Sesiones: sesiones de aprendizaje en el primer mes ÷ operadores activos.",
+        "findingEn": "Onboardings: new operators who complete the starter level within 15 days ÷ new operators. Adoption: median business days from account creation to the first route assigned unaided. Sessions: learning sessions in the first month ÷ active operators."
       }
     ]
   },
