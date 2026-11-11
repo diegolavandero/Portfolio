@@ -566,6 +566,8 @@
     "badgeEn": "Functional prototype",
     "srcEs": "/prototypes/load-validation-es.html",
     "srcEn": "/prototypes/load-validation-en.html",
+    "repoUrl": "https://github.com/diegolavandero/Portfolio/blob/main/prototypes/load-validation-es.html",
+    "repoUrlEn": "https://github.com/diegolavandero/Portfolio/blob/main/prototypes/load-validation-en.html",
     "height": 1180
   },
   "designs": {

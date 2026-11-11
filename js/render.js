@@ -1027,6 +1027,19 @@ const Renderer = {
             <h2 ${bi(data.title, data.titleEn)}>${data.title}</h2>
             ${data.subtitle ? `<p ${bi(data.subtitle, data.subtitleEn)}>${data.subtitle}</p>` : ''}
           </div>
+          ${(() => {
+            const full = (l) => (l === 'en' ? (data.srcEn || data.srcEs) : (data.srcEs || data.srcEn));
+            const repo = data.repoUrl ? (lang === 'en' ? (data.repoUrlEn || data.repoUrl) : data.repoUrl) : '';
+            const ico = (d) => `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
+            return `<div class="live-prototype-links">
+              <a class="live-prototype-link" href="${esc(full(lang))}" data-href-es="${esc(full('es'))}" data-href-en="${esc(full('en'))}" target="_blank" rel="noopener">
+                ${ico('<path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>')}<span ${bi('Abrir en pantalla completa', 'Open full screen')}>Abrir en pantalla completa</span>
+              </a>
+              ${repo ? `<a class="live-prototype-link" href="${esc(repo)}" data-href-es="${esc(data.repoUrl)}" data-href-en="${esc(data.repoUrlEn || data.repoUrl)}" target="_blank" rel="noopener">
+                ${ico('<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.3 6.4-1.5 6.4-7A5.4 5.4 0 0 0 20 4.8 5 5 0 0 0 19.9 1S18.7.7 16 2.5a13.4 13.4 0 0 0-7 0C6.3.7 5.1 1 5.1 1A5 5 0 0 0 5 4.8a5.4 5.4 0 0 0-1.5 3.8c0 5.5 3.3 6.7 6.4 7a3.4 3.4 0 0 0-.9 2.6V22"/>')}<span ${bi('Ver código en GitHub', 'View code on GitHub')}>Ver código en GitHub</span>
+              </a>` : ''}
+            </div>`;
+          })()}
           <div class="live-prototype-frame-wrap">
             <iframe
               class="live-prototype-frame"

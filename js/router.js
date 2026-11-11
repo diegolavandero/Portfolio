@@ -312,6 +312,13 @@ const Router = {
       const src = el.getAttribute(srcAttr);
       if (src && el.getAttribute('src') !== src) el.setAttribute('src', src);
     });
+
+    // Links next to the prototype (full screen / repo): same language swap on href.
+    const hrefAttr = lang === 'es' ? 'data-href-es' : 'data-href-en';
+    document.querySelectorAll('a[data-href-es][data-href-en]').forEach(el => {
+      const href = el.getAttribute(hrefAttr);
+      if (href && el.getAttribute('href') !== href) el.setAttribute('href', href);
+    });
   },
 
   updateActiveNav: () => {

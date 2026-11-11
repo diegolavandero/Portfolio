@@ -86,6 +86,7 @@
     "badgeEn": "Functional prototype",
     "srcEs": "/prototypes/dt-ds/index.html#/usuarios",
     "srcEn": "/prototypes/dt-ds/index.html#/usuarios",
+    "repoUrl": "https://github.com/diegolavandero/dt-design-system-package/tree/main/src/screens/UsersSettings",
     "height": 860
   }
 }

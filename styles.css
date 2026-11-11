@@ -1718,6 +1718,44 @@ body {
   padding: var(--spacing-4xl) 0;
 }
 
+.live-prototype-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+}
+
+.live-prototype-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid var(--gray-200);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--gray-700);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color var(--transition), color var(--transition), background var(--transition);
+}
+
+.live-prototype-link:hover {
+  border-color: var(--indigo-500);
+  color: var(--indigo-600);
+  background: var(--indigo-50);
+}
+
+.live-prototype-link:focus-visible {
+  outline: 2px solid var(--indigo-500);
+  outline-offset: 2px;
+}
+
+.live-prototype-links + .live-prototype-frame-wrap {
+  margin-top: var(--spacing-md);
+}
+
 .live-prototype-frame-wrap {
   margin-top: var(--spacing-lg);
   border-radius: 14px;
