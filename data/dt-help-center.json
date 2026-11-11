@@ -3,8 +3,8 @@
   "slug": "dt-help-center",
   "title": "Centro de ayuda y onboarding",
   "titleEn": "Help center & onboarding",
-  "subtitle": "Del aprender a ciegas a un onboarding guiado, dentro de la propia pantalla",
-  "subtitleEn": "From learning blind to guided onboarding, inside the screen itself",
+  "subtitle": "Del help center separado a un sidebar que vive en la plataforma",
+  "subtitleEn": "From a separate help center to a sidebar that lives in the platform",
   "hero": {
     "tagline": "DISPATCHTRACK · LAST MILE · ONBOARDING",
     "taglineEn": "DISPATCHTRACK · LAST MILE · ONBOARDING",
@@ -12,10 +12,10 @@
     "titleEn": "Help center ",
     "titleAccent": "y onboarding",
     "titleAccentEn": "& onboarding",
-    "subtitle": "Del aprender a ciegas a un onboarding guiado",
-    "subtitleEn": "From learning blind to guided onboarding",
-    "description": "Diseñé un centro de ayuda contextual para el usuario que recién llega a la plataforma: tutoriales por niveles, con video, cuestionario y progreso, sin sacarlo de su pantalla. Su contraparte, el Monitoreo de tutoriales, muestra ese avance al administrador.",
-    "descriptionEn": "I designed a contextual help center for the user who has just arrived on the platform: tutorials by level, with video, quiz and progress, without taking them off their screen. Its counterpart, Tutorial monitoring, shows that progress to the admin."
+    "subtitle": "Del help center separado a un sidebar que vive en la plataforma",
+    "subtitleEn": "From a separate help center to a sidebar that lives in the platform",
+    "description": "Diseñé un sidebar de tutoriales que vive dentro de la plataforma, para el operador que recién llega: cada sección tiene su tutorial con video y cuestionario, a un clic de donde está trabajando. Su contraparte, el Monitoreo de tutoriales, muestra ese avance al administrador.",
+    "descriptionEn": "I designed a tutorials sidebar that lives inside the platform, for the operator who has just arrived: every section has its own tutorial with video and quiz, one click from where they work. Its counterpart, Tutorial monitoring, shows that progress to the admin."
   },
   "projectSpecs": [
     {
@@ -63,69 +63,61 @@
   "problemAndObjectives": {
     "title": "Problema",
     "titleEn": "Problem",
-    "subtitle": "Las empresas que contratan DispatchTrack rotan con frecuencia a sus técnicos y operadores logísticos, y cada persona nueva debe aprender la plataforma. Para quien llegaba, el onboarding era precario y no había un camino claro para aprender.",
-    "subtitleEn": "Companies that hire DispatchTrack frequently rotate their technicians and logistics operators, and every new person has to learn the platform. For those arriving, the onboarding was precarious and there was no clear path to learn.",
+    "subtitle": "Los operadores nuevos debían aprender la plataforma, pero el Help Center estaba separado, en otra sección. Para pedir ayuda tenían que salir de su trabajo, buscar un problema específico y leer texto.",
+    "subtitleEn": "New operators had to learn the platform, but the Help Center was separate, in another section. To get help they had to leave their work, search for a specific problem and read text.",
     "products": [
       {
         "name": "Situación actual",
         "nameEn": "Current situation",
         "cons": [
-          "No existía un camino guiado: cada operador nuevo aprendía por su cuenta",
-          "La ayuda se usaba en la emergencia, buscando con Ctrl+F cuando ya se cometían errores en vivo",
-          "El usuario no sabía qué había aprendido ni qué le faltaba"
+          "El Help Center vivía aparte de la plataforma, en otra sección",
+          "Había que buscar un problema específico para encontrar ayuda",
+          "La ayuda era texto para leer, sin un camino para aprender"
         ],
         "consEn": [
-          "There was no guided path: every new operator learned on their own",
-          "Help was used in emergencies, searching with Ctrl+F while already making live mistakes",
-          "Users didn't know what they had learned or what was left"
+          "The Help Center lived apart from the platform, in another section",
+          "Users had to search for a specific problem to find help",
+          "Help was text to read, with no path to learn"
         ]
       }
     ],
     "objectives": [
       {
         "number": "01",
-        "title": "Un camino de aprendizaje",
-        "titleEn": "A learning path",
-        "description": "Ordenar los tutoriales por niveles para que el operador nuevo sepa por dónde empezar y qué sigue",
-        "descriptionEn": "Organize tutorials by level so new operators know where to start and what comes next"
+        "title": "Ayuda dentro de la plataforma",
+        "titleEn": "Help inside the platform",
+        "description": "Llevar la ayuda al lugar donde el operador trabaja, en vez de a una sección aparte",
+        "descriptionEn": "Bring help to where operators work, instead of a separate section"
       },
       {
         "number": "02",
-        "title": "Ayuda sin salir de la pantalla",
-        "titleEn": "Help without leaving the screen",
-        "description": "Llevar el aprendizaje al lugar donde el usuario trabaja, en vez de a un destino aparte",
-        "descriptionEn": "Bring learning to where users work, instead of a separate destination"
+        "title": "Un tutorial por sección",
+        "titleEn": "One tutorial per section",
+        "description": "Conectar cada pantalla con su propio tutorial, sin buscar ni leer de más",
+        "descriptionEn": "Connect each screen to its own tutorial, with no searching or extra reading"
       },
       {
         "number": "03",
-        "title": "Progreso y verificación visibles",
-        "titleEn": "Visible progress and verification",
-        "description": "Mostrar cuánto ha avanzado y confirmar lo aprendido con un cuestionario",
-        "descriptionEn": "Show how far they've come and confirm what they learned with a quiz"
+        "title": "Aprender, no ser evaluado",
+        "titleEn": "Learn, not be graded",
+        "description": "Reforzar lo aprendido con un cuestionario que orienta, y mostrar el progreso",
+        "descriptionEn": "Reinforce learning with a quiz that guides, and show progress"
       }
     ]
   },
   "uxResearch": {
     "title": "Metodología UX",
     "titleEn": "UX Design Process",
-    "subtitle": "De las quejas sobre el onboarding a un patrón de uso: se aprende en la emergencia",
-    "subtitleEn": "From complaints about onboarding to a usage pattern: people learn in the emergency",
+    "subtitle": "Entrevistas exploratorias con operadores",
+    "subtitleEn": "Exploratory interviews with operators",
     "methodCards": [
       {
-        "name": "Entrevistas exploratorias",
-        "nameEn": "Exploratory interviews",
-        "description": "Conversamos con administradores de empresas clientes sobre su experiencia con la plataforma. Dos temas se repitieron: el onboarding se percibía como precario y el tiempo de adopción de los nuevos usuarios era alto.",
-        "descriptionEn": "We talked to admins at client companies about their experience with the platform. Two themes kept coming up: the onboarding felt precarious and the time for new users to adopt the platform was long.",
-        "finding": "El usuario nuevo no tenía un recorrido que seguir.",
-        "findingEn": "New users had no journey to follow."
-      },
-      {
-        "name": "Grabaciones y encuesta en Hotjar",
-        "nameEn": "Hotjar recordings and survey",
-        "description": "Session recordings y una encuesta en el Help Center, solo para usuarios con menos de 15 días en la plataforma.",
-        "descriptionEn": "Session recordings and a survey in the Help Center, only for users with under 15 days on the platform.",
-        "finding": "Los operadores nuevos no seguían el programa: entraban de emergencia a buscar con Ctrl+F cuando ya cometían errores en vivo.",
-        "findingEn": "New operators didn't follow the program: they rushed in to Ctrl+F for fixes while already making live mistakes."
+        "name": "Entrevistas exploratorias con operadores",
+        "nameEn": "Exploratory interviews with operators",
+        "description": "Los operadores contaron su frustración al entrar a un Help Center separado de la plataforma: tenían que ir a otra sección, buscar un problema específico y leer texto.",
+        "descriptionEn": "Operators described their frustration with entering a Help Center separate from the platform: they had to go to another section, search for a specific problem and read text.",
+        "finding": "La ayuda debía vivir dentro de la plataforma, no al lado. De ahí la decisión de un sidebar.",
+        "findingEn": "Help had to live inside the platform, not beside it. Hence the decision for a sidebar."
       }
     ]
   },
@@ -151,21 +143,21 @@
           "Know where to start and what's left"
         ],
         "painPoints": [
-          "El onboarding de la plataforma se percibe precario",
-          "Aprende en plena operación, cuando ya está cometiendo errores",
-          "No sabe cuánto ha avanzado"
+          "Debe salir de la plataforma para encontrar ayuda",
+          "Tiene que buscar un problema específico para dar con la respuesta",
+          "La ayuda es texto que hay que leer"
         ],
         "painPointsEn": [
-          "The platform's onboarding feels precarious",
-          "Learns mid-operation, when mistakes are already happening",
-          "Doesn't know how far along they are"
+          "Has to leave the platform to find help",
+          "Has to search for a specific problem to find the answer",
+          "Help is text that has to be read"
         ],
         "behaviors": [
-          "Entra al Help Center de emergencia, buscando con Ctrl+F",
+          "Busca ayuda cuando se traba en una tarea",
           "Avanza a su ritmo, sin que nadie lo note"
         ],
         "behaviorsEn": [
-          "Rushes into the Help Center, searching with Ctrl+F",
+          "Looks for help when stuck on a task",
           "Progresses at their own pace, unnoticed"
         ]
       }
@@ -174,44 +166,44 @@
   "solution": {
     "title": "Solución",
     "titleEn": "Solution",
-    "subtitle": "Un panel de tutoriales que se abre sobre la pantalla actual: catálogo por niveles, video, cuestionario y progreso en un solo lugar.",
-    "subtitleEn": "A tutorials sidebar that opens over the current screen: a catalog by level, video, quiz and progress in one place.",
+    "subtitle": "Un sidebar de tutoriales que vive dentro de la plataforma, con acceso directo desde cada sección al tutorial correspondiente.",
+    "subtitleEn": "A tutorials sidebar that lives inside the platform, with direct access from each section to its own tutorial.",
     "components": [
       {
         "number": "01",
-        "title": "Panel de tutoriales",
+        "title": "Sidebar de tutoriales",
         "titleEn": "Tutorials sidebar",
-        "tagline": "Ayuda sin perder el lugar",
-        "taglineEn": "Help without losing your place",
-        "description": "Se abre desde la barra superior con tu avance a la vista, y se cierra con Esc para volver a tu trabajo.",
-        "descriptionEn": "Opens from the top bar with your progress in view, and closes with Esc to return to your work."
+        "tagline": "Ayuda sin salir de la plataforma",
+        "taglineEn": "Help without leaving the platform",
+        "description": "Se abre desde la barra superior, con tu avance a la vista y el catálogo de 49 tutoriales en 3 niveles.",
+        "descriptionEn": "Opens from the top bar, with your progress in view and the catalog of 49 tutorials in 3 levels."
       },
       {
         "number": "02",
-        "title": "Catálogo por niveles",
-        "titleEn": "Catalog by level",
-        "tagline": "49 tutoriales, 3 niveles",
-        "taglineEn": "49 tutorials, 3 levels",
-        "description": "Cada tutorial muestra su estado (pendiente, en progreso, completado) para saber qué sigue.",
-        "descriptionEn": "Each tutorial shows its status (pending, in progress, completed) so you know what's next."
+        "title": "Tutorial por sección",
+        "titleEn": "Tutorial per section",
+        "tagline": "Conexión contextual",
+        "taglineEn": "Contextual connection",
+        "description": "Junto a la descripción de cada sección hay un ícono de tutorial: si estás en Órdenes, llegas directo al tutorial de Órdenes.",
+        "descriptionEn": "Next to each section's description there's a tutorial icon: in Orders, it takes you straight to the Orders tutorial."
       },
       {
         "number": "03",
         "title": "Video y cuestionario",
         "titleEn": "Video and quiz",
-        "tagline": "Verificar lo aprendido",
-        "taglineEn": "Confirm what you learned",
-        "description": "Cada tutorial combina un video corto con un cuestionario de reintento; aprobarlo suma al progreso general.",
-        "descriptionEn": "Each tutorial pairs a short video with a retryable quiz; passing it adds to overall progress."
+        "tagline": "Aprender, no ser evaluado",
+        "taglineEn": "Learn, not be graded",
+        "description": "El video explica los hitos de la sección y el cuestionario tiene preguntas simples sobre él. Ambos deben quedar marcados para completar el tutorial. Si te equivocas, el cuestionario te guía hacia la respuesta correcta.",
+        "descriptionEn": "The video explains the section's main milestones and the quiz asks simple questions about it. Both must be checked to complete the tutorial. If you get one wrong, the quiz guides you to the right answer."
       },
       {
         "number": "04",
-        "title": "Estados del usuario",
-        "titleEn": "User states",
-        "tagline": "Vacío, anuncio, tutorial nuevo",
-        "taglineEn": "Empty, announcement, new tutorial",
-        "description": "Un usuario nuevo ve el tutorial de su sección en lugar de una pantalla vacía, y las funciones nuevas se anuncian dentro del producto.",
-        "descriptionEn": "A new user sees their section's tutorial instead of an empty screen, and new features are announced inside the product."
+        "title": "Artículos relacionados",
+        "titleEn": "Related articles",
+        "tagline": "Del Help Center global",
+        "taglineEn": "From the global Help Center",
+        "description": "Cada tutorial muestra los artículos del Help Center global que corresponden a esa sección.",
+        "descriptionEn": "Each tutorial shows the global Help Center articles that match that section."
       }
     ],
     "principlesTitle": "Principios de Diseño",
@@ -219,32 +211,32 @@
     "principles": [
       {
         "number": "01",
-        "title": "Ayuda donde estás",
-        "titleEn": "Help where you are",
-        "description": "Si el usuario aprende en plena operación, la ayuda debe abrirse sobre su pantalla, no sacarlo de ella.",
-        "descriptionEn": "If users learn mid-operation, help must open over their screen, not pull them away from it."
+        "title": "La ayuda vive en la plataforma",
+        "titleEn": "Help lives in the platform",
+        "description": "El operador no debería salir de su trabajo para aprender cómo hacerlo.",
+        "descriptionEn": "Operators shouldn't leave their work to learn how to do it."
       },
       {
         "number": "02",
-        "title": "Un camino, no un buscador",
-        "titleEn": "A path, not a search box",
-        "description": "El catálogo por niveles responde «¿qué sigue?» antes de que el usuario tenga que buscar.",
-        "descriptionEn": "The level-based catalog answers “what's next?” before users have to search."
+        "title": "Contexto por sección",
+        "titleEn": "Context per section",
+        "description": "Cada pantalla enlaza a su propio tutorial: sin buscar, sin leer de más.",
+        "descriptionEn": "Every screen links to its own tutorial: no searching, no extra reading."
       },
       {
         "number": "03",
-        "title": "Progreso que se ve",
-        "titleEn": "Progress you can see",
-        "description": "El avance siempre está visible en la barra superior, así aprender se siente como algo que se completa.",
-        "descriptionEn": "Progress is always visible in the top bar, so learning feels like something you complete."
+        "title": "Guiar, no descalificar",
+        "titleEn": "Guide, don't disqualify",
+        "description": "El objetivo es aprender: el cuestionario orienta hacia la respuesta correcta en vez de penalizar el error.",
+        "descriptionEn": "The goal is learning: the quiz points to the right answer instead of penalizing the mistake."
       }
     ]
   },
   "livePrototype": {
     "title": "Prototipo interactivo",
     "titleEn": "Interactive prototype",
-    "subtitle": "Haz clic en el chip de tutoriales de la barra superior para abrir el panel de tutoriales, navega el catálogo, mira un video simulado, responde el cuestionario y observa cómo avanza tu progreso. Usa el selector de demo para ver los estados.",
-    "subtitleEn": "Click the tutorials chip in the top bar to open the tutorials sidebar, browse the catalog, watch a simulated video, take the quiz and watch your progress advance. Use the demo selector to see the states.",
+    "subtitle": "Abre el sidebar desde el chip de tutoriales de la barra superior, o desde el ícono de tutorial junto a la descripción de «Órdenes/guías». Mira el video, responde el cuestionario y observa cómo avanza tu progreso.",
+    "subtitleEn": "Open the sidebar from the tutorials chip in the top bar, or from the tutorial icon next to the “Orders/guides” description. Watch the video, take the quiz and watch your progress advance.",
     "badge": "Prototipo funcional",
     "badgeEn": "Functional prototype",
     "srcEs": "/prototypes/dt-ds/index.html#/ayuda",
@@ -260,8 +252,8 @@
       {
         "title": "Tutorial",
         "titleEn": "Tutorial",
-        "description": "Video, estado de avance y cuestionario de un tutorial, con artículos relacionados.",
-        "descriptionEn": "A tutorial's video, progress status and quiz, with related articles.",
+        "description": "Video, estado de avance, cuestionario y artículos relacionados de la sección.",
+        "descriptionEn": "The section's video, progress status, quiz and related articles.",
         "src": "data/images/dt-help-center-02-tutorial.webp",
         "alt": "Tutorial abierto en el panel",
         "altEn": "Tutorial open in the sidebar"
@@ -269,8 +261,8 @@
       {
         "title": "Cuestionario",
         "titleEn": "Quiz",
-        "description": "Preguntas con verificación y reintento para confirmar lo aprendido.",
-        "descriptionEn": "Questions with verification and retry to confirm what was learned.",
+        "description": "Preguntas simples sobre el video, con verificación y reintento guiado.",
+        "descriptionEn": "Simple questions about the video, with verification and guided retry.",
         "src": "data/images/dt-help-center-03-quiz.webp",
         "alt": "Cuestionario de un tutorial",
         "altEn": "Tutorial quiz"
@@ -340,16 +332,16 @@
     "learningsTitleEn": "Key Learnings",
     "learnings": [
       {
-        "title": "La ayuda se usa en la emergencia, no en el programa",
-        "titleEn": "Help is used in the emergency, not in the program",
-        "description": "Las grabaciones mostraron búsquedas puntuales con Ctrl+F en pleno error. Por eso el diseño lleva la ayuda a la pantalla donde se trabaja.",
-        "descriptionEn": "Recordings showed ad-hoc Ctrl+F searches mid-error. That's why the design brings help to the screen where people work."
+        "title": "La ayuda funciona mejor donde se trabaja",
+        "titleEn": "Help works best where people work",
+        "description": "Los operadores se frustraban con un Help Center aparte. Llevarlo a la plataforma, con un tutorial por sección, evitó buscar y leer fuera de contexto.",
+        "descriptionEn": "Operators were frustrated by a separate Help Center. Bringing it into the platform, with one tutorial per section, avoided searching and reading out of context."
       },
       {
-        "title": "Ver el progreso convierte el aprendizaje en algo que se completa",
-        "titleEn": "Seeing progress turns learning into something you complete",
-        "description": "Un camino por niveles con estado y avance visible da al usuario un objetivo claro, algo que un buscador de artículos no ofrece.",
-        "descriptionEn": "A level-based path with visible status and progress gives users a clear goal, something an article search can't offer."
+        "title": "El cuestionario también mide los tutoriales",
+        "titleEn": "The quiz also measures the tutorials",
+        "description": "La aprobación al primer intento (79%) señaló 2 tutoriales críticos donde el equipo necesitaba reforzar el contenido.",
+        "descriptionEn": "First-attempt pass rate (79%) flagged 2 critical tutorials where the team needed to reinforce the content."
       }
     ],
     "nextSteps": []
