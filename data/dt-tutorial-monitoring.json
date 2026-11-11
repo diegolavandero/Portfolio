@@ -152,7 +152,8 @@
         "labelEn": "Time to adoption",
         "metric": "14 → 9 días",
         "description": "El tiempo para que un operador nuevo opere de forma autónoma bajó casi una semana con el panel.",
-        "descriptionEn": "Time for a new operator to work independently dropped by almost a week with the panel."
+        "descriptionEn": "Time for a new operator to work independently dropped by almost a week with the panel.",
+        "metricEn": "14 → 9 days"
       },
       {
         "icon": "👀",
@@ -383,7 +384,8 @@
         "label": "Tiempo de adopción",
         "labelEn": "Time to adoption",
         "description": "Los nuevos operadores trabajan de forma autónoma casi una semana antes.",
-        "descriptionEn": "New operators work independently almost a week sooner."
+        "descriptionEn": "New operators work independently almost a week sooner.",
+        "metricEn": "14 → 9 days"
       },
       {
         "icon": "✅",

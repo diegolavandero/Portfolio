@@ -179,7 +179,7 @@ const Renderer = {
       <div class="impact-card">
         ${item.icon ? `<div class="impact-icon">${item.icon}</div>` : ''}
         <p class="impact-eyebrow" ${bi(item.label, item.labelEn)}>${item.label}</p>
-        <p class="impact-metric">${item.metric}</p>
+        <p class="impact-metric" ${bi(item.metric, item.metricEn)}>${item.metric}</p>
         <p class="impact-desc" ${bi(item.description, item.descriptionEn)}>${item.description}</p>
       </div>
     `).join('');
@@ -449,7 +449,7 @@ const Renderer = {
         <article class="persona-card">
           <header class="persona-header">
             <img src="${esc(p.avatar)}" alt="${esc(p.name)}" class="persona-avatar">
-            <h3 class="persona-name">${p.name}</h3>
+            <h3 class="persona-name" ${bi(p.name, p.nameEn)}>${p.name}</h3>
             <p class="persona-role" ${bi(p.role, p.roleEn)}>${p.role}</p>
           </header>
           <div class="persona-block">
@@ -1150,7 +1150,7 @@ const Renderer = {
           <div class="impact-card">
             ${i.icon ? `<div class="impact-icon">${i.icon}</div>` : ''}
             <p class="impact-eyebrow" ${bi(i.label, i.labelEn)}>${i.label}</p>
-            <p class="impact-metric">${i.metric}</p>
+            <p class="impact-metric" ${bi(i.metric, i.metricEn)}>${i.metric}</p>
             <p class="impact-desc" ${bi(i.description, i.descriptionEn)}>${i.description}</p>
           </div>
         `).join('')
