@@ -142,7 +142,10 @@
           "es": "Tailwind",
           "en": "Tailwind"
         }
-      ]
+      ],
+      "metric": "↑ 48 pp",
+      "metricLabel": "onboardings completados",
+      "metricLabelEn": "onboardings completed"
     },
     {
       "eyebrow": "PROTOTIPO · REACT + TAILWIND",
