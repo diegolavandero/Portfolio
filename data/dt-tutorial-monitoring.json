@@ -228,6 +228,14 @@
         "descriptionEn": "With heatmaps and recordings we measured how admins in the pilot accounts used the panel during the first weeks.",
         "finding": "Escanean primero los KPIs y luego bajan a la tabla. Hicieron rage clicks sobre los operadores rezagados, buscando enviarles un recordatorio.",
         "findingEn": "They scan the KPIs first, then go down to the table. They rage-clicked on lagging operators, trying to send them a reminder."
+      },
+      {
+        "name": "Cómo medimos el impacto",
+        "nameEn": "How we measured impact",
+        "description": "Durante 60 días, en 5 cuentas piloto, combinamos eventos de analítica de producto con Hotjar. La línea base salió de las entrevistas y una revisión de tickets de soporte.",
+        "descriptionEn": "For 60 days, across 5 pilot accounts, we combined product analytics events with Hotjar. The baseline came from the interviews and a review of support tickets.",
+        "finding": "Adopción: admins activos por semana ÷ admins del piloto. Detección: tiempo desde que se crea un operador hasta la primera acción del admin. Filtros: sesiones con filtros o vista Por tutorial ÷ sesiones totales. Seguimiento: rezagados atendidos en 72 h ÷ rezagados totales.",
+        "findingEn": "Adoption: weekly active admins ÷ pilot admins. Detection: time from an operator's creation to the admin's first action. Filters: sessions with filters or the By tutorial view ÷ total sessions. Follow-up: lagging operators addressed within 72 h ÷ all lagging operators."
       }
     ]
   },
@@ -364,8 +372,8 @@
         "label": "Detección de rezago",
         "labelEn": "Time to intervention",
         "metric": "-60%",
-        "description": "De semanas (al ocurrir un error en ruta) a menos de 48 horas.",
-        "descriptionEn": "From weeks (after a route error) to under 48 hours."
+        "description": "De unos 5 días a menos de 48 horas.",
+        "descriptionEn": "From about 5 days to under 48 hours."
       },
       {
         "icon": "🔎",
