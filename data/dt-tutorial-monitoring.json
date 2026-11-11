@@ -4,7 +4,7 @@
   "title": "Monitoreo de tutoriales",
   "subtitle": "De un onboarding a ciegas a una adopción con seguimiento",
   "hero": {
-    "tagline": "DISPATCHTRACK · LAST MILE · ADMIN ANALYTICS · DESKTOP",
+    "tagline": "DISPATCHTRACK · LAST MILE · ANALÍTICA PARA ADMINISTRADORES · DESKTOP",
     "taglineEn": "DISPATCHTRACK · LAST MILE · ADMIN ANALYTICS · DESKTOP",
     "title": "Monitoreo de ",
     "titleEn": "Tutorial ",
@@ -375,9 +375,9 @@
       },
       {
         "icon": "⏱️",
-        "label": "Detección de rezago",
-        "labelEn": "Time to intervention",
-        "metric": "-60%",
+        "label": "Detección de rezago más rápida",
+        "labelEn": "Faster lag detection",
+        "metric": "60%",
         "description": "De unos 5 días a menos de 48 horas.",
         "descriptionEn": "From about 5 days to under 48 hours."
       },
@@ -433,5 +433,6 @@
     "buttonLabel": "Ver siguiente proyecto",
     "buttonLabelEn": "See next project",
     "buttonHref": "#/dt-help-center"
-  }
+  },
+  "titleEn": "Tutorial monitoring"
 }

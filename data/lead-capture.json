@@ -77,17 +77,19 @@
         "icon": "💼",
         "label": "Impacto en Negocio",
         "labelEn": "Business Impact",
-        "metric": "↑ Leads",
+        "metric": "Más leads",
         "description": "Incremento en generación de leads calificados y reducción de fricción en contacto cliente-empresa",
-        "descriptionEn": "Increase in qualified lead generation and reduced friction in client-company contact"
+        "descriptionEn": "Increase in qualified lead generation and reduced friction in client-company contact",
+        "metricEn": "More leads"
       },
       {
         "icon": "🏢",
         "label": "Impacto en Cliente",
         "labelEn": "Client Impact",
-        "metric": "↑ Control",
+        "metric": "Más control",
         "description": "Mayor control sobre interacción con clientes y configuración flexible sin necesidad de desarrollo",
-        "descriptionEn": "Greater control over client interaction and flexible configuration without development"
+        "descriptionEn": "Greater control over client interaction and flexible configuration without development",
+        "metricEn": "More control"
       },
       {
         "icon": "⚙️",
@@ -211,19 +213,21 @@
     ],
     "stats": [
       {
-        "value": "↓ 40%",
-        "description": "abandono en contacto inicial",
-        "descriptionEn": "drop in initial contact"
+        "value": "40%",
+        "description": "menos abandono en contacto inicial",
+        "descriptionEn": "less drop-off in initial contact"
       },
       {
-        "value": "↑",
+        "value": "Mayor",
         "description": "tasa de inicio de conversación",
-        "descriptionEn": "conversation start rate"
+        "descriptionEn": "conversation start rate",
+        "valueEn": "Higher"
       },
       {
-        "value": "↑",
+        "value": "Mayor",
         "description": "completitud de datos básicos",
-        "descriptionEn": "basic data completion"
+        "descriptionEn": "basic data completion",
+        "valueEn": "Higher"
       }
     ]
   },
@@ -629,25 +633,27 @@
     "subtitleEn": "Metrics, learnings and next steps",
     "impact": [
       {
-        "metric": "↑",
+        "metric": "Mayor",
         "label": "Conversión de leads",
         "labelEn": "Lead conversion",
         "description": "Incremento significativo en generación de leads desde tráfico web",
-        "descriptionEn": "Significant increase in lead generation from web traffic"
+        "descriptionEn": "Significant increase in lead generation from web traffic",
+        "metricEn": "Higher"
       },
       {
-        "metric": "↓ 40%",
-        "label": "Abandono en contacto",
-        "labelEn": "Contact abandonment",
+        "metric": "40%",
+        "label": "Menos abandono en contacto",
+        "labelEn": "Less contact abandonment",
         "description": "Reducción de fricción en proceso de contacto inicial",
         "descriptionEn": "Friction reduction in the initial contact process"
       },
       {
-        "metric": "↑",
+        "metric": "Más rápida",
         "label": "Velocidad de interacción",
         "labelEn": "Interaction speed",
         "description": "Contacto más rápido entre el cliente y la empresa",
-        "descriptionEn": "Faster contact between the client and the company"
+        "descriptionEn": "Faster contact between the client and the company",
+        "metricEn": "Faster"
       }
     ],
     "learnings": [

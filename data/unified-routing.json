@@ -77,7 +77,7 @@
         "icon": "💼",
         "label": "Impacto en Negocio",
         "labelEn": "Business Impact",
-        "metric": "-32%",
+        "metric": "32%",
         "description": "Reducción de tiempo de planificación con mejora en escalabilidad para flotas de 300+ vehículos",
         "descriptionEn": "Reduction in planning time with improved scalability for fleets of 300+ vehicles"
       },
@@ -85,7 +85,7 @@
         "icon": "👤",
         "label": "Impacto en Usuario",
         "labelEn": "User Impact",
-        "metric": "-42%",
+        "metric": "42%",
         "description": "Reducción de carga cognitiva y menor dependencia del soporte técnico",
         "descriptionEn": "Reduced cognitive load and less dependency on technical support"
       },
@@ -93,7 +93,7 @@
         "icon": "⚙️",
         "label": "Impacto en Sistema",
         "labelEn": "System Impact",
-        "metric": "-65%",
+        "metric": "65%",
         "description": "Reducción de funcionalidades duplicadas al integrarse con LastMile, el sistema principal de órdenes",
         "descriptionEn": "Reduction of duplicated functionality by integrating with LastMile, the main order system"
       }
@@ -239,14 +239,16 @@
     "quantitativeLabelEn": "Quantitative",
     "stats": [
       {
-        "value": "+70%",
+        "value": "Más de 70%",
         "description": "de rutas requieren ajustes manuales",
-        "descriptionEn": "of routes require manual adjustments"
+        "descriptionEn": "of routes require manual adjustments",
+        "valueEn": "Over 70%"
       },
       {
-        "value": "+40%",
+        "value": "Más de 40%",
         "description": "del tiempo se pierde en edición post-ruteo",
-        "descriptionEn": "of time is lost in post-routing editing"
+        "descriptionEn": "of time is lost in post-routing editing",
+        "valueEn": "Over 40%"
       },
       {
         "value": "100%",
@@ -675,23 +677,23 @@
     "impactTitleEn": "Impact",
     "impact": [
       {
-        "metric": "↓ 32%",
-        "label": "Tiempo de planificación",
-        "labelEn": "Planning time",
+        "metric": "32%",
+        "label": "Planificación más rápida",
+        "labelEn": "Faster planning",
         "description": "Reducción significativa en tiempo de setup y ejecución de rutas",
         "descriptionEn": "Significant reduction in route setup and execution time"
       },
       {
-        "metric": "↑ 23%",
-        "label": "Eficiencia en despacho",
-        "labelEn": "Dispatch efficiency",
+        "metric": "23%",
+        "label": "Mayor eficiencia en despacho",
+        "labelEn": "Higher dispatch efficiency",
         "description": "Mejora en velocidad y precisión del proceso de despacho",
         "descriptionEn": "Improvement in dispatch process speed and precision"
       },
       {
-        "metric": "↓ 78%",
-        "label": "Errores críticos",
-        "labelEn": "Critical errors",
+        "metric": "78%",
+        "label": "Menos errores críticos",
+        "labelEn": "Fewer critical errors",
         "description": "Reducción de errores de rutas no guardadas y pedidos perdidos",
         "descriptionEn": "Reduction of unsaved-route errors and lost orders"
       }

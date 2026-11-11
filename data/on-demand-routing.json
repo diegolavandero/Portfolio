@@ -77,25 +77,28 @@
         "icon": "💼",
         "label": "Impacto en Negocio",
         "labelEn": "Business Impact",
-        "metric": "↑",
+        "metric": "Eficiencia",
         "description": "Eficiencia en asignación en tiempo real con capacidad de escalar a operaciones de alta demanda",
-        "descriptionEn": "Real-time assignment efficiency with the ability to scale to high-demand operations"
+        "descriptionEn": "Real-time assignment efficiency with the ability to scale to high-demand operations",
+        "metricEn": "Efficiency"
       },
       {
         "icon": "👤",
         "label": "Impacto en Usuario",
         "labelEn": "User Impact",
-        "metric": "✓",
+        "metric": "Control",
         "description": "Control y visibilidad sobre la automatización, reduciendo fricción en decisiones críticas",
-        "descriptionEn": "Control and visibility over automation, reducing friction in critical decisions"
+        "descriptionEn": "Control and visibility over automation, reducing friction in critical decisions",
+        "metricEn": "Control"
       },
       {
         "icon": "🔧",
         "label": "Impacto en Sistema",
         "labelEn": "System Impact",
-        "metric": "⚡",
+        "metric": "Escala",
         "description": "Base para optimización híbrida escalable y adaptable a diferentes contextos operacionales",
-        "descriptionEn": "Foundation for scalable hybrid optimization adaptable to different operational contexts"
+        "descriptionEn": "Foundation for scalable hybrid optimization adaptable to different operational contexts",
+        "metricEn": "Scale"
       }
     ]
   },
@@ -532,25 +535,25 @@
     "impact": [
       {
         "icon": "⏱️",
-        "metric": "-38%",
-        "label": "Tiempo de Asignación",
-        "labelEn": "Assignment Time",
+        "metric": "38%",
+        "label": "Asignación más rápida",
+        "labelEn": "Faster assignment",
         "description": "Reducción en tiempo promedio de asignación de rutas gracias al sistema híbrido",
         "descriptionEn": "Reduction in average route assignment time thanks to the hybrid system"
       },
       {
         "icon": "🤖",
-        "metric": "+22%",
-        "label": "Adopción Auto-Assign",
-        "labelEn": "Auto-Assign Adoption",
+        "metric": "22%",
+        "label": "Mayor adopción de Auto-Assign",
+        "labelEn": "Higher Auto-Assign adoption",
         "description": "Incremento en uso de asignación automática al mejorar transparencia y control",
         "descriptionEn": "Increase in automatic assignment use thanks to better transparency and control"
       },
       {
         "icon": "🔄",
-        "metric": "-28%",
-        "label": "Re-ediciones",
-        "labelEn": "Re-edits",
+        "metric": "28%",
+        "label": "Menos re-ediciones",
+        "labelEn": "Fewer re-edits",
         "description": "Menos correcciones posteriores gracias a mejor validación en tiempo real",
         "descriptionEn": "Fewer subsequent corrections thanks to better real-time validation"
       }

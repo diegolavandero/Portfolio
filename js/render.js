@@ -330,7 +330,7 @@ const Renderer = {
 
     const stats = (data.stats || []).map(s => `
       <div class="stat-item">
-        <p class="stat-value">${s.value}</p>
+        <p class="stat-value" ${bi(s.value, s.valueEn)}>${s.value}</p>
         <p class="stat-label" ${bi(s.description, s.descriptionEn)}>${s.description}</p>
       </div>
     `).join('');
@@ -491,7 +491,7 @@ const Renderer = {
       const colorClass = s.color === 'red' ? 'qa-stat-value--red' : '';
       return `
         <div class="qa-stat">
-          <p class="qa-stat-value ${colorClass}">${s.value}</p>
+          <p class="qa-stat-value ${colorClass}" ${bi(s.value, s.valueEn)}>${s.value}</p>
           <p class="qa-stat-label" ${bi(s.label, s.labelEn)}>${s.label}</p>
         </div>
       `;
@@ -1164,7 +1164,7 @@ const Renderer = {
         `).join('')
       : items.map(i => `
           <div class="impact-result">
-            <p class="impact-result-metric">${i.metric}</p>
+            <p class="impact-result-metric" ${bi(i.metric, i.metricEn)}>${i.metric}</p>
             <h4 class="impact-result-label" ${bi(i.label, i.labelEn)}>${i.label}</h4>
             <p class="impact-result-desc" ${bi(i.description, i.descriptionEn)}>${i.description}</p>
           </div>

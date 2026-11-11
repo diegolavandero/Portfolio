@@ -6,7 +6,7 @@
   "subtitle": "Logística · Móvil · Campo",
   "subtitleEn": "Logistics · Mobile · Field",
   "hero": {
-    "tagline": "DT GLOBAL MOBILE APP · 2023",
+    "tagline": "DT GLOBAL APP MÓVIL · 2023",
     "taglineEn": "DT GLOBAL MOBILE APP · 2023",
     "title": "Sistema de ",
     "titleEn": "Pre-Route ",
@@ -74,24 +74,24 @@
     "items": [
       {
         "icon": "⏱️",
-        "label": "Tiempo de Validación",
-        "labelEn": "Validation Time",
+        "label": "Menos tiempo de validación",
+        "labelEn": "Shorter validation time",
         "metric": "40 min → 6 min",
         "description": "Reducción de tiempo promedio de validación por conductor por ruta",
         "descriptionEn": "Average validation time reduction per driver per route"
       },
       {
         "icon": "🎯",
-        "label": "Errores Detectados en Origen",
-        "labelEn": "Errors Caught at Source",
+        "label": "Errores detectados en origen",
+        "labelEn": "Errors caught at source",
         "metric": "91%",
         "description": "De los errores se detectan antes de salir de bodega vs. el 23% anterior",
         "descriptionEn": "Errors detected before leaving the warehouse vs. 23% previously"
       },
       {
         "icon": "📋",
-        "label": "Cargas sin Docs Completos",
-        "labelEn": "Loads with Incomplete Docs",
+        "label": "Cargas con documentación completa",
+        "labelEn": "Loads with complete docs",
         "metric": "0,3%",
         "description": "Tasa de cargas que salen sin documentación completa (antes: 8,7%)",
         "descriptionEn": "Rate of loads leaving without complete documentation (previously: 8.7%)",
@@ -412,7 +412,7 @@
       "insightLabel": "INSIGHT CLAVE",
       "insightLabelEn": "KEY INSIGHT",
       "insight": "El 65% del tiempo de validación ocurría en las tareas 1–3 — y las 3 eran completamente eliminables con un sistema que conecte el TMS al checklist digital y escaneo de código de barras.",
-      "insightEn": "65% of validation time occurred in tasks 1–3 — and all 3 were completely eliminable with a system connecting the TMS to the digital checklist and barcode scanning."
+      "insightEn": "65% of validation time occurred in tasks 1–3 — and all 3 could be eliminated with a system connecting the TMS to the digital checklist and barcode scanning."
     }
   },
   "treeTesting": {
@@ -659,25 +659,25 @@
     "impact": [
       {
         "icon": "📦",
-        "metric": "-45%",
-        "label": "Discrepancias en Destino",
-        "labelEn": "Destination Discrepancies",
-        "description": "Reducción de cargas con errores detectados en el punto de entrega. Primera lectura a 60 días, con el piloto en curso: −45% frente a una meta de −80%, es decir, el 56% de la meta. La meta de −80% corresponde al despliegue completo; hoy el piloto aún no valida el 100% de las cargas, por lo que el resultado final depende de ampliar la cobertura.",
-        "descriptionEn": "Reduction in loads with errors detected at delivery point. First 60-day reading, with the pilot still running: −45% against a −80% goal, or 56% of the goal. The −80% goal applies to full rollout; the pilot doesn't yet validate 100% of loads, so the final result depends on expanding coverage."
+        "metric": "45%",
+        "label": "Menos discrepancias en destino",
+        "labelEn": "Fewer destination discrepancies",
+        "description": "Reducción de cargas con errores detectados en el punto de entrega. Primera lectura a 60 días, con el piloto en curso: 45% de reducción frente a una meta de 80%, es decir, el 56% de la meta. La meta de 80% corresponde al despliegue completo; hoy el piloto aún no valida el 100% de las cargas, por lo que el resultado final depende de ampliar la cobertura.",
+        "descriptionEn": "Reduction in loads with errors detected at delivery point. First 60-day reading, with the pilot still running: a 45% reduction against an 80% goal, or 56% of the goal. The 80% goal applies to full rollout; the pilot doesn't yet validate 100% of loads, so the final result depends on expanding coverage."
       },
       {
         "icon": "🎫",
-        "metric": "-32%",
-        "label": "Reclamos de Clientes",
-        "labelEn": "Customer Claims",
+        "metric": "32%",
+        "label": "Menos reclamos de clientes",
+        "labelEn": "Fewer customer claims",
         "description": "Caída en reclamos formales relacionados con contenido o documentación de carga",
         "descriptionEn": "Drop in formal complaints related to load content or documentation"
       },
       {
         "icon": "✅",
-        "metric": "+60%",
-        "label": "Cargas 100% Validadas",
-        "labelEn": "100% Validated Loads",
+        "metric": "60%",
+        "label": "Más cargas 100% validadas",
+        "labelEn": "More fully validated loads",
         "description": "Aumento en rutas completadas con validación digital completa antes de salida",
         "descriptionEn": "Increase in routes completed with full digital validation before departure"
       }

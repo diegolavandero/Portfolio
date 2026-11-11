@@ -4,7 +4,7 @@
   "title": "Piso Ideal · Falabella",
   "subtitle": "Copiloto de compra que arma el proyecto de piso completo, con precio final antes del carro",
   "hero": {
-    "tagline": "B2C E-COMMERCE · HOME IMPROVEMENT · MOBILE · 2025",
+    "tagline": "E-COMMERCE B2C · MEJORAMIENTO DEL HOGAR · MÓVIL · 2025",
     "taglineEn": "B2C E-COMMERCE · HOME IMPROVEMENT · MOBILE · 2025",
     "title": "Piso Ideal",
     "titleEn": "Ideal Floor",
@@ -70,10 +70,10 @@
         "descriptionEn": "Part of it came from flooring-specific friction."
       },
       {
-        "metric": "↑ 20%",
-        "metricEn": "↑ 20%",
-        "label": "conversión: objetivo",
-        "labelEn": "conversion: goal",
+        "metric": "20%",
+        "metricEn": "20%",
+        "label": "Meta de aumento en conversión",
+        "labelEn": "Conversion lift goal",
         "description": "De 30% a 36% de compradores que llegan a la etapa de pago y completan. Equivale a bajar el abandono de 70% a 64%.",
         "descriptionEn": "From 30% to 36% of shoppers who reach the payment stage and complete. Equivalent to cutting abandonment from 70% to 64%."
       },
@@ -159,8 +159,8 @@
         "number": "03",
         "title": "Menos devoluciones",
         "titleEn": "Fewer returns",
-        "meta": "Meta: 19% → ~15% (−20% relativo)",
-        "metaEn": "Goal: 19% → ~15% (−20% relative)",
+        "meta": "Meta: 19% → ~15% (20% menos, en términos relativos)",
+        "metaEn": "Goal: 19% → ~15% (20% lower in relative terms)",
         "description": "Hoy cerca del 19% de las ventas online se devuelve. Un kit completo y coherente apunta a faltantes e incompatibilidad.",
         "descriptionEn": "Today about 19% of online sales are returned. A complete, consistent kit targets shortages and incompatibility."
       },
@@ -434,18 +434,18 @@
     "titleEn": "Conclusions",
     "impact": [
       {
-        "metric": "↑ 18%",
-        "metricEn": "↑ 18%",
-        "label": "conversión",
-        "labelEn": "conversion",
+        "metric": "18%",
+        "metricEn": "18%",
+        "label": "Mayor conversión",
+        "labelEn": "Higher conversion",
         "description": "De 30% a 35,4%, y el abandono de 70% a 64,6%.",
         "descriptionEn": "From 30% to 35.4%, and abandonment from 70% to 64.6%."
       },
       {
-        "metric": "↓ 24%",
-        "metricEn": "↓ 24%",
-        "label": "devoluciones online",
-        "labelEn": "online returns",
+        "metric": "24%",
+        "metricEn": "24%",
+        "label": "Menos devoluciones online",
+        "labelEn": "Fewer online returns",
         "description": "De 19% a 14,5% en la categoría. El kit completo ataca faltantes e incompatibilidad.",
         "descriptionEn": "From 19% to 14.5% in the category. The complete kit targets shortages and incompatibility."
       },
@@ -593,5 +593,6 @@
         "badge": null
       }
     ]
-  }
+  },
+  "subtitleEn": "Shopping copilot that builds the complete flooring project, with the final price before the cart"
 }

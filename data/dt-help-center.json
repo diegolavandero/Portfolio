@@ -336,8 +336,8 @@
       },
       {
         "icon": "⏱️",
-        "label": "Tiempo de adopción",
-        "labelEn": "Time to adoption",
+        "label": "Adopción más rápida",
+        "labelEn": "Faster adoption",
         "metric": "14 → 9 días",
         "description": "hábiles para crear y asignar rutas en vivo sin ayuda.",
         "descriptionEn": "business days to create and assign live routes unaided.",
@@ -345,11 +345,12 @@
       },
       {
         "icon": "📈",
-        "label": "Sesiones de aprendizaje",
-        "labelEn": "Learning sessions",
-        "metric": "2.4x",
-        "description": "(1.8 → 4.3 por operario en su primer mes): de consultas reactivas a rutas completas.",
-        "descriptionEn": "(1.8 → 4.3 per operator in their first month): from reactive lookups to full learning paths."
+        "label": "Más sesiones de aprendizaje",
+        "labelEn": "More learning sessions",
+        "metric": "2,4x",
+        "description": "(1,8 → 4,3 por operario en su primer mes): de consultas reactivas a rutas completas.",
+        "descriptionEn": "(1.8 → 4.3 per operator in their first month): from reactive lookups to full learning paths.",
+        "metricEn": "2.4x"
       }
     ],
     "learningsTitle": "Aprendizajes Clave",

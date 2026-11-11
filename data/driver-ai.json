@@ -6,7 +6,7 @@
   "subtitle": "IA · Logística · Móvil",
   "subtitleEn": "AI · Logistics · Mobile",
   "hero": {
-    "tagline": "DT GLOBAL MOBILE APP · 2024",
+    "tagline": "DT GLOBAL APP MÓVIL · 2024",
     "taglineEn": "DT GLOBAL MOBILE APP · 2024",
     "title": "Driver AI ",
     "titleEn": "Driver AI ",
@@ -75,25 +75,25 @@
     "items": [
       {
         "icon": "📦",
-        "label": "Entregas Fallidas",
-        "labelEn": "Failed Deliveries",
-        "metric": "-22%",
+        "label": "Menos entregas fallidas",
+        "labelEn": "Fewer failed deliveries",
+        "metric": "22%",
         "description": "Reducción en intentos fallidos. El contexto de acceso previo elimina la búsqueda improvisada en destino.",
         "descriptionEn": "Reduction in failed attempts. Prior access context eliminates improvised searching at the destination."
       },
       {
         "icon": "⏱️",
-        "label": "Tiempo en Sitio",
-        "labelEn": "Time on Site",
-        "metric": "-18%",
+        "label": "Menos tiempo en sitio",
+        "labelEn": "Less time on site",
+        "metric": "18%",
         "description": "Reducción en tiempo promedio por parada en edificios complejos.",
         "descriptionEn": "Reduction in average time per stop at complex buildings."
       },
       {
         "icon": "📞",
-        "label": "Llamadas al Dispatcher",
-        "labelEn": "Dispatcher Calls",
-        "metric": "-61%",
+        "label": "Menos llamadas al dispatcher",
+        "labelEn": "Fewer dispatcher calls",
+        "metric": "61%",
         "description": "Reducción en llamadas por dispatcher para pedir información de acceso o estacionamiento.",
         "descriptionEn": "Reduction in calls per dispatcher to request access or parking information."
       }
@@ -205,7 +205,8 @@
       {
         "value": "18 llamadas",
         "description": "Promedio por dispatcher y turno solo por información de acceso",
-        "descriptionEn": "Average per dispatcher per shift just for access information"
+        "descriptionEn": "Average per dispatcher per shift just for access information",
+        "valueEn": "18 calls"
       },
       {
         "value": "8–15 min",
@@ -508,25 +509,25 @@
     "impact": [
       {
         "icon": "⏱️",
-        "metric": "-18%",
-        "label": "Tiempo en Sitio",
-        "labelEn": "Time on Site",
+        "metric": "18%",
+        "label": "Menos tiempo en sitio",
+        "labelEn": "Less time on site",
         "description": "Reducción en paradas con Address Intelligence activo. Piloto de 6 semanas con 45 conductores.",
         "descriptionEn": "Reduction at stops with Address Intelligence active. 6-week pilot with 45 drivers."
       },
       {
         "icon": "📦",
-        "metric": "-22%",
-        "label": "Entregas Fallidas en Primer Intento",
-        "labelEn": "First-Attempt Failed Deliveries",
+        "metric": "22%",
+        "label": "Menos entregas fallidas al primer intento",
+        "labelEn": "Fewer first-attempt failed deliveries",
         "description": "La tasa de falla bajó de 14% a 10,9%. 'No pudo acceder' pasó de 61% a 18% de las causas.",
         "descriptionEn": "The failure rate fell from 14% to 10.9%. 'Couldn't access' dropped from 61% to 18% of causes."
       },
       {
         "icon": "📞",
-        "metric": "-61%",
-        "label": "Llamadas al Dispatcher",
-        "labelEn": "Dispatcher Calls",
+        "metric": "61%",
+        "label": "Menos llamadas al dispatcher",
+        "labelEn": "Fewer dispatcher calls",
         "description": "De 18 a 7 llamadas promedio por dispatcher y turno sobre información de acceso a edificios.",
         "descriptionEn": "From 18 to 7 average calls per dispatcher per shift about building access information."
       }
