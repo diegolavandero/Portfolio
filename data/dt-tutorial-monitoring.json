@@ -2,91 +2,430 @@
   "page": "dt-tutorial-monitoring",
   "slug": "dt-tutorial-monitoring",
   "title": "Monitoreo de tutoriales",
-  "subtitle": "Panel para que un administrador vea quién completó el entrenamiento de la plataforma, dónde se atasca el equipo y qué tutoriales necesitan refuerzo.",
+  "subtitle": "De un onboarding a ciegas a una adopción con seguimiento",
   "hero": {
-    "tagline": "B2B SaaS · LAST MILE · ADMIN ANALYTICS",
-    "taglineEn": "B2B SaaS · LAST MILE · ADMIN ANALYTICS",
-    "title": "Monitoreo de tutoriales",
-    "titleEn": "Tutorial monitoring",
-    "description": "Panel para que un administrador vea quién completó el entrenamiento de la plataforma, dónde se atasca el equipo y qué tutoriales necesitan refuerzo.",
-    "descriptionEn": "A panel for admins to see who completed platform training, where the team gets stuck and which tutorials need reinforcement."
+    "tagline": "DISPATCHTRACK · LAST MILE · ADMIN ANALYTICS",
+    "taglineEn": "DISPATCHTRACK · LAST MILE · ADMIN ANALYTICS",
+    "title": "Monitoreo de ",
+    "titleEn": "Tutorial ",
+    "titleAccent": "tutoriales",
+    "titleAccentEn": "monitoring",
+    "subtitle": "De un onboarding a ciegas a una adopción con seguimiento",
+    "subtitleEn": "From blind onboarding to tracked adoption",
+    "description": "Diseñé una sección visible solo para administradores que muestra qué tan completo está el onboarding de cada usuario de su cuenta, para que las empresas puedan hacer seguimiento a sus nuevos operadores igual que ya lo hacían con sus conductores.",
+    "descriptionEn": "I designed an admin-only section that shows how complete each account user's onboarding is, so companies can track their new operators the same way they already tracked their drivers."
   },
   "projectSpecs": [
     {
       "label": "Mi Rol",
       "labelEn": "My Role",
-      "value": "Senior AI Product Designer + implementación front-end",
-      "valueEn": "Senior AI Product Designer + front-end implementation"
+      "value": "Senior AI Product Designer",
+      "valueEn": "Senior AI Product Designer"
     },
     {
       "label": "Contexto",
       "labelEn": "Context",
-      "value": "Producto de logística de última milla (prototipo de portafolio)",
-      "valueEn": "Last-mile logistics product (portfolio prototype)"
+      "value": "SaaS B2B · Logística · Web admin",
+      "valueEn": "B2B SaaS · Logistics · Admin web"
     },
     {
-      "label": "Stack",
-      "labelEn": "Stack",
-      "value": "React 18 · TypeScript · Tailwind · Design System propio",
-      "valueEn": "React 18 · TypeScript · Tailwind · in-house Design System"
+      "label": "Duración",
+      "labelEn": "Duration",
+      "value": "—",
+      "valueEn": "—"
+    },
+    {
+      "label": "Equipo",
+      "labelEn": "Team",
+      "value": "—",
+      "valueEn": "—"
+    },
+    {
+      "label": "Año",
+      "labelEn": "Year",
+      "value": "—",
+      "valueEn": "—"
     },
     {
       "label": "Entregables",
       "labelEn": "Deliverables",
-      "value": "Pantalla funcional · Resumen + Tutoriales · Vista admin/usuario",
-      "valueEn": "Working screen · Summary + Tutorials · Admin/user view"
+      "value": "Web · Prototipo funcional",
+      "valueEn": "Web · Working prototype"
     }
   ],
   "solution": {
-    "title": "Qué puedes probar",
-    "titleEn": "What you can try",
-    "subtitle": "Es un prototipo funcional, no un mockup: interactúa con él.",
-    "subtitleEn": "A working prototype, not a mockup: interact with it.",
+    "title": "Solución",
+    "titleEn": "Solution",
+    "subtitle": "Una sección visible solo para administradores que consolida el avance del onboarding de toda la cuenta: KPIs arriba, distribución al medio y detalle por usuario abajo.",
+    "subtitleEn": "An admin-only section that consolidates the onboarding progress of the whole account: KPIs on top, distribution in the middle and per-user detail below.",
     "components": [
       {
+        "number": "01",
         "title": "Resumen con KPIs",
         "titleEn": "Summary with KPIs",
-        "tagline": "Qué mide el equipo",
-        "taglineEn": "What the team measures",
-        "description": "Cuatro KPIs, dona de completitud y barras por módulo: la respuesta a «¿cómo vamos?» sin abrir una tabla.",
-        "descriptionEn": "Four KPIs, a completion donut and per-module bars: the answer to “how are we doing?” without opening a table."
+        "tagline": "¿Cómo vamos?",
+        "taglineEn": "How are we doing?",
+        "description": "Usuarios en capacitación, activos, que completaron el programa y que aún no lo inician: la respuesta inmediata, sin abrir una tabla.",
+        "descriptionEn": "Users in training, active, who completed the program and who haven't started: the immediate answer, without opening a table."
       },
       {
-        "title": "Tabla ordenable y filtrable",
-        "titleEn": "Sortable, filterable table",
+        "number": "02",
+        "title": "Estado y clasificación de avance",
+        "titleEn": "Status and progress classification",
+        "tagline": "La distribución del equipo",
+        "taglineEn": "The team's distribution",
+        "description": "Dos gráficos de dona: estado del onboarding (activo / inactivo) y clasificación de avance (completado / en progreso / sin iniciar).",
+        "descriptionEn": "Two donut charts: onboarding status (active / inactive) and progress classification (completed / in progress / not started)."
+      },
+      {
+        "number": "03",
+        "title": "Detalle de avance por usuario",
+        "titleEn": "Progress detail per user",
         "tagline": "Encontrar a quien necesita ayuda",
         "taglineEn": "Find who needs help",
-        "description": "Orden por columna, filtros de estado y fecha, y restablecer en un clic.",
-        "descriptionEn": "Column sorting, status and date filters, one-click reset."
+        "description": "Cursos registrados, completados y con examen rendido, promedio de notas, avance y cumplimiento del programa. Se ordena por columna y se filtra por usuario, cargo, onboarding y clasificación.",
+        "descriptionEn": "Registered, completed and exam-taken courses, average grade, program progress and compliance. Sortable by column and filterable by user, role, onboarding and classification."
       },
       {
-        "title": "Acciones masivas",
-        "titleEn": "Bulk actions",
-        "tagline": "Actuar sobre varios a la vez",
-        "taglineEn": "Act on many at once",
-        "description": "Al seleccionar filas aparece una barra con acciones y confirmación por toast.",
-        "descriptionEn": "Selecting rows reveals an action bar with toast confirmation."
+        "number": "04",
+        "title": "Vista por tutorial",
+        "titleEn": "Per-tutorial view",
+        "tagline": "Dónde se atasca el equipo",
+        "taglineEn": "Where the team gets stuck",
+        "description": "Completados, en progreso, tasa de aprobación y avance por tutorial, para saber cuáles necesitan refuerzo.",
+        "descriptionEn": "Completed, in progress, pass rate and progress per tutorial, to know which ones need reinforcement."
+      }
+    ],
+    "principlesTitle": "Principios de Diseño",
+    "principlesTitleEn": "Design Principles",
+    "principles": [
+      {
+        "number": "01",
+        "title": "El mismo lenguaje de monitoreo",
+        "titleEn": "The same monitoring language",
+        "description": "Los administradores ya seguían a sus conductores con estadísticas jerárquicas. El panel usa esa lógica: de lo agregado al detalle, sin enseñar un modelo mental nuevo.",
+        "descriptionEn": "Admins already tracked drivers with hierarchical stats. The panel uses that logic: from the aggregate to the detail, without teaching a new mental model."
       },
       {
-        "title": "Vista admin / usuario",
-        "titleEn": "Admin / user view",
-        "tagline": "Mismo componente, dos permisos",
-        "taglineEn": "Same component, two permission levels",
-        "description": "El switch de demo muestra cómo cambia la pantalla según el rol.",
-        "descriptionEn": "The demo switch shows how the screen changes by role."
+        "number": "02",
+        "title": "De la cuenta a la persona",
+        "titleEn": "From the account to the person",
+        "description": "Primero responde «¿cómo vamos?» y después «¿quién necesita ayuda?». Cada nivel de lectura tiene su propio espacio.",
+        "descriptionEn": "It first answers “how are we doing?” and then “who needs help?”. Each reading level has its own space."
+      },
+      {
+        "number": "03",
+        "title": "Solo para quien gestiona",
+        "titleEn": "Only for those who manage",
+        "description": "El avance de cada persona es información de gestión: la sección solo se muestra a administradores y el resto ve un aviso claro de falta de acceso.",
+        "descriptionEn": "Each person's progress is management information: the section is shown only to admins and everyone else sees a clear no-access notice."
       }
     ]
   },
   "livePrototype": {
     "title": "Prototipo interactivo",
     "titleEn": "Interactive prototype",
-    "subtitle": "Cambia entre Resumen y Tutoriales, ordena y filtra la tabla, selecciona filas para acciones masivas y alterna la vista admin / usuario.",
-    "subtitleEn": "Switch between Summary and Tutorials, sort and filter the table, select rows for bulk actions and toggle admin / user view.",
+    "subtitle": "Cambia entre Resumen y Por tutorial, ordena y filtra la tabla y usa «Ver como» para alternar entre la vista de administrador y la de un usuario sin acceso.",
+    "subtitleEn": "Switch between Summary and By tutorial, sort and filter the table, and use “View as” to toggle between the admin view and a no-access user.",
     "badge": "Prototipo funcional",
     "badgeEn": "Functional prototype",
     "srcEs": "/prototypes/dt-ds/index.html#/monitoreo",
     "srcEn": "/prototypes/dt-ds/index.html#/monitoreo",
     "repoUrl": "https://github.com/diegolavandero/dt-design-system-package/tree/main/src/screens/TutorialMonitoring",
     "height": 860
+  },
+  "subtitleEn": "From blind onboarding to tracked adoption",
+  "heroImage": {
+    "src": "data/images/dt-tutorial-monitoring-01-resumen.webp",
+    "placeholder": "Vista Resumen del monitoreo de tutoriales",
+    "placeholderEn": "Tutorial monitoring summary view"
+  },
+  "whyItMatters": {
+    "title": "¿Por qué importa?",
+    "titleEn": "Why it matters",
+    "subtitle": "Las empresas que contratan DispatchTrack rotan con frecuencia a sus técnicos y operadores logísticos, y cada persona nueva debe aprender la plataforma. Hasta ahora, nadie podía confirmar si realmente lo había hecho.",
+    "subtitleEn": "Companies that hire DispatchTrack frequently rotate their technicians and logistics operators, and every new person has to learn the platform. Until now, nobody could confirm they actually had.",
+    "items": [
+      {
+        "icon": "⏱️",
+        "label": "Tiempo de adopción",
+        "labelEn": "Time to adoption",
+        "metric": "—",
+        "description": "Las entrevistas lo describieron como alto. Con el panel pasa a ser medible por usuario.",
+        "descriptionEn": "Interviews described it as high. With the panel it becomes measurable per user."
+      },
+      {
+        "icon": "👀",
+        "label": "Visibilidad del onboarding",
+        "labelEn": "Onboarding visibility",
+        "metric": "—",
+        "description": "Antes ningún administrador veía quién había completado los tutoriales. Ahora ve el avance de cada usuario de su cuenta.",
+        "descriptionEn": "Before, no admin could see who had completed the tutorials. Now they see every account user's progress."
+      },
+      {
+        "icon": "🎓",
+        "label": "Cursos completados",
+        "labelEn": "Completed courses",
+        "metric": "—",
+        "description": "Cursos registrados, completados y con examen rendido, por usuario y por tutorial.",
+        "descriptionEn": "Registered, completed and exam-taken courses, per user and per tutorial."
+      }
+    ]
+  },
+  "problemAndObjectives": {
+    "title": "Problema",
+    "titleEn": "Problem",
+    "subtitle": "Cada vez que una empresa cambiaba a un técnico u operador logístico, debía introducir a la persona nueva en la plataforma. No tenía ninguna herramienta para saber si ese onboarding se había realizado, ni cuánto había avanzado.",
+    "subtitleEn": "Every time a company replaced a technician or logistics operator, it had to introduce the new person to the platform. It had no tool to know whether that onboarding had happened, or how far along it was.",
+    "products": [
+      {
+        "name": "Situación actual",
+        "nameEn": "Current situation",
+        "cons": [
+          "La rotación de operarios obliga a repetir el onboarding con cada nuevo ingreso",
+          "No existía forma de verificar si un operario nuevo realizó el onboarding",
+          "El administrador no veía los cursos registrados, completados ni el nivel de avance"
+        ],
+        "consEn": [
+          "Operator turnover forces the onboarding to be repeated with every new hire",
+          "There was no way to verify whether a new operator completed the onboarding",
+          "Admins couldn't see registered or completed courses, nor the level of progress"
+        ]
+      }
+    ],
+    "objectives": [
+      {
+        "number": "01",
+        "title": "Visibilidad por usuario",
+        "titleEn": "Per-user visibility",
+        "description": "Permitir al administrador ver quién completó el onboarding y cuánto ha avanzado cada persona de su cuenta",
+        "descriptionEn": "Let admins see who completed the onboarding and how far each person in their account has progressed"
+      },
+      {
+        "number": "02",
+        "title": "Visión agregada de la cuenta",
+        "titleEn": "Account-level overview",
+        "description": "Resumir el estado del equipo con KPIs claros: estado del onboarding y clasificación de avance",
+        "descriptionEn": "Summarize the team's status with clear KPIs: onboarding status and progress classification"
+      },
+      {
+        "number": "03",
+        "title": "Monitoreo del lado operador",
+        "titleEn": "Operator-side monitoring",
+        "description": "Extender la lógica de monitoreo jerárquico que ya usaban con los conductores a los operadores logísticos",
+        "descriptionEn": "Extend the hierarchical monitoring logic they already used with drivers to logistics operators"
+      }
+    ]
+  },
+  "uxResearch": {
+    "title": "Metodología UX",
+    "titleEn": "UX Design Process",
+    "subtitle": "De las quejas sobre el onboarding a un hallazgo sobre cómo ya trabajan los administradores",
+    "subtitleEn": "From complaints about onboarding to a finding about how admins already work",
+    "methodCards": [
+      {
+        "name": "Entrevistas exploratorias",
+        "nameEn": "Exploratory interviews",
+        "description": "Conversamos con administradores de empresas clientes sobre su experiencia con la plataforma. Dos temas se repitieron: el onboarding se percibía como precario y el tiempo de adopción de los nuevos usuarios era alto.",
+        "descriptionEn": "We talked to admins at client companies about their experience with the platform. Two themes kept coming up: the onboarding felt precarious and the time for new users to adopt the platform was long.",
+        "finding": "Los mismos administradores reconocían que les era difícil saber quiénes realmente entraban al Help Center.",
+        "findingEn": "The same admins acknowledged it was hard to know who actually used the Help Center."
+      },
+      {
+        "name": "Revisión de sus prácticas de monitoreo",
+        "nameEn": "Review of their monitoring practices",
+        "description": "Revisamos qué ya medían los clientes. De los conductores llevaban estadísticas de desempeño: órdenes entregadas, cumplimiento de tiempos y scores de evaluación de los usuarios.",
+        "descriptionEn": "We reviewed what clients were already measuring. For drivers they kept performance stats: delivered orders, on-time compliance and user evaluation scores.",
+        "finding": "Es una industria con una lógica jerárquica de monitoreo en cada instante. Faltaba extenderla a los operadores logísticos, no inventar un hábito nuevo.",
+        "findingEn": "It's an industry with a hierarchical monitoring logic at every moment. What was missing was extending it to logistics operators, not inventing a new habit."
+      }
+    ]
+  },
+  "personas": {
+    "title": "User Personas",
+    "titleEn": "User Personas",
+    "subtitle": "Dos perfiles con necesidades distintas: quien necesita ver el avance y quien lo genera",
+    "subtitleEn": "Two profiles with different needs: the one who needs to see progress and the one who creates it",
+    "items": [
+      {
+        "id": "admin-cuenta",
+        "name": "Administrador de cuenta",
+        "role": "Jefe de operaciones · empresa cliente",
+        "roleEn": "Operations lead · client company",
+        "avatar": "data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20150%20150%27%3E%3Crect%20width%3D%27150%27%20height%3D%27150%27%20fill%3D%27%234f46e5%27/%3E%3Ctext%20x%3D%2775%27%20y%3D%2775%27%20dy%3D%27.35em%27%20text-anchor%3D%27middle%27%20font-family%3D%27Plus%20Jakarta%20Sans%2CArial%2Csans-serif%27%20font-size%3D%2752%27%20font-weight%3D%27700%27%20fill%3D%27%23fff%27%3EAD%3C/text%3E%3C/svg%3E",
+        "goals": [
+          "Confirmar que cada operario nuevo realizó el onboarding",
+          "Seguir el avance de los operadores como ya sigue el de los conductores",
+          "Saber a quién reforzar y en qué tutorial"
+        ],
+        "goalsEn": [
+          "Confirm every new operator completed the onboarding",
+          "Track operators' progress the way they already track drivers'",
+          "Know who to reinforce and on which tutorial"
+        ],
+        "painPoints": [
+          "No tiene forma de saber si el onboarding se completó",
+          "El tiempo de adopción de los nuevos usuarios es alto",
+          "Mide a sus conductores, pero no a sus operadores"
+        ],
+        "painPointsEn": [
+          "No way to know whether the onboarding was completed",
+          "New users take a long time to adopt the platform",
+          "Measures drivers but not operators"
+        ],
+        "behaviors": [
+          "Monitorea el desempeño de forma jerárquica y continua",
+          "Revisa órdenes entregadas, cumplimiento de tiempos y evaluaciones",
+          "Rota personal y repite la inducción con frecuencia"
+        ],
+        "behaviorsEn": [
+          "Monitors performance hierarchically and continuously",
+          "Reviews delivered orders, on-time compliance and evaluations",
+          "Rotates staff and repeats the induction often"
+        ],
+        "nameEn": "Account administrator"
+      },
+      {
+        "id": "operador-nuevo",
+        "name": "Operador logístico nuevo",
+        "role": "Operario recién incorporado",
+        "roleEn": "Newly hired operator",
+        "avatar": "data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20150%20150%27%3E%3Crect%20width%3D%27150%27%20height%3D%27150%27%20fill%3D%27%230ea5e9%27/%3E%3Ctext%20x%3D%2775%27%20y%3D%2775%27%20dy%3D%27.35em%27%20text-anchor%3D%27middle%27%20font-family%3D%27Plus%20Jakarta%20Sans%2CArial%2Csans-serif%27%20font-size%3D%2752%27%20font-weight%3D%27700%27%20fill%3D%27%23fff%27%3EOP%3C/text%3E%3C/svg%3E",
+        "goals": [
+          "Aprender la plataforma para operar con autonomía",
+          "Saber qué le falta completar del programa"
+        ],
+        "goalsEn": [
+          "Learn the platform to work independently",
+          "Know what's left to complete in the program"
+        ],
+        "painPoints": [
+          "El onboarding de la plataforma se percibe precario",
+          "Su avance es invisible para quien lo supervisa"
+        ],
+        "painPointsEn": [
+          "The platform's onboarding feels precarious",
+          "Their progress is invisible to whoever supervises them"
+        ],
+        "behaviors": [
+          "Entra al Help Center de forma irregular",
+          "Avanza a su ritmo, sin que nadie lo note"
+        ],
+        "behaviorsEn": [
+          "Uses the Help Center irregularly",
+          "Progresses at their own pace, unnoticed"
+        ],
+        "nameEn": "New logistics operator"
+      }
+    ]
+  },
+  "designs": {
+    "title": "Pantallas",
+    "titleEn": "Screens",
+    "device": "desktop",
+    "items": [
+      {
+        "title": "Resumen",
+        "titleEn": "Summary",
+        "description": "KPIs, dona de estado de onboarding, dona de clasificación de avance y detalle de avance por usuario.",
+        "descriptionEn": "KPIs, onboarding status donut, progress classification donut and per-user progress detail.",
+        "src": "data/images/dt-tutorial-monitoring-01-resumen.webp",
+        "alt": "Vista Resumen del monitoreo de tutoriales",
+        "altEn": "Tutorial monitoring summary view"
+      },
+      {
+        "title": "Por tutorial",
+        "titleEn": "By tutorial",
+        "description": "Qué tutoriales completa el equipo, cuáles quedan en progreso y cuáles necesitan refuerzo.",
+        "descriptionEn": "Which tutorials the team completes, which stay in progress and which need reinforcement.",
+        "src": "data/images/dt-tutorial-monitoring-02-por-tutorial.webp",
+        "alt": "Vista Por tutorial del monitoreo",
+        "altEn": "By-tutorial monitoring view"
+      },
+      {
+        "title": "Usuario sin acceso",
+        "titleEn": "No-access user",
+        "description": "Quien no es administrador no ve el módulo: ni en el menú lateral ni en la pantalla, donde aparece un aviso claro.",
+        "descriptionEn": "Non-admins don't see the module: not in the side menu nor on the screen, where a clear notice appears.",
+        "src": "data/images/dt-tutorial-monitoring-03-sin-acceso.webp",
+        "alt": "Aviso de falta de acceso para usuarios no administradores",
+        "altEn": "No-access notice for non-admin users"
+      }
+    ]
+  },
+  "results": {
+    "title": "Resultados",
+    "titleEn": "Results",
+    "subtitle": "Las métricas de impacto se incorporarán una vez medidas.",
+    "subtitleEn": "Impact metrics will be added once measured.",
+    "impactTitle": "Impacto Medido",
+    "impactTitleEn": "Measured Impact",
+    "impact": [
+      {
+        "icon": "⏱️",
+        "metric": "—",
+        "label": "Tiempo de adopción",
+        "labelEn": "Time to adoption",
+        "description": "Por definir.",
+        "descriptionEn": "To be defined."
+      },
+      {
+        "icon": "✅",
+        "metric": "—",
+        "label": "Onboardings completados",
+        "labelEn": "Onboardings completed",
+        "description": "Por definir.",
+        "descriptionEn": "To be defined."
+      },
+      {
+        "icon": "📈",
+        "metric": "—",
+        "label": "Uso del Help Center",
+        "labelEn": "Help Center usage",
+        "description": "Por definir.",
+        "descriptionEn": "To be defined."
+      }
+    ],
+    "learningsTitle": "Aprendizajes Clave",
+    "learningsTitleEn": "Key Learnings",
+    "learnings": [
+      {
+        "title": "Extender un hábito existente pesa más que crear uno nuevo",
+        "titleEn": "Extending an existing habit beats creating a new one",
+        "description": "Los administradores ya monitoreaban a sus conductores con estadísticas. Mostrar el avance de los operadores con esa misma lógica evitó tener que enseñar una forma nueva de supervisar.",
+        "descriptionEn": "Admins already monitored drivers with stats. Showing operators' progress with that same logic avoided having to teach a new way of supervising."
+      },
+      {
+        "title": "Una queja sobre el producto escondía una necesidad de gestión",
+        "titleEn": "A product complaint hid a management need",
+        "description": "Lo que sonaba a «el onboarding es precario» incluía otra cosa: los administradores no podían saber quién lo hacía. La solución fue darles visibilidad, no solo mejorar los tutoriales.",
+        "descriptionEn": "What sounded like “the onboarding is precarious” included something else: admins couldn't tell who was doing it. The solution was giving them visibility, not just improving the tutorials."
+      }
+    ],
+    "nextStepsTitle": "Próxima Iteración",
+    "nextStepsTitleEn": "Next Iteration",
+    "nextSteps": [
+      {
+        "title": "Recordatorios a usuarios rezagados",
+        "titleEn": "Reminders for lagging users",
+        "description": "Que el administrador pueda avisar desde el propio panel a quienes no han iniciado el programa, en lugar de gestionarlo por fuera.",
+        "descriptionEn": "Let admins nudge users who haven't started the program from the panel itself, instead of handling it outside."
+      },
+      {
+        "title": "Metas de completitud por cargo",
+        "titleEn": "Completion goals per role",
+        "description": "Definir qué tutoriales debe completar cada cargo y medir el cumplimiento contra esa meta.",
+        "descriptionEn": "Define which tutorials each role must complete and measure compliance against that goal."
+      }
+    ]
+  },
+  "cta": {
+    "question": "¿Quieres ver cómo diseñé la gestión de usuarios?",
+    "questionEn": "Want to see how I designed user management?",
+    "description": "El siguiente proyecto: Configuración de usuarios web.",
+    "descriptionEn": "Next project: Web users settings.",
+    "buttonLabel": "Ver siguiente proyecto",
+    "buttonLabelEn": "See next project",
+    "buttonHref": "#/dt-web-users"
   }
 }
