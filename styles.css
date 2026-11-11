@@ -857,6 +857,10 @@ body {
   gap: var(--spacing-lg);
 }
 
+@media (min-width: 1100px) {
+  .impact-grid:has(> :nth-child(4)) { grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+}
+
 .impact-card {
   background: white;
   border: 1px solid var(--gray-200);

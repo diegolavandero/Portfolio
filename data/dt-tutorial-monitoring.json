@@ -12,8 +12,8 @@
     "titleAccentEn": "monitoring",
     "subtitle": "De un onboarding a ciegas a una adopción con seguimiento",
     "subtitleEn": "From blind onboarding to tracked adoption",
-    "description": "Diseñé una sección visible solo para administradores que muestra qué tan completo está el onboarding de cada usuario de su cuenta, para que las empresas puedan hacer seguimiento a sus nuevos operadores igual que ya lo hacían con sus conductores.",
-    "descriptionEn": "I designed an admin-only section that shows how complete each account user's onboarding is, so companies can track their new operators the same way they already tracked their drivers."
+    "description": "Diseñé una sección visible solo para administradores que muestra qué tan completo está el onboarding de cada usuario de su cuenta. Es la contraparte del Help Center, donde los operadores hacen ese onboarding.",
+    "descriptionEn": "I designed an admin-only section that shows how complete each account user's onboarding is. It's the counterpart to the Help Center, where operators go through that onboarding."
   },
   "projectSpecs": [
     {
@@ -194,8 +194,8 @@
       {
         "name": "Entrevistas exploratorias",
         "nameEn": "Exploratory interviews",
-        "description": "Conversamos con administradores de empresas clientes sobre su experiencia con la plataforma. Dos temas se repitieron: el onboarding se percibía como precario y el tiempo de adopción de los nuevos usuarios era alto. Antes de diseñar, la línea base de Product Analytics (6 meses) mostró 14 días de adopción y solo 34% de entrenamientos terminados.",
-        "descriptionEn": "We talked to admins at client companies about their experience with the platform. Two themes kept coming up: the onboarding felt precarious and the time for new users to adopt the platform was long. Before designing, the Product Analytics baseline (6 months) showed 14 days to adopt and only 34% of trainings completed.",
+        "description": "Conversamos con administradores de empresas clientes sobre su experiencia con la plataforma. Dos temas se repitieron: el onboarding se percibía como precario y el tiempo de adopción de los nuevos usuarios era alto.",
+        "descriptionEn": "We talked to admins at client companies about their experience with the platform. Two themes kept coming up: the onboarding felt precarious and the time for new users to adopt the platform was long.",
         "finding": "Los mismos administradores reconocían que les era difícil saber quiénes realmente entraban al Help Center.",
         "findingEn": "The same admins acknowledged it was hard to know who actually used the Help Center."
       },
@@ -340,35 +340,42 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Piloto en 5 cuentas con alta rotación de personal; comparación de cohortes a los 60 días contra la línea base de los 6 meses previos.",
-    "subtitleEn": "Pilot in 5 high-turnover accounts; 60-day cohort comparison against the previous 6-month baseline.",
+    "subtitle": "Vista del administrador, medida en 5 cuentas piloto durante los primeros 60 días.",
+    "subtitleEn": "Admin view, measured across 5 pilot accounts over the first 60 days.",
     "impactTitle": "Impacto Medido",
     "impactTitleEn": "Measured Impact",
     "impact": [
       {
+        "icon": "👥",
+        "label": "Adopción semanal",
+        "labelEn": "Weekly adoption",
+        "metric": "78%",
+        "description": "de los administradores entró al módulo al menos una vez por semana.",
+        "descriptionEn": "of admins opened the module at least once a week."
+      },
+      {
         "icon": "⏱️",
-        "metric": "14 → 9 días",
-        "label": "Tiempo de adopción",
-        "labelEn": "Time to adoption",
-        "description": "Los nuevos operadores trabajan de forma autónoma casi una semana antes.",
-        "descriptionEn": "New operators work independently almost a week sooner.",
-        "metricEn": "14 → 9 days"
+        "label": "Detección de rezago",
+        "labelEn": "Time to intervention",
+        "metric": "-60%",
+        "description": "De semanas (al ocurrir un error en ruta) a menos de 48 horas.",
+        "descriptionEn": "From weeks (after a route error) to under 48 hours."
       },
       {
-        "icon": "✅",
-        "metric": "34% → 82%",
-        "label": "Onboardings completados",
-        "labelEn": "Onboardings completed",
-        "description": "Tasa de finalización en los primeros 15 días, frente a la línea base de los 6 meses previos.",
-        "descriptionEn": "Completion rate within the first 15 days, versus the previous 6-month baseline."
+        "icon": "🔎",
+        "label": "Filtros y vistas",
+        "labelEn": "Filters and views",
+        "metric": "65%",
+        "description": "de las sesiones usó filtros por estado o la vista Por tutorial.",
+        "descriptionEn": "of sessions used status filters or the By tutorial view."
       },
       {
-        "icon": "📈",
-        "metric": "2.4x",
-        "label": "Uso del Help Center",
-        "labelEn": "Help Center usage",
-        "description": "Sesiones activas de tutoriales por usuario nuevo, desde que el avance es visible para operaciones.",
-        "descriptionEn": "Active tutorial sessions per new user since progress became visible to operations."
+        "icon": "🤝",
+        "label": "Seguimiento activo",
+        "labelEn": "Active follow-up",
+        "metric": "84%",
+        "description": "de los operarios rezagados recibió seguimiento en 3 días.",
+        "descriptionEn": "of lagging operators got follow-up within 3 days."
       }
     ],
     "learningsTitle": "Aprendizajes Clave",

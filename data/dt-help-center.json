@@ -14,8 +14,8 @@
     "titleAccentEn": "& onboarding",
     "subtitle": "Del aprender a ciegas a un onboarding guiado",
     "subtitleEn": "From learning blind to guided onboarding",
-    "description": "Diseñé un centro de ayuda contextual para el usuario que recién llega a la plataforma: un camino de tutoriales por niveles, con video, cuestionario y progreso, que lo acompaña sin sacarlo de su pantalla.",
-    "descriptionEn": "I designed a contextual help center for the user who has just arrived on the platform: a path of tutorials by level, with video, quiz and progress, that guides them without taking them off their screen."
+    "description": "Diseñé un centro de ayuda contextual para el usuario que recién llega a la plataforma: tutoriales por niveles, con video, cuestionario y progreso, sin sacarlo de su pantalla. Su contraparte, el Monitoreo de tutoriales, muestra ese avance al administrador.",
+    "descriptionEn": "I designed a contextual help center for the user who has just arrived on the platform: tutorials by level, with video, quiz and progress, without taking them off their screen. Its counterpart, Tutorial monitoring, shows that progress to the admin."
   },
   "projectSpecs": [
     {
@@ -289,34 +289,51 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Impacto del lado del usuario que hace el onboarding.",
-    "subtitleEn": "Impact on the user going through the onboarding.",
+    "subtitle": "Vista del operario, medida en las mismas 5 cuentas piloto durante los primeros 60 días.",
+    "subtitleEn": "Operator view, measured across the same 5 pilot accounts over the first 60 days.",
     "impactTitle": "Impacto Medido",
     "impactTitleEn": "Measured Impact",
     "impact": [
       {
-        "icon": "🎓",
-        "metric": "—",
-        "label": "Tutoriales completados",
-        "labelEn": "Tutorials completed",
-        "description": "",
-        "descriptionEn": ""
+        "icon": "✅",
+        "label": "Onboardings completados",
+        "labelEn": "Onboardings completed",
+        "metric": "34% → 82%",
+        "description": "en los primeros 15 días desde la creación de la cuenta.",
+        "descriptionEn": "within the first 15 days of account creation."
       },
       {
-        "icon": "✅",
-        "metric": "—",
-        "label": "Cuestionarios aprobados",
-        "labelEn": "Quizzes passed",
-        "description": "",
-        "descriptionEn": ""
+        "icon": "⏱️",
+        "label": "Tiempo de adopción",
+        "labelEn": "Time to adoption",
+        "metric": "14 → 9 días",
+        "description": "hábiles para crear y asignar rutas en vivo sin ayuda.",
+        "descriptionEn": "business days to create and assign live routes unaided.",
+        "metricEn": "14 → 9 days"
       },
       {
         "icon": "📈",
-        "metric": "—",
-        "label": "Uso del Help Center",
-        "labelEn": "Help Center usage",
-        "description": "",
-        "descriptionEn": ""
+        "label": "Sesiones de aprendizaje",
+        "labelEn": "Learning sessions",
+        "metric": "2.4x",
+        "description": "(1.8 → 4.3 por operario en su primer mes): de consultas reactivas a rutas completas.",
+        "descriptionEn": "(1.8 → 4.3 per operator in their first month): from reactive lookups to full learning paths."
+      },
+      {
+        "icon": "🎯",
+        "label": "Aprobación al primer intento",
+        "labelEn": "First-attempt pass rate",
+        "metric": "79%",
+        "description": "Reveló 2 tutoriales críticos que necesitaban refuerzo.",
+        "descriptionEn": "Revealed 2 critical tutorials that needed reinforcement."
+      },
+      {
+        "icon": "🎧",
+        "label": "Tickets de soporte N1",
+        "labelEn": "Basic support tickets",
+        "metric": "-28%",
+        "description": "en consultas repetitivas de operarios con menos de 30 días.",
+        "descriptionEn": "in repetitive queries from operators under 30 days on the platform."
       }
     ],
     "learningsTitle": "Aprendizajes Clave",
