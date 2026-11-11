@@ -2,91 +2,348 @@
   "page": "dt-help-center",
   "slug": "dt-help-center",
   "title": "Centro de ayuda y onboarding",
-  "subtitle": "Centro de ayuda contextual con 49 tutoriales en tres niveles, video, quiz y progreso, que acompaña al usuario sin sacarlo de su pantalla.",
+  "titleEn": "Help center & onboarding",
+  "subtitle": "Del aprender a ciegas a un onboarding guiado, dentro de la propia pantalla",
+  "subtitleEn": "From learning blind to guided onboarding, inside the screen itself",
   "hero": {
-    "tagline": "B2B SaaS · LAST MILE · ONBOARDING",
-    "taglineEn": "B2B SaaS · LAST MILE · ONBOARDING",
-    "title": "Centro de ayuda y onboarding",
-    "titleEn": "Help center & onboarding",
-    "description": "Centro de ayuda contextual con 49 tutoriales en tres niveles, video, quiz y progreso, que acompaña al usuario sin sacarlo de su pantalla.",
-    "descriptionEn": "Contextual help center with 49 tutorials across three levels, video, quiz and progress, guiding users without taking them off their screen."
+    "tagline": "DISPATCHTRACK · LAST MILE · ONBOARDING",
+    "taglineEn": "DISPATCHTRACK · LAST MILE · ONBOARDING",
+    "title": "Centro de ayuda ",
+    "titleEn": "Help center ",
+    "titleAccent": "y onboarding",
+    "titleAccentEn": "& onboarding",
+    "subtitle": "Del aprender a ciegas a un onboarding guiado",
+    "subtitleEn": "From learning blind to guided onboarding",
+    "description": "Diseñé un centro de ayuda contextual para el usuario que recién llega a la plataforma: un camino de tutoriales por niveles, con video, cuestionario y progreso, que lo acompaña sin sacarlo de su pantalla.",
+    "descriptionEn": "I designed a contextual help center for the user who has just arrived on the platform: a path of tutorials by level, with video, quiz and progress, that guides them without taking them off their screen."
   },
   "projectSpecs": [
     {
       "label": "Mi Rol",
       "labelEn": "My Role",
-      "value": "Senior AI Product Designer + implementación front-end",
-      "valueEn": "Senior AI Product Designer + front-end implementation"
+      "value": "Senior AI Product Designer",
+      "valueEn": "Senior AI Product Designer"
     },
     {
       "label": "Contexto",
       "labelEn": "Context",
-      "value": "Producto de logística de última milla (prototipo de portafolio)",
-      "valueEn": "Last-mile logistics product (portfolio prototype)"
+      "value": "SaaS B2B · Logística · Web app",
+      "valueEn": "B2B SaaS · Logistics · Web app"
     },
     {
-      "label": "Stack",
-      "labelEn": "Stack",
-      "value": "React 18 · TypeScript · Tailwind · Design System propio",
-      "valueEn": "React 18 · TypeScript · Tailwind · in-house Design System"
+      "label": "Duración",
+      "labelEn": "Duration",
+      "value": "—",
+      "valueEn": "—"
+    },
+    {
+      "label": "Equipo",
+      "labelEn": "Team",
+      "value": "—",
+      "valueEn": "—"
+    },
+    {
+      "label": "Año",
+      "labelEn": "Year",
+      "value": "—",
+      "valueEn": "—"
     },
     {
       "label": "Entregables",
       "labelEn": "Deliverables",
-      "value": "Pantalla funcional · Drawer de ayuda · Quiz · Estados vacío/anuncio",
-      "valueEn": "Working screen · Help drawer · Quiz · Empty/announcement states"
+      "value": "Web · Prototipo funcional",
+      "valueEn": "Web · Working prototype"
     }
   ],
+  "heroImage": {
+    "src": "data/images/dt-help-center-01-catalogo.webp",
+    "placeholder": "Panel de tutoriales abierto sobre la pantalla de Órdenes",
+    "placeholderEn": "Tutorials sidebar open over the Orders screen"
+  },
+  "problemAndObjectives": {
+    "title": "Problema",
+    "titleEn": "Problem",
+    "subtitle": "Las empresas que contratan DispatchTrack rotan con frecuencia a sus técnicos y operadores logísticos, y cada persona nueva debe aprender la plataforma. Para quien llegaba, el onboarding era precario y no había un camino claro para aprender.",
+    "subtitleEn": "Companies that hire DispatchTrack frequently rotate their technicians and logistics operators, and every new person has to learn the platform. For those arriving, the onboarding was precarious and there was no clear path to learn.",
+    "products": [
+      {
+        "name": "Situación actual",
+        "nameEn": "Current situation",
+        "cons": [
+          "No existía un camino guiado: cada operador nuevo aprendía por su cuenta",
+          "La ayuda se usaba en la emergencia, buscando con Ctrl+F cuando ya se cometían errores en vivo",
+          "El usuario no sabía qué había aprendido ni qué le faltaba"
+        ],
+        "consEn": [
+          "There was no guided path: every new operator learned on their own",
+          "Help was used in emergencies, searching with Ctrl+F while already making live mistakes",
+          "Users didn't know what they had learned or what was left"
+        ]
+      }
+    ],
+    "objectives": [
+      {
+        "number": "01",
+        "title": "Un camino de aprendizaje",
+        "titleEn": "A learning path",
+        "description": "Ordenar los tutoriales por niveles para que el operador nuevo sepa por dónde empezar y qué sigue",
+        "descriptionEn": "Organize tutorials by level so new operators know where to start and what comes next"
+      },
+      {
+        "number": "02",
+        "title": "Ayuda sin salir de la pantalla",
+        "titleEn": "Help without leaving the screen",
+        "description": "Llevar el aprendizaje al lugar donde el usuario trabaja, en vez de a un destino aparte",
+        "descriptionEn": "Bring learning to where users work, instead of a separate destination"
+      },
+      {
+        "number": "03",
+        "title": "Progreso y verificación visibles",
+        "titleEn": "Visible progress and verification",
+        "description": "Mostrar cuánto ha avanzado y confirmar lo aprendido con un cuestionario",
+        "descriptionEn": "Show how far they've come and confirm what they learned with a quiz"
+      }
+    ]
+  },
+  "uxResearch": {
+    "title": "Metodología UX",
+    "titleEn": "UX Design Process",
+    "subtitle": "De las quejas sobre el onboarding a un patrón de uso: se aprende en la emergencia",
+    "subtitleEn": "From complaints about onboarding to a usage pattern: people learn in the emergency",
+    "methodCards": [
+      {
+        "name": "Entrevistas exploratorias",
+        "nameEn": "Exploratory interviews",
+        "description": "Conversamos con administradores de empresas clientes sobre su experiencia con la plataforma. Dos temas se repitieron: el onboarding se percibía como precario y el tiempo de adopción de los nuevos usuarios era alto.",
+        "descriptionEn": "We talked to admins at client companies about their experience with the platform. Two themes kept coming up: the onboarding felt precarious and the time for new users to adopt the platform was long.",
+        "finding": "El usuario nuevo no tenía un recorrido que seguir.",
+        "findingEn": "New users had no journey to follow."
+      },
+      {
+        "name": "Grabaciones y encuesta en Hotjar",
+        "nameEn": "Hotjar recordings and survey",
+        "description": "Session recordings y una encuesta en el Help Center, solo para usuarios con menos de 15 días en la plataforma.",
+        "descriptionEn": "Session recordings and a survey in the Help Center, only for users with under 15 days on the platform.",
+        "finding": "Los operadores nuevos no seguían el programa: entraban de emergencia a buscar con Ctrl+F cuando ya cometían errores en vivo.",
+        "findingEn": "New operators didn't follow the program: they rushed in to Ctrl+F for fixes while already making live mistakes."
+      }
+    ]
+  },
+  "personas": {
+    "title": "User Persona",
+    "titleEn": "User Persona",
+    "subtitle": "El usuario que llega y tiene que aprender a operar",
+    "subtitleEn": "The user who arrives and has to learn to operate",
+    "items": [
+      {
+        "id": "matias-soto",
+        "name": "Matías Soto",
+        "nameEn": "Matías Soto",
+        "role": "Operador Logístico Junior",
+        "roleEn": "Junior Logistics Operator",
+        "avatar": "https://i.pravatar.cc/150?img=68",
+        "goals": [
+          "Aprender la plataforma para operar con autonomía",
+          "Saber por dónde empezar y qué le falta"
+        ],
+        "goalsEn": [
+          "Learn the platform to work independently",
+          "Know where to start and what's left"
+        ],
+        "painPoints": [
+          "El onboarding de la plataforma se percibe precario",
+          "Aprende en plena operación, cuando ya está cometiendo errores",
+          "No sabe cuánto ha avanzado"
+        ],
+        "painPointsEn": [
+          "The platform's onboarding feels precarious",
+          "Learns mid-operation, when mistakes are already happening",
+          "Doesn't know how far along they are"
+        ],
+        "behaviors": [
+          "Entra al Help Center de emergencia, buscando con Ctrl+F",
+          "Avanza a su ritmo, sin que nadie lo note"
+        ],
+        "behaviorsEn": [
+          "Rushes into the Help Center, searching with Ctrl+F",
+          "Progresses at their own pace, unnoticed"
+        ]
+      }
+    ]
+  },
   "solution": {
-    "title": "Qué puedes probar",
-    "titleEn": "What you can try",
-    "subtitle": "Es un prototipo funcional, no un mockup: interactúa con él.",
-    "subtitleEn": "A working prototype, not a mockup: interact with it.",
+    "title": "Solución",
+    "titleEn": "Solution",
+    "subtitle": "Un panel de tutoriales que se abre sobre la pantalla actual: catálogo por niveles, video, cuestionario y progreso en un solo lugar.",
+    "subtitleEn": "A tutorials sidebar that opens over the current screen: a catalog by level, video, quiz and progress in one place.",
     "components": [
       {
-        "title": "Drawer contextual",
-        "titleEn": "Contextual drawer",
+        "number": "01",
+        "title": "Panel de tutoriales",
+        "titleEn": "Tutorials sidebar",
         "tagline": "Ayuda sin perder el lugar",
         "taglineEn": "Help without losing your place",
-        "description": "Un panel lateral con navegación interna y retorno con Esc.",
-        "descriptionEn": "A side panel with in-panel navigation and Esc to go back."
+        "description": "Se abre desde la barra superior con tu avance a la vista, y se cierra con Esc para volver a tu trabajo.",
+        "descriptionEn": "Opens from the top bar with your progress in view, and closes with Esc to return to your work."
       },
       {
+        "number": "02",
         "title": "Catálogo por niveles",
-        "titleEn": "Levelled catalog",
+        "titleEn": "Catalog by level",
         "tagline": "49 tutoriales, 3 niveles",
         "taglineEn": "49 tutorials, 3 levels",
-        "description": "Chips de progreso y secciones que se marcan como completadas.",
-        "descriptionEn": "Progress chips and sections that mark themselves complete."
+        "description": "Cada tutorial muestra su estado (pendiente, en progreso, completado) para saber qué sigue.",
+        "descriptionEn": "Each tutorial shows its status (pending, in progress, completed) so you know what's next."
       },
       {
-        "title": "Quiz con reintento",
-        "titleEn": "Quiz with retry",
-        "tagline": "Verificar, reintentar, finalizar",
-        "taglineEn": "Verify, retry, finish",
-        "description": "El resultado actualiza el anillo de progreso y el estado «Aprobada».",
-        "descriptionEn": "The result updates the progress ring and the “Passed” state."
+        "number": "03",
+        "title": "Video y cuestionario",
+        "titleEn": "Video and quiz",
+        "tagline": "Verificar lo aprendido",
+        "taglineEn": "Confirm what you learned",
+        "description": "Cada tutorial combina un video corto con un cuestionario de reintento; aprobarlo suma al progreso general.",
+        "descriptionEn": "Each tutorial pairs a short video with a retryable quiz; passing it adds to overall progress."
       },
       {
-        "title": "Estados de producto",
-        "titleEn": "Product states",
+        "number": "04",
+        "title": "Estados del usuario",
+        "titleEn": "User states",
         "tagline": "Vacío, anuncio, tutorial nuevo",
         "taglineEn": "Empty, announcement, new tutorial",
-        "description": "El selector de demo recorre los estados que un usuario real encontraría.",
-        "descriptionEn": "The demo selector walks through the states a real user would meet."
+        "description": "Un usuario nuevo ve el tutorial de su sección en lugar de una pantalla vacía, y las funciones nuevas se anuncian dentro del producto.",
+        "descriptionEn": "A new user sees their section's tutorial instead of an empty screen, and new features are announced inside the product."
+      }
+    ],
+    "principlesTitle": "Principios de Diseño",
+    "principlesTitleEn": "Design Principles",
+    "principles": [
+      {
+        "number": "01",
+        "title": "Ayuda donde estás",
+        "titleEn": "Help where you are",
+        "description": "Si el usuario aprende en plena operación, la ayuda debe abrirse sobre su pantalla, no sacarlo de ella.",
+        "descriptionEn": "If users learn mid-operation, help must open over their screen, not pull them away from it."
+      },
+      {
+        "number": "02",
+        "title": "Un camino, no un buscador",
+        "titleEn": "A path, not a search box",
+        "description": "El catálogo por niveles responde «¿qué sigue?» antes de que el usuario tenga que buscar.",
+        "descriptionEn": "The level-based catalog answers “what's next?” before users have to search."
+      },
+      {
+        "number": "03",
+        "title": "Progreso que se ve",
+        "titleEn": "Progress you can see",
+        "description": "El avance siempre está visible en la barra superior, así aprender se siente como algo que se completa.",
+        "descriptionEn": "Progress is always visible in the top bar, so learning feels like something you complete."
       }
     ]
   },
   "livePrototype": {
     "title": "Prototipo interactivo",
     "titleEn": "Interactive prototype",
-    "subtitle": "Abre el menú Ayuda → Help Center, navega los tutoriales, mira un video simulado, responde el quiz y observa cómo avanza tu progreso. Usa el selector de demo para ver los estados.",
-    "subtitleEn": "Open Help → Help Center, browse tutorials, watch a simulated video, take the quiz and watch your progress advance. Use the demo selector to see the states.",
+    "subtitle": "Haz clic en el chip de tutoriales de la barra superior para abrir el panel de tutoriales, navega el catálogo, mira un video simulado, responde el cuestionario y observa cómo avanza tu progreso. Usa el selector de demo para ver los estados.",
+    "subtitleEn": "Click the tutorials chip in the top bar to open the tutorials sidebar, browse the catalog, watch a simulated video, take the quiz and watch your progress advance. Use the demo selector to see the states.",
     "badge": "Prototipo funcional",
     "badgeEn": "Functional prototype",
     "srcEs": "/prototypes/dt-ds/index.html#/ayuda",
     "srcEn": "/prototypes/dt-ds/index.html#/ayuda",
     "repoUrl": "https://github.com/diegolavandero/dt-design-system-package/tree/main/src/screens/HelpCenter",
     "height": 860
+  },
+  "designs": {
+    "title": "Pantallas",
+    "titleEn": "Screens",
+    "device": "desktop",
+    "items": [
+      {
+        "title": "Tutorial",
+        "titleEn": "Tutorial",
+        "description": "Video, estado de avance y cuestionario de un tutorial, con artículos relacionados.",
+        "descriptionEn": "A tutorial's video, progress status and quiz, with related articles.",
+        "src": "data/images/dt-help-center-02-tutorial.webp",
+        "alt": "Tutorial abierto en el panel",
+        "altEn": "Tutorial open in the sidebar"
+      },
+      {
+        "title": "Cuestionario",
+        "titleEn": "Quiz",
+        "description": "Preguntas con verificación y reintento para confirmar lo aprendido.",
+        "descriptionEn": "Questions with verification and retry to confirm what was learned.",
+        "src": "data/images/dt-help-center-03-quiz.webp",
+        "alt": "Cuestionario de un tutorial",
+        "altEn": "Tutorial quiz"
+      },
+      {
+        "title": "Usuario nuevo",
+        "titleEn": "New user",
+        "description": "En lugar de una pantalla vacía, el usuario ve el tutorial de su sección para empezar.",
+        "descriptionEn": "Instead of an empty screen, users see their section's tutorial to get started.",
+        "src": "data/images/dt-help-center-04-usuario-nuevo.webp",
+        "alt": "Estado vacío con tutorial de la sección",
+        "altEn": "Empty state with the section's tutorial"
+      }
+    ]
+  },
+  "results": {
+    "title": "Resultados",
+    "titleEn": "Results",
+    "subtitle": "Impacto del lado del usuario que hace el onboarding.",
+    "subtitleEn": "Impact on the user going through the onboarding.",
+    "impactTitle": "Impacto Medido",
+    "impactTitleEn": "Measured Impact",
+    "impact": [
+      {
+        "icon": "🎓",
+        "metric": "—",
+        "label": "Tutoriales completados",
+        "labelEn": "Tutorials completed",
+        "description": "",
+        "descriptionEn": ""
+      },
+      {
+        "icon": "✅",
+        "metric": "—",
+        "label": "Cuestionarios aprobados",
+        "labelEn": "Quizzes passed",
+        "description": "",
+        "descriptionEn": ""
+      },
+      {
+        "icon": "📈",
+        "metric": "—",
+        "label": "Uso del Help Center",
+        "labelEn": "Help Center usage",
+        "description": "",
+        "descriptionEn": ""
+      }
+    ],
+    "learningsTitle": "Aprendizajes Clave",
+    "learningsTitleEn": "Key Learnings",
+    "learnings": [
+      {
+        "title": "La ayuda se usa en la emergencia, no en el programa",
+        "titleEn": "Help is used in the emergency, not in the program",
+        "description": "Las grabaciones mostraron búsquedas puntuales con Ctrl+F en pleno error. Por eso el diseño lleva la ayuda a la pantalla donde se trabaja.",
+        "descriptionEn": "Recordings showed ad-hoc Ctrl+F searches mid-error. That's why the design brings help to the screen where people work."
+      },
+      {
+        "title": "Ver el progreso convierte el aprendizaje en algo que se completa",
+        "titleEn": "Seeing progress turns learning into something you complete",
+        "description": "Un camino por niveles con estado y avance visible da al usuario un objetivo claro, algo que un buscador de artículos no ofrece.",
+        "descriptionEn": "A level-based path with visible status and progress gives users a clear goal, something an article search can't offer."
+      }
+    ],
+    "nextSteps": []
+  },
+  "cta": {
+    "question": "¿Quieres ver cómo diseñé los reportes asincrónicos?",
+    "questionEn": "Want to see how I designed asynchronous reports?",
+    "description": "El siguiente proyecto: Reportes asincrónicos.",
+    "descriptionEn": "Next project: Asynchronous reports.",
+    "buttonLabel": "Ver siguiente proyecto",
+    "buttonLabelEn": "See next project",
+    "buttonHref": "#/async-reports"
   }
 }
