@@ -390,8 +390,8 @@
         "metric": "34% → 82%",
         "label": "Onboardings completados",
         "labelEn": "Onboardings completed",
-        "description": "Tasa de finalización en los primeros 15 días (la línea base era una estimación).",
-        "descriptionEn": "Completion rate within the first 15 days (the baseline was an estimate)."
+        "description": "Tasa de finalización en los primeros 15 días, frente a la línea base de los 6 meses previos.",
+        "descriptionEn": "Completion rate within the first 15 days, versus the previous 6-month baseline."
       },
       {
         "icon": "📈",
