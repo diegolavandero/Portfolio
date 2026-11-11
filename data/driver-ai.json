@@ -83,8 +83,8 @@
       },
       {
         "icon": "⏱️",
-        "label": "Menos tiempo en sitio",
-        "labelEn": "Less time on site",
+        "label": "Menos tiempo por parada",
+        "labelEn": "Less time per stop",
         "metric": "18%",
         "description": "Reducción en tiempo promedio por parada en edificios complejos.",
         "descriptionEn": "Reduction in average time per stop at complex buildings."
@@ -125,8 +125,8 @@
         "number": "01",
         "description": "Contexto predictivo de acceso antes de llegar a cada parada",
         "descriptionEn": "Predictive access context before arriving at each stop",
-        "title": "-10 a -20% tiempo en sitio",
-        "titleEn": "-10 to -20% time on site"
+        "title": "10–20% menos tiempo por parada",
+        "titleEn": "10–20% less time per stop"
       },
       {
         "number": "02",
@@ -510,8 +510,8 @@
       {
         "icon": "⏱️",
         "metric": "18%",
-        "label": "Menos tiempo en sitio",
-        "labelEn": "Less time on site",
+        "label": "Menos tiempo por parada",
+        "labelEn": "Less time per stop",
         "description": "Reducción en paradas con Address Intelligence activo. Piloto de 6 semanas con 45 conductores.",
         "descriptionEn": "Reduction at stops with Address Intelligence active. 6-week pilot with 45 drivers."
       },
@@ -558,10 +558,10 @@
         "descriptionEn": "Mechanism to mark buildings as 'known' and skip the modal without dismissing it every time — the modal triggered even when the driver already knew how to enter."
       },
       {
-        "title": "Predicción de tiempo en sitio",
-        "titleEn": "Time-on-site prediction",
-        "description": "Extender Address Intelligence a predicción de tiempo en sitio por edificio, para recalcular el ETA de la ruta completa antes de salir — impactando la planificación del turno entero.",
-        "descriptionEn": "Extend Address Intelligence to time-on-site prediction per building, to recalculate the full route ETA before departure — impacting entire shift planning."
+        "title": "Predicción de tiempo por parada",
+        "titleEn": "Time-per-stop prediction",
+        "description": "Extender Address Intelligence a predicción de tiempo por parada por edificio, para recalcular el ETA de la ruta completa antes de salir — impactando la planificación del turno entero.",
+        "descriptionEn": "Extend Address Intelligence to time-per-stop prediction per building, to recalculate the full route ETA before departure — impacting entire shift planning."
       }
     ]
   },

@@ -61,8 +61,8 @@
       "subtitle": "Inteligencia de ubicación para última milla",
       "subtitleEn": "Location intelligence for last mile",
       "metric": "18%",
-      "metricLabel": "menos tiempo en sitio",
-      "metricLabelEn": "less time on site",
+      "metricLabel": "menos tiempo por parada",
+      "metricLabelEn": "less time per stop",
       "slug": "driver-ai",
       "device": "mobile",
       "image": "data/images/driver-ai.webp"
