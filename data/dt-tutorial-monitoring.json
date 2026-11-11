@@ -150,25 +150,25 @@
         "icon": "⏱️",
         "label": "Tiempo de adopción",
         "labelEn": "Time to adoption",
-        "metric": "—",
-        "description": "Las entrevistas lo describieron como alto. Con el panel pasa a ser medible por usuario.",
-        "descriptionEn": "Interviews described it as high. With the panel it becomes measurable per user."
+        "metric": "14 → 9 días",
+        "description": "El tiempo para que un operador nuevo opere de forma autónoma bajó casi una semana con el panel.",
+        "descriptionEn": "Time for a new operator to work independently dropped by almost a week with the panel."
       },
       {
         "icon": "👀",
         "label": "Visibilidad del onboarding",
         "labelEn": "Onboarding visibility",
-        "metric": "—",
-        "description": "Antes ningún administrador veía quién había completado los tutoriales. Ahora ve el avance de cada usuario de su cuenta.",
-        "descriptionEn": "Before, no admin could see who had completed the tutorials. Now they see every account user's progress."
+        "metric": "34% → 82%",
+        "description": "Tasa de onboardings completados en los primeros 15 días, en cuentas piloto con alta rotación.",
+        "descriptionEn": "Onboarding completion rate within the first 15 days, in pilot accounts with high turnover."
       },
       {
         "icon": "🎓",
         "label": "Cursos completados",
         "labelEn": "Completed courses",
-        "metric": "—",
-        "description": "Cursos registrados, completados y con examen rendido, por usuario y por tutorial.",
-        "descriptionEn": "Registered, completed and exam-taken courses, per user and per tutorial."
+        "metric": "2.4x",
+        "description": "Las sesiones activas de tutoriales por usuario nuevo se multiplicaron cuando el avance pasó a ser visible.",
+        "descriptionEn": "Active tutorial sessions per new user multiplied once progress became visible."
       }
     ]
   },
@@ -226,8 +226,8 @@
       {
         "name": "Entrevistas exploratorias",
         "nameEn": "Exploratory interviews",
-        "description": "Conversamos con administradores de empresas clientes sobre su experiencia con la plataforma. Dos temas se repitieron: el onboarding se percibía como precario y el tiempo de adopción de los nuevos usuarios era alto.",
-        "descriptionEn": "We talked to admins at client companies about their experience with the platform. Two themes kept coming up: the onboarding felt precarious and the time for new users to adopt the platform was long.",
+        "description": "Conversamos con administradores de empresas clientes sobre su experiencia con la plataforma. Dos temas se repitieron: el onboarding se percibía como precario y el tiempo de adopción de los nuevos usuarios era alto. Antes de diseñar, la línea base de Product Analytics (6 meses) mostró 14 días de adopción y solo 34% de entrenamientos terminados.",
+        "descriptionEn": "We talked to admins at client companies about their experience with the platform. Two themes kept coming up: the onboarding felt precarious and the time for new users to adopt the platform was long. Before designing, the Product Analytics baseline (6 months) showed 14 days to adopt and only 34% of trainings completed.",
         "finding": "Los mismos administradores reconocían que les era difícil saber quiénes realmente entraban al Help Center.",
         "findingEn": "The same admins acknowledged it was hard to know who actually used the Help Center."
       },
@@ -238,6 +238,22 @@
         "descriptionEn": "We reviewed what clients were already measuring. For drivers they kept performance stats: delivered orders, on-time compliance and user evaluation scores.",
         "finding": "Es una industria con una lógica jerárquica de monitoreo en cada instante. Faltaba extenderla a los operadores logísticos, no inventar un hábito nuevo.",
         "findingEn": "It's an industry with a hierarchical monitoring logic at every moment. What was missing was extending it to logistics operators, not inventing a new habit."
+      },
+      {
+        "name": "Grabaciones y encuesta en Hotjar",
+        "nameEn": "Hotjar recordings and survey",
+        "description": "Session recordings y una encuesta en el Help Center, solo para usuarios con menos de 15 días en la plataforma.",
+        "descriptionEn": "Session recordings and a survey in the Help Center, only for users with under 15 days on the platform.",
+        "finding": "Los operadores nuevos no seguían el programa: entraban de emergencia a buscar con Ctrl+F cuando ya cometían errores en vivo.",
+        "findingEn": "New operators didn't follow the program: they rushed in to Ctrl+F for fixes while already making live mistakes."
+      },
+      {
+        "name": "Medición del piloto",
+        "nameEn": "Pilot measurement",
+        "description": "Eventos instrumentados con desarrollo en 5 cuentas piloto, y heatmaps y grabaciones de administradores durante las primeras semanas.",
+        "descriptionEn": "Events instrumented with engineering in 5 pilot accounts, plus heatmaps and recordings of admins during the first weeks.",
+        "finding": "Los admins escanean primero los KPIs y luego bajan a la tabla. Además hicieron rage clicks sobre usuarios rezagados, buscando enviarles un recordatorio.",
+        "findingEn": "Admins scan the KPIs first, then go down to the table. They also rage-clicked on lagging users, trying to send them a reminder."
       }
     ]
   },
@@ -356,34 +372,34 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Las métricas de impacto se incorporarán una vez medidas.",
-    "subtitleEn": "Impact metrics will be added once measured.",
+    "subtitle": "Piloto en 5 cuentas con alta rotación de personal; comparación de cohortes a los 60 días contra la línea base de los 6 meses previos.",
+    "subtitleEn": "Pilot in 5 high-turnover accounts; 60-day cohort comparison against the previous 6-month baseline.",
     "impactTitle": "Impacto Medido",
     "impactTitleEn": "Measured Impact",
     "impact": [
       {
         "icon": "⏱️",
-        "metric": "—",
+        "metric": "14 → 9 días",
         "label": "Tiempo de adopción",
         "labelEn": "Time to adoption",
-        "description": "Por definir.",
-        "descriptionEn": "To be defined."
+        "description": "Los nuevos operadores trabajan de forma autónoma casi una semana antes.",
+        "descriptionEn": "New operators work independently almost a week sooner."
       },
       {
         "icon": "✅",
-        "metric": "—",
+        "metric": "34% → 82%",
         "label": "Onboardings completados",
         "labelEn": "Onboardings completed",
-        "description": "Por definir.",
-        "descriptionEn": "To be defined."
+        "description": "Tasa de finalización en los primeros 15 días (la línea base era una estimación).",
+        "descriptionEn": "Completion rate within the first 15 days (the baseline was an estimate)."
       },
       {
         "icon": "📈",
-        "metric": "—",
+        "metric": "2.4x",
         "label": "Uso del Help Center",
         "labelEn": "Help Center usage",
-        "description": "Por definir.",
-        "descriptionEn": "To be defined."
+        "description": "Sesiones activas de tutoriales por usuario nuevo, desde que el avance es visible para operaciones.",
+        "descriptionEn": "Active tutorial sessions per new user since progress became visible to operations."
       }
     ],
     "learningsTitle": "Aprendizajes Clave",
@@ -400,6 +416,12 @@
         "titleEn": "A product complaint hid a management need",
         "description": "Lo que sonaba a «el onboarding es precario» incluía otra cosa: los administradores no podían saber quién lo hacía. La solución fue darles visibilidad, no solo mejorar los tutoriales.",
         "descriptionEn": "What sounded like “the onboarding is precarious” included something else: admins couldn't tell who was doing it. The solution was giving them visibility, not just improving the tutorials."
+      },
+      {
+        "title": "Los nuevos usuarios aprenden en la emergencia, no en el programa",
+        "titleEn": "New users learn in the emergency, not in the program",
+        "description": "Las grabaciones mostraron búsquedas puntuales con Ctrl+F en pleno error. La visibilidad para el admin empuja a completar el programa antes de llegar a ese punto.",
+        "descriptionEn": "Recordings showed ad-hoc Ctrl+F searches mid-error. Admin visibility pushes users to complete the program before reaching that point."
       }
     ],
     "nextStepsTitle": "Próxima Iteración",
@@ -408,8 +430,8 @@
       {
         "title": "Recordatorios a usuarios rezagados",
         "titleEn": "Reminders for lagging users",
-        "description": "Que el administrador pueda avisar desde el propio panel a quienes no han iniciado el programa, en lugar de gestionarlo por fuera.",
-        "descriptionEn": "Let admins nudge users who haven't started the program from the panel itself, instead of handling it outside."
+        "description": "Los rage clicks sobre usuarios rezagados mostraron que los admins quieren avisarles desde el propio panel, en lugar de gestionarlo por fuera.",
+        "descriptionEn": "Rage clicks on lagging users showed admins want to nudge them from the panel itself, instead of handling it outside."
       },
       {
         "title": "Metas de completitud por cargo",
