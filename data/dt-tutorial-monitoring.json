@@ -140,44 +140,11 @@
     "placeholder": "Vista Resumen del monitoreo de tutoriales",
     "placeholderEn": "Tutorial monitoring summary view"
   },
-  "whyItMatters": {
-    "title": "¿Por qué importa?",
-    "titleEn": "Why it matters",
-    "subtitle": "Las empresas que contratan DispatchTrack rotan con frecuencia a sus técnicos y operadores logísticos, y cada persona nueva debe aprender la plataforma. Hasta ahora, nadie podía confirmar si realmente lo había hecho.",
-    "subtitleEn": "Companies that hire DispatchTrack frequently rotate their technicians and logistics operators, and every new person has to learn the platform. Until now, nobody could confirm they actually had.",
-    "items": [
-      {
-        "icon": "⏱️",
-        "label": "Tiempo de adopción",
-        "labelEn": "Time to adoption",
-        "metric": "14 → 9 días",
-        "description": "El tiempo para que un operador nuevo opere de forma autónoma bajó casi una semana con el panel.",
-        "descriptionEn": "Time for a new operator to work independently dropped by almost a week with the panel.",
-        "metricEn": "14 → 9 days"
-      },
-      {
-        "icon": "👀",
-        "label": "Visibilidad del onboarding",
-        "labelEn": "Onboarding visibility",
-        "metric": "34% → 82%",
-        "description": "Tasa de onboardings completados en los primeros 15 días, en cuentas piloto con alta rotación.",
-        "descriptionEn": "Onboarding completion rate within the first 15 days, in pilot accounts with high turnover."
-      },
-      {
-        "icon": "🎓",
-        "label": "Cursos completados",
-        "labelEn": "Completed courses",
-        "metric": "2.4x",
-        "description": "Las sesiones activas de tutoriales por usuario nuevo se multiplicaron cuando el avance pasó a ser visible.",
-        "descriptionEn": "Active tutorial sessions per new user multiplied once progress became visible."
-      }
-    ]
-  },
   "problemAndObjectives": {
     "title": "Problema",
     "titleEn": "Problem",
-    "subtitle": "Cada vez que una empresa cambiaba a un técnico u operador logístico, debía introducir a la persona nueva en la plataforma. No tenía ninguna herramienta para saber si ese onboarding se había realizado, ni cuánto había avanzado.",
-    "subtitleEn": "Every time a company replaced a technician or logistics operator, it had to introduce the new person to the platform. It had no tool to know whether that onboarding had happened, or how far along it was.",
+    "subtitle": "Las empresas que contratan DispatchTrack rotan con frecuencia a sus técnicos y operadores logísticos, y cada persona nueva debe aprender la plataforma. Los administradores no tenían ninguna herramienta para saber si ese onboarding se había realizado, ni cuánto había avanzado.",
+    "subtitleEn": "Companies that hire DispatchTrack frequently rotate their technicians and logistics operators, and every new person has to learn the platform. Admins had no tool to know whether that onboarding had happened, or how far along it was.",
     "products": [
       {
         "name": "Situación actual",
