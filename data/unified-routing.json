@@ -599,29 +599,29 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Prototipo (12 participantes) y producción (1.420 sesiones, 30 días) superaron las tres metas",
-    "subtitleEn": "Prototype (12 participants) and live use (1,420 sessions, 30 days) beat all three goals",
+    "subtitle": "Resultados en producción tras 30 días, frente a la línea base",
+    "subtitleEn": "Live results after 30 days, compared with the baseline",
     "impact": [
       {
         "metric": "32%",
         "label": "Planificación más rápida",
         "labelEn": "Faster planning",
-        "description": "24 → 16,4 min y 11 → 1,3 cambios de contexto. Meta 30%, prototipo 34%.",
-        "descriptionEn": "24 → 16.4 min and 11 → 1.3 context switches. Goal 30%, prototype 34%."
+        "description": "De 24 a 16,4 min por planificación.",
+        "descriptionEn": "From 24 to 16.4 min per planning run."
       },
       {
         "metric": "50%",
         "label": "Menos pasos en edición masiva",
         "labelEn": "Fewer steps in bulk edits",
-        "description": "28 → 14 clics para reasignar 15 pedidos. Meta 45%, prototipo 54%.",
-        "descriptionEn": "28 → 14 clicks to reassign 15 orders. Goal 45%, prototype 54%."
+        "description": "De 28 a 14 clics para reasignar 15 pedidos.",
+        "descriptionEn": "From 28 to 14 clicks to reassign 15 orders."
       },
       {
         "metric": "75%",
         "label": "Menos errores críticos",
         "labelEn": "Fewer critical errors",
-        "description": "38% → 9,5% de las sesiones. Meta 60%, prototipo 78%.",
-        "descriptionEn": "38% → 9.5% of sessions. Goal 60%, prototype 78%."
+        "description": "De 38% a 9,5% de las sesiones con error crítico.",
+        "descriptionEn": "From 38% to 9.5% of sessions with a critical error."
       }
     ],
     "learnings": [
