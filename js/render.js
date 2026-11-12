@@ -38,6 +38,42 @@ const esc = (str) => String(str || '').replace(/"/g, '&quot;');
 // Helper: emite atributos data-es / data-en
 const bi = (es, en) => `data-es="${esc(es)}" data-en="${esc(t(es, en))}"`;
 
+// Íconos de línea (reemplazan emojis del contenido; heredan currentColor)
+const Icons = {
+  paths: {
+    "⏱": "<circle cx=\"12\" cy=\"13\" r=\"8\"/><path d=\"M12 9v4l2 2M9 2h6\"/>",
+    "📦": "<path d=\"M21 8l-9-5-9 5v8l9 5 9-5zM3 8l9 5 9-5M12 13v8\"/>",
+    "✅": "<circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M8 12l3 3 5-6\"/>",
+    "💼": "<rect x=\"2\" y=\"7\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2\"/>",
+    "🎫": "<path d=\"M3 9a3 3 0 0 0 0 6v3h18v-3a3 3 0 0 1 0-6V6H3zM13 6v12\"/>",
+    "📞": "<path d=\"M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z\"/>",
+    "👤": "<circle cx=\"12\" cy=\"8\" r=\"4\"/><path d=\"M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1\"/>",
+    "⚙": "<path d=\"M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6\"/>",
+    "🎯": "<circle cx=\"12\" cy=\"12\" r=\"10\"/><circle cx=\"12\" cy=\"12\" r=\"6\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/>",
+    "📋": "<rect x=\"8\" y=\"2\" width=\"8\" height=\"4\" rx=\"1\"/><path d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\"/>",
+    "📊": "<path d=\"M12 20V10M18 20V4M6 20v-4\"/>",
+    "⏸": "<rect x=\"6\" y=\"4\" width=\"4\" height=\"16\"/><rect x=\"14\" y=\"4\" width=\"4\" height=\"16\"/>",
+    "🏢": "<rect x=\"4\" y=\"2\" width=\"16\" height=\"20\" rx=\"2\"/><path d=\"M9 22v-4h6v4M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01\"/>",
+    "📈": "<path d=\"M22 7l-8.5 8.5-5-5L2 17M16 7h6v6\"/>",
+    "🔧": "<path d=\"M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z\"/>",
+    "🤖": "<rect x=\"3\" y=\"11\" width=\"18\" height=\"10\" rx=\"2\"/><circle cx=\"12\" cy=\"5\" r=\"2\"/><path d=\"M12 7v4M8 16h.01M16 16h.01\"/>",
+    "🔄": "<path d=\"M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5\"/>",
+    "👥": "<circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M2 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2M16 3.1a4 4 0 0 1 0 7.8M22 21v-2a4 4 0 0 0-3-3.9\"/>",
+    "🔎": "<circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"M21 21l-4.3-4.3\"/>",
+    "🤝": "<path d=\"M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7\"/>",
+    "🔗": "<path d=\"M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7\"/>",
+    "📍": "<path d=\"M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z\"/><circle cx=\"12\" cy=\"10\" r=\"3\"/>",
+    "✉": "<rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\"/><path d=\"M22 7l-10 6L2 7\"/>",
+    "🌐": "<circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20\"/>"
+  },
+  svg: (ch, size = 22) => {
+    const key = String(ch || '').replace(/\uFE0F/g, '').trim();
+    const p = Icons.paths[key];
+    if (!p) return '';
+    return `<svg class="ui-icon" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${p}</svg>`;
+  }
+};
+
 const Renderer = {
   renderPage: async (slug) => {
     const app = document.getElementById('app');
@@ -189,7 +225,7 @@ const Renderer = {
 
     const cards = items.map(item => `
       <div class="impact-card">
-        ${item.icon ? `<div class="impact-icon" aria-hidden="true">${item.icon}</div>` : ''}
+        ${item.icon ? `<div class="impact-icon" aria-hidden="true">${Icons.svg(item.icon)}</div>` : ''}
         <p class="impact-eyebrow" ${bi(item.label, item.labelEn)}>${item.label}</p>
         <p class="impact-metric" ${bi(item.metric, item.metricEn)}>${item.metric}</p>
         <p class="impact-desc" ${bi(item.description, item.descriptionEn)}>${item.description}</p>
@@ -1171,7 +1207,7 @@ const Renderer = {
     const impact = isMetricCards
       ? items.map(i => `
           <div class="impact-card">
-            ${i.icon ? `<div class="impact-icon" aria-hidden="true">${i.icon}</div>` : ''}
+            ${i.icon ? `<div class="impact-icon" aria-hidden="true">${Icons.svg(i.icon)}</div>` : ''}
             <p class="impact-eyebrow" ${bi(i.label, i.labelEn)}>${i.label}</p>
             <p class="impact-metric" ${bi(i.metric, i.metricEn)}>${i.metric}</p>
             <p class="impact-desc" ${bi(i.description, i.descriptionEn)}>${i.description}</p>

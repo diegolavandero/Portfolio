@@ -106,7 +106,7 @@
     "title": "Problema y objetivos",
     "titleEn": "Problem and objectives",
     "subtitle": "Identificación del desafío y metas medibles",
-    "subtitleEn": "Challenge identification and measurable goals",
+    "subtitleEn": "Identification of the challenge and measurable goals",
     "products": [
       {
         "name": "El problema",
@@ -190,8 +190,8 @@
       {
         "text": "No necesito más info en pantalla. Necesito que me la digan mientras manejo.",
         "textEn": "I don't need more info on screen. I need it told to me while I'm driving.",
-        "author": "Miguel, conductor 3 años",
-        "authorEn": "Miguel, driver 3 years",
+        "author": "Rodrigo, conductor 3 años",
+        "authorEn": "Rodrigo, driver 3 years",
         "context": "Contextual Inquiry en campo",
         "contextEn": "Contextual inquiry in the field"
       },
@@ -230,8 +230,8 @@
     "subtitleEn": "Three roles with different perspectives on the same problem",
     "items": [
       {
-        "id": "miguel-torres",
-        "name": "Miguel Torres",
+        "id": "rodrigo-fuentes",
+        "name": "Rodrigo Fuentes",
         "role": "Conductor última milla · 3 años",
         "roleEn": "Last-mile driver · 3 years",
         "goals": [

@@ -258,10 +258,10 @@ const Router = {
               <div class="about-footer-block">
                 <h2 class="about-section-title" data-es="${data.contactTitle}" data-en="${data.contactTitleEn}">${data.contactTitle}</h2>
                 <ul class="contact-list">
-                  <li><span class="contact-icon" aria-hidden="true">📍</span><span>${data.contact.location}</span></li>
-                  <li><span class="contact-icon" aria-hidden="true">✉️</span><a href="mailto:${data.contact.email}">${data.contact.email}</a></li>
-                  <li><span class="contact-icon" aria-hidden="true">🌐</span><a href="${data.contact.behanceUrl}" target="_blank" rel="noopener noreferrer">${data.contact.behance}</a></li>
-                  <li><span class="contact-icon" aria-hidden="true">🔗</span><a href="https://www.linkedin.com/in/diegolavandero/" target="_blank" rel="noopener noreferrer">linkedin.com/in/diegolavandero</a></li>
+                  <li><span class="contact-icon" aria-hidden="true">${Icons.svg('📍', 16)}</span><span>${data.contact.location}</span></li>
+                  <li><span class="contact-icon" aria-hidden="true">${Icons.svg('✉️', 16)}</span><a href="mailto:${data.contact.email}">${data.contact.email}</a></li>
+                  <li><span class="contact-icon" aria-hidden="true">${Icons.svg('🌐', 16)}</span><a href="${data.contact.behanceUrl}" target="_blank" rel="noopener noreferrer">${data.contact.behance}</a></li>
+                  <li><span class="contact-icon" aria-hidden="true">${Icons.svg('🔗', 16)}</span><a href="https://www.linkedin.com/in/diegolavandero/" target="_blank" rel="noopener noreferrer">linkedin.com/in/diegolavandero</a></li>
                 </ul>
               </div>
             </div>
