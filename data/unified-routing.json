@@ -70,8 +70,8 @@
   "problemAndObjectives": {
     "title": "Problema y objetivos",
     "titleEn": "Problem and objectives",
-    "subtitle": "Identificación del desafío y metas medibles",
-    "subtitleEn": "Identification of the challenge and measurable goals",
+    "subtitle": "El problema y tres metas medibles, definidas antes de diseñar",
+    "subtitleEn": "The problem and three measurable goals, set before designing",
     "problemTitle": "El problema",
     "problemTitleEn": "The problem",
     "problemIntro": "El flujo actual de planificación presentaba una fragmentación crítica entre dos productos:",
@@ -127,40 +127,38 @@
     "objectives": [
       {
         "number": "01",
-        "title": "Reducir tiempo de planificación",
-        "titleEn": "Reduce planning time",
-        "meta": "Meta: 32% menos tiempo",
-        "metaEn": "Goal: 32% less time",
-        "description": "Optimizar flujo para disminuir tiempo de configuración y ejecución",
-        "descriptionEn": "Optimize flow to reduce setup and execution time"
+        "title": "Acelerar la planificación",
+        "titleEn": "Speed up planning",
+        "meta": "Meta: 30% menos tiempo",
+        "metaEn": "Goal: 30% less time",
+        "description": "Tiempo total desde la configuración hasta confirmar las rutas",
+        "descriptionEn": "Total time from setup to route confirmation"
       },
       {
         "number": "02",
-        "title": "Permitir edición avanzada",
-        "titleEn": "Enable advanced editing",
-        "meta": "Sin aumentar complejidad",
-        "metaEn": "Without increasing complexity",
-        "description": "Habilitar control manual sin sacrificar velocidad operativa",
-        "descriptionEn": "Enable manual control without sacrificing operational speed"
+        "title": "Simplificar la edición manual",
+        "titleEn": "Simplify manual editing",
+        "meta": "Meta: 45% menos pasos",
+        "metaEn": "Goal: 45% fewer steps",
+        "description": "Pasos para reasignar un grupo de 15 pedidos entre rutas con restricciones",
+        "descriptionEn": "Steps to reassign a 15-order group across constrained routes"
       },
       {
         "number": "03",
-        "title": "Modelo híbrido escalable",
-        "titleEn": "Scalable hybrid model",
-        "meta": "Asistente + Consola",
-        "metaEn": "Wizard + Console",
-        "description": "Combinar automatización con flexibilidad en una experiencia unificada",
-        "descriptionEn": "Combine automation with flexibility in a unified experience"
+        "title": "Reducir errores críticos",
+        "titleEn": "Reduce critical errors",
+        "meta": "Meta: 60% menos errores",
+        "metaEn": "Goal: 60% fewer errors",
+        "description": "Sesiones con cambios sin guardar o restricciones violadas sin alerta",
+        "descriptionEn": "Sessions with unsaved changes or unflagged constraint violations"
       }
     ]
   },
   "uxResearch": {
     "title": "Investigación",
     "titleEn": "Research",
-    "subtitle": "Entrevistas, observación y análisis de uso para entender por qué se editaba cada ruta a mano",
-    "subtitleEn": "Interviews, observation and usage analysis to understand why every route was edited by hand",
-    "hypothesisTitle": "Hipótesis",
-    "hypothesisTitleEn": "Hypotheses",
+    "subtitle": "Línea base con 6 operadores, validación en prototipo con 12 y telemetría real con 1.420 sesiones",
+    "subtitleEn": "Baseline with 6 operators, prototype validation with 12 and live telemetry from 1,420 sessions",
     "hypothesis": [
       "El asistente no soporta escenarios logísticos complejos",
       "La consola es poderosa pero cognitivamente demandante",
@@ -171,24 +169,18 @@
       "The console is powerful but cognitively demanding",
       "A progressive hybrid model can balance speed and control"
     ],
-    "methodsTitle": "Metodología",
-    "methodsTitleEn": "Methodology",
     "methods": [
-      "6 entrevistas cualitativas con jefes de planificación",
-      "Observación directa de flujos reales",
-      "Análisis de comportamiento en plataforma",
-      "Validación heurística (Nielsen)"
+      "Observación del flujo actual · 6 operadores (2 jefes de planificación, 2 jefes de distribución, 2 despachadores senior)",
+      "Pruebas de estrés con usuarios sintéticos (Claude Code) · 4 arquitecturas evaluadas, 3 descartadas",
+      "Benchmark en prototipo de Figma · 12 participantes, 3 escenarios con corte de 25 min",
+      "Telemetría con Hotjar · 1.420 sesiones en 30 días, 14 cuentas, 185 usuarios"
     ],
     "methodsEn": [
-      "6 qualitative interviews with planning managers",
-      "Direct observation of real flows",
-      "Platform behavior analysis",
-      "Heuristic validation (Nielsen)"
+      "Current-flow observation · 6 operators (2 heads of planning, 2 distribution managers, 2 senior dispatchers)",
+      "Stress tests with synthetic users (Claude Code) · 4 architectures evaluated, 3 discarded",
+      "Benchmark on the Figma prototype · 12 participants, 3 scenarios with a 25-min cutoff",
+      "Hotjar telemetry · 1,420 sessions over 30 days, 14 accounts, 185 users"
     ],
-    "insightsTitle": "Hallazgos clave",
-    "insightsTitleEn": "Key insights",
-    "qualitativeLabel": "Cualitativos",
-    "qualitativeLabelEn": "Qualitative",
     "quotes": [
       {
         "text": "Nuestra operación no es 100% automatizable",
@@ -203,25 +195,28 @@
         "textEn": "The console allows reaction, the wizard does not"
       }
     ],
-    "quantitativeLabel": "Cuantitativos",
-    "quantitativeLabelEn": "Quantitative",
+    "quantitativeLabel": "Línea base",
+    "quantitativeLabelEn": "Baseline",
     "stats": [
       {
-        "value": "Más de 70%",
-        "description": "de rutas requieren ajustes manuales",
-        "descriptionEn": "of routes require manual adjustments",
-        "valueEn": "Over 70%"
+        "value": "24 min",
+        "description": "de planificación de punta a punta",
+        "descriptionEn": "of end-to-end planning"
       },
       {
-        "value": "Más de 40%",
-        "description": "del tiempo se pierde en edición post-ruteo",
-        "descriptionEn": "of time is lost in post-routing editing",
-        "valueEn": "Over 40%"
+        "value": "42%",
+        "description": "del tiempo en reasignar pedidos a mano",
+        "descriptionEn": "of time spent reassigning orders by hand"
       },
       {
-        "value": "100%",
-        "description": "reportan necesidad de visibilidad en mapa",
-        "descriptionEn": "report a need for map visibility"
+        "value": "38%",
+        "description": "de sesiones con un error crítico",
+        "descriptionEn": "of sessions with a critical error"
+      },
+      {
+        "value": "11",
+        "description": "cambios de contexto por ciclo de ruteo",
+        "descriptionEn": "context switches per routing cycle"
       }
     ]
   },
@@ -636,57 +631,51 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Impacto en tiempo, despacho y errores, con lo aprendido y lo que sigue",
-    "subtitleEn": "Impact on time, dispatch and errors, with learnings and what comes next",
-    "impactTitle": "Impacto",
-    "impactTitleEn": "Impact",
+    "subtitle": "Prototipo (12 participantes) y producción (1.420 sesiones, 30 días) superaron las tres metas",
+    "subtitleEn": "Prototype (12 participants) and live use (1,420 sessions, 30 days) beat all three goals",
     "impact": [
       {
         "metric": "32%",
         "label": "Planificación más rápida",
         "labelEn": "Faster planning",
-        "description": "Menos tiempo de configuración y ejecución de rutas",
-        "descriptionEn": "Less time to set up and run routes"
+        "description": "24 → 16,4 min y 11 → 1,3 cambios de contexto. Meta 30%, prototipo 34%.",
+        "descriptionEn": "24 → 16.4 min and 11 → 1.3 context switches. Goal 30%, prototype 34%."
       },
       {
-        "metric": "23%",
-        "label": "Mayor eficiencia en despacho",
-        "labelEn": "Higher dispatch efficiency",
-        "description": "Despacho más rápido y preciso",
-        "descriptionEn": "Faster, more precise dispatch"
+        "metric": "50%",
+        "label": "Menos pasos en edición masiva",
+        "labelEn": "Fewer steps in bulk edits",
+        "description": "28 → 14 clics para reasignar 15 pedidos. Meta 45%, prototipo 54%.",
+        "descriptionEn": "28 → 14 clicks to reassign 15 orders. Goal 45%, prototype 54%."
       },
       {
-        "metric": "78%",
+        "metric": "75%",
         "label": "Menos errores críticos",
         "labelEn": "Fewer critical errors",
-        "description": "Menos rutas sin guardar y pedidos perdidos",
-        "descriptionEn": "Fewer unsaved routes and lost orders"
+        "description": "38% → 9,5% de las sesiones. Meta 60%, prototipo 78%.",
+        "descriptionEn": "38% → 9.5% of sessions. Goal 60%, prototype 78%."
       }
     ],
-    "learningsTitle": "Aprendizajes clave",
-    "learningsTitleEn": "Key learnings",
     "learnings": [
       {
-        "title": "Automatización con control",
-        "titleEn": "Automation with control",
-        "description": "La automatización sin control falla en logística real. Los usuarios necesitan poder intervenir.",
-        "descriptionEn": "Automation without control fails in real logistics. Users need to be able to intervene."
+        "title": "Producción no es laboratorio",
+        "titleEn": "Live use is not the lab",
+        "description": "El tiempo real fue algo mayor que en el prototipo (16,4 vs. 15,8 min) por latencia de API e interrupciones del turno, y aun así superó la meta.",
+        "descriptionEn": "Live time was slightly higher than in the prototype (16.4 vs. 15.8 min) due to API latency and mid-shift interruptions, and still beat the goal."
       },
       {
-        "title": "Visibilidad > simplicidad",
-        "titleEn": "Visibility > simplicity",
-        "description": "Para usuarios expertos, la visibilidad total es más valiosa que la simplicidad superficial.",
-        "descriptionEn": "For expert users, total visibility is more valuable than surface-level simplicity."
+        "title": "Visibilidad con revelación progresiva",
+        "titleEn": "Visibility with progressive disclosure",
+        "description": "El 84% de las interacciones se concentró en el mapa y el panel de alertas, lo que validó relegar los campos tabulares secundarios.",
+        "descriptionEn": "84% of interactions concentrated on the map and the alert panel, validating the decision to push secondary table fields down."
       },
       {
-        "title": "Poder sobre facilidad",
-        "titleEn": "Power over ease",
-        "description": "Usuarios expertos prefieren herramientas poderosas aunque tengan curva de aprendizaje.",
-        "descriptionEn": "Expert users prefer powerful tools even with a learning curve."
+        "title": "Los datos en vivo muestran lo que el prototipo no",
+        "titleEn": "Live data shows what the prototype can't",
+        "description": "Las grabaciones de Hotjar mostraron que 11% de los despachadores dudaba al alternar entre mapa y tabla. Un atajo (Cmd/Ctrl + M) y un tooltip redujeron esa fricción 40% (DTLM-418).",
+        "descriptionEn": "Hotjar recordings showed 11% of dispatchers hesitated when switching between map and table. A shortcut (Cmd/Ctrl + M) and a tooltip cut that friction by 40% (DTLM-418)."
       }
     ],
-    "nextStepsTitle": "Próximos Pasos",
-    "nextStepsTitleEn": "Next steps",
     "nextSteps": [
       {
         "title": "Sugerencias asistidas por IA",
@@ -716,36 +705,5 @@
     "buttonLabel": "Ver siguiente proyecto",
     "buttonLabelEn": "See next project",
     "buttonHref": "/dt-tutorial-monitoring"
-  },
-  "roleNarrative": {
-    "title": "Mi rol en este proyecto",
-    "titleEn": "My role in this project",
-    "intro": "Lideré el proceso completo de punta a punta: desde la investigación y la síntesis de hallazgos hasta los entregables de alta fidelidad. Utilicé Claude Code como copiloto a lo largo del proceso, no como generador de decisiones, sino como amplificador de exploración y velocidad. El juicio de diseño, los trade-offs y la dirección estratégica fueron siempre míos.",
-    "introEn": "I led the complete end-to-end process: from research and insight synthesis to high-fidelity deliverables. I used Claude Code as a co-pilot throughout, not as a decision generator, but as an amplifier of exploration and speed. Design judgment, trade-offs, and strategic direction were always mine.",
-    "stages": [
-      {
-        "number": "01",
-        "title": "Investigación con usuarios sintéticos",
-        "titleEn": "Research with synthetic users",
-        "description": "Generé perfiles sintéticos de usuarios extremos (jefes de planificación con flotas de 300+ vehículos bajo alta presión operacional) para simular escenarios de uso antes de las entrevistas reales. Esto me permitió llegar al campo con hipótesis más afiladas y anticipar puntos de fricción que luego se confirmaron con usuarios reales.",
-        "descriptionEn": "I generated synthetic profiles of extreme users (planning managers with 300+ vehicle fleets under high operational pressure) to simulate usage scenarios before real interviews. This let me arrive in the field with sharper hypotheses and anticipate friction points later confirmed by real users."
-      },
-      {
-        "number": "02",
-        "title": "Exploración estructural acelerada",
-        "titleEn": "Accelerated structural exploration",
-        "description": "Usé Claude Code para explorar variaciones de arquitectura de información en horas en lugar de días. Evalué 4 estructuras distintas de la consola de planificación mediante iteraciones rápidas. Esto me permitió llegar a las sesiones de co-diseño con hipótesis concretas ya descartadas, en lugar de opciones abiertas que consumen tiempo de las áreas involucradas.",
-        "descriptionEn": "I used Claude Code to explore information architecture variations in hours instead of days. I evaluated 4 different planning console structures through rapid iterations, arriving at co-design sessions with concrete discarded hypotheses instead of open options that drain stakeholder time."
-      },
-      {
-        "number": "03",
-        "title": "Prototipado y testeo sintético",
-        "titleEn": "Prototyping & synthetic testing",
-        "description": "Antes de las validaciones con usuarios reales, simulé sesiones de pensamiento en voz alta con perfiles sintéticos de despachadores y jefes de planificación. Los hallazgos priorizaron los puntos de fricción más críticos y permitieron iterar dos rondas de prototipo antes de tocar a un usuario real. El modelo híbrido de asistente y consola emergió directamente de esta fase.",
-        "descriptionEn": "Before real user validations, I simulated think-aloud sessions with synthetic dispatcher and planning manager profiles. The insights prioritized the most critical friction points and enabled two prototype iterations before touching a real user. The hybrid wizard + console model emerged directly from this phase."
-      }
-    ],
-    "closing": "La IA aportó velocidad y amplitud de exploración. Todas las decisiones de diseño (arquitectura de información, jerarquía visual, flujos de interacción y trade-offs de usabilidad) fueron tomadas y validadas por mí.",
-    "closingEn": "AI contributed speed and breadth of exploration. All design decisions (information architecture, visual hierarchy, interaction flows, and usability trade-offs) were made and validated by me."
   }
 }

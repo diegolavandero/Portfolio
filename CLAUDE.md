@@ -360,7 +360,7 @@ Recordar a Diego que necesita Live Server o `python3 -m http.server` corriendo. 
 
 | Término | Significado |
 |---|---|
-| **Featured project** | Proyecto con case study completo (actualmente Unified Routing) |
+| **Featured project** | Proyecto destacado en el home (actualmente Unified routing); misma estructura que el resto de los casos |
 | **Stagger** | Animación escalonada con delays incrementales |
 | **Token primitivo** | Valor base sin contexto (ej: `#6366f1`) |
 | **Token semántico** | Token con propósito (ej: `--color-accent`) |
