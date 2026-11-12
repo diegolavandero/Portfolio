@@ -63,7 +63,7 @@
   ],
   "heroImage": {
     "src": "data/images/dt-help-center-01-catalogo.webp",
-    "srcEn": "data/images/dt-help-center-01-catalogo-en.webp",
+    "srcEn": "data/images/dt-help-center-01-catalogo-en.webp?v=3",
     "placeholder": "Panel de tutoriales abierto sobre la pantalla de Órdenes",
     "placeholderEn": "Tutorials sidebar open over the Orders screen"
   },
@@ -303,7 +303,7 @@
         "description": "Video, estado de avance, cuestionario y artículos relacionados de la sección.",
         "descriptionEn": "The section's video, progress status, quiz and related articles.",
         "src": "data/images/dt-help-center-02-tutorial.webp",
-        "srcEn": "data/images/dt-help-center-02-tutorial-en.webp",
+        "srcEn": "data/images/dt-help-center-02-tutorial-en.webp?v=3",
         "alt": "Tutorial abierto en el panel",
         "altEn": "Tutorial open in the sidebar"
       },
@@ -313,7 +313,7 @@
         "description": "Preguntas simples sobre el video, con verificación y reintento guiado.",
         "descriptionEn": "Simple questions about the video, with verification and guided retry.",
         "src": "data/images/dt-help-center-03-quiz.webp?v=2",
-        "srcEn": "data/images/dt-help-center-03-quiz-en.webp?v=2",
+        "srcEn": "data/images/dt-help-center-03-quiz-en.webp?v=3",
         "alt": "Cuestionario de un tutorial",
         "altEn": "Tutorial quiz"
       },
@@ -323,7 +323,7 @@
         "description": "En lugar de una pantalla vacía, el usuario ve el tutorial de su sección para empezar.",
         "descriptionEn": "Instead of an empty screen, users see their section's tutorial to get started.",
         "src": "data/images/dt-help-center-04-usuario-nuevo.webp",
-        "srcEn": "data/images/dt-help-center-04-usuario-nuevo-en.webp",
+        "srcEn": "data/images/dt-help-center-04-usuario-nuevo-en.webp?v=3",
         "alt": "Estado vacío con tutorial de la sección",
         "altEn": "Empty state with the section's tutorial"
       }
