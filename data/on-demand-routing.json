@@ -6,7 +6,7 @@
   "subtitle": "Sistema de asignación manual y automática",
   "subtitleEn": "Manual and automatic assignment system",
   "hero": {
-    "tagline": "QUICKCOMMERCE · DESKTOP · 2023",
+    "tagline": "QUICKCOMMERCE · ESCRITORIO · 2023",
     "taglineEn": "QUICKCOMMERCE · DESKTOP · 2023",
     "title": "On-Demand ",
     "titleEn": "On-Demand ",
@@ -14,12 +14,12 @@
     "titleAccentEn": "Routing",
     "subtitle": "De caja negra a control híbrido: asignación manual y automática",
     "subtitleEn": "From black box to hybrid control: manual and automatic assignment",
-    "description": "La asignación de rutas requiere balance entre eficiencia algorítmica y control humano. Este sistema permite a los operadores elegir entre asignación automática y manual con drag & drop, mejorando tanto la velocidad como la confianza en el proceso.",
-    "descriptionEn": "Route assignment requires balance between algorithmic efficiency and human control. This system lets operators choose between automatic and manual assignment with drag & drop, improving both speed and trust in the process."
+    "description": "La asignación de rutas requiere balance entre eficiencia algorítmica y control humano. Este sistema permite a los operadores elegir entre asignación automática y manual arrastrando y soltando, mejorando tanto la velocidad como la confianza en el proceso.",
+    "descriptionEn": "Route assignment requires balance between algorithmic efficiency and human control. This system lets operators choose between automatic and manual assignment with drag and drop, improving both speed and trust in the process."
   },
   "projectSpecs": [
     {
-      "label": "Mi Rol",
+      "label": "Rol",
       "labelEn": "Role",
       "value": "Senior AI Product Designer",
       "valueEn": "Senior AI Product Designer"
@@ -51,7 +51,7 @@
     {
       "label": "Entregables",
       "labelEn": "Deliverables",
-      "value": "Prototipo Figma · Docs Jira",
+      "value": "Prototipo Figma · Documentación en Jira",
       "valueEn": "Figma prototype · Jira docs"
     },
     {
@@ -62,21 +62,21 @@
     }
   ],
   "heroImage": {
-    "placeholder": "Mockup principal · Asignación híbrida (auto + manual)",
+    "placeholder": "Pantalla principal · Asignación híbrida (auto + manual)",
     "placeholderEn": "Main mockup · Hybrid assignment (auto + manual)",
     "device": "desktop",
     "src": "data/images/on-demand-routing-hero.webp"
   },
   "whyItMatters": {
     "title": "Por qué importa",
-    "titleEn": "Why It Matters",
-    "subtitle": "Impacto estratégico en negocio, usuario y sistema",
-    "subtitleEn": "Strategic impact on business, user and system",
+    "titleEn": "Why it matters",
+    "subtitle": "Asignar más rápido sin perder el control del operador",
+    "subtitleEn": "Faster assignment without taking control away from the operator",
     "items": [
       {
         "icon": "💼",
-        "label": "Impacto en Negocio",
-        "labelEn": "Business Impact",
+        "label": "Impacto en negocio",
+        "labelEn": "Business impact",
         "metric": "Eficiencia",
         "description": "Eficiencia en asignación en tiempo real con capacidad de escalar a operaciones de alta demanda",
         "descriptionEn": "Real-time assignment efficiency with the ability to scale to high-demand operations",
@@ -84,8 +84,8 @@
       },
       {
         "icon": "👤",
-        "label": "Impacto en Usuario",
-        "labelEn": "User Impact",
+        "label": "Impacto en usuario",
+        "labelEn": "User impact",
         "metric": "Control",
         "description": "Control y visibilidad sobre la automatización, reduciendo fricción en decisiones críticas",
         "descriptionEn": "Control and visibility over automation, reducing friction in critical decisions",
@@ -93,8 +93,8 @@
       },
       {
         "icon": "🔧",
-        "label": "Impacto en Sistema",
-        "labelEn": "System Impact",
+        "label": "Impacto en sistema",
+        "labelEn": "System impact",
         "metric": "Escala",
         "description": "Base para optimización híbrida escalable y adaptable a diferentes contextos operacionales",
         "descriptionEn": "Foundation for scalable hybrid optimization adaptable to different operational contexts",
@@ -103,17 +103,17 @@
     ]
   },
   "problemAndObjectives": {
-    "title": "Problema y Objetivos",
-    "titleEn": "Problem and Objectives",
+    "title": "Problema y objetivos",
+    "titleEn": "Problem and objectives",
     "subtitle": "Identificación del desafío y metas medibles",
     "subtitleEn": "Identification of the challenge and measurable goals",
-    "problemTitle": "El Problema",
-    "problemTitleEn": "The Problem",
+    "problemTitle": "El problema",
+    "problemTitleEn": "The problem",
     "problemIntro": "Los operadores gestionaban entre 150 y 400 órdenes diarias con dos herramientas que no funcionaban juntas: un algoritmo de asignación automática que no explicaba sus decisiones, y un proceso manual que requería arrastrar cada orden de forma individual. El resultado era desconfianza en la automatización y lentitud en la operación.",
     "problemIntroEn": "Operators managed between 150 and 400 daily orders with two tools that didn't work together: an automatic assignment algorithm that didn't explain its decisions, and a manual process requiring dragging each order individually. The result was distrust in automation and slowness in operation.",
     "products": [
       {
-        "name": "Pain points observados",
+        "name": "Puntos de dolor observados",
         "nameEn": "Observed pain points",
         "cons": [
           "70% de los operadores corregía manualmente el resultado del auto-assign después de ejecutarlo",
@@ -127,15 +127,15 @@
         ]
       }
     ],
-    "objectivesTitle": "Objetivos Medibles",
-    "objectivesTitleEn": "Measurable Objectives",
+    "objectivesTitle": "Objetivos medibles",
+    "objectivesTitleEn": "Measurable objectives",
     "objectives": [
       {
         "number": "01",
         "title": "Reducir tiempo de asignación",
         "titleEn": "Reduce assignment time",
-        "meta": "Meta: -35% en tiempo por sesión",
-        "metaEn": "Goal: -35% time per session",
+        "meta": "Meta: 35% menos tiempo por sesión",
+        "metaEn": "Goal: 35% less time per session",
         "description": "Modo híbrido: automático por defecto, ajuste manual solo donde el operador lo necesita",
         "descriptionEn": "Hybrid mode: automatic by default, manual adjustment only where the operator needs it"
       },
@@ -145,7 +145,7 @@
         "titleEn": "Increase trust in the algorithm",
         "meta": "Meta: adopción auto-assign >70%",
         "metaEn": "Goal: auto-assign adoption >70%",
-        "description": "Hacer legibles las decisiones del algoritmo: criterios visibles y override fluido",
+        "description": "Hacer legibles las decisiones del algoritmo: criterios visibles y corrección fluida",
         "descriptionEn": "Make the algorithm's decisions readable: visible criteria and fluid override"
       },
       {
@@ -160,49 +160,48 @@
     ]
   },
   "uxResearch": {
-    "title": "Metodología UX",
-    "titleEn": "UX Design Process",
+    "title": "Investigación",
+    "titleEn": "Research",
     "subtitle": "Tres métodos para mapear, estructurar y validar el sistema híbrido",
     "subtitleEn": "Three methods to map, structure and validate the hybrid system",
     "methodCards": [
       {
-        "name": "Mapeo del journey",
-        "nameEn": "Journey Mapping",
-        "description": "Mapeamos las 6 etapas del flujo completo de asignación, desde recibir las órdenes del día hasta confirmar el despacho. El pain point crítico emergió entre \"asignar automáticamente\" y \"revisar y corregir\": el 70% del tiempo de fricción ocurría en esa transición.",
-        "descriptionEn": "We mapped the 6 stages of the complete assignment flow, from receiving the day's orders to confirming dispatch. The critical pain point emerged between \"auto-assign\" and \"review and correct\": 70% of friction time occurred in that transition.",
+        "name": "Mapeo del recorrido",
+        "nameEn": "Journey mapping",
+        "description": "Mapeamos las 6 etapas del flujo completo de asignación, desde recibir las órdenes del día hasta confirmar el despacho. El pain point crítico emergió entre “asignar automáticamente” y “revisar y corregir”: el 70% del tiempo de fricción ocurría en esa transición.",
+        "descriptionEn": "We mapped the 6 stages of the complete assignment flow, from receiving the day's orders to confirming dispatch. The critical pain point emerged between “auto-assign” and “review and correct”: 70% of friction time occurred in that transition.",
         "finding": "Los operadores no rechazaban el algoritmo: rechazaban la opacidad. Con criterios visibles, la confianza subía.",
         "findingEn": "Operators weren't rejecting the algorithm: they were rejecting the opacity. With visible criteria, trust increased."
       },
       {
-        "name": "Card Sorting",
-        "nameEn": "Card Sorting",
-        "description": "Pedimos a 10 operadores que agruparan 34 elementos del sistema (entidades, acciones, estados) según su modelo mental. El ejercicio reveló que \"ruta\" como concepto casi no existía en su vocabulario: agrupaban órdenes con clientes y vehículos con conductores, pero casi nunca las rutas como entidad intermedia.",
-        "descriptionEn": "We asked 10 operators to group 34 system elements (entities, actions, states) by their mental model. The exercise revealed that \"route\" as a concept barely existed in their vocabulary; they grouped orders with clients and vehicles with drivers, but almost never routes as an intermediate entity.",
-        "finding": "Crear la entidad \"Route\" visible y editable fue la decisión arquitectónica más importante del proyecto.",
-        "findingEn": "Creating the \"Route\" entity as visible and editable was the most important architectural decision of the project."
+        "name": "Card sorting",
+        "nameEn": "Card sorting",
+        "description": "Pedimos a 10 operadores que agruparan 34 elementos del sistema (entidades, acciones, estados) según su modelo mental. El ejercicio reveló que “ruta” como concepto casi no existía en su vocabulario: agrupaban órdenes con clientes y vehículos con conductores, pero casi nunca las rutas como entidad intermedia.",
+        "descriptionEn": "We asked 10 operators to group 34 system elements (entities, actions, states) by their mental model. The exercise revealed that “route” as a concept barely existed in their vocabulary; they grouped orders with clients and vehicles with drivers, but almost never routes as an intermediate entity.",
+        "finding": "Crear la entidad “Route” visible y editable fue la decisión arquitectónica más importante del proyecto.",
+        "findingEn": "Creating the “Route” entity as visible and editable was the most important architectural decision of the project."
       },
       {
         "name": "Pruebas de usabilidad",
-        "nameEn": "Usability Testing",
+        "nameEn": "Usability testing",
         "description": "Testeamos 3 flujos con n=12 operadores: asignación 100% manual, 100% automática y modo híbrido. El foco fue entender cuándo prefería cada operador cada modo.",
         "descriptionEn": "We tested 3 flows with n=12 operators: 100% manual assignment, 100% automatic, and hybrid mode. The focus was understanding when operators preferred each mode.",
-        "finding": "El drag & drop era preferido para reasignar 1–5 órdenes; para +20 órdenes todos preferían el auto-assign con override.",
-        "findingEn": "Drag & drop was preferred for reassigning 1–5 orders; for 20+ orders everyone preferred auto-assign with override."
+        "finding": "Arrastrar y soltar era lo preferido para reasignar 1–5 órdenes; para +20 órdenes todos preferían la asignación automática con corrección manual.",
+        "findingEn": "Drag and drop was preferred for reassigning 1–5 orders; for 20+ orders everyone preferred auto-assign with override."
       }
     ]
   },
   "personas": {
-    "title": "User Personas",
-    "titleEn": "User Personas",
+    "title": "Personas",
+    "titleEn": "Personas",
     "subtitle": "Perfiles clave identificados",
     "subtitleEn": "Key profiles identified",
     "items": [
       {
         "id": "maria-gonzalez",
         "name": "María González",
-        "role": "Planificadora Logística Senior",
+        "role": "Planificadora logística senior",
         "roleEn": "Senior Logistics Planner",
-        "avatar": "https://i.pravatar.cc/128?img=5",
         "goals": [
           "Asignar rutas rápidamente en horarios peak",
           "Mantener control sobre decisiones críticas",
@@ -237,9 +236,8 @@
       {
         "id": "carlos-ruiz",
         "name": "Carlos Ruiz",
-        "role": "Operador de Ruteo",
+        "role": "Operador de ruteo",
         "roleEn": "Routing Operator",
-        "avatar": "https://i.pravatar.cc/128?img=8",
         "goals": [
           "Procesar alto volumen de órdenes diarias",
           "Confiar en las decisiones del sistema",
@@ -252,12 +250,12 @@
         ],
         "painPoints": [
           "No entiende por qué el sistema asigna ciertas rutas",
-          "Drag & drop manual es tedioso para muchas órdenes",
+          "Arrastrar y soltar a mano es tedioso para muchas órdenes",
           "Difícil ajustar después de asignación automática"
         ],
         "painPointsEn": [
           "Doesn't understand why the system assigns certain routes",
-          "Manual drag & drop is tedious for many orders",
+          "Manual drag and drop is tedious for many orders",
           "Hard to adjust after automatic assignment"
         ],
         "behaviors": [
@@ -274,9 +272,9 @@
     ]
   },
   "journeyMap": {
-    "title": "Journey Map",
-    "titleEn": "Journey Map",
-    "subtitle": "Flujo de asignación end-to-end, pain points y oportunidades",
+    "title": "Mapa de experiencia",
+    "titleEn": "Journey map",
+    "subtitle": "Flujo de asignación de punta a punta, puntos de dolor y oportunidades",
     "subtitleEn": "End-to-end assignment flow, pain points and opportunities",
     "stages": [
       {
@@ -301,8 +299,8 @@
         "id": 3,
         "name": "Asignar auto",
         "nameEn": "Auto-assign",
-        "problem": "Resultado sin explicación, \"caja negra\" que el 70% corregía de inmediato",
-        "problemEn": "Result without explanation, \"black box\" that 70% corrected immediately",
+        "problem": "Resultado sin explicación, “caja negra” que el 70% corregía de inmediato",
+        "problemEn": "Result without explanation, “black box” that 70% corrected immediately",
         "solution": "Criterios visibles por ruta: por qué el algoritmo asignó cada orden a ese vehículo",
         "solutionEn": "Visible criteria per route: why the algorithm assigned each order to that vehicle"
       },
@@ -310,16 +308,16 @@
         "id": 4,
         "name": "Revisar y ajustar",
         "nameEn": "Review and adjust",
-        "problem": "Drag & drop orden por orden, tedioso para volúmenes de 100+ órdenes",
-        "problemEn": "Drag & drop order by order, tedious for volumes of 100+ orders",
-        "solution": "Selección múltiple + reasignación bulk desde el mapa o la lista",
+        "problem": "Arrastrar orden por orden, tedioso para volúmenes de 100+ órdenes",
+        "problemEn": "Drag and drop order by order, tedious for volumes of 100+ orders",
+        "solution": "Selección múltiple + reasignación en lote desde el mapa o la lista",
         "solutionEn": "Multi-select + bulk reassignment from map or list"
       },
       {
         "id": 5,
         "name": "Validar capacidad",
         "nameEn": "Validate capacity",
-        "problem": "Sin feedback de sobrecarga hasta confirmar, errores detectados al despachar",
+        "problem": "Sin aviso de sobrecarga hasta confirmar, errores detectados al despachar",
         "problemEn": "No overload feedback until confirmation, errors detected at dispatch",
         "solution": "Indicadores de capacidad en tiempo real al arrastrar cada orden al vehículo",
         "solutionEn": "Real-time capacity indicators when dragging each order to vehicle"
@@ -336,13 +334,13 @@
     ]
   },
   "cardSorting": {
-    "title": "Card Sorting",
-    "titleEn": "Card Sorting",
+    "title": "Card sorting",
+    "titleEn": "Card sorting",
     "subtitle": "Agrupación de entidades y decisiones de arquitectura basadas en modelo mental del operador",
     "subtitleEn": "Entity grouping and architecture decisions based on the operator's mental model",
     "clusters": [
       {
-        "name": "Cluster 1: Demanda",
+        "name": "Grupo 1: Demanda",
         "nameEn": "Cluster 1: Demand",
         "color": "indigo",
         "items": [
@@ -361,7 +359,7 @@
         ]
       },
       {
-        "name": "Cluster 2: Flota",
+        "name": "Grupo 2: Flota",
         "nameEn": "Cluster 2: Fleet",
         "color": "green",
         "items": [
@@ -380,7 +378,7 @@
         ]
       },
       {
-        "name": "Cluster 3: Asignación",
+        "name": "Grupo 3: Asignación",
         "nameEn": "Cluster 3: Assignment",
         "color": "orange",
         "items": [
@@ -400,13 +398,13 @@
       }
     ],
     "decision": {
-      "title": "Decisión clave: la entidad \"Route\"",
-      "titleEn": "Key decision: the \"Route\" entity",
-      "description": "El card sorting reveló que solo el 30% de los operadores creó espontáneamente un grupo intermedio entre órdenes y conductores. \"Ruta\" casi no existía en su vocabulario: era solo el resultado final, no un objeto editable.",
-      "descriptionEn": "Card sorting revealed that only 30% of operators spontaneously created an intermediate group between orders and drivers. \"Route\" barely existed in their vocabulary: it was just the final result, not an editable object.",
-      "descriptionExtra": "La decisión de diseño fue introducir \"Route\" como entidad de primera clase: visible, nombrable, editable y reasignable en cualquier momento del flujo. Esto cambió radicalmente la arquitectura de la interfaz.",
-      "descriptionExtraEn": "The design decision was to introduce \"Route\" as a first-class entity: visible, nameable, editable and reassignable at any point in the flow. This radically changed the interface architecture.",
-      "insightsTitle": "Insights del ejercicio (n=10 operadores)",
+      "title": "Decisión clave: la entidad “Route”",
+      "titleEn": "Key decision: the “Route” entity",
+      "description": "El card sorting reveló que solo el 30% de los operadores creó espontáneamente un grupo intermedio entre órdenes y conductores. “Ruta” casi no existía en su vocabulario: era solo el resultado final, no un objeto editable.",
+      "descriptionEn": "Card sorting revealed that only 30% of operators spontaneously created an intermediate group between orders and drivers. “Route” barely existed in their vocabulary: it was just the final result, not an editable object.",
+      "descriptionExtra": "La decisión de diseño fue introducir “Route” como entidad de primera clase: visible, nombrable, editable y reasignable en cualquier momento del flujo. Esto cambió radicalmente la arquitectura de la interfaz.",
+      "descriptionExtraEn": "The design decision was to introduce “Route” as a first-class entity: visible, nameable, editable and reassignable at any point in the flow. This radically changed the interface architecture.",
+      "insightsTitle": "Hallazgos del ejercicio (n=10 operadores)",
       "insightsTitleEn": "Exercise insights (n=10 operators)",
       "insights": [
         {
@@ -421,26 +419,26 @@
         },
         {
           "value": "30%",
-          "text": "creó espontáneamente un grupo de \"asignación\" o \"ruta\" como intermediario",
-          "textEn": "spontaneously created an \"assignment\" or \"route\" group as intermediary"
+          "text": "creó espontáneamente un grupo de “asignación” o “ruta” como intermediario",
+          "textEn": "spontaneously created an “assignment” or “route” group as intermediary"
         },
         {
           "value": "0%",
-          "text": "incluyó \"criterio algorítmico\" en ningún cluster: era invisible para ellos",
-          "textEn": "included \"algorithmic criterion\" in any cluster: it was invisible to them"
+          "text": "incluyó “criterio algorítmico” en ningún grupo: era invisible para ellos",
+          "textEn": "included “algorithmic criterion” in any cluster: it was invisible to them"
         }
       ]
     }
   },
   "solution": {
-    "title": "La Solución",
-    "titleEn": "The Solution",
+    "title": "Solución",
+    "titleEn": "Solution",
     "subtitle": "Sistema híbrido de asignación en 4 componentes",
     "subtitleEn": "Hybrid assignment system in 4 components",
     "components": [
       {
-        "title": "Entidad \"Route\"",
-        "titleEn": "\"Route\" Entity",
+        "title": "Entidad “Route”",
+        "titleEn": "“Route” entity",
         "tagline": "La ruta como objeto editable, no como resultado inmutable del algoritmo.",
         "taglineEn": "The route as an editable object, not as an immutable algorithm result.",
         "description": "Cada ruta es una entidad nombrada con estado, conductor asignado, capacidad usada y lista de órdenes reordenables. El operador puede crear, editar, dividir o fusionar rutas en cualquier momento antes del despacho.",
@@ -448,31 +446,31 @@
       },
       {
         "title": "Asignación automática",
-        "titleEn": "Auto Assignment",
+        "titleEn": "Auto-assignment",
         "tagline": "El algoritmo explica sus decisiones: el operador acepta, ajusta o rechaza con contexto.",
         "taglineEn": "The algorithm explains its decisions: the operator accepts, adjusts or rejects with context.",
-        "description": "Cada ruta auto-asignada muestra los criterios usados: optimización de distancia, ventana horaria, capacidad restante. El operador puede hacer override de una orden específica sin re-ejecutar todo el algoritmo.",
+        "description": "Cada ruta auto-asignada muestra los criterios usados: optimización de distancia, ventana horaria, capacidad restante. El operador puede corregir una orden específica sin re-ejecutar todo el algoritmo.",
         "descriptionEn": "Each auto-assigned route shows the criteria used: distance optimization, time window, remaining capacity. The operator can override a specific order without re-running the entire algorithm."
       },
       {
-        "title": "Drag & Drop en Mapa",
-        "titleEn": "Drag & Drop on Map",
+        "title": "Arrastrar y soltar en el mapa",
+        "titleEn": "Drag and drop on map",
         "tagline": "Reasignación visual directa sobre el mapa, sin formularios ni modales.",
         "taglineEn": "Direct visual reassignment on the map, without forms or modals.",
-        "description": "Las órdenes son marcadores arrastrables en el mapa. Al soltar sobre una ruta, el sistema valida capacidad en tiempo real y muestra el impacto antes de confirmar. Soporta selección múltiple para reasignación bulk.",
-        "descriptionEn": "Orders are draggable markers on the map. When dropped on a route, the system validates capacity in real time and shows the impact before confirming. Supports multi-select for bulk reassignment."
+        "description": "Las órdenes son marcadores arrastrables en el mapa. Al soltar sobre una ruta, el sistema valida capacidad en tiempo real y muestra el impacto antes de confirmar. Soporta selección múltiple para reasignación en lote.",
+        "descriptionEn": "Orders are draggable markers on the map. When dropped on a route, the system validates capacity in real-time and shows the impact before confirming. Supports multi-select for bulk reassignment."
       },
       {
-        "title": "Simulación de Capacidad",
-        "titleEn": "Capacity Simulation",
-        "tagline": "Feedback en tiempo real antes de confirmar, sin sorpresas al despachar.",
+        "title": "Simulación de capacidad",
+        "titleEn": "Capacity simulation",
+        "tagline": "Respuesta en tiempo real antes de confirmar, sin sorpresas al despachar.",
         "taglineEn": "Real-time feedback before confirming, no surprises at dispatch.",
         "description": "Cada vehículo muestra una barra de ocupación (kg y m³) que se actualiza al arrastrar órdenes. Al superar el 90% de capacidad aparece una alerta inline. El resumen de despacho muestra distancia total, tiempo estimado y eficiencia de carga antes de confirmar.",
         "descriptionEn": "Each vehicle shows an occupancy bar (kg and m³) that updates when dragging orders. When exceeding 90% capacity, an inline alert appears. The dispatch summary shows total distance, estimated time and load efficiency before confirming."
       }
     ],
-    "principlesTitle": "Principios de Diseño",
-    "principlesTitleEn": "Design Principles",
+    "principlesTitle": "Principios de diseño",
+    "principlesTitleEn": "Design principles",
     "principles": [
       {
         "number": "01",
@@ -485,12 +483,12 @@
         "number": "02",
         "title": "Diseñar para la corrección, no contra el error",
         "titleEn": "Design for correction, not against error",
-        "description": "Una corrección manual debe ser tan rápida como la asignación original. Drag & drop directo sobre el mapa elimina el ciclo de re-asignación.",
-        "descriptionEn": "A manual correction must be as fast as the original assignment. Direct drag & drop on the map eliminates the reassignment loop."
+        "description": "Una corrección manual debe ser tan rápida como la asignación original. Arrastrar y soltar directo sobre el mapa elimina el ciclo de re-asignación.",
+        "descriptionEn": "A manual correction must be as fast as the original assignment. Direct drag and drop on the map eliminates the reassignment loop."
       },
       {
         "number": "03",
-        "title": "La Ruta como objeto de primera clase",
+        "title": "La ruta como objeto de primera clase",
         "titleEn": "Route as a first-class object",
         "description": "La entidad Route (nombrada, con estado y editable en cualquier momento) es el modelo mental correcto del operador. El sistema debe hablar su idioma.",
         "descriptionEn": "The Route entity (named, with status, and editable at any time) is the operator's correct mental model. The system must speak their language."
@@ -498,29 +496,29 @@
     ]
   },
   "designs": {
-    "title": "UI Mockups",
-    "titleEn": "UI Mockups",
+    "title": "Pantallas",
+    "titleEn": "Screens",
     "subtitle": "Interfaces clave del sistema",
     "subtitleEn": "Key system interfaces",
     "items": [
       {
-        "title": "Vista de Asignación Automática",
-        "titleEn": "Automatic Assignment View",
-        "placeholder": "Mockup de asignación automática",
+        "title": "Vista de asignación automática",
+        "titleEn": "Automatic assignment view",
+        "placeholder": "Pantalla de asignación automática",
         "placeholderEn": "Automatic assignment mockup",
         "src": "data/images/on-demand-mockup-1.webp"
       },
       {
-        "title": "Vista de Drag & Drop Manual",
-        "titleEn": "Manual Drag & Drop View",
-        "placeholder": "Mockup de asignación manual",
+        "title": "Vista de asignación manual",
+        "titleEn": "Manual drag and drop view",
+        "placeholder": "Pantalla de asignación manual",
         "placeholderEn": "Manual assignment mockup",
         "src": "data/images/on-demand-mockup-2.webp"
       },
       {
-        "title": "Simulación de Capacidad",
-        "titleEn": "Capacity Simulation",
-        "placeholder": "Mockup de simulación",
+        "title": "Simulación de capacidad",
+        "titleEn": "Capacity simulation",
+        "placeholder": "Pantalla de simulación",
         "placeholderEn": "Simulation mockup",
         "src": "data/images/on-demand-mockup-3.webp"
       }
@@ -544,8 +542,8 @@
       {
         "icon": "🤖",
         "metric": "22%",
-        "label": "Mayor adopción de Auto-Assign",
-        "labelEn": "Higher Auto-Assign adoption",
+        "label": "Mayor adopción de auto-assign",
+        "labelEn": "Higher auto-assign adoption",
         "description": "Incremento en uso de asignación automática al mejorar transparencia y control",
         "descriptionEn": "Increase in automatic assignment use thanks to better transparency and control"
       },
@@ -558,21 +556,21 @@
         "descriptionEn": "Fewer subsequent corrections thanks to better real-time validation"
       }
     ],
-    "learningsTitle": "Aprendizajes Clave",
-    "learningsTitleEn": "Key Learnings",
-    "nextStepsTitle": "Próxima Iteración",
-    "nextStepsTitleEn": "Next Iteration",
+    "learningsTitle": "Aprendizajes clave",
+    "learningsTitleEn": "Key learnings",
+    "nextStepsTitle": "Próxima iteración",
+    "nextStepsTitleEn": "Next iteration",
     "learnings": [
       {
         "title": "La confianza en auto-asignación requiere transparencia del criterio",
         "titleEn": "Trust in auto-assignment requires criterion transparency",
-        "description": "Los dispatchers inicialmente rechazaban sugerencias automáticas sin revisarlas. Al agregar explicaciones del razonamiento de cada asignación, la adopción de auto-assign subió 22% en 3 semanas.",
+        "description": "Los despachadores inicialmente rechazaban sugerencias automáticas sin revisarlas. Al agregar explicaciones del razonamiento de cada asignación, la adopción de la asignación automática subió 22% en 3 semanas.",
         "descriptionEn": "Dispatchers initially rejected automatic suggestions without reviewing. Adding reasoning explanations for each assignment increased auto-assign adoption by 22% in 3 weeks."
       },
       {
-        "title": "El mapa en tiempo real fue la feature más valorada, no la automatización",
+        "title": "El mapa en tiempo real fue la funcionalidad más valorada, no la automatización",
         "titleEn": "The real-time map was the most valued feature, not the automation",
-        "description": "La visibilidad compartida del estado de la flota generó mayor impacto que el algoritmo. Los dispatchers podían ver y actuar sobre la misma información que los conductores, reduciendo malentendidos y llamadas innecesarias.",
+        "description": "La visibilidad compartida del estado de la flota generó mayor impacto que el algoritmo. Los despachadores podían ver y actuar sobre la misma información que los conductores, reduciendo malentendidos y llamadas innecesarias.",
         "descriptionEn": "Shared fleet status visibility had greater impact than the algorithm. Dispatchers could see and act on the same information as drivers, reducing misunderstandings and unnecessary calls."
       }
     ],
@@ -586,14 +584,14 @@
       {
         "title": "Notificaciones proactivas de ETA al cliente final",
         "titleEn": "Proactive ETA notifications to the end client",
-        "description": "Los dispatchers generan alertas de ETA manualmente por llamada o WhatsApp. Esto toma 30–40 min de trabajo manual por turno. El siguiente paso es automatizar el flujo según el estado de la ruta.",
+        "description": "Los despachadores generan alertas de ETA manualmente por llamada o WhatsApp. Esto toma 30–40 min de trabajo manual por turno. El siguiente paso es automatizar el flujo según el estado de la ruta.",
         "descriptionEn": "Dispatchers manually generate ETA alerts by call or WhatsApp. This takes 30–40 minutes of manual work per shift. The next step is to automate the flow based on route status."
       }
     ]
   },
   "cta": {
-    "question": "Siguiente caso: Validación de Carga",
-    "questionEn": "Next case: Load Validation",
+    "question": "Siguiente caso: Validación de carga pre-ruta",
+    "questionEn": "Next case: Pre-Route Load Validation",
     "description": "Sistema de verificación pre-ruta",
     "descriptionEn": "Pre-route verification system",
     "buttonLabel": "Ver siguiente proyecto",

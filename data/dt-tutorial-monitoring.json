@@ -4,21 +4,21 @@
   "title": "Monitoreo de tutoriales",
   "subtitle": "De un onboarding a ciegas a una adopción con seguimiento",
   "hero": {
-    "tagline": "DISPATCHTRACK · LASTMILE · ANALÍTICA PARA ADMINISTRADORES · DESKTOP · 2026",
+    "tagline": "DISPATCHTRACK · LASTMILE · ANALÍTICA PARA ADMINISTRADORES · ESCRITORIO · 2026",
     "taglineEn": "DISPATCHTRACK · LASTMILE · ADMIN ANALYTICS · DESKTOP · 2026",
-    "title": "Monitoreo de ",
-    "titleEn": "Tutorial ",
+    "title": "Monitoreo de tutoriales",
+    "titleEn": "Tutorial Monitoring",
     "titleAccent": "tutoriales",
     "titleAccentEn": "monitoring",
     "subtitle": "De un onboarding a ciegas a una adopción con seguimiento",
     "subtitleEn": "From blind onboarding to tracked adoption",
-    "description": "Diseñé una sección visible solo para administradores que muestra qué tan completo está el onboarding de cada usuario de su cuenta. Es la contraparte del Help Center, donde los operadores hacen ese onboarding.",
+    "description": "Diseñé una sección visible solo para administradores que muestra qué tan completo está el onboarding de cada usuario de su cuenta. Es la contraparte del Centro de ayuda y onboarding, donde los operadores hacen ese onboarding.",
     "descriptionEn": "I designed an admin-only section that shows how complete each account user's onboarding is. It's the counterpart to the Help Center, where operators go through that onboarding."
   },
   "projectSpecs": [
     {
-      "label": "Mi Rol",
-      "labelEn": "My Role",
+      "label": "Rol",
+      "labelEn": "Role",
       "value": "Senior AI Product Designer",
       "valueEn": "Senior AI Product Designer"
     },
@@ -49,7 +49,7 @@
     {
       "label": "Entregables",
       "labelEn": "Deliverables",
-      "value": "Prototipo · Research · Jira",
+      "value": "Prototipo · Investigación · Jira",
       "valueEn": "Prototype · Research · Jira"
     },
     {
@@ -102,8 +102,8 @@
         "descriptionEn": "Completed, in progress, pass rate and progress per tutorial, to know which ones need reinforcement."
       }
     ],
-    "principlesTitle": "Principios de Diseño",
-    "principlesTitleEn": "Design Principles",
+    "principlesTitle": "Principios de diseño",
+    "principlesTitleEn": "Design principles",
     "principles": [
       {
         "number": "01",
@@ -171,8 +171,8 @@
     "placeholderEn": "Tutorial monitoring summary view"
   },
   "problemAndObjectives": {
-    "title": "Problema",
-    "titleEn": "Problem",
+    "title": "Problema y objetivos",
+    "titleEn": "Problem and objectives",
     "subtitle": "Las empresas que contratan DispatchTrack rotan con frecuencia a sus técnicos y operadores logísticos, y cada persona nueva debe aprender la plataforma. Los administradores no tenían ninguna herramienta para saber si ese onboarding se había realizado, ni cuánto había avanzado.",
     "subtitleEn": "Companies that hire DispatchTrack frequently rotate their technicians and logistics operators, and every new person has to learn the platform. Admins had no tool to know whether that onboarding had happened, or how far along it was.",
     "products": [
@@ -180,8 +180,8 @@
         "name": "Situación actual",
         "nameEn": "Current situation",
         "cons": [
-          "La rotación de operarios obliga a repetir el onboarding con cada nuevo ingreso",
-          "No existía forma de verificar si un operario nuevo realizó el onboarding",
+          "La rotación de operadores obliga a repetir el onboarding con cada nuevo ingreso",
+          "No existía forma de verificar si un operador nuevo realizó el onboarding",
           "El administrador no veía los cursos registrados, completados ni el nivel de avance"
         ],
         "consEn": [
@@ -216,15 +216,15 @@
     ]
   },
   "uxResearch": {
-    "title": "Metodología UX",
-    "titleEn": "UX Design Process",
+    "title": "Investigación",
+    "titleEn": "Research",
     "subtitle": "Entrevistas con administradores para entender el problema y Hotjar para medir cómo usaron el panel",
     "subtitleEn": "Interviews with admins to understand the problem, and Hotjar to measure how they used the panel",
     "methodCards": [
       {
         "name": "Entrevistas con administradores",
         "nameEn": "Admin interviews",
-        "description": "Conversamos con administradores de cuentas, gerentes de logística de empresas clientes. Describieron el onboarding como precario, con un tiempo de adopción alto, y no podían saber quién entraba realmente al Help Center.",
+        "description": "Conversamos con administradores de cuentas, gerentes de logística de empresas clientes. Describieron el onboarding como precario, con un tiempo de adopción alto, y no podían saber quién entraba realmente al centro de ayuda.",
         "descriptionEn": "We talked to account admins, logistics managers at client companies. They described the onboarding as precarious, with a long adoption time, and couldn't tell who actually used the Help Center.",
         "finding": "Ya monitoreaban a sus conductores (órdenes entregadas, cumplimiento de tiempos, evaluaciones). Faltaba extender esa lógica a los operadores.",
         "findingEn": "They already monitored drivers (delivered orders, on-time compliance, evaluations). That logic needed extending to operators."
@@ -234,7 +234,7 @@
         "nameEn": "Hotjar in the pilot",
         "description": "Con heatmaps y grabaciones medimos cómo usaban el panel los administradores de las cuentas piloto durante las primeras semanas.",
         "descriptionEn": "With heatmaps and recordings we measured how admins in the pilot accounts used the panel during the first weeks.",
-        "finding": "Escanean primero los KPIs y luego bajan a la tabla. Hicieron rage clicks sobre los operadores rezagados, buscando enviarles un recordatorio.",
+        "finding": "Escanean primero los KPIs y luego bajan a la tabla. Hicieron clics repetidos sobre los operadores rezagados, buscando enviarles un recordatorio.",
         "findingEn": "They scan the KPIs first, then go down to the table. They rage-clicked on lagging operators, trying to send them a reminder."
       },
       {
@@ -248,19 +248,18 @@
     ]
   },
   "personas": {
-    "title": "User Personas",
-    "titleEn": "User Personas",
+    "title": "Personas",
+    "titleEn": "Personas",
     "subtitle": "Dos perfiles con necesidades distintas: quien necesita ver el avance y quien lo genera",
     "subtitleEn": "Two profiles with different needs: the one who needs to see progress and the one who creates it",
     "items": [
       {
         "id": "valentina-rojas",
         "name": "Valentina Rojas",
-        "role": "Jefa de Operaciones",
+        "role": "Jefa de operaciones",
         "roleEn": "Head of Operations",
-        "avatar": "https://i.pravatar.cc/150?img=36",
         "goals": [
-          "Confirmar que cada operario nuevo realizó el onboarding",
+          "Confirmar que cada operador nuevo realizó el onboarding",
           "Seguir el avance de los operadores como ya sigue el de los conductores",
           "Saber a quién reforzar y en qué tutorial"
         ],
@@ -294,9 +293,8 @@
       {
         "id": "matias-soto",
         "name": "Matías Soto",
-        "role": "Operador Logístico Junior",
+        "role": "Operador logístico junior",
         "roleEn": "Junior Logistics Operator",
-        "avatar": "https://i.pravatar.cc/150?img=68",
         "goals": [
           "Aprender la plataforma para operar con autonomía",
           "Saber qué le falta completar del programa"
@@ -314,7 +312,7 @@
           "Their progress is invisible to whoever supervises them"
         ],
         "behaviors": [
-          "Entra al Help Center de forma irregular",
+          "Entra al centro de ayuda de forma irregular",
           "Avanza a su ritmo, sin que nadie lo note"
         ],
         "behaviorsEn": [
@@ -364,8 +362,8 @@
     "titleEn": "Results",
     "subtitle": "Vista del administrador, medida en 5 cuentas piloto durante los primeros 60 días.",
     "subtitleEn": "Admin view, measured across 5 pilot accounts over the first 60 days.",
-    "impactTitle": "Impacto Medido",
-    "impactTitleEn": "Measured Impact",
+    "impactTitle": "Impacto medido",
+    "impactTitleEn": "Measured impact",
     "impact": [
       {
         "icon": "👥",
@@ -396,12 +394,12 @@
         "label": "Seguimiento activo",
         "labelEn": "Active follow-up",
         "metric": "84%",
-        "description": "de los operarios rezagados recibió seguimiento en 3 días.",
+        "description": "de los operadores rezagados recibió seguimiento en 3 días.",
         "descriptionEn": "of lagging operators got follow-up within 3 days."
       }
     ],
-    "learningsTitle": "Aprendizajes Clave",
-    "learningsTitleEn": "Key Learnings",
+    "learningsTitle": "Aprendizajes clave",
+    "learningsTitleEn": "Key learnings",
     "learnings": [
       {
         "title": "Extender un hábito existente pesa más que crear uno nuevo",
@@ -416,25 +414,25 @@
         "descriptionEn": "What sounded like “the onboarding is precarious” included something else: admins couldn't tell who was doing it. The solution was giving them visibility, not just improving the tutorials."
       }
     ],
-    "nextStepsTitle": "Próxima Iteración",
-    "nextStepsTitleEn": "Next Iteration",
+    "nextStepsTitle": "Próxima iteración",
+    "nextStepsTitleEn": "Next iteration",
     "nextSteps": [
       {
         "title": "Recordatorios a usuarios rezagados",
         "titleEn": "Reminders for lagging users",
-        "description": "Los rage clicks sobre usuarios rezagados mostraron que los admins quieren avisarles desde el propio panel, en lugar de gestionarlo por fuera.",
+        "description": "Los clics repetidos sobre usuarios rezagados mostraron que los admins quieren avisarles desde el propio panel, en lugar de gestionarlo por fuera.",
         "descriptionEn": "Rage clicks on lagging users showed admins want to nudge them from the panel itself, instead of handling it outside."
       }
     ]
   },
   "cta": {
     "question": "Siguiente caso: Centro de ayuda y onboarding",
-    "questionEn": "Next case: Help center & onboarding",
-    "description": "Centro de ayuda contextual con 49 tutoriales en tres niveles, video, quiz y progreso, que acompaña al usuario sin sacarlo de su pantalla.",
-    "descriptionEn": "Contextual help center with 49 tutorials across three levels, video, quiz and progress, guiding users without taking them off their screen.",
+    "questionEn": "Next case: Help Center & Onboarding",
+    "description": "Centro de ayuda contextual con 49 tutoriales dentro de la plataforma",
+    "descriptionEn": "Contextual help center with 49 tutorials inside the platform",
     "buttonLabel": "Ver siguiente proyecto",
     "buttonLabelEn": "See next project",
     "buttonHref": "/dt-help-center"
   },
-  "titleEn": "Tutorial monitoring"
+  "titleEn": "Tutorial Monitoring"
 }

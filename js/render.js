@@ -77,7 +77,8 @@ const Renderer = {
       Renderer.attachListeners();
     } catch (error) {
       console.error(`Error cargando ${slug}:`, error);
-      app.innerHTML = `<section class="error"><p>${Router.currentLang === 'en' ? 'Error loading page' : 'Error cargando la página'}</p></section>`;
+      app.innerHTML = `<section class="error-page"><div class="container"><p class="hero-tagline" data-es="ERROR 404" data-en="ERROR 404">ERROR 404</p><h1 data-es="Esta página no existe" data-en="This page doesn't exist">Esta página no existe</h1><p data-es="Puede que el enlace esté desactualizado." data-en="The link may be out of date.">Puede que el enlace esté desactualizado.</p><a class="cta-button" href="/" onclick="event.preventDefault();Router.navigate('/')" data-es="Ver proyectos" data-en="View projects">Ver proyectos</a></div></section>`;
+      if (typeof Router !== 'undefined') Router.setPageMeta({ slug: '404', title: 'Página no encontrada', titleEn: 'Page not found', description: 'Esta página no existe.', descriptionEn: "This page doesn't exist." });
     }
   },
 
@@ -147,7 +148,7 @@ const Renderer = {
         <div class="container">
           <div class="role-card">
             <div class="role-header">
-              <span class="role-ai-badge" ${bi('Proceso con IA', 'AI-Enhanced Process')}>Proceso con IA</span>
+              <span class="role-ai-badge" ${bi('Proceso con IA', 'AI-enhanced process')}>Proceso con IA</span>
               <h2 class="role-title" ${bi(data.title, data.titleEn)}>${data.title}</h2>
               <p class="role-intro" ${bi(data.intro, data.introEn)}>${data.intro}</p>
             </div>
@@ -182,13 +183,13 @@ const Renderer = {
   renderWhyItMatters: (data) => {
     const items = Array.isArray(data) ? data : (data.items || []);
     const title = (Array.isArray(data) ? null : data.title) || 'Por qué importa';
-    const titleEn = (Array.isArray(data) ? null : data.titleEn) || 'Why It Matters';
+    const titleEn = (Array.isArray(data) ? null : data.titleEn) || 'Why it matters';
     const subtitle = Array.isArray(data) ? null : data.subtitle;
     const subtitleEn = Array.isArray(data) ? null : data.subtitleEn;
 
     const cards = items.map(item => `
       <div class="impact-card">
-        ${item.icon ? `<div class="impact-icon">${item.icon}</div>` : ''}
+        ${item.icon ? `<div class="impact-icon" aria-hidden="true">${item.icon}</div>` : ''}
         <p class="impact-eyebrow" ${bi(item.label, item.labelEn)}>${item.label}</p>
         <p class="impact-metric" ${bi(item.metric, item.metricEn)}>${item.metric}</p>
         <p class="impact-desc" ${bi(item.description, item.descriptionEn)}>${item.description}</p>
@@ -212,10 +213,10 @@ const Renderer = {
   // 2 cols. Soporta nuevo schema (products + consequences + objectives objetos)
   // y legacy (competitors + objectives strings).
   renderProblemAndObjectives: (data) => {
-    const problemTitle    = data.problemTitle    || 'El Problema';
-    const problemTitleEn  = data.problemTitleEn  || 'The Problem';
-    const objectivesTitle    = data.objectivesTitle    || 'Objetivos Medibles';
-    const objectivesTitleEn  = data.objectivesTitleEn  || 'Measurable Objectives';
+    const problemTitle    = data.problemTitle    || 'El problema';
+    const problemTitleEn  = data.problemTitleEn  || 'The problem';
+    const objectivesTitle    = data.objectivesTitle    || 'Objetivos medibles';
+    const objectivesTitleEn  = data.objectivesTitleEn  || 'Measurable objectives';
 
     // PROBLEM CARD ─────────────────────────────────────
     let problemBody = '';
@@ -229,11 +230,11 @@ const Renderer = {
       problemBody += data.products.map(p => {
         const pros = (p.pros || []).map((line, i) => {
           const en = (p.prosEn || [])[i] || line;
-          return `<li class="prod-pro"><span class="prod-icon prod-icon-pos">+</span><span ${bi(line, en)}>${line}</span></li>`;
+          return `<li class="prod-pro"><span class="prod-icon prod-icon-pos" aria-hidden="true">+</span><span class="sr-only" data-es="A favor: " data-en="Pro: ">A favor: </span><span ${bi(line, en)}>${line}</span></li>`;
         }).join('');
         const cons = (p.cons || []).map((line, i) => {
           const en = (p.consEn || [])[i] || line;
-          return `<li class="prod-con"><span class="prod-icon prod-icon-neg">−</span><span ${bi(line, en)}>${line}</span></li>`;
+          return `<li class="prod-con"><span class="prod-icon prod-icon-neg" aria-hidden="true">−</span><span class="sr-only" data-es="En contra: " data-en="Con: ">En contra: </span><span ${bi(line, en)}>${line}</span></li>`;
         }).join('');
         return `
           <div class="product-card">
@@ -320,8 +321,8 @@ const Renderer = {
   //   - Method cards (OD): 3 cards con descripción + hallazgo
   renderUXResearch: (data) => {
     // Shared: quotes/stats se reusan en ambos layouts
-    const insTitle    = data.insightsTitle      || 'Insights Clave';
-    const insTitleEn  = data.insightsTitleEn    || 'Key Insights';
+    const insTitle    = data.insightsTitle      || 'Hallazgos clave';
+    const insTitleEn  = data.insightsTitleEn    || 'Key insights';
     const qualLabel   = data.qualitativeLabel   || 'Cualitativos';
     const qualLabelEn = data.qualitativeLabelEn || 'Qualitative';
     const quanLabel   = data.quantitativeLabel  || 'Cuantitativos';
@@ -440,26 +441,26 @@ const Renderer = {
   // Acepta tanto array (legacy LC) como {title, subtitle, items}.
   renderPersonas: (data) => {
     const items = Array.isArray(data) ? data : (data.items || []);
-    const title = (Array.isArray(data) ? null : data.title) || 'User Personas';
-    const titleEn = (Array.isArray(data) ? null : data.titleEn) || 'User Personas';
-    const subtitle = (Array.isArray(data) ? null : data.subtitle) || 'Perfiles de usuario basados en investigación cualitativa';
-    const subtitleEn = (Array.isArray(data) ? null : data.subtitleEn) || 'User profiles based on qualitative research';
+    const title = (Array.isArray(data) ? null : data.title) || 'Personas';
+    const titleEn = (Array.isArray(data) ? null : data.titleEn) || 'Personas';
+    const subtitle = (Array.isArray(data) ? null : data.subtitle) || 'Perfiles construidos a partir de la investigación';
+    const subtitleEn = (Array.isArray(data) ? null : data.subtitleEn) || 'Profiles built from the research';
 
     const cards = items.map(p => {
       const goals = (p.goals || []).map((g, i) =>
-        `<li class="goal-item"><span class="goal-icon">→</span><span ${bi(g, (p.goalsEn || [])[i])}>${g}</span></li>`
+        `<li class="goal-item"><span class="goal-icon" aria-hidden="true">→</span><span ${bi(g, (p.goalsEn || [])[i])}>${g}</span></li>`
       ).join('');
       const pains = (p.painPoints || []).map((x, i) =>
-        `<li class="pain-item"><span class="pain-icon">✕</span><span ${bi(x, (p.painPointsEn || [])[i])}>${x}</span></li>`
+        `<li class="pain-item"><span class="pain-icon" aria-hidden="true">✕</span><span ${bi(x, (p.painPointsEn || [])[i])}>${x}</span></li>`
       ).join('');
       const behaviors = (p.behaviors || []).map((b, i) =>
-        `<li class="behavior-item"><span class="behavior-icon">•</span><span ${bi(b, (p.behaviorsEn || [])[i])}>${b}</span></li>`
+        `<li class="behavior-item"><span class="behavior-icon" aria-hidden="true">•</span><span ${bi(b, (p.behaviorsEn || [])[i])}>${b}</span></li>`
       ).join('');
 
       return `
         <article class="persona-card">
           <header class="persona-header">
-            <img src="${esc(p.avatar)}" alt="${esc(p.name)}" class="persona-avatar">
+            <span class="persona-avatar persona-avatar--initials" aria-hidden="true">${esc((p.name || '').split(/\s+/).map(w => w[0]).join('').slice(0, 2).toUpperCase())}</span>
             <h3 class="persona-name" ${bi(p.name, p.nameEn)}>${p.name}</h3>
             <p class="persona-role" ${bi(p.role, p.roleEn)}>${p.role}</p>
           </header>
@@ -468,7 +469,7 @@ const Renderer = {
             <ul>${goals}</ul>
           </div>
           <div class="persona-block">
-            <p class="persona-eyebrow" ${bi('Puntos de Dolor', 'Pain Points')}>Puntos de Dolor</p>
+            <p class="persona-eyebrow" ${bi('Puntos de dolor', 'Pain points')}>Puntos de dolor</p>
             <ul>${pains}</ul>
           </div>
           <div class="persona-block">
@@ -529,8 +530,8 @@ const Renderer = {
       `;
     }).join('');
 
-    const pTitle   = data.patternsTitle   || 'Patrones Identificados en Session Recordings';
-    const pTitleEn = data.patternsTitleEn || 'Patterns Identified in Session Recordings';
+    const pTitle   = data.patternsTitle   || 'Patrones en grabaciones de sesión';
+    const pTitleEn = data.patternsTitleEn || 'Patterns in session recordings';
 
     return `
       <section class="qa-section" data-section="quantitativeAnalysis">
@@ -567,7 +568,7 @@ const Renderer = {
     const renderVariant = (variant, side) => {
       const items = (variant.items || []).map(it => `
         <li class="ab-item ${classMap[it.type] || ''}">
-          <span class="ab-item-icon">${iconMap[it.type] || '•'}</span>
+          <span class="ab-item-icon" aria-hidden="true">${iconMap[it.type] || '•'}</span>${it.type === 'positive' ? '<span class="sr-only" data-es="A favor: " data-en="Pro: ">A favor: </span>' : it.type === 'negative' ? '<span class="sr-only" data-es="En contra: " data-en="Con: ">En contra: </span>' : ''}
           <span ${bi(it.text, it.textEn)}>${it.text}</span>
         </li>
       `).join('');
@@ -586,8 +587,8 @@ const Renderer = {
       </div>
     `).join('');
 
-    const rTitle   = data.resultsTitle   || 'Resultados del Test';
-    const rTitleEn = data.resultsTitleEn || 'Test Results';
+    const rTitle   = data.resultsTitle   || 'Resultados de la prueba';
+    const rTitleEn = data.resultsTitleEn || 'Test results';
 
     return `
       <section class="ab-section" data-section="abTesting">
@@ -754,11 +755,11 @@ const Renderer = {
         <div class="stage-number">${s.id}</div>
         <p class="stage-name" ${bi(s.name, s.nameEn)}>${s.name}</p>
         <p class="stage-problem">
-          <span class="stage-icon-x">✕</span>
+          <span class="stage-icon-x" aria-hidden="true">✕</span><span class="sr-only" data-es="Problema: " data-en="Problem: ">Problema: </span>
           <span ${bi(s.problem, s.problemEn)}>${s.problem}</span>
         </p>
         <p class="stage-solution">
-          <span class="stage-icon-check">✓</span>
+          <span class="stage-icon-check" aria-hidden="true">✓</span><span class="sr-only" data-es="Solución: " data-en="Solution: ">Solución: </span>
           <span ${bi(s.solution, s.solutionEn)}>${s.solution}</span>
         </p>
       </div>
@@ -800,8 +801,8 @@ const Renderer = {
     if (decision) {
       const principleLabel    = decision.principleLabel    || 'Principio de diseño:';
       const principleLabelEn  = decision.principleLabelEn  || 'Design principle:';
-      const tradeoffsTitle    = decision.tradeoffsTitle    || 'Intercambios';
-      const tradeoffsTitleEn  = decision.tradeoffsTitleEn  || 'Tradeoffs';
+      const tradeoffsTitle    = decision.tradeoffsTitle    || 'Costos';
+      const tradeoffsTitleEn  = decision.tradeoffsTitleEn  || 'Trade-offs';
       const mitigationLabel   = decision.mitigationLabel   || 'Mitigación:';
       const mitigationLabelEn = decision.mitigationLabelEn || 'Mitigation:';
 
@@ -820,7 +821,7 @@ const Renderer = {
       let rightCol = '';
       if (decision.insights) {
         const insightsTitle = decision.insightsTitle || 'Insights del ejercicio';
-        const insightsTitleEn = decision.insightsTitleEn || 'Exercise Insights';
+        const insightsTitleEn = decision.insightsTitleEn || 'Exercise insights';
         const insightsList = decision.insights.map(i => `
           <li class="insight-row">
             <span class="insight-value">${i.value}</span>
@@ -837,8 +838,8 @@ const Renderer = {
         const positives = decision.tradeoffs.filter(x => x.type === 'positive');
         const negatives = decision.tradeoffs.filter(x => x.type === 'negative');
         const tradeoffsList = `
-          ${positives.map(x => `<li class="trade-pos"><span class="trade-icon">+</span><span ${bi(x.text, x.textEn)}>${x.text}</span></li>`).join('')}
-          ${negatives.map(x => `<li class="trade-neg"><span class="trade-icon">−</span><span ${bi(x.text, x.textEn)}>${x.text}</span></li>`).join('')}
+          ${positives.map(x => `<li class="trade-pos"><span class="trade-icon" aria-hidden="true">+</span><span class="sr-only" data-es="A favor: " data-en="Pro: ">A favor: </span><span ${bi(x.text, x.textEn)}>${x.text}</span></li>`).join('')}
+          ${negatives.map(x => `<li class="trade-neg"><span class="trade-icon" aria-hidden="true">−</span><span class="sr-only" data-es="En contra: " data-en="Con: ">En contra: </span><span ${bi(x.text, x.textEn)}>${x.text}</span></li>`).join('')}
         `;
         const mitigationBlock = decision.mitigation
           ? `<div class="decision-mitigation">
@@ -900,8 +901,8 @@ const Renderer = {
       // Principios de diseño opcionales antes del grid
       let principlesBlock = '';
       if (data.principles && data.principles.length) {
-        const pTitle   = data.principlesTitle   || 'Principios de Diseño';
-        const pTitleEn = data.principlesTitleEn || 'Design Principles';
+        const pTitle   = data.principlesTitle   || 'Principios de diseño';
+        const pTitleEn = data.principlesTitleEn || 'Design principles';
         const cols = data.principles.map(p => `
           <div class="principle-col">
             <p class="principle-number">${p.number}</p>
@@ -920,8 +921,8 @@ const Renderer = {
       // Decisiones de diseño opcionales debajo del grid (ej. async-reports)
       let decisionsBlock = '';
       if (data.decisions && data.decisions.length) {
-        const dTitle    = data.decisionsTitle    || 'Decisiones de Diseño Clave';
-        const dTitleEn  = data.decisionsTitleEn  || 'Key Design Decisions';
+        const dTitle    = data.decisionsTitle    || 'Decisiones de diseño clave';
+        const dTitleEn  = data.decisionsTitleEn  || 'Key design decisions';
         const labelA    = data.decisionLabelA    || 'Decisión:';
         const labelAEn  = data.decisionLabelAEn  || 'Decision:';
         const labelB    = data.decisionLabelB    || 'Razonamiento:';
@@ -962,10 +963,10 @@ const Renderer = {
       `;
     }
 
-    const principlesTitle   = data.principlesTitle   || 'Principios de Diseño';
-    const principlesTitleEn = data.principlesTitleEn || 'Design Principles';
-    const decisionsTitle    = data.decisionsTitle    || 'Decisiones Clave de UX';
-    const decisionsTitleEn  = data.decisionsTitleEn  || 'Key UX Decisions';
+    const principlesTitle   = data.principlesTitle   || 'Principios de diseño';
+    const principlesTitleEn = data.principlesTitleEn || 'Design principles';
+    const decisionsTitle    = data.decisionsTitle    || 'Decisiones clave de UX';
+    const decisionsTitleEn  = data.decisionsTitleEn  || 'Key UX decisions';
 
     const principles = (data.principles || []).map(p => `
       <div class="principle-col">
@@ -1079,7 +1080,7 @@ const Renderer = {
   renderDesigns: (data) => {
     const screenContent = (src, ph, phEn, alt) =>
       src ? `<img src="${esc(src)}" ${Renderer.altAttrs(alt && alt.es, alt && alt.en)} loading="lazy">` :
-            `<div class="image-placeholder" ${bi(ph || 'Mockup pendiente', phEn || 'Mockup pending')}>${ph || 'Mockup pendiente'}</div>`;
+            `<div class="image-placeholder" ${bi(ph || 'Imagen pendiente', phEn || 'Image pending')}>${ph || 'Imagen pendiente'}</div>`;
 
     const renderOneImage = (src, device, ph, phEn, scrollable, alt) => {
       let imageClass = `design-image${device === 'mobile' ? ' design-image--mobile' : ''}`;
@@ -1159,10 +1160,10 @@ const Renderer = {
   //   - Metric cards estilo Why (icon + label + metric + desc) sin learnings/nextSteps (OD)
   // Detecta automáticamente: si los items de impact tienen `icon`, usa metric-cards.
   renderResults: (data) => {
-    const learningsTitle   = data.learningsTitle   || 'Aprendizajes Clave';
-    const learningsTitleEn = data.learningsTitleEn || 'Key Learnings';
-    const nextStepsTitle   = data.nextStepsTitle   || 'Próximos Pasos';
-    const nextStepsTitleEn = data.nextStepsTitleEn || 'Next Steps';
+    const learningsTitle   = data.learningsTitle   || 'Aprendizajes clave';
+    const learningsTitleEn = data.learningsTitleEn || 'Key learnings';
+    const nextStepsTitle   = data.nextStepsTitle   || 'Próximos pasos';
+    const nextStepsTitleEn = data.nextStepsTitleEn || 'Next steps';
 
     const items = data.impact || [];
     const isMetricCards = items.length > 0 && !!items[0].icon;
@@ -1170,7 +1171,7 @@ const Renderer = {
     const impact = isMetricCards
       ? items.map(i => `
           <div class="impact-card">
-            ${i.icon ? `<div class="impact-icon">${i.icon}</div>` : ''}
+            ${i.icon ? `<div class="impact-icon" aria-hidden="true">${i.icon}</div>` : ''}
             <p class="impact-eyebrow" ${bi(i.label, i.labelEn)}>${i.label}</p>
             <p class="impact-metric" ${bi(i.metric, i.metricEn)}>${i.metric}</p>
             <p class="impact-desc" ${bi(i.description, i.descriptionEn)}>${i.description}</p>

@@ -111,13 +111,15 @@ const Interactions = {
       const [, prefix, numStr, suffix] = m;
       const value = parseFloat(numStr.replace(',', '.'));
       const decimals = (numStr.split(/[.,]/)[1] || '').length;
-      return { prefix, value, decimals, suffix };
+      return { prefix, value, decimals, suffix, comma: numStr.includes(',') };
     };
 
     const format = (parsed, current) => {
-      const num = parsed.decimals > 0
+      let num = parsed.decimals > 0
         ? current.toFixed(parsed.decimals)
         : Math.round(current).toString();
+      // Respetar el separador decimal del texto original (coma en ES, punto en EN).
+      if (parsed.comma) num = num.replace('.', ',');
       return `${parsed.prefix}${num}${parsed.suffix}`;
     };
 

@@ -73,7 +73,7 @@ const Router = {
 
       const featured = data.featured;
       const mkThumb = (device, src, title, titleEn) => {
-        const ph = `<div class="image-placeholder" data-es="Mockup pendiente" data-en="Mockup pending">Mockup pendiente</div>`;
+        const ph = `<div class="image-placeholder" data-es="Imagen pendiente" data-en="Image pending">Imagen pendiente</div>`;
         const inner = src ? `<img src="${src}" alt="${title}" data-alt-es="${title}" data-alt-en="${titleEn || title}">` : ph;
         if (device === 'desktop') return `<div class="device device-desktop">${inner}</div>`;
         if (device === 'mobile')  return `<div class="device device-mobile"><div class="device-screen">${inner}</div></div>`;
@@ -84,6 +84,7 @@ const Router = {
         <article class="project-card" onclick="${p.externalUrl ? `window.open('${p.externalUrl}','_blank')` : `Router.navigate('/${p.slug}')`}">
           <div class="project-info">
             <p class="card-eyebrow" data-es="${p.eyebrow}" data-en="${p.eyebrowEn}">${p.eyebrow}</p>
+            ${p.prototype ? `<p class="prototype-chip" data-es="Prototipo funcional" data-en="Working prototype">Prototipo funcional</p>` : ''}
             <h3 class="project-title" data-es="${p.title}" data-en="${p.titleEn}">${p.title}</h3>
             <p class="project-subtitle" data-es="${p.subtitle}" data-en="${p.subtitleEn}">${p.subtitle}</p>
             ${(p.metrics || (p.metric ? [{ value: p.metric, label: p.metricLabel, labelEn: p.metricLabelEn }] : [])).length ? `<div class="metric-pills">${(p.metrics || [{ value: p.metric, label: p.metricLabel, labelEn: p.metricLabelEn }]).map(m => `<div class="metric-pill">
@@ -91,7 +92,7 @@ const Router = {
               <span class="metric-label" data-es="${m.label}" data-en="${m.labelEn}">${m.label}</span>
             </div>`).join('')}</div>` : ''}
             ${p.stack ? `<ul class="stack-chips">${p.stack.map(s => `<li data-es="${s.es}" data-en="${s.en}">${s.es}</li>`).join('')}</ul>` : ''}
-            <a class="card-cta" data-es="${ctaView}" data-en="${ctaViewEn}">${ctaView}</a>
+            <a class="card-cta" href="${p.externalUrl || '/' + p.slug}"${p.externalUrl ? ' target="_blank" rel="noopener"' : ` onclick="event.preventDefault();event.stopPropagation();Router.navigate('/${p.slug}');window.scrollTo(0,0)"`} data-es="${ctaView}" data-en="${ctaViewEn}">${ctaView}</a>
           </div>
           <div class="project-image">${mkThumb(p.device, p.image, p.title, p.titleEn)}</div>
         </article>
@@ -115,7 +116,7 @@ const Router = {
                   <span class="metric-value">${featured.metric}</span>
                   <span class="metric-label" data-es="${featured.metricLabel}" data-en="${featured.metricLabelEn}">${featured.metricLabel}</span>
                 </div>
-                <a class="card-cta" data-es="${featured.cta}" data-en="${featured.ctaEn}">${featured.cta}</a>
+                <a class="card-cta" href="/${featured.slug}" onclick="event.preventDefault();event.stopPropagation();Router.navigate('/${featured.slug}');window.scrollTo(0,0)" data-es="${featured.cta}" data-en="${featured.ctaEn}">${featured.cta}</a>
               </div>
               <div class="featured-image">${mkThumb(featured.device, featured.image, featured.title, featured.titleEn)}</div>
             </article>
@@ -260,6 +261,7 @@ const Router = {
                   <li><span class="contact-icon" aria-hidden="true">📍</span><span>${data.contact.location}</span></li>
                   <li><span class="contact-icon" aria-hidden="true">✉️</span><a href="mailto:${data.contact.email}">${data.contact.email}</a></li>
                   <li><span class="contact-icon" aria-hidden="true">🌐</span><a href="${data.contact.behanceUrl}" target="_blank" rel="noopener noreferrer">${data.contact.behance}</a></li>
+                  <li><span class="contact-icon" aria-hidden="true">🔗</span><a href="https://www.linkedin.com/in/diegolavandero/" target="_blank" rel="noopener noreferrer">linkedin.com/in/diegolavandero</a></li>
                 </ul>
               </div>
             </div>

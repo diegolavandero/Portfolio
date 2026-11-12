@@ -15,10 +15,10 @@
   },
   "projectSpecs": [
     {
-      "label": "Mi Rol",
-      "labelEn": "My Role",
-      "value": "Senior AI Product Designer",
-      "valueEn": "Senior AI Product Designer"
+      "label": "Rol",
+      "labelEn": "Role",
+      "value": "Product Designer (externo)",
+      "valueEn": "Product Designer (contractor)"
     },
     {
       "label": "Contexto",
@@ -35,7 +35,7 @@
     {
       "label": "Equipo",
       "labelEn": "Team",
-      "value": "Contractor + Falabella",
+      "value": "Externo + Falabella",
       "valueEn": "Contractor + Falabella"
     },
     {
@@ -58,15 +58,15 @@
     }
   ],
   "whyItMatters": {
-    "title": "Contexto",
-    "titleEn": "Context",
-    "subtitle": "El funnel de pisos perdía a la mayoría de sus compradores antes del pago. El objetivo: subir la conversión un 20%.",
+    "title": "Por qué importa",
+    "titleEn": "Why it matters",
+    "subtitle": "El embudo de pisos perdía a la mayoría de sus compradores antes del pago. El objetivo: subir la conversión un 20%.",
     "subtitleEn": "The flooring funnel lost most of its buyers before payment. The goal: lift conversion by 20%.",
     "items": [
       {
         "metric": "70%",
         "metricEn": "70%",
-        "label": "abandono en el funnel de compra",
+        "label": "abandono en el embudo de compra",
         "labelEn": "purchase funnel abandonment",
         "description": "Parte de este abandono se debía a fricciones propias de pisos.",
         "descriptionEn": "Part of it came from flooring-specific friction."
@@ -90,8 +90,8 @@
     ]
   },
   "problemAndObjectives": {
-    "title": "El problema",
-    "titleEn": "The problem",
+    "title": "Problema y objetivos",
+    "titleEn": "Problem and objectives",
     "subtitle": "Los compradores elegían el piso primero y descubrían los problemas después.",
     "subtitleEn": "Shoppers picked the floor first and found the problems afterwards.",
     "problemTitle": "Cómo se compraba",
@@ -180,7 +180,7 @@
   "uxResearch": {
     "title": "Investigación",
     "titleEn": "Research",
-    "subtitle": "El research lo hizo internamente Falabella. Me contrataron como contractor para toda la conceptualización, los flujos y las pantallas.",
+    "subtitle": "La investigación la hizo Falabella internamente. Me contrataron como diseñador externo para toda la conceptualización, los flujos y las pantallas.",
     "subtitleEn": "The research was done in-house by Falabella. I was hired as a contractor for the full conceptualization, flows and screens.",
     "hypothesisTitle": "Hipótesis",
     "hypothesisTitleEn": "Hypotheses",
@@ -196,12 +196,12 @@
     "methodsTitleEn": "Methodology",
     "methods": [
       "Auditoría de la app real: ficha de piso, comparador y cross-sell",
-      "Análisis de 'Arma tu Proyecto' en muebles como precedente",
-      "Benchmark: Home Depot (calculadora y kit) y Roomvo (visualización AR)"
+      "Análisis de “Arma tu Proyecto” en muebles como precedente",
+      "Referentes: Home Depot (calculadora y kit) y Roomvo (visualización AR)"
     ],
     "methodsEn": [
       "Live app audit: flooring page, comparator and cross-sell",
-      "Analysis of 'Build Your Project' in furniture as a precedent",
+      "Analysis of “Build Your Project” in furniture as a precedent",
       "Benchmark: Home Depot (calculator and kit) and Roomvo (AR visualization)"
     ],
     "insightsTitle": "Hallazgos",
@@ -240,7 +240,7 @@
       {
         "value": "70%",
         "valueEn": "70%",
-        "description": "abandono en el funnel de compra",
+        "description": "abandono en el embudo de compra",
         "descriptionEn": "purchase funnel abandonment"
       },
       {
@@ -254,7 +254,7 @@
   "personas": {
     "title": "Personas",
     "titleEn": "Personas",
-    "subtitle": "Perfiles construidos a partir de la auditoría de la app y del benchmark",
+    "subtitle": "Perfiles construidos a partir de la auditoría de la app y de los referentes",
     "subtitleEn": "Profiles built from the app audit and the benchmark",
     "items": [
       {
@@ -263,7 +263,6 @@
         "nameEn": "Camila",
         "role": "Propietaria renovando por primera vez",
         "roleEn": "First-time home renovator",
-        "avatar": "https://i.pravatar.cc/150?img=47",
         "goals": [
           "Elegir el piso correcto sin cometer errores de cantidad",
           "Entender qué materiales adicionales necesita antes de llegar a la tienda"
@@ -295,7 +294,6 @@
         "nameEn": "Rodrigo",
         "role": "Constructor independiente frecuente",
         "roleEn": "Frequent independent contractor",
-        "avatar": "https://i.pravatar.cc/150?img=52",
         "goals": [
           "Calcular rápido la cantidad exacta para un proyecto de cliente",
           "Generar un kit completo con accesorios validados para no volver a la tienda"
@@ -335,8 +333,8 @@
         "nameEn": "Entry",
         "problem": "Llega a la ficha de piso sin saber cuánto necesita ni cuánto costará todo.",
         "problemEn": "Arrives at the flooring page without knowing how much they need or what everything will cost.",
-        "solution": "CTA 'Piso Ideal' que inicia el asistente.",
-        "solutionEn": "'Ideal Floor' CTA that starts the assistant."
+        "solution": "CTA “Piso Ideal” que inicia el asistente.",
+        "solutionEn": "“Ideal Floor” CTA that starts the assistant."
       },
       {
         "id": 2,
@@ -367,8 +365,8 @@
       },
       {
         "id": 5,
-        "name": "Kit + Carro",
-        "nameEn": "Kit + Cart",
+        "name": "Kit + carro",
+        "nameEn": "Kit + cart",
         "problem": "Accesorios incompatibles o sin cantidades, y un total que crece.",
         "problemEn": "Incompatible accessories or missing quantities, and a growing total.",
         "solution": "Kit calculado y editable; el carro mantiene el total del proyecto.",
@@ -408,8 +406,8 @@
       {
         "title": "Invertir la lógica del cross-sell",
         "titleEn": "Invert the cross-sell logic",
-        "justification": "En lugar de sugerir accesorios después de elegir, se llevó 'Arma tu Proyecto' (hoy en muebles, solo estético) a pisos, con parámetros técnicos.",
-        "justificationEn": "Instead of suggesting accessories after choosing, 'Build Your Project' (today in furniture, aesthetic only) was brought to flooring, with technical parameters.",
+        "justification": "En lugar de sugerir accesorios después de elegir, se llevó “Arma tu Proyecto” (hoy en muebles, solo estético) a pisos, con parámetros técnicos.",
+        "justificationEn": "Instead of suggesting accessories after choosing, “Build Your Project” (today in furniture, aesthetic only) was brought to flooring, with technical parameters.",
         "tradeoff": "Se piden datos antes de mostrar producto; se compensa con un precio final desde el inicio.",
         "tradeoffEn": "Data is requested before showing products; offset by a final price from the start."
       },
@@ -422,18 +420,18 @@
         "tradeoffEn": "More control means more cases to validate in the recalculation."
       },
       {
-        "title": "IA ambiental, no una feature aparte",
+        "title": "IA ambiental, no una funcionalidad aparte",
         "titleEn": "Ambient AI, not a separate feature",
-        "justification": "La IA normaliza atributos de catálogo y deriva los supuestos de uso. Se señala con un indicador 'Generado con IA' donde aporta, sin botón propio.",
-        "justificationEn": "AI normalizes catalog attributes and derives usage assumptions. It's flagged with a 'Generated with AI' indicator where it helps, with no dedicated button.",
+        "justification": "La IA normaliza atributos de catálogo y deriva los supuestos de uso. Se señala con un indicador “Generado con IA” donde aporta, sin botón propio.",
+        "justificationEn": "AI normalizes catalog attributes and derives usage assumptions. It's flagged with a “Generated with AI” indicator where it helps, with no dedicated button.",
         "tradeoff": "El indicador no distingue entre tipos de IA; es suficiente para un MVP.",
         "tradeoffEn": "The indicator doesn't distinguish between AI types; enough for an MVP."
       }
     ]
   },
   "results": {
-    "title": "Conclusiones",
-    "titleEn": "Conclusions",
+    "title": "Resultados",
+    "titleEn": "Results",
     "impact": [
       {
         "metric": "18%",
@@ -472,8 +470,8 @@
       {
         "title": "Reutilizar un patrón existente baja el costo",
         "titleEn": "Reusing an existing pattern lowers the cost",
-        "description": "'Arma tu Proyecto' ya estaba en producción; se llevó a pisos, donde el proyecto es técnico.",
-        "descriptionEn": "'Build Your Project' was already in production; it was brought to flooring, where the project is technical."
+        "description": "“Arma tu Proyecto” ya estaba en producción; se llevó a pisos, donde el proyecto es técnico.",
+        "descriptionEn": "“Build Your Project” was already in production; it was brought to flooring, where the project is technical."
       },
       {
         "title": "Un design system real aísla el retrabajo",
@@ -500,8 +498,8 @@
       {
         "title": "Extender a Sodimac y sumar visualización AR",
         "titleEn": "Extend to Sodimac and add AR visualization",
-        "description": "Modo de marca Sodimac listo; Roomvo como complemento ('cómo se ve').",
-        "descriptionEn": "Sodimac brand mode is ready; Roomvo as a complement ('how it looks')."
+        "description": "Modo de marca Sodimac listo; Roomvo como complemento (“cómo se ve”).",
+        "descriptionEn": "Sodimac brand mode is ready; Roomvo as a complement (“how it looks”)."
       }
     ]
   },
@@ -519,8 +517,8 @@
     "repoUrlEn": "https://github.com/diegolavandero/Portfolio/blob/main/prototypes/piso-ideal-en.html"
   },
   "designs": {
-    "title": "Pantallas del flujo",
-    "titleEn": "Flow screens",
+    "title": "Pantallas",
+    "titleEn": "Screens",
     "subtitle": "14 pantallas Android · Design system con 39 primitivas y 22 tokens semánticos",
     "subtitleEn": "14 Android screens · Design system with 39 primitives and 22 semantic tokens",
     "device": "mobile",
@@ -528,8 +526,8 @@
       {
         "title": "Entrada: Encuentra tu piso ideal",
         "titleEn": "Entry: Find your ideal floor",
-        "description": "Hero en el listado de categoría; 'Empezar' inicia el asistente.",
-        "descriptionEn": "Hero on the category listing; 'Start' launches the assistant.",
+        "description": "Hero en el listado de categoría; “Empezar” inicia el asistente.",
+        "descriptionEn": "Hero on the category listing; “Start” launches the assistant.",
         "src": "data/images/falabella-01-listado.webp?v=2",
         "device": "mobile",
         "badge": null,
@@ -548,8 +546,8 @@
       {
         "title": "Paso 1b: Estimación por foto con IA ambiental",
         "titleEn": "Step 1b: Photo estimation with ambient AI",
-        "description": "La foto genera un m² editable, señalado como 'Generado con IA' y con margen de error explícito.",
-        "descriptionEn": "The photo yields an editable m², flagged 'Generated with AI' with an explicit margin of error.",
+        "description": "La foto genera un m² editable, señalado como “Generado con IA” y con margen de error explícito.",
+        "descriptionEn": "The photo yields an editable m², flagged “Generated with AI” with an explicit margin of error.",
         "src": "data/images/falabella-02b-foto-tomada.webp?v=2",
         "device": "mobile",
         "badge": null,

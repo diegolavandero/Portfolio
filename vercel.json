@@ -1,14 +1,54 @@
 {
   "routes": [
-    { "src": "/index.html", "dest": "/", "status": 301 },
-    { "src": "/web/(.*)", "dest": "/", "status": 301 },
-    { "src": "/sitemap.xml", "dest": "/sitemap.xml" },
-    { "src": "/robots.txt", "dest": "/robots.txt" },
-    { "src": "/favicon.png", "dest": "/favicon.png" },
-    { "src": "/styles.css", "dest": "/styles.css" },
-    { "src": "/js/(.*)", "dest": "/js/$1" },
-    { "src": "/data/(.*)", "dest": "/data/$1" },
-    { "src": "/prototypes/(.*)", "dest": "/prototypes/$1" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    {
+      "src": "/index.html",
+      "dest": "/",
+      "status": 301
+    },
+    {
+      "src": "/web/(.*)",
+      "dest": "/",
+      "status": 301
+    },
+    {
+      "src": "/sitemap.xml",
+      "dest": "/sitemap.xml"
+    },
+    {
+      "src": "/robots.txt",
+      "dest": "/robots.txt"
+    },
+    {
+      "src": "/favicon.png",
+      "dest": "/favicon.png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "dest": "/apple-touch-icon.png"
+    },
+    {
+      "src": "/styles.css",
+      "dest": "/styles.css"
+    },
+    {
+      "src": "/js/(.*)",
+      "dest": "/js/$1"
+    },
+    {
+      "src": "/data/(.*)",
+      "dest": "/data/$1"
+    },
+    {
+      "src": "/prototypes/(.*)",
+      "dest": "/prototypes/$1"
+    },
+    {
+      "src": "/(about|unified-routing|dt-tutorial-monitoring|dt-help-center|lead-capture|falabella|driver-ai|on-demand-routing|load-validation|async-reports)/?",
+      "dest": "/pages/$1.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
   ]
 }

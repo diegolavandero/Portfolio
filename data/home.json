@@ -5,16 +5,16 @@
     "titleStartEn": "Designing products powered by ",
     "titleAccent": "IA y sistemas complejos",
     "titleAccentEn": "AI and complex systems",
-    "subtitle": "Senior AI Product Designer con más de 10 años de experiencia en UX research, diseño data-driven y optimización de workflows complejos.",
+    "subtitle": "Senior AI Product Designer con más de 10 años de experiencia en investigación UX, diseño basado en datos y optimización de flujos de trabajo complejos.",
     "subtitleEn": "Senior AI Product Designer with 10+ years of experience in UX research, data-driven design, and complex workflow optimization."
   },
   "featured": {
-    "eyebrow": "PROYECTO DESTACADO",
-    "eyebrowEn": "FEATURED PROJECT",
-    "title": "Sistema de Ruteo Unificado",
+    "eyebrow": "DESTACADO · DT LASTMILE · ESCRITORIO · 2026",
+    "eyebrowEn": "FEATURED · DT LASTMILE · DESKTOP · 2026",
+    "title": "Sistema de ruteo unificado",
     "titleEn": "Unified Routing System",
-    "subtitle": "Wizard híbrido + Consola para logística compleja",
-    "subtitleEn": "Hybrid wizard + Console for complex logistics",
+    "subtitle": "Asistente híbrido y consola para logística compleja",
+    "subtitleEn": "Hybrid wizard and console for complex logistics",
     "metric": "32%",
     "metricLabel": "planificación más rápida",
     "metricLabelEn": "faster planning",
@@ -26,12 +26,12 @@
   },
   "projects": [
     {
-      "eyebrow": "DT LASTMILE DESKTOP · 2026",
-      "eyebrowEn": "DT LASTMILE DESKTOP · 2026",
+      "eyebrow": "DT LASTMILE · ESCRITORIO · 2026",
+      "eyebrowEn": "DT LASTMILE · DESKTOP · 2026",
       "title": "Monitoreo de tutoriales",
-      "titleEn": "Tutorial monitoring",
-      "subtitle": "Panel para que un administrador vea quién completó el entrenamiento de la plataforma, dónde se atasca el equipo y qué tutoriales necesitan refuerzo.",
-      "subtitleEn": "A panel for admins to see who completed platform training, where the team gets stuck and which tutorials need reinforcement.",
+      "titleEn": "Tutorial Monitoring",
+      "subtitle": "Panel para seguir el entrenamiento de cada equipo en la plataforma",
+      "subtitleEn": "Admin panel to track each team's platform training",
       "slug": "dt-tutorial-monitoring",
       "device": "desktop",
       "image": "data/images/dt-tutorial-monitoring.webp?v=2",
@@ -56,27 +56,29 @@
           "label": "seguimiento activo",
           "labelEn": "active follow-up"
         }
-      ]
+      ],
+      "prototype": true
     },
     {
-      "eyebrow": "DT LASTMILE DESKTOP · 2026",
-      "eyebrowEn": "DT LASTMILE DESKTOP · 2026",
+      "eyebrow": "DT LASTMILE · ESCRITORIO · 2026",
+      "eyebrowEn": "DT LASTMILE · DESKTOP · 2026",
       "title": "Centro de ayuda y onboarding",
-      "titleEn": "Help center & onboarding",
-      "subtitle": "Centro de ayuda contextual con 49 tutoriales en tres niveles, video, quiz y progreso, que acompaña al usuario sin sacarlo de su pantalla.",
-      "subtitleEn": "Contextual help center with 49 tutorials across three levels, video, quiz and progress, guiding users without taking them off their screen.",
+      "titleEn": "Help Center & Onboarding",
+      "subtitle": "Centro de ayuda contextual con 49 tutoriales dentro de la plataforma",
+      "subtitleEn": "Contextual help center with 49 tutorials inside the platform",
       "slug": "dt-help-center",
       "device": "desktop",
       "image": "data/images/dt-help-center.webp?v=2",
       "metric": "34% → 82%",
       "metricLabel": "onboardings completados",
-      "metricLabelEn": "onboardings completed"
+      "metricLabelEn": "onboardings completed",
+      "prototype": true
     },
     {
-      "eyebrow": "PLATAFORMA B2B2C · 2025",
-      "eyebrowEn": "B2B2C PLATFORM · 2025",
-      "title": "Sistema de Captura de Leads en Tiempo Real",
-      "titleEn": "Real-time Lead Capture System",
+      "eyebrow": "SAAS B2B2C · ESCRITORIO · 2025",
+      "eyebrowEn": "B2B2C SAAS · DESKTOP · 2025",
+      "title": "Sistema de captura de leads en tiempo real",
+      "titleEn": "Real-Time Lead Capture System",
       "subtitle": "Plataforma de widget de chat pre-venta configurable",
       "subtitleEn": "Configurable pre-sales chat widget platform",
       "metric": "40%",
@@ -87,8 +89,8 @@
       "image": "data/images/lead-capture.webp"
     },
     {
-      "eyebrow": "E-COMMERCE B2C · 2025",
-      "eyebrowEn": "B2C E-COMMERCE · 2025",
+      "eyebrow": "FALABELLA · MÓVIL · 2025",
+      "eyebrowEn": "FALABELLA · MOBILE · 2025",
       "title": "Piso Ideal · Falabella",
       "titleEn": "Ideal Floor · Falabella",
       "subtitle": "Asistente de compra con recomendación por IA para categoría pisos",
@@ -98,11 +100,12 @@
       "metricLabelEn": "higher conversion",
       "slug": "falabella",
       "device": "mobile",
-      "image": "data/images/falabella.webp?v=2"
+      "image": "data/images/falabella.webp?v=2",
+      "prototype": true
     },
     {
-      "eyebrow": "DT GLOBAL APP MÓVIL · 2024",
-      "eyebrowEn": "DT GLOBAL MOBILE APP · 2024",
+      "eyebrow": "DT GLOBAL · MÓVIL · 2024",
+      "eyebrowEn": "DT GLOBAL · MOBILE · 2024",
       "title": "Driver AI",
       "titleEn": "Driver AI",
       "subtitle": "Inteligencia de ubicación para última milla",
@@ -115,8 +118,8 @@
       "image": "data/images/driver-ai.webp"
     },
     {
-      "eyebrow": "QUICKCOMMERCE · 2023",
-      "eyebrowEn": "QUICKCOMMERCE · 2023",
+      "eyebrow": "QUICKCOMMERCE · ESCRITORIO · 2023",
+      "eyebrowEn": "QUICKCOMMERCE · DESKTOP · 2023",
       "title": "On-Demand Routing",
       "titleEn": "On-Demand Routing",
       "subtitle": "Sistema de asignación manual y automática en tiempo real",
@@ -129,9 +132,9 @@
       "image": "data/images/on-demand-routing.webp"
     },
     {
-      "eyebrow": "DT GLOBAL APP MÓVIL · 2023",
-      "eyebrowEn": "DT GLOBAL MOBILE APP · 2023",
-      "title": "Validación de Carga Pre-Ruta",
+      "eyebrow": "DT GLOBAL · MÓVIL · 2023",
+      "eyebrowEn": "DT GLOBAL · MOBILE · 2023",
+      "title": "Validación de carga pre-ruta",
       "titleEn": "Pre-Route Load Validation",
       "subtitle": "Sistema de verificación pre-ruta",
       "subtitleEn": "Pre-route verification system",
@@ -140,12 +143,13 @@
       "metricLabelEn": "fewer destination discrepancies",
       "slug": "load-validation",
       "device": "mobile",
-      "image": "data/images/load-validation.webp"
+      "image": "data/images/load-validation.webp",
+      "prototype": true
     },
     {
-      "eyebrow": "DT GLOBAL APP DESKTOP · 2024",
-      "eyebrowEn": "DT GLOBAL DESKTOP APP · 2024",
-      "title": "Reportes Asincrónicos",
+      "eyebrow": "DT GLOBAL · ESCRITORIO · 2024",
+      "eyebrowEn": "DT GLOBAL · DESKTOP · 2024",
+      "title": "Reportes asincrónicos",
       "titleEn": "Asynchronous Reports",
       "subtitle": "Procesamiento de datos sin bloqueos",
       "subtitleEn": "Non-blocking data processing",
@@ -157,12 +161,12 @@
       "image": "data/images/async-reports.webp"
     },
     {
-      "eyebrow": "SISTEMA DE DISEÑO · 2024–2026",
-      "eyebrowEn": "DESIGN SYSTEM · 2024–2026",
+      "eyebrow": "DISPATCHTRACK · WEB Y MÓVIL · 2024–2026",
+      "eyebrowEn": "DISPATCHTRACK · WEB & MOBILE · 2024–2026",
       "title": "DispatchTrack Design System",
       "titleEn": "DispatchTrack Design System",
-      "subtitle": "Sistema de componentes, tokens y patrones para productos Last Mile",
-      "subtitleEn": "Component library, tokens and patterns for Last Mile products",
+      "subtitle": "Sistema de componentes, tokens y patrones para los productos LastMile",
+      "subtitleEn": "Component library, tokens and patterns for LastMile products",
       "slug": "design-system",
       "externalUrl": "/prototypes/dt-ds/index.html",
       "device": "desktop",

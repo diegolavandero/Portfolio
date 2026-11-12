@@ -2,25 +2,25 @@
   "page": "dt-help-center",
   "slug": "dt-help-center",
   "title": "Centro de ayuda y onboarding",
-  "titleEn": "Help center & onboarding",
-  "subtitle": "Del help center separado a un sidebar que vive en la plataforma",
+  "titleEn": "Help Center & Onboarding",
+  "subtitle": "Del centro de ayuda separado a un panel lateral que vive en la plataforma",
   "subtitleEn": "From a separate help center to a sidebar that lives in the platform",
   "hero": {
-    "tagline": "DISPATCHTRACK · LASTMILE · ONBOARDING · DESKTOP · 2026",
+    "tagline": "DISPATCHTRACK · LASTMILE · ONBOARDING · ESCRITORIO · 2026",
     "taglineEn": "DISPATCHTRACK · LASTMILE · ONBOARDING · DESKTOP · 2026",
-    "title": "Centro de ayuda ",
-    "titleEn": "Help center ",
+    "title": "Centro de ayuda y onboarding",
+    "titleEn": "Help Center & Onboarding",
     "titleAccent": "y onboarding",
     "titleAccentEn": "& onboarding",
-    "subtitle": "Del help center separado a un sidebar que vive en la plataforma",
+    "subtitle": "Del centro de ayuda separado a un panel lateral que vive en la plataforma",
     "subtitleEn": "From a separate help center to a sidebar that lives in the platform",
-    "description": "Diseñé un sidebar de tutoriales que vive dentro de la plataforma, para el operador que recién llega: cada sección tiene su tutorial con video y cuestionario, a un clic de donde está trabajando. Su contraparte, el Monitoreo de tutoriales, muestra ese avance al administrador.",
+    "description": "Diseñé un panel lateral de tutoriales que vive dentro de la plataforma, para el operador que recién llega: cada sección tiene su tutorial con video y cuestionario, a un clic de donde está trabajando. Su contraparte, el Monitoreo de tutoriales, muestra ese avance al administrador.",
     "descriptionEn": "I designed a tutorials sidebar that lives inside the platform, for the operator who has just arrived: every section has its own tutorial with video and quiz, one click from where they work. Its counterpart, Tutorial monitoring, shows that progress to the admin."
   },
   "projectSpecs": [
     {
-      "label": "Mi Rol",
-      "labelEn": "My Role",
+      "label": "Rol",
+      "labelEn": "Role",
       "value": "Senior AI Product Designer",
       "valueEn": "Senior AI Product Designer"
     },
@@ -51,7 +51,7 @@
     {
       "label": "Entregables",
       "labelEn": "Deliverables",
-      "value": "Prototipo · Research · Jira",
+      "value": "Prototipo · Investigación · Jira",
       "valueEn": "Prototype · Research · Jira"
     },
     {
@@ -67,16 +67,16 @@
     "placeholderEn": "Tutorials sidebar open over the Orders screen"
   },
   "problemAndObjectives": {
-    "title": "Problema",
-    "titleEn": "Problem",
-    "subtitle": "Los operadores nuevos debían aprender la plataforma, pero el Help Center estaba separado, en otra sección. Para pedir ayuda tenían que salir de su trabajo, buscar un problema específico y leer texto.",
+    "title": "Problema y objetivos",
+    "titleEn": "Problem and objectives",
+    "subtitle": "Los operadores nuevos debían aprender la plataforma, pero el centro de ayuda anterior estaba separado, en otra sección. Para pedir ayuda tenían que salir de su trabajo, buscar un problema específico y leer texto.",
     "subtitleEn": "New operators had to learn the platform, but the Help Center was separate, in another section. To get help they had to leave their work, search for a specific problem and read text.",
     "products": [
       {
         "name": "Situación actual",
         "nameEn": "Current situation",
         "cons": [
-          "El Help Center vivía aparte de la plataforma, en otra sección",
+          "El centro de ayuda anterior vivía aparte de la plataforma, en otra sección",
           "Había que buscar un problema específico para encontrar ayuda",
           "La ayuda era texto para leer, sin un camino para aprender"
         ],
@@ -112,23 +112,23 @@
     ]
   },
   "uxResearch": {
-    "title": "Metodología UX",
-    "titleEn": "UX Design Process",
+    "title": "Investigación",
+    "titleEn": "Research",
     "subtitle": "Entrevistas exploratorias con operadores y medición en 5 cuentas piloto",
     "subtitleEn": "Exploratory interviews with operators and measurement across 5 pilot accounts",
     "methodCards": [
       {
         "name": "Entrevistas exploratorias con operadores",
         "nameEn": "Exploratory interviews with operators",
-        "description": "Los operadores contaron su frustración al entrar a un Help Center separado de la plataforma: tenían que ir a otra sección, buscar un problema específico y leer texto.",
+        "description": "Los operadores contaron su frustración al entrar a un centro de ayuda separado de la plataforma: tenían que ir a otra sección, buscar un problema específico y leer texto.",
         "descriptionEn": "Operators described their frustration with entering a Help Center separate from the platform: they had to go to another section, search for a specific problem and read text.",
-        "finding": "La ayuda debía vivir dentro de la plataforma, no al lado. De ahí la decisión de un sidebar.",
+        "finding": "La ayuda debía vivir dentro de la plataforma, no al lado. De ahí la decisión de un panel lateral.",
         "findingEn": "Help had to live inside the platform, not beside it. Hence the decision for a sidebar."
       },
       {
         "name": "Cómo medimos el impacto",
         "nameEn": "How we measured impact",
-        "description": "Durante 60 días, en las mismas 5 cuentas piloto, comparamos a los operadores nuevos con el historial previo. La línea base salió de los datos del Help Center anterior; el piloto, de los eventos del sidebar.",
+        "description": "Durante 60 días, en las mismas 5 cuentas piloto, comparamos a los operadores nuevos con el historial previo. La línea base salió de los datos del centro de ayuda anterior; el piloto, de los eventos del panel lateral.",
         "descriptionEn": "For 60 days, across the same 5 pilot accounts, we compared new operators against the previous history. The baseline came from the old Help Center data; the pilot, from sidebar events.",
         "finding": "Onboardings: operadores nuevos que completan el nivel inicial en 15 días ÷ operadores nuevos. Adopción: mediana de días hábiles desde la creación de la cuenta hasta la primera ruta asignada sin ayuda. Sesiones: sesiones de aprendizaje en el primer mes ÷ operadores activos.",
         "findingEn": "Onboardings: new operators who complete the starter level within 15 days ÷ new operators. Adoption: median business days from account creation to the first route assigned unaided. Sessions: learning sessions in the first month ÷ active operators."
@@ -136,8 +136,8 @@
     ]
   },
   "personas": {
-    "title": "User Persona",
-    "titleEn": "User Persona",
+    "title": "Personas",
+    "titleEn": "Personas",
     "subtitle": "El usuario que llega y tiene que aprender a operar",
     "subtitleEn": "The user who arrives and has to learn to operate",
     "items": [
@@ -145,9 +145,8 @@
         "id": "matias-soto",
         "name": "Matías Soto",
         "nameEn": "Matías Soto",
-        "role": "Operador Logístico Junior",
+        "role": "Operador logístico junior",
         "roleEn": "Junior Logistics Operator",
-        "avatar": "https://i.pravatar.cc/150?img=68",
         "goals": [
           "Aprender la plataforma para operar con autonomía",
           "Saber por dónde empezar y qué le falta"
@@ -180,7 +179,7 @@
   "solution": {
     "title": "Solución",
     "titleEn": "Solution",
-    "subtitle": "Un sidebar de tutoriales que vive dentro de la plataforma, con acceso directo desde cada sección al tutorial correspondiente.",
+    "subtitle": "Un panel lateral de tutoriales que vive dentro de la plataforma, con acceso directo desde cada sección al tutorial correspondiente.",
     "subtitleEn": "A tutorials sidebar that lives inside the platform, with direct access from each section to its own tutorial.",
     "components": [
       {
@@ -214,14 +213,14 @@
         "number": "04",
         "title": "Artículos relacionados",
         "titleEn": "Related articles",
-        "tagline": "Del Help Center global",
+        "tagline": "Del centro de ayuda global",
         "taglineEn": "From the global Help Center",
-        "description": "Cada tutorial muestra los artículos del Help Center global que corresponden a esa sección.",
+        "description": "Cada tutorial muestra los artículos del centro de ayuda global que corresponden a esa sección.",
         "descriptionEn": "Each tutorial shows the global Help Center articles that match that section."
       }
     ],
-    "principlesTitle": "Principios de Diseño",
-    "principlesTitleEn": "Design Principles",
+    "principlesTitle": "Principios de diseño",
+    "principlesTitleEn": "Design principles",
     "principles": [
       {
         "number": "01",
@@ -249,7 +248,7 @@
   "livePrototype": {
     "title": "Prototipo interactivo",
     "titleEn": "Interactive prototype",
-    "subtitle": "Abre el sidebar desde el chip de tutoriales de la barra superior, o desde el ícono de tutorial junto a la descripción de «Órdenes/guías». Mira el video, responde el cuestionario y observa cómo avanza tu progreso. Usa las variantes para ver los otros estados.",
+    "subtitle": "Abre el panel lateral desde el botón de tutoriales de la barra superior, o desde el ícono de tutorial junto a la descripción de «Órdenes/guías». Mira el video, responde el cuestionario y observa cómo avanza tu progreso. Usa las variantes para ver los otros estados.",
     "subtitleEn": "Open the sidebar from the tutorials chip in the top bar, or from the tutorial icon next to the “Orders/guides” description. Watch the video, take the quiz and watch your progress advance. Use the variants to see the other states.",
     "badge": "Prototipo funcional",
     "badgeEn": "Functional prototype",
@@ -331,10 +330,10 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Vista del operario, medida en las mismas 5 cuentas piloto durante los primeros 60 días.",
+    "subtitle": "Vista del operador, medida en las mismas 5 cuentas piloto durante los primeros 60 días.",
     "subtitleEn": "Operator view, measured across the same 5 pilot accounts over the first 60 days.",
-    "impactTitle": "Impacto Medido",
-    "impactTitleEn": "Measured Impact",
+    "impactTitle": "Impacto medido",
+    "impactTitleEn": "Measured impact",
     "impact": [
       {
         "icon": "✅",
@@ -357,27 +356,27 @@
         "icon": "📈",
         "label": "Más sesiones de aprendizaje",
         "labelEn": "More learning sessions",
-        "metric": "2,4x",
-        "description": "(1,8 → 4,3 por operario en su primer mes): de consultas reactivas a rutas completas.",
+        "metric": "2,4×",
+        "description": "(1,8 → 4,3 por operador en su primer mes): de consultas reactivas a rutas completas.",
         "descriptionEn": "(1.8 → 4.3 per operator in their first month): from reactive lookups to full learning paths.",
-        "metricEn": "2.4x"
+        "metricEn": "2.4×"
       }
     ],
-    "learningsTitle": "Aprendizajes Clave",
-    "learningsTitleEn": "Key Learnings",
+    "learningsTitle": "Aprendizajes clave",
+    "learningsTitleEn": "Key learnings",
     "learnings": [
       {
         "title": "La ayuda funciona mejor donde se trabaja",
         "titleEn": "Help works best where people work",
-        "description": "Los operadores se frustraban con un Help Center aparte. Llevarlo a la plataforma, con un tutorial por sección, evitó buscar y leer fuera de contexto.",
+        "description": "Los operadores se frustraban con un centro de ayuda aparte. Llevarlo a la plataforma, con un tutorial por sección, evitó buscar y leer fuera de contexto.",
         "descriptionEn": "Operators were frustrated by a separate Help Center. Bringing it into the platform, with one tutorial per section, avoided searching and reading out of context."
       }
     ],
     "nextSteps": []
   },
   "cta": {
-    "question": "Siguiente caso: Sistema de Captura de Leads en Tiempo Real",
-    "questionEn": "Next case: Real-time Lead Capture System",
+    "question": "Siguiente caso: Sistema de captura de leads en tiempo real",
+    "questionEn": "Next case: Real-Time Lead Capture System",
     "description": "Plataforma de widget de chat pre-venta configurable",
     "descriptionEn": "Configurable pre-sales chat widget platform",
     "buttonLabel": "Ver siguiente proyecto",
