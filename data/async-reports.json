@@ -82,11 +82,11 @@
       },
       {
         "icon": "⏱️",
-        "label": "Menos tiempo de espera",
-        "labelEn": "Shorter wait time",
+        "label": "Menos tiempo de espera en reportes pesados",
+        "labelEn": "Shorter wait on heavy reports",
         "metric": "18 min → en segundo plano",
-        "description": "Los reportes pesados ya no bloquean la sesión. El usuario recibe notificación cuando está listo y puede hacer otras cosas.",
-        "descriptionEn": "Heavy reports no longer block the session. The user receives a notification when ready and can do other things in the meantime.",
+        "description": "Los reportes más pesados (percentil 90) tardaban 18 min y bloqueaban la sesión. Ahora corren en segundo plano y el usuario recibe una notificación cuando están listos.",
+        "descriptionEn": "The heaviest reports (90th percentile) took 18 min and blocked the session. They now run in the background and the user gets a notification when ready.",
         "metricEn": "18 min → background"
       },
       {

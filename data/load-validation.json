@@ -76,9 +76,10 @@
         "icon": "⏱️",
         "label": "Menos tiempo de validación",
         "labelEn": "Shorter validation time",
-        "metric": "40 min → 6 min",
+        "metric": "40 min → 14 min",
         "description": "Reducción de tiempo promedio de validación por conductor por ruta",
-        "descriptionEn": "Average validation time reduction per driver per route"
+        "descriptionEn": "Average validation time reduction per driver per route",
+        "metricEn": "40 min → 14 min"
       },
       {
         "icon": "🎯",

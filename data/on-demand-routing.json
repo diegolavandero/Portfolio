@@ -184,8 +184,8 @@
       {
         "name": "Pruebas de usabilidad",
         "nameEn": "Usability Testing",
-        "description": "Testeamos 3 flujos con n=12 operadores: asignación 100% manual, 100% automática y modo híbrido. El híbrido fue 2,4× más rápido que el manual y generó 68% menos correcciones post-asignación que el automático solo.",
-        "descriptionEn": "We tested 3 flows with n=12 operators: 100% manual assignment, 100% automatic, and hybrid mode. The hybrid was 2.4× faster than manual and generated 68% fewer post-assignment corrections than automatic alone.",
+        "description": "Testeamos 3 flujos con n=12 operadores: asignación 100% manual, 100% automática y modo híbrido. El foco fue entender cuándo prefería cada operador cada modo.",
+        "descriptionEn": "We tested 3 flows with n=12 operators: 100% manual assignment, 100% automatic, and hybrid mode. The focus was understanding when operators preferred each mode.",
         "finding": "El drag & drop era preferido para reasignar 1–5 órdenes; para +20 órdenes todos preferían el auto-assign con override.",
         "findingEn": "Drag & drop was preferred for reassigning 1–5 orders; for 20+ orders everyone preferred auto-assign with override."
       }
