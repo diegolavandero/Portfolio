@@ -157,66 +157,34 @@
   "uxResearch": {
     "title": "Investigación",
     "titleEn": "Research",
-    "subtitle": "Línea base con 6 operadores, validación en prototipo con 12 y telemetría real con 1.420 sesiones",
-    "subtitleEn": "Baseline with 6 operators, prototype validation with 12 and live telemetry from 1,420 sessions",
-    "hypothesis": [
-      "El asistente no soporta escenarios logísticos complejos",
-      "La consola es poderosa pero cognitivamente demandante",
-      "Un modelo híbrido progresivo puede equilibrar velocidad y control"
-    ],
-    "hypothesisEn": [
-      "The assistant doesn't support complex logistics scenarios",
-      "The console is powerful but cognitively demanding",
-      "A progressive hybrid model can balance speed and control"
-    ],
-    "methods": [
-      "Observación del flujo actual · 6 operadores (2 jefes de planificación, 2 jefes de distribución, 2 despachadores senior)",
-      "Pruebas de estrés con usuarios sintéticos (Claude Code) · 4 arquitecturas evaluadas, 3 descartadas",
-      "Benchmark en prototipo de Figma · 12 participantes, 3 escenarios con corte de 25 min",
-      "Telemetría con Hotjar · 1.420 sesiones en 30 días, 14 cuentas, 185 usuarios"
-    ],
-    "methodsEn": [
-      "Current-flow observation · 6 operators (2 heads of planning, 2 distribution managers, 2 senior dispatchers)",
-      "Stress tests with synthetic users (Claude Code) · 4 architectures evaluated, 3 discarded",
-      "Benchmark on the Figma prototype · 12 participants, 3 scenarios with a 25-min cutoff",
-      "Hotjar telemetry · 1,420 sessions over 30 days, 14 accounts, 185 users"
-    ],
-    "quotes": [
+    "subtitle": "Observación con operadores, pruebas con prototipo y telemetría real para medir cada meta",
+    "subtitleEn": "Operator observation, prototype testing and live telemetry to measure each goal",
+    "methodCards": [
       {
-        "text": "Nuestra operación no es 100% automatizable",
-        "textEn": "Our operation is not 100% automatable"
+        "name": "Observación del flujo actual",
+        "nameEn": "Current-flow observation",
+        "description": "Observé a 6 operadores (2 jefes de planificación, 2 jefes de distribución y 2 despachadores senior) durante la planificación de la mañana, pensando en voz alta.",
+        "descriptionEn": "I observed 6 operators (2 heads of planning, 2 distribution managers and 2 senior dispatchers) during morning planning, thinking aloud.",
+        "finding": "Línea base: 24 min por planificación, 42% del tiempo en reasignar a mano, 38% de sesiones con error crítico y 11 cambios de contexto.",
+        "findingEn": "Baseline: 24 min per planning run, 42% of time spent reassigning by hand, 38% of sessions with a critical error and 11 context switches."
       },
       {
-        "text": "Necesitamos ver todo al mismo tiempo",
-        "textEn": "We need to see everything at the same time"
+        "name": "Usuarios sintéticos y arquitectura",
+        "nameEn": "Synthetic users and architecture",
+        "description": "Con Claude Code generé perfiles sintéticos a partir de lo observado y evalué 4 arquitecturas de consola con heurísticas y umbrales de carga cognitiva.",
+        "descriptionEn": "With Claude Code I generated synthetic profiles from what I observed and evaluated 4 console architectures against heuristics and cognitive-load thresholds.",
+        "finding": "Se descartaron 3 diseños antes del prototipo. Quedó el modelo híbrido: asistente de 3 pasos y consola única.",
+        "findingEn": "3 layouts were discarded before prototyping. The hybrid model remained: a 3-step wizard and a single console."
       },
       {
-        "text": "La consola permite reaccionar, el asistente no",
-        "textEn": "The console allows reaction, the wizard does not"
-      }
-    ],
-    "quantitativeLabel": "Línea base",
-    "quantitativeLabelEn": "Baseline",
-    "stats": [
-      {
-        "value": "24 min",
-        "description": "de planificación de punta a punta",
-        "descriptionEn": "of end-to-end planning"
-      },
-      {
-        "value": "42%",
-        "description": "del tiempo en reasignar pedidos a mano",
-        "descriptionEn": "of time spent reassigning orders by hand"
-      },
-      {
-        "value": "38%",
-        "description": "de sesiones con un error crítico",
-        "descriptionEn": "of sessions with a critical error"
-      },
-      {
-        "value": "11",
-        "description": "cambios de contexto por ciclo de ruteo",
-        "descriptionEn": "context switches per routing cycle"
+        "name": "Benchmark y telemetría",
+        "nameEn": "Benchmark and telemetry",
+        "description": "Probé el prototipo de Figma con 12 participantes en 3 escenarios con corte de 25 min. Después medí 30 días con Hotjar: 1.420 sesiones, 14 cuentas y 185 usuarios.",
+        "descriptionEn": "I tested the Figma prototype with 12 participants across 3 scenarios with a 25-min cutoff. Then I measured 30 days with Hotjar: 1,420 sessions, 14 accounts and 185 users.",
+        "findingLabel": "Métricas",
+        "findingLabelEn": "Metrics",
+        "finding": "Tiempo en tarea, pasos de interacción, tasa de error crítico, facilidad percibida (SEQ) y clics de frustración.",
+        "findingEn": "Time on task, interaction steps, critical error rate, perceived ease (SEQ) and rage clicks."
       }
     ]
   },
