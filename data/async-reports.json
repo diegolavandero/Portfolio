@@ -132,8 +132,8 @@
         "number": "02",
         "description": "El usuario no necesita esperar en la pantalla para recibir su reporte",
         "descriptionEn": "The user doesn't need to wait on screen to receive their report",
-        "title": "Abandono <15%",
-        "titleEn": "Abandonment <15%"
+        "title": "Reducir el abandono en 60%",
+        "titleEn": "Cut abandonment by 60%"
       },
       {
         "number": "03",

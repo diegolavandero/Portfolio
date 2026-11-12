@@ -242,10 +242,10 @@
         "descriptionEn": "purchase funnel abandonment"
       },
       {
-        "value": "34% → 6%",
-        "valueEn": "34% → 6%",
-        "description": "más caro por m² frente a más caro en el proyecto completo",
-        "descriptionEn": "more expensive per m² versus more expensive in the complete project"
+        "value": "34% vs 6%",
+        "valueEn": "34% vs 6%",
+        "description": "perciben el piso como caro: 34% con precio por m², 6% con el precio del proyecto completo",
+        "descriptionEn": "find the flooring expensive: 34% with price per m², 6% with the full project price"
       }
     ]
   },

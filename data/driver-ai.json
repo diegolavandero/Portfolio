@@ -78,24 +78,24 @@
         "label": "Menos entregas fallidas",
         "labelEn": "Fewer failed deliveries",
         "metric": "22%",
-        "description": "Reducción en intentos fallidos. El contexto de acceso previo elimina la búsqueda improvisada en destino.",
-        "descriptionEn": "Reduction in failed attempts. Prior access context eliminates improvised searching at the destination."
+        "description": "Bajó de 14% a 10,9% la tasa de entregas fallidas al primer intento. El contexto de acceso previo elimina la búsqueda improvisada en destino.",
+        "descriptionEn": "First-attempt failed deliveries fell from 14% to 10.9%. Prior access context eliminates improvised searching at the destination."
       },
       {
         "icon": "⏱️",
         "label": "Menos tiempo por parada",
         "labelEn": "Less time per stop",
         "metric": "18%",
-        "description": "Reducción en tiempo promedio por parada en edificios complejos.",
-        "descriptionEn": "Reduction in average time per stop at complex buildings."
+        "description": "Reducción en paradas con Address Intelligence activo. Piloto de 6 semanas con 45 conductores.",
+        "descriptionEn": "Reduction at stops with Address Intelligence active. 6-week pilot with 45 drivers."
       },
       {
         "icon": "📞",
         "label": "Menos llamadas al dispatcher",
         "labelEn": "Fewer dispatcher calls",
         "metric": "61%",
-        "description": "Reducción en llamadas por dispatcher para pedir información de acceso o estacionamiento.",
-        "descriptionEn": "Reduction in calls per dispatcher to request access or parking information."
+        "description": "De 18 a 7 llamadas promedio por dispatcher y turno sobre información de acceso a edificios.",
+        "descriptionEn": "From 18 to 7 average calls per dispatcher per shift about building access information."
       }
     ]
   },
@@ -520,8 +520,8 @@
         "metric": "22%",
         "label": "Menos entregas fallidas al primer intento",
         "labelEn": "Fewer first-attempt failed deliveries",
-        "description": "La tasa de falla bajó de 14% a 10,9%. 'No pudo acceder' pasó de 61% a 18% de las causas.",
-        "descriptionEn": "The failure rate fell from 14% to 10.9%. 'Couldn't access' dropped from 61% to 18% of causes."
+        "description": "La tasa de falla bajó de 14% a 10,9%. 'No pudo acceder' dejó de ser la causa principal: de más de la mitad a menos de 1 de cada 5 fallas.",
+        "descriptionEn": "The failure rate fell from 14% to 10.9%. 'Couldn't access' stopped being the main cause: from more than half to fewer than 1 in 5 failures."
       },
       {
         "icon": "📞",
