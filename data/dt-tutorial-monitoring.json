@@ -4,10 +4,10 @@
   "title": "Monitoreo de tutoriales",
   "subtitle": "De un onboarding a ciegas a una adopción con seguimiento",
   "hero": {
-    "tagline": "DISPATCHTRACK · LASTMILE · ANALÍTICA PARA ADMINISTRADORES · ESCRITORIO · 2026",
-    "taglineEn": "DISPATCHTRACK · LASTMILE · ADMIN ANALYTICS · DESKTOP · 2026",
-    "title": "Monitoreo de tutoriales",
-    "titleEn": "Tutorial Monitoring",
+    "tagline": "DT LASTMILE · ESCRITORIO · 2026",
+    "taglineEn": "DT LASTMILE · DESKTOP · 2026",
+    "title": "Monitoreo de ",
+    "titleEn": "Tutorial ",
     "titleAccent": "tutoriales",
     "titleAccentEn": "monitoring",
     "subtitle": "De un onboarding a ciegas a una adopción con seguimiento",
@@ -429,12 +429,12 @@
   },
   "cta": {
     "question": "Siguiente caso: Centro de ayuda y onboarding",
-    "questionEn": "Next case: Help Center & Onboarding",
+    "questionEn": "Next case: Help center & onboarding",
     "description": "Centro de ayuda contextual con 49 tutoriales dentro de la plataforma",
     "descriptionEn": "Contextual help center with 49 tutorials inside the platform",
     "buttonLabel": "Ver siguiente proyecto",
     "buttonLabelEn": "See next project",
     "buttonHref": "/dt-help-center"
   },
-  "titleEn": "Tutorial Monitoring"
+  "titleEn": "Tutorial monitoring"
 }

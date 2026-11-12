@@ -6,8 +6,8 @@
   "subtitle": "IA · Logística · Móvil",
   "subtitleEn": "AI · Logistics · Mobile",
   "hero": {
-    "tagline": "DT GLOBAL · APP MÓVIL · 2024",
-    "taglineEn": "DT GLOBAL · MOBILE APP · 2024",
+    "tagline": "DT GLOBAL · MÓVIL · 2024",
+    "taglineEn": "DT GLOBAL · MOBILE · 2024",
     "title": "Driver AI",
     "titleEn": "Driver AI",
     "titleAccent": "",
@@ -429,7 +429,7 @@
       {
         "number": "02",
         "title": "Resumen de parada",
-        "titleEn": "Stop Summary",
+        "titleEn": "Stop summary",
         "description": "GPT-4o combina acceso, estacionamiento y condición especial del pedido en 3 puntos fáciles de escanear. Si falla, usa Address Intelligence como respaldo.",
         "descriptionEn": "GPT-4o combines access, parking and special order condition into 3 scannable bullets. If it fails, uses Address Intelligence as fallback."
       },
@@ -566,8 +566,8 @@
     ]
   },
   "cta": {
-    "question": "Siguiente caso: On-Demand Routing",
-    "questionEn": "Next case: On-Demand Routing",
+    "question": "Siguiente caso: On-demand routing",
+    "questionEn": "Next case: On-demand routing",
     "description": "Sistema de asignación manual y automática en tiempo real",
     "descriptionEn": "Real-time manual and automatic assignment system",
     "buttonLabel": "Ver siguiente proyecto",

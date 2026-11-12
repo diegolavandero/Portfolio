@@ -12,7 +12,7 @@
     "eyebrow": "DESTACADO · DT LASTMILE · ESCRITORIO · 2026",
     "eyebrowEn": "FEATURED · DT LASTMILE · DESKTOP · 2026",
     "title": "Sistema de ruteo unificado",
-    "titleEn": "Unified Routing System",
+    "titleEn": "Unified routing system",
     "subtitle": "Asistente híbrido y consola para logística compleja",
     "subtitleEn": "Hybrid wizard and console for complex logistics",
     "metric": "32%",
@@ -29,7 +29,7 @@
       "eyebrow": "DT LASTMILE · ESCRITORIO · 2026",
       "eyebrowEn": "DT LASTMILE · DESKTOP · 2026",
       "title": "Monitoreo de tutoriales",
-      "titleEn": "Tutorial Monitoring",
+      "titleEn": "Tutorial monitoring",
       "subtitle": "Panel para seguir el entrenamiento de cada equipo en la plataforma",
       "subtitleEn": "Admin panel to track each team's platform training",
       "slug": "dt-tutorial-monitoring",
@@ -41,21 +41,6 @@
           "value": "78%",
           "label": "adopción semanal",
           "labelEn": "weekly adoption"
-        },
-        {
-          "value": "60%",
-          "label": "detección de rezago más rápida",
-          "labelEn": "faster lag detection"
-        },
-        {
-          "value": "65%",
-          "label": "filtros y vistas",
-          "labelEn": "filters and views"
-        },
-        {
-          "value": "84%",
-          "label": "seguimiento activo",
-          "labelEn": "active follow-up"
         }
       ],
       "prototype": true
@@ -64,7 +49,7 @@
       "eyebrow": "DT LASTMILE · ESCRITORIO · 2026",
       "eyebrowEn": "DT LASTMILE · DESKTOP · 2026",
       "title": "Centro de ayuda y onboarding",
-      "titleEn": "Help Center & Onboarding",
+      "titleEn": "Help center & onboarding",
       "subtitle": "Centro de ayuda contextual con 49 tutoriales dentro de la plataforma",
       "subtitleEn": "Contextual help center with 49 tutorials inside the platform",
       "slug": "dt-help-center",
@@ -80,7 +65,7 @@
       "eyebrow": "SAAS B2B2C · ESCRITORIO · 2025",
       "eyebrowEn": "B2B2C SAAS · DESKTOP · 2025",
       "title": "Sistema de captura de leads en tiempo real",
-      "titleEn": "Real-Time Lead Capture System",
+      "titleEn": "Real-time lead capture system",
       "subtitle": "Plataforma de widget de chat pre-venta configurable",
       "subtitleEn": "Configurable pre-sales chat widget platform",
       "metric": "40%",
@@ -94,7 +79,7 @@
       "eyebrow": "FALABELLA · MÓVIL · 2025",
       "eyebrowEn": "FALABELLA · MOBILE · 2025",
       "title": "Piso Ideal · Falabella",
-      "titleEn": "Ideal Floor · Falabella",
+      "titleEn": "Ideal floor · Falabella",
       "subtitle": "Asistente de compra con recomendación por IA para categoría pisos",
       "subtitleEn": "AI-powered purchase assistant for flooring category",
       "metric": "18%",
@@ -122,8 +107,8 @@
     {
       "eyebrow": "QUICKCOMMERCE · ESCRITORIO · 2023",
       "eyebrowEn": "QUICKCOMMERCE · DESKTOP · 2023",
-      "title": "On-Demand Routing",
-      "titleEn": "On-Demand Routing",
+      "title": "On-demand routing",
+      "titleEn": "On-demand routing",
       "subtitle": "Sistema de asignación manual y automática en tiempo real",
       "subtitleEn": "Real-time manual and automatic assignment system",
       "metric": "38%",
@@ -137,7 +122,7 @@
       "eyebrow": "DT GLOBAL · MÓVIL · 2023",
       "eyebrowEn": "DT GLOBAL · MOBILE · 2023",
       "title": "Validación de carga pre-ruta",
-      "titleEn": "Pre-Route Load Validation",
+      "titleEn": "Pre-route load validation",
       "subtitle": "Sistema de verificación pre-ruta",
       "subtitleEn": "Pre-route verification system",
       "metric": "45%",
@@ -152,7 +137,7 @@
       "eyebrow": "DT GLOBAL · ESCRITORIO · 2024",
       "eyebrowEn": "DT GLOBAL · DESKTOP · 2024",
       "title": "Reportes asincrónicos",
-      "titleEn": "Asynchronous Reports",
+      "titleEn": "Asynchronous reports",
       "subtitle": "Procesamiento de datos sin bloqueos",
       "subtitleEn": "Non-blocking data processing",
       "metric": "70%",
@@ -165,8 +150,8 @@
     {
       "eyebrow": "DISPATCHTRACK · WEB Y MÓVIL · 2024–2026",
       "eyebrowEn": "DISPATCHTRACK · WEB & MOBILE · 2024–2026",
-      "title": "DispatchTrack Design System",
-      "titleEn": "DispatchTrack Design System",
+      "title": "DispatchTrack design system",
+      "titleEn": "DispatchTrack design system",
       "subtitle": "Sistema de componentes, tokens y patrones para los productos LastMile",
       "subtitleEn": "Component library, tokens and patterns for LastMile products",
       "slug": "design-system",

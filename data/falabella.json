@@ -4,10 +4,10 @@
   "title": "Piso Ideal · Falabella",
   "subtitle": "Copiloto de compra que arma el proyecto de piso completo, con precio final antes del carro",
   "hero": {
-    "tagline": "E-COMMERCE B2C · MEJORAMIENTO DEL HOGAR · MÓVIL · 2025",
-    "taglineEn": "B2C E-COMMERCE · HOME IMPROVEMENT · MOBILE · 2025",
+    "tagline": "FALABELLA · MÓVIL · 2025",
+    "taglineEn": "FALABELLA · MOBILE · 2025",
     "title": "Piso Ideal ",
-    "titleEn": "Ideal Floor ",
+    "titleEn": "Ideal floor ",
     "description": "Un copiloto que arma el proyecto completo (cantidad, piso y kit de instalación) según tu espacio y tu uso, y muestra el precio final antes del carro.",
     "descriptionEn": "A copilot that builds the complete project (quantity, floor and installation kit) around your space and how you use it, and shows the final price before the cart.",
     "titleAccent": "· Falabella",
@@ -334,7 +334,7 @@
         "problem": "Llega a la ficha de piso sin saber cuánto necesita ni cuánto costará todo.",
         "problemEn": "Arrives at the flooring page without knowing how much they need or what everything will cost.",
         "solution": "CTA “Piso Ideal” que inicia el asistente.",
-        "solutionEn": "“Ideal Floor” CTA that starts the assistant."
+        "solutionEn": "“Ideal floor” CTA that starts the assistant."
       },
       {
         "id": 2,
@@ -605,5 +605,5 @@
     "buttonLabelEn": "See next project",
     "buttonHref": "/driver-ai"
   },
-  "titleEn": "Ideal Floor · Falabella"
+  "titleEn": "Ideal floor · Falabella"
 }

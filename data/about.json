@@ -16,8 +16,8 @@
   "achievementsTitleEn": "Key achievements",
   "achievements": [
     {
-      "es": "Construí el DispatchTrack Design System desde cero: biblioteca de componentes, arquitectura de tokens y documentación. Hoy es la base compartida entre web y móvil, y producto e ingeniería lo usan como fuente única de verdad.",
-      "en": "Built the DispatchTrack Design System from scratch: component library, token architecture, and documentation. Now the shared foundation across web and mobile, used by product and engineering as a single source of truth."
+      "es": "Construí el DispatchTrack design system desde cero: biblioteca de componentes, arquitectura de tokens y documentación. Hoy es la base compartida entre web y móvil, y producto e ingeniería lo usan como fuente única de verdad.",
+      "en": "Built the DispatchTrack design system from scratch: component library, token architecture, and documentation. Now the shared foundation across web and mobile, used by product and engineering as a single source of truth."
     },
     {
       "es": "Pasé de entregar diseños en Figma a prototipar en código con Claude, Cursor, v0, React y TailwindCSS: interfaces que funcionan, no maquetas. Eso acortó el ciclo entre diseño e ingeniería y permitió probar cada concepto con usuarios casi de inmediato.",
@@ -300,7 +300,7 @@
       "period": "2023–Presente",
       "periodEn": "2023–Present",
       "description": "Responsable de UX en LastMile y PlannerPro, plataformas de ruteo asistidas por IA que cubren toda la operación: app móvil para conductores, herramientas de planificación de escritorio y paneles de despacho. Descubrimiento basado en jobs to be done (JTBD), con pruebas A/B para validar cambios antes del despliegue. Lideré de punta a punta el Sistema de ruteo unificado: 6 entrevistas cualitativas con jefes de planificación y un modelo híbrido de asistente y consola que redujo el tiempo de planificación un 32% y los errores críticos un 78%. Rediseñé la app móvil de punta a punta con análisis de sesiones en Hotjar y entrevistas con conductores y gerentes de logística. Diseñé funcionalidades conversacionales y basadas en agentes donde el modelo de lenguaje es parte del sistema.",
-      "descriptionEn": "Owned UX across LastMile and PlannerPro, AI-assisted routing platforms covering the full operation: driver mobile app, desktop planning tools and dispatch dashboards. Discovery grounded in jobs to be done (JTBD), with A/B testing to validate changes before rollout. Led the Unified Routing System end-to-end: 6 qualitative interviews with planning managers and a hybrid wizard + console model that cut planning time by 32% and critical errors by 78%. Ran the mobile app redesign end-to-end with Hotjar session analysis and interviews with drivers and logistics managers. Designed conversational and agent-based features where the LLM is part of the system."
+      "descriptionEn": "Owned UX across LastMile and PlannerPro, AI-assisted routing platforms covering the full operation: driver mobile app, desktop planning tools and dispatch dashboards. Discovery grounded in jobs to be done (JTBD), with A/B testing to validate changes before rollout. Led the Unified routing system end-to-end: 6 qualitative interviews with planning managers and a hybrid wizard + console model that cut planning time by 32% and critical errors by 78%. Ran the mobile app redesign end-to-end with Hotjar session analysis and interviews with drivers and logistics managers. Designed conversational and agent-based features where the LLM is part of the system."
     },
     {
       "company": "Beetrack",

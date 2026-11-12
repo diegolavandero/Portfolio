@@ -398,7 +398,7 @@ Vamos a Sesión 04. Arranca leyendo el frame 1:2189 del Figma (Lead Capture) usa
 ## 🧭 Normas editoriales y técnicas (auditoría 2026-11-12)
 
 - **Metadatos por ruta:** después de cambiar `index.html` o el título/descripción de un caso, correr `python3 scripts/build_pages.py`. Genera `pages/<slug>.html` (meta propio para LinkedIn/Slack) y `sitemap.xml`; `vercel.json` enruta `/<slug>` a esos archivos. Rutas de assets en `index.html` siempre absolutas (`/styles.css`, `/js/...`).
-- **Mayúsculas:** sentence case en headings y etiquetas, en EN y ES. Nombres de proyecto: Title Case en EN, sentence case en ES (salvo nombres propios: Piso Ideal, Driver AI, On-Demand Routing).
+- **Mayúsculas:** sentence case en headings y etiquetas, en EN y ES. Nombres de proyecto y títulos: sentence case en EN y ES, siempre (solo mayúscula inicial; excepto nombres propios: DispatchTrack, LastMile, Falabella, Driver AI). El antetítulo (eyebrow) de la tarjeta del home y el tagline del hero de cada caso son idénticos.
 - **ES 100% español:** en inglés solo marcas, nombres de producto (DispatchTrack, LastMile, Address Intelligence) y siglas (UX, UI, KPI, NPS, A/B). Glosario: operador (no operario), despachador (no dispatcher), asistente (no wizard), panel lateral (no sidebar), vista previa (no preview).
 - **Signos:** comillas curvas “…”, × en multiplicadores, metas en positivo (“32% menos tiempo”, nunca “-32%”), decimales con coma en ES.
 - **Personas:** sin fotos de stock; el render usa iniciales.

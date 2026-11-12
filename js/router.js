@@ -84,7 +84,6 @@ const Router = {
         <article class="project-card" onclick="${p.externalUrl ? `window.open('${p.externalUrl}','_blank')` : `Router.navigate('/${p.slug}')`}">
           <div class="project-info">
             <p class="card-eyebrow" data-es="${p.eyebrow}" data-en="${p.eyebrowEn}">${p.eyebrow}</p>
-            ${p.prototype ? `<p class="prototype-chip" data-es="Prototipo funcional" data-en="Working prototype">Prototipo funcional</p>` : ''}
             <h3 class="project-title" data-es="${p.title}" data-en="${p.titleEn}">${p.title}</h3>
             <p class="project-subtitle" data-es="${p.subtitle}" data-en="${p.subtitleEn}">${p.subtitle}</p>
             ${(p.metrics || (p.metric ? [{ value: p.metric, label: p.metricLabel, labelEn: p.metricLabelEn }] : [])).length ? `<div class="metric-pills">${(p.metrics || [{ value: p.metric, label: p.metricLabel, labelEn: p.metricLabelEn }]).map(m => `<div class="metric-pill">
