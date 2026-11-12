@@ -3621,3 +3621,12 @@ a.brand { color: inherit; text-decoration: none; }
 
 .device-mobile { max-width: 100%; box-sizing: border-box; }
 
+
+/* Baseline-only insights card (stats without quotes): three stats in a row */
+.insights-card:not(:has(.quote-box)) .insights-eyebrow { display: none; }
+.insights-card:not(:has(.quote-box)) .insights-cols { grid-template-columns: 1fr; }
+.insights-card:not(:has(.quote-box)) .stats-stack {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+}

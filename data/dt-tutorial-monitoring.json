@@ -193,56 +193,94 @@
     "objectives": [
       {
         "number": "01",
-        "title": "Visibilidad por usuario",
-        "titleEn": "Per-user visibility",
-        "description": "Permitir al administrador ver quién completó el onboarding y cuánto ha avanzado cada persona de su cuenta",
-        "descriptionEn": "Let admins see who completed the onboarding and how far each person in their account has progressed"
+        "title": "Impulsar la adopción semanal",
+        "titleEn": "Drive weekly adoption",
+        "meta": "Meta: 65% o más de administradores activos por semana",
+        "metaEn": "Goal: 65% or more weekly active admins",
+        "description": "Reemplazar las consultas a soporte por un hábito de monitoreo propio, dentro de su rutina semanal",
+        "descriptionEn": "Replace support inquiries with a self-serve monitoring habit within their weekly routine"
       },
       {
         "number": "02",
-        "title": "Visión agregada de la cuenta",
-        "titleEn": "Account-level overview",
-        "description": "Resumir el estado del equipo con KPIs claros: estado del onboarding y clasificación de avance",
-        "descriptionEn": "Summarize the team's status with clear KPIs: onboarding status and progress classification"
+        "title": "Detectar el rezago más rápido",
+        "titleEn": "Detect lag faster",
+        "meta": "Meta: 50% más rápido (menos de 60 h)",
+        "metaEn": "Goal: 50% faster (under 60 h)",
+        "description": "Mostrar a tiempo a los operadores inactivos o en riesgo con KPIs de la cuenta y clasificación por estado",
+        "descriptionEn": "Surface inactive and at-risk operators early with account KPIs and status classification"
       },
       {
         "number": "03",
-        "title": "Monitoreo del lado operador",
-        "titleEn": "Operator-side monitoring",
-        "description": "Extender la lógica de monitoreo jerárquico que ya usaban con los conductores a los operadores logísticos",
-        "descriptionEn": "Extend the hierarchical monitoring logic they already used with drivers to logistics operators"
+        "title": "Facilitar el diagnóstico",
+        "titleEn": "Enable diagnosis",
+        "meta": "Meta: 50% o más de las sesiones con filtros o vista Por tutorial",
+        "metaEn": "Goal: 50% or more of sessions using filters or the By tutorial view",
+        "description": "Dar detalle por usuario y por tutorial para encontrar dónde se traba cada persona",
+        "descriptionEn": "Give per-user and per-tutorial detail to find where each person gets stuck"
+      },
+      {
+        "number": "04",
+        "title": "Permitir un seguimiento accionable",
+        "titleEn": "Enable actionable follow-up",
+        "meta": "Meta: 70% o más con seguimiento en 72 h",
+        "metaEn": "Goal: 70% or more followed up within 72 h",
+        "description": "Permitir intervenir antes de que haya rotación o errores operacionales",
+        "descriptionEn": "Let admins step in before turnover or operational errors occur"
       }
-    ]
+    ],
+    "objectivesTitle": "Objetivos medibles",
+    "objectivesTitleEn": "Measurable objectives"
   },
   "uxResearch": {
     "title": "Investigación",
     "titleEn": "Research",
-    "subtitle": "Entrevistas con administradores para entender el problema y Hotjar para medir cómo usaron el panel",
-    "subtitleEn": "Interviews with admins to understand the problem, and Hotjar to measure how they used the panel",
+    "subtitle": "Entrevistas y auditoría de tickets para la línea base, un prototipo funcional y un piloto de 60 días",
+    "subtitleEn": "Interviews and a ticket audit for the baseline, a working prototype and a 60-day pilot",
     "methodCards": [
       {
         "name": "Entrevistas con administradores",
         "nameEn": "Admin interviews",
-        "description": "Conversamos con administradores de cuentas, gerentes de logística de empresas clientes. Describieron el onboarding como precario, con un tiempo de adopción alto, y no podían saber quién entraba realmente al centro de ayuda.",
-        "descriptionEn": "We talked to account admins, logistics managers at client companies. They described the onboarding as precarious, with a long adoption time, and couldn't tell who actually used the Help Center.",
-        "finding": "Ya monitoreaban a sus conductores (órdenes entregadas, cumplimiento de tiempos, evaluaciones). Faltaba extender esa lógica a los operadores.",
-        "findingEn": "They already monitored drivers (delivered orders, on-time compliance, evaluations). That logic needed extending to operators."
+        "description": "Entrevisté a 5 jefes de operaciones y administradores de cuentas de empresas de logística, y audité 90 días de tickets de soporte.",
+        "descriptionEn": "I interviewed 5 heads of operations and account admins at logistics companies, and audited 90 days of support tickets.",
+        "finding": "Ya supervisaban a sus conductores con KPIs jerárquicos. Extender ese patrón evitó enseñar un modelo mental nuevo.",
+        "findingEn": "They already supervised drivers with hierarchical KPIs. Extending that pattern avoided teaching a new mental model."
       },
       {
-        "name": "Hotjar en el piloto",
-        "nameEn": "Hotjar in the pilot",
-        "description": "Con heatmaps y grabaciones medimos cómo usaban el panel los administradores de las cuentas piloto durante las primeras semanas.",
-        "descriptionEn": "With heatmaps and recordings we measured how admins in the pilot accounts used the panel during the first weeks.",
-        "finding": "Escanean primero los KPIs y luego bajan a la tabla. Hicieron clics repetidos sobre los operadores rezagados, buscando enviarles un recordatorio.",
-        "findingEn": "They scan the KPIs first, then go down to the table. They rage-clicked on lagging operators, trying to send them a reminder."
+        "name": "Prototipo funcional",
+        "nameEn": "Working prototype",
+        "description": "Con Claude y Cursor armé un prototipo en React con filtros y orden en vivo, vistas Resumen y Por tutorial, y estados por rol.",
+        "descriptionEn": "With Claude and Cursor I built a React prototype with live filters and sorting, Summary and By tutorial views, and role-based states.",
+        "finding": "Se validó la revelación progresiva. Los usuarios sin permiso entendieron el límite con el estado sin acceso.",
+        "findingEn": "Progressive disclosure was validated. Users without access understood the boundary through the no-access state."
       },
       {
-        "name": "Cómo medimos el impacto",
-        "nameEn": "How we measured impact",
-        "description": "Durante 60 días, en 5 cuentas piloto, combinamos eventos de analítica de producto con Hotjar. La línea base salió de las entrevistas y una revisión de tickets de soporte.",
-        "descriptionEn": "For 60 days, across 5 pilot accounts, we combined product analytics events with Hotjar. The baseline came from the interviews and a review of support tickets.",
-        "finding": "Adopción: admins activos por semana ÷ admins del piloto. Detección: tiempo desde que se crea un operador hasta la primera acción del admin. Filtros: sesiones con filtros o vista Por tutorial ÷ sesiones totales. Seguimiento: rezagados atendidos en 72 h ÷ rezagados totales.",
-        "findingEn": "Adoption: weekly active admins ÷ pilot admins. Detection: time from an operator's creation to the admin's first action. Filters: sessions with filters or the By tutorial view ÷ total sessions. Follow-up: lagging operators addressed within 72 h ÷ all lagging operators."
+        "name": "Piloto de 60 días",
+        "nameEn": "60-day pilot",
+        "description": "5 cuentas, 18 administradores y 310 operadores. Combiné eventos de producto con Hotjar (mapas de calor y grabaciones).",
+        "descriptionEn": "5 accounts, 18 admins and 310 operators. I combined product events with Hotjar (heatmaps and recordings).",
+        "finding": "Escanean de arriba hacia abajo: KPIs, distribución y tabla. Hicieron clics repetidos sobre rezagados para enviarles un recordatorio.",
+        "findingEn": "They scan top-down: KPIs, distribution and table. They rage-clicked on lagging operators to send them a reminder."
+      }
+    ],
+    "insightsTitle": "Línea base · entrevistas y auditoría de tickets",
+    "insightsTitleEn": "Baseline · interviews and ticket audit",
+    "quantitativeLabel": "Entrevistas y auditoría de tickets",
+    "quantitativeLabelEn": "Interviews and ticket audit",
+    "stats": [
+      {
+        "value": "120 h",
+        "description": "(5 días) hasta que un administrador notaba que un operador nuevo no había empezado",
+        "descriptionEn": "(5 days) for an admin to notice a new operator hadn't started"
+      },
+      {
+        "value": "22%",
+        "description": "de los rezagados recibió seguimiento en sus primeras 72 h",
+        "descriptionEn": "of lagging operators got follow-up in their first 72 h"
+      },
+      {
+        "value": "34%",
+        "description": "de los tickets de onboarding eran administradores preguntando si un operador terminó su capacitación",
+        "descriptionEn": "of onboarding tickets were admins asking whether an operator finished training"
       }
     ]
   },
@@ -362,42 +400,40 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Vista del administrador, medida en 5 cuentas piloto durante los primeros 60 días.",
-    "subtitleEn": "Admin view, measured across 5 pilot accounts over the first 60 days.",
-    "impactTitle": "Impacto medido",
-    "impactTitleEn": "Measured impact",
+    "subtitle": "Vista del administrador en el piloto de 60 días: 5 cuentas y 18 administradores",
+    "subtitleEn": "Admin view in the 60-day pilot: 5 accounts and 18 admins",
     "impact": [
       {
         "icon": "👥",
         "label": "Adopción semanal",
         "labelEn": "Weekly adoption",
         "metric": "78%",
-        "description": "de los administradores entró al módulo al menos una vez por semana.",
-        "descriptionEn": "of admins opened the module at least once a week."
+        "description": "14 de 18 administradores entraron al menos una vez por semana.",
+        "descriptionEn": "14 of 18 admins opened it at least once a week."
       },
       {
         "icon": "⏱️",
-        "label": "Detección de rezago más rápida",
-        "labelEn": "Faster lag detection",
+        "label": "Detección más rápida",
+        "labelEn": "Faster detection",
         "metric": "60%",
-        "description": "De unos 5 días a menos de 48 horas.",
-        "descriptionEn": "From about 5 days to under 48 hours."
+        "description": "De 120 h (5 días) a 48 h hasta la primera acción del administrador.",
+        "descriptionEn": "From 120 h (5 days) to 48 h until the admin's first action."
       },
       {
         "icon": "🔎",
-        "label": "Filtros y vistas",
-        "labelEn": "Filters and views",
+        "label": "Uso de filtros y vistas",
+        "labelEn": "Filter and view usage",
         "metric": "65%",
-        "description": "de las sesiones usó filtros por estado o la vista Por tutorial.",
-        "descriptionEn": "of sessions used status filters or the By tutorial view."
+        "description": "de las sesiones fue más allá de los KPIs, con filtros o la vista Por tutorial.",
+        "descriptionEn": "of sessions went beyond the KPIs, using filters or the By tutorial view."
       },
       {
         "icon": "🤝",
         "label": "Seguimiento activo",
         "labelEn": "Active follow-up",
         "metric": "84%",
-        "description": "de los operadores rezagados recibió seguimiento en 3 días.",
-        "descriptionEn": "of lagging operators got follow-up within 3 days."
+        "description": "de los rezagados atendidos en 72 h (antes 22%). Tickets de consulta de estado: 71% menos.",
+        "descriptionEn": "of lagging operators addressed within 72 h (up from 22%). Status-check tickets down 71%."
       }
     ],
     "learningsTitle": "Aprendizajes clave",
@@ -422,8 +458,8 @@
       {
         "title": "Recordatorios a usuarios rezagados",
         "titleEn": "Reminders for lagging users",
-        "description": "Los clics repetidos sobre usuarios rezagados mostraron que los admins quieren avisarles desde el propio panel, en lugar de gestionarlo por fuera.",
-        "descriptionEn": "Rage clicks on lagging users showed admins want to nudge them from the panel itself, instead of handling it outside."
+        "description": "El 24% de las sesiones tuvo clics repetidos sobre rezagados: los administradores quieren avisarles desde el panel, no por correo o WhatsApp.",
+        "descriptionEn": "24% of sessions had rage clicks on lagging operators: admins want to nudge them from the panel, not by email or WhatsApp."
       }
     ]
   },
