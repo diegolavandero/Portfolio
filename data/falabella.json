@@ -6,10 +6,12 @@
   "hero": {
     "tagline": "E-COMMERCE B2C · MEJORAMIENTO DEL HOGAR · MÓVIL · 2025",
     "taglineEn": "B2C E-COMMERCE · HOME IMPROVEMENT · MOBILE · 2025",
-    "title": "Piso Ideal",
-    "titleEn": "Ideal Floor",
+    "title": "Piso Ideal ",
+    "titleEn": "Ideal Floor ",
     "description": "Un copiloto que arma el proyecto completo (cantidad, piso y kit de instalación) según tu espacio y tu uso, y muestra el precio final antes del carro.",
-    "descriptionEn": "A copilot that builds the complete project (quantity, floor and installation kit) around your space and how you use it, and shows the final price before the cart."
+    "descriptionEn": "A copilot that builds the complete project (quantity, floor and installation kit) around your space and how you use it, and shows the final price before the cart.",
+    "titleAccent": "· Falabella",
+    "titleAccentEn": "· Falabella"
   },
   "projectSpecs": [
     {
@@ -604,5 +606,6 @@
     "buttonLabel": "Ver siguiente proyecto",
     "buttonLabelEn": "See next project",
     "buttonHref": "/driver-ai"
-  }
+  },
+  "titleEn": "Ideal Floor · Falabella"
 }

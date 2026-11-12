@@ -48,13 +48,13 @@
         },
         {
           "value": "65%",
-          "label": "sesiones con filtros o vistas",
-          "labelEn": "sessions using filters or views"
+          "label": "filtros y vistas",
+          "labelEn": "filters and views"
         },
         {
           "value": "84%",
-          "label": "seguimiento en 3 días",
-          "labelEn": "follow-up within 3 days"
+          "label": "seguimiento activo",
+          "labelEn": "active follow-up"
         }
       ]
     },
@@ -81,7 +81,7 @@
       "subtitleEn": "Configurable pre-sales chat widget platform",
       "metric": "40%",
       "metricLabel": "menos abandono en contacto",
-      "metricLabelEn": "less contact drop-off",
+      "metricLabelEn": "less contact abandonment",
       "slug": "lead-capture",
       "device": "desktop",
       "image": "data/images/lead-capture.webp"
@@ -94,8 +94,8 @@
       "subtitle": "Asistente de compra con recomendación por IA para categoría pisos",
       "subtitleEn": "AI-powered purchase assistant for flooring category",
       "metric": "18%",
-      "metricLabel": "mayor conversión de categoría",
-      "metricLabelEn": "higher category conversion",
+      "metricLabel": "mayor conversión",
+      "metricLabelEn": "higher conversion",
       "slug": "falabella",
       "device": "mobile",
       "image": "data/images/falabella.webp?v=2"
@@ -131,8 +131,8 @@
     {
       "eyebrow": "DT GLOBAL APP MÓVIL · 2023",
       "eyebrowEn": "DT GLOBAL MOBILE APP · 2023",
-      "title": "Validación de Carga",
-      "titleEn": "Load Validation",
+      "title": "Validación de Carga Pre-Ruta",
+      "titleEn": "Pre-Route Load Validation",
       "subtitle": "Sistema de verificación pre-ruta",
       "subtitleEn": "Pre-route verification system",
       "metric": "45%",

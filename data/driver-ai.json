@@ -8,12 +8,12 @@
   "hero": {
     "tagline": "DT GLOBAL APP MÓVIL · 2024",
     "taglineEn": "DT GLOBAL MOBILE APP · 2024",
-    "title": "Driver AI ",
-    "titleEn": "Driver AI ",
-    "titleAccent": "Inteligencia de Ubicación para Última Milla",
-    "titleAccentEn": "Location Intelligence for Last Mile",
-    "subtitle": "De incertidumbre a contexto predictivo",
-    "subtitleEn": "From uncertainty to predictive context",
+    "title": "Driver AI",
+    "titleEn": "Driver AI",
+    "titleAccent": "",
+    "titleAccentEn": "",
+    "subtitle": "Inteligencia de ubicación para última milla: de incertidumbre a contexto predictivo",
+    "subtitleEn": "Location intelligence for last mile: from uncertainty to predictive context",
     "description": "Los conductores de última milla hacen 15–35 entregas diarias con solo dirección y número de pedido, sin contexto de acceso. Driver AI usa GPT-4o para generar, antes de cada parada, dónde estacionar, cómo entrar y códigos de puerta.",
     "descriptionEn": "Last-mile drivers make 15–35 deliveries daily with just address and order number, no access context. Driver AI uses GPT-4o to generate, before each stop, where to park, how to enter, and door codes."
   },
