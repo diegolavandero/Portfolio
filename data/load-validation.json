@@ -66,41 +66,6 @@
     "placeholder": "Diagrama de flujo: Login → Validación de carga → Pre-ruta",
     "placeholderEn": "Flow diagram: Login → Load Validation → Pre-route"
   },
-  "whyItMatters": {
-    "title": "Por qué importa",
-    "titleEn": "Why it matters",
-    "subtitle": "Antes de este sistema, validar una carga tomaba 40 minutos de papeleo manual. El 12% de las cargas salía con discrepancias detectadas solo en destino.",
-    "subtitleEn": "Before this system, validating a load took 40 minutes of manual paperwork. 12% of loads left with discrepancies detected only at destination.",
-    "items": [
-      {
-        "icon": "⏱️",
-        "label": "Menos tiempo de validación",
-        "labelEn": "Shorter validation time",
-        "metric": "40 min → 14 min",
-        "description": "Reducción de tiempo promedio de validación por conductor por ruta",
-        "descriptionEn": "Average validation time reduction per driver per route",
-        "metricEn": "40 min → 14 min"
-      },
-      {
-        "icon": "🎯",
-        "label": "Errores detectados tarde",
-        "labelEn": "Errors caught late",
-        "metric": "34%",
-        "description": "de los errores de carga se descubría después de salir de bodega. Con la validación previa a la salida, las discrepancias en destino bajaron 45% en el piloto.",
-        "descriptionEn": "of load errors were discovered after leaving the warehouse. With pre-departure validation, destination discrepancies dropped 45% in the pilot.",
-        "metricEn": "34%"
-      },
-      {
-        "icon": "📋",
-        "label": "Menos cargas con documentación incompleta",
-        "labelEn": "Fewer loads with incomplete docs",
-        "metric": "8,7% → 0,3%",
-        "description": "de las cargas salían sin documentación completa.",
-        "descriptionEn": "of loads were leaving without complete documentation.",
-        "metricEn": "8.7% → 0.3%"
-      }
-    ]
-  },
   "problemAndObjectives": {
     "title": "Problema y objetivos",
     "titleEn": "Problem and objectives",

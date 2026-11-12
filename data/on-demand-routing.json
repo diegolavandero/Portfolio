@@ -67,41 +67,6 @@
     "device": "desktop",
     "src": "data/images/on-demand-routing-hero.webp"
   },
-  "whyItMatters": {
-    "title": "Por qué importa",
-    "titleEn": "Why it matters",
-    "subtitle": "Asignar más rápido sin perder el control del operador",
-    "subtitleEn": "Faster assignment without taking control away from the operator",
-    "items": [
-      {
-        "icon": "💼",
-        "label": "Impacto en negocio",
-        "labelEn": "Business impact",
-        "metric": "Eficiencia",
-        "description": "Eficiencia en asignación en tiempo real con capacidad de escalar a operaciones de alta demanda",
-        "descriptionEn": "Real-time assignment efficiency with the ability to scale to high-demand operations",
-        "metricEn": "Efficiency"
-      },
-      {
-        "icon": "👤",
-        "label": "Impacto en usuario",
-        "labelEn": "User impact",
-        "metric": "Control",
-        "description": "Control y visibilidad sobre la automatización, reduciendo fricción en decisiones críticas",
-        "descriptionEn": "Control and visibility over automation, reducing friction in critical decisions",
-        "metricEn": "Control"
-      },
-      {
-        "icon": "🔧",
-        "label": "Impacto en sistema",
-        "labelEn": "System impact",
-        "metric": "Escala",
-        "description": "Base para optimización híbrida escalable y adaptable a diferentes contextos operacionales",
-        "descriptionEn": "Foundation for scalable hybrid optimization adaptable to different operational contexts",
-        "metricEn": "Scale"
-      }
-    ]
-  },
   "problemAndObjectives": {
     "title": "Problema y objetivos",
     "titleEn": "Problem and objectives",

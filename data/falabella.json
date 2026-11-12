@@ -57,38 +57,6 @@
       "valueEn": "Claude · Figma MCP"
     }
   ],
-  "whyItMatters": {
-    "title": "Por qué importa",
-    "titleEn": "Why it matters",
-    "subtitle": "El embudo de pisos perdía a la mayoría de sus compradores antes del pago. El objetivo: subir la conversión un 20%.",
-    "subtitleEn": "The flooring funnel lost most of its buyers before payment. The goal: lift conversion by 20%.",
-    "items": [
-      {
-        "metric": "70%",
-        "metricEn": "70%",
-        "label": "abandono en el embudo de compra",
-        "labelEn": "purchase funnel abandonment",
-        "description": "Parte de este abandono se debía a fricciones propias de pisos.",
-        "descriptionEn": "Part of it came from flooring-specific friction."
-      },
-      {
-        "metric": "20%",
-        "metricEn": "20%",
-        "label": "Meta de aumento en conversión",
-        "labelEn": "Conversion lift goal",
-        "description": "De 30% a 36% de compradores que llegan a la etapa de pago y completan. Equivale a bajar el abandono de 70% a 64%.",
-        "descriptionEn": "From 30% to 36% of shoppers who reach the payment stage and complete. Equivalent to cutting abandonment from 70% to 64%."
-      },
-      {
-        "metric": "4",
-        "metricEn": "4",
-        "label": "puntos de fricción antes del pago",
-        "labelEn": "friction points before payment",
-        "description": "Stock online, aptitud de uso, cross-sell sin relación y un precio que crece en el carro.",
-        "descriptionEn": "Online stock, suitability, unrelated cross-sell and a price that grows in the cart."
-      }
-    ]
-  },
   "problemAndObjectives": {
     "title": "Problema y objetivos",
     "titleEn": "Problem and objectives",

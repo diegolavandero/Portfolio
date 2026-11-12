@@ -67,41 +67,6 @@
     "placeholderEn": "Driver AI user flow · Address Intelligence and Contextual Modal",
     "device": "mobile"
   },
-  "whyItMatters": {
-    "title": "Por qué importa",
-    "titleEn": "Why it matters",
-    "subtitle": "Lo que costaba llegar a un edificio sin contexto",
-    "subtitleEn": "What arriving at a building without context cost",
-    "items": [
-      {
-        "icon": "📦",
-        "label": "Entregas fallidas al primer intento",
-        "labelEn": "First-attempt failed deliveries",
-        "metric": "14%",
-        "description": "de las entregas fallaban en el primer intento en zonas de alta densidad. Cada reentrega cuesta en promedio USD 4,20.",
-        "descriptionEn": "of deliveries failed on the first attempt in high-density areas. Each re-delivery costs USD 4.20 on average.",
-        "metricEn": "14%"
-      },
-      {
-        "icon": "⏱️",
-        "label": "Tiempo perdido por parada",
-        "labelEn": "Time lost per stop",
-        "metric": "8–15 min",
-        "description": "por parada en edificios sin información de acceso ni estacionamiento.",
-        "descriptionEn": "per stop at buildings without access or parking information.",
-        "metricEn": "8–15 min"
-      },
-      {
-        "icon": "📞",
-        "label": "Llamadas al despachador",
-        "labelEn": "Calls to the dispatcher",
-        "metric": "18",
-        "description": "llamadas por despachador y turno solo para pedir información de acceso.",
-        "descriptionEn": "calls per dispatcher per shift just to ask for access information.",
-        "metricEn": "18"
-      }
-    ]
-  },
   "problemAndObjectives": {
     "title": "Problema y objetivos",
     "titleEn": "Problem and objectives",

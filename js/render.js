@@ -93,7 +93,6 @@ const Renderer = {
       if (data.projectSpecs)          html += Renderer.renderProjectSpecs(data.projectSpecs);
       if (data.roleNarrative)         html += Renderer.renderRoleNarrative(data.roleNarrative);
       if (data.heroImage)             html += Renderer.renderHeroImage(data.heroImage);
-      if (data.whyItMatters)          html += Renderer.renderWhyItMatters(data.whyItMatters);
       if (data.problemAndObjectives)  html += Renderer.renderProblemAndObjectives(data.problemAndObjectives);
       if (data.uxResearch)            html += Renderer.renderUXResearch(data.uxResearch);
       if (data.personas)              html += Renderer.renderPersonas(data.personas);

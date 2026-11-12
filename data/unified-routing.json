@@ -67,38 +67,6 @@
     "device": "desktop",
     "src": "data/images/unified-routing-hero.webp"
   },
-  "whyItMatters": {
-    "title": "Por qué importa",
-    "titleEn": "Why it matters",
-    "subtitle": "Una planificación más corta para flotas de más de 300 vehículos",
-    "subtitleEn": "Shorter planning for fleets of 300+ vehicles",
-    "items": [
-      {
-        "icon": "💼",
-        "label": "Impacto en negocio",
-        "labelEn": "Business impact",
-        "metric": "32%",
-        "description": "Reducción de tiempo de planificación con mejora en escalabilidad para flotas de 300+ vehículos",
-        "descriptionEn": "Reduction in planning time with improved scalability for fleets of 300+ vehicles"
-      },
-      {
-        "icon": "👤",
-        "label": "Impacto en usuario",
-        "labelEn": "User impact",
-        "metric": "42%",
-        "description": "Reducción de carga cognitiva y menor dependencia del soporte técnico",
-        "descriptionEn": "Reduced cognitive load and less dependency on technical support"
-      },
-      {
-        "icon": "⚙️",
-        "label": "Impacto en sistema",
-        "labelEn": "System impact",
-        "metric": "65%",
-        "description": "Reducción de funcionalidades duplicadas al integrarse con LastMile, el sistema principal de órdenes",
-        "descriptionEn": "Reduction of duplicated functionality by integrating with LastMile, the main order system"
-      }
-    ]
-  },
   "problemAndObjectives": {
     "title": "Problema y objetivos",
     "titleEn": "Problem and objectives",

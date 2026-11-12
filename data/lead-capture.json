@@ -67,40 +67,6 @@
     "placeholderEn": "Chat Widget User Flow",
     "device": "desktop"
   },
-  "whyItMatters": {
-    "title": "Por qué importa",
-    "titleEn": "Why it matters",
-    "subtitle": "Captar más contactos sin depender de formularios largos",
-    "subtitleEn": "Capturing more leads without relying on long forms",
-    "items": [
-      {
-        "icon": "💼",
-        "label": "Impacto en negocio",
-        "labelEn": "Business impact",
-        "metric": "Más leads",
-        "description": "Incremento en generación de leads calificados y reducción de fricción en contacto cliente-empresa",
-        "descriptionEn": "Increase in qualified lead generation and reduced friction in client-company contact",
-        "metricEn": "More leads"
-      },
-      {
-        "icon": "🏢",
-        "label": "Impacto en cliente",
-        "labelEn": "Client impact",
-        "metric": "Más control",
-        "description": "Mayor control sobre interacción con clientes y configuración flexible sin necesidad de desarrollo",
-        "descriptionEn": "Greater control over client interaction and flexible configuration without development",
-        "metricEn": "More control"
-      },
-      {
-        "icon": "⚙️",
-        "label": "Impacto en sistema",
-        "labelEn": "System impact",
-        "metric": "Dual",
-        "description": "Arquitectura dual con plataforma de configuración desktop y widget embebido como base para automatizaciones futuras",
-        "descriptionEn": "Dual architecture with desktop configuration platform and embedded widget as a base for future automation"
-      }
-    ]
-  },
   "problemAndObjectives": {
     "title": "Problema y objetivos",
     "titleEn": "Problem and objectives",
