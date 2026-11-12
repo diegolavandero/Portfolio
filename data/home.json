@@ -136,8 +136,8 @@
       "subtitle": "Sistema de verificación pre-ruta",
       "subtitleEn": "Pre-route verification system",
       "metric": "45%",
-      "metricLabel": "menos errores de carga",
-      "metricLabelEn": "fewer loading errors",
+      "metricLabel": "menos discrepancias en destino",
+      "metricLabelEn": "fewer destination discrepancies",
       "slug": "load-validation",
       "device": "mobile",
       "image": "data/images/load-validation.webp"
@@ -150,8 +150,8 @@
       "subtitle": "Procesamiento de datos sin bloqueos",
       "subtitleEn": "Non-blocking data processing",
       "metric": "70%",
-      "metricLabel": "menos interrupción del flujo",
-      "metricLabelEn": "less workflow interruption",
+      "metricLabel": "menos bloqueo percibido",
+      "metricLabelEn": "less perceived blocking",
       "slug": "async-reports",
       "device": "desktop",
       "image": "data/images/async-reports.webp"

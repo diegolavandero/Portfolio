@@ -82,12 +82,12 @@
       },
       {
         "icon": "🎯",
-        "label": "Errores detectados en origen",
-        "labelEn": "Errors caught at source",
-        "metric": "66% → 91%",
-        "description": "de los errores se detectan antes de salir de bodega. Antes, el 34% se descubría recién en ruta o en destino.",
-        "descriptionEn": "of errors are caught before leaving the warehouse. Before, 34% were only discovered en route or at destination.",
-        "metricEn": "66% → 91%"
+        "label": "Errores detectados tarde",
+        "labelEn": "Errors caught late",
+        "metric": "34%",
+        "description": "de los errores de carga se descubría después de salir de bodega. Con la validación previa a la salida, las discrepancias en destino bajaron 45% en el piloto.",
+        "descriptionEn": "of load errors were discovered after leaving the warehouse. With pre-departure validation, destination discrepancies dropped 45% in the pilot.",
+        "metricEn": "34%"
       },
       {
         "icon": "📋",
@@ -131,8 +131,8 @@
       },
       {
         "number": "02",
-        "description": "Reducir las discrepancias detectadas en ruta en al menos un 80%. La meta se mide con el despliegue completo, cuando se valida el 100% de las cargas.",
-        "descriptionEn": "Reduce in-route discrepancies by at least 80%. The goal is measured at full rollout, when 100% of loads are validated.",
+        "description": "Reducir las discrepancias detectadas en destino en al menos un 80%. La meta se mide con el despliegue completo, cuando se valida el 100% de las cargas.",
+        "descriptionEn": "Reduce destination discrepancies by at least 80%. The goal is measured at full rollout, when 100% of loads are validated.",
         "title": "Reducir discrepancias",
         "titleEn": "Reduce discrepancies"
       },
