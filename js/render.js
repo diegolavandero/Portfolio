@@ -197,12 +197,19 @@ const Renderer = {
   },
 
   // alt bilingüe: alt visible + data-alt-es/en que Router.applyLanguage() intercambia.
+  // Imagen con variante por idioma: si hay srcEn, el router intercambia src al cambiar ES/EN.
+  imgSrcAttrs: (src, srcEn) => {
+    const lang = (typeof Router !== 'undefined' && Router.currentLang) || 'es';
+    if (!srcEn) return `src="${esc(src)}"`;
+    return `src="${esc(lang === 'en' ? srcEn : src)}" data-img-es="${esc(src)}" data-img-en="${esc(srcEn)}"`;
+  },
+
   altAttrs: (es, en) => `alt="${esc(es || '')}" data-alt-es="${esc(es || '')}" data-alt-en="${esc(en || es || '')}"`,
 
   renderHeroImage: (data) => {
     const c = Renderer._ctx || {};
     const inner = data.src
-      ? `<img class="hero-image-img" src="${esc(data.src)}" ${Renderer.altAttrs(data.placeholder || `${c.title}: imagen principal del caso`, data.placeholderEn || `${c.titleEn}: main case image`)} loading="lazy">`
+      ? `<img class="hero-image-img" ${Renderer.imgSrcAttrs(data.src, data.srcEn)} ${Renderer.altAttrs(data.placeholder || `${c.title}: imagen principal del caso`, data.placeholderEn || `${c.titleEn}: main case image`)} loading="lazy">`
       : `<div class="image-placeholder" ${bi(data.placeholder, data.placeholderEn)}>${data.placeholder}</div>`;
     return `
       <section class="hero-image-section" data-section="heroImage">
@@ -1114,20 +1121,20 @@ const Renderer = {
   },
 
   renderDesigns: (data) => {
-    const screenContent = (src, ph, phEn, alt) =>
-      src ? `<img src="${esc(src)}" ${Renderer.altAttrs(alt && alt.es, alt && alt.en)} loading="lazy">` :
+    const screenContent = (src, ph, phEn, alt, srcEn) =>
+      src ? `<img ${Renderer.imgSrcAttrs(src, srcEn)} ${Renderer.altAttrs(alt && alt.es, alt && alt.en)} loading="lazy">` :
             `<div class="image-placeholder" ${bi(ph || 'Imagen pendiente', phEn || 'Image pending')}>${ph || 'Imagen pendiente'}</div>`;
 
-    const renderOneImage = (src, device, ph, phEn, scrollable, alt) => {
+    const renderOneImage = (src, device, ph, phEn, scrollable, alt, srcEn) => {
       let imageClass = `design-image${device === 'mobile' ? ' design-image--mobile' : ''}`;
       if (scrollable) imageClass += ' design-image--scrollable';
       let inner;
       if (device === 'desktop') {
-        inner = `<div class="device device-desktop">${screenContent(src, ph, phEn, alt)}</div>`;
+        inner = `<div class="device device-desktop">${screenContent(src, ph, phEn, alt, srcEn)}</div>`;
       } else if (device === 'mobile') {
-        inner = `<div class="device device-mobile"><div class="device-screen">${screenContent(src, ph, phEn, alt)}</div></div>`;
+        inner = `<div class="device device-mobile"><div class="device-screen">${screenContent(src, ph, phEn, alt, srcEn)}</div></div>`;
       } else {
-        inner = screenContent(src, ph, phEn, alt);
+        inner = screenContent(src, ph, phEn, alt, srcEn);
       }
       return `<div class="${imageClass}">${inner}</div>`;
     };
@@ -1136,16 +1143,17 @@ const Renderer = {
       const badgeClass = `design-badge-${item.badgeStyle || 'indigo'}`;
       const device = item.device || data.device;
       const srcs = item.srcs || (item.src ? [item.src] : []);
+      const srcsEn = item.srcsEn || (item.srcEn ? [item.srcEn] : []);
 
       const c = Renderer._ctx || {};
       const alt = { es: `${c.title}: ${item.title}`, en: `${c.titleEn}: ${item.titleEn || item.title}` };
       let imagesHtml;
       if (srcs.length >= 2) {
         imagesHtml = `<div class="design-images-grid design-images-grid--${Math.min(srcs.length, 3)}">
-          ${srcs.map(src => renderOneImage(src, device, item.placeholder, item.placeholderEn, item.scrollable, alt)).join('')}
+          ${srcs.map((src, i) => renderOneImage(src, device, item.placeholder, item.placeholderEn, item.scrollable, alt, srcsEn[i])).join('')}
         </div>`;
       } else {
-        imagesHtml = renderOneImage(srcs[0] || null, device, item.placeholder, item.placeholderEn, item.scrollable, alt);
+        imagesHtml = renderOneImage(srcs[0] || null, device, item.placeholder, item.placeholderEn, item.scrollable, alt, srcsEn[0]);
       }
 
       return `

@@ -63,6 +63,7 @@
   ],
   "heroImage": {
     "src": "data/images/dt-help-center-01-catalogo.webp",
+    "srcEn": "data/images/dt-help-center-01-catalogo-en.webp",
     "placeholder": "Panel de tutoriales abierto sobre la pantalla de Órdenes",
     "placeholderEn": "Tutorials sidebar open over the Orders screen"
   },
@@ -253,7 +254,7 @@
     "badge": "Prototipo funcional",
     "badgeEn": "Functional prototype",
     "srcEs": "/prototypes/dt-ds/index.html#/ayuda",
-    "srcEn": "/prototypes/dt-ds/index.html#/ayuda",
+    "srcEn": "/prototypes/dt-ds/index.html?lang=en#/ayuda",
     "repoUrl": "https://github.com/diegolavandero/dt-design-system-package/tree/main/src/screens/HelpCenter",
     "height": 860,
     "controls": {
@@ -289,9 +290,7 @@
           "labelEn": "New tutorial"
         }
       ]
-    },
-    "note": "El producto está diseñado para el mercado chileno, por eso la interfaz del prototipo está en español.",
-    "noteEn": "This product is built for the Chilean market, so the prototype interface is in Spanish."
+    }
   },
   "designs": {
     "title": "Pantallas",
@@ -304,6 +303,7 @@
         "description": "Video, estado de avance, cuestionario y artículos relacionados de la sección.",
         "descriptionEn": "The section's video, progress status, quiz and related articles.",
         "src": "data/images/dt-help-center-02-tutorial.webp",
+        "srcEn": "data/images/dt-help-center-02-tutorial-en.webp",
         "alt": "Tutorial abierto en el panel",
         "altEn": "Tutorial open in the sidebar"
       },
@@ -313,6 +313,7 @@
         "description": "Preguntas simples sobre el video, con verificación y reintento guiado.",
         "descriptionEn": "Simple questions about the video, with verification and guided retry.",
         "src": "data/images/dt-help-center-03-quiz.webp?v=2",
+        "srcEn": "data/images/dt-help-center-03-quiz-en.webp?v=2",
         "alt": "Cuestionario de un tutorial",
         "altEn": "Tutorial quiz"
       },
@@ -322,6 +323,7 @@
         "description": "En lugar de una pantalla vacía, el usuario ve el tutorial de su sección para empezar.",
         "descriptionEn": "Instead of an empty screen, users see their section's tutorial to get started.",
         "src": "data/images/dt-help-center-04-usuario-nuevo.webp",
+        "srcEn": "data/images/dt-help-center-04-usuario-nuevo-en.webp",
         "alt": "Estado vacío con tutorial de la sección",
         "altEn": "Empty state with the section's tutorial"
       }

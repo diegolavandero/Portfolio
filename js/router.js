@@ -72,9 +72,9 @@ const Router = {
       const ctaViewEn = data.ctaLabels?.viewProjectEn || 'View project';
 
       const featured = data.featured;
-      const mkThumb = (device, src, title, titleEn) => {
+      const mkThumb = (device, src, title, titleEn, srcEn) => {
         const ph = `<div class="image-placeholder" data-es="Imagen pendiente" data-en="Image pending">Imagen pendiente</div>`;
-        const inner = src ? `<img src="${src}" alt="${title}" data-alt-es="${title}" data-alt-en="${titleEn || title}">` : ph;
+        const inner = src ? `<img ${Renderer.imgSrcAttrs(src, srcEn)} alt="${title}" data-alt-es="${title}" data-alt-en="${titleEn || title}">` : ph;
         if (device === 'desktop') return `<div class="device device-desktop">${inner}</div>`;
         if (device === 'mobile')  return `<div class="device device-mobile"><div class="device-screen">${inner}</div></div>`;
         return ph;
@@ -94,7 +94,7 @@ const Router = {
             ${p.stack ? `<ul class="stack-chips">${p.stack.map(s => `<li data-es="${s.es}" data-en="${s.en}">${s.es}</li>`).join('')}</ul>` : ''}
             <a class="card-cta" href="${p.externalUrl || '/' + p.slug}"${p.externalUrl ? ' target="_blank" rel="noopener"' : ` onclick="event.preventDefault();event.stopPropagation();Router.navigate('/${p.slug}');window.scrollTo(0,0)"`} data-es="${ctaView}" data-en="${ctaViewEn}">${ctaView}</a>
           </div>
-          <div class="project-image">${mkThumb(p.device, p.image, p.title, p.titleEn)}</div>
+          <div class="project-image">${mkThumb(p.device, p.image, p.title, p.titleEn, p.imageEn)}</div>
         </article>
       `).join('');
 
@@ -118,7 +118,7 @@ const Router = {
                 </div>
                 <a class="card-cta" href="/${featured.slug}" onclick="event.preventDefault();event.stopPropagation();Router.navigate('/${featured.slug}');window.scrollTo(0,0)" data-es="${featured.cta}" data-en="${featured.ctaEn}">${featured.cta}</a>
               </div>
-              <div class="featured-image">${mkThumb(featured.device, featured.image, featured.title, featured.titleEn)}</div>
+              <div class="featured-image">${mkThumb(featured.device, featured.image, featured.title, featured.titleEn, featured.imageEn)}</div>
             </article>
           </div>
         </section>
@@ -316,6 +316,13 @@ const Router = {
     const altAttr = lang === 'es' ? 'data-alt-es' : 'data-alt-en';
     document.querySelectorAll('img[data-alt-es][data-alt-en]').forEach(el => {
       el.setAttribute('alt', el.getAttribute(altAttr) || '');
+    });
+
+    // Imágenes con variante por idioma (capturas de prototipos con interfaz en ES / EN).
+    const imgAttr = lang === 'es' ? 'data-img-es' : 'data-img-en';
+    document.querySelectorAll('img[data-img-es][data-img-en]').forEach(el => {
+      const src = el.getAttribute(imgAttr);
+      if (src && el.getAttribute('src') !== src) el.setAttribute('src', src);
     });
 
     Router.applyMeta();

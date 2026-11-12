@@ -136,7 +136,7 @@
     "badge": "Prototipo funcional",
     "badgeEn": "Functional prototype",
     "srcEs": "/prototypes/dt-ds/index.html#/monitoreo",
-    "srcEn": "/prototypes/dt-ds/index.html#/monitoreo",
+    "srcEn": "/prototypes/dt-ds/index.html?lang=en#/monitoreo",
     "repoUrl": "https://github.com/diegolavandero/dt-design-system-package/tree/main/src/screens/TutorialMonitoring",
     "height": 860,
     "controls": {
@@ -160,13 +160,12 @@
           ]
         }
       ]
-    },
-    "note": "El producto está diseñado para el mercado chileno, por eso la interfaz del prototipo está en español.",
-    "noteEn": "This product is built for the Chilean market, so the prototype interface is in Spanish."
+    }
   },
   "subtitleEn": "From blind onboarding to tracked adoption",
   "heroImage": {
     "src": "data/images/dt-tutorial-monitoring-01-resumen.webp",
+    "srcEn": "data/images/dt-tutorial-monitoring-01-resumen-en.webp",
     "placeholder": "Vista Resumen del monitoreo de tutoriales",
     "placeholderEn": "Tutorial monitoring summary view"
   },
@@ -334,6 +333,7 @@
         "description": "KPIs, dona de estado de onboarding, dona de clasificación de avance y detalle de avance por usuario.",
         "descriptionEn": "KPIs, onboarding status donut, progress classification donut and per-user progress detail.",
         "src": "data/images/dt-tutorial-monitoring-01-resumen.webp",
+        "srcEn": "data/images/dt-tutorial-monitoring-01-resumen-en.webp",
         "alt": "Vista Resumen del monitoreo de tutoriales",
         "altEn": "Tutorial monitoring summary view"
       },
@@ -343,6 +343,7 @@
         "description": "Qué tutoriales completa el equipo, cuáles quedan en progreso y cuáles necesitan refuerzo.",
         "descriptionEn": "Which tutorials the team completes, which stay in progress and which need reinforcement.",
         "src": "data/images/dt-tutorial-monitoring-02-por-tutorial.webp",
+        "srcEn": "data/images/dt-tutorial-monitoring-02-por-tutorial-en.webp",
         "alt": "Vista Por tutorial del monitoreo",
         "altEn": "By-tutorial monitoring view"
       },
@@ -352,6 +353,7 @@
         "description": "Quien no es administrador no ve el módulo: ni en el menú lateral ni en la pantalla, donde aparece un aviso claro.",
         "descriptionEn": "Non-admins don't see the module: not in the side menu nor on the screen, where a clear notice appears.",
         "src": "data/images/dt-tutorial-monitoring-03-sin-acceso.webp",
+        "srcEn": "data/images/dt-tutorial-monitoring-03-sin-acceso-en.webp",
         "alt": "Aviso de falta de acceso para usuarios no administradores",
         "altEn": "No-access notice for non-admin users"
       }
