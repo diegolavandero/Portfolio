@@ -160,7 +160,9 @@
           ]
         }
       ]
-    }
+    },
+    "note": "El producto está diseñado para el mercado chileno, por eso la interfaz del prototipo está en español.",
+    "noteEn": "This product is built for the Chilean market, so the prototype interface is in Spanish."
   },
   "subtitleEn": "From blind onboarding to tracked adoption",
   "heroImage": {
@@ -426,13 +428,13 @@
     ]
   },
   "cta": {
-    "question": "¿Quieres ver cómo diseñé el Centro de Ayuda?",
-    "questionEn": "Want to see how I designed the Help Center?",
-    "description": "El siguiente proyecto: Centro de Ayuda.",
-    "descriptionEn": "Next project: Help Center.",
+    "question": "Siguiente caso: Centro de ayuda y onboarding",
+    "questionEn": "Next case: Help center & onboarding",
+    "description": "Centro de ayuda contextual con 49 tutoriales en tres niveles, video, quiz y progreso, que acompaña al usuario sin sacarlo de su pantalla.",
+    "descriptionEn": "Contextual help center with 49 tutorials across three levels, video, quiz and progress, guiding users without taking them off their screen.",
     "buttonLabel": "Ver siguiente proyecto",
     "buttonLabelEn": "See next project",
-    "buttonHref": "#/dt-help-center"
+    "buttonHref": "/dt-help-center"
   },
   "titleEn": "Tutorial monitoring"
 }

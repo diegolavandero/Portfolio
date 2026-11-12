@@ -34,7 +34,7 @@
   --indigo-100: #e0e7ff;
   --indigo-200: #c6d2ff;
   --indigo-300: #ede9fe;
-  --indigo-500: #6366f1;
+  --indigo-500: #5558ea;
   --indigo-600: #4f46e5;
   --indigo-700: #4f39f6;
   --indigo-strong: #615fff;
@@ -47,8 +47,8 @@
   --gray-100: #f3f4f6;
   --gray-200: #e5e7eb;
   --gray-300: #d4d4d8;
-  --gray-400: #99a1af;
-  --gray-500: #6a7282;
+  --gray-400: #636b7a;
+  --gray-500: #596170;
   --gray-600: #4a5565;
   --gray-700: #364153;
   --gray-900: #101828;
@@ -240,6 +240,15 @@ body {
   color: var(--gray-500);
   margin-bottom: var(--spacing-md);
 }
+
+.metric-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: var(--spacing-md) 0 var(--spacing-lg);
+}
+
+.metric-pills .metric-pill { margin: 0; }
 
 .metric-pill {
   display: inline-flex;
@@ -3557,3 +3566,13 @@ body[data-scrolled="true"] .header-sticky {
 }
 
 .project-subtitle + .stack-chips { margin-top: var(--spacing-md); }
+
+.live-prototype-note {
+  display: inline-block;
+  margin-top: var(--spacing-sm);
+  padding: 6px 12px;
+  font-size: 13px;
+  color: var(--gray-700);
+  background: var(--gray-100);
+  border-radius: 8px;
+}

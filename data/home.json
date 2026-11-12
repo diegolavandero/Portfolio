@@ -35,9 +35,28 @@
       "slug": "dt-tutorial-monitoring",
       "device": "desktop",
       "image": "data/images/dt-tutorial-monitoring.webp?v=2",
-      "metric": "34% → 82%",
-      "metricLabel": "onboardings completados",
-      "metricLabelEn": "onboardings completed"
+      "metrics": [
+        {
+          "value": "78%",
+          "label": "adopción semanal",
+          "labelEn": "weekly adoption"
+        },
+        {
+          "value": "60%",
+          "label": "detección de rezago más rápida",
+          "labelEn": "faster lag detection"
+        },
+        {
+          "value": "65%",
+          "label": "sesiones con filtros o vistas",
+          "labelEn": "sessions using filters or views"
+        },
+        {
+          "value": "84%",
+          "label": "seguimiento en 3 días",
+          "labelEn": "follow-up within 3 days"
+        }
+      ]
     },
     {
       "eyebrow": "DT LASTMILE DESKTOP · 2026",
@@ -48,7 +67,10 @@
       "subtitleEn": "Contextual help center with 49 tutorials across three levels, video, quiz and progress, guiding users without taking them off their screen.",
       "slug": "dt-help-center",
       "device": "desktop",
-      "image": "data/images/dt-help-center.webp?v=2"
+      "image": "data/images/dt-help-center.webp?v=2",
+      "metric": "34% → 82%",
+      "metricLabel": "onboardings completados",
+      "metricLabelEn": "onboardings completed"
     },
     {
       "eyebrow": "PLATAFORMA B2B2C · 2025",

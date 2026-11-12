@@ -1,19 +1,19 @@
 {
   "page": "on-demand-routing",
   "slug": "on-demand-routing",
-  "title": "Sistema de Asignación Manual & Automática",
-  "titleEn": "Manual & Automatic Assignment System",
-  "subtitle": "Aplicación Web Logística",
-  "subtitleEn": "Logistics Web App",
+  "title": "On-Demand Routing",
+  "titleEn": "On-Demand Routing",
+  "subtitle": "Sistema de asignación manual y automática",
+  "subtitleEn": "Manual and automatic assignment system",
   "hero": {
     "tagline": "QUICKCOMMERCE · DESKTOP · 2023",
     "taglineEn": "QUICKCOMMERCE · DESKTOP · 2023",
-    "title": "Sistema de ",
-    "titleEn": "System of ",
-    "titleAccent": "Asignación Manual & Automática",
-    "titleAccentEn": "Manual & Automatic Assignment",
-    "subtitle": "De caja negra a control híbrido",
-    "subtitleEn": "From black box to hybrid control",
+    "title": "On-Demand ",
+    "titleEn": "On-Demand ",
+    "titleAccent": "Routing",
+    "titleAccentEn": "Routing",
+    "subtitle": "De caja negra a control híbrido: asignación manual y automática",
+    "subtitleEn": "From black box to hybrid control: manual and automatic assignment",
     "description": "La asignación de rutas requiere balance entre eficiencia algorítmica y control humano. Este sistema permite a los operadores elegir entre asignación automática y manual con drag & drop, mejorando tanto la velocidad como la confianza en el proceso.",
     "descriptionEn": "Route assignment requires balance between algorithmic efficiency and human control. This system lets operators choose between automatic and manual assignment with drag & drop, improving both speed and trust in the process."
   },
@@ -592,12 +592,12 @@
     ]
   },
   "cta": {
-    "question": "¿Quieres saber más sobre este proyecto?",
-    "questionEn": "Want to know more about this project?",
-    "description": "Contacta para discutir detalles técnicos, proceso de diseño o resultados.",
-    "descriptionEn": "Contact me to discuss technical details, design process or results.",
-    "buttonLabel": "Contactar",
-    "buttonLabelEn": "Contact",
-    "buttonHref": "#/about"
+    "question": "Siguiente caso: Validación de Carga",
+    "questionEn": "Next case: Load Validation",
+    "description": "Sistema de verificación pre-ruta",
+    "descriptionEn": "Pre-route verification system",
+    "buttonLabel": "Ver siguiente proyecto",
+    "buttonLabelEn": "See next project",
+    "buttonHref": "/load-validation"
   }
 }

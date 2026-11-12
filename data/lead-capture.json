@@ -698,12 +698,12 @@
     ]
   },
   "cta": {
-    "question": "¿Quieres saber más sobre este proyecto?",
-    "questionEn": "Want to know more about this project?",
-    "description": "Contacta para discutir detalles técnicos, proceso de diseño o resultados.",
-    "descriptionEn": "Contact me to discuss technical details, design process or results.",
-    "buttonLabel": "Contactar",
-    "buttonLabelEn": "Contact",
-    "buttonHref": "#/about"
+    "question": "Siguiente caso: Piso Ideal · Falabella",
+    "questionEn": "Next case: Ideal Floor · Falabella",
+    "description": "Asistente de compra con recomendación por IA para categoría pisos",
+    "descriptionEn": "AI-powered purchase assistant for flooring category",
+    "buttonLabel": "Ver siguiente proyecto",
+    "buttonLabelEn": "See next project",
+    "buttonHref": "/falabella"
   }
 }

@@ -290,7 +290,9 @@
           "labelEn": "New tutorial"
         }
       ]
-    }
+    },
+    "note": "El producto está diseñado para el mercado chileno, por eso la interfaz del prototipo está en español.",
+    "noteEn": "This product is built for the Chilean market, so the prototype interface is in Spanish."
   },
   "designs": {
     "title": "Pantallas",
@@ -374,12 +376,12 @@
     "nextSteps": []
   },
   "cta": {
-    "question": "¿Quieres ver cómo diseñé los reportes asincrónicos?",
-    "questionEn": "Want to see how I designed asynchronous reports?",
-    "description": "El siguiente proyecto: Reportes asincrónicos.",
-    "descriptionEn": "Next project: Asynchronous reports.",
+    "question": "Siguiente caso: Sistema de Captura de Leads en Tiempo Real",
+    "questionEn": "Next case: Real-time Lead Capture System",
+    "description": "Plataforma de widget de chat pre-venta configurable",
+    "descriptionEn": "Configurable pre-sales chat widget platform",
     "buttonLabel": "Ver siguiente proyecto",
     "buttonLabelEn": "See next project",
-    "buttonHref": "#/async-reports"
+    "buttonHref": "/lead-capture"
   }
 }

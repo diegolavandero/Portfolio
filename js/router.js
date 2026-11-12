@@ -60,6 +60,7 @@ const Router = {
   },
 
   loadHome: async () => {
+    Router.setPageMeta(null);
     const app = document.getElementById('app');
     const loadingText = Router.currentLang === 'en' ? 'Loading...' : 'Cargando...';
     app.innerHTML = `<div class="loading">${loadingText}</div>`;
@@ -71,9 +72,9 @@ const Router = {
       const ctaViewEn = data.ctaLabels?.viewProjectEn || 'View project';
 
       const featured = data.featured;
-      const mkThumb = (device, src) => {
+      const mkThumb = (device, src, title, titleEn) => {
         const ph = `<div class="image-placeholder" data-es="Mockup pendiente" data-en="Mockup pending">Mockup pendiente</div>`;
-        const inner = src ? `<img src="${src}" alt="">` : ph;
+        const inner = src ? `<img src="${src}" alt="${title}" data-alt-es="${title}" data-alt-en="${titleEn || title}">` : ph;
         if (device === 'desktop') return `<div class="device device-desktop">${inner}</div>`;
         if (device === 'mobile')  return `<div class="device device-mobile"><div class="device-screen">${inner}</div></div>`;
         return ph;
@@ -85,14 +86,14 @@ const Router = {
             <p class="card-eyebrow" data-es="${p.eyebrow}" data-en="${p.eyebrowEn}">${p.eyebrow}</p>
             <h3 class="project-title" data-es="${p.title}" data-en="${p.titleEn}">${p.title}</h3>
             <p class="project-subtitle" data-es="${p.subtitle}" data-en="${p.subtitleEn}">${p.subtitle}</p>
-            ${p.metric ? `<div class="metric-pill">
-              <span class="metric-value">${p.metric}</span>
-              <span class="metric-label" data-es="${p.metricLabel}" data-en="${p.metricLabelEn}">${p.metricLabel}</span>
-            </div>` : ''}
+            ${(p.metrics || (p.metric ? [{ value: p.metric, label: p.metricLabel, labelEn: p.metricLabelEn }] : [])).length ? `<div class="metric-pills">${(p.metrics || [{ value: p.metric, label: p.metricLabel, labelEn: p.metricLabelEn }]).map(m => `<div class="metric-pill">
+              <span class="metric-value">${m.value}</span>
+              <span class="metric-label" data-es="${m.label}" data-en="${m.labelEn}">${m.label}</span>
+            </div>`).join('')}</div>` : ''}
             ${p.stack ? `<ul class="stack-chips">${p.stack.map(s => `<li data-es="${s.es}" data-en="${s.en}">${s.es}</li>`).join('')}</ul>` : ''}
             <a class="card-cta" data-es="${ctaView}" data-en="${ctaViewEn}">${ctaView}</a>
           </div>
-          <div class="project-image">${mkThumb(p.device, p.image)}</div>
+          <div class="project-image">${mkThumb(p.device, p.image, p.title, p.titleEn)}</div>
         </article>
       `).join('');
 
@@ -116,7 +117,7 @@ const Router = {
                 </div>
                 <a class="card-cta" data-es="${featured.cta}" data-en="${featured.ctaEn}">${featured.cta}</a>
               </div>
-              <div class="featured-image">${mkThumb(featured.device, featured.image)}</div>
+              <div class="featured-image">${mkThumb(featured.device, featured.image, featured.title, featured.titleEn)}</div>
             </article>
           </div>
         </section>
@@ -149,6 +150,9 @@ const Router = {
   },
 
   loadAbout: async () => {
+    Router.setPageMeta({ slug: 'about', title: 'Sobre mí', titleEn: 'About',
+      description: 'Diego Lavandero, Senior AI Product Designer: experiencia, enfoque y competencias en producto, investigación UX y sistemas de diseño.',
+      descriptionEn: 'Diego Lavandero, Senior AI Product Designer: experience, approach and skills in product design, UX research and design systems.' });
     const app = document.getElementById('app');
     const loadingText = Router.currentLang === 'en' ? 'Loading...' : 'Cargando...';
     app.innerHTML = `<div class="loading">${loadingText}</div>`;
@@ -306,6 +310,14 @@ const Router = {
       }
     });
 
+    // Imágenes: alt bilingüe.
+    const altAttr = lang === 'es' ? 'data-alt-es' : 'data-alt-en';
+    document.querySelectorAll('img[data-alt-es][data-alt-en]').forEach(el => {
+      el.setAttribute('alt', el.getAttribute(altAttr) || '');
+    });
+
+    Router.applyMeta();
+
     // Live prototype iframes: swap src (not text) to the matching language build.
     const srcAttr = lang === 'es' ? 'data-src-es' : 'data-src-en';
     document.querySelectorAll('iframe[data-src-es][data-src-en]').forEach(el => {
@@ -319,6 +331,42 @@ const Router = {
       const href = el.getAttribute(hrefAttr);
       if (href && el.getAttribute('href') !== href) el.setAttribute('href', href);
     });
+  },
+
+  // ── Metadatos por página (title, description, canonical, OG/Twitter) ──
+  DEFAULT_META: {
+    title: 'Diego Lavandero · Senior AI Product Designer',
+    titleEn: 'Diego Lavandero · Senior AI Product Designer',
+    description: 'Diego Lavandero, Senior AI Product Designer en Santiago, Chile. Portafolio UX/UI con casos en IA, logística, e-commerce y SaaS.',
+    descriptionEn: 'Diego Lavandero, Senior AI Product Designer based in Santiago, Chile. UX/UI portfolio with case studies in AI, logistics, e-commerce and SaaS.',
+    slug: ''
+  },
+  pageMeta: null,
+
+  setPageMeta: (meta) => {
+    Router.pageMeta = meta;
+    Router.applyMeta();
+  },
+
+  applyMeta: () => {
+    const m = Router.pageMeta || Router.DEFAULT_META;
+    const en = Router.currentLang === 'en';
+    const base = 'Diego Lavandero · Senior AI Product Designer';
+    const name = en ? (m.titleEn || m.title) : m.title;
+    const title = m.slug ? `${name} · Diego Lavandero` : base;
+    let desc = (en ? (m.descriptionEn || m.description) : m.description) || Router.DEFAULT_META.descriptionEn;
+    if (desc.length > 160) desc = desc.slice(0, 157).replace(/\s+\S*$/, '') + '…';
+    const url = 'https://diegolavandero.com' + (m.slug ? `/${m.slug}` : '');
+    const set = (sel, attr, val) => { const el = document.querySelector(sel); if (el) el.setAttribute(attr, val); };
+    document.title = title;
+    set('meta[name="description"]', 'content', desc);
+    set('link[rel="canonical"]', 'href', url);
+    set('meta[property="og:title"]', 'content', title);
+    set('meta[property="og:description"]', 'content', desc);
+    set('meta[property="og:url"]', 'content', url);
+    set('meta[name="twitter:title"]', 'content', title);
+    set('meta[name="twitter:description"]', 'content', desc);
+    document.documentElement.lang = en ? 'en' : 'es';
   },
 
   updateActiveNav: () => {

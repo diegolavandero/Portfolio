@@ -84,18 +84,19 @@
         "icon": "🎯",
         "label": "Errores detectados en origen",
         "labelEn": "Errors caught at source",
-        "metric": "91%",
-        "description": "De los errores se detectan antes de salir de bodega vs. el 23% anterior",
-        "descriptionEn": "Errors detected before leaving the warehouse vs. 23% previously"
+        "metric": "66% → 91%",
+        "description": "de los errores se detectan antes de salir de bodega. Antes, el 34% se descubría recién en ruta o en destino.",
+        "descriptionEn": "of errors are caught before leaving the warehouse. Before, 34% were only discovered en route or at destination.",
+        "metricEn": "66% → 91%"
       },
       {
         "icon": "📋",
-        "label": "Cargas con documentación completa",
-        "labelEn": "Loads with complete docs",
-        "metric": "0,3%",
-        "description": "Tasa de cargas que salen sin documentación completa (antes: 8,7%)",
-        "descriptionEn": "Rate of loads leaving without complete documentation (previously: 8.7%)",
-        "metricEn": "0.3%"
+        "label": "Menos cargas con documentación incompleta",
+        "labelEn": "Fewer loads with incomplete docs",
+        "metric": "8,7% → 0,3%",
+        "description": "de las cargas salían sin documentación completa.",
+        "descriptionEn": "of loads were leaving without complete documentation.",
+        "metricEn": "8.7% → 0.3%"
       }
     ]
   },
@@ -716,12 +717,12 @@
     ]
   },
   "cta": {
-    "question": "¿Listo para ver cómo diseñé reportes que no bloquean la interfaz?",
-    "questionEn": "Ready to see how I designed reports that don't block the interface?",
-    "description": "El siguiente proyecto: Sistema de Reportes Asincrónicos.",
-    "descriptionEn": "Next project: Asynchronous Reporting System.",
+    "question": "Siguiente caso: Reportes Asincrónicos",
+    "questionEn": "Next case: Asynchronous Reports",
+    "description": "Procesamiento de datos sin bloqueos",
+    "descriptionEn": "Non-blocking data processing",
     "buttonLabel": "Ver siguiente proyecto",
     "buttonLabelEn": "See next project",
-    "buttonHref": "#/async-reports"
+    "buttonHref": "/async-reports"
   }
 }

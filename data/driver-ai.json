@@ -566,12 +566,12 @@
     ]
   },
   "cta": {
-    "question": "¿Quieres ver todos los proyectos?",
-    "questionEn": "Want to see all projects?",
-    "description": "Tengo 8 case studies de diseño de producto en mi portfolio.",
-    "descriptionEn": "I have 8 product design case studies in my portfolio.",
-    "buttonLabel": "Ver todos los proyectos",
-    "buttonLabelEn": "See all projects",
-    "buttonHref": "#/"
+    "question": "Siguiente caso: On-Demand Routing",
+    "questionEn": "Next case: On-Demand Routing",
+    "description": "Sistema de asignación manual y automática en tiempo real",
+    "descriptionEn": "Real-time manual and automatic assignment system",
+    "buttonLabel": "Ver siguiente proyecto",
+    "buttonLabelEn": "See next project",
+    "buttonHref": "/on-demand-routing"
   }
 }

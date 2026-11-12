@@ -511,9 +511,10 @@
     "badge": "Prototipo funcional",
     "badgeEn": "Functional prototype",
     "srcEs": "/prototypes/piso-ideal-es.html",
-    "srcEn": "/prototypes/piso-ideal-es.html",
+    "srcEn": "/prototypes/piso-ideal-en.html",
     "repoUrl": "https://github.com/diegolavandero/Portfolio/blob/main/prototypes/piso-ideal-es.html",
-    "height": 1260
+    "height": 1260,
+    "repoUrlEn": "https://github.com/diegolavandero/Portfolio/blob/main/prototypes/piso-ideal-en.html"
   },
   "designs": {
     "title": "Pantallas del flujo",
@@ -594,5 +595,14 @@
       }
     ]
   },
-  "subtitleEn": "Shopping copilot that builds the complete flooring project, with the final price before the cart"
+  "subtitleEn": "Shopping copilot that builds the complete flooring project, with the final price before the cart",
+  "cta": {
+    "question": "Siguiente caso: Driver AI",
+    "questionEn": "Next case: Driver AI",
+    "description": "Inteligencia de ubicación para última milla",
+    "descriptionEn": "Location intelligence for last mile",
+    "buttonLabel": "Ver siguiente proyecto",
+    "buttonLabelEn": "See next project",
+    "buttonHref": "/driver-ai"
+  }
 }

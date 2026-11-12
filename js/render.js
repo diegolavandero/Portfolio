@@ -44,6 +44,13 @@ const Renderer = {
     try {
       const response = await fetch(`/data/${slug}.json`);
       const data = await response.json();
+      Renderer._ctx = { title: data.title || '', titleEn: data.titleEn || data.title || '' };
+      Router.setPageMeta({
+        slug,
+        title: data.title, titleEn: data.titleEn || data.title,
+        description: (data.hero && data.hero.description) || data.subtitle,
+        descriptionEn: (data.hero && (data.hero.descriptionEn || data.hero.description)) || data.subtitleEn || data.subtitle
+      });
 
       let html = '';
       if (data.hero)                  html += Renderer.renderHero(data.hero);
@@ -152,9 +159,13 @@ const Renderer = {
     `;
   },
 
+  // alt bilingüe: alt visible + data-alt-es/en que Router.applyLanguage() intercambia.
+  altAttrs: (es, en) => `alt="${esc(es || '')}" data-alt-es="${esc(es || '')}" data-alt-en="${esc(en || es || '')}"`,
+
   renderHeroImage: (data) => {
+    const c = Renderer._ctx || {};
     const inner = data.src
-      ? `<img class="hero-image-img" src="${esc(data.src)}" alt="${esc(data.placeholder || '')}" loading="lazy">`
+      ? `<img class="hero-image-img" src="${esc(data.src)}" ${Renderer.altAttrs(data.placeholder || `${c.title}: imagen principal del caso`, data.placeholderEn || `${c.titleEn}: main case image`)} loading="lazy">`
       : `<div class="image-placeholder" ${bi(data.placeholder, data.placeholderEn)}>${data.placeholder}</div>`;
     return `
       <section class="hero-image-section" data-section="heroImage">
@@ -1026,6 +1037,7 @@ const Renderer = {
             ${data.badge ? `<span class="design-badge design-badge-green" ${bi(data.badge, data.badgeEn)}>${data.badge}</span>` : ''}
             <h2 ${bi(data.title, data.titleEn)}>${data.title}</h2>
             ${data.subtitle ? `<p ${bi(data.subtitle, data.subtitleEn)}>${data.subtitle}</p>` : ''}
+            ${data.note ? `<p class="live-prototype-note" role="note" ${bi(data.note, data.noteEn)}>${data.note}</p>` : ''}
           </div>
           ${(() => {
             const full = (l) => (l === 'en' ? (data.srcEn || data.srcEs) : (data.srcEs || data.srcEn));
@@ -1065,20 +1077,20 @@ const Renderer = {
   },
 
   renderDesigns: (data) => {
-    const screenContent = (src, ph, phEn) =>
-      src ? `<img src="${esc(src)}" alt="${esc(ph || '')}" loading="lazy">` :
+    const screenContent = (src, ph, phEn, alt) =>
+      src ? `<img src="${esc(src)}" ${Renderer.altAttrs(alt && alt.es, alt && alt.en)} loading="lazy">` :
             `<div class="image-placeholder" ${bi(ph || 'Mockup pendiente', phEn || 'Mockup pending')}>${ph || 'Mockup pendiente'}</div>`;
 
-    const renderOneImage = (src, device, ph, phEn, scrollable) => {
+    const renderOneImage = (src, device, ph, phEn, scrollable, alt) => {
       let imageClass = `design-image${device === 'mobile' ? ' design-image--mobile' : ''}`;
       if (scrollable) imageClass += ' design-image--scrollable';
       let inner;
       if (device === 'desktop') {
-        inner = `<div class="device device-desktop">${screenContent(src, ph, phEn)}</div>`;
+        inner = `<div class="device device-desktop">${screenContent(src, ph, phEn, alt)}</div>`;
       } else if (device === 'mobile') {
-        inner = `<div class="device device-mobile"><div class="device-screen">${screenContent(src, ph, phEn)}</div></div>`;
+        inner = `<div class="device device-mobile"><div class="device-screen">${screenContent(src, ph, phEn, alt)}</div></div>`;
       } else {
-        inner = screenContent(src, ph, phEn);
+        inner = screenContent(src, ph, phEn, alt);
       }
       return `<div class="${imageClass}">${inner}</div>`;
     };
@@ -1088,13 +1100,15 @@ const Renderer = {
       const device = item.device || data.device;
       const srcs = item.srcs || (item.src ? [item.src] : []);
 
+      const c = Renderer._ctx || {};
+      const alt = { es: `${c.title}: ${item.title}`, en: `${c.titleEn}: ${item.titleEn || item.title}` };
       let imagesHtml;
       if (srcs.length >= 2) {
         imagesHtml = `<div class="design-images-grid design-images-grid--${Math.min(srcs.length, 3)}">
-          ${srcs.map(src => renderOneImage(src, device, item.placeholder, item.placeholderEn, item.scrollable)).join('')}
+          ${srcs.map(src => renderOneImage(src, device, item.placeholder, item.placeholderEn, item.scrollable, alt)).join('')}
         </div>`;
       } else {
-        imagesHtml = renderOneImage(srcs[0] || null, device, item.placeholder, item.placeholderEn, item.scrollable);
+        imagesHtml = renderOneImage(srcs[0] || null, device, item.placeholder, item.placeholderEn, item.scrollable, alt);
       }
 
       return `
@@ -1227,7 +1241,7 @@ const Renderer = {
         <div class="cta-content">
           <h2 class="cta-question" ${bi(data.question, data.questionEn)}>${data.question}</h2>
           ${data.description ? `<p class="cta-description" ${bi(data.description, data.descriptionEn)}>${data.description}</p>` : ''}
-          <a class="cta-button" href="${esc(data.buttonHref || '/about')}" ${bi(data.buttonLabel, data.buttonLabelEn)}>${data.buttonLabel}</a>
+          <a class="cta-button" href="${esc((data.buttonHref || '/about').replace(/^#/, ''))}" onclick="event.preventDefault();Router.navigate(this.getAttribute('href'));window.scrollTo(0,0)" ${bi(data.buttonLabel, data.buttonLabelEn)}>${data.buttonLabel}</a>
         </div>
       </div>
     </section>

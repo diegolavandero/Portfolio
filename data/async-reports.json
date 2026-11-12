@@ -110,12 +110,12 @@
         "nameEn": "What the data showed",
         "cons": [
           "34 timeouts registrados en un solo día de cierre de mes, récord pre-migración",
-          "68% de abandono en reportes con espera mayor a 2 minutos",
+          "91% de abandono en reportes con espera mayor a 2 minutos",
           "Los analistas re-ejecutaban el mismo reporte 2–3 veces por sesión sin saber si había fallado"
         ],
         "consEn": [
           "34 timeouts recorded in a single month-end day, pre-migration record",
-          "68% abandonment rate in reports with waits exceeding 2 minutes",
+          "91% abandonment rate in reports with waits exceeding 2 minutes",
           "Analysts re-ran the same report 2–3 times per session without knowing if it had failed"
         ]
       }
@@ -157,8 +157,8 @@
         "descriptionEn": "Analysis of server logs, Hotjar and session recordings to measure real execution times, abandonment rates by duration and rage-click patterns during loading states.",
         "findingLabel": "Hallazgo",
         "findingLabelEn": "Finding",
-        "finding": "El 68% de los abandonos ocurrían exactamente entre los 90 y 120 segundos de espera",
-        "findingEn": "68% of abandonments occurred exactly between 90 and 120 seconds of waiting"
+        "finding": "El abandono se disparaba entre los 90 y 120 segundos de espera: de 24% a 68% de los usuarios",
+        "findingEn": "Abandonment spiked between 90 and 120 seconds of waiting: from 24% to 68% of users"
       },
       {
         "name": "Evaluación Heurística",
@@ -189,10 +189,10 @@
         "valueEn": "8.4 min"
       },
       {
-        "value": "68%",
-        "description": "Tasa de abandono en reportes con espera >2 min",
+        "value": "91%",
+        "description": "Tasa de abandono en reportes con espera mayor a 2 minutos",
         "descriptionEn": "Abandonment rate in reports with >2 min wait",
-        "valueEn": "68%"
+        "valueEn": "91%"
       },
       {
         "value": "2,8×",
@@ -305,11 +305,11 @@
         "valueEn": "8.4 min"
       },
       {
-        "value": "68%",
+        "value": "91%",
         "label": "Tasa de abandono en reportes con espera mayor a 2 minutos",
         "labelEn": "Abandonment rate in reports with waits exceeding 2 minutes",
         "color": "red",
-        "valueEn": "68%"
+        "valueEn": "91%"
       },
       {
         "value": "2,8×",
@@ -605,14 +605,6 @@
         "descriptionEn": "Reduction in perceived blocking time thanks to asynchronous processing"
       },
       {
-        "icon": "📊",
-        "metric": "40%",
-        "label": "Mayor uso de reportes",
-        "labelEn": "Higher report usage",
-        "description": "Aumento en generación de reportes al mejorar la experiencia de usuario",
-        "descriptionEn": "Increase in report generation by improving the user experience"
-      },
-      {
         "icon": "🎫",
         "metric": "25%",
         "label": "Menos tickets de soporte",
@@ -655,12 +647,12 @@
     ]
   },
   "cta": {
-    "question": "¿Quieres ver cómo la IA mejora la experiencia de conductores de última milla?",
-    "questionEn": "Want to see how AI improves the last-mile driver experience?",
-    "description": "El siguiente proyecto: Driver AI (inteligencia de ubicación).",
-    "descriptionEn": "Next project: Driver AI (location intelligence).",
-    "buttonLabel": "Ver siguiente proyecto",
-    "buttonLabelEn": "See next project",
-    "buttonHref": "#/driver-ai"
+    "question": "¿Conversamos sobre estos proyectos?",
+    "questionEn": "Want to talk about these projects?",
+    "description": "Contáctame para discutir detalles técnicos, proceso de diseño o resultados.",
+    "descriptionEn": "Get in touch to discuss technical details, design process or results.",
+    "buttonLabel": "Contactar",
+    "buttonLabelEn": "Contact",
+    "buttonHref": "/about"
   }
 }

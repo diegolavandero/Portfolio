@@ -744,13 +744,13 @@
     ]
   },
   "cta": {
-    "question": "¿Quieres saber más sobre este proyecto?",
-    "questionEn": "Want to know more about this project?",
-    "description": "Contacta para discutir detalles técnicos, proceso de diseño o resultados.",
-    "descriptionEn": "Contact me to discuss technical details, design process or results.",
-    "buttonLabel": "Contactar",
-    "buttonLabelEn": "Contact",
-    "buttonHref": "#/about"
+    "question": "Siguiente caso: Monitoreo de tutoriales",
+    "questionEn": "Next case: Tutorial monitoring",
+    "description": "Panel para que un administrador vea quién completó el entrenamiento de la plataforma, dónde se atasca el equipo y qué tutoriales necesitan refuerzo.",
+    "descriptionEn": "A panel for admins to see who completed platform training, where the team gets stuck and which tutorials need reinforcement.",
+    "buttonLabel": "Ver siguiente proyecto",
+    "buttonLabelEn": "See next project",
+    "buttonHref": "/dt-tutorial-monitoring"
   },
   "roleNarrative": {
     "title": "Mi rol en este proyecto",
