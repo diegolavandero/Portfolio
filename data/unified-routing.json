@@ -33,8 +33,8 @@
     {
       "label": "Duración",
       "labelEn": "Duration",
-      "value": "8 semanas",
-      "valueEn": "8 weeks"
+      "value": "8 semanas de diseño y validación + 30 días en producción",
+      "valueEn": "8 weeks of design and validation + 30 days live"
     },
     {
       "label": "Equipo",
@@ -133,8 +133,8 @@
         "metaEn": "Goal: 30% less time",
         "description": "Liberar tiempo del equipo de planificación en cada ciclo de ruteo",
         "descriptionEn": "Free up planning team time in every routing cycle",
-        "kpi": "minutos desde la configuración en el asistente hasta confirmar las rutas · Fuente: benchmark en prototipo y telemetría en producción",
-        "kpiEn": "minutes from wizard setup to route confirmation · Source: prototype benchmark and live telemetry"
+        "kpi": "minutos desde la configuración inicial hasta confirmar y enviar las rutas a la app de conductores · Fuente: benchmark en prototipo y telemetría en producción",
+        "kpiEn": "minutes from initial setup to final route confirmation and dispatch to the driver app · Source: prototype benchmark and live telemetry"
       },
       {
         "number": "02",
@@ -185,8 +185,8 @@
       {
         "name": "Benchmark y telemetría",
         "nameEn": "Benchmark and telemetry",
-        "description": "Probé el prototipo de Figma con 12 participantes en 3 escenarios con corte de 25 min. Después medí 30 días en producción: 1.420 sesiones, 14 cuentas y 185 usuarios.",
-        "descriptionEn": "I tested the Figma prototype with 12 participants across 3 scenarios with a 25-min cutoff. Then I measured 30 days in production: 1,420 sessions, 14 accounts and 185 users.",
+        "description": "Probé el prototipo de Figma con 12 participantes (6 de la observación inicial y 6 externos sin exposición previa) en 3 escenarios con corte de 25 min. Después medí 30 días en producción: 1.420 sesiones, 14 cuentas y 185 usuarios.",
+        "descriptionEn": "I tested the Figma prototype with 12 participants (6 from the initial observation and 6 external with no prior exposure) across 3 scenarios with a 25-min cutoff. Then I measured 30 days in production: 1,420 sessions, 14 accounts and 185 users.",
         "findingLabel": "Métricas",
         "findingLabelEn": "Metrics",
         "finding": "En producción: tiempo en tarea y tasa de error crítico (telemetría), SEQ y clics de frustración (Hotjar). Pasos de edición y cambios de contexto: solo en el prototipo.",
@@ -635,8 +635,8 @@
       {
         "title": "Producción no es laboratorio",
         "titleEn": "Live use is not the lab",
-        "description": "El tiempo real fue algo mayor que en el prototipo (16,4 vs. 15,8 min) por latencia de API e interrupciones del turno, y aun así superó la meta.",
-        "descriptionEn": "Live time was slightly higher than in the prototype (16.4 vs. 15.8 min) due to API latency and mid-shift interruptions, and still beat the goal."
+        "description": "En producción, la planificación de punta a punta promedió 16,4 min (meta: 16,8). Es algo más que en las pruebas controladas con prototipo; lo atribuimos a la latencia de API y a interrupciones durante el turno (hipótesis, no medido).",
+        "descriptionEn": "In production, end-to-end planning averaged 16.4 min (goal: 16.8). That is slightly more than in controlled prototype tests; we attribute it to API latency and mid-shift interruptions (a hypothesis, not measured)."
       },
       {
         "title": "Visibilidad con revelación progresiva",
@@ -647,8 +647,8 @@
       {
         "title": "Los datos en vivo muestran lo que el prototipo no",
         "titleEn": "Live data shows what the prototype can't",
-        "description": "Las grabaciones de Hotjar mostraron que 11% de los despachadores dudaba al alternar entre mapa y tabla. Un atajo (Cmd/Ctrl + M) y un tooltip redujeron esa fricción 40% (DTLM-418).",
-        "descriptionEn": "Hotjar recordings showed 11% of dispatchers hesitated when switching between map and table. A shortcut (Cmd/Ctrl + M) and a tooltip cut that friction by 40% (DTLM-418)."
+        "description": "Al revisar más de 60 grabaciones marcadas de Hotjar vimos un patrón cualitativo: varios despachadores dudaban al alternar entre mapa y tabla en horas punta. En el Sprint 2 sumamos el atajo Cmd/Ctrl + M y un tooltip (DTLM-418).",
+        "descriptionEn": "Reviewing 60+ flagged Hotjar recordings showed a qualitative pattern: several dispatchers hesitated when switching between map and table at peak hours. In Sprint 2 we added the Cmd/Ctrl + M shortcut and a tooltip (DTLM-418)."
       }
     ],
     "nextSteps": [
