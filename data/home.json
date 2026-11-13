@@ -126,7 +126,7 @@
       "titleEn": "Asynchronous reports",
       "subtitle": "Procesamiento de datos sin bloqueos",
       "subtitleEn": "Non-blocking data processing",
-      "metric": "62%",
+      "metric": "61%",
       "metricLabel": "menos abandono en reportes largos (staging, n = 42)",
       "metricLabelEn": "less abandonment on long reports (staging, n = 42)",
       "slug": "async-reports",

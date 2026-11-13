@@ -96,8 +96,8 @@
         "metaEn": "Success criterion: 50% less abandonment on >2 min reports",
         "description": "Mover la generación de reportes pesados a segundo plano para que los analistas nunca esperen frente a una pantalla congelada ni repitan la solicitud (línea base de 91% de abandono con el modo síncrono).",
         "descriptionEn": "Move heavy report generation to the background so analysts never wait on a frozen screen or re-trigger duplicate requests (down from a 91% abandonment baseline in synchronous mode).",
-        "kpi": "abandono = cerrar a mitad de la espera (modo síncrono) o no abrir/descargar en 24 h tras el aviso de finalización (modo asíncrono) ÷ reportes de más de 2 min solicitados · Fuente: instrumentación de staging, 2 semanas, n = 42",
-        "kpiEn": "abandonment = closing mid-wait (sync mode) or not opening/downloading within 24 h of the completion alert (async mode) ÷ >2 min reports requested · Source: staging instrumentation, 2 weeks, n = 42"
+        "kpi": "abandono = cerrar a mitad de la espera (modo síncrono) o no abrir/descargar en 24 h tras el aviso de finalización (modo asíncrono) ÷ solicitudes de reportes de más de 2 min (140 síncronas, 148 asíncronas) · Fuente: instrumentación de staging, 2 semanas, n = 42",
+        "kpiEn": "abandonment = closing mid-wait (sync mode) or not opening/downloading within 24 h of the completion alert (async mode) ÷ >2 min report requests (140 sync, 148 async) · Source: staging instrumentation, 2 weeks, n = 42"
       },
       {
         "number": "02",
@@ -107,8 +107,8 @@
         "metaEn": "Success criterion: +25% more tasks completed end-to-end",
         "description": "Liberar la interfaz en menos de 1 segundo con estados de progreso claros, para que los usuarios completen sus flujos de reportes en vez de repetir ejecuciones (2,8× por sesión en la línea base).",
         "descriptionEn": "Free the UI in under 1 second with clear progress states so users complete reporting workflows instead of triggering 2.8× duplicate re-runs.",
-        "kpi": "flujos de reporte completados de punta a punta ÷ flujos iniciados; re-ejecuciones por sesión · Fuente: instrumentación de staging, 2 semanas, n = 42",
-        "kpiEn": "reporting workflows completed end-to-end ÷ workflows started; re-runs per session · Source: staging instrumentation, 2 weeks, n = 42"
+        "kpi": "flujos de reporte completados de punta a punta ÷ flujos iniciados (260 síncronos, 275 asíncronos); re-ejecuciones por sesión · Fuente: instrumentación de staging, 2 semanas, n = 42",
+        "kpiEn": "reporting workflows completed end-to-end ÷ workflows started (260 sync, 275 async); re-runs per session · Source: staging instrumentation, 2 weeks, n = 42"
       },
       {
         "number": "03",
@@ -152,8 +152,8 @@
       {
         "name": "Prueba de preferencia",
         "nameEn": "Preference test",
-        "description": "Prueba de preferencia entre modo síncrono (indicador de carga bloqueante) y modo asíncrono (notificación cuando listo) con n=42 usuarios reales en un entorno de pruebas durante 2 semanas.",
-        "descriptionEn": "Preference test between synchronous mode (blocking spinner) and asynchronous mode (notification when ready) with n=42 real users in a staging environment for 2 weeks.",
+        "description": "Prueba cruzada e intrasujeto entre modo síncrono (indicador de carga bloqueante) y modo asíncrono (notificación cuando está listo): 42 usuarios reales en dos grupos contrabalanceados de 21, 1 semana por modo, en un entorno de pruebas.",
+        "descriptionEn": "Within-subject crossover test between synchronous mode (blocking loading indicator) and asynchronous mode (notification when ready): 42 real users in two counterbalanced groups of 21, 1 week per mode, in a staging environment.",
         "findingLabel": "Hallazgo",
         "findingLabelEn": "Finding",
         "finding": "El 79% prefirió el modo asincrónico, pero el 21% restante eran gerentes que necesitaban el resultado inmediato",
@@ -343,8 +343,8 @@
   "abTesting": {
     "title": "Prueba de preferencia",
     "titleEn": "Preference test",
-    "subtitle": "Modo síncrono vs asíncrono: n=42 usuarios, 2 semanas en entorno de pruebas",
-    "subtitleEn": "Synchronous vs asynchronous mode: n=42 users, 2 weeks in staging",
+    "subtitle": "Modo síncrono vs asíncrono: 42 usuarios en dos grupos contrabalanceados, 1 semana por modo, en entorno de pruebas",
+    "subtitleEn": "Synchronous vs asynchronous mode: 42 users in two counterbalanced groups, 1 week per mode, in staging",
     "variantA": {
       "label": "VARIANTE A · MODO SÍNCRONO (CONTROL)",
       "labelEn": "VARIANT A · SYNCHRONOUS MODE (CONTROL)",
@@ -408,18 +408,18 @@
         "valueEn": "79%"
       },
       {
-        "value": "62%",
+        "value": "61%",
         "label": "menos abandono de reportes",
         "labelEn": "less report abandonment",
         "color": "green",
-        "valueEn": "62%"
+        "valueEn": "61%"
       },
       {
-        "value": "34%",
+        "value": "35%",
         "label": "más tareas completadas",
         "labelEn": "more tasks completed",
         "color": "green",
-        "valueEn": "34%"
+        "valueEn": "35%"
       },
       {
         "value": "21%",
@@ -568,8 +568,8 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Las métricas de descubrimiento (8,4 min de ejecución promedio, 34 timeouts en un cierre de mes y 2,8× de re-ejecuciones) se auditaron en 30 días de logs del sistema anterior y grabaciones de Hotjar. El abandono (91% → 35%), la finalización de tareas (58% → 78%) y la preferencia de modo (79% [33/42] asíncrono contra 21% [9/42] síncrono) vienen de 2 semanas de instrumentación controlada en staging (n = 42 analistas y gerentes activos). El volumen de tickets (48 → 36) compara los registros de soporte de 30 días antes y 30 días después del lanzamiento. Es una validación direccional.",
-    "subtitleEn": "Discovery metrics (8.4 min avg. execution, 34 month-end timeouts, 2.8× re-runs) were audited from 30 days of legacy server logs and Hotjar recordings. Abandonment (91% → 35%), task completion (58% → 78%) and mode preference (79% [33/42] async vs. 21% [9/42] sync) come from controlled 2-week staging instrumentation (n = 42 active analysts and managers). Support ticket volume (48 → 36) compares 30-day pre- and post-release support logs. This is directional validation.",
+    "subtitle": "Las métricas de descubrimiento (8,4 min de ejecución promedio, 34 timeouts en un cierre de mes y 2,8× de re-ejecuciones) se auditaron en 30 días de logs del sistema anterior y grabaciones de Hotjar. La prueba en staging fue cruzada e intrasujeto (n = 42 usuarios en dos grupos contrabalanceados de 21, durante 2 semanas: 1 semana de control síncrono y 1 semana de tratamiento asíncrono). El abandono en reportes de más de 2 min corresponde a 127 de 140 solicitudes síncronas (91%) contra 52 de 148 asíncronas (35%); la finalización de punta a punta, a 151 de 260 flujos síncronos (58%) contra 215 de 275 asíncronos (78%); las re-ejecuciones bajaron de 2,8× a 1,1×. La preferencia fue 79% (33/42) asíncrono contra 21% (9/42) síncrono. El volumen de tickets (48 → 36) compara los registros de soporte de 30 días antes y 30 días después del lanzamiento. Es una validación direccional.",
+    "subtitleEn": "Discovery metrics (8.4 min avg. execution, 34 month-end timeouts, 2.8× re-runs) were audited from 30 days of legacy server logs and Hotjar recordings. The staging test was a within-subject crossover (n = 42 users split into two counterbalanced groups of 21 over 2 weeks: 1 week synchronous control vs. 1 week asynchronous treatment). Abandonment on >2 min reports reflects 127/140 sync requests (91%) vs. 52/148 async requests (35%); end-to-end completion reflects 151/260 sync workflows (58%) vs. 215/275 async workflows (78%); duplicate re-runs dropped from 2.8× to 1.1×. Preference was 79% (33/42) async vs. 21% (9/42) sync. Support ticket volume (48 → 36) compares 30-day pre- and post-release support logs. This is directional validation.",
     "impactTitle": "Impacto medido",
     "impactTitleEn": "Measured impact",
     "impact": [
@@ -579,8 +579,8 @@
         "metricEn": "91% → 35%",
         "label": "Menos abandono de reportes (criterio de éxito: 50% menos)",
         "labelEn": "Less report abandonment (Success criterion: 50% less)",
-        "description": "62% menos: el abandono en reportes de más de 2 min pasó de 91% (control síncrono) a 35% (tratamiento asíncrono) con n = 42 usuarios en 2 semanas de staging. Se define como cerrar a mitad de la espera en modo síncrono, o no abrir ni descargar en 24 h tras el aviso en modo asíncrono.",
-        "descriptionEn": "62% less: abandonment on >2 min reports shifted from 91% (synchronous control) to 35% (asynchronous treatment) across n = 42 users in the 2-week staging test (defined as closing mid-wait in sync mode vs. not opening/downloading within 24 h of the completion alert in async mode)."
+        "description": "61% menos: el abandono en reportes de más de 2 min pasó de 91% (127 de 140 solicitudes síncronas) a 35% (52 de 148 solicitudes asíncronas) en 2 semanas de staging con 42 usuarios. Se define como cerrar a mitad de la espera en modo síncrono, o no abrir ni descargar en 24 h tras el aviso en modo asíncrono.",
+        "descriptionEn": "61% less: abandonment on >2 min reports shifted from 91% (127/140 sync requests) to 35% (52/148 async requests) across 42 users in the 2-week staging test (defined as closing mid-wait in sync mode vs. not opening/downloading within 24 h of the completion alert in async mode)."
       },
       {
         "icon": "✅",
@@ -588,8 +588,8 @@
         "metricEn": "58% → 78%",
         "label": "Más tareas completadas (criterio de éxito: +25%)",
         "labelEn": "More tasks completed (Success criterion: +25%)",
-        "description": "34% más: la finalización del flujo de reportes de punta a punta en staging subió de 58% a 78% (+20 puntos), y las re-ejecuciones por sesión bajaron de 2,8× a 1,1×.",
-        "descriptionEn": "34% more: end-to-end reporting workflow completion in staging rose from 58% to 78% (+20 pts), while duplicate report re-runs dropped from 2.8× to 1.1× per session."
+        "description": "35% más: la finalización del flujo de reportes de punta a punta en staging subió de 58% (151 de 260 flujos síncronos) a 78% (215 de 275 flujos asíncronos), +20 puntos, y las re-ejecuciones por sesión bajaron de 2,8× a 1,1×.",
+        "descriptionEn": "35% more: end-to-end reporting workflow completion in staging rose from 58% (151/260 sync workflows) to 78% (215/275 async workflows), +20 pts, while duplicate report re-runs dropped from 2.8× to 1.1× per session."
       },
       {
         "icon": "🎫",
