@@ -145,8 +145,8 @@
   "uxResearch": {
     "title": "Investigación",
     "titleEn": "Research",
-    "subtitle": "Entrevistas con empresas, una prueba de configuración con 6 perfiles de marketing y una prueba comparativa con 20 usuarios",
-    "subtitleEn": "Company interviews, a configuration test with 6 marketing profiles and a comparative test with 20 users",
+    "subtitle": "Entrevistas con empresas, una prueba de configuración y una prueba comparativa con 20 usuarios",
+    "subtitleEn": "Company interviews, a configuration test and a comparative test with 20 users",
     "stats": [
       {
         "value": "40%",
@@ -182,8 +182,8 @@
         "descriptionEn": "Six marketing and operations profiles configured the widget in the desktop panel prototype.",
         "findingLabel": "Resultado",
         "findingLabelEn": "Result",
-        "finding": "Personalizaron marca, campos y vista previa en 3,5 min en promedio, sin ayuda de desarrollo.",
-        "findingEn": "They customized branding, fields and preview in 3.5 min on average, without developer help."
+        "finding": "Personalizaron marca, campos y vista previa sin ayuda de desarrollo.",
+        "findingEn": "They customized branding, fields and preview without developer help."
       },
       {
         "name": "Prueba comparativa",
