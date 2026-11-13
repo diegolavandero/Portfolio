@@ -84,7 +84,7 @@
       {
         "name": "3 · Venta cruzada",
         "nameEn": "3 · Cross-sell",
-        "description": "Un piso flotante click, que no usa adhesivo, ofrecía un adhesivo como producto relacionado. En pisos que sí lo necesitaban, no decía cuánto adhesivo ni espuma niveladora hacía falta.",
+        "description": "Un piso flotante de encaje (click), que no usa adhesivo, ofrecía un adhesivo como producto relacionado. En pisos que sí lo necesitaban, no decía cuánto adhesivo ni espuma niveladora hacía falta.",
         "descriptionEn": "A click-lock floating floor, which needs no adhesive, offered adhesive as a related product. For floors that did need it, there was no indication of how much adhesive or underlayment foam was required."
       },
       {
@@ -126,7 +126,7 @@
         "titleEn": "Fewer online returns",
         "meta": "Criterio de éxito: 20% menos devoluciones (19% → ~15%)",
         "metaEn": "Success criterion: 20% fewer returns (19% → ~15%)",
-        "description": "Evitar faltantes y accesorios incompatibles (como adhesivo en pisos click) con el cálculo automático del kit.",
+        "description": "Evitar faltantes y accesorios incompatibles (como adhesivo en pisos de encaje) con el cálculo automático del kit.",
         "descriptionEn": "Prevent shortages and incompatible accessories (such as adhesive on click-lock floors) through automated kit calculation.",
         "kpi": "tasa de devolución de las ventas en línea de la categoría pisos · Fuente: línea base del equipo de investigación interno de Falabella; resultado con telemetría posterior al lanzamiento compartida por Falabella",
         "kpiEn": "return rate of online sales in the flooring category · Source: baseline from Falabella’s in-house research team; result from post-launch telemetry shared by Falabella"
@@ -209,7 +209,7 @@
         "nameEn": "App audit and precedents",
         "description": "Revisé la ficha de piso, el comparador y la venta cruzada en la app real, y analicé “Arma tu Proyecto” (muebles), Home Depot (calculadora y kit) y Roomvo (visualización AR).",
         "descriptionEn": "I reviewed the flooring page, comparator and cross-sell in the live app, and analyzed “Build Your Project” (furniture), Home Depot (calculator and kit) and Roomvo (AR visualization).",
-        "finding": "Un piso flotante click ofrecía adhesivo; el patrón de proyecto ya existía, pero solo para decisiones estéticas",
+        "finding": "Un piso flotante de encaje (click) ofrecía adhesivo; el patrón de proyecto ya existía, pero solo para decisiones estéticas",
         "findingEn": "A click-lock floating floor offered adhesive; the project pattern already existed, but only for aesthetic decisions"
       },
       {

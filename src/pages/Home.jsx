@@ -39,7 +39,7 @@ export default function Home() {
           const size = fitTitle(a.length > b.length ? a : b, 84, 1080, 38);
           return (
             <h1 className="mt-5 font-extrabold leading-[1.02] tracking-[-.045em]" style={{ fontSize: size }}>
-              <span className="block lg:whitespace-nowrap">{a}</span>
+              <span className="block lg:whitespace-nowrap">{a}</span>{' '}
               <span className="block text-acctext lg:whitespace-nowrap">{b}</span>
             </h1>
           );

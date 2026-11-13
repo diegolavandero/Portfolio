@@ -262,7 +262,7 @@
           "Difficulty reacting"
         ],
         "behaviors": [
-          "Monitoreo constante de KPIs",
+          "Monitoreo constante de KPI",
           "Intervención manual frecuente",
           "Enfoque en ejecución"
         ],
@@ -373,7 +373,7 @@
     ]
   },
   "cardSorting": {
-    "title": "Card sorting",
+    "title": "Clasificación de tarjetas",
     "titleEn": "Card sorting",
     "subtitle": "Cómo los planificadores agrupan las funciones, y por qué eso llevó a una sola consola",
     "subtitleEn": "How planners group features, and why that led to a single console",
@@ -418,7 +418,7 @@
         "color": "yellow",
         "items": [
           "Edición",
-          "KPIs",
+          "KPI",
           "Alertas",
           "Acciones"
         ],

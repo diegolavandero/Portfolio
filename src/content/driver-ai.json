@@ -63,7 +63,7 @@
   ],
   "heroImage": {
     "src": "data/images/driver-ai-hero.webp",
-    "placeholder": "Flujo de usuario Driver AI · Address Intelligence y Modal Contextual",
+    "placeholder": "Flujo de usuario Driver AI · Address Intelligence y modal contextual",
     "placeholderEn": "Driver AI user flow · Address Intelligence and Contextual Modal",
     "device": "mobile"
   },
@@ -332,7 +332,7 @@
           "New drivers have double the re-deliveries of experienced ones"
         ],
         "behaviors": [
-          "Supervisa 200+ entregas/día: toma decisiones por KPIs, no anécdotas",
+          "Supervisa 200+ entregas/día: toma decisiones por KPI, no anécdotas",
           "Trabaja con ciclos de reportes semanales ante dirección regional",
           "Presión directa de reducir costos operativos sin sacrificar SLA"
         ],
@@ -387,7 +387,7 @@
         "nameEn": "Access",
         "problem": "Sin código ni instrucciones → llama al cliente o al despachador",
         "problemEn": "No code or instructions → calls client or dispatcher",
-        "solution": "Modal Contextual muestra código al activar “Going to job”",
+        "solution": "El modal contextual muestra código al activar “Going to job”",
         "solutionEn": "Contextual Modal shows code when activating “Going to job”"
       },
       {

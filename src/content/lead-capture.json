@@ -387,7 +387,7 @@
     ]
   },
   "cardSorting": {
-    "title": "Card sorting",
+    "title": "Clasificación de tarjetas",
     "titleEn": "Card sorting",
     "subtitle": "Cómo se ordenaron las funciones entre la plataforma y el módulo",
     "subtitleEn": "How features were split between the platform and the widget",

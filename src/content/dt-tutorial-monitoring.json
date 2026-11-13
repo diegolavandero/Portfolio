@@ -62,12 +62,12 @@
   "solution": {
     "title": "Solución",
     "titleEn": "Solution",
-    "subtitle": "Una sección visible solo para administradores que consolida el avance de la inducción de toda la cuenta: KPIs arriba, distribución al medio y detalle por usuario abajo.",
+    "subtitle": "Una sección visible solo para administradores que consolida el avance de la inducción de toda la cuenta: KPI arriba, distribución al medio y detalle por usuario abajo.",
     "subtitleEn": "An admin-only section that consolidates the onboarding progress of the whole account: KPIs on top, distribution in the middle and per-user detail below.",
     "components": [
       {
         "number": "01",
-        "title": "Resumen con KPIs",
+        "title": "Resumen con KPI",
         "titleEn": "Summary with KPIs",
         "tagline": "¿Cómo vamos?",
         "taglineEn": "How are we doing?",
@@ -208,7 +208,7 @@
         "titleEn": "Detect lag faster",
         "meta": "Criterio de éxito: 50% más rápido (menos de 60 h)",
         "metaEn": "Success criterion: 50% faster (under 60 h)",
-        "description": "Mostrar a tiempo a los operadores inactivos o en riesgo con KPIs de la cuenta y clasificación por estado",
+        "description": "Mostrar a tiempo a los operadores inactivos o en riesgo con KPI de la cuenta y clasificación por estado",
         "descriptionEn": "Surface inactive and at-risk operators early with account KPIs and status classification",
         "kpi": "tiempo entre la creación del operador y la primera inspección del administrador · Fuente: eventos de producto y registros de base de datos",
         "kpiEn": "time between operator creation and the admin’s first inspection · Source: product events and database logs"
@@ -250,7 +250,7 @@
         "nameEn": "Admin interviews",
         "description": "Entrevisté a 5 jefes de operaciones y administradores de cuentas de empresas de logística, y audité 90 días de casos de soporte.",
         "descriptionEn": "I interviewed 5 heads of operations and account admins at logistics companies, and audited 90 days of support tickets.",
-        "finding": "Ya supervisaban a sus conductores con KPIs jerárquicos. Extender ese patrón evitó enseñar un modelo mental nuevo.",
+        "finding": "Ya supervisaban a sus conductores con KPI jerárquicos. Extender ese patrón evitó enseñar un modelo mental nuevo.",
         "findingEn": "They already supervised drivers with hierarchical KPIs. Extending that pattern avoided teaching a new mental model."
       },
       {
@@ -266,7 +266,7 @@
         "nameEn": "60-day pilot",
         "description": "5 cuentas, 18 administradores y 310 operadores. Medí con eventos de producto y registros de base de datos, y usé Hotjar para observar el uso de filtros y vistas.",
         "descriptionEn": "5 accounts, 18 admins and 310 operators. I measured with product events and database logs, and used Hotjar to observe how filters and views were used.",
-        "finding": "Escanean de arriba hacia abajo: KPIs, distribución y tabla. Hicieron clics repetidos sobre rezagados para enviarles un recordatorio.",
+        "finding": "Escanean de arriba hacia abajo: KPI, distribución y tabla. Hicieron clics repetidos sobre rezagados para enviarles un recordatorio.",
         "findingEn": "They scan top-down: KPIs, distribution and table. They rage-clicked on lagging operators to send them a reminder."
       }
     ],
@@ -376,7 +376,7 @@
       {
         "title": "Resumen",
         "titleEn": "Summary",
-        "description": "KPIs, dona de estado de inducción, dona de clasificación de avance y detalle de avance por usuario.",
+        "description": "KPI, dona de estado de inducción, dona de clasificación de avance y detalle de avance por usuario.",
         "descriptionEn": "KPIs, onboarding status donut, progress classification donut and per-user progress detail.",
         "src": "data/images/dt-tutorial-monitoring-01-resumen.webp",
         "srcEn": "data/images/dt-tutorial-monitoring-01-resumen-en.webp",
@@ -433,7 +433,7 @@
         "label": "Uso de filtros y vistas (criterio de éxito: 50% o más)",
         "labelEn": "Filter and view usage (Success criterion: 50% or more)",
         "metric": "65%",
-        "description": "de las sesiones fue más allá de los KPIs, con filtros o la vista Por tutorial. Sin línea base.",
+        "description": "de las sesiones fue más allá de los KPI, con filtros o la vista Por tutorial. Sin línea base.",
         "descriptionEn": "of sessions went beyond the KPIs, using filters or the By tutorial view. No baseline."
       },
       {

@@ -40,46 +40,46 @@
   "competenciesTitleEn": "Skills",
   "competencyGroups": [
     {
-      "group": "IA y Diseño de Agentes",
-      "groupEn": "AI & Agent Design",
+      "group": "IA y diseño de agentes",
+      "groupEn": "AI and agent design",
       "items": [
         {
-          "es": "AI Product Design",
-          "en": "AI Product Design"
+          "es": "Diseño de producto con IA",
+          "en": "AI product design"
         },
         {
-          "es": "Diseño de Agentes",
-          "en": "Agent Design"
+          "es": "Diseño de agentes",
+          "en": "Agent design"
         },
         {
-          "es": "LLMs e Interfaces de Agentes",
-          "en": "LLMs & Agent Interfaces"
+          "es": "LLM e interfaces de agentes",
+          "en": "LLM and agent interfaces"
         },
         {
-          "es": "IA Generativa",
+          "es": "IA generativa",
           "en": "Generative AI"
         },
         {
-          "es": "UI Conversacional",
+          "es": "Interfaces conversacionales",
           "en": "Conversational UI"
         },
         {
           "es": "Supervisión humana",
-          "en": "Human-in-the-Loop"
+          "en": "Human-in-the-loop"
         },
         {
-          "es": "UX de Interpretabilidad del Modelo",
-          "en": "Model Interpretability UX"
+          "es": "Interpretabilidad del modelo",
+          "en": "Model interpretability UX"
         },
         {
-          "es": "Prototipado IA",
-          "en": "AI Prototyping"
+          "es": "Prototipado con IA",
+          "en": "AI prototyping"
         }
       ]
     },
     {
       "group": "Interfaces y prototipado funcional",
-      "groupEn": "Frontend & Functional Prototyping",
+      "groupEn": "Frontend and functional prototyping",
       "items": [
         {
           "es": "Claude Code",
@@ -103,45 +103,45 @@
         },
         {
           "es": "Desarrollo de interfaces",
-          "en": "Frontend Development"
+          "en": "Frontend development"
         }
       ]
     },
     {
-      "group": "UX Research",
-      "groupEn": "UX Research",
+      "group": "Investigación UX",
+      "groupEn": "UX research",
       "items": [
         {
           "es": "Investigación UX",
-          "en": "UX Research"
+          "en": "UX research"
         },
         {
-          "es": "Customer Discovery",
-          "en": "Customer Discovery"
+          "es": "Descubrimiento de clientes",
+          "en": "Customer discovery"
         },
         {
-          "es": "Entrevistas con Usuarios",
-          "en": "User Interviews"
+          "es": "Entrevistas con usuarios",
+          "en": "User interviews"
         },
         {
-          "es": "Usuarios Sintéticos",
-          "en": "Synthetic Users"
+          "es": "Usuarios sintéticos",
+          "en": "Synthetic users"
         },
         {
           "es": "Pruebas de usabilidad",
-          "en": "Usability Testing"
+          "en": "Usability testing"
         },
         {
-          "es": "Análisis Heurístico",
-          "en": "Heuristic Analysis"
+          "es": "Análisis heurístico",
+          "en": "Heuristic analysis"
         },
         {
-          "es": "Arquitectura de Información",
-          "en": "Information Architecture"
+          "es": "Arquitectura de información",
+          "en": "Information architecture"
         },
         {
-          "es": "Análisis Competitivo",
-          "en": "Competitive Analysis"
+          "es": "Análisis competitivo",
+          "en": "Competitive analysis"
         },
         {
           "es": "Hotjar · Maze",
@@ -149,33 +149,33 @@
         },
         {
           "es": "Pruebas A/B",
-          "en": "A/B Testing"
+          "en": "A/B testing"
         }
       ]
     },
     {
-      "group": "Diseño y Producto",
-      "groupEn": "Design & Product",
+      "group": "Diseño y producto",
+      "groupEn": "Design and product",
       "items": [
         {
           "es": "Sistemas de diseño",
-          "en": "Design Systems"
+          "en": "Design systems"
         },
         {
-          "es": "Diseño de Interacción",
-          "en": "Interaction Design"
+          "es": "Diseño de interacción",
+          "en": "Interaction design"
         },
         {
-          "es": "Wireframing y Prototipado",
-          "en": "Wireframing & Prototyping"
+          "es": "Esquemas y prototipado",
+          "en": "Wireframing and prototyping"
         },
         {
-          "es": "Diseño Mobile",
-          "en": "Mobile App Design"
+          "es": "Diseño móvil",
+          "en": "Mobile app design"
         },
         {
-          "es": "Web Responsive",
-          "en": "Responsive Web"
+          "es": "Web adaptable",
+          "en": "Responsive web"
         },
         {
           "es": "B2B SaaS",
@@ -194,12 +194,12 @@
           "en": "Notion · Linear"
         },
         {
-          "es": "JTBD (Jobs-to-be-Done)",
-          "en": "JTBD (Jobs-to-be-Done)"
+          "es": "JTBD (trabajos por hacer)",
+          "en": "JTBD (jobs to be done)"
         },
         {
           "es": "Tokens de diseño · Operaciones de diseño",
-          "en": "Design Tokens · Design Ops"
+          "en": "Design tokens · Design ops"
         },
         {
           "es": "Accesibilidad · WCAG 2.2",

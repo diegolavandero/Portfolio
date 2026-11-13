@@ -520,7 +520,7 @@ function ItemValidationScreen({orders, setOrders, scanMandatory, onContinue}){
         <div className="sub">Verifica y carga los ítems al vehículo escaneando o manualmente.</div>
       </div>
 
-      <div className="scrbody">
+      <div className="scrbody" tabIndex={0}>
         <div className="plainlbl">Escaneo de ítems</div>
 
         <div className="scanbtn" onClick={() => setScannerOpen(true)}>
@@ -686,7 +686,7 @@ function SummaryScreen({orders, onBack, onConfirm}){
         </div>
         <div className="sub">Entrega tu dispositivo al supervisor para verificar y firmar</div>
       </div>
-      <div className="scrbody">
+      <div className="scrbody" tabIndex={0}>
         <div className="dtcard" style={{padding:"13px 14px",display:"flex",alignItems:"center",justifyContent:"space-between"}}>
           <div>
             <div className="eyebrow">Estado</div>

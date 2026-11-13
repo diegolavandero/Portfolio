@@ -5,7 +5,7 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --ink:#17191c;--m1:#4f545b;--m2:#6b7078;--m3:#9aa0a8;--m4:#4a4f57;
+  --ink:#17191c;--m1:#4f545b;--m2:#6b7078;--m3:#62676f;--m4:#4a4f57;
   --line:#ecedef;--hero:#f2f8e0;--dark:#1e1f22;--lime:#c9ed5b;--cream:#f6f2e9;
   --chip:#f1f3f5;--cmr-bg:#e7f0e9;--cmr-tx:#2e6b49;--field:#edeff1;
   --green:#2e6b49;--warn-bg:#faf1d8;--warn-tx:#8a6d2f;--req-bg:#f6ead0;--req-tx:#9a6a1e;
@@ -215,13 +215,13 @@ const StatusBar = () => (
 );
 const TopIcons = ({cart=0,onCart}) => (
   <div className="grp">
-    <button className="ibtn">{I.heart("#17191c",21)}</button>
-    <button className="ibtn">{I.bell()}</button>
-    <button className="ibtn cartbadge" onClick={onCart}>{I.cart()}{cart>0&&<span className="b">{cart}</span>}</button>
+    <button className="ibtn" aria-label="Favorites">{I.heart("#17191c",21)}</button>
+    <button className="ibtn" aria-label="Notifications">{I.bell()}</button>
+    <button className="ibtn cartbadge" aria-label={"Cart"+(cart>0?` (${cart})`:"")} onClick={onCart}>{I.cart()}{cart>0&&<span className="b">{cart}</span>}</button>
   </div>
 );
 const StepTop = ({label,cart,onBack,onCart}) => (
-  <div className="topbar"><button className="ibtn" onClick={onBack}>{I.back()}</button>
+  <div className="topbar"><button className="ibtn" aria-label="Back" onClick={onBack}>{I.back()}</button>
     <span className="title">{label}</span><span className="sp"></span><TopIcons cart={cart} onCart={onCart}/></div>
 );
 const Progress = ({pct}) => <div className="progress"><div className="track"><div className="fill" style={{width:pct+"%"}}/></div></div>;
@@ -254,7 +254,7 @@ function calc(m2){
 function Entrada({go}){return(
  <div className="scr">
   <StatusBar/>
-  <div className="topbar"><button className="ibtn">{I.back()}</button>
+  <div className="topbar"><button className="ibtn" aria-label="Back">{I.back()}</button>
     <div className="search">{I.search()}<span className="q">floating floor</span>{I.x()}</div>
     <TopIcons/></div>
   <div className="loc">{I.pin()}<span className="l">Enter your location</span>{I.chevR()}</div>
