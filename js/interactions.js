@@ -100,7 +100,8 @@ const Interactions = {
     const targets = document.querySelectorAll(`
       .stat-value,
       .impact-metric,
-      .impact-result-metric
+      .impact-result-metric,
+      .crit-to
     `);
     if (!targets.length) return;
 

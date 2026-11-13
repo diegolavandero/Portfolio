@@ -397,6 +397,7 @@ const Renderer = {
         <article class="method-card">
           <h3 class="method-name" ${bi(c.name, c.nameEn)}>${c.name}</h3>
           <p class="method-desc" ${bi(c.description, c.descriptionEn)}>${c.description}</p>
+          ${(c.counts || []).length ? `<div class="count-stack">${c.counts.map(n => Renderer.renderCount(n)).join('')}</div>` : ''}
           <div class="method-finding">
             <p class="method-finding-label" ${bi(c.findingLabel || 'Hallazgo', c.findingLabelEn || 'Finding')}>${c.findingLabel || 'Hallazgo'}</p>
             <p class="method-finding-text" ${bi(c.finding, c.findingEn)}>${c.finding}</p>
@@ -1211,9 +1212,12 @@ const Renderer = {
     const nextStepsTitleEn = data.nextStepsTitleEn || 'Next steps';
 
     const items = data.impact || [];
-    const isMetricCards = items.length > 0 && !!items[0].icon;
+    const isCriterion = items.length > 0 && !!items[0].chart;
+    const isMetricCards = !isCriterion && items.length > 0 && !!items[0].icon;
 
-    const impact = isMetricCards
+    const impact = isCriterion
+      ? items.map(i => Renderer.renderCriterionCard(i)).join('')
+      : isMetricCards
       ? items.map(i => `
           <div class="impact-card">
             ${i.icon ? `<div class="impact-icon" aria-hidden="true">${Icons.svg(i.icon)}</div>` : ''}
@@ -1247,8 +1251,25 @@ const Renderer = {
       </div>
     `).join('');
 
-    const impactWrapper = isMetricCards
-      ? `<div class="impact-grid">${impact}</div>`
+    const methodBlock = (data.method || []).length ? `
+      <details class="method-note">
+        <summary><span ${bi(data.methodTitle || 'Cómo se midió', data.methodTitleEn || 'How it was measured')}>${data.methodTitle || 'Cómo se midió'}</span><svg class="method-note-chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></summary>
+        <dl class="method-note-list">
+          ${data.method.map(m => `<div class="method-note-row"><dt ${bi(m.label, m.labelEn)}>${m.label}</dt><dd ${bi(m.value, m.valueEn)}>${m.value}</dd></div>`).join('')}
+        </dl>
+      </details>` : '';
+
+    const legend = isCriterion ? `
+      <p class="crit-legend">
+        <span class="crit-key"><span class="crit-swatch crit-swatch--from"></span><span ${bi('Línea base', 'Baseline')}>Línea base</span></span>
+        <span class="crit-key"><span class="crit-swatch crit-swatch--to"></span><span ${bi('Resultado', 'Result')}>Resultado</span></span>
+        <span class="crit-key"><span class="crit-swatch crit-swatch--target"></span><span ${bi('Criterio de éxito', 'Success criterion')}>Criterio de éxito</span></span>
+      </p>` : '';
+
+    const impactWrapper = isCriterion
+      ? `<div class="impact-grid crit-grid">${impact}</div>${legend}${methodBlock}`
+      : isMetricCards
+      ? `<div class="impact-grid">${impact}</div>${methodBlock}`
       : `<article class="impact-card-wrap">
           <div class="impact-row">${impact}</div>
         </article>`;
@@ -1278,6 +1299,58 @@ const Renderer = {
         </div>
       </section>
     `;
+  },
+
+  // ━━━ Tarjeta de resultado contra criterio de éxito ━━━
+  // chart: { from, to, max, criterion: número | [mín, máx] } — menor es mejor.
+  renderCriterionCard: (i) => {
+    const c = i.chart;
+    const split = (s) => String(s || '').split('→').map(x => x.trim());
+    const [fromEs, toEs] = split(i.metric);
+    const [fromEn, toEn] = split(i.metricEn || i.metric);
+    const crit = (s) => { const m = String(s || '').match(/^(.*?)\s*\((?:criterio de éxito|success criterion):\s*([^)]+)\)\s*$/i); return m ? [m[1], m[2]] : [s, '']; };
+    const [labelEs, critEs] = crit(i.label);
+    const [labelEn, critEn] = crit(i.labelEn || i.label);
+    const upper = Array.isArray(c.criterion) ? Math.max(...c.criterion) : c.criterion;
+    const met = c.to <= upper;
+    const W = 300, P = 14, x = (v) => P + (v / c.max) * (W - 2 * P);
+    const fmt = (v, lang) => { const s = String(v); return lang === 'es' ? s.replace('.', ',') : s; };
+    const xf = x(c.from), xt = x(c.to);
+    const target = Array.isArray(c.criterion)
+      ? `<rect class="crit-band" x="${x(c.criterion[0]).toFixed(1)}" y="12" width="${(x(c.criterion[1]) - x(c.criterion[0])).toFixed(1)}" height="28" rx="2"/>`
+      : `<line class="crit-line" x1="${x(c.criterion).toFixed(1)}" y1="10" x2="${x(c.criterion).toFixed(1)}" y2="42"/>`;
+    const statusEs = (met ? 'Cumple el criterio de éxito' : 'No alcanza el criterio de éxito') + (critEs ? `: ${critEs}` : '');
+    const statusEn = (met ? 'Meets the success criterion' : 'Misses the success criterion') + (critEn ? `: ${critEn}` : '');
+    const titleEs = `${labelEs}: de ${fromEs} a ${toEs}. ${statusEs}.`;
+    const titleEn = `${labelEn}: from ${fromEn} to ${toEn}. ${statusEn}.`;
+    return `
+      <article class="impact-card crit-card">
+        <p class="crit-metric"><span class="crit-from" ${bi(fromEs, fromEn)}>${fromEs}</span><span class="crit-arrow" aria-hidden="true">→</span><span class="crit-to" ${bi(toEs, toEn)}>${toEs}</span></p>
+        <h3 class="crit-label" ${bi(labelEs, labelEn)}>${labelEs}</h3>
+        <svg class="crit-chart" viewBox="0 0 ${W} 52" role="img" preserveAspectRatio="none">
+          <title ${bi(titleEs, titleEn)}>${titleEs}</title>
+          <line class="crit-track" x1="${P}" y1="26" x2="${W - P}" y2="26"/>
+          ${target}
+          <line class="crit-path" x1="${xf.toFixed(1)}" y1="26" x2="${(xt + (xf > xt ? 7 : -7)).toFixed(1)}" y2="26" pathLength="1"/>
+          <circle class="crit-dot-from" cx="${xf.toFixed(1)}" cy="26" r="5"/>
+          <circle class="crit-dot-to" cx="${xt.toFixed(1)}" cy="26" r="7"/>
+        </svg>
+        <p class="crit-status ${met ? 'is-met' : 'is-missed'}">${met
+          ? '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg>'
+          : '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg>'}<span ${bi(statusEs, statusEn)}>${statusEs}</span></p>
+        <p class="impact-desc" ${bi(i.description, i.descriptionEn)}>${i.description}</p>
+      </article>`;
+  },
+
+  // ━━━ Conteo visible: k de n como matriz de puntos ━━━
+  renderCount: (n) => {
+    const dots = Array.from({ length: n.n }, (_, j) => `<span class="count-dot${j < n.k ? ' is-on' : ''}"></span>`).join('');
+    const capEs = `${n.k} de ${n.n}`, capEn = `${n.k} of ${n.n}`;
+    return `
+      <div class="count-block">
+        <div class="count-dots" aria-hidden="true">${dots}</div>
+        <p class="count-cap"><strong ${bi(capEs, capEn)}>${capEs}</strong> <span ${bi(n.label, n.labelEn)}>${n.label}</span></p>
+      </div>`;
   },
 
   // ━━━ SECTION: CTA Final ━━━

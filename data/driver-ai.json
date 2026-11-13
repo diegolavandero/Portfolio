@@ -136,7 +136,15 @@
         "finding": "73% (22 de 30, encuesta a la flota) tenía Google Maps y la app corporativa abiertas en paralelo",
         "findingEn": "73% (22 of 30, fleet survey) had Google Maps and the corporate app open simultaneously",
         "name": "Indagación contextual",
-        "nameEn": "Contextual inquiry"
+        "nameEn": "Contextual inquiry",
+        "counts": [
+          {
+            "k": 22,
+            "n": 30,
+            "label": "usaba Google Maps en paralelo",
+            "labelEn": "used Google Maps in parallel"
+          }
+        ]
       },
       {
         "name": "Prueba comparativa en Maze",
@@ -146,7 +154,21 @@
         "findingLabel": "Resultado",
         "findingLabelEn": "Result",
         "finding": "93% (14/15) activó el audio TTS en 1 toque o menos y 87% (13/15) prefirió el audio sobre el texto. Hubo 4,2% de errores de toque en 95 toques, con el botón flotante de 56 px.",
-        "findingEn": "93% (14/15) completed TTS activation in ≤ 1 tap and 87% (13/15) preferred audio over text. The 56px FAB kept misclicks to 4.2% across 95 taps."
+        "findingEn": "93% (14/15) completed TTS activation in ≤ 1 tap and 87% (13/15) preferred audio over text. The 56px FAB kept misclicks to 4.2% across 95 taps.",
+        "counts": [
+          {
+            "k": 14,
+            "n": 15,
+            "label": "activó el audio en 1 toque o menos",
+            "labelEn": "activated audio in ≤ 1 tap"
+          },
+          {
+            "k": 13,
+            "n": 15,
+            "label": "prefirió el audio",
+            "labelEn": "preferred audio"
+          }
+        ]
       },
       {
         "name": "Piloto de campo en TestFlight",
@@ -165,7 +187,7 @@
         "textEn": "I don’t need more info on screen. I need it told to me while I’m driving.",
         "author": "Rodrigo, conductor 3 años",
         "authorEn": "Rodrigo, driver 3 years",
-        "context": "Contextual Inquiry en campo",
+        "context": "Indagación contextual en campo",
         "contextEn": "Contextual inquiry in the field"
       },
       {
@@ -477,8 +499,8 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Evaluación en dos etapas: prueba comparativa en Maze (n = 15; 93% [14/15] activó el TTS en 1 toque o menos; 4,2% de errores de toque en 95 toques; 87% [13/15] prefirió el audio) y piloto de 3 semanas en TestFlight (n = 8 conductores, 3.200 entregas en 18 días hábiles, rutas urbanas de alta densidad). Los tiempos y códigos de falla vienen de marcas de geocerca y de POD del servidor. Como el piloto fue pre-post y sin grupo control, las mejoras coincidieron con el despliegue y son una validación direccional.",
-    "subtitleEn": "Two-stage evaluation: a Maze prototype benchmark (n = 15 drivers; 93% [14/15] completed TTS activation in ≤ 1 tap; 4.2% misclick rate across 95 taps; 87% [13/15] preferred audio) and a 3-week TestFlight field pilot (n = 8 drivers, 3,200 deliveries across 18 working days on high-density urban routes). Stop durations and failure codes were captured via backend geofence/POD timestamps. Because the pilot used a pre-post design without a randomized control group, operational gains coincided with the rollout and reflect directional validation.",
+    "subtitle": "Evaluación en dos etapas: prueba comparativa en Maze (n = 15) y piloto de 3 semanas en TestFlight (n = 8 conductores).",
+    "subtitleEn": "Two-stage evaluation: a Maze benchmark (n = 15) and a 3-week TestFlight field pilot (n = 8 drivers).",
     "impactTitle": "Impacto medido",
     "impactTitleEn": "Measured impact",
     "impact": [
@@ -489,7 +511,16 @@
         "label": "Menos tiempo por parada (criterio de éxito: 15–20%)",
         "labelEn": "Less time per stop (Success criterion: 15–20%)",
         "description": "18% menos: la duración promedio por parada en rutas urbanas de alta densidad pasó de 8,4 min (3.100 paradas de las 3 semanas previas) a 6,9 min (3.200 paradas del piloto de 3 semanas). 7 de 8 conductores mejoraron.",
-        "descriptionEn": "18% less: average stop duration across high-density urban routes shifted from 8.4 min (3,100 stops in the prior 3-week baseline) to 6.9 min (3,200 stops in the 3-week pilot; 7 of 8 drivers improved)."
+        "descriptionEn": "18% less: average stop duration across high-density urban routes shifted from 8.4 min (3,100 stops in the prior 3-week baseline) to 6.9 min (3,200 stops in the 3-week pilot; 7 of 8 drivers improved).",
+        "chart": {
+          "from": 8.4,
+          "to": 6.9,
+          "max": 10,
+          "criterion": [
+            6.72,
+            7.14
+          ]
+        }
       },
       {
         "icon": "📦",
@@ -498,7 +529,13 @@
         "label": "Menos fallas al primer intento (criterio de éxito: 20%)",
         "labelEn": "Fewer first-attempt failures (Success criterion: 20%)",
         "description": "22% menos: la tasa de falla pasó de 14,0% (434 de 3.100 paradas de línea base) a 10,9% (349 de 3.200 paradas del piloto). “Sin acceso al edificio” bajó de 54% (234/434) a 19% (66/349) de las fallas.",
-        "descriptionEn": "22% lower: failure rate moved from 14.0% (434/3,100 baseline stops) to 10.9% (349/3,200 pilot stops); “no building access” dropped from 54% (234/434) to 19% (66/349) of failures."
+        "descriptionEn": "22% lower: failure rate moved from 14.0% (434/3,100 baseline stops) to 10.9% (349/3,200 pilot stops); “no building access” dropped from 54% (234/434) to 19% (66/349) of failures.",
+        "chart": {
+          "from": 14.0,
+          "to": 10.9,
+          "max": 16,
+          "criterion": 11.2
+        }
       },
       {
         "icon": "📞",
@@ -507,7 +544,13 @@
         "label": "Menos llamadas de acceso al despachador (criterio de éxito: 50% menos)",
         "labelEn": "Fewer dispatcher access calls (Success criterion: 50% fewer)",
         "description": "63% menos: las llamadas de acceso generadas por los conductores del piloto pasaron de 3,2 a 1,2 por turno y conductor (8 de 8 mejoraron, auditadas con las bitácoras de incidentes del despachador durante las 3 semanas del piloto).",
-        "descriptionEn": "63% fewer: access calls generated by pilot drivers moved from 3.2 to 1.2 calls/shift per driver (8 of 8 drivers improved, audited via dispatcher incident logs over the 3-week pilot)."
+        "descriptionEn": "63% fewer: access calls generated by pilot drivers moved from 3.2 to 1.2 calls/shift per driver (8 of 8 drivers improved, audited via dispatcher incident logs over the 3-week pilot).",
+        "chart": {
+          "from": 3.2,
+          "to": 1.2,
+          "max": 4,
+          "criterion": 1.6
+        }
       }
     ],
     "learningsTitle": "Aprendizajes clave",
@@ -540,6 +583,34 @@
         "titleEn": "Time-per-stop prediction",
         "description": "Extender Address Intelligence a predicción de tiempo por parada en cada edificio, para recalcular el ETA de la ruta completa antes de salir, impactando la planificación del turno entero.",
         "descriptionEn": "Extend Address Intelligence to time-per-stop prediction for each building, to recalculate the full route ETA before departure, impacting entire shift planning."
+      }
+    ],
+    "methodTitle": "Cómo se midió",
+    "methodTitleEn": "How it was measured",
+    "method": [
+      {
+        "label": "Muestra",
+        "labelEn": "Sample",
+        "value": "Prueba comparativa en Maze: 15 conductores (93% [14/15] activó el TTS en 1 toque o menos; 4,2% de errores de toque en 95 toques; 87% [13/15] prefirió el audio). Piloto en TestFlight: 8 conductores y 3.200 entregas en rutas urbanas de alta densidad.",
+        "valueEn": "Maze benchmark: 15 drivers (93% [14/15] completed TTS activation in ≤ 1 tap; 4.2% misclick rate across 95 taps; 87% [13/15] preferred audio). TestFlight pilot: 8 drivers and 3,200 deliveries on high-density urban routes."
+      },
+      {
+        "label": "Periodo",
+        "labelEn": "Period",
+        "value": "3 semanas de piloto (18 días hábiles), comparadas con las 3 semanas previas (3.100 paradas).",
+        "valueEn": "A 3-week pilot (18 working days), compared with the prior 3 weeks (3,100 stops)."
+      },
+      {
+        "label": "Fuente",
+        "labelEn": "Source",
+        "value": "Marcas de geocerca y de POD del servidor para tiempos y códigos de falla; bitácoras de incidentes del despachador para las llamadas.",
+        "valueEn": "Server geofence and POD timestamps for durations and failure codes; dispatcher incident logs for calls."
+      },
+      {
+        "label": "Diseño",
+        "labelEn": "Design",
+        "value": "Antes y después, sin grupo de control: las mejoras coincidieron con el despliegue y son una validación direccional.",
+        "valueEn": "Before and after, without a control group: gains coincided with the rollout and reflect directional validation."
       }
     ]
   },
