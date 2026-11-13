@@ -24,7 +24,7 @@
 - **Tokens:** variables RGB en `src/index.css` (`:root` y `.dark`), expuestas en `tailwind.config.js`. Acento `#CD2143` (5,03:1 sobre `#F7F7F7`); en tema noche el texto de acento usa `--acctext`.
 - **Build:** `npm run build` = `vite build` + `scripts/prerender-meta.mjs` (HTML por ruta con meta OG + `sitemap.xml`). Local: `npm run dev` o `npx vite preview`.
 - **Estándar de calidad (bloqueante antes de mergear a main):** WCAG 2.2 AA con axe en 11 rutas × ES/EN × día/noche × 1440/390; contraste ≥ 4,5:1 incluso sobre círculos decorativos; ningún título (h1–h4) en dos líneas en escritorio — si no cabe, cambiar el layout o la palabra, no el tamaño a ciegas; contenido a ≥ 16 px del borde en móvil; sin desborde horizontal; animaciones solo con `prefers-reduced-motion: no-preference`.
-- **Producción:** `main` sigue en v1 hasta aprobación explícita de Diego.
+- **Producción:** `main` = v2 desde 2026-11-13 (aprobado por Diego). v1 queda en la rama `v1` y en `legacy-v1/`.
 
 ## 🏗️ Arquitectura v1 (legacy): JSON + JavaScript Modular
 
