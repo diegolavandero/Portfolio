@@ -70,8 +70,8 @@
   "problemAndObjectives": {
     "title": "Problema y objetivos",
     "titleEn": "Problem and objectives",
-    "subtitle": "El problema y tres metas medibles, definidas antes de diseñar",
-    "subtitleEn": "The problem and three measurable goals, set before designing",
+    "subtitle": "El problema y dos metas medibles, definidas antes de diseñar",
+    "subtitleEn": "The problem and two measurable goals, set before designing",
     "problemTitle": "El problema",
     "problemTitleEn": "The problem",
     "problemIntro": "Las empresas enfrentan fricción en la captura de leads que reduce conversión:",
@@ -109,36 +109,25 @@
     "objectives": [
       {
         "number": "01",
-        "title": "Aumentar la conversión de leads",
-        "titleEn": "Increase lead conversion",
-        "meta": "Meta: 65% o más completa el contacto",
-        "metaEn": "Goal: 65% or more complete the contact",
-        "description": "Que más visitantes con intención completen el primer contacto, con un chat de campos mínimos en lugar de un formulario largo (línea base: 50%)",
-        "descriptionEn": "Get more high-intent visitors to complete first contact, with a minimal-field chat instead of a long form (baseline: 50%)",
+        "title": "Finalización del contacto",
+        "titleEn": "Contact completion",
+        "meta": "Meta previa a la prueba: 65% o más completa el contacto (35% o menos abandona)",
+        "metaEn": "Pre-test target: ≥ 65% completion (≤ 35% drop-off)",
+        "description": "Aumentar la proporción de visitantes que completan el primer contacto, reemplazando los formularios de varios campos por un chat de entrada mínima.",
+        "descriptionEn": "Increase the share of visitors who complete initial contact by replacing multi-field forms with a minimal-input chat widget.",
         "kpi": "visitantes que completan el contacto ÷ visitantes que lo inician · Fuente: prueba comparativa con prototipo (n = 20)",
         "kpiEn": "visitors who complete contact ÷ visitors who start it · Source: comparative prototype test (n = 20)"
       },
       {
         "number": "02",
-        "title": "Reducir el abandono en el contacto",
-        "titleEn": "Reduce contact abandonment",
-        "meta": "Meta: 30% menos abandono",
-        "metaEn": "Goal: 30% less drop-off",
-        "description": "Que menos visitantes se vayan antes de enviar su primer mensaje",
-        "descriptionEn": "Fewer visitors leaving before sending their first message",
-        "kpi": "visitantes que abandonan antes del primer mensaje ÷ visitantes que inician el contacto · Fuente: prueba comparativa con prototipo (n = 20)",
-        "kpiEn": "visitors who leave before the first message ÷ visitors who start contact · Source: comparative prototype test (n = 20)"
-      },
-      {
-        "number": "03",
-        "title": "Contacto más rápido",
-        "titleEn": "Faster contact",
-        "meta": "Meta: 40% menos tiempo (menos de 41 s)",
-        "metaEn": "Goal: 40% less time (under 41 s)",
-        "description": "Acortar el tiempo entre el primer clic y el mensaje confirmado",
-        "descriptionEn": "Shorten the time between the first click and the confirmed message",
-        "kpi": "segundos entre el primer clic y la confirmación del mensaje · Fuente: prueba comparativa con prototipo (n = 20)",
-        "kpiEn": "seconds between the first click and message confirmation · Source: comparative prototype test (n = 20)"
+        "title": "Velocidad de interacción",
+        "titleEn": "Interaction speed",
+        "meta": "Meta previa a la prueba: 40% menos tiempo hasta el contacto (41 s o menos)",
+        "metaEn": "Pre-test target: ≥ 40% faster time-to-contact (≤ 41 s)",
+        "description": "Minimizar los pasos entre el primer clic y la confirmación del mensaje con carga instantánea del widget y validación en línea.",
+        "descriptionEn": "Minimize steps between initial click and message confirmation through instant widget loading and inline validation.",
+        "kpi": "mediana de segundos entre el primer clic y la confirmación del mensaje, en sesiones completadas · Fuente: prueba comparativa con prototipo (n = 20)",
+        "kpiEn": "median seconds from first click to message confirmation, across completed runs · Source: comparative prototype test (n = 20)"
       }
     ]
   },
@@ -149,19 +138,19 @@
     "subtitleEn": "Company interviews, a configuration test and a comparative test with 20 users",
     "stats": [
       {
-        "value": "40%",
-        "description": "menos abandono en el contacto inicial (30% frente a 50% en formularios largos)",
-        "descriptionEn": "less drop-off in initial contact (30% vs. 50% on long forms)"
+        "value": "70%",
+        "description": "completó el contacto con el chat (14 de 20), frente a 50% con el formulario (10 de 20)",
+        "descriptionEn": "completed contact via chat (14 of 20) vs. 50% on the form (10 of 20)"
       },
       {
-        "value": "70%",
-        "description": "completó el contacto (14 de 20 usuarios)",
-        "descriptionEn": "completed contact (14 of 20 users)"
+        "value": "30%",
+        "description": "abandonó antes de enviar un mensaje (6 de 20), frente a 50% con el formulario",
+        "descriptionEn": "dropped off before sending a message (6 of 20) vs. 50% on the form"
       },
       {
         "value": "32 s",
-        "description": "hasta el primer contacto, frente a 68 s en formularios tradicionales",
-        "descriptionEn": "to first contact, vs. 68 s on traditional forms"
+        "description": "mediana hasta el contacto confirmado, frente a 68 s con el formulario (solo sesiones completadas)",
+        "descriptionEn": "median to confirmed contact vs. 68 s on the form (completed runs only)"
       }
     ],
     "methodCards": [
@@ -192,8 +181,8 @@
         "descriptionEn": "I tested the widget in a Figma prototype with 20 end users, against a traditional long form.",
         "findingLabel": "Resultado",
         "findingLabelEn": "Result",
-        "finding": "El chat de campos mínimos superó al formulario en finalización, abandono y tiempo. Con n = 20 es una señal direccional, no un dato de producción.",
-        "findingEn": "The minimal-field chat beat the form on completion, drop-off and time. With n = 20 it is a directional signal, not production data."
+        "finding": "El chat de campos mínimos tuvo mejores resultados que el formulario en finalización, abandono y tiempo. Con n = 20 es una señal direccional, no un dato de producción.",
+        "findingEn": "The minimal-field chat performed better than the form on completion, drop-off and time. With n = 20 it is a directional signal, not production data."
       }
     ],
     "insightsTitle": "Prueba comparativa · chat de campos mínimos frente a formulario largo (n = 20)",
@@ -600,28 +589,20 @@
     "subtitleEn": "Comparative prototype test (n = 20) against a long form. A directional signal, not production data.",
     "impact": [
       {
-        "metric": "70%",
-        "metricEn": "70%",
-        "label": "Conversión de leads",
-        "labelEn": "Lead conversion",
-        "description": "De 50% con formulario largo a 70% (14 de 20 usuarios) que completó el contacto.",
-        "descriptionEn": "From 50% with a long form to 70% (14 of 20 users) completing contact."
+        "metric": "50% → 70%",
+        "metricEn": "50% → 70%",
+        "label": "Finalización del contacto (meta: 65% o más)",
+        "labelEn": "Contact completion (Target: ≥ 65%)",
+        "description": "14 de 20 usuarios completaron el contacto con el chat, frente a 10 de 20 con el formulario tradicional (+20 puntos, señal direccional). El abandono bajó de 50% a 30%.",
+        "descriptionEn": "14 of 20 users completed contact via chat vs. 10 of 20 on the traditional form (+20 pts, directional lift). Drop-off fell from 50% to 30%."
       },
       {
-        "metric": "40%",
-        "metricEn": "40%",
-        "label": "Menos abandono en contacto",
-        "labelEn": "Less contact abandonment",
-        "description": "De 50% (10 de 20) a 30% (6 de 20) antes de enviar un mensaje, con los campos reducidos al mínimo.",
-        "descriptionEn": "From 50% (10 of 20) to 30% (6 of 20) before sending a message, with fields cut to the minimum."
-      },
-      {
-        "metric": "53%",
-        "metricEn": "53%",
-        "label": "Contacto más rápido",
-        "labelEn": "Faster contact",
-        "description": "De 68 s a 32 s entre el primer clic y el contacto confirmado.",
-        "descriptionEn": "From 68 s to 32 s between the first click and confirmed contact."
+        "metric": "68 s → 32 s",
+        "metricEn": "68 s → 32 s",
+        "label": "Velocidad de interacción (meta: 41 s o menos)",
+        "labelEn": "Interaction speed (Target: ≤ 41 s)",
+        "description": "53% menos tiempo en la mediana entre el primer clic y el envío confirmado, medido en sesiones completadas (n = 14 con el chat, n = 10 con el formulario).",
+        "descriptionEn": "53% reduction in median time from initial click to confirmed send, measured across completed runs (n = 14 chat vs. n = 10 form)."
       }
     ],
     "learnings": [

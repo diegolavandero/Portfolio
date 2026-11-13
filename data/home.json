@@ -68,9 +68,9 @@
       "titleEn": "Real-time lead capture system",
       "subtitle": "Plataforma de widget de chat pre-venta configurable",
       "subtitleEn": "Configurable pre-sales chat widget platform",
-      "metric": "40%",
-      "metricLabel": "menos abandono en contacto",
-      "metricLabelEn": "less contact abandonment",
+      "metric": "70%",
+      "metricLabel": "completa el contacto (prototipo, n = 20)",
+      "metricLabelEn": "complete contact (prototype, n = 20)",
       "slug": "lead-capture",
       "device": "desktop",
       "image": "data/images/lead-capture.webp"
