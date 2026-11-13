@@ -185,12 +185,12 @@
       {
         "name": "Benchmark y telemetría",
         "nameEn": "Benchmark and telemetry",
-        "description": "Probé el prototipo de Figma con 12 participantes en 3 escenarios con corte de 25 min. Después medí 30 días con Hotjar: 1.420 sesiones, 14 cuentas y 185 usuarios.",
-        "descriptionEn": "I tested the Figma prototype with 12 participants across 3 scenarios with a 25-min cutoff. Then I measured 30 days with Hotjar: 1,420 sessions, 14 accounts and 185 users.",
+        "description": "Probé el prototipo de Figma con 12 participantes en 3 escenarios con corte de 25 min. Después medí 30 días en producción: 1.420 sesiones, 14 cuentas y 185 usuarios.",
+        "descriptionEn": "I tested the Figma prototype with 12 participants across 3 scenarios with a 25-min cutoff. Then I measured 30 days in production: 1,420 sessions, 14 accounts and 185 users.",
         "findingLabel": "Métricas",
         "findingLabelEn": "Metrics",
-        "finding": "Tiempo en tarea, pasos de interacción, tasa de error crítico, facilidad percibida (SEQ) y clics de frustración.",
-        "findingEn": "Time on task, interaction steps, critical error rate, perceived ease (SEQ) and rage clicks."
+        "finding": "Telemetría de producto: tiempo en tarea, pasos y tasa de error crítico. Hotjar: facilidad percibida (SEQ), clics de frustración y mapas de calor.",
+        "findingEn": "Product telemetry: time on task, steps and critical error rate. Hotjar: perceived ease (SEQ), rage clicks and heatmaps."
       }
     ]
   },
