@@ -541,7 +541,7 @@
         "titleEn": "Validation by order",
         "description": "Cuando la orden no tiene desglose de ítems (se maneja como bulto o paquete único), la validación ocurre a nivel de orden completa, no por SKU.",
         "descriptionEn": "When the order has no item breakdown (handled as a single bag or package), validation happens at the whole-order level instead of per SKU.",
-        "src": "data/images/load-validation-by-order.png",
+        "src": "data/images/load-validation-by-order.png?v=3",
         "alt": "Vista de lista de órdenes de carga, validación a nivel de orden",
         "altEn": "Load order list view, order-level validation",
         "fit": "full"
@@ -553,7 +553,7 @@
         "titleEn": "Validation by item",
         "description": "Cuando la orden trae el detalle de SKU, cada ítem se valida individualmente: cantidad, código y estado quedan registrados por línea.",
         "descriptionEn": "When the order includes SKU-level detail, each item is validated individually: quantity, code and status are recorded per line.",
-        "src": "data/images/load-validation-by-item.png",
+        "src": "data/images/load-validation-by-item.png?v=3",
         "alt": "Vista de lista de ítems de carga, validación a nivel de SKU",
         "altEn": "Load item list view, SKU-level validation",
         "fit": "full"
@@ -565,7 +565,7 @@
         "titleEn": "Code scanning",
         "description": "Escaneo por cámara para verificar ítems rápidamente, con confirmación sonora y visual inmediata al detectar el código.",
         "descriptionEn": "Camera-based scanning to verify items quickly, with immediate audio and visual feedback on a successful read.",
-        "src": "data/images/load-validation-scanning.png",
+        "src": "data/images/load-validation-scanning.png?v=3",
         "alt": "Interfaz de escaneo de código de barras",
         "altEn": "Barcode scanning interface",
         "fit": "full"
@@ -577,7 +577,7 @@
         "titleEn": "Manual verification",
         "description": "Cuando el escaneo es obligatorio pero falla, se puede verificar tocando la orden o el ítem específico e ingresando el código a mano.",
         "descriptionEn": "When scanning is mandatory but fails, you can verify by tapping the specific order or item and typing the code in by hand.",
-        "src": "data/images/load-validation-manual-verification.png",
+        "src": "data/images/load-validation-manual-verification.png?v=3",
         "alt": "Modal de verificación manual con campo de código vacío",
         "altEn": "Manual verification modal with an empty code field",
         "fit": "full"
@@ -589,7 +589,7 @@
         "titleEn": "Signature pending (initial design)",
         "description": "La validación queda parcial hasta que el supervisor firma; el estado de cada orden se ve de un vistazo antes de firmar. Esta es la versión inicial; en el piloto la firma táctil se reemplazó por un PIN de confirmación.",
         "descriptionEn": "Validation stays partial until the supervisor signs; each order’s status is visible at a glance before signing. This is the initial version; in the pilot the tactile signature was replaced by a confirmation PIN.",
-        "src": "data/images/load-validation-signature-empty.png",
+        "src": "data/images/load-validation-signature-empty.png?v=3",
         "alt": "Pantalla de firma digital, estado vacío antes de firmar",
         "altEn": "Digital signature screen, empty state before signing",
         "fit": "full"
@@ -601,7 +601,7 @@
         "titleEn": "Signature completed (initial design)",
         "description": "Firma capturada en el dispositivo, con timestamp automático como evidencia inmutable de la validación.",
         "descriptionEn": "Signature captured on-device, with an automatic timestamp as immutable evidence of the validation.",
-        "src": "data/images/load-validation-signature-completed.png",
+        "src": "data/images/load-validation-signature-completed.png?v=3",
         "alt": "Pantalla de firma digital con firma capturada",
         "altEn": "Digital signature screen with a captured signature",
         "fit": "full"
