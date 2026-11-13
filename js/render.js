@@ -80,6 +80,7 @@ const Renderer = {
     try {
       const response = await fetch(`/data/${slug}.json`);
       const data = await response.json();
+      if (data.hidden) throw new Error('hidden case');
       Renderer._ctx = { title: data.title || '', titleEn: data.titleEn || data.title || '' };
       Router.setPageMeta({
         slug,
