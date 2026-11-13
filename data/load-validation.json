@@ -14,8 +14,8 @@
     "titleAccentEn": "load validation",
     "subtitle": "De errores tardíos a validación temprana",
     "subtitleEn": "From late errors to early validation",
-    "description": "Diseñé un sistema móvil de validación de carga pensado para que conductores y supervisores verifiquen el 100% de las cargas antes de salir de bodega. Reduce las discrepancias en destino y deja trazabilidad digital completa.",
-    "descriptionEn": "I designed a mobile load validation system built so drivers and supervisors can verify 100% of loads before leaving the warehouse. It reduces destination discrepancies and leaves a complete digital trail."
+    "description": "Diseñé un sistema móvil de validación de carga para que conductores y supervisores verifiquen cada carga antes de salir de bodega. Reduce las discrepancias detectadas en destino y deja trazabilidad digital.",
+    "descriptionEn": "I designed a mobile load-validation system so drivers and supervisors verify each load before leaving the warehouse. It reduces discrepancies detected at destination and leaves a digital audit trail."
   },
   "projectSpecs": [
     {
