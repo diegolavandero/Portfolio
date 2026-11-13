@@ -69,20 +69,20 @@
   "problemAndObjectives": {
     "title": "Problema y objetivos",
     "titleEn": "Problem and objectives",
-    "subtitle": "Identificación del desafío y metas medibles",
-    "subtitleEn": "Identification of the challenge and measurable goals",
+    "subtitle": "Identificación del desafío y tres metas medibles, con su criterio de éxito",
+    "subtitleEn": "Identification of the challenge and three measurable goals, with their success criterion",
     "products": [
       {
         "name": "Lo que mostraban los datos",
         "nameEn": "What the data showed",
         "cons": [
           "34 consultas con tiempo de espera agotado en un solo día de cierre de mes, récord pre-migración",
-          "91% de abandono en reportes con espera mayor a 2 minutos",
+          "91% de abandono en reportes de más de 2 minutos con el modo síncrono (control de la prueba en staging)",
           "Los analistas re-ejecutaban el mismo reporte 2–3 veces por sesión sin saber si había fallado"
         ],
         "consEn": [
           "34 timeouts recorded in a single month-end day, pre-migration record",
-          "91% abandonment rate in reports with waits exceeding 2 minutes",
+          "91% abandonment on reports over 2 minutes in synchronous mode (control in the staging test)",
           "Analysts re-ran the same report 2–3 times per session without knowing if it had failed"
         ]
       }
@@ -90,24 +90,36 @@
     "objectives": [
       {
         "number": "01",
-        "description": "Procesar en segundo plano y liberar la interfaz inmediatamente tras la solicitud",
-        "descriptionEn": "Process in background and release the UI immediately after the request",
-        "title": "0 bloqueos en reportes >2 min",
-        "titleEn": "0 blocks in reports >2 min"
+        "title": "Menos abandono de reportes",
+        "titleEn": "Less report abandonment",
+        "meta": "Criterio de éxito: 50% menos abandono en reportes de más de 2 min",
+        "metaEn": "Success criterion: 50% less abandonment on >2 min reports",
+        "description": "Mover la generación de reportes pesados a segundo plano para que los analistas nunca esperen frente a una pantalla congelada ni repitan la solicitud (línea base de 91% de abandono con el modo síncrono).",
+        "descriptionEn": "Move heavy report generation to the background so analysts never wait on a frozen screen or re-trigger duplicate requests (down from a 91% abandonment baseline in synchronous mode).",
+        "kpi": "abandono = cerrar a mitad de la espera (modo síncrono) o no abrir/descargar en 24 h tras el aviso de finalización (modo asíncrono) ÷ reportes de más de 2 min solicitados · Fuente: instrumentación de staging, 2 semanas, n = 42",
+        "kpiEn": "abandonment = closing mid-wait (sync mode) or not opening/downloading within 24 h of the completion alert (async mode) ÷ >2 min reports requested · Source: staging instrumentation, 2 weeks, n = 42"
       },
       {
         "number": "02",
-        "description": "El usuario no necesita esperar en la pantalla para recibir su reporte",
-        "descriptionEn": "The user doesn't need to wait on screen to receive their report",
-        "title": "Reducir el abandono en 60%",
-        "titleEn": "Cut abandonment by 60%"
+        "title": "Más tareas completadas",
+        "titleEn": "More tasks completed",
+        "meta": "Criterio de éxito: 25% más tareas completadas de punta a punta",
+        "metaEn": "Success criterion: +25% more tasks completed end-to-end",
+        "description": "Liberar la interfaz en menos de 1 segundo con estados de progreso claros, para que los usuarios completen sus flujos de reportes en vez de repetir ejecuciones (2,8× por sesión en la línea base).",
+        "descriptionEn": "Free the UI in under 1 second with clear progress states so users complete reporting workflows instead of triggering 2.8× duplicate re-runs.",
+        "kpi": "flujos de reporte completados de punta a punta ÷ flujos iniciados; re-ejecuciones por sesión · Fuente: instrumentación de staging, 2 semanas, n = 42",
+        "kpiEn": "reporting workflows completed end-to-end ÷ workflows started; re-runs per session · Source: staging instrumentation, 2 weeks, n = 42"
       },
       {
         "number": "03",
-        "description": "Estados claros, estimaciones de tiempo y notificación en el momento exacto",
-        "descriptionEn": "Clear states, time estimates and notification at the exact moment",
-        "title": "NPS de reportes sobre 60",
-        "titleEn": "Reporting NPS >60"
+        "title": "Menos tickets de soporte",
+        "titleEn": "Fewer support tickets",
+        "meta": "Criterio de éxito: 20% menos tickets por bloqueos y timeouts",
+        "metaEn": "Success criterion: 20% fewer support tickets for timeouts/blocks",
+        "description": "Combinar estados de error accionables con un archivo de reportes de 90 días, para que los usuarios recuperen y descarguen sus reportes sin contactar a soporte.",
+        "descriptionEn": "Pair actionable error states with a 90-day report archive so users recover and download reports without contacting support.",
+        "kpi": "tickets de soporte por pantallas bloqueadas y timeouts · Fuente: registros de soporte, 30 días antes del lanzamiento contra los primeros 30 días después",
+        "kpiEn": "support tickets about blocked screens and timeouts · Source: support logs, 30 days pre-release vs. first 30 days post-release"
       }
     ]
   },
@@ -144,8 +156,8 @@
         "descriptionEn": "Preference test between synchronous mode (blocking spinner) and asynchronous mode (notification when ready) with n=42 real users in a staging environment for 2 weeks.",
         "findingLabel": "Hallazgo",
         "findingLabelEn": "Finding",
-        "finding": "El 78% prefirió el modo asincrónico, pero el 22% restante eran gerentes que necesitaban el resultado inmediato",
-        "findingEn": "78% preferred async, but the remaining 22% were managers who needed the result immediately"
+        "finding": "El 79% prefirió el modo asincrónico, pero el 21% restante eran gerentes que necesitaban el resultado inmediato",
+        "findingEn": "79% preferred async, but the remaining 21% were managers who needed the result immediately"
       }
     ],
     "stats": [
@@ -157,8 +169,8 @@
       },
       {
         "value": "91%",
-        "description": "Tasa de abandono en reportes con espera mayor a 2 minutos",
-        "descriptionEn": "Abandonment rate in reports with >2 min wait",
+        "description": "Abandono en reportes de más de 2 minutos con el modo síncrono (control de la prueba en staging, n = 42)",
+        "descriptionEn": "Abandonment on reports over 2 minutes in synchronous mode (control in the staging test, n = 42)",
         "valueEn": "91%"
       },
       {
@@ -271,8 +283,8 @@
       },
       {
         "value": "91%",
-        "label": "Tasa de abandono en reportes con espera mayor a 2 minutos",
-        "labelEn": "Abandonment rate in reports with waits exceeding 2 minutes",
+        "label": "Abandono en reportes de más de 2 minutos con el modo síncrono (control en staging)",
+        "labelEn": "Abandonment on reports over 2 minutes in synchronous mode (staging control)",
         "color": "red",
         "valueEn": "91%"
       },
@@ -389,18 +401,18 @@
     "resultsTitleEn": "Test results",
     "results": [
       {
-        "value": "78%",
+        "value": "79%",
         "label": "prefirió Variante B",
         "labelEn": "preferred Variant B",
         "color": "indigo",
-        "valueEn": "78%"
+        "valueEn": "79%"
       },
       {
-        "value": "61%",
+        "value": "62%",
         "label": "menos abandono de reportes",
         "labelEn": "less report abandonment",
         "color": "green",
-        "valueEn": "61%"
+        "valueEn": "62%"
       },
       {
         "value": "34%",
@@ -410,15 +422,15 @@
         "valueEn": "34%"
       },
       {
-        "value": "22%",
+        "value": "21%",
         "label": "prefirió A (gerentes con necesidad de resultado inmediato)",
         "labelEn": "preferred A (managers needing immediate result)",
         "color": "amber",
-        "valueEn": "22%"
+        "valueEn": "21%"
       }
     ],
-    "insight": "El 22% que prefirió el modo síncrono reveló un patrón clave: eran gerentes que ejecutaban reportes en tiempo real durante reuniones. Esto derivó en una sola decisión: asincrónico por defecto, con modo inmediato opcional para reportes livianos (generación rápida).",
-    "insightEn": "The 22% who preferred synchronous mode revealed a key pattern: they were managers running reports in real-time during meetings. This led to a single decision: async by default, with an optional immediate mode for lightweight reports (fast generation)."
+    "insight": "El 21% que prefirió el modo síncrono reveló un patrón clave: eran gerentes que ejecutaban reportes en tiempo real durante reuniones. Esto derivó en una sola decisión: asincrónico por defecto, con modo inmediato opcional para reportes livianos (generación rápida).",
+    "insightEn": "The 21% who preferred synchronous mode revealed a key pattern: they were managers running reports in real-time during meetings. This led to a single decision: async by default, with an optional immediate mode for lightweight reports (fast generation)."
   },
   "solution": {
     "title": "Solución",
@@ -465,8 +477,8 @@
       {
         "title": "¿Bloqueante o asíncrono en la UI?",
         "titleEn": "Blocking or async in the UI?",
-        "justification": "Testeamos 2 patrones: (A) indicador de carga bloqueante con barra de progreso, (B) notificación push cuando el reporte está listo. El 78% de usuarios prefirió B porque podían seguir trabajando. Pero el 22% que prefirió A eran gerentes que querían estar frente al resultado inmediatamente. Solución: asincrónico por defecto, con modo inmediato opcional para reportes livianos (generación rápida).",
-        "justificationEn": "We tested 2 patterns: (A) blocking spinner with progress bar, (B) push notification when report is ready. 78% of users preferred B because they could keep working. But the 22% who preferred A were managers who wanted to be in front of the result immediately. Solution: async by default, with an optional immediate mode for lightweight reports (fast generation).",
+        "justification": "Testeamos 2 patrones: (A) indicador de carga bloqueante con barra de progreso, (B) notificación push cuando el reporte está listo. El 79% de usuarios prefirió B porque podían seguir trabajando. Pero el 21% que prefirió A eran gerentes que querían estar frente al resultado inmediatamente. Solución: asincrónico por defecto, con modo inmediato opcional para reportes livianos (generación rápida).",
+        "justificationEn": "We tested 2 patterns: (A) blocking spinner with progress bar, (B) push notification when report is ready. 79% of users preferred B because they could keep working. But the 21% who preferred A were managers who wanted to be in front of the result immediately. Solution: async by default, with an optional immediate mode for lightweight reports (fast generation).",
         "tradeoff": "El usuario async pierde el resultado inmediato en pantalla, requiere cambio de hábito y confianza en el sistema de notificaciones.",
         "tradeoffEn": "The async user loses the immediate on-screen result, requires habit change and trust in the notification system."
       },
@@ -556,26 +568,37 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Impacto medible del sistema",
-    "subtitleEn": "Measurable system impact",
+    "subtitle": "Las métricas de descubrimiento (8,4 min de ejecución promedio, 34 timeouts en un cierre de mes y 2,8× de re-ejecuciones) se auditaron en 30 días de logs del sistema anterior y grabaciones de Hotjar. El abandono (91% → 35%), la finalización de tareas (58% → 78%) y la preferencia de modo (79% [33/42] asíncrono contra 21% [9/42] síncrono) vienen de 2 semanas de instrumentación controlada en staging (n = 42 analistas y gerentes activos). El volumen de tickets (48 → 36) compara los registros de soporte de 30 días antes y 30 días después del lanzamiento. Es una validación direccional.",
+    "subtitleEn": "Discovery metrics (8.4 min avg. execution, 34 month-end timeouts, 2.8× re-runs) were audited from 30 days of legacy server logs and Hotjar recordings. Abandonment (91% → 35%), task completion (58% → 78%) and mode preference (79% [33/42] async vs. 21% [9/42] sync) come from controlled 2-week staging instrumentation (n = 42 active analysts and managers). Support ticket volume (48 → 36) compares 30-day pre- and post-release support logs. This is directional validation.",
     "impactTitle": "Impacto medido",
     "impactTitleEn": "Measured impact",
     "impact": [
       {
         "icon": "⏸️",
-        "metric": "70%",
-        "label": "Menos bloqueo percibido",
-        "labelEn": "Less perceived blocking",
-        "description": "Reducción en tiempo de bloqueo percibido gracias a procesamiento asincrónico",
-        "descriptionEn": "Reduction in perceived blocking time thanks to asynchronous processing"
+        "metric": "91% → 35%",
+        "metricEn": "91% → 35%",
+        "label": "Menos abandono de reportes (criterio de éxito: 50% menos)",
+        "labelEn": "Less report abandonment (Success criterion: 50% less)",
+        "description": "62% menos: el abandono en reportes de más de 2 min pasó de 91% (control síncrono) a 35% (tratamiento asíncrono) con n = 42 usuarios en 2 semanas de staging. Se define como cerrar a mitad de la espera en modo síncrono, o no abrir ni descargar en 24 h tras el aviso en modo asíncrono.",
+        "descriptionEn": "62% less: abandonment on >2 min reports shifted from 91% (synchronous control) to 35% (asynchronous treatment) across n = 42 users in the 2-week staging test (defined as closing mid-wait in sync mode vs. not opening/downloading within 24 h of the completion alert in async mode)."
+      },
+      {
+        "icon": "✅",
+        "metric": "58% → 78%",
+        "metricEn": "58% → 78%",
+        "label": "Más tareas completadas (criterio de éxito: +25%)",
+        "labelEn": "More tasks completed (Success criterion: +25%)",
+        "description": "34% más: la finalización del flujo de reportes de punta a punta en staging subió de 58% a 78% (+20 puntos), y las re-ejecuciones por sesión bajaron de 2,8× a 1,1×.",
+        "descriptionEn": "34% more: end-to-end reporting workflow completion in staging rose from 58% to 78% (+20 pts), while duplicate report re-runs dropped from 2.8× to 1.1× per session."
       },
       {
         "icon": "🎫",
-        "metric": "25%",
-        "label": "Menos tickets de soporte",
-        "labelEn": "Fewer support tickets",
-        "description": "Menos quejas sobre lentitud del sistema y reportes bloqueados",
-        "descriptionEn": "Fewer complaints about system slowness and blocked reports"
+        "metric": "48 → 36",
+        "metricEn": "48 → 36",
+        "label": "Menos tickets de soporte (criterio de éxito: 20% menos)",
+        "labelEn": "Fewer support tickets (Success criterion: 20% fewer)",
+        "description": "25% menos: los tickets por pantallas bloqueadas y timeouts bajaron de 48 a 36, comparando los 30 días previos al lanzamiento con los primeros 30 días posteriores.",
+        "descriptionEn": "25% fewer: support tickets about blocked screens and report timeouts dropped from 48 to 36, comparing the 30 days pre-release against the first 30 days post-release."
       }
     ],
     "learningsTitle": "Aprendizajes clave",
@@ -584,8 +607,8 @@
     "nextStepsTitleEn": "Next iteration",
     "learnings": [
       {
-        "title": "El 22% que prefirió modo síncrono reveló un segmento no anticipado",
-        "titleEn": "The 22% who preferred synchronous mode revealed an unanticipated segment",
+        "title": "El 21% que prefirió modo síncrono reveló un segmento no anticipado",
+        "titleEn": "The 21% who preferred synchronous mode revealed an unanticipated segment",
         "description": "Los gerentes que necesitaban el resultado inmediato mostraron un caso de uso distinto, no solo una preferencia. La solución fue asincrónico por defecto, con modo inmediato opcional para reportes livianos (generación rápida).",
         "descriptionEn": "Managers who needed the immediate result showed a distinct use case, not just a preference. The solution was async by default, with an optional immediate mode for lightweight reports (fast generation)."
       },

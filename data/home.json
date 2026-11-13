@@ -126,9 +126,9 @@
       "titleEn": "Asynchronous reports",
       "subtitle": "Procesamiento de datos sin bloqueos",
       "subtitleEn": "Non-blocking data processing",
-      "metric": "70%",
-      "metricLabel": "menos bloqueo percibido",
-      "metricLabelEn": "less perceived blocking",
+      "metric": "62%",
+      "metricLabel": "menos abandono en reportes largos (staging, n = 42)",
+      "metricLabelEn": "less abandonment on long reports (staging, n = 42)",
       "slug": "async-reports",
       "device": "desktop",
       "image": "data/images/async-reports.webp"
