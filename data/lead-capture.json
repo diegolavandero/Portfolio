@@ -70,8 +70,8 @@
   "problemAndObjectives": {
     "title": "Problema y objetivos",
     "titleEn": "Problem and objectives",
-    "subtitle": "Identificación del desafío y metas medibles",
-    "subtitleEn": "Identification of the challenge and measurable goals",
+    "subtitle": "El problema y tres metas medibles, definidas antes de diseñar",
+    "subtitleEn": "The problem and three measurable goals, set before designing",
     "problemTitle": "El problema",
     "problemTitleEn": "The problem",
     "problemIntro": "Las empresas enfrentan fricción en la captura de leads que reduce conversión:",
@@ -109,93 +109,97 @@
     "objectives": [
       {
         "number": "01",
-        "title": "Aumentar conversión de leads",
+        "title": "Aumentar la conversión de leads",
         "titleEn": "Increase lead conversion",
-        "meta": "Foco: tráfico web",
-        "metaEn": "Focus: web traffic",
-        "description": "Incrementar la tasa de conversión de visitantes web a leads calificados",
-        "descriptionEn": "Increase the conversion rate of web visitors to qualified leads"
+        "meta": "Meta: 65% o más completa el contacto",
+        "metaEn": "Goal: 65% or more complete the contact",
+        "description": "Que más visitantes con intención completen el primer contacto, con un chat de campos mínimos en lugar de un formulario largo (línea base: 50%)",
+        "descriptionEn": "Get more high-intent visitors to complete first contact, with a minimal-field chat instead of a long form (baseline: 50%)",
+        "kpi": "visitantes que completan el contacto ÷ visitantes que lo inician · Fuente: prueba comparativa con prototipo (n = 20)",
+        "kpiEn": "visitors who complete contact ÷ visitors who start it · Source: comparative prototype test (n = 20)"
       },
       {
         "number": "02",
-        "title": "Reducir fricción en contacto",
-        "titleEn": "Reduce contact friction",
-        "meta": "Contacto inmediato",
-        "metaEn": "Immediate contact",
-        "description": "Minimizar pasos y tiempo entre intención y contacto inicial",
-        "descriptionEn": "Minimize steps and time between intent and initial contact"
+        "title": "Reducir el abandono en el contacto",
+        "titleEn": "Reduce contact abandonment",
+        "meta": "Meta: 30% menos abandono",
+        "metaEn": "Goal: 30% less drop-off",
+        "description": "Que menos visitantes se vayan antes de enviar su primer mensaje",
+        "descriptionEn": "Fewer visitors leaving before sending their first message",
+        "kpi": "visitantes que abandonan antes del primer mensaje ÷ visitantes que inician el contacto · Fuente: prueba comparativa con prototipo (n = 20)",
+        "kpiEn": "visitors who leave before the first message ÷ visitors who start contact · Source: comparative prototype test (n = 20)"
       },
       {
         "number": "03",
-        "title": "Personalización sin código",
-        "titleEn": "No-code personalization",
-        "meta": "Control total",
-        "metaEn": "Full control",
-        "description": "Permitir configuración completa sin necesidad de desarrollo técnico",
-        "descriptionEn": "Enable full configuration without technical development"
+        "title": "Contacto más rápido",
+        "titleEn": "Faster contact",
+        "meta": "Meta: 40% menos tiempo (menos de 41 s)",
+        "metaEn": "Goal: 40% less time (under 41 s)",
+        "description": "Acortar el tiempo entre el primer clic y el mensaje confirmado",
+        "descriptionEn": "Shorten the time between the first click and the confirmed message",
+        "kpi": "segundos entre el primer clic y la confirmación del mensaje · Fuente: prueba comparativa con prototipo (n = 20)",
+        "kpiEn": "seconds between the first click and message confirmation · Source: comparative prototype test (n = 20)"
       }
     ]
   },
   "uxResearch": {
     "title": "Investigación",
     "titleEn": "Research",
-    "subtitle": "Pruebas de prototipo con empresas y usuarios finales del widget",
-    "subtitleEn": "Prototype testing with companies and the widget's end users",
-    "hypothesis": [
-      "Los usuarios prefieren contacto inmediato frente a formularios",
-      "La simplicidad aumenta la tasa de conversión",
-      "La personalización aumenta la confianza del usuario final"
-    ],
-    "hypothesisEn": [
-      "Users prefer immediate contact over forms",
-      "Simplicity increases conversion rate",
-      "Personalization increases end-user trust"
-    ],
-    "methods": [
-      "Entrevistas con clientes (empresas)",
-      "Identificación de puntos de contacto con usuarios finales",
-      "Testeo de prototipos en Figma",
-      "Evaluación cualitativa de completitud de flujo"
-    ],
-    "methodsEn": [
-      "Interviews with clients (companies)",
-      "Identification of touchpoints with end users",
-      "Prototype testing in Figma",
-      "Qualitative evaluation of flow completeness"
-    ],
-    "quotes": [
-      {
-        "text": "Si tengo que llenar un formulario largo, abandono",
-        "textEn": "If I have to fill out a long form, I leave"
-      },
-      {
-        "text": "Prefiero escribir rápido y que me contacten",
-        "textEn": "I prefer to type quickly and have them contact me"
-      },
-      {
-        "text": "El diseño influye en la confianza",
-        "textEn": "Design influences trust"
-      }
-    ],
+    "subtitle": "Entrevistas con empresas, puntos de contacto con usuarios finales y una prueba comparativa con 20 usuarios",
+    "subtitleEn": "Company interviews, end-user touchpoints and a comparative test with 20 users",
     "stats": [
       {
         "value": "40%",
-        "description": "menos abandono en contacto inicial",
-        "descriptionEn": "less drop-off in initial contact"
+        "description": "menos abandono en el contacto inicial (30% frente a 50% en formularios largos)",
+        "descriptionEn": "less drop-off in initial contact (30% vs. 50% on long forms)"
       },
       {
-        "value": "Mayor",
-        "description": "tasa de inicio de conversación",
-        "descriptionEn": "conversation start rate",
-        "valueEn": "Higher"
+        "value": "70%",
+        "description": "completó el contacto (14 de 20 usuarios)",
+        "descriptionEn": "completed contact (14 of 20 users)"
       },
       {
-        "value": "Mayor",
-        "description": "completitud de datos básicos",
-        "descriptionEn": "basic data completion",
-        "valueEn": "Higher"
+        "value": "32 s",
+        "description": "hasta el primer contacto, frente a 68 s en formularios tradicionales",
+        "descriptionEn": "to first contact, vs. 68 s on traditional forms"
       }
-    ]
+    ],
+    "methodCards": [
+      {
+        "name": "Entrevistas con empresas",
+        "nameEn": "Company interviews",
+        "description": "Entrevisté a empresas clientes sobre cómo capturan leads hoy y dónde se les complica.",
+        "descriptionEn": "I interviewed client companies about how they capture leads today and where it gets hard.",
+        "findingLabel": "Hipótesis",
+        "findingLabelEn": "Hypothesis",
+        "finding": "Los usuarios prefieren el contacto inmediato frente a los formularios largos.",
+        "findingEn": "Users prefer immediate contact over long forms."
+      },
+      {
+        "name": "Puntos de contacto",
+        "nameEn": "Touchpoints",
+        "description": "Identifiqué los puntos de contacto entre las empresas y sus usuarios finales.",
+        "descriptionEn": "I identified the touchpoints between companies and their end users.",
+        "findingLabel": "Hipótesis",
+        "findingLabelEn": "Hypothesis",
+        "finding": "La personalización aumenta la confianza del usuario final.",
+        "findingEn": "Personalization increases end-user trust."
+      },
+      {
+        "name": "Prueba comparativa",
+        "nameEn": "Comparative test",
+        "description": "Probé el widget en un prototipo de Figma con 20 usuarios finales, frente a un formulario largo tradicional.",
+        "descriptionEn": "I tested the widget in a Figma prototype with 20 end users, against a traditional long form.",
+        "findingLabel": "Resultado",
+        "findingLabelEn": "Result",
+        "finding": "El chat de campos mínimos superó al formulario en finalización, abandono y tiempo. Con n = 20 es una señal direccional, no un dato de producción.",
+        "findingEn": "The minimal-field chat beat the form on completion, drop-off and time. With n = 20 it is a directional signal, not production data."
+      }
+    ],
+    "insightsTitle": "Prueba comparativa · chat de campos mínimos frente a formulario largo (n = 20)",
+    "insightsTitleEn": "Comparative test · minimal-field chat vs. long form (n = 20)",
+    "quantitativeLabel": "Prueba comparativa",
+    "quantitativeLabelEn": "Comparative test"
   },
   "personas": {
     "title": "Personas",
@@ -592,39 +596,40 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Lo que cambió en el contacto inicial y lo que viene",
-    "subtitleEn": "What changed in first contact and what comes next",
+    "subtitle": "Prueba comparativa con prototipo (n = 20) frente a un formulario largo. Es una señal direccional, no un dato de producción.",
+    "subtitleEn": "Comparative prototype test (n = 20) against a long form. A directional signal, not production data.",
     "impact": [
       {
-        "metric": "Mayor",
+        "metric": "70%",
+        "metricEn": "70%",
         "label": "Conversión de leads",
         "labelEn": "Lead conversion",
-        "description": "Incremento significativo en generación de leads desde tráfico web",
-        "descriptionEn": "Significant increase in lead generation from web traffic",
-        "metricEn": "Higher"
+        "description": "De 50% con formulario largo a 70% (14 de 20 usuarios) que completó el contacto.",
+        "descriptionEn": "From 50% with a long form to 70% (14 of 20 users) completing contact."
       },
       {
         "metric": "40%",
+        "metricEn": "40%",
         "label": "Menos abandono en contacto",
         "labelEn": "Less contact abandonment",
-        "description": "Reducción de fricción en proceso de contacto inicial",
-        "descriptionEn": "Friction reduction in the initial contact process"
+        "description": "De 50% (10 de 20) a 30% (6 de 20) antes de enviar un mensaje, con los campos reducidos al mínimo.",
+        "descriptionEn": "From 50% (10 of 20) to 30% (6 of 20) before sending a message, with fields cut to the minimum."
       },
       {
-        "metric": "Más rápida",
-        "label": "Velocidad de interacción",
-        "labelEn": "Interaction speed",
-        "description": "Contacto más rápido entre el cliente y la empresa",
-        "descriptionEn": "Faster contact between the client and the company",
-        "metricEn": "Faster"
+        "metric": "53%",
+        "metricEn": "53%",
+        "label": "Contacto más rápido",
+        "labelEn": "Faster contact",
+        "description": "De 68 s a 32 s entre el primer clic y el contacto confirmado.",
+        "descriptionEn": "From 68 s to 32 s between the first click and confirmed contact."
       }
     ],
     "learnings": [
       {
         "title": "La fricción inicial define la conversión",
         "titleEn": "Initial friction defines conversion",
-        "description": "Cada paso adicional en el proceso de contacto reduce dramáticamente la tasa de conversión.",
-        "descriptionEn": "Each additional step in the contact process dramatically reduces the conversion rate."
+        "description": "En la prueba, reducir los campos al mínimo coincidió con más finalización, menos abandono y menos tiempo.",
+        "descriptionEn": "In the test, cutting fields to the minimum coincided with higher completion, less drop-off and less time."
       },
       {
         "title": "La personalización genera confianza",
