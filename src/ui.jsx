@@ -208,7 +208,7 @@ export function HeroStage({ src, alt, children, zoom = false }) {
   );
 }
 
-export function Media({ src, alt, device = 'desktop', accent = false, caption }) {
+export function Media({ src, alt, device = 'desktop', accent = false, caption, full = false }) {
   const isMob = device === 'mobile';
   const [wide, setWide] = useState(false);
   return (
@@ -219,7 +219,7 @@ export function Media({ src, alt, device = 'desktop', accent = false, caption })
           <img src={src} alt={alt} loading="lazy" onLoad={(e) => setWide(e.currentTarget.naturalWidth > e.currentTarget.naturalHeight)} className={`relative mx-auto block h-auto rounded-lg ${wide ? 'w-full' : 'w-[min(300px,72%)]'} border border-line bg-card shadow-[0_30px_60px_-30px_rgba(21,24,29,.45)]`} />
         ) : isMob ? (
           <div className="relative mx-auto w-[min(230px,62%)] overflow-hidden rounded-[34px] border-[9px] border-[#15181D] bg-[#15181D] shadow-[0_30px_60px_-30px_rgba(21,24,29,.55)]">
-            <img src={src} alt={alt} loading="lazy" className="block aspect-[9/19.5] w-full object-cover object-top" />
+            <img src={src} alt={alt} loading="lazy" className={full ? 'block h-auto w-full' : 'block aspect-[9/19.5] w-full object-cover object-top'} />
           </div>
         ) : (
           <img src={src} alt={alt} loading="lazy" className="relative block aspect-video w-full rounded-lg border border-line object-cover object-left-top shadow-[0_30px_60px_-30px_rgba(21,24,29,.45)]" />

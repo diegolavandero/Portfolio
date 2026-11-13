@@ -606,7 +606,7 @@ function Designs({ g }) {
           const alt = pick(it, 'alt') || pick(it, 'title');
           return (
             <div key={i} className="min-w-0">
-              {srcs.map((s, j) => <Media key={j} src={img(s)} alt={srcs.length > 1 ? `${alt} (${j + 1}/${srcs.length})` : alt} device={device} accent={device === 'mobile'} />)}
+              {srcs.map((s, j) => <Media key={j} src={img(s)} alt={srcs.length > 1 ? `${alt} (${j + 1}/${srcs.length})` : alt} device={device} accent={device === 'mobile'} full={it.fit === 'full'} />)}
               <div className="border-t border-line pt-3">
                 {pick(it, 'badge') && <p className="cap mb-1 text-acctext">{pick(it, 'badge')}</p>}
                 <h4 className="m-0 text-base font-bold leading-snug">{pick(it, 'title')}</h4>
