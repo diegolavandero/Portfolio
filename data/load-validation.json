@@ -411,10 +411,10 @@
   "treeTesting": {
     "title": "Prueba de árbol",
     "titleEn": "Tree testing",
-    "subtitle": "Validación de la estructura de navegación con conductores reales: 3 rondas, n = 8. En la tarea “reportar un faltante o dañado”, el éxito en primer intento pasó de ~43% (v1) a 89% (v3) tras alinear las etiquetas con el vocabulario de campo.",
-    "subtitleEn": "Navigation structure validation with real drivers: 3 rounds, n = 8. For the task “report a missing or damaged item”, first-try success improved from ~43% (v1) to 89% (v3) after aligning labels with field vocabulary.",
-    "barNote": "% éxito en primer intento (aproximado)",
-    "barNoteEn": "% first-try success (approximate)",
+    "subtitle": "Validación de la estructura de navegación con conductores reales: 3 rondas, n = 8. En la tarea “reportar un faltante o dañado”, el acierto a la primera era bajo en la v1 (~43% aproximado) y subió a ~89% en la v3 tras alinear las etiquetas con el vocabulario de campo.",
+    "subtitleEn": "Navigation structure validation with real drivers: 3 rounds, n = 8. For “report a missing or damaged item”, first-try findability was low in v1 (~43% approximate), improving to ~89% in v3 after aligning menu labels with field vocabulary.",
+    "barNote": "Tasa de acierto aproximada (v1 → v3)",
+    "barNoteEn": "Approximate success rate (v1 → v3)",
     "learningLabel": "APRENDIZAJE",
     "learningLabelEn": "LEARNING",
     "tasks": [
