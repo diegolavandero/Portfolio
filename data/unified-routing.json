@@ -144,8 +144,8 @@
         "metaEn": "Goal: 45% fewer steps",
         "description": "Evitar que corregir a mano sea la parte más lenta del proceso (42% del tiempo hoy)",
         "descriptionEn": "Stop manual corrections from being the slowest part of the process (42% of time today)",
-        "kpi": "clics para reasignar 15 pedidos entre rutas con restricciones · Fuente: benchmark en prototipo y telemetría en producción",
-        "kpiEn": "clicks to reassign 15 orders across constrained routes · Source: prototype benchmark and live telemetry"
+        "kpi": "clics para reasignar 15 pedidos entre rutas con restricciones · Fuente: benchmark en prototipo (n = 12)",
+        "kpiEn": "clicks to reassign 15 orders across constrained routes · Source: prototype benchmark (n = 12)"
       },
       {
         "number": "03",
@@ -189,8 +189,8 @@
         "descriptionEn": "I tested the Figma prototype with 12 participants across 3 scenarios with a 25-min cutoff. Then I measured 30 days in production: 1,420 sessions, 14 accounts and 185 users.",
         "findingLabel": "Métricas",
         "findingLabelEn": "Metrics",
-        "finding": "Telemetría de producto: tiempo en tarea, pasos y tasa de error crítico. Hotjar: facilidad percibida (SEQ), clics de frustración y mapas de calor.",
-        "findingEn": "Product telemetry: time on task, steps and critical error rate. Hotjar: perceived ease (SEQ), rage clicks and heatmaps."
+        "finding": "En producción: tiempo en tarea y tasa de error crítico (telemetría), SEQ y clics de frustración (Hotjar). Pasos de edición y cambios de contexto: solo en el prototipo.",
+        "findingEn": "Live: time on task and critical error rate (telemetry), SEQ and rage clicks (Hotjar). Editing steps and context switches: prototype only."
       }
     ]
   },
@@ -605,8 +605,8 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Resultados en producción tras 30 días, frente a la línea base",
-    "subtitleEn": "Live results after 30 days, compared with the baseline",
+    "subtitle": "Producción tras 30 días frente a la línea base. Los pasos de edición masiva se midieron solo en el prototipo.",
+    "subtitleEn": "Live results after 30 days compared with the baseline. Bulk-edit steps were measured in the prototype only.",
     "impact": [
       {
         "metric": "32%",
@@ -616,11 +616,12 @@
         "descriptionEn": "From 24 to 16.4 min per planning run."
       },
       {
-        "metric": "50%",
+        "metric": "54%",
         "label": "Menos pasos en edición masiva",
         "labelEn": "Fewer steps in bulk edits",
-        "description": "De 28 a 14 clics para reasignar 15 pedidos.",
-        "descriptionEn": "From 28 to 14 clicks to reassign 15 orders."
+        "description": "De 28 a 13 clics para reasignar 15 pedidos. Medido en el prototipo (n = 12).",
+        "descriptionEn": "From 28 to 13 clicks to reassign 15 orders. Measured in the prototype (n = 12).",
+        "metricEn": "54%"
       },
       {
         "metric": "75%",
