@@ -131,8 +131,8 @@
         "titleEn": "Speed up planning",
         "meta": "Meta: 30% menos tiempo",
         "metaEn": "Goal: 30% less time",
-        "description": "Tiempo total desde la configuración hasta confirmar las rutas",
-        "descriptionEn": "Total time from setup to route confirmation",
+        "description": "Liberar tiempo del equipo de planificación en cada ciclo de ruteo",
+        "descriptionEn": "Free up planning team time in every routing cycle",
         "kpi": "minutos desde la configuración en el asistente hasta confirmar las rutas · Fuente: benchmark en prototipo y telemetría en producción",
         "kpiEn": "minutes from wizard setup to route confirmation · Source: prototype benchmark and live telemetry"
       },
@@ -142,8 +142,8 @@
         "titleEn": "Simplify manual editing",
         "meta": "Meta: 45% menos pasos",
         "metaEn": "Goal: 45% fewer steps",
-        "description": "Pasos para reasignar un grupo de 15 pedidos entre rutas con restricciones",
-        "descriptionEn": "Steps to reassign a 15-order group across constrained routes",
+        "description": "Evitar que corregir a mano sea la parte más lenta del proceso (42% del tiempo hoy)",
+        "descriptionEn": "Stop manual corrections from being the slowest part of the process (42% of time today)",
         "kpi": "clics para reasignar 15 pedidos entre rutas con restricciones · Fuente: benchmark en prototipo y telemetría en producción",
         "kpiEn": "clicks to reassign 15 orders across constrained routes · Source: prototype benchmark and live telemetry"
       },
@@ -153,8 +153,8 @@
         "titleEn": "Reduce critical errors",
         "meta": "Meta: 60% menos errores",
         "metaEn": "Goal: 60% fewer errors",
-        "description": "Sesiones con cambios sin guardar o restricciones violadas sin alerta",
-        "descriptionEn": "Sessions with unsaved changes or unflagged constraint violations",
+        "description": "Evitar rutas sin guardar, pedidos huérfanos y sobrecapacidad sin detectar",
+        "descriptionEn": "Prevent unsaved routes, orphaned orders and undetected capacity overflows",
         "kpi": "sesiones que terminan con cambios sin guardar o restricciones sin alertar ÷ sesiones totales · Fuente: benchmark en prototipo y telemetría en producción",
         "kpiEn": "sessions ending with unsaved changes or unflagged constraint violations ÷ total sessions · Source: prototype benchmark and live telemetry"
       }
