@@ -1,10 +1,10 @@
 {
   "page": "home",
   "hero": {
-    "titleStart": "Diseñando productos impulsados por ",
-    "titleStartEn": "Designing products powered by ",
-    "titleAccent": "IA y sistemas complejos",
-    "titleAccentEn": "AI and complex systems",
+    "titleStart": "Diseño sistemas logísticos con IA,",
+    "titleStartEn": "I design logistics systems with AI,",
+    "titleAccent": "y los entrego en código",
+    "titleAccentEn": "and ship them in code",
     "subtitle": "Senior AI Product Designer con más de 10 años de experiencia en investigación UX, diseño basado en datos y optimización de flujos de trabajo complejos.",
     "subtitleEn": "Senior AI Product Designer with 10+ years of experience in UX research, data-driven design, and complex workflow optimization."
   },

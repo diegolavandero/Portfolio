@@ -83,7 +83,7 @@ export const UI = {
     baseline: 'Línea base', result: 'Resultado', howMeasured: 'Cómo se midió', nextStop: 'Siguiente parada',
     goalsPersona: 'Objetivos', pains: 'Dolores', behaviors: 'Comportamientos', persona: 'Persona',
     of: 'de', openProto: 'Ver código del prototipo', fullscreen: 'Pantalla completa', exitFullscreen: 'Salir de pantalla completa', newWindow: 'Abrir en ventana nueva', protoBar: 'Controles del prototipo', protoTitle: 'Prototipo interactivo de', backHome: 'Volver a proyectos',
-    notFoundTitle: 'Esta parada no existe', notFoundText: 'La página que buscas no está en la ruta.', stage: 'Etapa',
+    notFoundTitle: 'Esta parada no existe', heroNote: 'Este sitio está hecho a mano con React y Tailwind.', heroCode: 'Ver código', heroDs: 'Ver sistema de diseño en vivo', notFoundDoc: 'Página no encontrada · Diego Lavandero', notFoundText: 'La página que buscas no está en la ruta.', stage: 'Etapa',
     context: 'Contexto', learnings: 'Aprendizajes', nextSteps: 'Próximos pasos', principles: 'Principios de diseño', decisions: 'Decisiones clave',
     problem: 'Problema', solution: 'Solución', from: 'de', to: 'a', email: 'Correo', location: 'Ubicación', copy: 'Copiar', copied: 'Copiado'
   },
@@ -109,7 +109,7 @@ export const UI = {
     baseline: 'Baseline', result: 'Result', howMeasured: 'How it was measured', nextStop: 'Next stop',
     goalsPersona: 'Goals', pains: 'Pain points', behaviors: 'Behaviors', persona: 'Persona',
     of: 'of', openProto: 'View prototype source', fullscreen: 'Full screen', exitFullscreen: 'Exit full screen', newWindow: 'Open in new window', protoBar: 'Prototype controls', protoTitle: 'Interactive prototype of', backHome: 'Back to projects',
-    notFoundTitle: 'This stop doesn’t exist', notFoundText: 'The page you’re looking for isn’t on the route.', stage: 'Stage',
+    notFoundTitle: 'This stop doesn’t exist', heroNote: 'This site is hand-built with React and Tailwind.', heroCode: 'View code', heroDs: 'View live design system', notFoundDoc: 'Page not found · Diego Lavandero', notFoundText: 'The page you’re looking for isn’t on the route.', stage: 'Stage',
     context: 'Context', learnings: 'Learnings', nextSteps: 'Next steps', principles: 'Design principles', decisions: 'Key decisions',
     problem: 'Problem', solution: 'Solution', from: 'from', to: 'to', email: 'Email', location: 'Location', copy: 'Copy', copied: 'Copied'
   }

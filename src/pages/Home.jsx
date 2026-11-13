@@ -45,7 +45,13 @@ export default function Home() {
           );
         })()}
         <div className="mt-10 grid items-start gap-x-[72px] gap-y-10 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]">
-          <p className="m-0 max-w-[52ch] text-[17px] leading-relaxed text-ink2 md:text-[19px]">{pick(home.hero, 'subtitle')}</p>
+          <div>
+            <p className="m-0 max-w-[52ch] text-[17px] leading-relaxed text-ink2 md:text-[19px]">{pick(home.hero, 'subtitle')}</p>
+            <p className="m-0 mt-5 max-w-[52ch] text-[15px] leading-relaxed text-ink2">{ui.heroNote}{' '}
+              <a className="link-u font-semibold" href="https://github.com/diegolavandero/portfolio" target="_blank" rel="noopener noreferrer">{ui.heroCode}</a>{' · '}
+              <a className="link-u font-semibold" href="https://dt-design-system-tawny.vercel.app" target="_blank" rel="noopener noreferrer">{ui.heroDs}</a>
+            </p>
+          </div>
           <div className="relative">
             <span aria-hidden="true" className="blob right-0 top-1/2 w-[clamp(220px,28vw,400px)] -translate-y-1/2 bg-soft" />
             <aside aria-label={ui.sheet} className="relative rounded border border-line bg-card">

@@ -6,8 +6,9 @@ import { Arrow } from '../ui.jsx';
 export default function NotFound() {
   const ui = useUI();
   useEffect(() => {
+    const prev = document.title; document.title = ui.notFoundDoc;
     const m = document.createElement('meta'); m.name = 'robots'; m.content = 'noindex'; document.head.appendChild(m);
-    return () => m.remove();
+    return () => { m.remove(); document.title = prev; };
   }, []);
   return (
     <section className="wrap py-28" aria-labelledby="nf-title">

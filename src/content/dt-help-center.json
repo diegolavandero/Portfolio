@@ -175,7 +175,8 @@
       {
         "value": "1,8",
         "description": "sesiones de aprendizaje por operador en su primer mes: visitas al centro de ayuda anterior, casi todas consultas reactivas",
-        "descriptionEn": "learning sessions per operator in their first month: visits to the old Help Center, mostly reactive lookups"
+        "descriptionEn": "learning sessions per operator in their first month: visits to the old Help Center, mostly reactive lookups",
+        "valueEn": "1.8"
       }
     ]
   },

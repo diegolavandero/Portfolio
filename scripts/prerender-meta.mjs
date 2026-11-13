@@ -36,7 +36,7 @@ for (const s of slugs) {
   out(s, page(`${String(d.titleEn || d.title).trim()} · Diego Lavandero`, d.hero?.descriptionEn || d.subtitleEn || '', `/${s}`));
 }
 out('about', page('About · Diego Lavandero', 'Diego Lavandero, Senior AI Product Designer: experience, approach and skills in product design, UX research and design systems.', '/about'));
-writeFileSync(join(DIST, '404.html'), index.replace('<head>', '<head>\n    <meta name="robots" content="noindex" />'));
+writeFileSync(join(DIST, '404.html'), index.replace(/<title>[^<]*<\/title>/, '<title>Página no encontrada · Diego Lavandero</title>').replace('<head>', '<head>\n    <meta name="robots" content="noindex" />'));
 
 const today = new Date().toISOString().slice(0, 10);
 const urls = ['/', '/about', ...slugs.map((s) => `/${s}`)];

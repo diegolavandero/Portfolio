@@ -483,7 +483,7 @@
         "tradeoffEn": "The async user loses the immediate on-screen result, requires habit change and trust in the notification system."
       },
       {
-        "title": "Templates vs. Builder libre",
+        "title": "Plantillas vs. constructor libre",
         "titleEn": "Templates vs. free builder",
         "justification": "El primer prototipo era un constructor de consultas 100% flexible. En las pruebas, el 85% usaba solo 8 combinaciones distintas de campos. Pivotamos a un sistema de plantillas con personalización de filtros, 3× más rápido de usar y redujo errores de configuración a casi cero.",
         "justificationEn": "The first prototype was a 100% flexible query builder. In testing, 85% used only 8 different field combinations. We pivoted to a template system with filter customization, 3× faster to use and reduced configuration errors to near zero.",

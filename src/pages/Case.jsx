@@ -702,7 +702,7 @@ function Learn({ r }) {
     </div>
   );
   const ui = useUI();
-  return <div className="flex flex-col gap-16">{col(pick(r, 'learningsTitle') || ui.learnings, r.learnings || [])}{col(pick(r, 'nextStepsTitle') || ui.nextSteps, r.nextSteps || [])}</div>;
+  return <div className="flex flex-col gap-16">{col(ui.learnings, r.learnings || [])}{col(ui.nextSteps, r.nextSteps || [])}</div>;
 }
 
 function NextStop({ cta }) {

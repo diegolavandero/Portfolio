@@ -567,6 +567,12 @@
         "titleEn": "Solving access shifted the failure cause",
         "description": "“Sin acceso al edificio” pasó de 54% a 19% de las fallas en el piloto. La falla no desapareció: se desplazó hacia otras causas, que son la siguiente oportunidad.",
         "descriptionEn": "“No building access” fell from 54% to 19% of failures in the pilot. Failure did not disappear: it shifted to other causes, which are the next opportunity."
+      },
+      {
+        "title": "La meta del 8% no se alcanzó",
+        "titleEn": "The 8% goal was not reached",
+        "description": "Las fallas al primer intento bajaron de 14,0% a 10,9%: cumplen el criterio de éxito (20% menos), pero quedan por encima del objetivo de 8% que se fijó para el conductor. Lo que falta no se explica por acceso, así que la siguiente hipótesis debe apuntar a otras causas.",
+        "descriptionEn": "First-attempt failures fell from 14.0% to 10.9%: this meets the success criterion (20% fewer) but stays above the 8% target set for the driver. What remains is not explained by access, so the next hypothesis must address other causes."
       }
     ],
     "nextStepsTitle": "Próxima iteración",
