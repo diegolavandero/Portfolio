@@ -33,8 +33,8 @@
     {
       "label": "Duración",
       "labelEn": "Duration",
-      "value": "5 semanas",
-      "valueEn": "5 weeks"
+      "value": "5 semanas de diseño + piloto de 60 días en TestFlight",
+      "valueEn": "5 weeks design + 60-day TestFlight pilot"
     },
     {
       "label": "Equipo",
@@ -51,14 +51,14 @@
     {
       "label": "Entregables",
       "labelEn": "Deliverables",
-      "value": "Prototipo Figma",
-      "valueEn": "Figma prototype"
+      "value": "Prototipo Figma · benchmark Maze · beta en TestFlight",
+      "valueEn": "Figma prototype · Maze benchmark · TestFlight beta"
     },
     {
       "label": "Herramientas",
       "labelEn": "Tools",
-      "value": "Figma",
-      "valueEn": "Figma"
+      "value": "Figma · Maze · TestFlight",
+      "valueEn": "Figma · Maze · TestFlight"
     }
   ],
   "heroImage": {
@@ -69,8 +69,8 @@
   "problemAndObjectives": {
     "title": "Problema y objetivos",
     "titleEn": "Problem and objectives",
-    "subtitle": "El proceso de validación de carga era completamente manual. Listas en papel, firmas físicas y verificaciones visuales sin registro digital resultaban en un 12% de discrepancias detectadas tardíamente en destino.",
-    "subtitleEn": "The load validation process was entirely manual. Paper checklists, physical signatures, and visual checks with no digital record resulted in 12% of discrepancies detected late at destination.",
+    "subtitle": "El proceso de validación de carga era completamente manual: listas en papel, firmas físicas y verificaciones visuales sin registro digital. Resultado: 12% de cargas con discrepancias detectadas tardíamente en destino. Tres metas medibles, con su criterio de éxito.",
+    "subtitleEn": "The load validation process was entirely manual: paper checklists, physical signatures and visual checks with no digital record. The result: 12% of loads with discrepancies detected late at destination. Three measurable goals, with their success criterion.",
     "products": [
       {
         "name": "Proceso actual",
@@ -90,49 +90,45 @@
     "objectives": [
       {
         "number": "01",
-        "description": "Validar el 100% de las cargas antes de salir de bodega con confirmación digital",
-        "descriptionEn": "Validate 100% of loads before leaving the warehouse with digital confirmation",
-        "title": "Validación completa",
-        "titleEn": "Full validation"
+        "title": "Menos discrepancias en destino",
+        "titleEn": "Fewer destination discrepancies",
+        "meta": "Criterio del piloto: 40% menos discrepancias (meta de 80% con despliegue completo)",
+        "metaEn": "Pilot criterion: 40% fewer discrepancies (80% goal at full rollout)",
+        "description": "Detectar faltantes y errores de manifiesto antes de que el camión salga de bodega, con escaneo de códigos de barras.",
+        "descriptionEn": "Catch missing items and manifest errors before warehouse departure through barcode scanning.",
+        "kpi": "salidas con errores detectados en destino ÷ salidas totales · Fuente: registros de la app y del ERP, piloto de 60 días",
+        "kpiEn": "departures with errors detected at delivery ÷ total departures · Source: app logs and ERP records, 60-day pilot"
       },
       {
         "number": "02",
-        "description": "Reducir las discrepancias detectadas en destino en al menos un 80%. La meta se mide con el despliegue completo, cuando se valida el 100% de las cargas.",
-        "descriptionEn": "Reduce destination discrepancies by at least 80%. The goal is measured at full rollout, when 100% of loads are validated.",
-        "title": "Reducir discrepancias",
-        "titleEn": "Reduce discrepancies"
+        "title": "Menos reclamos de clientes",
+        "titleEn": "Fewer customer claims",
+        "meta": "Criterio del piloto: 25% menos reclamos relacionados con la carga",
+        "metaEn": "Pilot criterion: 25% fewer load-related claims",
+        "description": "Reducir los reclamos formales por contenido faltante o documentación incompleta (línea base de 6,8% en 2.350 salidas previas).",
+        "descriptionEn": "Reduce formal customer complaints caused by missing items or incomplete paperwork (down from a 6.8% baseline across 2,350 prior departures).",
+        "kpi": "reclamos formales asociados a la carga ÷ salidas totales · Fuente: registros de reclamos del ERP",
+        "kpiEn": "formal load-related claims ÷ total departures · Source: ERP claim records"
       },
       {
         "number": "03",
-        "description": "Crear un registro digital inmutable de cada validación con firma y evidencia fotográfica",
-        "descriptionEn": "Create an immutable digital record of each validation with signature and photographic evidence",
-        "title": "Trazabilidad digital",
-        "titleEn": "Digital traceability"
+        "title": "Más cargas con validación completa",
+        "titleEn": "More fully validated loads",
+        "meta": "Criterio del piloto: 55% o más de las salidas con validación completa de 4 pasos",
+        "metaEn": "Pilot criterion: ≥ 55% of departures with full 4-step validation",
+        "description": "Reemplazar las firmas apuradas en papel por un flujo móvil guiado de 4 pasos, operable con una mano.",
+        "descriptionEn": "Replace hurried paper sign-offs with a guided, one-handed 4-step mobile flow.",
+        "kpi": "salidas con los 4 pasos completados ÷ salidas totales · Fuente: registros del backend de la app",
+        "kpiEn": "departures with all 4 steps completed ÷ total departures · Source: app backend logs"
       }
     ]
   },
   "uxResearch": {
     "title": "Investigación",
     "titleEn": "Research",
-    "subtitle": "Metodologías aplicadas para entender el flujo real de validación en bodega y campo",
-    "subtitleEn": "Applied methodologies to understand the real validation flow in warehouse and field settings",
+    "subtitle": "Observación en campo, benchmark en Maze (n = 12) y piloto en TestFlight (n = 40)",
+    "subtitleEn": "Field observation, a Maze benchmark (n = 12) and a TestFlight pilot (n = 40)",
     "methodCards": [
-      {
-        "name": "Análisis de tareas",
-        "nameEn": "Task analysis",
-        "description": "Descompusimos el flujo completo de validación pre-ruta en subtareas con sus condiciones de éxito, puntos de decisión y carga cognitiva. Identificamos 7 momentos críticos donde podía ocurrir un error, 5 de ellos en los primeros 3 pasos del flujo.",
-        "descriptionEn": "We decomposed the complete pre-route validation flow into subtasks with their success conditions, decision points and cognitive load. We identified 7 critical moments where an error could occur, 5 of them in the first 3 steps of the flow.",
-        "finding": "El conductor hacía la comparación manifiesto-carga en su cabeza. No existía ningún soporte cognitivo externo para esa tarea.",
-        "findingEn": "The driver was making the manifest-to-load comparison in their head. No external cognitive support existed for that task."
-      },
-      {
-        "name": "Prueba de árbol",
-        "nameEn": "Tree testing",
-        "description": "Testeamos 3 versiones de la estructura de navegación con n=8 conductores en 3 rondas. El foco: encontrar un ítem específico, reportar una discrepancia y llegar a la firma digital. En la v1, “reportar discrepancia” solo se encontraba a la primera en el 43% de los casos.",
-        "descriptionEn": "We tested 3 versions of the navigation structure with n=8 drivers across 3 rounds. The focus: find a specific item, report a discrepancy and reach the digital signature. In v1, “report discrepancy” was found on the first try in only 43% of cases.",
-        "finding": "Los conductores buscaban “problema” o “faltante”, no “discrepancia”; el vocabulario del sistema no coincidía con el del usuario.",
-        "findingEn": "Drivers searched for “problem” or “missing”, not “discrepancy”; the system vocabulary didn't match the user's vocabulary."
-      },
       {
         "name": "Investigación de campo",
         "nameEn": "Field research",
@@ -140,6 +136,26 @@
         "descriptionEn": "3 days of observation in 2 distribution centers: 28 departures observed, 14 interviews with drivers and supervisors. The context revealed critical constraints: direct sunlight on screens, gloves on, time pressure and trucks with engines running.",
         "finding": "El 78% de los conductores sostenía el teléfono con una mano mientras verificaba con la otra; la UI tenía que funcionar en la zona del pulgar y con guantes.",
         "findingEn": "78% of drivers held the phone with one hand while verifying with the other; the UI had to work within the thumb zone and with gloves."
+      },
+      {
+        "name": "Benchmark en Maze",
+        "nameEn": "Maze benchmark",
+        "description": "12 operadores de almacén probaron el prototipo de 4 pasos en Figma bajo presión de tiempo simulada, antes del desarrollo.",
+        "descriptionEn": "12 warehouse operators tested the 4-step Figma prototype under simulated time pressure, before development.",
+        "findingLabel": "Resultado",
+        "findingLabelEn": "Result",
+        "finding": "83% (10/12) completó los 4 pasos sin ayuda. Hubo 6,3% de errores de toque con objetivos táctiles de 56 px.",
+        "findingEn": "83% (10/12) completed all 4 steps unassisted. 56px targets kept misclicks to 6.3%."
+      },
+      {
+        "name": "Piloto de campo en TestFlight",
+        "nameEn": "TestFlight field pilot",
+        "description": "40 conductores activos usaron la beta de iOS en 2.400 salidas de 2 centros de distribución durante 60 días. La línea base fueron los 60 días previos (2.350 salidas).",
+        "descriptionEn": "40 active drivers used the iOS beta across 2,400 departures from 2 distribution centers over 60 days. The baseline was the prior 60 days (2,350 departures).",
+        "findingLabel": "Método",
+        "findingLabelEn": "Method",
+        "finding": "Validaciones, discrepancias y reclamos vienen de los registros de la app y del ERP. El diseño es pre-post sin grupo control: es una validación direccional.",
+        "findingEn": "Validation completion, discrepancies and claims came from app logs and ERP records. The design is pre-post without a control group: directional validation."
       }
     ],
     "quotes": [
@@ -155,8 +171,8 @@
     "stats": [
       {
         "value": "12%",
-        "description": "Cargas con discrepancias en destino",
-        "descriptionEn": "Loads with discrepancies at destination"
+        "description": "Cargas con discrepancias en destino (282 de 2.350 salidas de la línea base de 60 días)",
+        "descriptionEn": "Loads with discrepancies at destination (282 of 2,350 baseline departures over 60 days)"
       },
       {
         "value": "40 min",
@@ -169,7 +185,9 @@
         "descriptionEn": "Loads with incomplete documentation",
         "valueEn": "8.7%"
       }
-    ]
+    ],
+    "insightsTitle": "Línea base y validación en dos etapas",
+    "insightsTitleEn": "Baseline and two-stage validation"
   },
   "personas": {
     "title": "Personas",
@@ -617,34 +635,37 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Métricas medidas 60 días post-lanzamiento en flota piloto de 40 conductores",
-    "subtitleEn": "Metrics measured 60 days post-launch in a pilot fleet of 40 drivers",
+    "subtitle": "Evaluación en dos etapas: benchmark en Maze (n = 12 operadores de almacén) y piloto de 60 días en TestFlight (n = 40 conductores, 2.400 salidas en 2 centros de distribución). TestFlight distribuyó la beta; las validaciones, discrepancias y reclamos salen de los registros de la app y del ERP. Como el piloto fue pre-post y sin grupo control, las mejoras coincidieron con el despliegue y son una validación direccional.",
+    "subtitleEn": "Two-stage evaluation combining a Maze prototype benchmark (n = 12 warehouse operators) and a 60-day TestFlight field pilot (n = 40 drivers, 2,400 departures across 2 distribution centers). While TestFlight managed beta distribution, validation completion, discrepancies and claims were captured via backend app logs and ERP records. Because the pilot used a pre-post design without a randomized control group, operational gains coincided with the rollout and reflect directional validation.",
     "impactTitle": "Impacto medido",
     "impactTitleEn": "Measured impact",
     "impact": [
       {
         "icon": "📦",
-        "metric": "45%",
-        "label": "Menos discrepancias en destino",
-        "labelEn": "Fewer destination discrepancies",
-        "description": "Reducción de cargas con errores detectados en el punto de entrega. Primera lectura a 60 días, con el piloto en curso: 45% de reducción frente a una meta de 80%, es decir, el 56% de la meta. La meta de 80% corresponde al despliegue completo; hoy el piloto aún no valida el 100% de las cargas, por lo que el resultado final depende de ampliar la cobertura.",
-        "descriptionEn": "Reduction in loads with errors detected at delivery point. First 60-day reading, with the pilot still running: a 45% reduction against an 80% goal, or 56% of the goal. The 80% goal applies to full rollout; the pilot doesn't yet validate 100% of loads, so the final result depends on expanding coverage."
+        "metric": "12,0% → 6,6%",
+        "metricEn": "12.0% → 6.6%",
+        "label": "Menos discrepancias en destino (criterio del piloto: 40%)",
+        "labelEn": "Fewer destination discrepancies (Pilot criterion: 40%)",
+        "description": "45% menos: las salidas con errores detectados en la entrega pasaron de 12,0% (282 de 2.350 salidas de línea base) a 6,6% (158 de 2.400 salidas del piloto) en 2 centros de distribución. La meta de 80% queda para el despliegue completo, cuando se cubra el 100% de las cargas.",
+        "descriptionEn": "45% fewer: shipments with errors detected at delivery shifted from 12.0% (282/2,350 baseline departures) to 6.6% (158/2,400 pilot departures) across 2 distribution centers. The 80% reduction target remains scoped for full-fleet rollout once 100% of loads are covered."
       },
       {
         "icon": "🎫",
-        "metric": "32%",
-        "label": "Menos reclamos de clientes",
-        "labelEn": "Fewer customer claims",
-        "description": "Caída en reclamos formales relacionados con contenido o documentación de carga",
-        "descriptionEn": "Drop in formal complaints related to load content or documentation"
+        "metric": "6,8% → 4,6%",
+        "metricEn": "6.8% → 4.6%",
+        "label": "Menos reclamos de clientes (criterio del piloto: 25%)",
+        "labelEn": "Fewer customer claims (Pilot criterion: 25% fewer)",
+        "description": "32% menos: los reclamos formales por contenido de carga o documentación faltante pasaron de 6,8% (160 de 2.350 salidas) a 4,6% (111 de 2.400 salidas del piloto).",
+        "descriptionEn": "32% fewer: formal complaints tied to load content or missing paperwork moved from 6.8% (160/2,350) to 4.6% (111/2,400 pilot departures)."
       },
       {
         "icon": "✅",
-        "metric": "60%",
-        "label": "Más cargas 100% validadas",
-        "labelEn": "More fully validated loads",
-        "description": "Aumento en rutas completadas con validación digital completa antes de salida",
-        "descriptionEn": "Increase in routes completed with full digital validation before departure"
+        "metric": "39,3% → 62,9%",
+        "metricEn": "39.3% → 62.9%",
+        "label": "Más salidas con validación completa (criterio del piloto: 55% o más)",
+        "labelEn": "Full pre-route validations (Pilot criterion: ≥ 55%)",
+        "description": "1.510 de 2.400 salidas del piloto completaron los 4 pasos digitales (escaneo, foto, firma), frente a 39,3% (11 de 28 salidas observadas) en la revisión manual completa estimada en la investigación de campo. Es una comparación contra una estimación observacional (n = 28, IC 95% de ~23–58%), no un delta estadístico exacto.",
+        "descriptionEn": "1,510 of 2,400 pilot departures completed all 4 digital steps (scan, photo, signature), compared against the 39.3% (11/28 observed departures) thorough manual check estimated during field research. This is a comparison against an observational estimate (n = 28, 95% CI ~23–58%), not an exact statistical delta."
       }
     ],
     "learningsTitle": "Aprendizajes clave",
@@ -675,8 +696,8 @@
       {
         "title": "Integración con WMS para pre-llenado de datos",
         "titleEn": "WMS integration for data pre-filling",
-        "description": "Conectar directamente con el WMS permitiría evitar la entrada manual del número de orden, que hoy toma 30 s por validación (40 conductores × 5 rutas diarias).",
-        "descriptionEn": "Connecting directly to the WMS would remove manual order number entry, which today takes 30 s per validation (40 drivers × 5 daily routes)."
+        "description": "Conectar directamente con el WMS permitiría evitar la entrada manual del número de orden, que hoy toma 30 s por validación (con 2.400 salidas en 60 días, unas 20 horas de entrada manual).",
+        "descriptionEn": "Connecting directly to the WMS would remove manual order number entry, which today takes 30 s per validation (across 2,400 departures in 60 days, about 20 hours of manual entry)."
       }
     ]
   },
