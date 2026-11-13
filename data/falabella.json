@@ -201,8 +201,8 @@
         "nameEn": "Falabella in-house research",
         "description": "El equipo de investigación y analítica de Falabella entregó la línea base cuantitativa de la categoría. Yo entré como diseñador externo para la conceptualización, los flujos y la UI de alta fidelidad.",
         "descriptionEn": "Falabella’s research and analytics team provided the category’s quantitative baseline. I joined as an external designer for the conceptualization, flows and hi-fi UI.",
-        "finding": "Línea base: 30% de conversión, 70% de abandono y 19% de devoluciones en la categoría",
-        "findingEn": "Baseline: 30% conversion, 70% abandonment and 19% returns in the category"
+        "finding": "Línea base: 30% de conversión y 19% de devoluciones en la categoría",
+        "findingEn": "Baseline: 30% conversion and 19% returns in the category"
       },
       {
         "name": "Auditoría de la app y precedentes",
@@ -409,8 +409,8 @@
         "metricEn": "30.0% → 35.4%",
         "label": "Mayor conversión (criterio de éxito: 20% más)",
         "labelEn": "Higher conversion (Success criterion: +20%)",
-        "description": "18% más: la conversión del embudo subió y el abandono bajó de 70,0% a 64,6%. Confirmado con telemetría posterior al lanzamiento compartida por el equipo de investigación interno de Falabella.",
-        "descriptionEn": "18% more: funnel conversion rose and abandonment fell from 70.0% to 64.6%. Confirmed with post-launch telemetry shared by Falabella’s in-house research team."
+        "description": "18% más: la conversión del embudo de la categoría subió de 30,0% a 35,4%. Confirmado con telemetría posterior al lanzamiento compartida por el equipo de investigación interno de Falabella.",
+        "descriptionEn": "18% more: category funnel conversion rose from 30.0% to 35.4%. Confirmed with post-launch telemetry shared by Falabella’s in-house research team."
       },
       {
         "metric": "19,0% → 14,5%",
@@ -475,8 +475,8 @@
     ],
     "impactTitle": "Impacto medido",
     "impactTitleEn": "Measured impact",
-    "subtitle": "Línea base (conversión de 30,0%, abandono de 70,0% y devoluciones de 19,0%) y resultados posteriores al lanzamiento (conversión de 35,4% y devoluciones de 14,5%) medidos y compartidos por el equipo interno de investigación y analítica de Falabella. La reducción de pasos (18+ → 11 toques) y los tiempos (1:15 a 5:45 min) se validaron en la prueba del prototipo interactivo (n = 20 usuarios) antes del lanzamiento.",
-    "subtitleEn": "Baseline (30.0% conversion, 70.0% abandonment, 19.0% returns) and post-launch results (35.4% conversion, 14.5% returns) were measured and shared by Falabella’s in-house research and analytics team. The step reduction (18+ → 11 taps) and completion times (1:15 to 5:45 min) were validated in the interactive prototype test (n = 20 users) before launch."
+    "subtitle": "Línea base (conversión de 30,0% y devoluciones de 19,0%) y resultados posteriores al lanzamiento (conversión de 35,4% y devoluciones de 14,5%) medidos y compartidos por el equipo interno de investigación y analítica de Falabella. La reducción de pasos (18+ → 11 toques) y los tiempos (1:15 a 5:45 min) se validaron en la prueba del prototipo interactivo (n = 20 usuarios) antes del lanzamiento.",
+    "subtitleEn": "Baseline (30.0% conversion, 19.0% returns) and post-launch results (35.4% conversion, 14.5% returns) were measured and shared by Falabella’s in-house research and analytics team. The step reduction (18+ → 11 taps) and completion times (1:15 to 5:45 min) were validated in the interactive prototype test (n = 20 users) before launch."
   },
   "livePrototype": {
     "title": "Prototipo interactivo",
