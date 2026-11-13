@@ -33,8 +33,8 @@
     {
       "label": "Duración",
       "labelEn": "Duration",
-      "value": "3 semanas",
-      "valueEn": "3 weeks"
+      "value": "3 semanas de diseño + 60 días de piloto",
+      "valueEn": "3 weeks of design + 60-day pilot"
     },
     {
       "label": "Equipo",
@@ -91,48 +91,91 @@
     "objectives": [
       {
         "number": "01",
-        "title": "Ayuda dentro de la plataforma",
-        "titleEn": "Help inside the platform",
-        "description": "Llevar la ayuda al lugar donde el operador trabaja, en vez de a una sección aparte",
-        "descriptionEn": "Bring help to where operators work, instead of a separate section"
+        "title": "Completar el onboarding",
+        "titleEn": "Complete onboarding",
+        "meta": "Meta: 70% o más en 15 días",
+        "metaEn": "Goal: 70% or more within 15 days",
+        "description": "Que el operador nuevo termine el nivel inicial sin salir de su trabajo",
+        "descriptionEn": "Get new operators through the starter level without leaving their work",
+        "kpi": "operadores nuevos que completan el nivel inicial en 15 días ÷ operadores nuevos · Fuente: eventos en Hotjar",
+        "kpiEn": "new operators completing the starter level within 15 days ÷ new operators · Source: Hotjar events"
       },
       {
         "number": "02",
-        "title": "Un tutorial por sección",
-        "titleEn": "One tutorial per section",
-        "description": "Conectar cada pantalla con su propio tutorial, sin buscar ni leer de más",
-        "descriptionEn": "Connect each screen to its own tutorial, with no searching or extra reading"
+        "title": "Acelerar la adopción",
+        "titleEn": "Speed up adoption",
+        "meta": "Meta: 25% menos tiempo (10,5 días hábiles o menos)",
+        "metaEn": "Goal: 25% less time (10.5 business days or fewer)",
+        "description": "Que lleguen antes a operar de forma independiente",
+        "descriptionEn": "Get them operating independently sooner",
+        "kpi": "mediana de días hábiles entre la creación de la cuenta y la primera ruta asignada sin ayuda · Fuente: eventos y marcas de tiempo en Hotjar",
+        "kpiEn": "median business days between account creation and the first route assigned unaided · Source: Hotjar events and timestamps"
       },
       {
         "number": "03",
-        "title": "Aprender, no ser evaluado",
-        "titleEn": "Learn, not be graded",
-        "description": "Reforzar lo aprendido con un cuestionario que orienta, y mostrar el progreso",
-        "descriptionEn": "Reinforce learning with a quiz that guides, and show progress"
+        "title": "Más sesiones de aprendizaje",
+        "titleEn": "More learning sessions",
+        "meta": "Meta: 3,5 o más sesiones por operador en el primer mes",
+        "metaEn": "Goal: 3.5 or more sessions per operator in month 1",
+        "description": "Pasar de consultas reactivas a aprender con constancia",
+        "descriptionEn": "Move from reactive lookups to steady learning",
+        "kpi": "sesiones de tutorial en el primer mes ÷ operadores nuevos activos · Fuente: atributos de usuario y eventos en Hotjar",
+        "kpiEn": "tutorial sessions in month 1 ÷ active new operators · Source: Hotjar user attributes and events"
       }
-    ]
+    ],
+    "objectivesTitle": "Objetivos medibles",
+    "objectivesTitleEn": "Measurable objectives"
   },
   "uxResearch": {
     "title": "Investigación",
     "titleEn": "Research",
-    "subtitle": "Entrevistas exploratorias con operadores y medición en 5 cuentas piloto",
-    "subtitleEn": "Exploratory interviews with operators and measurement across 5 pilot accounts",
+    "subtitle": "Entrevistas con operadores, un prototipo funcional y un piloto de 60 días contra la cohorte histórica",
+    "subtitleEn": "Operator interviews, a working prototype and a 60-day pilot against the historical cohort",
     "methodCards": [
       {
-        "name": "Entrevistas exploratorias con operadores",
-        "nameEn": "Exploratory interviews with operators",
-        "description": "Los operadores contaron su frustración al entrar a un centro de ayuda separado de la plataforma: tenían que ir a otra sección, buscar un problema específico y leer texto.",
-        "descriptionEn": "Operators described their frustration with entering a Help Center separate from the platform: they had to go to another section, search for a specific problem and read text.",
-        "finding": "La ayuda debía vivir dentro de la plataforma, no al lado. De ahí la decisión de un panel lateral.",
-        "findingEn": "Help had to live inside the platform, not beside it. Hence the decision for a sidebar."
+        "name": "Entrevistas con operadores",
+        "nameEn": "Operator interviews",
+        "description": "Entrevisté a 6 operadores contratados en los últimos 90 días y audité el historial de onboarding del centro de ayuda anterior en las mismas 5 cuentas.",
+        "descriptionEn": "I interviewed 6 operators hired in the previous 90 days and audited the onboarding history of the old Help Center across the same 5 accounts.",
+        "finding": "Rara vez abrían la ayuda por su cuenta: salir de su trabajo cortaba el flujo y el texto no calzaba con la interfaz. De ahí, ayuda dentro de cada sección.",
+        "findingEn": "They rarely opened help on their own: leaving their work broke their flow and text didn't match the interface. Hence help inside each section."
       },
       {
-        "name": "Cómo medimos el impacto",
-        "nameEn": "How we measured impact",
-        "description": "Durante 60 días, en las mismas 5 cuentas piloto, comparamos a los operadores nuevos con el historial previo. La línea base salió de los datos del centro de ayuda anterior; el piloto, de los eventos del panel lateral.",
-        "descriptionEn": "For 60 days, across the same 5 pilot accounts, we compared new operators against the previous history. The baseline came from the old Help Center data; the pilot, from sidebar events.",
-        "finding": "Onboardings: operadores nuevos que completan el nivel inicial en 15 días ÷ operadores nuevos. Adopción: mediana de días hábiles desde la creación de la cuenta hasta la primera ruta asignada sin ayuda. Sesiones: sesiones de aprendizaje en el primer mes ÷ operadores activos.",
-        "findingEn": "Onboardings: new operators who complete the starter level within 15 days ÷ new operators. Adoption: median business days from account creation to the first route assigned unaided. Sessions: learning sessions in the first month ÷ active operators."
+        "name": "Prototipo funcional",
+        "nameEn": "Working prototype",
+        "description": "Con Claude y Cursor armé un prototipo en React con el panel lateral, tutoriales por sección, video con cuestionario guiado y estados vacíos para quienes entran por primera vez.",
+        "descriptionEn": "With Claude and Cursor I built a React prototype with the sidebar, per-section tutorials, video with a guided quiz and empty states for first-time users.",
+        "finding": "Los cuestionarios que orientan hacia la respuesta correcta, sin reprobar, favorecieron terminar. Los íconos de cada sección se reconocieron de inmediato.",
+        "findingEn": "Quizzes that guide toward the right answer, without failing, encouraged completion. Section icons were recognized immediately."
+      },
+      {
+        "name": "Piloto de 60 días",
+        "nameEn": "60-day pilot",
+        "description": "50 operadores nuevos en 5 cuentas, comparados con la cohorte histórica. Medí con eventos personalizados y atributos de usuario en Hotjar, más mapas de calor y grabaciones.",
+        "descriptionEn": "50 new operators across 5 accounts, compared with the historical cohort. I measured with custom events and user attributes in Hotjar, plus heatmaps and recordings.",
+        "finding": "Abrían los tutoriales sobre todo desde el ícono de cada sección, no desde el catálogo de 49 tutoriales.",
+        "findingEn": "They opened tutorials mostly from each section's icon, not from the 49-tutorial catalog."
+      }
+    ],
+    "insightsTitle": "Línea base · cohorte histórica de las mismas 5 cuentas",
+    "insightsTitleEn": "Baseline · historical cohort from the same 5 accounts",
+    "quantitativeLabel": "Línea base",
+    "quantitativeLabelEn": "Baseline",
+    "stats": [
+      {
+        "value": "34%",
+        "description": "de los operadores nuevos completó el nivel inicial en sus primeros 15 días",
+        "descriptionEn": "of new operators completed the starter level within their first 15 days"
+      },
+      {
+        "value": "14 días",
+        "description": "hábiles (mediana) hasta crear y asignar su primera ruta sin ayuda",
+        "descriptionEn": "business days (median) until creating and assigning their first route unaided"
+      },
+      {
+        "value": "1,8",
+        "description": "sesiones de aprendizaje por operador en su primer mes, casi todas consultas reactivas",
+        "descriptionEn": "learning sessions per operator in their first month, mostly reactive lookups"
       }
     ]
   },
@@ -332,35 +375,34 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Vista del operador, medida en las mismas 5 cuentas piloto durante los primeros 60 días.",
-    "subtitleEn": "Operator view, measured across the same 5 pilot accounts over the first 60 days.",
-    "impactTitle": "Impacto medido",
-    "impactTitleEn": "Measured impact",
+    "subtitle": "Vista del operador en el piloto de 60 días: 50 operadores nuevos en 5 cuentas, frente a la cohorte histórica.",
+    "subtitleEn": "Operator view in the 60-day pilot: 50 new operators across 5 accounts, compared with the historical cohort.",
     "impact": [
       {
         "icon": "✅",
         "label": "Onboardings completados",
         "labelEn": "Onboardings completed",
-        "metric": "34% → 82%",
-        "description": "en los primeros 15 días desde la creación de la cuenta.",
-        "descriptionEn": "within the first 15 days of account creation."
+        "metric": "82%",
+        "description": "(41 de 50 operadores nuevos) terminó el nivel inicial en 15 días. Antes, 34%.",
+        "descriptionEn": "(41 of 50 new operators) completed the starter level within 15 days. Before, 34%.",
+        "metricEn": "82%"
       },
       {
         "icon": "⏱️",
         "label": "Adopción más rápida",
         "labelEn": "Faster adoption",
-        "metric": "14 → 9 días",
-        "description": "hábiles para crear y asignar rutas en vivo sin ayuda.",
-        "descriptionEn": "business days to create and assign live routes unaided.",
-        "metricEn": "14 → 9 days"
+        "metric": "36%",
+        "description": "De 14 a 9 días hábiles (mediana) hasta la primera ruta asignada sin ayuda.",
+        "descriptionEn": "From 14 to 9 business days (median) until the first route assigned unaided.",
+        "metricEn": "36%"
       },
       {
         "icon": "📈",
         "label": "Más sesiones de aprendizaje",
         "labelEn": "More learning sessions",
         "metric": "2,4×",
-        "description": "(1,8 → 4,3 por operador en su primer mes): de consultas reactivas a rutas completas.",
-        "descriptionEn": "(1.8 → 4.3 per operator in their first month): from reactive lookups to full learning paths.",
+        "description": "De 1,8 a 4,3 sesiones por operador en su primer mes.",
+        "descriptionEn": "From 1.8 to 4.3 sessions per operator in their first month.",
         "metricEn": "2.4×"
       }
     ],
@@ -372,6 +414,18 @@
         "titleEn": "Help works best where people work",
         "description": "Los operadores se frustraban con un centro de ayuda aparte. Llevarlo a la plataforma, con un tutorial por sección, evitó buscar y leer fuera de contexto.",
         "descriptionEn": "Operators were frustrated by a separate Help Center. Bringing it into the platform, with one tutorial per section, avoided searching and reading out of context."
+      },
+      {
+        "title": "Los disparadores contextuales superan a la búsqueda",
+        "titleEn": "Contextual triggers beat search",
+        "description": "Los operadores abrían los tutoriales sobre todo desde el ícono junto al título de cada sección, y no desde el catálogo completo.",
+        "descriptionEn": "Operators opened tutorials mostly from the icon next to each section title, not from the full catalog."
+      },
+      {
+        "title": "Un cuestionario que guía acompañó el hábito",
+        "titleEn": "A guiding quiz went with the habit",
+        "description": "El cambio de texto pasivo a video con cuestionario guiado coincidió con 2,4× más sesiones en el primer mes y 82% de onboardings completados.",
+        "descriptionEn": "Moving from passive text to video with a guided quiz coincided with 2.4× more sessions in month 1 and 82% of onboardings completed."
       }
     ],
     "nextSteps": []
