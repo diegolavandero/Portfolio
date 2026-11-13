@@ -144,8 +144,8 @@
         "descriptionEn": "12 drivers tested the 4-step Figma prototype under simulated time pressure, before development.",
         "findingLabel": "Resultado",
         "findingLabelEn": "Result",
-        "finding": "83% (10/12) completó los 4 pasos sin ayuda. Hubo 6,3% de errores de toque con objetivos táctiles de 56 px.",
-        "findingEn": "83% (10/12) completed all 4 steps unassisted. 56px targets kept misclicks to 6.3%."
+        "finding": "83% (10/12) completó los 4 pasos sin ayuda. Hubo 6,3% de errores de toque (5 errores en 80 toques totales), con objetivos táctiles de 56 px.",
+        "findingEn": "83% (10 of 12) completed the 4-step validation without assistance, with a 6.3% misclick rate (5 misclicks across 80 total taps) on 56px targets."
       },
       {
         "name": "Piloto de campo en TestFlight",
