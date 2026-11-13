@@ -157,15 +157,15 @@
         "findingEn": "Recordings showed they opened tutorials mostly from each section's icon, not from the 49-tutorial catalog."
       }
     ],
-    "insightsTitle": "Línea base · cohorte histórica de las mismas 5 cuentas",
-    "insightsTitleEn": "Baseline · historical cohort from the same 5 accounts",
+    "insightsTitle": "Línea base · 53 operadores creados en los 60 días previos, en las mismas 5 cuentas",
+    "insightsTitleEn": "Baseline · 53 operators created in the prior 60 days, across the same 5 accounts",
     "quantitativeLabel": "Línea base",
     "quantitativeLabelEn": "Baseline",
     "stats": [
       {
         "value": "34%",
-        "description": "de los operadores nuevos completó el nivel inicial en sus primeros 15 días",
-        "descriptionEn": "of new operators completed the starter level within their first 15 days"
+        "description": "(18 de 53) de los operadores nuevos completó el nivel inicial en sus primeros 15 días",
+        "descriptionEn": "(18 of 53) of new operators completed the starter level within their first 15 days"
       },
       {
         "value": "14 días",
