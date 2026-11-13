@@ -174,8 +174,8 @@
       },
       {
         "value": "1,8",
-        "description": "sesiones de aprendizaje por operador en su primer mes, casi todas consultas reactivas",
-        "descriptionEn": "learning sessions per operator in their first month, mostly reactive lookups"
+        "description": "sesiones de aprendizaje por operador en su primer mes: visitas al centro de ayuda anterior, casi todas consultas reactivas",
+        "descriptionEn": "learning sessions per operator in their first month: visits to the old Help Center, mostly reactive lookups"
       }
     ]
   },
@@ -401,8 +401,8 @@
         "label": "Más sesiones de aprendizaje",
         "labelEn": "More learning sessions",
         "metric": "2,4×",
-        "description": "De 1,8 a 4,3 sesiones por operador en su primer mes.",
-        "descriptionEn": "From 1.8 to 4.3 sessions per operator in their first month.",
+        "description": "De 1,8 a 4,3 sesiones por operador en su primer mes. Indicador direccional: visitas al centro de ayuda anterior frente a aperturas del panel lateral.",
+        "descriptionEn": "From 1.8 to 4.3 sessions per operator in their first month. Directional indicator: visits to the old Help Center versus openings of the in-app sidebar.",
         "metricEn": "2.4×"
       }
     ],
@@ -422,10 +422,10 @@
         "descriptionEn": "Hotjar recordings showed operators opened tutorials mostly from the icon next to each section title, not from the full catalog."
       },
       {
-        "title": "Un cuestionario que guía acompañó el hábito",
-        "titleEn": "A guiding quiz went with the habit",
-        "description": "El cambio de texto pasivo a video con cuestionario guiado coincidió con 2,4× más sesiones en el primer mes y 82% de onboardings completados.",
-        "descriptionEn": "Moving from passive text to video with a guided quiz coincided with 2.4× more sessions in month 1 and 82% of onboardings completed."
+        "title": "Acceso en contexto y práctica guiada funcionan juntos",
+        "titleEn": "Contextual access and guided practice work together",
+        "description": "Disparadores en pantalla, video corto y cuestionario sin penalización llegaron juntos y coincidieron con 2,4× más sesiones y 82% de onboardings completados. Es el efecto del sistema completo, no de una pieza aislada.",
+        "descriptionEn": "In-screen triggers, short videos and non-punitive quizzes shipped together and coincided with 2.4× more sessions and 82% of onboardings completed. It reflects the whole system, not an isolated feature."
       }
     ],
     "nextSteps": []
