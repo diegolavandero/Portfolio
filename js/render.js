@@ -323,6 +323,7 @@ const Renderer = {
             <h4 class="objective-title" ${bi(o.title, o.titleEn)}>${o.title}</h4>
             ${o.meta ? `<p class="objective-meta" ${bi(o.meta, o.metaEn)}>${o.meta}</p>` : ''}
             <p class="objective-desc" ${bi(o.description, o.descriptionEn)}>${o.description}</p>
+            ${o.kpi ? `<p class="objective-kpi" ${bi('KPI: ' + o.kpi, 'KPI: ' + (o.kpiEn || o.kpi))}>KPI: ${o.kpi}</p>` : ''}
           </div>
         </div>
       `).join('');

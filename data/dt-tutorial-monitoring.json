@@ -198,7 +198,9 @@
         "meta": "Meta: 65% o más de administradores activos por semana",
         "metaEn": "Goal: 65% or more weekly active admins",
         "description": "Reemplazar las consultas a soporte por un hábito de monitoreo propio, dentro de su rutina semanal",
-        "descriptionEn": "Replace support inquiries with a self-serve monitoring habit within their weekly routine"
+        "descriptionEn": "Replace support inquiries with a self-serve monitoring habit within their weekly routine",
+        "kpi": "administradores activos por semana ÷ administradores del piloto · Fuente: eventos de producto (rol administrador)",
+        "kpiEn": "weekly active admins ÷ pilot admins · Source: product events (admin role)"
       },
       {
         "number": "02",
@@ -207,7 +209,9 @@
         "meta": "Meta: 50% más rápido (menos de 60 h)",
         "metaEn": "Goal: 50% faster (under 60 h)",
         "description": "Mostrar a tiempo a los operadores inactivos o en riesgo con KPIs de la cuenta y clasificación por estado",
-        "descriptionEn": "Surface inactive and at-risk operators early with account KPIs and status classification"
+        "descriptionEn": "Surface inactive and at-risk operators early with account KPIs and status classification",
+        "kpi": "tiempo entre la creación del operador y la primera inspección del administrador · Fuente: eventos de producto y registros de base de datos",
+        "kpiEn": "time between operator creation and the admin's first inspection · Source: product events and database logs"
       },
       {
         "number": "03",
@@ -216,7 +220,9 @@
         "meta": "Meta: 50% o más de las sesiones con filtros o vista Por tutorial",
         "metaEn": "Goal: 50% or more of sessions using filters or the By tutorial view",
         "description": "Dar detalle por usuario y por tutorial para encontrar dónde se traba cada persona",
-        "descriptionEn": "Give per-user and per-tutorial detail to find where each person gets stuck"
+        "descriptionEn": "Give per-user and per-tutorial detail to find where each person gets stuck",
+        "kpi": "sesiones con filtro activo o vista Por tutorial ÷ sesiones totales · Fuente: eventos de producto y Hotjar",
+        "kpiEn": "sessions with an active filter or the By tutorial view ÷ total sessions · Source: product events and Hotjar"
       },
       {
         "number": "04",
@@ -225,7 +231,9 @@
         "meta": "Meta: 70% o más con seguimiento en 72 h desde que se atrasan",
         "metaEn": "Goal: 70% or more followed up within 72 h of falling behind",
         "description": "Permitir intervenir antes de que haya rotación o errores operacionales",
-        "descriptionEn": "Let admins step in before turnover or operational errors occur"
+        "descriptionEn": "Let admins step in before turnover or operational errors occur",
+        "kpi": "rezagados con seguimiento en 72 h ÷ rezagados totales · Fuente: check-ins con administradores y telemetría de cursos",
+        "kpiEn": "lagging operators followed up within 72 h ÷ all lagging operators · Source: admin check-ins and course telemetry"
       }
     ],
     "objectivesTitle": "Objetivos medibles",

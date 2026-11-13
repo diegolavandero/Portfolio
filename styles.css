@@ -3630,3 +3630,12 @@ a.brand { color: inherit; text-decoration: none; }
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 32px;
 }
+
+.objective-kpi {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px dashed var(--gray-200);
+  font-size: 13px;
+  line-height: 19px;
+  color: var(--gray-500);
+}
