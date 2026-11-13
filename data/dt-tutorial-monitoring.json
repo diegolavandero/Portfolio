@@ -273,9 +273,9 @@
         "descriptionEn": "(5 days) for an admin to notice a new operator hadn't started"
       },
       {
-        "value": "22%",
-        "description": "de los rezagados recibió seguimiento en 72 h desde que se atrasó (tickets de soporte y entrevistas)",
-        "descriptionEn": "of lagging operators got follow-up within 72 h of falling behind (support tickets and interviews)"
+        "value": "~22%",
+        "description": "de los rezagados recibía seguimiento en las primeras 72 h desde que se atrasaba (estimación a partir de entrevistas y tickets de soporte)",
+        "descriptionEn": "of lagging operators got follow-up within the first 72 h of falling behind (estimate from admin interviews and support tickets)"
       },
       {
         "value": "34%",
@@ -432,8 +432,8 @@
         "label": "Seguimiento activo",
         "labelEn": "Active follow-up",
         "metric": "84%",
-        "description": "de los rezagados tuvo seguimiento en 72 h desde que se atrasó (antes 22%), según check-ins con los administradores y telemetría de cursos.",
-        "descriptionEn": "of lagging operators got follow-up within 72 h of falling behind (up from 22%), based on admin check-ins and course telemetry."
+        "description": "de los rezagados tuvo seguimiento en 72 h desde que se atrasó (antes ~22%), según check-ins con los administradores y telemetría de cursos.",
+        "descriptionEn": "of lagging operators got follow-up within 72 h of falling behind (up from ~22%), based on admin check-ins and course telemetry."
       }
     ],
     "learningsTitle": "Aprendizajes clave",
