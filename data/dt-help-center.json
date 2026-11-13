@@ -151,8 +151,8 @@
       {
         "name": "Piloto de 60 días",
         "nameEn": "60-day pilot",
-        "description": "50 operadores nuevos en 5 cuentas, comparados con la cohorte histórica. Medí con telemetría de producto (creación de cuenta, primera ruta sin ayuda y tutoriales completados) y observé el uso con grabaciones de Hotjar.",
-        "descriptionEn": "50 new operators across 5 accounts, compared with the historical cohort. I measured with product telemetry (account creation, first unaided route and completed tutorials) and observed usage with Hotjar recordings.",
+        "description": "50 operadores nuevos en 5 cuentas, creados en los primeros 30 días del piloto y con al menos 30 días de seguimiento. Medí con telemetría de producto y observé el uso con grabaciones de Hotjar.",
+        "descriptionEn": "50 new operators across 5 accounts, created in the first 30 days of the pilot with at least 30 days of follow-up. I measured with product telemetry and observed usage with Hotjar recordings.",
         "finding": "Según las grabaciones, abrían los tutoriales sobre todo desde el ícono de cada sección, no desde el catálogo de 49 tutoriales.",
         "findingEn": "Recordings showed they opened tutorials mostly from each section's icon, not from the 49-tutorial catalog."
       }
@@ -392,8 +392,8 @@
         "label": "Adopción más rápida",
         "labelEn": "Faster adoption",
         "metric": "36%",
-        "description": "De 14 a 9 días hábiles (mediana) hasta la primera ruta asignada sin ayuda.",
-        "descriptionEn": "From 14 to 9 business days (median) until the first route assigned unaided.",
+        "description": "De 14 a 9 días hábiles (mediana) hasta la primera ruta sin ayuda. 46 de 50 la asignaron en 30 días; los otros 4 se mantuvieron en el extremo superior.",
+        "descriptionEn": "From 14 to 9 business days (median) until the first route unaided. 46 of 50 assigned one within 30 days; the other 4 were kept at the upper end.",
         "metricEn": "36%"
       },
       {
