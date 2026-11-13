@@ -217,7 +217,8 @@
         "behaviorsEn": [
           "Looks for help when stuck on a task",
           "Progresses at their own pace, unnoticed"
-        ]
+        ],
+        "avatar": "https://randomuser.me/api/portraits/men/32.jpg"
       }
     ]
   },

@@ -257,7 +257,8 @@
         "behaviorsEn": [
           "Reads reviews before buying",
           "Prefers online shopping to avoid sales pressure"
-        ]
+        ],
+        "avatar": "https://i.pravatar.cc/150?img=47"
       },
       {
         "id": "rodrigo",
@@ -288,7 +289,8 @@
         "behaviorsEn": [
           "Buys in volume, several times per month",
           "Prioritizes decision speed over marginal price"
-        ]
+        ],
+        "avatar": "https://randomuser.me/api/portraits/men/45.jpg"
       }
     ]
   },

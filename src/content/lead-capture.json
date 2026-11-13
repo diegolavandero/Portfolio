@@ -230,7 +230,8 @@
           "Metrics-focused",
           "Seeks no-code solutions",
           "Values autonomy"
-        ]
+        ],
+        "avatar": "https://randomuser.me/api/portraits/women/65.jpg"
       },
       {
         "id": "javier-medina",
@@ -266,7 +267,8 @@
           "Constantly reviews leads",
           "Prioritizes fast response",
           "Needs clear information"
-        ]
+        ],
+        "avatar": "https://i.pravatar.cc/150?img=12"
       },
       {
         "id": "ana-torres",
@@ -302,7 +304,8 @@
           "Low friction tolerance",
           "Seeks immediacy",
           "Leaves if complex"
-        ]
+        ],
+        "avatar": "https://randomuser.me/api/portraits/women/68.jpg"
       }
     ]
   },

@@ -238,7 +238,8 @@
         "quote": "Necesito algo que no se pueda ignorar cuando hay un error. El papel se puede perder, pero una foto no.",
         "quoteEn": "I need something that can’t be ignored when there’s an error. Paper can get lost, but a photo can’t.",
         "quoteLabel": "Cita de investigación",
-        "quoteLabelEn": "Research quote"
+        "quoteLabelEn": "Research quote",
+        "avatar": "https://i.pravatar.cc/150?img=11"
       },
       {
         "id": "elena-vargas",
@@ -278,7 +279,8 @@
         "quote": "Necesito un rastro de papel que no requiera papel.",
         "quoteEn": "I need a paper trail that doesn’t require paper.",
         "quoteLabel": "Cita de investigación",
-        "quoteLabelEn": "Research quote"
+        "quoteLabelEn": "Research quote",
+        "avatar": "https://randomuser.me/api/portraits/women/79.jpg"
       }
     ]
   },

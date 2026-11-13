@@ -185,6 +185,12 @@ function Problem({ p }) {
   );
 }
 
+function Avatar({ name, src, initials }) {
+  const [failed, setFailed] = useState(false);
+  if (!src || failed) return <span aria-hidden="true" className="grid h-12 w-12 flex-none place-items-center rounded-full bg-acc text-[15px] font-bold text-onacc">{initials}</span>;
+  return <img src={src} alt="" width="48" height="48" loading="lazy" decoding="async" referrerPolicy="no-referrer" onError={() => setFailed(true)} className="h-12 w-12 flex-none rounded-full border border-line bg-soft object-cover" />;
+}
+
 function Personas({ p }) {
   const ui = useUI();
   const pick = usePick();
@@ -198,7 +204,7 @@ function Personas({ p }) {
         {items.map((x) => (
           <section key={x.id || x.name} aria-label={`${ui.persona}: ${x.name}`} className="flex flex-col gap-4 rounded border border-line bg-card p-6">
             <div className="flex items-center gap-4">
-              <span aria-hidden="true" className="grid h-12 w-12 flex-none place-items-center rounded-full bg-acc text-[15px] font-bold text-onacc">{initials(x.name)}</span>
+              <Avatar name={x.name} src={x.avatar} initials={initials(x.name)} />
               <div className="min-w-0">
                 <h4 className="m-0 text-lg font-bold leading-tight">{x.name}</h4>
                 <p className="m-0 text-sm text-ink2">{pick(x, 'role')}</p>
@@ -600,7 +606,7 @@ function Designs({ g }) {
           const alt = pick(it, 'alt') || pick(it, 'title');
           return (
             <div key={i} className="min-w-0">
-              {srcs.map((s, j) => <Media key={j} src={img(s)} alt={srcs.length > 1 ? `${alt} (${j + 1}/${srcs.length})` : alt} device={device === 'none' ? 'desktop' : device} accent={device === 'mobile'} />)}
+              {srcs.map((s, j) => <Media key={j} src={img(s)} alt={srcs.length > 1 ? `${alt} (${j + 1}/${srcs.length})` : alt} device={device} accent={device === 'mobile'} />)}
               <div className="border-t border-line pt-3">
                 {pick(it, 'badge') && <p className="cap mb-1 text-acctext">{pick(it, 'badge')}</p>}
                 <h4 className="m-0 text-base font-bold leading-snug">{pick(it, 'title')}</h4>

@@ -234,7 +234,8 @@
           "Reviews all routes manually",
           "Prefers total visibility",
           "Uses multiple tools"
-        ]
+        ],
+        "avatar": "https://i.pravatar.cc/150?img=44"
       },
       {
         "id": "nicolas-zuniga",
@@ -270,7 +271,8 @@
           "Constant KPI monitoring",
           "Frequent manual intervention",
           "Execution-focused"
-        ]
+        ],
+        "avatar": "https://i.pravatar.cc/150?img=52"
       },
       {
         "id": "diego-campos",
@@ -306,7 +308,8 @@
           "Expert console user",
           "Works under time pressure",
           "Prefers drag and drop"
-        ]
+        ],
+        "avatar": "https://randomuser.me/api/portraits/men/75.jpg"
       }
     ]
   },

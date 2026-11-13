@@ -409,5 +409,5 @@ Vamos a Sesión 04. Arranca leyendo el frame 1:2189 del Figma (Lead Capture) usa
 - **Mayúsculas:** sentence case en headings y etiquetas, en EN y ES. Nombres de proyecto y títulos: sentence case en EN y ES, siempre (solo mayúscula inicial; excepto nombres propios: DispatchTrack, LastMile, Falabella, Driver AI). El antetítulo (eyebrow) de la tarjeta del home y el tagline del hero de cada caso son idénticos.
 - **ES 100% español:** en inglés solo marcas, nombres de producto (DispatchTrack, LastMile, Address Intelligence) y siglas (UX, UI, KPI, NPS, A/B). Glosario: operador (no operario), despachador (no dispatcher), asistente (no wizard), panel lateral (no sidebar), vista previa (no preview).
 - **Signos:** comillas curvas “…”, × en multiplicadores, metas en positivo (“32% menos tiempo”, nunca “-32%”), decimales con coma en ES.
-- **Personas:** sin fotos de stock; el render usa iniciales.
+- **Personas:** avatar por persona (campo `avatar` en el JSON), nunca repetido entre casos; si la imagen falla, el render usa iniciales.
 - **Navegación:** las tarjetas del home y los CTA son `<a href>` reales; la secuencia de casos sigue el orden del home.

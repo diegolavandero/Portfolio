@@ -210,11 +210,14 @@ export function HeroStage({ src, alt, children, zoom = false }) {
 
 export function Media({ src, alt, device = 'desktop', accent = false, caption }) {
   const isMob = device === 'mobile';
+  const [wide, setWide] = useState(false);
   return (
     <figure className="m-0 min-w-0">
       <div className="relative py-7 md:py-10">
         <span aria-hidden="true" className={`blob top-1/2 -translate-y-1/2 ${accent ? 'bg-acc' : 'bg-soft'} ${isMob ? 'left-1/2 w-[min(80%,420px)] -translate-x-1/2' : 'left-0 w-[min(55%,360px)]'}`} />
-        {isMob ? (
+        {device === 'none' ? (
+          <img src={src} alt={alt} loading="lazy" onLoad={(e) => setWide(e.currentTarget.naturalWidth > e.currentTarget.naturalHeight)} className={`relative mx-auto block h-auto rounded-lg ${wide ? 'w-full' : 'w-[min(300px,72%)]'} border border-line bg-card shadow-[0_30px_60px_-30px_rgba(21,24,29,.45)]`} />
+        ) : isMob ? (
           <div className="relative mx-auto w-[min(230px,62%)] overflow-hidden rounded-[34px] border-[9px] border-[#15181D] bg-[#15181D] shadow-[0_30px_60px_-30px_rgba(21,24,29,.55)]">
             <img src={src} alt={alt} loading="lazy" className="block aspect-[9/19.5] w-full object-cover object-top" />
           </div>

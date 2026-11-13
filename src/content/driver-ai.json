@@ -264,7 +264,8 @@
         "quote": "Me aprendo los edificios de memoria. Pero cuando me cambian de zona, empiezo desde cero.",
         "quoteEn": "I memorize buildings. But when they move me to another zone, I start from scratch.",
         "quoteLabel": "Cita de campo",
-        "quoteLabelEn": "Field quote"
+        "quoteLabelEn": "Field quote",
+        "avatar": "https://i.pravatar.cc/150?img=15"
       },
       {
         "id": "laura-fernandez",
@@ -304,7 +305,8 @@
         "quote": "La mitad de mis llamadas son sobre cómo entrar a un edificio. Eso no debería pasar.",
         "quoteEn": "Half my calls are about how to enter a building. That shouldn’t happen.",
         "quoteLabel": "Cita de campo",
-        "quoteLabelEn": "Field quote"
+        "quoteLabelEn": "Field quote",
+        "avatar": "https://i.pravatar.cc/150?img=24"
       },
       {
         "id": "ricardo-salinas",
@@ -344,7 +346,8 @@
         "quote": "Si el conductor conoce el edificio, el 95% de las entregas salen bien. El problema es escalar ese conocimiento.",
         "quoteEn": "If the driver knows the building, 95% of deliveries go well. The problem is scaling that knowledge.",
         "quoteLabel": "Cita de entrevista",
-        "quoteLabelEn": "Interview quote"
+        "quoteLabelEn": "Interview quote",
+        "avatar": "https://i.pravatar.cc/150?img=57"
       }
     ]
   },

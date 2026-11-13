@@ -225,7 +225,8 @@
         "quote": "Debería estar usando mi cerebro para el análisis, no para copiar y pegar gráficos en una plantilla cada lunes en la mañana.",
         "quoteEn": "I should be using my brain for analysis, not copying and pasting charts into a template every Monday morning.",
         "quoteLabel": "Cita de investigación",
-        "quoteLabelEn": "Research quote"
+        "quoteLabelEn": "Research quote",
+        "avatar": "https://i.pravatar.cc/150?img=68"
       },
       {
         "id": "sandra",
@@ -265,7 +266,8 @@
         "quote": "Nunca debería tener que pedir un reporte. Debería estar simplemente en mi bandeja de entrada.",
         "quoteEn": "I should never have to ask for a report. It should just be in my inbox.",
         "quoteLabel": "Cita de investigación",
-        "quoteLabelEn": "Research quote"
+        "quoteLabelEn": "Research quote",
+        "avatar": "https://i.pravatar.cc/150?img=36"
       }
     ]
   },
