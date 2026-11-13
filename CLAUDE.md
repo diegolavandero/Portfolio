@@ -9,7 +9,7 @@
 **Portfolio interactivo** para Diego Lavandero — Senior AI Product Designer.
 
 - **Objetivo:** Demostrar seniority en Product Design para roles **Senior AI Product Designer FAANG** en logística, SaaS y sistemas AI-powered.
-- **Stack:** HTML minimalista + CSS puro + Vanilla JS + JSON (sin frameworks)
+- **Stack (v2, rama `v2`):** Vite + React 18 + Tailwind CSS 3 + JSON como fuente de contenido. v1 (vanilla JS) queda guardada en `legacy-v1/` y en la rama `v1`.
 - **Idiomas:** ES + EN (bilingüismo nativo con `data-es` / `data-en`)
 - **Fuente de verdad de copy:** Figma `GHSGRkqNK5DofoCvCatRfU`
 - **Dominio:** `diegolavandero.com` (GoDaddy, sin tráfico actual)
@@ -17,7 +17,16 @@
 
 ---
 
-## 🏗️ Arquitectura: JSON + JavaScript Modular
+## 🧱 v2 — React + Tailwind (rama `v2`)
+
+- **Contenido:** `src/content/*.json` (misma convención de JSON de siempre; claves `xxxEn` para inglés).
+- **Código:** `src/lib.jsx` (contenido, idioma, tema, textos de interfaz `UI`), `src/ui.jsx` (layout y componentes), `src/pages/{Home,Case,About,NotFound}.jsx`.
+- **Tokens:** variables RGB en `src/index.css` (`:root` y `.dark`), expuestas en `tailwind.config.js`. Acento `#CD2143` (5,03:1 sobre `#F7F7F7`); en tema noche el texto de acento usa `--acctext`.
+- **Build:** `npm run build` = `vite build` + `scripts/prerender-meta.mjs` (HTML por ruta con meta OG + `sitemap.xml`). Local: `npm run dev` o `npx vite preview`.
+- **Estándar de calidad (bloqueante antes de mergear a main):** WCAG 2.2 AA con axe en 11 rutas × ES/EN × día/noche × 1440/390; contraste ≥ 4,5:1 incluso sobre círculos decorativos; ningún título (h1–h4) en dos líneas en escritorio — si no cabe, cambiar el layout o la palabra, no el tamaño a ciegas; contenido a ≥ 16 px del borde en móvil; sin desborde horizontal; animaciones solo con `prefers-reduced-motion: no-preference`.
+- **Producción:** `main` sigue en v1 hasta aprobación explícita de Diego.
+
+## 🏗️ Arquitectura v1 (legacy): JSON + JavaScript Modular
 
 **Decisión clave (ADR-001):** No es single-file HTML monolítico. Es arquitectura modular donde:
 
@@ -67,8 +76,7 @@ portfolio-web/
 - ❌ No es showcase de UI sin contexto
 - ❌ No es landing comercial
 - ❌ No incluye CMS ni backend
-- ❌ No usa frameworks (React, Vue, etc.)
-- ❌ No usa Tailwind (CSS puro con variables)
+- ❌ No agrega librerías de UI de terceros (componentes propios en `src/ui.jsx`)
 
 ---
 

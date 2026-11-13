@@ -3,3 +3,5 @@
 ._*
 audit/
 *.log
+node_modules/
+dist/

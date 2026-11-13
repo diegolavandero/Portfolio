@@ -381,7 +381,7 @@
       {
         "icon": "✅",
         "label": "Inducciones completadas en 15 días (criterio de éxito: 70% o más)",
-        "labelEn": "Onboardings completed within 15 days (Success criterion: 70% or more)",
+        "labelEn": "Onboarding done within 15 days (Success criterion: 70% or more)",
         "metric": "34% → 82%",
         "description": "41 de 50 operadores nuevos terminaron el nivel inicial en 15 días, frente a 34% de la cohorte histórica (+48 puntos).",
         "descriptionEn": "41 of 50 new operators completed the starter level within 15 days, versus 34% of the historical cohort (+48 points).",
