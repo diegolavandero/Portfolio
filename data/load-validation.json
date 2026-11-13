@@ -140,8 +140,8 @@
       {
         "name": "Benchmark en Maze",
         "nameEn": "Maze benchmark",
-        "description": "12 operadores de almacén probaron el prototipo de 4 pasos en Figma bajo presión de tiempo simulada, antes del desarrollo.",
-        "descriptionEn": "12 warehouse operators tested the 4-step Figma prototype under simulated time pressure, before development.",
+        "description": "12 conductores probaron el prototipo de 4 pasos en Figma bajo presión de tiempo simulada, antes del desarrollo.",
+        "descriptionEn": "12 drivers tested the 4-step Figma prototype under simulated time pressure, before development.",
         "findingLabel": "Resultado",
         "findingLabelEn": "Result",
         "finding": "83% (10/12) completó los 4 pasos sin ayuda. Hubo 6,3% de errores de toque con objetivos táctiles de 56 px.",
@@ -635,8 +635,8 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Evaluación en dos etapas: benchmark en Maze (n = 12 operadores de almacén) y piloto de 60 días en TestFlight (n = 40 conductores, 2.400 salidas en 2 centros de distribución). TestFlight distribuyó la beta; las validaciones, discrepancias y reclamos salen de los registros de la app y del ERP. Como el piloto fue pre-post y sin grupo control, las mejoras coincidieron con el despliegue y son una validación direccional.",
-    "subtitleEn": "Two-stage evaluation combining a Maze prototype benchmark (n = 12 warehouse operators) and a 60-day TestFlight field pilot (n = 40 drivers, 2,400 departures across 2 distribution centers). While TestFlight managed beta distribution, validation completion, discrepancies and claims were captured via backend app logs and ERP records. Because the pilot used a pre-post design without a randomized control group, operational gains coincided with the rollout and reflect directional validation.",
+    "subtitle": "Evaluación en dos etapas: benchmark en Maze (n = 12 conductores) y piloto de 60 días en TestFlight (n = 40 conductores, 2.400 salidas en 2 centros de distribución). TestFlight distribuyó la beta; las validaciones, discrepancias y reclamos salen de los registros de la app y del ERP. Como el piloto fue pre-post y sin grupo control, las mejoras coincidieron con el despliegue y son una validación direccional.",
+    "subtitleEn": "Two-stage evaluation combining a Maze prototype benchmark (n = 12 drivers) and a 60-day TestFlight field pilot (n = 40 drivers, 2,400 departures across 2 distribution centers). While TestFlight managed beta distribution, validation completion, discrepancies and claims were captured via backend app logs and ERP records. Because the pilot used a pre-post design without a randomized control group, operational gains coincided with the rollout and reflect directional validation.",
     "impactTitle": "Impacto medido",
     "impactTitleEn": "Measured impact",
     "impact": [
