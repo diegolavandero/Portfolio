@@ -864,7 +864,7 @@ const Renderer = {
       // Columna derecha: variante tradeoffs (UR/LC) o variante insights numéricos (OD)
       let rightCol = '';
       if (decision.insights) {
-        const insightsTitle = decision.insightsTitle || 'Insights del ejercicio';
+        const insightsTitle = decision.insightsTitle || 'Hallazgos del ejercicio';
         const insightsTitleEn = decision.insightsTitleEn || 'Exercise insights';
         const insightsList = decision.insights.map(i => `
           <li class="insight-row">

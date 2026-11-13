@@ -2,7 +2,7 @@
   "page": "dt-tutorial-monitoring",
   "slug": "dt-tutorial-monitoring",
   "title": "Monitoreo de tutoriales",
-  "subtitle": "De un onboarding a ciegas a una adopción con seguimiento",
+  "subtitle": "De una inducción a ciegas a una adopción con seguimiento",
   "hero": {
     "tagline": "DT LASTMILE · ESCRITORIO · 2026",
     "taglineEn": "DT LASTMILE · DESKTOP · 2026",
@@ -10,9 +10,9 @@
     "titleEn": "Tutorial ",
     "titleAccent": "tutoriales",
     "titleAccentEn": "monitoring",
-    "subtitle": "De un onboarding a ciegas a una adopción con seguimiento",
+    "subtitle": "De una inducción a ciegas a una adopción con seguimiento",
     "subtitleEn": "From blind onboarding to tracked adoption",
-    "description": "Diseñé una sección visible solo para administradores que muestra qué tan completo está el onboarding de cada usuario de su cuenta. Es la contraparte del Centro de ayuda y onboarding, donde los operadores hacen ese onboarding.",
+    "description": "Diseñé una sección visible solo para administradores que muestra qué tan completa está la inducción de cada usuario de su cuenta. Es la contraparte del Centro de ayuda e inducción, donde los operadores hacen esa inducción.",
     "descriptionEn": "I designed an admin-only section that shows how complete each account user's onboarding is. It's the counterpart to the Help Center, where operators go through that onboarding."
   },
   "projectSpecs": [
@@ -62,7 +62,7 @@
   "solution": {
     "title": "Solución",
     "titleEn": "Solution",
-    "subtitle": "Una sección visible solo para administradores que consolida el avance del onboarding de toda la cuenta: KPIs arriba, distribución al medio y detalle por usuario abajo.",
+    "subtitle": "Una sección visible solo para administradores que consolida el avance de la inducción de toda la cuenta: KPIs arriba, distribución al medio y detalle por usuario abajo.",
     "subtitleEn": "An admin-only section that consolidates the onboarding progress of the whole account: KPIs on top, distribution in the middle and per-user detail below.",
     "components": [
       {
@@ -80,7 +80,7 @@
         "titleEn": "Status and progress classification",
         "tagline": "La distribución del equipo",
         "taglineEn": "The team's distribution",
-        "description": "Dos gráficos de dona: estado del onboarding (activo / inactivo) y clasificación de avance (completado / en progreso / sin iniciar).",
+        "description": "Dos gráficos de dona: estado de la inducción (activo / inactivo) y clasificación de avance (completado / en progreso / sin iniciar).",
         "descriptionEn": "Two donut charts: onboarding status (active / inactive) and progress classification (completed / in progress / not started)."
       },
       {
@@ -89,7 +89,7 @@
         "titleEn": "Progress detail per user",
         "tagline": "Encontrar a quien necesita ayuda",
         "taglineEn": "Find who needs help",
-        "description": "Cursos registrados, completados y con examen rendido, promedio de notas, avance y cumplimiento del programa. Se ordena por columna y se filtra por usuario, cargo, onboarding y clasificación.",
+        "description": "Cursos registrados, completados y con examen rendido, promedio de notas, avance y cumplimiento del programa. Se ordena por columna y se filtra por usuario, cargo, inducción y clasificación.",
         "descriptionEn": "Registered, completed and exam-taken courses, average grade, program progress and compliance. Sortable by column and filterable by user, role, onboarding and classification."
       },
       {
@@ -172,15 +172,15 @@
   "problemAndObjectives": {
     "title": "Problema y objetivos",
     "titleEn": "Problem and objectives",
-    "subtitle": "Las empresas que contratan DispatchTrack rotan con frecuencia a sus técnicos y operadores logísticos, y cada persona nueva debe aprender la plataforma. Los administradores no tenían ninguna herramienta para saber si ese onboarding se había realizado, ni cuánto había avanzado.",
+    "subtitle": "Las empresas que contratan DispatchTrack rotan con frecuencia a sus técnicos y operadores logísticos, y cada persona nueva debe aprender la plataforma. Los administradores no tenían ninguna herramienta para saber si esa inducción se había realizado, ni cuánto había avanzado.",
     "subtitleEn": "Companies that hire DispatchTrack frequently rotate their technicians and logistics operators, and every new person has to learn the platform. Admins had no tool to know whether that onboarding had happened, or how far along it was.",
     "products": [
       {
         "name": "Situación actual",
         "nameEn": "Current situation",
         "cons": [
-          "La rotación de operadores obliga a repetir el onboarding con cada nuevo ingreso",
-          "No existía forma de verificar si un operador nuevo realizó el onboarding",
+          "La rotación de operadores obliga a repetir la inducción con cada nuevo ingreso",
+          "No existía forma de verificar si un operador nuevo realizó la inducción",
           "El administrador no veía los cursos registrados, completados ni el nivel de avance"
         ],
         "consEn": [
@@ -232,7 +232,7 @@
         "metaEn": "Goal: 70% or more followed up within 72 h of falling behind",
         "description": "Permitir intervenir antes de que haya rotación o errores operacionales",
         "descriptionEn": "Let admins step in before turnover or operational errors occur",
-        "kpi": "rezagados con seguimiento en 72 h ÷ rezagados totales · Fuente: check-ins con administradores y telemetría de cursos",
+        "kpi": "rezagados con seguimiento en 72 h ÷ rezagados totales · Fuente: seguimientos con administradores y telemetría de cursos",
         "kpiEn": "lagging operators followed up within 72 h ÷ all lagging operators · Source: admin check-ins and course telemetry"
       }
     ],
@@ -242,13 +242,13 @@
   "uxResearch": {
     "title": "Investigación",
     "titleEn": "Research",
-    "subtitle": "Entrevistas y auditoría de tickets para la línea base, un prototipo funcional y un piloto de 60 días",
+    "subtitle": "Entrevistas y auditoría de casos de soporte para la línea base, un prototipo funcional y un piloto de 60 días",
     "subtitleEn": "Interviews and a ticket audit for the baseline, a working prototype and a 60-day pilot",
     "methodCards": [
       {
         "name": "Entrevistas con administradores",
         "nameEn": "Admin interviews",
-        "description": "Entrevisté a 5 jefes de operaciones y administradores de cuentas de empresas de logística, y audité 90 días de tickets de soporte.",
+        "description": "Entrevisté a 5 jefes de operaciones y administradores de cuentas de empresas de logística, y audité 90 días de casos de soporte.",
         "descriptionEn": "I interviewed 5 heads of operations and account admins at logistics companies, and audited 90 days of support tickets.",
         "finding": "Ya supervisaban a sus conductores con KPIs jerárquicos. Extender ese patrón evitó enseñar un modelo mental nuevo.",
         "findingEn": "They already supervised drivers with hierarchical KPIs. Extending that pattern avoided teaching a new mental model."
@@ -270,9 +270,9 @@
         "findingEn": "They scan top-down: KPIs, distribution and table. They rage-clicked on lagging operators to send them a reminder."
       }
     ],
-    "insightsTitle": "Línea base · entrevistas y auditoría de tickets",
+    "insightsTitle": "Línea base · entrevistas y auditoría de casos de soporte",
     "insightsTitleEn": "Baseline · interviews and ticket audit",
-    "quantitativeLabel": "Entrevistas y auditoría de tickets",
+    "quantitativeLabel": "Entrevistas y auditoría de casos de soporte",
     "quantitativeLabelEn": "Interviews and ticket audit",
     "stats": [
       {
@@ -282,12 +282,12 @@
       },
       {
         "value": "~22%",
-        "description": "de los rezagados recibía seguimiento en las primeras 72 h desde que se atrasaba (estimación a partir de entrevistas y tickets de soporte)",
+        "description": "de los rezagados recibía seguimiento en las primeras 72 h desde que se atrasaba (estimación a partir de entrevistas y casos de soporte)",
         "descriptionEn": "of lagging operators got follow-up within the first 72 h of falling behind (estimate from admin interviews and support tickets)"
       },
       {
         "value": "34%",
-        "description": "de los tickets de onboarding eran administradores preguntando si un operador terminó su capacitación",
+        "description": "de los casos de inducción eran administradores preguntando si un operador terminó su capacitación",
         "descriptionEn": "of onboarding tickets were admins asking whether an operator finished training"
       }
     ]
@@ -304,7 +304,7 @@
         "role": "Jefa de operaciones",
         "roleEn": "Head of Operations",
         "goals": [
-          "Confirmar que cada operador nuevo realizó el onboarding",
+          "Confirmar que cada operador nuevo realizó la inducción",
           "Seguir el avance de los operadores como ya sigue el de los conductores",
           "Saber a quién reforzar y en qué tutorial"
         ],
@@ -314,7 +314,7 @@
           "Know who to reinforce and on which tutorial"
         ],
         "painPoints": [
-          "No tiene forma de saber si el onboarding se completó",
+          "No tiene forma de saber si la inducción se completó",
           "El tiempo de adopción de los nuevos usuarios es alto",
           "Mide a sus conductores, pero no a sus operadores"
         ],
@@ -349,7 +349,7 @@
           "Know what's left to complete in the program"
         ],
         "painPoints": [
-          "El onboarding de la plataforma se percibe precario",
+          "La inducción en la plataforma se percibe precaria",
           "Su avance es invisible para quien lo supervisa"
         ],
         "painPointsEn": [
@@ -376,7 +376,7 @@
       {
         "title": "Resumen",
         "titleEn": "Summary",
-        "description": "KPIs, dona de estado de onboarding, dona de clasificación de avance y detalle de avance por usuario.",
+        "description": "KPIs, dona de estado de inducción, dona de clasificación de avance y detalle de avance por usuario.",
         "descriptionEn": "KPIs, onboarding status donut, progress classification donut and per-user progress detail.",
         "src": "data/images/dt-tutorial-monitoring-01-resumen.webp",
         "srcEn": "data/images/dt-tutorial-monitoring-01-resumen-en.webp",
@@ -408,7 +408,7 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Piloto de 60 días con 18 administradores. Medido con eventos de producto, registros de base de datos y Hotjar; el seguimiento, con check-ins de administradores.",
+    "subtitle": "Piloto de 60 días con 18 administradores. Medido con eventos de producto, registros de base de datos y Hotjar; el seguimiento, con seguimientos de administradores.",
     "subtitleEn": "60-day pilot with 18 admins. Measured with product events, database logs and Hotjar; follow-up measured with admin check-ins.",
     "impact": [
       {
@@ -424,7 +424,7 @@
         "label": "Detección más rápida",
         "labelEn": "Faster detection",
         "metric": "60%",
-        "description": "De 120 h (5 días) a 48 h entre crear un operador y la primera acción del administrador. Tickets de estado: 71% menos.",
+        "description": "De 120 h (5 días) a 48 h entre crear un operador y la primera acción del administrador. Casos de estado: 71% menos.",
         "descriptionEn": "From 120 h (5 days) to 48 h between creating an operator and the admin's first action. Status-check tickets down 71%."
       },
       {
@@ -440,7 +440,7 @@
         "label": "Seguimiento activo",
         "labelEn": "Active follow-up",
         "metric": "84%",
-        "description": "de los rezagados tuvo seguimiento en 72 h desde que se atrasó (antes ~22%), según check-ins con los administradores y telemetría de cursos.",
+        "description": "de los rezagados tuvo seguimiento en 72 h desde que se atrasó (antes ~22%), según seguimientos con los administradores y telemetría de cursos.",
         "descriptionEn": "of lagging operators got follow-up within 72 h of falling behind (up from ~22%), based on admin check-ins and course telemetry."
       }
     ],
@@ -456,7 +456,7 @@
       {
         "title": "Una queja sobre el producto escondía una necesidad de gestión",
         "titleEn": "A product complaint hid a management need",
-        "description": "Lo que sonaba a «el onboarding es precario» incluía otra cosa: los administradores no podían saber quién lo hacía. La solución fue darles visibilidad, no solo mejorar los tutoriales.",
+        "description": "Lo que sonaba a «la inducción es precaria» incluía otra cosa: los administradores no podían saber quién lo hacía. La solución fue darles visibilidad, no solo mejorar los tutoriales.",
         "descriptionEn": "What sounded like “the onboarding is precarious” included something else: admins couldn't tell who was doing it. The solution was giving them visibility, not just improving the tutorials."
       }
     ],
@@ -472,7 +472,7 @@
     ]
   },
   "cta": {
-    "question": "Siguiente caso: Centro de ayuda y onboarding",
+    "question": "Siguiente caso: Centro de ayuda e inducción",
     "questionEn": "Next case: Help center & onboarding",
     "description": "Centro de ayuda contextual con 49 tutoriales dentro de la plataforma",
     "descriptionEn": "Contextual help center with 49 tutorials inside the platform",

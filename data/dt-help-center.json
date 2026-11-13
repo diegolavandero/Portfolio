@@ -1,7 +1,7 @@
 {
   "page": "dt-help-center",
   "slug": "dt-help-center",
-  "title": "Centro de ayuda y onboarding",
+  "title": "Centro de ayuda e inducción",
   "titleEn": "Help center & onboarding",
   "subtitle": "Del centro de ayuda separado a un panel lateral que vive en la plataforma",
   "subtitleEn": "From a separate help center to a sidebar that lives in the platform",
@@ -10,7 +10,7 @@
     "taglineEn": "DT LASTMILE · DESKTOP · 2026",
     "title": "Centro de ayuda ",
     "titleEn": "Help center ",
-    "titleAccent": "y onboarding",
+    "titleAccent": "e inducción",
     "titleAccentEn": "& onboarding",
     "subtitle": "Del centro de ayuda separado a un panel lateral que vive en la plataforma",
     "subtitleEn": "From a separate help center to a sidebar that lives in the platform",
@@ -91,7 +91,7 @@
     "objectives": [
       {
         "number": "01",
-        "title": "Completar el onboarding",
+        "title": "Completar la inducción",
         "titleEn": "Complete onboarding",
         "meta": "Meta: 70% o más en 15 días",
         "metaEn": "Goal: 70% or more within 15 days",
@@ -135,7 +135,7 @@
       {
         "name": "Entrevistas con operadores",
         "nameEn": "Operator interviews",
-        "description": "Entrevisté a 6 operadores contratados en los últimos 90 días y audité el historial de onboarding del centro de ayuda anterior en las mismas 5 cuentas.",
+        "description": "Entrevisté a 6 operadores contratados en los últimos 90 días y audité el historial de inducción del centro de ayuda anterior en las mismas 5 cuentas.",
         "descriptionEn": "I interviewed 6 operators hired in the previous 90 days and audited the onboarding history of the old Help Center across the same 5 accounts.",
         "finding": "Rara vez abrían la ayuda por su cuenta: salir de su trabajo cortaba el flujo y el texto no calzaba con la interfaz. De ahí, ayuda dentro de cada sección.",
         "findingEn": "They rarely opened help on their own: leaving their work broke their flow and text didn't match the interface. Hence help inside each section."
@@ -228,7 +228,7 @@
     "components": [
       {
         "number": "01",
-        "title": "Sidebar de tutoriales",
+        "title": "Panel lateral de tutoriales",
         "titleEn": "Tutorials sidebar",
         "tagline": "Ayuda sin salir de la plataforma",
         "taglineEn": "Help without leaving the platform",
@@ -424,16 +424,16 @@
       {
         "title": "Acceso en contexto y práctica guiada funcionan juntos",
         "titleEn": "Contextual access and guided practice work together",
-        "description": "Disparadores en pantalla, video corto y cuestionario sin penalización llegaron juntos y coincidieron con 2,4× más sesiones y 82% de onboardings completados. Es el efecto del sistema completo, no de una pieza aislada.",
+        "description": "Disparadores en pantalla, video corto y cuestionario sin penalización llegaron juntos y coincidieron con 2,4× más sesiones y 82% de inducciones completadas. Es el efecto del sistema completo, no de una pieza aislada.",
         "descriptionEn": "In-screen triggers, short videos and non-punitive quizzes shipped together and coincided with 2.4× more sessions and 82% of onboardings completed. It reflects the whole system, not an isolated feature."
       }
     ],
     "nextSteps": []
   },
   "cta": {
-    "question": "Siguiente caso: Sistema de captura de leads en tiempo real",
+    "question": "Siguiente caso: Sistema de captura de prospectos en tiempo real",
     "questionEn": "Next case: Real-time lead capture system",
-    "description": "Plataforma de widget de chat pre-venta configurable",
+    "description": "Plataforma de módulo de chat preventa configurable",
     "descriptionEn": "Configurable pre-sales chat widget platform",
     "buttonLabel": "Ver siguiente proyecto",
     "buttonLabelEn": "See next project",

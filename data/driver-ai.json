@@ -39,7 +39,7 @@
     {
       "label": "Equipo",
       "labelEn": "Team",
-      "value": "Diseño + AI + Backend",
+      "value": "Diseño + IA + ingeniería de servidor",
       "valueEn": "Design + AI + Backend"
     },
     {
@@ -51,7 +51,7 @@
     {
       "label": "Entregables",
       "labelEn": "Deliverables",
-      "value": "Prototipo Figma · benchmark Maze · beta en TestFlight",
+      "value": "Prototipo Figma · prueba comparativa en Maze · versión de prueba en TestFlight",
       "valueEn": "Figma prototype · Maze benchmark · TestFlight beta"
     },
     {
@@ -97,7 +97,7 @@
         "metaEn": "Success criterion: 15–20% less time per stop",
         "description": "Entregar contexto predictivo de acceso y estacionamiento antes de llegar, para eliminar la improvisación en la puerta durante las rutas diarias.",
         "descriptionEn": "Deliver predictive access and parking context before arrival to eliminate on-site improvisation across daily routes.",
-        "kpi": "duración promedio por parada · Fuente: marcas de geofence y POD del backend, piloto de campo",
+        "kpi": "duración promedio por parada · Fuente: marcas de geocerca y de POD del servidor, piloto de campo",
         "kpiEn": "average stop duration · Source: backend geofence/POD timestamps, field pilot"
       },
       {
@@ -108,7 +108,7 @@
         "metaEn": "Success criterion: 20% fewer failed deliveries",
         "description": "Atender las fallas por falta de acceso al edificio (línea base de 14,0% en zonas de alta densidad) con códigos de puerta precargados.",
         "descriptionEn": "Address building-access failures (14.0% baseline in high-density zones) through pre-loaded door codes.",
-        "kpi": "paradas fallidas en el primer intento ÷ paradas totales · Fuente: códigos de falla del backend, piloto de campo",
+        "kpi": "paradas fallidas en el primer intento ÷ paradas totales · Fuente: códigos de falla del servidor, piloto de campo",
         "kpiEn": "first-attempt failed stops ÷ total stops · Source: backend failure codes, field pilot"
       },
       {
@@ -119,7 +119,7 @@
         "metaEn": "Success criterion: ≤ 1 tap audio playback & 50% fewer access calls",
         "description": "Dar resúmenes de audio TTS sin mirar la pantalla mientras se conduce, y reducir las llamadas de soporte al despachador por turno.",
         "descriptionEn": "Enable eyes-free TTS summaries while driving and cut dispatcher support calls per shift.",
-        "kpi": "toques para activar el audio (benchmark Maze, n = 15) · llamadas de acceso por conductor y turno (piloto de campo, n = 8)",
+        "kpi": "toques para activar el audio (prueba comparativa en Maze, n = 15) · llamadas de acceso por conductor y turno (piloto de campo, n = 8)",
         "kpiEn": "taps to activate audio (Maze benchmark, n = 15) · access calls per driver per shift (field pilot, n = 8)"
       }
     ]
@@ -127,7 +127,7 @@
   "uxResearch": {
     "title": "Investigación",
     "titleEn": "Research",
-    "subtitle": "Indagación en campo, benchmark en Maze (n = 15) y piloto en TestFlight (n = 8)",
+    "subtitle": "Indagación en campo, prueba comparativa en Maze (n = 15) y piloto en TestFlight (n = 8)",
     "subtitleEn": "Field inquiry, a Maze benchmark (n = 15) and a TestFlight pilot (n = 8)",
     "methodCards": [
       {
@@ -139,7 +139,7 @@
         "nameEn": "Contextual inquiry"
       },
       {
-        "name": "Benchmark en Maze",
+        "name": "Prueba comparativa en Maze",
         "nameEn": "Maze benchmark",
         "description": "15 conductores probaron el prototipo interactivo de Figma en 3 escenarios de navegación simulados, antes del desarrollo.",
         "descriptionEn": "15 drivers tested the interactive Figma prototype across 3 simulated navigation scenarios, before development.",
@@ -151,11 +151,11 @@
       {
         "name": "Piloto de campo en TestFlight",
         "nameEn": "TestFlight field pilot",
-        "description": "8 conductores usaron un build funcional de iOS integrado con GPT-4o en 3.200 entregas durante 18 días hábiles, en rutas urbanas de alta densidad. La línea base fueron las 3 semanas previas (3.100 paradas).",
+        "description": "8 conductores usaron una versión funcional de iOS integrado con GPT-4o en 3.200 entregas durante 18 días hábiles, en rutas urbanas de alta densidad. La línea base fueron las 3 semanas previas (3.100 paradas).",
         "descriptionEn": "8 drivers used a functional iOS build integrated with GPT-4o across 3,200 deliveries over 18 working days on high-density urban routes. The baseline was the prior 3 weeks (3,100 stops).",
         "findingLabel": "Método",
         "findingLabelEn": "Method",
-        "finding": "Tiempos y códigos de falla vienen de marcas de geofence y POD del backend. El diseño es pre-post sin grupo control: es una validación direccional.",
+        "finding": "Tiempos y códigos de falla vienen de marcas de geocerca y de POD del servidor. El diseño es antes-después, sin grupo de control: es una validación direccional.",
         "findingEn": "Stop durations and failure codes came from backend geofence/POD timestamps. The design is pre-post without a control group: directional validation."
       }
     ],
@@ -271,7 +271,7 @@
         ],
         "behaviors": [
           "Gestiona 45 conductores activos simultáneamente",
-          "Trabaja con múltiples pantallas: mapa, radio, sistema de tickets",
+          "Trabaja con múltiples pantallas: mapa, radio, sistema de casos de soporte",
           "Responsable de resolver incidentes de entrega en tiempo real"
         ],
         "behaviorsEn": [
@@ -291,7 +291,7 @@
         "roleEn": "Operations Manager",
         "goals": [
           "Bajar la tasa de entrega fallida en primer intento por debajo del 8%",
-          "Reducir costo de re-entregas (promedio US$4,20/re-entrega)",
+          "Reducir costo de reentregas (promedio US$4,20/reentrega)",
           "Demostrar ROI de tecnología de IA ante dirección en Q3"
         ],
         "goalsEn": [
@@ -302,7 +302,7 @@
         "painPoints": [
           "14% de entregas fallan en primer intento en zonas de alta densidad",
           "No hay datos estructurados sobre por qué fallan, solo “no pudo acceder”",
-          "Conductores nuevos tienen el doble de re-entregas que los experimentados"
+          "Conductores nuevos tienen el doble de reentregas que los experimentados"
         ],
         "painPointsEn": [
           "14% of deliveries fail on first attempt in high-density zones",
@@ -338,7 +338,7 @@
         "nameEn": "Receive route",
         "problem": "Lista de paradas sin contexto de acceso ni tipo de edificio",
         "problemEn": "Stop list without access context or building type",
-        "solution": "Pre-cargar Address Intelligence antes de salir",
+        "solution": "Precargar Address Intelligence antes de salir",
         "solutionEn": "Pre-load Address Intelligence before departure"
       },
       {
@@ -372,9 +372,9 @@
         "id": 5,
         "name": "Entregar",
         "nameEn": "Deliver",
-        "problem": "5+ taps para confirmar POD con paquete en mano",
+        "problem": "5+ toques para confirmar POD con paquete en mano",
         "problemEn": "5+ taps to confirm POD with package in hand",
-        "solution": "Confirmación en 2 taps desde el modal ya abierto",
+        "solution": "Confirmación en 2 toques desde el modal ya abierto",
         "solutionEn": "Confirmation in 2 taps from the already-open modal"
       },
       {
@@ -442,9 +442,9 @@
       },
       {
         "number": "03",
-        "title": "≤1 tap para cualquier acción crítica",
+        "title": "≤1 toque para cualquier acción crítica",
         "titleEn": "≤1 tap for any critical action",
-        "description": "El modal no cubre el mapa. Swipe down para descartar. La acción más frecuente (escuchar el contexto) es siempre el botón más grande en pantalla. Cero fricciones en el momento de mayor carga cognitiva.",
+        "description": "El modal no cubre el mapa. Se descarta deslizando hacia abajo. La acción más frecuente (escuchar el contexto) es siempre el botón más grande en pantalla. Cero fricciones en el momento de mayor carga cognitiva.",
         "descriptionEn": "The modal doesn't cover the map. Swipe down to dismiss. The most frequent action (hearing the context) is always the largest button on screen. Zero friction at the moment of highest cognitive load."
       }
     ]
@@ -454,7 +454,7 @@
     "titleEn": "Screens",
     "items": [
       {
-        "title": "Flujo de activación · Order card → modal → TTS",
+        "title": "Flujo de activación · Tarjeta de orden → modal → TTS",
         "titleEn": "Activation flow · Order card → modal → TTS",
         "description": "Tres pantallas: lista de órdenes con ícono de IA, panel inferior contextual y botón flotante de audio (TTS) activo durante la navegación.",
         "descriptionEn": "Three screens: orders list with AI icon, contextual bottom sheet modal and active TTS FAB during navigation.",
@@ -477,7 +477,7 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Evaluación en dos etapas: benchmark en Maze (n = 15; 93% [14/15] activó el TTS en 1 toque o menos; 4,2% de errores de toque en 95 toques; 87% [13/15] prefirió el audio) y piloto de 3 semanas en TestFlight (n = 8 conductores, 3.200 entregas en 18 días hábiles, rutas urbanas de alta densidad). Los tiempos y códigos de falla vienen de marcas de geofence y POD del backend. Como el piloto fue pre-post y sin grupo control, las mejoras coincidieron con el despliegue y son una validación direccional.",
+    "subtitle": "Evaluación en dos etapas: prueba comparativa en Maze (n = 15; 93% [14/15] activó el TTS en 1 toque o menos; 4,2% de errores de toque en 95 toques; 87% [13/15] prefirió el audio) y piloto de 3 semanas en TestFlight (n = 8 conductores, 3.200 entregas en 18 días hábiles, rutas urbanas de alta densidad). Los tiempos y códigos de falla vienen de marcas de geocerca y de POD del servidor. Como el piloto fue pre-post y sin grupo control, las mejoras coincidieron con el despliegue y son una validación direccional.",
     "subtitleEn": "Two-stage evaluation: a Maze prototype benchmark (n = 15 drivers; 93% [14/15] completed TTS activation in ≤ 1 tap; 4.2% misclick rate across 95 taps; 87% [13/15] preferred audio) and a 3-week TestFlight field pilot (n = 8 drivers, 3,200 deliveries across 18 working days on high-density urban routes). Stop durations and failure codes were captured via backend geofence/POD timestamps. Because the pilot used a pre-post design without a randomized control group, operational gains coincided with the rollout and reflect directional validation.",
     "impactTitle": "Impacto medido",
     "impactTitleEn": "Measured impact",
@@ -516,7 +516,7 @@
       {
         "title": "Qué funcionó",
         "titleEn": "What worked",
-        "description": "En el benchmark de Maze, 87% (13/15) prefirió el audio TTS sobre leer en pantalla. La hipótesis de que “los conductores prefieren leer” no se sostuvo en la prueba; la preferencia no se midió en el piloto.",
+        "description": "En la prueba comparativa de Maze, 87% (13/15) prefirió el audio TTS sobre leer en pantalla. La hipótesis de que “los conductores prefieren leer” no se sostuvo en la prueba; la preferencia no se midió en el piloto.",
         "descriptionEn": "In the Maze benchmark, 87% (13/15) of drivers preferred TTS audio over reading on screen. The hypothesis that “drivers prefer to read” did not hold in the test; preference was not measured in the pilot."
       },
       {

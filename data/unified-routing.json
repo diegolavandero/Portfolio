@@ -133,7 +133,7 @@
         "metaEn": "Goal: 30% less time",
         "description": "Liberar tiempo del equipo de planificación en cada ciclo de ruteo",
         "descriptionEn": "Free up planning team time in every routing cycle",
-        "kpi": "minutos desde la configuración inicial hasta confirmar y enviar las rutas a la app de conductores · Fuente: benchmark en prototipo y telemetría en producción",
+        "kpi": "minutos desde la configuración inicial hasta confirmar y enviar las rutas a la app de conductores · Fuente: prueba comparativa en prototipo y telemetría en producción",
         "kpiEn": "minutes from initial setup to final route confirmation and dispatch to the driver app · Source: prototype benchmark and live telemetry"
       },
       {
@@ -144,7 +144,7 @@
         "metaEn": "Goal: 45% fewer steps",
         "description": "Evitar que corregir a mano sea la parte más lenta del proceso (42% del tiempo hoy)",
         "descriptionEn": "Stop manual corrections from being the slowest part of the process (42% of time today)",
-        "kpi": "clics para reasignar 15 pedidos entre rutas con restricciones · Fuente: benchmark en prototipo (n = 12)",
+        "kpi": "clics para reasignar 15 pedidos entre rutas con restricciones · Fuente: prueba comparativa en prototipo (n = 12)",
         "kpiEn": "clicks to reassign 15 orders across constrained routes · Source: prototype benchmark (n = 12)"
       },
       {
@@ -155,7 +155,7 @@
         "metaEn": "Goal: 60% fewer errors",
         "description": "Evitar rutas sin guardar, pedidos huérfanos y sobrecapacidad sin detectar",
         "descriptionEn": "Prevent unsaved routes, orphaned orders and undetected capacity overflows",
-        "kpi": "sesiones que terminan con cambios sin guardar o restricciones sin alertar ÷ sesiones totales · Fuente: benchmark en prototipo y telemetría en producción",
+        "kpi": "sesiones que terminan con cambios sin guardar o restricciones sin alertar ÷ sesiones totales · Fuente: prueba comparativa en prototipo y telemetría en producción",
         "kpiEn": "sessions ending with unsaved changes or unflagged constraint violations ÷ total sessions · Source: prototype benchmark and live telemetry"
       }
     ]
@@ -183,7 +183,7 @@
         "findingEn": "3 layouts were discarded before prototyping. The hybrid model remained: a 3-step wizard and a single console."
       },
       {
-        "name": "Benchmark y telemetría",
+        "name": "Prueba comparativa y telemetría",
         "nameEn": "Benchmark and telemetry",
         "description": "Probé el prototipo de Figma con 12 participantes (6 de la observación inicial y 6 externos sin exposición previa) en 3 escenarios con corte de 25 min. Después medí 30 días en producción: 1.420 sesiones, 14 cuentas y 185 usuarios.",
         "descriptionEn": "I tested the Figma prototype with 12 participants (6 from the initial observation and 6 external with no prior exposure) across 3 scenarios with a 25-min cutoff. Then I measured 30 days in production: 1,420 sessions, 14 accounts and 185 users.",
@@ -367,7 +367,7 @@
         "nameEn": "Export to LastMile",
         "problem": "Lento, parámetros duplicados",
         "problemEn": "Slow, duplicated parameters",
-        "solution": "Sincronización automática sin re-ingreso de datos",
+        "solution": "Sincronización automática sin reingreso de datos",
         "solutionEn": "Automatic sync without re-entering data"
       }
     ]
@@ -521,7 +521,7 @@
   "designs": {
     "title": "Pantallas",
     "titleEn": "Screens",
-    "subtitle": "Evolución del diseño desde wireframes hasta alta fidelidad",
+    "subtitle": "Evolución del diseño desde esquemas de baja fidelidad hasta alta fidelidad",
     "subtitleEn": "Design evolution from wireframes to high fidelity",
     "items": [
       {
@@ -647,7 +647,7 @@
       {
         "title": "Los datos en vivo muestran lo que el prototipo no",
         "titleEn": "Live data shows what the prototype can't",
-        "description": "Al revisar más de 60 grabaciones marcadas de Hotjar vimos un patrón cualitativo: varios despachadores dudaban al alternar entre mapa y tabla en horas punta. En el Sprint 2 sumamos el atajo Cmd/Ctrl + M y un tooltip (DTLM-418).",
+        "description": "Al revisar más de 60 grabaciones marcadas de Hotjar vimos un patrón cualitativo: varios despachadores dudaban al alternar entre mapa y tabla en horas punta. En el segundo ciclo sumamos el atajo Cmd/Ctrl + M y un texto de ayuda emergente (DTLM-418).",
         "descriptionEn": "Reviewing 60+ flagged Hotjar recordings showed a qualitative pattern: several dispatchers hesitated when switching between map and table at peak hours. In Sprint 2 we added the Cmd/Ctrl + M shortcut and a tooltip (DTLM-418)."
       }
     ],

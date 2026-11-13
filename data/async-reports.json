@@ -33,13 +33,13 @@
     {
       "label": "Duración",
       "labelEn": "Duration",
-      "value": "4 semanas de diseño + 2 semanas de prueba en staging + 30 días de seguimiento",
+      "value": "4 semanas de diseño + 2 semanas de prueba en preproducción + 30 días de seguimiento",
       "valueEn": "4 weeks design + 2-week staging test + 30-day follow-up"
     },
     {
       "label": "Equipo",
       "labelEn": "Team",
-      "value": "Diseño + Backend",
+      "value": "Diseño + ingeniería de servidor",
       "valueEn": "Design + Backend"
     },
     {
@@ -76,9 +76,9 @@
         "name": "Lo que mostraban los datos",
         "nameEn": "What the data showed",
         "cons": [
-          "34 consultas con tiempo de espera agotado en un solo día de cierre de mes, récord pre-migración",
-          "91% de abandono en reportes de más de 2 minutos con el modo síncrono (logs de producción previos a la migración, replicado en el control de staging)",
-          "Los analistas re-ejecutaban el mismo reporte 2–3 veces por sesión sin saber si había fallado"
+          "34 consultas con tiempo de espera agotado en un solo día de cierre de mes, récord premigración",
+          "91% de abandono en reportes de más de 2 minutos con el modo síncrono (registros de producción previos a la migración, replicado en el control de preproducción)",
+          "Los analistas reejecutaban el mismo reporte 2–3 veces por sesión sin saber si había fallado"
         ],
         "consEn": [
           "34 timeouts recorded in a single month-end day, pre-migration record",
@@ -96,7 +96,7 @@
         "metaEn": "Success criterion: 50% less abandonment on >2 min reports",
         "description": "Mover la generación de reportes pesados a segundo plano para que los analistas nunca esperen frente a una pantalla congelada ni repitan la solicitud (línea base de 91% de abandono con el modo síncrono).",
         "descriptionEn": "Move heavy report generation to the background so analysts never wait on a frozen screen or re-trigger duplicate requests (down from a 91% abandonment baseline in synchronous mode).",
-        "kpi": "abandono = cerrar a mitad de la espera (modo síncrono) o no abrir/descargar en 24 h tras el aviso de finalización (modo asíncrono) ÷ solicitudes de reportes de más de 2 min (140 síncronas, 148 asíncronas) · Fuente: instrumentación de staging, 2 semanas, n = 42",
+        "kpi": "abandono = cerrar a mitad de la espera (modo síncrono) o no abrir/descargar en 24 h tras el aviso de finalización (modo asíncrono) ÷ solicitudes de reportes de más de 2 min (140 síncronas, 148 asíncronas) · Fuente: instrumentación de preproducción, 2 semanas, n = 42",
         "kpiEn": "abandonment = closing mid-wait (sync mode) or not opening/downloading within 24 h of the completion alert (async mode) ÷ >2 min report requests (140 sync, 148 async) · Source: staging instrumentation, 2 weeks, n = 42"
       },
       {
@@ -107,18 +107,18 @@
         "metaEn": "Success criterion: +25% more tasks completed end-to-end",
         "description": "Liberar la interfaz en menos de 1 segundo con estados de progreso claros, para que los usuarios completen sus flujos de reportes en vez de repetir ejecuciones (2,8× por sesión en la línea base).",
         "descriptionEn": "Free the UI in under 1 second with clear progress states so users complete reporting workflows instead of triggering 2.8× duplicate re-runs.",
-        "kpi": "flujos de reporte completados de punta a punta ÷ flujos iniciados (260 síncronos, 275 asíncronos); re-ejecuciones por sesión · Fuente: instrumentación de staging, 2 semanas, n = 42",
+        "kpi": "flujos de reporte completados de punta a punta ÷ flujos iniciados (260 síncronos, 275 asíncronos); reejecuciones por sesión · Fuente: instrumentación de preproducción, 2 semanas, n = 42",
         "kpiEn": "reporting workflows completed end-to-end ÷ workflows started (260 sync, 275 async); re-runs per session · Source: staging instrumentation, 2 weeks, n = 42"
       },
       {
         "number": "03",
-        "title": "Menos tickets de soporte",
+        "title": "Menos casos de soporte",
         "titleEn": "Fewer support tickets",
-        "meta": "Criterio de éxito: 20% menos tickets por bloqueos y timeouts",
+        "meta": "Criterio de éxito: 20% menos casos de soporte por bloqueos y esperas agotadas",
         "metaEn": "Success criterion: 20% fewer support tickets for timeouts/blocks",
         "description": "Combinar estados de error accionables con un archivo de reportes de 90 días, para que los usuarios recuperen y descarguen sus reportes sin contactar a soporte.",
         "descriptionEn": "Pair actionable error states with a 90-day report archive so users recover and download reports without contacting support.",
-        "kpi": "tickets de soporte por pantallas bloqueadas y timeouts · Fuente: registros de soporte, 30 días antes del lanzamiento contra los primeros 30 días después",
+        "kpi": "casos de soporte por pantallas bloqueadas y esperas agotadas · Fuente: registros de soporte, 30 días antes del lanzamiento contra los primeros 30 días después",
         "kpiEn": "support tickets about blocked screens and timeouts · Source: support logs, 30 days pre-release vs. first 30 days post-release"
       }
     ]
@@ -163,13 +163,13 @@
     "stats": [
       {
         "value": "8,4 min",
-        "description": "Tiempo total promedio de sesión para obtener un reporte complejo antes de la migración (incluye las re-ejecuciones tras el timeout síncrono de 5 minutos del navegador)",
+        "description": "Tiempo total promedio de sesión para obtener un reporte complejo antes de la migración (incluye las reejecuciones tras el límite de espera síncrono de 5 minutos del navegador)",
         "descriptionEn": "Average total session time to obtain a complex report pre-migration (including duplicate re-runs triggered after hitting the 5-minute synchronous browser timeout)",
         "valueEn": "8.4 min"
       },
       {
         "value": "91%",
-        "description": "Abandono en reportes de más de 2 minutos con el modo síncrono (logs de producción, replicado en el control de staging)",
+        "description": "Abandono en reportes de más de 2 minutos con el modo síncrono (registros de producción, replicado en el control de preproducción)",
         "descriptionEn": "Abandonment on reports over 2 minutes in synchronous mode (production logs, replicated in staging control)",
         "valueEn": "91%"
       },
@@ -277,13 +277,13 @@
     "stats": [
       {
         "value": "8,4 min",
-        "label": "Tiempo total promedio de sesión para obtener un reporte complejo antes de la migración (incluye las re-ejecuciones tras el timeout síncrono de 5 minutos del navegador)",
+        "label": "Tiempo total promedio de sesión para obtener un reporte complejo antes de la migración (incluye las reejecuciones tras el límite de espera síncrono de 5 minutos del navegador)",
         "labelEn": "Average total session time to obtain a complex report pre-migration (including duplicate re-runs triggered after hitting the 5-minute synchronous browser timeout)",
         "valueEn": "8.4 min"
       },
       {
         "value": "91%",
-        "label": "Abandono en reportes de más de 2 minutos con el modo síncrono (logs de producción, replicado en el control de staging)",
+        "label": "Abandono en reportes de más de 2 minutos con el modo síncrono (registros de producción, replicado en el control de preproducción)",
         "labelEn": "Abandonment on reports over 2 minutes in synchronous mode (production logs, replicated in staging control)",
         "color": "red",
         "valueEn": "91%"
@@ -315,7 +315,7 @@
     ],
     "distributionLabel": "DISTRIBUCIÓN DE ABANDONO POR TIEMPO DE ESPERA",
     "distributionLabelEn": "ABANDONMENT DISTRIBUTION BY WAIT TIME",
-    "distributionNote": "% de usuarios que abandonan antes de que el reporte termine. Logs de producción previos a la migración (auditoría de 30 días), replicado en el control síncrono de staging (91%)",
+    "distributionNote": "% de usuarios que abandonan antes de que el reporte termine. Registros de producción previos a la migración (auditoría de 30 días), replicado en el control síncrono de preproducción (91%)",
     "distributionNoteEn": "% of users who abandon before the report finishes. Pre-migration production server logs (30-day audit), replicated in staging control (91%)",
     "distribution": [
       {
@@ -361,7 +361,7 @@
         },
         {
           "type": "negative",
-          "text": "El gateway HTTP corta la conexión del navegador a los 5 minutos sin un mensaje accionable, y obliga a los usuarios a volver a lanzar la consulta",
+          "text": "La pasarela HTTP corta la conexión del navegador a los 5 minutos sin un mensaje accionable, y obliga a los usuarios a volver a lanzar la consulta",
           "textEn": "5-minute HTTP gateway timeout cuts the browser connection without an actionable message, forcing users to re-trigger the query"
         },
         {
@@ -382,7 +382,7 @@
         },
         {
           "type": "positive",
-          "text": "Estimación de tiempo visible + badge de progreso en barra de navegación",
+          "text": "Estimación de tiempo visible + indicador de progreso en barra de navegación",
           "textEn": "Visible time estimate + progress badge in navigation bar"
         },
         {
@@ -456,14 +456,14 @@
         "number": "03",
         "title": "Notificaciones",
         "titleEn": "Notifications",
-        "description": "Badge en la barra de navegación + toast en pantalla + email opcional. El usuario puede seguir en cualquier sección y recibir el aviso sin interrumpir su flujo.",
+        "description": "Indicador en la barra de navegación + aviso emergente en pantalla + correo electrónico opcional. El usuario puede seguir en cualquier sección y recibir el aviso sin interrumpir su flujo.",
         "descriptionEn": "Badge in the navigation bar + on-screen toast + optional email. The user can continue anywhere on the platform and receive the alert without interrupting their flow."
       },
       {
         "number": "04",
         "title": "Descarga directa",
         "titleEn": "Direct download",
-        "description": "La notificación incluye el botón de descarga directa. El centro de reportes mantiene historial de 90 días con acceso inmediato a cualquier versión anterior sin re-ejecutar.",
+        "description": "La notificación incluye el botón de descarga directa. El centro de reportes mantiene historial de 90 días con acceso inmediato a cualquier versión anterior sin reejecutar.",
         "descriptionEn": "The notification includes the direct download button. The reports center maintains a 90-day history with immediate access to any previous version without re-running."
       }
     ],
@@ -477,7 +477,7 @@
       {
         "title": "¿Bloqueante o asíncrono en la UI?",
         "titleEn": "Blocking or async in the UI?",
-        "justification": "Testeamos 2 patrones: (A) indicador de carga bloqueante con barra de progreso, (B) notificación push cuando el reporte está listo. El 79% de usuarios prefirió B porque podían seguir trabajando. Pero el 21% que prefirió A eran gerentes que querían estar frente al resultado inmediatamente. Solución: asincrónico por defecto, con modo inmediato opcional para reportes livianos (generación rápida).",
+        "justification": "Probamos 2 patrones: (A) indicador de carga bloqueante con barra de progreso, (B) notificación push cuando el reporte está listo. El 79% de usuarios prefirió B porque podían seguir trabajando. Pero el 21% que prefirió A eran gerentes que querían estar frente al resultado inmediatamente. Solución: asincrónico por defecto, con modo inmediato opcional para reportes livianos (generación rápida).",
         "justificationEn": "We tested 2 patterns: (A) blocking spinner with progress bar, (B) push notification when report is ready. 79% of users preferred B because they could keep working. But the 21% who preferred A were managers who wanted to be in front of the result immediately. Solution: async by default, with an optional immediate mode for lightweight reports (fast generation).",
         "tradeoff": "El usuario async pierde el resultado inmediato en pantalla, requiere cambio de hábito y confianza en el sistema de notificaciones.",
         "tradeoffEn": "The async user loses the immediate on-screen result, requires habit change and trust in the notification system."
@@ -487,7 +487,7 @@
         "titleEn": "Templates vs. free builder",
         "justification": "El primer prototipo era un constructor de consultas 100% flexible. En las pruebas, el 85% usaba solo 8 combinaciones distintas de campos. Pivotamos a un sistema de plantillas con personalización de filtros, 3× más rápido de usar y redujo errores de configuración a casi cero.",
         "justificationEn": "The first prototype was a 100% flexible query builder. In testing, 85% used only 8 different field combinations. We pivoted to a template system with filter customization, 3× faster to use and reduced configuration errors to near zero.",
-        "tradeoff": "Los power users con necesidades atípicas perdieron flexibilidad, mitigado con modo avanzado accesible desde configuración.",
+        "tradeoff": "Los usuarios avanzados con necesidades atípicas perdieron flexibilidad, mitigado con modo avanzado accesible desde configuración.",
         "tradeoffEn": "Power users with atypical needs lost flexibility, mitigated with advanced mode accessible from settings."
       },
       {
@@ -520,7 +520,7 @@
         "number": "03",
         "title": "Cero pérdida de trabajo por fallo del sistema",
         "titleEn": "Zero work loss from system failure",
-        "description": "90 días de historial accesible. Un fallo de red, un tiempo agotado o un cierre accidental no pueden costar el trabajo de un mes. El usuario siempre puede recuperar cualquier versión sin re-ejecutar.",
+        "description": "90 días de historial accesible. Un fallo de red, un tiempo agotado o un cierre accidental no pueden costar el trabajo de un mes. El usuario siempre puede recuperar cualquier versión sin reejecutar.",
         "descriptionEn": "90 days of accessible history. A network failure, a timeout or an accidental close cannot cost a month's work. The user can always recover any version without re-running."
       }
     ]
@@ -556,7 +556,7 @@
       {
         "title": "Centro de notificaciones",
         "titleEn": "Notification center",
-        "description": "Centro de reportes con historial de 90 días, badges de estado y descarga directa desde la notificación sin navegación adicional.",
+        "description": "Centro de reportes con historial de 90 días, indicadores de estado y descarga directa desde la notificación sin navegación adicional.",
         "descriptionEn": "Reports center with 90-day history, status badges and direct download from the notification without additional navigation.",
         "src": "data/images/async-report-05.png",
         "alt": "Pantalla de notificaciones",
@@ -568,7 +568,7 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Las métricas de descubrimiento (8,4 min de tiempo total de sesión por reporte complejo, 34 timeouts en un cierre de mes y 2,8× de re-ejecuciones) se auditaron en 30 días de logs del sistema anterior y grabaciones de Hotjar. La prueba en staging fue cruzada e intrasujeto (n = 42 usuarios en dos grupos contrabalanceados de 21, durante 2 semanas: 1 semana de control síncrono y 1 semana de tratamiento asíncrono). El abandono en reportes de más de 2 min corresponde a 127 de 140 solicitudes síncronas (91%) contra 52 de 148 asíncronas (35%); la finalización de punta a punta, a 151 de 260 flujos síncronos (58%) contra 215 de 275 asíncronos (78%); las re-ejecuciones bajaron de 2,8× a 1,1×. La preferencia fue 79% (33/42) asíncrono contra 21% (9/42) síncrono. El volumen de tickets (48 → 36) compara los registros de soporte de 30 días antes y 30 días después del lanzamiento. Es una validación direccional.",
+    "subtitle": "Las métricas de descubrimiento (8,4 min de tiempo total de sesión por reporte complejo, 34 esperas agotadas en un cierre de mes y 2,8× de reejecuciones) se auditaron en 30 días de registros del sistema anterior y grabaciones de Hotjar. La prueba en preproducción fue cruzada e intrasujeto (n = 42 usuarios en dos grupos contrabalanceados de 21, durante 2 semanas: 1 semana de control síncrono y 1 semana de tratamiento asíncrono). El abandono en reportes de más de 2 min corresponde a 127 de 140 solicitudes síncronas (91%) contra 52 de 148 asíncronas (35%); la finalización de punta a punta, a 151 de 260 flujos síncronos (58%) contra 215 de 275 asíncronos (78%); las reejecuciones bajaron de 2,8× a 1,1×. La preferencia fue 79% (33/42) asíncrono contra 21% (9/42) síncrono. El volumen de casos de soporte (48 → 36) compara los registros de soporte de 30 días antes y 30 días después del lanzamiento. Es una validación direccional.",
     "subtitleEn": "Discovery metrics (8.4 min avg. total session time per complex report, 34 month-end timeouts, 2.8× re-runs) were audited from 30 days of legacy server logs and Hotjar recordings. The staging test was a within-subject crossover (n = 42 users split into two counterbalanced groups of 21 over 2 weeks: 1 week synchronous control vs. 1 week asynchronous treatment). Abandonment on >2 min reports reflects 127/140 sync requests (91%) vs. 52/148 async requests (35%); end-to-end completion reflects 151/260 sync workflows (58%) vs. 215/275 async workflows (78%); duplicate re-runs dropped from 2.8× to 1.1×. Preference was 79% (33/42) async vs. 21% (9/42) sync. Support ticket volume (48 → 36) compares 30-day pre- and post-release support logs. This is directional validation.",
     "impactTitle": "Impacto medido",
     "impactTitleEn": "Measured impact",
@@ -579,7 +579,7 @@
         "metricEn": "91% → 35%",
         "label": "Menos abandono de reportes (criterio de éxito: 50% menos)",
         "labelEn": "Less report abandonment (Success criterion: 50% less)",
-        "description": "61% menos: el abandono en reportes de más de 2 min pasó de 91% (127 de 140 solicitudes síncronas) a 35% (52 de 148 solicitudes asíncronas) en 2 semanas de staging con 42 usuarios. Se define como cerrar a mitad de la espera en modo síncrono, o no abrir ni descargar en 24 h tras el aviso en modo asíncrono.",
+        "description": "61% menos: el abandono en reportes de más de 2 min pasó de 91% (127 de 140 solicitudes síncronas) a 35% (52 de 148 solicitudes asíncronas) en 2 semanas de preproducción con 42 usuarios. Se define como cerrar a mitad de la espera en modo síncrono, o no abrir ni descargar en 24 h tras el aviso en modo asíncrono.",
         "descriptionEn": "61% less: abandonment on >2 min reports shifted from 91% (127/140 sync requests) to 35% (52/148 async requests) across 42 users in the 2-week staging test (defined as closing mid-wait in sync mode vs. not opening/downloading within 24 h of the completion alert in async mode)."
       },
       {
@@ -588,16 +588,16 @@
         "metricEn": "58% → 78%",
         "label": "Más tareas completadas (criterio de éxito: +25%)",
         "labelEn": "More tasks completed (Success criterion: +25%)",
-        "description": "35% más: la finalización del flujo de reportes de punta a punta en staging subió de 58% (151 de 260 flujos síncronos) a 78% (215 de 275 flujos asíncronos), +20 puntos, y las re-ejecuciones por sesión bajaron de 2,8× a 1,1×.",
+        "description": "35% más: la finalización del flujo de reportes de punta a punta en preproducción subió de 58% (151 de 260 flujos síncronos) a 78% (215 de 275 flujos asíncronos), +20 puntos, y las reejecuciones por sesión bajaron de 2,8× a 1,1×.",
         "descriptionEn": "35% more: end-to-end reporting workflow completion in staging rose from 58% (151/260 sync workflows) to 78% (215/275 async workflows), +20 pts, while duplicate report re-runs dropped from 2.8× to 1.1× per session."
       },
       {
         "icon": "🎫",
         "metric": "48 → 36",
         "metricEn": "48 → 36",
-        "label": "Menos tickets de soporte (criterio de éxito: 20% menos)",
+        "label": "Menos casos de soporte (criterio de éxito: 20% menos)",
         "labelEn": "Fewer support tickets (Success criterion: 20% fewer)",
-        "description": "25% menos: los tickets por pantallas bloqueadas y timeouts bajaron de 48 a 36, comparando los 30 días previos al lanzamiento con los primeros 30 días posteriores.",
+        "description": "25% menos: los casos de soporte por pantallas bloqueadas y esperas agotadas bajaron de 48 a 36, comparando los 30 días previos al lanzamiento con los primeros 30 días posteriores.",
         "descriptionEn": "25% fewer: support tickets about blocked screens and report timeouts dropped from 48 to 36, comparing the 30 days pre-release against the first 30 days post-release."
       }
     ],
@@ -615,7 +615,7 @@
       {
         "title": "El historial de reportes se convirtió en un caso de uso principal no planificado",
         "titleEn": "Report history became an unplanned primary use case",
-        "description": "Los usuarios usaban el historial para comparar períodos y compartir versiones previas: un comportamiento no anticipado que redefinió el centro de notificaciones como un hub de reportes, no solo una bandeja de completados.",
+        "description": "Los usuarios usaban el historial para comparar períodos y compartir versiones previas: un comportamiento no anticipado que redefinió el centro de notificaciones como un repositorio de reportes, no solo una bandeja de completados.",
         "descriptionEn": "Users used the history to compare periods and share previous versions: unanticipated behavior that redefined the notification center as a report hub, not just a completed-items inbox."
       }
     ],
@@ -623,13 +623,13 @@
       {
         "title": "Reportes programados con recurrencia configurable",
         "titleEn": "Scheduled reports with configurable recurrence",
-        "description": "Sandra (VP Operaciones) no debería solicitar el reporte del lunes manualmente. Un sistema de recurrencia con entrega automática al inbox eliminaría el paso de solicitud y el cuello de botella del analista.",
+        "description": "Sandra (VP Operaciones) no debería solicitar el reporte del lunes manualmente. Un sistema de recurrencia con entrega automática a la bandeja de entrada eliminaría el paso de solicitud y el cuello de botella del analista.",
         "descriptionEn": "Sandra (VP Operations) shouldn't have to manually request the Monday report. A recurrence system with automatic inbox delivery would eliminate the request step and the analyst bottleneck."
       },
       {
         "title": "API de exportación para integración con BI externo",
         "titleEn": "Export API for external BI integration",
-        "description": "El 35% de los gerentes exportaba a Excel para trabajar en Power BI. Un endpoint REST eliminaría la fricción de exportación manual y habilitaría paneles en tiempo real sin pasar por la interfaz.",
+        "description": "El 35% de los gerentes exportaba a Excel para trabajar en Power BI. Una API REST eliminaría la fricción de exportación manual y habilitaría paneles en tiempo real sin pasar por la interfaz.",
         "descriptionEn": "35% of managers exported to Excel to work in Power BI. A REST endpoint would eliminate the manual export friction and enable real-time dashboards without going through the UI."
       }
     ]

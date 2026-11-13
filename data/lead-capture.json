@@ -1,20 +1,20 @@
 {
   "page": "lead-capture",
   "slug": "lead-capture",
-  "title": "Sistema de captura de leads en tiempo real",
+  "title": "Sistema de captura de prospectos en tiempo real",
   "titleEn": "Real-time lead capture system",
   "subtitle": "Plataforma B2B2C SaaS",
   "subtitleEn": "B2B2C SaaS platform",
   "hero": {
     "tagline": "SAAS B2B2C · ESCRITORIO · 2025",
     "taglineEn": "B2B2C SAAS · DESKTOP · 2025",
-    "title": "Sistema de captura de leads ",
+    "title": "Sistema de captura de prospectos ",
     "titleEn": "Real-time lead ",
     "titleAccent": "en tiempo real",
     "titleAccentEn": "capture system",
     "subtitle": "De formularios largos a contacto inmediato",
     "subtitleEn": "From long forms to immediate contact",
-    "description": "Solución dual que permite a empresas capturar leads en tiempo real mediante un widget de chat personalizable, con plataforma de configuración desktop para control total sin necesidad de desarrollo.",
+    "description": "Solución dual que permite a empresas capturar prospectos en tiempo real mediante un módulo de chat personalizable, con plataforma de configuración de escritorio para control total sin necesidad de desarrollo.",
     "descriptionEn": "Dual solution that lets companies capture leads in real-time through a customizable chat widget, with a desktop configuration platform for total control without development."
   },
   "projectSpecs": [
@@ -51,7 +51,7 @@
     {
       "label": "Entregables",
       "labelEn": "Deliverables",
-      "value": "Prototipo Figma · Widget",
+      "value": "Prototipo Figma · Módulo de chat",
       "valueEn": "Figma prototype · Widget"
     },
     {
@@ -63,7 +63,7 @@
   ],
   "heroImage": {
     "src": "data/images/lead-capture-hero.webp",
-    "placeholder": "Flujo de Usuario del Chat Widget",
+    "placeholder": "Flujo de Usuario del módulo de chat",
     "placeholderEn": "Chat Widget User Flow",
     "device": "desktop"
   },
@@ -74,7 +74,7 @@
     "subtitleEn": "The problem and two measurable goals, set before designing",
     "problemTitle": "El problema",
     "problemTitleEn": "The problem",
-    "problemIntro": "Las empresas enfrentan fricción en la captura de leads que reduce conversión:",
+    "problemIntro": "Las empresas enfrentan fricción en la captura de prospectos que reduce conversión:",
     "problemIntroEn": "Companies face friction in lead capture that reduces conversion:",
     "products": [
       {
@@ -82,7 +82,7 @@
         "nameEn": "Capture friction",
         "cons": [
           "Formularios largos → baja conversión",
-          "Contacto indirecto (email/teléfono) → alta fricción",
+          "Contacto indirecto (correo/teléfono) → alta fricción",
           "Falta de personalización → menor confianza"
         ],
         "consEn": [
@@ -124,7 +124,7 @@
         "titleEn": "Interaction speed",
         "meta": "Meta previa a la prueba: 40% menos tiempo hasta el contacto (41 s o menos)",
         "metaEn": "Pre-test target: ≥ 40% faster time-to-contact (≤ 41 s)",
-        "description": "Minimizar los pasos entre el primer clic y la confirmación del mensaje con carga instantánea del widget y validación en línea.",
+        "description": "Minimizar los pasos entre el primer clic y la confirmación del mensaje con carga instantánea del módulo y validación en línea.",
         "descriptionEn": "Minimize steps between initial click and message confirmation through instant widget loading and inline validation.",
         "kpi": "promedio de segundos entre el primer clic y la confirmación del mensaje, en sesiones completadas · Fuente: prueba comparativa con prototipo (n = 20)",
         "kpiEn": "average seconds from first click to message confirmation, across completed runs · Source: comparative prototype test (n = 20)"
@@ -157,7 +157,7 @@
       {
         "name": "Entrevistas con empresas",
         "nameEn": "Company interviews",
-        "description": "Entrevisté a empresas clientes sobre cómo capturan leads hoy y mapeé los puntos de contacto con sus usuarios finales.",
+        "description": "Entrevisté a empresas clientes sobre cómo capturan prospectos hoy y mapeé los puntos de contacto con sus usuarios finales.",
         "descriptionEn": "I interviewed client companies about how they capture leads today and mapped the touchpoints with their end users.",
         "findingLabel": "Hipótesis",
         "findingLabelEn": "Hypothesis",
@@ -167,7 +167,7 @@
       {
         "name": "Prueba de configuración",
         "nameEn": "Configuration test",
-        "description": "Seis perfiles de marketing y operaciones configuraron el widget en el prototipo del panel de escritorio.",
+        "description": "Seis perfiles de marketing y operaciones configuraron el módulo en el prototipo del panel de escritorio.",
         "descriptionEn": "Six marketing and operations profiles configured the widget in the desktop panel prototype.",
         "findingLabel": "Resultado",
         "findingLabelEn": "Result",
@@ -193,7 +193,7 @@
   "personas": {
     "title": "Personas",
     "titleEn": "Personas",
-    "subtitle": "Quien configura el widget, quien atiende y quien escribe",
+    "subtitle": "Quien configura el módulo, quien atiende y quien escribe",
     "subtitleEn": "Who configures the widget, who answers and who writes in",
     "items": [
       {
@@ -202,7 +202,7 @@
         "role": "Gerente de marketing",
         "roleEn": "Marketing Manager",
         "goals": [
-          "Generar leads calificados",
+          "Generar prospectos calificados",
           "Aumentar conversión web",
           "Control del canal de contacto"
         ],
@@ -248,9 +248,9 @@
           "Close sales efficiently"
         ],
         "painPoints": [
-          "Falta de contexto del lead",
+          "Falta de contexto del prospecto",
           "Información incompleta",
-          "Leads de baja calidad"
+          "Prospectos de baja calidad"
         ],
         "painPointsEn": [
           "Lack of lead context",
@@ -258,7 +258,7 @@
           "Low quality leads"
         ],
         "behaviors": [
-          "Revisa leads constantemente",
+          "Revisa prospectos constantemente",
           "Prioriza respuesta rápida",
           "Necesita información clara"
         ],
@@ -309,7 +309,7 @@
   "journeyMap": {
     "title": "Mapa de experiencia",
     "titleEn": "Journey map",
-    "subtitle": "Flujo dual: empresa configurando y cliente final usando el widget",
+    "subtitle": "Flujo dual: empresa configurando y cliente final usando el módulo",
     "subtitleEn": "Dual flow: company configuring and end client using the widget",
     "stages": [
       {
@@ -323,7 +323,7 @@
       },
       {
         "id": 2,
-        "name": "A. Configura widget",
+        "name": "A. Configura módulo",
         "nameEn": "A. Configure widget",
         "problem": "Falta de vista previa",
         "problemEn": "No preview",
@@ -389,7 +389,7 @@
   "cardSorting": {
     "title": "Card sorting",
     "titleEn": "Card sorting",
-    "subtitle": "Cómo se ordenaron las funciones entre la plataforma y el widget",
+    "subtitle": "Cómo se ordenaron las funciones entre la plataforma y el módulo",
     "subtitleEn": "How features were split between the platform and the widget",
     "clusters": [
       {
@@ -447,7 +447,7 @@
     "decision": {
       "title": "Decisión: Sistema dual integrado",
       "titleEn": "Decision: Integrated dual system",
-      "description": "Separar claramente entre plataforma de configuración (desktop) y widget (cliente final) manteniendo consistencia visual y funcional.",
+      "description": "Separar claramente entre plataforma de configuración (escritorio) y módulo de chat (cliente final) manteniendo consistencia visual y funcional.",
       "descriptionEn": "Clearly separate the configuration platform (desktop) and the widget (end client) while keeping visual and functional consistency.",
       "principle": "Configura y ve el resultado al instante",
       "principleEn": "Configure and see the result instantly",
@@ -463,14 +463,14 @@
           "textEn": "Double mental context to configure"
         }
       ],
-      "mitigation": "Vista previa en tiempo real que sincroniza cambios de configuración con vista del widget",
+      "mitigation": "Vista previa en tiempo real que sincroniza cambios de configuración con vista del módulo",
       "mitigationEn": "Real-time preview that syncs configuration changes with the widget view"
     }
   },
   "solution": {
     "title": "Solución",
     "titleEn": "Solution",
-    "subtitle": "Sistema dual: Plataforma de configuración + Widget embebido",
+    "subtitle": "Sistema dual: Plataforma de configuración + módulo de chat embebido",
     "subtitleEn": "Dual system: Configuration platform + Embedded widget",
     "principles": [
       {
@@ -503,7 +503,7 @@
     "decisionLabelBEn": "Benefit:",
     "decisions": [
       {
-        "title": "Customización completa del widget",
+        "title": "Personalización completa del módulo",
         "titleEn": "Full widget customization",
         "justification": "Marca adaptable con colores dinámicos e identidad visual consistente",
         "justificationEn": "Adaptable branding with dynamic colors and consistent visual identity",
@@ -539,14 +539,14 @@
   "designs": {
     "title": "Pantallas",
     "titleEn": "Screens",
-    "subtitle": "Flujo completo del widget y plataforma de configuración",
+    "subtitle": "Flujo completo del módulo y plataforma de configuración",
     "subtitleEn": "Complete widget and configuration platform flow",
     "items": [
       {
         "badge": "Flujo Cliente",
         "badgeEn": "Client flow",
         "badgeStyle": "indigo",
-        "title": "Experiencia del widget de chat",
+        "title": "Experiencia del módulo de chat",
         "titleEn": "Chat widget experience",
         "description": "Flujo completo desde botón flotante hasta confirmación final",
         "descriptionEn": "Complete flow from floating button to final confirmation",
@@ -554,14 +554,14 @@
           "data/images/lead-capture-mockup-1.webp",
           "data/images/lead-capture-mockup-2.webp"
         ],
-        "placeholder": "Pantalla: widget de chat · flujo cliente",
+        "placeholder": "Pantalla: módulo de chat · flujo cliente",
         "placeholderEn": "Mockup: Chat widget · client flow"
       },
       {
         "badge": "Plataforma de configuración",
         "badgeEn": "Settings platform",
         "badgeStyle": "indigo",
-        "title": "Panel de configuración desktop",
+        "title": "Panel de configuración de escritorio",
         "titleEn": "Desktop configuration panel",
         "description": "Plataforma de configuración con vista previa en tiempo real",
         "descriptionEn": "Configuration platform with real-time preview",
@@ -608,7 +608,7 @@
       {
         "title": "La personalización como principio de diseño",
         "titleEn": "Personalization as a design principle",
-        "description": "El widget toma la identidad visual de la empresa. Es una decisión de diseño; la prueba no midió su efecto en la confianza del usuario final.",
+        "description": "El módulo toma la identidad visual de la empresa. Es una decisión de diseño; la prueba no midió su efecto en la confianza del usuario final.",
         "descriptionEn": "The widget adopts the company's visual identity. It is a design decision; the test did not measure its effect on end-user trust."
       },
       {
@@ -622,7 +622,7 @@
       {
         "title": "Integración con CRM",
         "titleEn": "CRM integration",
-        "description": "Sincronización automática de leads capturados con sistemas CRM existentes",
+        "description": "Sincronización automática de prospectos capturados con sistemas CRM existentes",
         "descriptionEn": "Automatic synchronization of captured leads with existing CRM systems"
       },
       {
@@ -634,7 +634,7 @@
       {
         "title": "Asistente de chat con IA",
         "titleEn": "AI chat assistant",
-        "description": "Asistente conversacional con IA para calificación y respuesta de leads",
+        "description": "Asistente conversacional con IA para calificación y respuesta de prospectos",
         "descriptionEn": "AI conversational assistant for lead qualification and response"
       }
     ]

@@ -51,7 +51,7 @@
     {
       "label": "Entregables",
       "labelEn": "Deliverables",
-      "value": "Prototipo Figma · benchmark Maze · beta en TestFlight",
+      "value": "Prototipo Figma · prueba comparativa en Maze · versión de prueba en TestFlight",
       "valueEn": "Figma prototype · Maze benchmark · TestFlight beta"
     },
     {
@@ -63,7 +63,7 @@
   ],
   "heroImage": {
     "src": "data/images/load-validation-flow.png",
-    "placeholder": "Diagrama de flujo: Login → Validación de carga → Pre-ruta",
+    "placeholder": "Diagrama de flujo: Inicio de sesión → Validación de carga → Pre-ruta",
     "placeholderEn": "Flow diagram: Login → Load Validation → Pre-route"
   },
   "problemAndObjectives": {
@@ -118,7 +118,7 @@
         "metaEn": "Pilot criterion: ≥ 55% of departures with full 4-step validation",
         "description": "Reemplazar las firmas apuradas en papel por un flujo móvil guiado de 4 pasos, operable con una mano.",
         "descriptionEn": "Replace hurried paper sign-offs with a guided, one-handed 4-step mobile flow.",
-        "kpi": "salidas con los 4 pasos completados ÷ salidas totales · Fuente: registros del backend de la app",
+        "kpi": "salidas con los 4 pasos completados ÷ salidas totales · Fuente: registros del servidor de la app",
         "kpiEn": "departures with all 4 steps completed ÷ total departures · Source: app backend logs"
       }
     ]
@@ -126,7 +126,7 @@
   "uxResearch": {
     "title": "Investigación",
     "titleEn": "Research",
-    "subtitle": "Observación en campo, benchmark en Maze (n = 12) y piloto en TestFlight (n = 40)",
+    "subtitle": "Observación en campo, prueba comparativa en Maze (n = 12) y piloto en TestFlight (n = 40)",
     "subtitleEn": "Field observation, a Maze benchmark (n = 12) and a TestFlight pilot (n = 40)",
     "methodCards": [
       {
@@ -138,7 +138,7 @@
         "findingEn": "79% (22 of 28) of drivers held the phone with one hand while verifying with the other; the UI had to work within the thumb zone and with gloves."
       },
       {
-        "name": "Benchmark en Maze",
+        "name": "Prueba comparativa en Maze",
         "nameEn": "Maze benchmark",
         "description": "12 conductores probaron el prototipo de 4 pasos en Figma bajo presión de tiempo simulada, antes del desarrollo.",
         "descriptionEn": "12 drivers tested the 4-step Figma prototype under simulated time pressure, before development.",
@@ -150,11 +150,11 @@
       {
         "name": "Piloto de campo en TestFlight",
         "nameEn": "TestFlight field pilot",
-        "description": "40 conductores activos de 2 centros de distribución usaron la beta de iOS durante 60 días. Se comparan sus 2.400 salidas del piloto con sus 2.350 salidas de los 60 días previos (la misma cohorte).",
+        "description": "40 conductores activos de 2 centros de distribución usaron la versión de prueba de iOS durante 60 días. Se comparan sus 2.400 salidas del piloto con sus 2.350 salidas de los 60 días previos (la misma cohorte).",
         "descriptionEn": "40 active drivers across 2 distribution centers used the iOS beta for 60 days. Their 2,400 pilot departures are compared against their own 2,350 departures in the prior 60 days (same cohort).",
         "findingLabel": "Método",
         "findingLabelEn": "Method",
-        "finding": "Validaciones, discrepancias y reclamos vienen de los registros de la app y del ERP. El diseño es pre-post sin grupo control: es una validación direccional.",
+        "finding": "Validaciones, discrepancias y reclamos vienen de los registros de la app y del ERP. El diseño es antes-después, sin grupo de control: es una validación direccional.",
         "findingEn": "Validation completion, discrepancies and claims came from app logs and ERP records. The design is pre-post without a control group: directional validation."
       }
     ],
@@ -208,7 +208,7 @@
         "goals": [
           "Validar cargas rápido para no retrasar la flota",
           "Tener evidencia ante reclamos de clientes",
-          "Reducir el trabajo administrativo post-ruta"
+          "Reducir el trabajo administrativo posruta"
         ],
         "goalsEn": [
           "Validate loads quickly to avoid fleet delays",
@@ -448,7 +448,7 @@
       }
     ],
     "decision": {
-      "label": "DECISIÓN ARQUITECTÓNICA DERIVADA DEL TREE TESTING",
+      "label": "DECISIÓN ARQUITECTÓNICA DERIVADA DE LA PRUEBA DE ÁRBOL DE NAVEGACIÓN",
       "labelEn": "ARCHITECTURAL DECISION DERIVED FROM TREE TESTING",
       "text": "Las 3 rondas revelaron un patrón consistente: los conductores navegaban por cliente y destino, nunca por número de orden. La arquitectura final organiza la lista de validación por cliente → pedido → ítem, en lugar de la jerarquía original orden → cliente → ítem. Este cambio elevó el first-try success promedio de 52% a 93%.",
       "textEn": "The 3 rounds revealed a consistent pattern: drivers navigated by client and destination, never by order number. The final architecture organizes the validation list by client → order → item, instead of the original order → client → item hierarchy. This change raised the average first-try success from 52% to 93%."
@@ -485,7 +485,7 @@
         "number": "04",
         "title": "Evidencia + confirmación de cierre",
         "titleEn": "Evidence + sign-off",
-        "description": "Foto de la carga como evidencia y confirmación de cierre. El diseño inicial capturaba una firma táctil; con guantes producía re-intentos, y la versión del piloto la reemplazó por un PIN de 4 dígitos. Timestamp automático e inmutable para auditoría.",
+        "description": "Foto de la carga como evidencia y confirmación de cierre. El diseño inicial capturaba una firma táctil; con guantes producía reintentos, y la versión del piloto la reemplazó por un PIN de 4 dígitos. Timestamp automático e inmutable para auditoría.",
         "descriptionEn": "Load photo as evidence plus a sign-off step. The initial design captured a tactile signature; with gloves it produced retries, and the pilot version replaced it with a 4-digit PIN. Automatic immutable timestamp for audit."
       }
     ],
@@ -604,7 +604,7 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Evaluación en dos etapas: benchmark en Maze (n = 12 conductores) y piloto de 60 días en TestFlight (n = 40 conductores, 2.400 salidas en 2 centros de distribución, comparadas con sus propias 2.350 salidas de los 60 días previos). TestFlight distribuyó la beta; las validaciones, discrepancias y reclamos salen de los registros de la app y del ERP. Como el piloto fue pre-post y sin grupo control, las mejoras coincidieron con el despliegue y son una validación direccional.",
+    "subtitle": "Evaluación en dos etapas: prueba comparativa en Maze (n = 12 conductores) y piloto de 60 días en TestFlight (n = 40 conductores, 2.400 salidas en 2 centros de distribución, comparadas con sus propias 2.350 salidas de los 60 días previos). TestFlight distribuyó la versión de prueba; las validaciones, discrepancias y reclamos salen de los registros de la app y del ERP. Como el piloto fue pre-post y sin grupo control, las mejoras coincidieron con el despliegue y son una validación direccional.",
     "subtitleEn": "Two-stage evaluation combining a Maze prototype benchmark (n = 12 drivers) and a 60-day TestFlight field pilot (n = 40 drivers, 2,400 departures across 2 distribution centers, compared against the same drivers' 2,350 departures in the prior 60 days). While TestFlight managed beta distribution, validation completion, discrepancies and claims were captured via backend app logs and ERP records. Because the pilot used a pre-post design without a randomized control group, operational gains coincided with the rollout and reflect directional validation.",
     "impactTitle": "Impacto medido",
     "impactTitleEn": "Measured impact",
@@ -651,19 +651,19 @@
       {
         "title": "La firma táctil generó más fricción de la esperada en campo",
         "titleEn": "Tactile signature created more friction than expected in the field",
-        "description": "Con guantes de bodega, la firma táctil producía re-intentos y ralentizaba el flujo. Se iteró a un PIN de confirmación de 4 dígitos, que se validó en Maze (n = 12) y se usó en el piloto.",
+        "description": "Con guantes de bodega, la firma táctil producía reintentos y ralentizaba el flujo. Se iteró a un PIN de confirmación de 4 dígitos, que se validó en Maze (n = 12) y se usó en el piloto.",
         "descriptionEn": "With warehouse gloves, the tactile signature produced retries and slowed the flow. Iterated to a 4-digit confirmation PIN, which was validated in Maze (n = 12) and used in the pilot."
       }
     ],
     "nextSteps": [
       {
-        "title": "Dashboard de supervisor en tiempo real",
+        "title": "Panel de supervisor en tiempo real",
         "titleEn": "Real-time supervisor dashboard",
         "description": "Vista centralizada del estado de validación de toda la flota por turno. Hoy el supervisor consulta cada ruta individualmente: el panel eliminaría esa carga operacional.",
         "descriptionEn": "Centralized view of validation status for the entire fleet by shift. Today supervisors check each route individually: the dashboard would eliminate that operational overhead."
       },
       {
-        "title": "Integración con WMS para pre-llenado de datos",
+        "title": "Integración con WMS para prellenado de datos",
         "titleEn": "WMS integration for data pre-filling",
         "description": "Conectar directamente con el WMS permitiría evitar la entrada manual del número de orden, un paso que hoy se repite en cada validación.",
         "descriptionEn": "Connecting directly to the WMS would remove manual order number entry, a step that today is repeated in every validation."

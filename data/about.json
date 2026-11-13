@@ -4,7 +4,7 @@
   "titleEn": "About me",
   "intro": [
     "Llevo más de una década diseñando productos digitales. En el último año algo cambió: pasé de ser un diseñador UX/UI tradicional a construir producto. Diseño y prototipo interfaces funcionales con IA: copilotos, agentes, flujos conversacionales e interfaces donde el modelo de lenguaje es parte del sistema, no un agregado.",
-    "Trabajo de punta a punta: investigación, wireframes, UI, prototipos funcionales y entrega a desarrollo. Domino el diseño gráfico clásico, pero hoy donde más aporto es llevando productos a producción, no solo a Figma.",
+    "Trabajo de punta a punta: investigación, esquemas de baja fidelidad, UI, prototipos funcionales y entrega a desarrollo. Domino el diseño gráfico clásico, pero hoy donde más aporto es llevando productos a producción, no solo a Figma.",
     "Uso Claude Code como infraestructura de pensamiento: construyo herramientas internas para que los equipos de negocio creen y prueben funcionalidades frente a clientes, genero usuarios sintéticos para validar flujos antes de llegar a usuarios reales y comprimo el ciclo de diseño de semanas a días."
   ],
   "introEn": [
@@ -16,7 +16,7 @@
   "achievementsTitleEn": "Key achievements",
   "achievements": [
     {
-      "es": "Construí el DispatchTrack design system desde cero: biblioteca de componentes, arquitectura de tokens y documentación. Hoy es la base compartida entre web y móvil, y producto e ingeniería lo usan como fuente única de verdad.",
+      "es": "Construí el sistema de diseño de DispatchTrack desde cero: biblioteca de componentes, arquitectura de tokens y documentación. Hoy es la base compartida entre web y móvil, y producto e ingeniería lo usan como fuente única de verdad.",
       "en": "Built the DispatchTrack design system from scratch: component library, token architecture, and documentation. Now the shared foundation across web and mobile, used by product and engineering as a single source of truth."
     },
     {
@@ -24,7 +24,7 @@
       "en": "Shifted from traditional Figma-only handoff to functional prototyping with Claude, Cursor, v0, React and TailwindCSS, shipping working interfaces, not mockups. This collapsed the loop between design and engineering and made every concept testable in front of users almost immediately."
     },
     {
-      "es": "Rediseñé el módulo de planificación de rutas en torno a un modelo con supervisión humana (human-in-the-loop). El problema central no era técnico, era de confianza: los despachadores necesitaban entender por qué el algoritmo tomó una decisión antes de atreverse a corregirla.",
+      "es": "Rediseñé el módulo de planificación de rutas en torno a un modelo con supervisión humana. El problema central no era técnico, era de confianza: los despachadores necesitaban entender por qué el algoritmo tomó una decisión antes de atreverse a corregirla.",
       "en": "Redesigned the route planning module around a human-in-the-loop model. The core problem wasn't technical, it was trust: dispatchers needed to understand why the algorithm made a decision before they'd feel safe overriding it."
     },
     {
@@ -64,7 +64,7 @@
           "en": "Conversational UI"
         },
         {
-          "es": "Human-in-the-Loop",
+          "es": "Supervisión humana",
           "en": "Human-in-the-Loop"
         },
         {
@@ -78,7 +78,7 @@
       ]
     },
     {
-      "group": "Frontend y Prototipado Funcional",
+      "group": "Interfaces y prototipado funcional",
       "groupEn": "Frontend & Functional Prototyping",
       "items": [
         {
@@ -102,7 +102,7 @@
           "en": "HTML · CSS"
         },
         {
-          "es": "Desarrollo Frontend",
+          "es": "Desarrollo de interfaces",
           "en": "Frontend Development"
         }
       ]
@@ -128,7 +128,7 @@
           "en": "Synthetic Users"
         },
         {
-          "es": "Testing de Usabilidad",
+          "es": "Pruebas de usabilidad",
           "en": "Usability Testing"
         },
         {
@@ -158,7 +158,7 @@
       "groupEn": "Design & Product",
       "items": [
         {
-          "es": "Design Systems",
+          "es": "Sistemas de diseño",
           "en": "Design Systems"
         },
         {
@@ -198,7 +198,7 @@
           "en": "JTBD (Jobs-to-be-Done)"
         },
         {
-          "es": "Design Tokens · Design Ops",
+          "es": "Tokens de diseño · Operaciones de diseño",
           "en": "Design Tokens · Design Ops"
         },
         {
@@ -222,7 +222,7 @@
       "en": "Conversational UI"
     },
     {
-      "es": "Supervisión humana (human-in-the-loop)",
+      "es": "Supervisión humana",
       "en": "Human-in-the-loop"
     },
     {
@@ -308,7 +308,7 @@
       "roleEn": "UX Designer",
       "period": "2019–2023",
       "periodEn": "2019–2023",
-      "description": "Diseñé el panel de operaciones y las herramientas para conductores de una plataforma SaaS de última milla en crecimiento acelerado. Construí el Beetrack Design System desde cero: el primer lenguaje de diseño estructurado de la empresa. Hice estudios de usabilidad y entrevistas de campo con gerentes de operaciones y conductores; los hallazgos definieron las prioridades de iteración y la hoja de ruta del producto.",
+      "description": "Diseñé el panel de operaciones y las herramientas para conductores de una plataforma SaaS de última milla en crecimiento acelerado. Construí el sistema de diseño de Beetrack desde cero: el primer lenguaje de diseño estructurado de la empresa. Hice estudios de usabilidad y entrevistas de campo con gerentes de operaciones y conductores; los hallazgos definieron las prioridades de iteración y la hoja de ruta del producto.",
       "descriptionEn": "Designed the operations dashboard and driver-facing tools for a fast-growing last-mile SaaS platform. Built the Beetrack Design System from zero: the first structured design language the company had. Conducted usability studies and field interviews with operations managers and drivers; findings directly shaped iteration priorities and informed the product roadmap."
     },
     {
@@ -317,7 +317,7 @@
       "roleEn": "UX Designer",
       "period": "2018–2019",
       "periodEn": "2018–2019",
-      "description": "Diseñé la interfaz de una plataforma de analítica predictiva cuyo producto central era volver legibles y accionables los pronósticos de demanda para equipos de retail y cadena de suministro, personas que no eran científicos de datos. Creé el Anastasia Design System desde cero, con el lenguaje visual y el modelo de interacción para mostrar datos probabilísticos sin abrumar a usuarios no técnicos.",
+      "description": "Diseñé la interfaz de una plataforma de analítica predictiva cuyo producto central era volver legibles y accionables los pronósticos de demanda para equipos de retail y cadena de suministro, personas que no eran científicos de datos. Creé el sistema de diseño de Anastasia desde cero, con el lenguaje visual y el modelo de interacción para mostrar datos probabilísticos sin abrumar a usuarios no técnicos.",
       "descriptionEn": "Designed the interface for a predictive analytics platform whose core product was making demand forecasting outputs readable and actionable for retail and supply chain teams, users who weren't data scientists. Created the Anastasia Design System from scratch, defining the visual language and interaction model for surfacing probabilistic data without overwhelming non-technical users."
     },
     {

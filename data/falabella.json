@@ -70,7 +70,7 @@
       {
         "name": "1 · Stock",
         "nameEn": "1 · Stock",
-        "description": "Tras elegir el piso, el sistema avisaba que no había esos m² disponibles online.",
+        "description": "Tras elegir el piso, el sistema avisaba que no había esos m² disponibles en línea.",
         "descriptionEn": "After picking the floor, the system said those m² weren't available online."
       },
       {
@@ -80,7 +80,7 @@
         "descriptionEn": "The specs revealed it wasn't suitable for pets."
       },
       {
-        "name": "3 · Cross-sell",
+        "name": "3 · Venta cruzada",
         "nameEn": "3 · Cross-sell",
         "description": "Un piso flotante click, que no usa adhesivo, ofrecía un adhesivo como producto relacionado. En pisos que sí lo necesitaban, no decía cuánto adhesivo ni espuma niveladora hacía falta.",
         "descriptionEn": "A click-lock floating floor, which needs no adhesive, offered adhesive as a related product. For floors that did need it, there was no indication of how much adhesive or underlayment foam was required."
@@ -131,14 +131,14 @@
         "titleEn": "Fewer returns",
         "meta": "Meta: 19% → ~15% (20% menos, en términos relativos)",
         "metaEn": "Goal: 19% → ~15% (20% lower in relative terms)",
-        "description": "Hoy cerca del 19% de las ventas online se devuelve. Un kit completo y coherente apunta a faltantes e incompatibilidad.",
+        "description": "Hoy cerca del 19% de las ventas en línea se devuelve. Un kit completo y coherente apunta a faltantes e incompatibilidad.",
         "descriptionEn": "Today about 19% of online sales are returned. A complete, consistent kit targets shortages and incompatibility."
       },
       {
         "number": "04",
         "title": "Menos pasos",
         "titleEn": "Fewer steps",
-        "meta": "11 taps · antes 18+",
+        "meta": "11 toques · antes 18+",
         "metaEn": "11 taps · previously 18+",
         "description": "De la entrada al carro, sin páginas de producto intermedias.",
         "descriptionEn": "From entry to cart, with no intermediate product pages."
@@ -163,7 +163,7 @@
     "methodsTitle": "Metodología",
     "methodsTitleEn": "Methodology",
     "methods": [
-      "Auditoría de la app real: ficha de piso, comparador y cross-sell",
+      "Auditoría de la app real: ficha de piso, comparador y venta cruzada",
       "Análisis de “Arma tu Proyecto” en muebles como precedente",
       "Referentes: Home Depot (calculadora y kit) y Roomvo (visualización AR)"
     ],
@@ -184,7 +184,7 @@
         "textEn": "Installation system: Click",
         "author": "Ficha de un piso flotante",
         "authorEn": "Floating floor product page",
-        "context": "Debajo, el cross-sell ofrece dos adhesivos de montaje.",
+        "context": "Debajo, la venta cruzada ofrece dos adhesivos de montaje.",
         "contextEn": "Below it, the cross-sell offers two mounting adhesives."
       },
       {
@@ -249,7 +249,7 @@
         ],
         "behaviors": [
           "Busca reseñas antes de comprar",
-          "Prefiere comprar online para evitar presión de vendedores"
+          "Prefiere comprar en línea para evitar presión de vendedores"
         ],
         "behaviorsEn": [
           "Reads reviews before buying",
@@ -292,7 +292,7 @@
   "journeyMap": {
     "title": "El flujo, de la entrada al carro",
     "titleEn": "The flow, from entry to cart",
-    "subtitle": "11 taps · 1:15 min (usuario ágil) a 5:45 min (usuario lento)",
+    "subtitle": "11 toques · 1:15 min (usuario ágil) a 5:45 min (usuario lento)",
     "subtitleEn": "11 taps · 1:15 min (agile user) to 5:45 min (slow user)",
     "stages": [
       {
@@ -372,7 +372,7 @@
     ],
     "decisions": [
       {
-        "title": "Invertir la lógica del cross-sell",
+        "title": "Invertir la lógica de la venta cruzada",
         "titleEn": "Invert the cross-sell logic",
         "justification": "En lugar de sugerir accesorios después de elegir, se llevó “Arma tu Proyecto” (hoy en muebles, solo estético) a pisos, con parámetros técnicos.",
         "justificationEn": "Instead of suggesting accessories after choosing, “Build Your Project” (today in furniture, aesthetic only) was brought to flooring, with technical parameters.",
@@ -392,7 +392,7 @@
         "titleEn": "Ambient AI, not a separate feature",
         "justification": "La IA normaliza atributos de catálogo y deriva los supuestos de uso. Se señala con un indicador “Generado con IA” donde aporta, sin botón propio.",
         "justificationEn": "AI normalizes catalog attributes and derives usage assumptions. It's flagged with a “Generated with AI” indicator where it helps, with no dedicated button.",
-        "tradeoff": "El indicador no distingue entre tipos de IA; es suficiente para un MVP.",
+        "tradeoff": "El indicador no distingue entre tipos de IA; es suficiente para un producto mínimo viable.",
         "tradeoffEn": "The indicator doesn't distinguish between AI types; enough for an MVP."
       }
     ]
@@ -412,7 +412,7 @@
       {
         "metric": "24%",
         "metricEn": "24%",
-        "label": "Menos devoluciones online",
+        "label": "Menos devoluciones en línea",
         "labelEn": "Fewer online returns",
         "description": "De 19% a 14,5% en la categoría. El kit completo ataca faltantes e incompatibilidad.",
         "descriptionEn": "From 19% to 14.5% in the category. The complete kit targets shortages and incompatibility."
@@ -420,7 +420,7 @@
       {
         "metric": "11",
         "metricEn": "11",
-        "label": "taps de entrada a carro",
+        "label": "toques de entrada a carro",
         "labelEn": "taps from entry to cart",
         "description": "Antes 18+. Precio final visible desde la elección.",
         "descriptionEn": "Previously 18+. Final price visible from the moment of choice."
@@ -430,7 +430,7 @@
     "learningsTitleEn": "Learnings",
     "learnings": [
       {
-        "title": "Invertir la lógica vale más que parchar el cross-sell",
+        "title": "Invertir la lógica vale más que parchar la venta cruzada",
         "titleEn": "Inverting the logic beats patching the cross-sell",
         "description": "El problema no eran las sugerencias, sino el orden: elegir primero y validar después.",
         "descriptionEn": "The problem wasn't the suggestions, it was the order: choosing first and validating later."
@@ -442,7 +442,7 @@
         "descriptionEn": "“Build Your Project” was already in production; it was brought to flooring, where the project is technical."
       },
       {
-        "title": "Un design system real aísla el retrabajo",
+        "title": "Un sistema de diseño real aísla el retrabajo",
         "titleEn": "A real design system isolates rework",
         "description": "Al cambiar la base visual de Sodimac a Falabella solo se reasignaron 22 tokens semánticos.",
         "descriptionEn": "Switching the visual base from Sodimac to Falabella only required reassigning 22 semantic tokens."
@@ -487,7 +487,7 @@
   "designs": {
     "title": "Pantallas",
     "titleEn": "Screens",
-    "subtitle": "14 pantallas Android · Design system con 39 primitivas y 22 tokens semánticos",
+    "subtitle": "14 pantallas Android · Sistema de diseño con 39 primitivas y 22 tokens semánticos",
     "subtitleEn": "14 Android screens · Design system with 39 primitives and 22 semantic tokens",
     "device": "mobile",
     "items": [
