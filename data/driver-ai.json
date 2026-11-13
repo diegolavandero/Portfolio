@@ -33,8 +33,8 @@
     {
       "label": "Duración",
       "labelEn": "Duration",
-      "value": "10 semanas",
-      "valueEn": "10 weeks"
+      "value": "10 semanas de diseño + piloto de 3 semanas en TestFlight",
+      "valueEn": "10 weeks design + 3-week TestFlight pilot"
     },
     {
       "label": "Equipo",
@@ -51,14 +51,14 @@
     {
       "label": "Entregables",
       "labelEn": "Deliverables",
-      "value": "Prototipo Figma",
-      "valueEn": "Figma prototype"
+      "value": "Prototipo Figma · benchmark Maze · beta en TestFlight",
+      "valueEn": "Figma prototype · Maze benchmark · TestFlight beta"
     },
     {
       "label": "Herramientas",
       "labelEn": "Tools",
-      "value": "Figma",
-      "valueEn": "Figma"
+      "value": "Figma · Maze · TestFlight · GPT-4o",
+      "valueEn": "Figma · Maze · TestFlight · GPT-4o"
     }
   ],
   "heroImage": {
@@ -70,8 +70,8 @@
   "problemAndObjectives": {
     "title": "Problema y objetivos",
     "titleEn": "Problem and objectives",
-    "subtitle": "Identificación del desafío y metas medibles",
-    "subtitleEn": "Identification of the challenge and measurable goals",
+    "subtitle": "El problema y tres metas medibles, con su criterio de éxito",
+    "subtitleEn": "The problem and three measurable goals, with their success criterion",
     "products": [
       {
         "name": "El problema",
@@ -91,41 +91,45 @@
     "objectives": [
       {
         "number": "01",
-        "description": "Contexto predictivo de acceso antes de llegar a cada parada",
-        "descriptionEn": "Predictive access context before arriving at each stop",
-        "title": "10–20% menos tiempo por parada",
-        "titleEn": "10–20% less time per stop"
+        "title": "Ejecución de paradas más rápida (piloto de campo)",
+        "titleEn": "Faster stop execution (Field Pilot)",
+        "meta": "Criterio de éxito: 15–20% menos tiempo por parada",
+        "metaEn": "Success criterion: 15–20% less time per stop",
+        "description": "Entregar contexto predictivo de acceso y estacionamiento antes de llegar, para eliminar la improvisación en la puerta durante las rutas diarias.",
+        "descriptionEn": "Deliver predictive access and parking context before arrival to eliminate on-site improvisation across daily routes.",
+        "kpi": "duración promedio por parada · Fuente: marcas de geofence y POD del backend, piloto de campo",
+        "kpiEn": "average stop duration · Source: backend geofence/POD timestamps, field pilot"
       },
       {
         "number": "02",
-        "description": "Eliminar la causa #1 de fallo: conductor sin acceso al edificio",
-        "descriptionEn": "Eliminate the #1 failure cause: driver without access to the building",
-        "title": "+15% en edificios complejos",
-        "titleEn": "+15% in complex buildings"
+        "title": "Más entregas exitosas al primer intento (piloto de campo)",
+        "titleEn": "Higher first-attempt delivery rate (Field Pilot)",
+        "meta": "Criterio de éxito: 20% menos entregas fallidas",
+        "metaEn": "Success criterion: 20% fewer failed deliveries",
+        "description": "Atender las fallas por falta de acceso al edificio (línea base de 14,0% en zonas de alta densidad) con códigos de puerta precargados.",
+        "descriptionEn": "Address building-access failures (14.0% baseline in high-density zones) through pre-loaded door codes.",
+        "kpi": "paradas fallidas en el primer intento ÷ paradas totales · Fuente: códigos de falla del backend, piloto de campo",
+        "kpiEn": "first-attempt failed stops ÷ total stops · Source: backend failure codes, field pilot"
       },
       {
         "number": "03",
-        "description": "Audio-first: el conductor recibe contexto sin tocar la pantalla mientras conduce",
-        "descriptionEn": "Audio-first: the driver receives context without touching the screen while driving",
-        "title": "≤1 tap + audio TTS",
-        "titleEn": "≤1 tap + audio TTS"
+        "title": "Interacción manos libres y menos llamadas (Maze + piloto de campo)",
+        "titleEn": "Hands-free interaction & fewer calls (Maze + Field Pilot)",
+        "meta": "Criterio de éxito: audio en 1 toque o menos y 50% menos llamadas de acceso",
+        "metaEn": "Success criterion: ≤ 1 tap audio playback & 50% fewer access calls",
+        "description": "Dar resúmenes de audio TTS sin mirar la pantalla mientras se conduce, y reducir las llamadas de soporte al despachador por turno.",
+        "descriptionEn": "Enable eyes-free TTS summaries while driving and cut dispatcher support calls per shift.",
+        "kpi": "toques para activar el audio (benchmark Maze, n = 15) · llamadas de acceso por conductor y turno (piloto de campo, n = 8)",
+        "kpiEn": "taps to activate audio (Maze benchmark, n = 15) · access calls per driver per shift (field pilot, n = 8)"
       }
     ]
   },
   "uxResearch": {
     "title": "Investigación",
     "titleEn": "Research",
-    "subtitle": "Cuatro métodos aplicados en campo con conductores activos",
-    "subtitleEn": "Four methods applied in the field with active drivers",
+    "subtitle": "Indagación en campo, benchmark en Maze (n = 15) y piloto en TestFlight (n = 8)",
+    "subtitleEn": "Field inquiry, a Maze benchmark (n = 15) and a TestFlight pilot (n = 8)",
     "methodCards": [
-      {
-        "description": "6 etapas mapeadas: recibir ruta → navegar → llegar → acceder → entregar → siguiente parada. El 80% del tiempo no productivo se concentraba entre “llegar” y “acceder”.",
-        "descriptionEn": "6 stages mapped: receive route → navigate → arrive → access → deliver → next stop. 80% of non-productive time was concentrated between “arrive” and “access”.",
-        "finding": "El conductor sabía a dónde ir, pero no cómo entrar una vez estacionado",
-        "findingEn": "The driver knew where to go, but not how to enter once parked",
-        "name": "Mapeo del recorrido",
-        "nameEn": "Journey mapping"
-      },
       {
         "description": "8 conductores acompañados durante jornadas completas en zonas de alta densidad. Las entrevistas en terreno revelaron comportamientos invisibles en focus groups de oficina.",
         "descriptionEn": "8 drivers shadowed during full shifts in high-density zones. Field interviews revealed behaviors invisible in office focus groups.",
@@ -135,20 +139,24 @@
         "nameEn": "Contextual inquiry"
       },
       {
-        "description": "Flujo descompuesto en 12 sub-tareas con duración y tasa de error medidas en cada una. Se identificaron 4 puntos críticos donde el conductor buscaba información fuera de la app.",
-        "descriptionEn": "Flow decomposed into 12 sub-tasks with duration and error rate measured for each. 4 critical points were identified where the driver searched for information outside the app.",
-        "finding": "“Buscar acceso al edificio” no existía en ningún diseño de flujo anterior",
-        "findingEn": "“Search for building access” did not exist in any previous flow design",
-        "name": "Análisis de tareas",
-        "nameEn": "Task analysis"
+        "name": "Benchmark en Maze",
+        "nameEn": "Maze benchmark",
+        "description": "15 conductores probaron el prototipo interactivo de Figma en 3 escenarios de navegación simulados, antes del desarrollo.",
+        "descriptionEn": "15 drivers tested the interactive Figma prototype across 3 simulated navigation scenarios, before development.",
+        "findingLabel": "Resultado",
+        "findingLabelEn": "Result",
+        "finding": "93% (14/15) activó el audio TTS en 1 toque o menos y 87% (13/15) prefirió el audio sobre el texto. Hubo 4,2% de errores de toque en 95 toques, con el botón flotante de 56 px.",
+        "findingEn": "93% (14/15) completed TTS activation in ≤ 1 tap and 87% (13/15) preferred audio over text. The 56px FAB kept misclicks to 4.2% across 95 taps."
       },
       {
-        "name": "Evaluación heurística",
-        "nameEn": "Heuristic evaluation",
-        "description": "Auditoría con los 10 principios de Nielsen aplicados al contexto de uso en movimiento. 17 violaciones identificadas, la más crítica: el conductor no sabía si el sistema estaba cargando o había fallado.",
-        "descriptionEn": "Audit against Nielsen's 10 principles applied to the in-motion usage context. 17 violations identified, the most critical: the driver couldn't tell if the system was loading or had failed.",
-        "finding": "La heurística más violada fue “Visibilidad del estado del sistema”: en un entorno de alta carga cognitiva, es la más costosa de ignorar.",
-        "findingEn": "The most violated heuristic was “Visibility of system status”: in a high cognitive load environment, it is the most costly to ignore."
+        "name": "Piloto de campo en TestFlight",
+        "nameEn": "TestFlight field pilot",
+        "description": "8 conductores usaron un build funcional de iOS integrado con GPT-4o en 3.200 entregas durante 18 días hábiles, en rutas urbanas de alta densidad. La línea base fueron las 3 semanas previas (3.100 paradas).",
+        "descriptionEn": "8 drivers used a functional iOS build integrated with GPT-4o across 3,200 deliveries over 18 working days on high-density urban routes. The baseline was the prior 3 weeks (3,100 stops).",
+        "findingLabel": "Método",
+        "findingLabelEn": "Method",
+        "finding": "Tiempos y códigos de falla vienen de marcas de geofence y POD del backend. El diseño es pre-post sin grupo control: es una validación direccional.",
+        "findingEn": "Stop durations and failure codes came from backend geofence/POD timestamps. The design is pre-post without a control group: directional validation."
       }
     ],
     "quotes": [
@@ -186,7 +194,9 @@
         "description": "Usaba Google Maps como sistema paralelo a la app corporativa",
         "descriptionEn": "Used Google Maps as a parallel system to the corporate app"
       }
-    ]
+    ],
+    "insightsTitle": "Línea base y validación en dos etapas",
+    "insightsTitleEn": "Baseline and two-stage validation"
   },
   "personas": {
     "title": "Personas",
@@ -402,8 +412,8 @@
         "number": "03",
         "title": "Reproducción TTS",
         "titleEn": "TTS playback",
-        "description": "Síntesis de voz nativa (sin internet), 20–30 segundos. FAB de 56px operable con guantes. El 87% de conductores en piloto lo prefirió sobre leer.",
-        "descriptionEn": "Native speech synthesis (no internet required), 20–30 seconds. 56px FAB operable with gloves. 87% of pilot drivers preferred it over reading."
+        "description": "Síntesis de voz nativa (sin internet), 20–30 segundos. FAB de 56px operable con guantes. 87% (13/15) prefirió el audio en las pruebas de Maze.",
+        "descriptionEn": "Native speech synthesis (no internet required), 20–30 seconds. 56px FAB operable with gloves. 87% (13/15) preferred audio in Maze testing."
       },
       {
         "number": "04",
@@ -467,34 +477,37 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Impacto medible en operaciones y experiencia del conductor",
-    "subtitleEn": "Measurable impact on operations and driver experience",
+    "subtitle": "Evaluación en dos etapas: benchmark en Maze (n = 15; 93% [14/15] activó el TTS en 1 toque o menos; 4,2% de errores de toque en 95 toques; 87% [13/15] prefirió el audio) y piloto de 3 semanas en TestFlight (n = 8 conductores, 3.200 entregas en 18 días hábiles, rutas urbanas de alta densidad). Los tiempos y códigos de falla vienen de marcas de geofence y POD del backend. Como el piloto fue pre-post y sin grupo control, las mejoras coincidieron con el despliegue y son una validación direccional.",
+    "subtitleEn": "Two-stage evaluation: a Maze prototype benchmark (n = 15 drivers; 93% [14/15] completed TTS activation in ≤ 1 tap; 4.2% misclick rate across 95 taps; 87% [13/15] preferred audio) and a 3-week TestFlight field pilot (n = 8 drivers, 3,200 deliveries across 18 working days on high-density urban routes). Stop durations and failure codes were captured via backend geofence/POD timestamps. Because the pilot used a pre-post design without a randomized control group, operational gains coincided with the rollout and reflect directional validation.",
     "impactTitle": "Impacto medido",
     "impactTitleEn": "Measured impact",
     "impact": [
       {
         "icon": "⏱️",
         "metric": "18%",
-        "label": "Menos tiempo por parada",
-        "labelEn": "Less time per stop",
-        "description": "Reducción en paradas con Address Intelligence activo. Piloto de 6 semanas con 45 conductores.",
-        "descriptionEn": "Reduction at stops with Address Intelligence active. 6-week pilot with 45 drivers."
+        "metricEn": "18%",
+        "label": "Menos tiempo por parada (criterio de éxito: 15–20%)",
+        "labelEn": "Less time per stop (Success criterion: 15–20%)",
+        "description": "La duración promedio por parada en rutas urbanas de alta densidad pasó de 8,4 min (3.100 paradas de las 3 semanas previas) a 6,9 min (3.200 paradas del piloto de 3 semanas). 7 de 8 conductores mejoraron.",
+        "descriptionEn": "Average stop duration across high-density urban routes shifted from 8.4 min (3,100 stops in the prior 3-week baseline) to 6.9 min (3,200 stops in the 3-week pilot; 7 of 8 drivers improved)."
       },
       {
         "icon": "📦",
         "metric": "22%",
-        "label": "Menos entregas fallidas al primer intento",
-        "labelEn": "Fewer first-attempt failed deliveries",
-        "description": "La tasa de falla bajó de 14% a 10,9%. “No pudo acceder” dejó de ser la causa principal: de más de la mitad a menos de 1 de cada 5 fallas.",
-        "descriptionEn": "The failure rate fell from 14% to 10.9%. 'Couldn't access' stopped being the main cause: from more than half to fewer than 1 in 5 failures."
+        "metricEn": "22%",
+        "label": "Menos fallas al primer intento (criterio de éxito: 20%)",
+        "labelEn": "Fewer first-attempt failures (Success criterion: 20%)",
+        "description": "La tasa de falla pasó de 14,0% (434 de 3.100 paradas de línea base) a 10,9% (349 de 3.200 paradas del piloto). “Sin acceso al edificio” bajó de 54% (234/434) a 19% (66/349) de las fallas.",
+        "descriptionEn": "Failure rate moved from 14.0% (434/3,100 baseline stops) to 10.9% (349/3,200 pilot stops); “no building access” dropped from 54% (234/434) to 19% (66/349) of failures."
       },
       {
         "icon": "📞",
-        "metric": "61%",
-        "label": "Menos llamadas al despachador",
-        "labelEn": "Fewer dispatcher calls",
-        "description": "De 18 a 7 llamadas promedio por despachador y turno sobre información de acceso a edificios.",
-        "descriptionEn": "From 18 to 7 average calls per dispatcher per shift about building access information."
+        "metric": "63%",
+        "metricEn": "63%",
+        "label": "Menos llamadas de acceso al despachador (criterio de éxito: 50% menos)",
+        "labelEn": "Fewer dispatcher access calls (Success criterion: 50% fewer)",
+        "description": "Las llamadas de acceso generadas por los conductores del piloto pasaron de 3,2 a 1,2 por turno y conductor (8 de 8 mejoraron), lo que bajó el volumen total del despachador de ~18 a ~10 llamadas de acceso en la flota de 45 conductores.",
+        "descriptionEn": "Access calls generated by pilot drivers moved from 3.2 to 1.2 calls/shift per driver (8 of 8 drivers improved), lowering their dispatcher's total shift volume from ~18 to ~10 access calls across the 45-driver fleet."
       }
     ],
     "learningsTitle": "Aprendizajes clave",
@@ -503,14 +516,14 @@
       {
         "title": "Qué funcionó",
         "titleEn": "What worked",
-        "description": "El TTS fue adoptado por el 87% de conductores desde el primer turno sin entrenamiento. La hipótesis de que “los conductores prefieren leer” era falsa: simplemente no tenían alternativa.",
-        "descriptionEn": "TTS was adopted by 87% of drivers from the first shift without training. The hypothesis that “drivers prefer to read” was false: they simply had no alternative."
+        "description": "En el benchmark de Maze, 87% (13/15) prefirió el audio TTS sobre leer en pantalla. La hipótesis de que “los conductores prefieren leer” no se sostuvo en la prueba; la preferencia no se midió en el piloto.",
+        "descriptionEn": "In the Maze benchmark, 87% (13/15) of drivers preferred TTS audio over reading on screen. The hypothesis that “drivers prefer to read” did not hold in the test; preference was not measured in the pilot."
       },
       {
-        "title": "Sorpresa",
-        "titleEn": "Surprise",
-        "description": "Los conductores añadieron notas de acceso voluntariamente. En 6 semanas, el 34% de edificios del piloto tenía notas de conductores, sin ningún incentivo. El conocimiento colectivo emergió solo.",
-        "descriptionEn": "Drivers voluntarily added access notes. In 6 weeks, 34% of pilot buildings had driver notes, without any incentive. Collective knowledge emerged organically."
+        "title": "Resolver el acceso movió la causa de falla",
+        "titleEn": "Solving access shifted the failure cause",
+        "description": "“Sin acceso al edificio” pasó de 54% a 19% de las fallas en el piloto. La falla no desapareció: se desplazó hacia otras causas, que son la siguiente oportunidad.",
+        "descriptionEn": "“No building access” fell from 54% to 19% of failures in the pilot. Failure did not disappear: it shifted to other causes, which are the next opportunity."
       }
     ],
     "nextStepsTitle": "Próxima iteración",

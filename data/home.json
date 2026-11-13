@@ -98,8 +98,8 @@
       "subtitle": "Inteligencia de ubicación para última milla",
       "subtitleEn": "Location intelligence for last mile",
       "metric": "18%",
-      "metricLabel": "menos tiempo por parada",
-      "metricLabelEn": "less time per stop",
+      "metricLabel": "menos tiempo por parada (piloto, 8 conductores)",
+      "metricLabelEn": "less time per stop (pilot, 8 drivers)",
       "slug": "driver-ai",
       "device": "mobile",
       "image": "data/images/driver-ai.webp"
