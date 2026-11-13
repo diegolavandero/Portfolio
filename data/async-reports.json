@@ -33,8 +33,8 @@
     {
       "label": "Duración",
       "labelEn": "Duration",
-      "value": "4 semanas",
-      "valueEn": "4 weeks"
+      "value": "4 semanas de diseño + 2 semanas de prueba en staging + 30 días de seguimiento",
+      "valueEn": "4 weeks design + 2-week staging test + 30-day follow-up"
     },
     {
       "label": "Equipo",
@@ -57,8 +57,8 @@
     {
       "label": "Herramientas",
       "labelEn": "Tools",
-      "value": "Figma",
-      "valueEn": "Figma"
+      "value": "Figma · Hotjar",
+      "valueEn": "Figma · Hotjar"
     }
   ],
   "heroImage": {
@@ -77,12 +77,12 @@
         "nameEn": "What the data showed",
         "cons": [
           "34 consultas con tiempo de espera agotado en un solo día de cierre de mes, récord pre-migración",
-          "91% de abandono en reportes de más de 2 minutos con el modo síncrono (control de la prueba en staging)",
+          "91% de abandono en reportes de más de 2 minutos con el modo síncrono (logs de producción previos a la migración, replicado en el control de staging)",
           "Los analistas re-ejecutaban el mismo reporte 2–3 veces por sesión sin saber si había fallado"
         ],
         "consEn": [
           "34 timeouts recorded in a single month-end day, pre-migration record",
-          "91% abandonment on reports over 2 minutes in synchronous mode (control in the staging test)",
+          "91% abandonment on reports over 2 minutes in synchronous mode (pre-migration production logs, replicated in the staging control)",
           "Analysts re-ran the same report 2–3 times per session without knowing if it had failed"
         ]
       }
@@ -169,8 +169,8 @@
       },
       {
         "value": "91%",
-        "description": "Abandono en reportes de más de 2 minutos con el modo síncrono (control de la prueba en staging, n = 42)",
-        "descriptionEn": "Abandonment on reports over 2 minutes in synchronous mode (control in the staging test, n = 42)",
+        "description": "Abandono en reportes de más de 2 minutos con el modo síncrono (logs de producción, replicado en el control de staging)",
+        "descriptionEn": "Abandonment on reports over 2 minutes in synchronous mode (production logs, replicated in staging control)",
         "valueEn": "91%"
       },
       {
@@ -283,8 +283,8 @@
       },
       {
         "value": "91%",
-        "label": "Abandono en reportes de más de 2 minutos con el modo síncrono (control en staging)",
-        "labelEn": "Abandonment on reports over 2 minutes in synchronous mode (staging control)",
+        "label": "Abandono en reportes de más de 2 minutos con el modo síncrono (logs de producción, replicado en el control de staging)",
+        "labelEn": "Abandonment on reports over 2 minutes in synchronous mode (production logs, replicated in staging control)",
         "color": "red",
         "valueEn": "91%"
       },
@@ -315,8 +315,8 @@
     ],
     "distributionLabel": "DISTRIBUCIÓN DE ABANDONO POR TIEMPO DE ESPERA",
     "distributionLabelEn": "ABANDONMENT DISTRIBUTION BY WAIT TIME",
-    "distributionNote": "% de usuarios que abandonan antes de que el reporte termine",
-    "distributionNoteEn": "% of users who abandon before the report finishes",
+    "distributionNote": "% de usuarios que abandonan antes de que el reporte termine. Logs de producción previos a la migración (auditoría de 30 días), replicado en el control síncrono de staging (91%)",
+    "distributionNoteEn": "% of users who abandon before the report finishes. Pre-migration production server logs (30-day audit), replicated in staging control (91%)",
     "distribution": [
       {
         "range": "0–30s",
