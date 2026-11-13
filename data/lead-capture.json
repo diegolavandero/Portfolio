@@ -111,8 +111,8 @@
         "number": "01",
         "title": "Finalización del contacto",
         "titleEn": "Contact completion",
-        "meta": "Meta previa a la prueba: 65% o más completa el contacto (35% o menos abandona)",
-        "metaEn": "Pre-test target: ≥ 65% completion (≤ 35% drop-off)",
+        "meta": "Criterio de éxito: 65% o más completa el contacto (35% o menos abandona)",
+        "metaEn": "Success criterion: ≥ 65% completion (≤ 35% drop-off)",
         "description": "Aumentar la proporción de visitantes que completan el primer contacto, reemplazando los formularios de varios campos por un chat de entrada mínima.",
         "descriptionEn": "Increase the share of visitors who complete initial contact by replacing multi-field forms with a minimal-input chat widget.",
         "kpi": "visitantes que completan el contacto ÷ visitantes que lo inician · Fuente: prueba comparativa con prototipo (n = 20)",
@@ -122,8 +122,8 @@
         "number": "02",
         "title": "Velocidad de interacción",
         "titleEn": "Interaction speed",
-        "meta": "Meta previa a la prueba: 40% menos tiempo hasta el contacto (41 s o menos)",
-        "metaEn": "Pre-test target: ≥ 40% faster time-to-contact (≤ 41 s)",
+        "meta": "Criterio de éxito: 40% menos tiempo hasta el contacto (41 s o menos)",
+        "metaEn": "Success criterion: ≥ 40% faster time-to-contact (≤ 41 s)",
         "description": "Minimizar los pasos entre el primer clic y la confirmación del mensaje con carga instantánea del módulo y validación en línea.",
         "descriptionEn": "Minimize steps between initial click and message confirmation through instant widget loading and inline validation.",
         "kpi": "promedio de segundos entre el primer clic y la confirmación del mensaje, en sesiones completadas · Fuente: prueba comparativa con prototipo (n = 20)",
@@ -584,16 +584,16 @@
       {
         "metric": "50% → 70%",
         "metricEn": "50% → 70%",
-        "label": "Finalización del contacto (meta: 65% o más)",
-        "labelEn": "Contact completion (Target: ≥ 65%)",
+        "label": "Finalización del contacto (criterio de éxito: 65% o más)",
+        "labelEn": "Contact completion (Success criterion: ≥ 65%)",
         "description": "14 de 20 usuarios completaron el contacto con el chat, frente a 10 de 20 con el formulario tradicional (+20 puntos, señal direccional). El abandono bajó de 50% a 30%.",
         "descriptionEn": "14 of 20 users completed contact via chat vs. 10 of 20 on the traditional form (+20 pts, directional lift). Drop-off fell from 50% to 30%."
       },
       {
         "metric": "68 s → 32 s",
         "metricEn": "68 s → 32 s",
-        "label": "Velocidad de interacción (meta: 41 s o menos)",
-        "labelEn": "Interaction speed (Target: ≤ 41 s)",
+        "label": "Velocidad de interacción (criterio de éxito: 41 s o menos)",
+        "labelEn": "Interaction speed (Success criterion: ≤ 41 s)",
         "description": "53% menos tiempo en promedio entre el primer clic y el envío confirmado, medido en sesiones completadas (n = 14 con el chat, n = 10 con el formulario).",
         "descriptionEn": "53% reduction in average time from initial click to confirmed send, measured across completed runs (n = 14 chat vs. n = 10 form)."
       }
@@ -609,7 +609,7 @@
         "title": "La personalización como principio de diseño",
         "titleEn": "Personalization as a design principle",
         "description": "El módulo toma la identidad visual de la empresa. Es una decisión de diseño; la prueba no midió su efecto en la confianza del usuario final.",
-        "descriptionEn": "The widget adopts the company's visual identity. It is a design decision; the test did not measure its effect on end-user trust."
+        "descriptionEn": "The widget adopts the company’s visual identity. It is a design decision; the test did not measure its effect on end-user trust."
       },
       {
         "title": "La vista previa evita dudas en la configuración",

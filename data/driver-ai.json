@@ -92,7 +92,7 @@
       {
         "number": "01",
         "title": "Ejecución de paradas más rápida (piloto de campo)",
-        "titleEn": "Faster stop execution (Field Pilot)",
+        "titleEn": "Faster stop execution (field pilot)",
         "meta": "Criterio de éxito: 15–20% menos tiempo por parada",
         "metaEn": "Success criterion: 15–20% less time per stop",
         "description": "Entregar contexto predictivo de acceso y estacionamiento antes de llegar, para eliminar la improvisación en la puerta durante las rutas diarias.",
@@ -103,7 +103,7 @@
       {
         "number": "02",
         "title": "Más entregas exitosas al primer intento (piloto de campo)",
-        "titleEn": "Higher first-attempt delivery rate (Field Pilot)",
+        "titleEn": "Higher first-attempt delivery rate (field pilot)",
         "meta": "Criterio de éxito: 20% menos entregas fallidas",
         "metaEn": "Success criterion: 20% fewer failed deliveries",
         "description": "Atender las fallas por falta de acceso al edificio (línea base de 14,0% en zonas de alta densidad) con códigos de puerta precargados.",
@@ -114,7 +114,7 @@
       {
         "number": "03",
         "title": "Interacción manos libres y menos llamadas (Maze + piloto de campo)",
-        "titleEn": "Hands-free interaction & fewer calls (Maze + Field Pilot)",
+        "titleEn": "Hands-free interaction & fewer calls (Maze + field pilot)",
         "meta": "Criterio de éxito: audio en 1 toque o menos y 50% menos llamadas de acceso",
         "metaEn": "Success criterion: ≤ 1 tap audio playback & 50% fewer access calls",
         "description": "Dar resúmenes de audio TTS sin mirar la pantalla mientras se conduce, y reducir las llamadas de soporte al despachador por turno.",
@@ -162,7 +162,7 @@
     "quotes": [
       {
         "text": "No necesito más info en pantalla. Necesito que me la digan mientras manejo.",
-        "textEn": "I don't need more info on screen. I need it told to me while I'm driving.",
+        "textEn": "I don’t need more info on screen. I need it told to me while I’m driving.",
         "author": "Rodrigo, conductor 3 años",
         "authorEn": "Rodrigo, driver 3 years",
         "context": "Contextual Inquiry en campo",
@@ -170,7 +170,7 @@
       },
       {
         "text": "El código del cliente llega al WhatsApp cuando ya estoy en la puerta.",
-        "textEn": "The client's code arrives on WhatsApp when I'm already at the door.",
+        "textEn": "The client’s code arrives on WhatsApp when I’m already at the door.",
         "author": "Conductor, zona alta densidad",
         "authorEn": "Driver, high-density zone",
         "context": "Entrevista de campo",
@@ -225,8 +225,8 @@
           "Si lo cambian de zona, empieza desde cero: no hay conocimiento acumulado"
         ],
         "painPointsEn": [
-          "Doesn't know where to park or how to enter new buildings",
-          "Access codes arrive via WhatsApp when he's already at the door",
+          "Doesn’t know where to park or how to enter new buildings",
+          "Access codes arrive via WhatsApp when he’s already at the door",
           "If transferred to another zone, starts from scratch: no accumulated knowledge"
         ],
         "behaviors": [
@@ -266,7 +266,7 @@
         ],
         "painPointsEn": [
           "Receives 15–20 calls/shift to give access codes and instructions",
-          "Can't distinguish if a driver is blocked or just slow",
+          "Can’t distinguish if a driver is blocked or just slow",
           "Building access information is not systematized in any system"
         ],
         "behaviors": [
@@ -280,7 +280,7 @@
           "Responsible for resolving delivery incidents in real time"
         ],
         "quote": "La mitad de mis llamadas son sobre cómo entrar a un edificio. Eso no debería pasar.",
-        "quoteEn": "Half my calls are about how to enter a building. That shouldn't happen.",
+        "quoteEn": "Half my calls are about how to enter a building. That shouldn’t happen.",
         "quoteLabel": "Cita de campo",
         "quoteLabelEn": "Field quote"
       },
@@ -306,7 +306,7 @@
         ],
         "painPointsEn": [
           "14% of deliveries fail on first attempt in high-density zones",
-          "No structured data on why they fail, just 'couldn't access'",
+          "No structured data on why they fail, just “couldn’t access”",
           "New drivers have double the re-deliveries of experienced ones"
         ],
         "behaviors": [
@@ -420,7 +420,7 @@
         "title": "Modal contextual",
         "titleEn": "Contextual modal",
         "description": "Panel inferior que no cubre el mapa de navegación. Muestra el resumen de parada y el botón TTS. Se cierra deslizando hacia abajo.",
-        "descriptionEn": "Bottom sheet that doesn't cover the navigation map. Shows the Stop Summary and TTS button. Dismissed with swipe down."
+        "descriptionEn": "Bottom sheet that doesn’t cover the navigation map. Shows the Stop Summary and TTS button. Dismissed with swipe down."
       }
     ],
     "principlesTitle": "Principios de diseño",
@@ -445,7 +445,7 @@
         "title": "≤1 toque para cualquier acción crítica",
         "titleEn": "≤1 tap for any critical action",
         "description": "El modal no cubre el mapa. Se descarta deslizando hacia abajo. La acción más frecuente (escuchar el contexto) es siempre el botón más grande en pantalla. Cero fricciones en el momento de mayor carga cognitiva.",
-        "descriptionEn": "The modal doesn't cover the map. Swipe down to dismiss. The most frequent action (hearing the context) is always the largest button on screen. Zero friction at the moment of highest cognitive load."
+        "descriptionEn": "The modal doesn’t cover the map. Swipe down to dismiss. The most frequent action (hearing the context) is always the largest button on screen. Zero friction at the moment of highest cognitive load."
       }
     ]
   },
@@ -484,30 +484,30 @@
     "impact": [
       {
         "icon": "⏱️",
-        "metric": "18%",
-        "metricEn": "18%",
+        "metric": "8,4 → 6,9 min",
+        "metricEn": "8.4 → 6.9 min",
         "label": "Menos tiempo por parada (criterio de éxito: 15–20%)",
         "labelEn": "Less time per stop (Success criterion: 15–20%)",
-        "description": "La duración promedio por parada en rutas urbanas de alta densidad pasó de 8,4 min (3.100 paradas de las 3 semanas previas) a 6,9 min (3.200 paradas del piloto de 3 semanas). 7 de 8 conductores mejoraron.",
-        "descriptionEn": "Average stop duration across high-density urban routes shifted from 8.4 min (3,100 stops in the prior 3-week baseline) to 6.9 min (3,200 stops in the 3-week pilot; 7 of 8 drivers improved)."
+        "description": "18% menos: la duración promedio por parada en rutas urbanas de alta densidad pasó de 8,4 min (3.100 paradas de las 3 semanas previas) a 6,9 min (3.200 paradas del piloto de 3 semanas). 7 de 8 conductores mejoraron.",
+        "descriptionEn": "18% less: average stop duration across high-density urban routes shifted from 8.4 min (3,100 stops in the prior 3-week baseline) to 6.9 min (3,200 stops in the 3-week pilot; 7 of 8 drivers improved)."
       },
       {
         "icon": "📦",
-        "metric": "22%",
-        "metricEn": "22%",
+        "metric": "14,0% → 10,9%",
+        "metricEn": "14.0% → 10.9%",
         "label": "Menos fallas al primer intento (criterio de éxito: 20%)",
         "labelEn": "Fewer first-attempt failures (Success criterion: 20%)",
-        "description": "La tasa de falla pasó de 14,0% (434 de 3.100 paradas de línea base) a 10,9% (349 de 3.200 paradas del piloto). “Sin acceso al edificio” bajó de 54% (234/434) a 19% (66/349) de las fallas.",
-        "descriptionEn": "Failure rate moved from 14.0% (434/3,100 baseline stops) to 10.9% (349/3,200 pilot stops); “no building access” dropped from 54% (234/434) to 19% (66/349) of failures."
+        "description": "22% menos: la tasa de falla pasó de 14,0% (434 de 3.100 paradas de línea base) a 10,9% (349 de 3.200 paradas del piloto). “Sin acceso al edificio” bajó de 54% (234/434) a 19% (66/349) de las fallas.",
+        "descriptionEn": "22% lower: failure rate moved from 14.0% (434/3,100 baseline stops) to 10.9% (349/3,200 pilot stops); “no building access” dropped from 54% (234/434) to 19% (66/349) of failures."
       },
       {
         "icon": "📞",
-        "metric": "63%",
-        "metricEn": "63%",
+        "metric": "3,2 → 1,2 llamadas",
+        "metricEn": "3.2 → 1.2 calls",
         "label": "Menos llamadas de acceso al despachador (criterio de éxito: 50% menos)",
         "labelEn": "Fewer dispatcher access calls (Success criterion: 50% fewer)",
-        "description": "Las llamadas de acceso generadas por los conductores del piloto pasaron de 3,2 a 1,2 por turno y conductor (8 de 8 mejoraron, auditadas con las bitácoras de incidentes del despachador durante las 3 semanas del piloto).",
-        "descriptionEn": "Access calls generated by pilot drivers moved from 3.2 to 1.2 calls/shift per driver (8 of 8 drivers improved, audited via dispatcher incident logs over the 3-week pilot)."
+        "description": "63% menos: las llamadas de acceso generadas por los conductores del piloto pasaron de 3,2 a 1,2 por turno y conductor (8 de 8 mejoraron, auditadas con las bitácoras de incidentes del despachador durante las 3 semanas del piloto).",
+        "descriptionEn": "63% fewer: access calls generated by pilot drivers moved from 3.2 to 1.2 calls/shift per driver (8 of 8 drivers improved, audited via dispatcher incident logs over the 3-week pilot)."
       }
     ],
     "learningsTitle": "Aprendizajes clave",

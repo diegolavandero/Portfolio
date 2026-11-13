@@ -93,8 +93,8 @@
         "number": "01",
         "title": "Completar la inducción",
         "titleEn": "Complete onboarding",
-        "meta": "Meta: 70% o más en 15 días",
-        "metaEn": "Goal: 70% or more within 15 days",
+        "meta": "Criterio de éxito: 70% o más en 15 días",
+        "metaEn": "Success criterion: 70% or more within 15 days",
         "description": "Que el operador nuevo termine el nivel inicial sin salir de su trabajo",
         "descriptionEn": "Get new operators through the starter level without leaving their work",
         "kpi": "operadores nuevos que completan el nivel inicial en 15 días ÷ operadores nuevos · Fuente: telemetría del panel lateral y de cursos",
@@ -104,8 +104,8 @@
         "number": "02",
         "title": "Acelerar la adopción",
         "titleEn": "Speed up adoption",
-        "meta": "Meta: 25% menos tiempo (10,5 días hábiles o menos)",
-        "metaEn": "Goal: 25% less time (10.5 business days or fewer)",
+        "meta": "Criterio de éxito: 25% menos tiempo (10,5 días hábiles o menos)",
+        "metaEn": "Success criterion: 25% less time (10.5 business days or fewer)",
         "description": "Que lleguen antes a operar de forma independiente",
         "descriptionEn": "Get them operating independently sooner",
         "kpi": "mediana de días hábiles entre la creación de la cuenta y la primera ruta asignada sin ayuda · Fuente: registros de eventos de producto",
@@ -115,8 +115,8 @@
         "number": "03",
         "title": "Más sesiones de aprendizaje",
         "titleEn": "More learning sessions",
-        "meta": "Meta: 3,5 o más sesiones por operador en el primer mes",
-        "metaEn": "Goal: 3.5 or more sessions per operator in month 1",
+        "meta": "Criterio de éxito: 3,5 o más sesiones por operador en el primer mes",
+        "metaEn": "Success criterion: 3.5 or more sessions per operator in month 1",
         "description": "Pasar de consultas reactivas a aprender con constancia",
         "descriptionEn": "Move from reactive lookups to steady learning",
         "kpi": "sesiones de tutorial en el primer mes ÷ operadores nuevos activos · Fuente: telemetría del panel lateral y grabaciones de Hotjar",
@@ -138,7 +138,7 @@
         "description": "Entrevisté a 6 operadores contratados en los últimos 90 días y audité el historial de inducción del centro de ayuda anterior en las mismas 5 cuentas.",
         "descriptionEn": "I interviewed 6 operators hired in the previous 90 days and audited the onboarding history of the old Help Center across the same 5 accounts.",
         "finding": "Rara vez abrían la ayuda por su cuenta: salir de su trabajo cortaba el flujo y el texto no calzaba con la interfaz. De ahí, ayuda dentro de cada sección.",
-        "findingEn": "They rarely opened help on their own: leaving their work broke their flow and text didn't match the interface. Hence help inside each section."
+        "findingEn": "They rarely opened help on their own: leaving their work broke their flow and text didn’t match the interface. Hence help inside each section."
       },
       {
         "name": "Prototipo funcional",
@@ -154,7 +154,7 @@
         "description": "50 operadores nuevos en 5 cuentas, creados en los primeros 30 días del piloto y con al menos 30 días de seguimiento. Medí con telemetría de producto y observé el uso con grabaciones de Hotjar.",
         "descriptionEn": "50 new operators across 5 accounts, created in the first 30 days of the pilot with at least 30 days of follow-up. I measured with product telemetry and observed usage with Hotjar recordings.",
         "finding": "Según las grabaciones, abrían los tutoriales sobre todo desde el ícono de cada sección, no desde el catálogo de 49 tutoriales.",
-        "findingEn": "Recordings showed they opened tutorials mostly from each section's icon, not from the 49-tutorial catalog."
+        "findingEn": "Recordings showed they opened tutorials mostly from each section’s icon, not from the 49-tutorial catalog."
       }
     ],
     "insightsTitle": "Línea base · 53 operadores creados en los 60 días previos, en las mismas 5 cuentas",
@@ -197,7 +197,7 @@
         ],
         "goalsEn": [
           "Learn the platform to work independently",
-          "Know where to start and what's left"
+          "Know where to start and what’s left"
         ],
         "painPoints": [
           "Debe salir de la plataforma para encontrar ayuda",
@@ -242,7 +242,7 @@
         "tagline": "Conexión contextual",
         "taglineEn": "Contextual connection",
         "description": "Junto a la descripción de cada sección hay un ícono de tutorial: si estás en Órdenes, llegas directo al tutorial de Órdenes.",
-        "descriptionEn": "Next to each section's description there's a tutorial icon: in Orders, it takes you straight to the Orders tutorial."
+        "descriptionEn": "Next to each section’s description there’s a tutorial icon: in Orders, it takes you straight to the Orders tutorial."
       },
       {
         "number": "03",
@@ -251,7 +251,7 @@
         "tagline": "Aprender, no ser evaluado",
         "taglineEn": "Learn, not be graded",
         "description": "El video explica los hitos de la sección y el cuestionario tiene preguntas simples sobre él. Ambos deben quedar marcados para completar el tutorial. Si te equivocas, el cuestionario te guía hacia la respuesta correcta.",
-        "descriptionEn": "The video explains the section's main milestones and the quiz asks simple questions about it. Both must be checked to complete the tutorial. If you get one wrong, the quiz guides you to the right answer."
+        "descriptionEn": "The video explains the section’s main milestones and the quiz asks simple questions about it. Both must be checked to complete the tutorial. If you get one wrong, the quiz guides you to the right answer."
       },
       {
         "number": "04",
@@ -271,7 +271,7 @@
         "title": "La ayuda vive en la plataforma",
         "titleEn": "Help lives in the platform",
         "description": "El operador no debería salir de su trabajo para aprender cómo hacerlo.",
-        "descriptionEn": "Operators shouldn't leave their work to learn how to do it."
+        "descriptionEn": "Operators shouldn’t leave their work to learn how to do it."
       },
       {
         "number": "02",
@@ -283,7 +283,7 @@
       {
         "number": "03",
         "title": "Guiar, no descalificar",
-        "titleEn": "Guide, don't disqualify",
+        "titleEn": "Guide, don’t disqualify",
         "description": "El objetivo es aprender: el cuestionario orienta hacia la respuesta correcta en vez de penalizar el error.",
         "descriptionEn": "The goal is learning: the quiz points to the right answer instead of penalizing the mistake."
       }
@@ -344,7 +344,7 @@
         "title": "Tutorial",
         "titleEn": "Tutorial",
         "description": "Video, estado de avance, cuestionario y artículos relacionados de la sección.",
-        "descriptionEn": "The section's video, progress status, quiz and related articles.",
+        "descriptionEn": "The section’s video, progress status, quiz and related articles.",
         "src": "data/images/dt-help-center-02-tutorial.webp",
         "srcEn": "data/images/dt-help-center-02-tutorial-en.webp?v=3",
         "alt": "Tutorial abierto en el panel",
@@ -364,11 +364,11 @@
         "title": "Usuario nuevo",
         "titleEn": "New user",
         "description": "En lugar de una pantalla vacía, el usuario ve el tutorial de su sección para empezar.",
-        "descriptionEn": "Instead of an empty screen, users see their section's tutorial to get started.",
+        "descriptionEn": "Instead of an empty screen, users see their section’s tutorial to get started.",
         "src": "data/images/dt-help-center-04-usuario-nuevo.webp",
         "srcEn": "data/images/dt-help-center-04-usuario-nuevo-en.webp?v=3",
         "alt": "Estado vacío con tutorial de la sección",
-        "altEn": "Empty state with the section's tutorial"
+        "altEn": "Empty state with the section’s tutorial"
       }
     ]
   },
@@ -380,30 +380,30 @@
     "impact": [
       {
         "icon": "✅",
-        "label": "Onboardings completados",
-        "labelEn": "Onboardings completed",
-        "metric": "82%",
-        "description": "(41 de 50 operadores nuevos) terminó el nivel inicial en 15 días. Antes, 34%.",
-        "descriptionEn": "(41 of 50 new operators) completed the starter level within 15 days. Before, 34%.",
-        "metricEn": "82%"
+        "label": "Inducciones completadas en 15 días (criterio de éxito: 70% o más)",
+        "labelEn": "Onboardings completed within 15 days (Success criterion: 70% or more)",
+        "metric": "34% → 82%",
+        "description": "41 de 50 operadores nuevos terminaron el nivel inicial en 15 días, frente a 34% de la cohorte histórica (+48 puntos).",
+        "descriptionEn": "41 of 50 new operators completed the starter level within 15 days, versus 34% of the historical cohort (+48 points).",
+        "metricEn": "34% → 82%"
       },
       {
         "icon": "⏱️",
-        "label": "Adopción más rápida",
-        "labelEn": "Faster adoption",
-        "metric": "36%",
-        "description": "De 14 a 9 días hábiles (mediana) hasta la primera ruta sin ayuda. 46 de 50 la asignaron en 30 días; los otros 4 se mantuvieron en el extremo superior.",
-        "descriptionEn": "From 14 to 9 business days (median) until the first route unaided. 46 of 50 assigned one within 30 days; the other 4 were kept at the upper end.",
-        "metricEn": "36%"
+        "label": "Adopción más rápida (criterio de éxito: 25% menos tiempo)",
+        "labelEn": "Faster adoption (Success criterion: 25% less time)",
+        "metric": "14 → 9 días",
+        "description": "36% menos: de 14 a 9 días hábiles (mediana) hasta la primera ruta sin ayuda. 46 de 50 la asignaron en 30 días; los otros 4 se mantuvieron en el extremo superior.",
+        "descriptionEn": "36% less: from 14 to 9 business days (median) until the first route unaided. 46 of 50 assigned one within 30 days; the other 4 were kept at the upper end.",
+        "metricEn": "14 → 9 days"
       },
       {
         "icon": "📈",
-        "label": "Más sesiones de aprendizaje",
-        "labelEn": "More learning sessions",
-        "metric": "2,4×",
-        "description": "De 1,8 a 4,3 sesiones por operador en su primer mes. Indicador direccional: visitas al centro de ayuda anterior frente a aperturas del panel lateral.",
-        "descriptionEn": "From 1.8 to 4.3 sessions per operator in their first month. Directional indicator: visits to the old Help Center versus openings of the in-app sidebar.",
-        "metricEn": "2.4×"
+        "label": "Más sesiones de aprendizaje (criterio de éxito: 3,5 o más por operador)",
+        "labelEn": "More learning sessions (Success criterion: 3.5 or more per operator)",
+        "metric": "1,8 → 4,3 sesiones",
+        "description": "2,4× más: de 1,8 a 4,3 sesiones por operador en su primer mes. Indicador direccional: visitas al centro de ayuda anterior frente a aperturas del panel lateral.",
+        "descriptionEn": "2.4× more: from 1.8 to 4.3 sessions per operator in their first month. Directional indicator: visits to the old Help Center versus openings of the in-app sidebar.",
+        "metricEn": "1.8 → 4.3 sessions"
       }
     ],
     "learningsTitle": "Aprendizajes clave",

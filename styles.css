@@ -59,7 +59,7 @@
   --red-50: #fef2f2;
   --red-200: #ffc9c9;
   --red-500: #c10007; /* AA: 5,8:1 sobre rojo claro (antes #e7000b, 4,3:1) */
-  --red-bright: #fb2c36;
+  --red-bright: #c10007; /* AA 4,5:1 mínimo sobre blanco (antes #fb2c36, 3,81:1) */
   --green-50: #f0fdf4;
   --green-100: #d1fae5;
   --green-200: #b9f8cf;

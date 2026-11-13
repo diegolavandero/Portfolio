@@ -31,7 +31,7 @@
       "title": "Monitoreo de tutoriales",
       "titleEn": "Tutorial monitoring",
       "subtitle": "Panel para seguir el entrenamiento de cada equipo en la plataforma",
-      "subtitleEn": "Admin panel to track each team's platform training",
+      "subtitleEn": "Admin panel to track each team’s platform training",
       "slug": "dt-tutorial-monitoring",
       "device": "desktop",
       "image": "data/images/dt-tutorial-monitoring.webp?v=2",

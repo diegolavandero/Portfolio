@@ -1225,7 +1225,7 @@ const Renderer = {
       : items.map(i => `
           <div class="impact-result">
             <p class="impact-result-metric" ${bi(i.metric, i.metricEn)}>${i.metric}</p>
-            <h4 class="impact-result-label" ${bi(i.label, i.labelEn)}>${i.label}</h4>
+            <h3 class="impact-result-label" ${bi(i.label, i.labelEn)}>${i.label}</h3>
             <p class="impact-result-desc" ${bi(i.description, i.descriptionEn)}>${i.description}</p>
           </div>
         `).join('');

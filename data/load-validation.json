@@ -92,8 +92,8 @@
         "number": "01",
         "title": "Menos discrepancias en destino",
         "titleEn": "Fewer destination discrepancies",
-        "meta": "Criterio del piloto: 40% menos discrepancias (meta de 80% con despliegue completo)",
-        "metaEn": "Pilot criterion: 40% fewer discrepancies (80% goal at full rollout)",
+        "meta": "Criterio de éxito: 40% menos discrepancias (meta de 80% con despliegue completo)",
+        "metaEn": "Success criterion: 40% fewer discrepancies (80% goal at full rollout)",
         "description": "Detectar faltantes y errores de manifiesto antes de que el camión salga de bodega, con escaneo de códigos de barras.",
         "descriptionEn": "Catch missing items and manifest errors before warehouse departure through barcode scanning.",
         "kpi": "salidas con errores detectados en destino ÷ salidas totales · Fuente: registros de la app y del ERP, piloto de 60 días",
@@ -103,8 +103,8 @@
         "number": "02",
         "title": "Menos reclamos de clientes",
         "titleEn": "Fewer customer claims",
-        "meta": "Criterio del piloto: 25% menos reclamos relacionados con la carga",
-        "metaEn": "Pilot criterion: 25% fewer load-related claims",
+        "meta": "Criterio de éxito: 25% menos reclamos relacionados con la carga",
+        "metaEn": "Success criterion: 25% fewer load-related claims",
         "description": "Reducir los reclamos formales por contenido faltante o documentación incompleta (línea base de 6,8% en 2.350 salidas previas).",
         "descriptionEn": "Reduce formal customer complaints caused by missing items or incomplete paperwork (down from a 6.8% baseline across 2,350 prior departures).",
         "kpi": "reclamos formales asociados a la carga ÷ salidas totales · Fuente: registros de reclamos del ERP",
@@ -114,8 +114,8 @@
         "number": "03",
         "title": "Más cargas con validación completa",
         "titleEn": "More fully validated loads",
-        "meta": "Criterio del piloto: 55% o más de las salidas con validación completa de 4 pasos",
-        "metaEn": "Pilot criterion: ≥ 55% of departures with full 4-step validation",
+        "meta": "Criterio de éxito: 55% o más de las salidas con validación completa de 4 pasos",
+        "metaEn": "Success criterion: ≥ 55% of departures with full 4-step validation",
         "description": "Reemplazar las firmas apuradas en papel por un flujo móvil guiado de 4 pasos, operable con una mano.",
         "descriptionEn": "Replace hurried paper sign-offs with a guided, one-handed 4-step mobile flow.",
         "kpi": "salidas con los 4 pasos completados ÷ salidas totales · Fuente: registros del servidor de la app",
@@ -161,7 +161,7 @@
     "quotes": [
       {
         "text": "A veces firmamos el papel sin revisar todo. Si no salimos a tiempo, nos descuentan.",
-        "textEn": "Sometimes we sign the paper without checking everything. If we don't leave on time, they dock our pay.",
+        "textEn": "Sometimes we sign the paper without checking everything. If we don’t leave on time, they dock our pay.",
         "author": "Conductor, 6 años de experiencia",
         "authorEn": "Driver, 6 years of experience",
         "context": "Entrevista de campo",
@@ -222,7 +222,7 @@
         ],
         "painPointsEn": [
           "Paper checklists get lost or wet",
-          "Can't verify who signed what from the office",
+          "Can’t verify who signed what from the office",
           "Errors are reported 3 days after the event"
         ],
         "behaviors": [
@@ -236,7 +236,7 @@
           "Prefers fast confirmation over detail"
         ],
         "quote": "Necesito algo que no se pueda ignorar cuando hay un error. El papel se puede perder, pero una foto no.",
-        "quoteEn": "I need something that can't be ignored when there's an error. Paper can get lost, but a photo can't.",
+        "quoteEn": "I need something that can’t be ignored when there’s an error. Paper can get lost, but a photo can’t.",
         "quoteLabel": "Cita de investigación",
         "quoteLabelEn": "Research quote"
       },
@@ -276,7 +276,7 @@
           "Prioritizes accuracy over speed"
         ],
         "quote": "Necesito un rastro de papel que no requiera papel.",
-        "quoteEn": "I need a paper trail that doesn't require paper.",
+        "quoteEn": "I need a paper trail that doesn’t require paper.",
         "quoteLabel": "Cita de investigación",
         "quoteLabelEn": "Research quote"
       }
@@ -479,7 +479,7 @@
         "title": "Ingreso manual alternativo",
         "titleEn": "Manual input alternative",
         "description": "Entrada manual de códigos cuando el escáner no puede leer el barcode. Flujo simplificado para no interrumpir el ritmo.",
-        "descriptionEn": "Manual code entry when the scanner can't read the barcode. Simplified flow to avoid interrupting the rhythm."
+        "descriptionEn": "Manual code entry when the scanner can’t read the barcode. Simplified flow to avoid interrupting the rhythm."
       },
       {
         "number": "04",
@@ -511,7 +511,7 @@
         "title": "Evidencia inmutable antes de salir",
         "titleEn": "Immutable evidence before departure",
         "description": "Foto + confirmación de cierre (firma en el diseño inicial, PIN en el piloto) + timestamp automático son el contrato digital entre conductor, supervisor y cliente. El flujo no permite saltar estos pasos: son la trazabilidad del sistema.",
-        "descriptionEn": "Photo + sign-off (signature in the initial design, PIN in the pilot) + automatic timestamp are the digital contract between driver, supervisor and client. The flow cannot skip these steps: they are the system's traceability."
+        "descriptionEn": "Photo + sign-off (signature in the initial design, PIN in the pilot) + automatic timestamp are the digital contract between driver, supervisor and client. The flow cannot skip these steps: they are the system’s traceability."
       }
     ]
   },
@@ -582,7 +582,7 @@
         "title": "Firma pendiente (diseño inicial)",
         "titleEn": "Signature pending (initial design)",
         "description": "La validación queda parcial hasta que el supervisor firma; el estado de cada orden se ve de un vistazo antes de firmar. Esta es la versión inicial; en el piloto la firma táctil se reemplazó por un PIN de confirmación.",
-        "descriptionEn": "Validation stays partial until the supervisor signs; each order's status is visible at a glance before signing. This is the initial version; in the pilot the tactile signature was replaced by a confirmation PIN.",
+        "descriptionEn": "Validation stays partial until the supervisor signs; each order’s status is visible at a glance before signing. This is the initial version; in the pilot the tactile signature was replaced by a confirmation PIN.",
         "src": "data/images/load-validation-signature-empty.png",
         "alt": "Pantalla de firma digital, estado vacío antes de firmar",
         "altEn": "Digital signature screen, empty state before signing"
@@ -605,7 +605,7 @@
     "title": "Resultados",
     "titleEn": "Results",
     "subtitle": "Evaluación en dos etapas: prueba comparativa en Maze (n = 12 conductores) y piloto de 60 días en TestFlight (n = 40 conductores, 2.400 salidas en 2 centros de distribución, comparadas con sus propias 2.350 salidas de los 60 días previos). TestFlight distribuyó la versión de prueba; las validaciones, discrepancias y reclamos salen de los registros de la app y del ERP. Como el piloto fue pre-post y sin grupo control, las mejoras coincidieron con el despliegue y son una validación direccional.",
-    "subtitleEn": "Two-stage evaluation combining a Maze prototype benchmark (n = 12 drivers) and a 60-day TestFlight field pilot (n = 40 drivers, 2,400 departures across 2 distribution centers, compared against the same drivers' 2,350 departures in the prior 60 days). While TestFlight managed beta distribution, validation completion, discrepancies and claims were captured via backend app logs and ERP records. Because the pilot used a pre-post design without a randomized control group, operational gains coincided with the rollout and reflect directional validation.",
+    "subtitleEn": "Two-stage evaluation combining a Maze prototype benchmark (n = 12 drivers) and a 60-day TestFlight field pilot (n = 40 drivers, 2,400 departures across 2 distribution centers, compared against the same drivers’ 2,350 departures in the prior 60 days). While TestFlight managed beta distribution, validation completion, discrepancies and claims were captured via backend app logs and ERP records. Because the pilot used a pre-post design without a randomized control group, operational gains coincided with the rollout and reflect directional validation.",
     "impactTitle": "Impacto medido",
     "impactTitleEn": "Measured impact",
     "impact": [
@@ -613,8 +613,8 @@
         "icon": "📦",
         "metric": "12,0% → 6,6%",
         "metricEn": "12.0% → 6.6%",
-        "label": "Menos discrepancias en destino (criterio del piloto: 40%)",
-        "labelEn": "Fewer destination discrepancies (Pilot criterion: 40%)",
+        "label": "Menos discrepancias en destino (criterio de éxito: 40%)",
+        "labelEn": "Fewer destination discrepancies (Success criterion: 40%)",
         "description": "45% menos: las salidas con errores detectados en la entrega pasaron de 12,0% (282 de 2.350 salidas de línea base) a 6,6% (158 de 2.400 salidas del piloto). La meta de 80% sigue siendo un objetivo operativo, a evaluar con el despliegue completo de la flota.",
         "descriptionEn": "45% fewer: shipments with errors detected at delivery shifted from 12.0% (282/2,350 baseline departures) to 6.6% (158/2,400 pilot departures). The 80% reduction target remains an operational goal to be evaluated upon full-fleet rollout."
       },
@@ -622,8 +622,8 @@
         "icon": "🎫",
         "metric": "6,8% → 4,6%",
         "metricEn": "6.8% → 4.6%",
-        "label": "Menos reclamos de clientes (criterio del piloto: 25%)",
-        "labelEn": "Fewer customer claims (Pilot criterion: 25% fewer)",
+        "label": "Menos reclamos de clientes (criterio de éxito: 25%)",
+        "labelEn": "Fewer customer claims (Success criterion: 25% fewer)",
         "description": "32% menos: los reclamos formales por contenido de carga o documentación faltante pasaron de 6,8% (160 de 2.350 salidas) a 4,6% (111 de 2.400 salidas del piloto).",
         "descriptionEn": "32% fewer: formal complaints tied to load content or missing paperwork moved from 6.8% (160/2,350) to 4.6% (111/2,400 pilot departures)."
       },
@@ -631,8 +631,8 @@
         "icon": "✅",
         "metric": "39,3% → 62,9%",
         "metricEn": "39.3% → 62.9%",
-        "label": "Más salidas con validación completa (criterio del piloto: 55% o más)",
-        "labelEn": "Full pre-route validations (Pilot criterion: ≥ 55%)",
+        "label": "Más salidas con validación completa (criterio de éxito: 55% o más)",
+        "labelEn": "Full pre-route validations (Success criterion: ≥ 55%)",
         "description": "1.510 de 2.400 salidas del piloto completaron los 4 pasos digitales (lista, escaneo, foto y PIN de confirmación). Es la tasa medida en el piloto; el 39,3% (11 de 28 salidas observadas en campo) es solo contexto observacional previo, con IC 95% de ~23–58%, y no un delta estadístico exacto.",
         "descriptionEn": "1,510 of 2,400 pilot departures completed all 4 digital steps (list, scan, photo and confirmation PIN). This is the rate measured in the pilot; the 39.3% (11/28 departures observed in the field) is observational context only, with a 95% CI of ~23–58%, not an exact statistical delta."
       }

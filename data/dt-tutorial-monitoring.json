@@ -13,7 +13,7 @@
     "subtitle": "De una inducción a ciegas a una adopción con seguimiento",
     "subtitleEn": "From blind onboarding to tracked adoption",
     "description": "Diseñé una sección visible solo para administradores que muestra qué tan completa está la inducción de cada usuario de su cuenta. Es la contraparte del Centro de ayuda e inducción, donde los operadores hacen esa inducción.",
-    "descriptionEn": "I designed an admin-only section that shows how complete each account user's onboarding is. It's the counterpart to the Help Center, where operators go through that onboarding."
+    "descriptionEn": "I designed an admin-only section that shows how complete each account user’s onboarding is. It’s the counterpart to the Help Center, where operators go through that onboarding."
   },
   "projectSpecs": [
     {
@@ -72,14 +72,14 @@
         "tagline": "¿Cómo vamos?",
         "taglineEn": "How are we doing?",
         "description": "Usuarios en capacitación, activos, que completaron el programa y que aún no lo inician: la respuesta inmediata, sin abrir una tabla.",
-        "descriptionEn": "Users in training, active, who completed the program and who haven't started: the immediate answer, without opening a table."
+        "descriptionEn": "Users in training, active, who completed the program and who haven’t started: the immediate answer, without opening a table."
       },
       {
         "number": "02",
         "title": "Estado y clasificación de avance",
         "titleEn": "Status and progress classification",
         "tagline": "La distribución del equipo",
-        "taglineEn": "The team's distribution",
+        "taglineEn": "The team’s distribution",
         "description": "Dos gráficos de dona: estado de la inducción (activo / inactivo) y clasificación de avance (completado / en progreso / sin iniciar).",
         "descriptionEn": "Two donut charts: onboarding status (active / inactive) and progress classification (completed / in progress / not started)."
       },
@@ -124,7 +124,7 @@
         "title": "Solo para quien gestiona",
         "titleEn": "Only for those who manage",
         "description": "El avance de cada persona es información de gestión: la sección solo se muestra a administradores y el resto ve un aviso claro de falta de acceso.",
-        "descriptionEn": "Each person's progress is management information: the section is shown only to admins and everyone else sees a clear no-access notice."
+        "descriptionEn": "Each person’s progress is management information: the section is shown only to admins and everyone else sees a clear no-access notice."
       }
     ]
   },
@@ -186,7 +186,7 @@
         "consEn": [
           "Operator turnover forces the onboarding to be repeated with every new hire",
           "There was no way to verify whether a new operator completed the onboarding",
-          "Admins couldn't see registered or completed courses, nor the level of progress"
+          "Admins couldn’t see registered or completed courses, nor the level of progress"
         ]
       }
     ],
@@ -195,8 +195,8 @@
         "number": "01",
         "title": "Impulsar la adopción semanal",
         "titleEn": "Drive weekly adoption",
-        "meta": "Meta: 65% o más de administradores activos por semana",
-        "metaEn": "Goal: 65% or more weekly active admins",
+        "meta": "Criterio de éxito: 65% o más de administradores activos por semana",
+        "metaEn": "Success criterion: 65% or more weekly active admins",
         "description": "Reemplazar las consultas a soporte por un hábito de monitoreo propio, dentro de su rutina semanal",
         "descriptionEn": "Replace support inquiries with a self-serve monitoring habit within their weekly routine",
         "kpi": "administradores activos por semana ÷ administradores del piloto · Fuente: eventos de producto (rol administrador)",
@@ -206,19 +206,19 @@
         "number": "02",
         "title": "Detectar el rezago más rápido",
         "titleEn": "Detect lag faster",
-        "meta": "Meta: 50% más rápido (menos de 60 h)",
-        "metaEn": "Goal: 50% faster (under 60 h)",
+        "meta": "Criterio de éxito: 50% más rápido (menos de 60 h)",
+        "metaEn": "Success criterion: 50% faster (under 60 h)",
         "description": "Mostrar a tiempo a los operadores inactivos o en riesgo con KPIs de la cuenta y clasificación por estado",
         "descriptionEn": "Surface inactive and at-risk operators early with account KPIs and status classification",
         "kpi": "tiempo entre la creación del operador y la primera inspección del administrador · Fuente: eventos de producto y registros de base de datos",
-        "kpiEn": "time between operator creation and the admin's first inspection · Source: product events and database logs"
+        "kpiEn": "time between operator creation and the admin’s first inspection · Source: product events and database logs"
       },
       {
         "number": "03",
         "title": "Facilitar el diagnóstico",
         "titleEn": "Enable diagnosis",
-        "meta": "Meta: 50% o más de las sesiones con filtros o vista Por tutorial",
-        "metaEn": "Goal: 50% or more of sessions using filters or the By tutorial view",
+        "meta": "Criterio de éxito: 50% o más de las sesiones con filtros o vista Por tutorial",
+        "metaEn": "Success criterion: 50% or more of sessions using filters or the By tutorial view",
         "description": "Dar detalle por usuario y por tutorial para encontrar dónde se traba cada persona",
         "descriptionEn": "Give per-user and per-tutorial detail to find where each person gets stuck",
         "kpi": "sesiones con filtro activo o vista Por tutorial ÷ sesiones totales · Fuente: eventos de producto y Hotjar",
@@ -228,11 +228,11 @@
         "number": "04",
         "title": "Permitir un seguimiento accionable",
         "titleEn": "Enable actionable follow-up",
-        "meta": "Meta: 70% o más con seguimiento en 72 h desde que se atrasan",
-        "metaEn": "Goal: 70% or more followed up within 72 h of falling behind",
+        "meta": "Criterio de éxito: 70% o más con seguimiento en 72 h desde que se atrasan",
+        "metaEn": "Success criterion: 70% or more followed up within 72 h of falling behind",
         "description": "Permitir intervenir antes de que haya rotación o errores operacionales",
         "descriptionEn": "Let admins step in before turnover or operational errors occur",
-        "kpi": "rezagados con seguimiento en 72 h ÷ rezagados totales · Fuente: seguimientos con administradores y telemetría de cursos",
+        "kpi": "rezagados con seguimiento en 72 h ÷ rezagados totales · Fuente: consultas de seguimiento a administradores y telemetría de cursos",
         "kpiEn": "lagging operators followed up within 72 h ÷ all lagging operators · Source: admin check-ins and course telemetry"
       }
     ],
@@ -278,7 +278,7 @@
       {
         "value": "120 h",
         "description": "(5 días) hasta que un administrador notaba que un operador nuevo no había empezado",
-        "descriptionEn": "(5 days) for an admin to notice a new operator hadn't started"
+        "descriptionEn": "(5 days) for an admin to notice a new operator hadn’t started"
       },
       {
         "value": "~22%",
@@ -310,7 +310,7 @@
         ],
         "goalsEn": [
           "Confirm every new operator completed the onboarding",
-          "Track operators' progress the way they already track drivers'",
+          "Track operators’ progress the way they already track drivers’",
           "Know who to reinforce and on which tutorial"
         ],
         "painPoints": [
@@ -346,14 +346,14 @@
         ],
         "goalsEn": [
           "Learn the platform to work independently",
-          "Know what's left to complete in the program"
+          "Know what’s left to complete in the program"
         ],
         "painPoints": [
           "La inducción en la plataforma se percibe precaria",
           "Su avance es invisible para quien lo supervisa"
         ],
         "painPointsEn": [
-          "The platform's onboarding feels precarious",
+          "The platform’s onboarding feels precarious",
           "Their progress is invisible to whoever supervises them"
         ],
         "behaviors": [
@@ -397,7 +397,7 @@
         "title": "Usuario sin acceso",
         "titleEn": "No-access user",
         "description": "Quien no es administrador no ve el módulo: ni en el menú lateral ni en la pantalla, donde aparece un aviso claro.",
-        "descriptionEn": "Non-admins don't see the module: not in the side menu nor on the screen, where a clear notice appears.",
+        "descriptionEn": "Non-admins don’t see the module: not in the side menu nor on the screen, where a clear notice appears.",
         "src": "data/images/dt-tutorial-monitoring-03-sin-acceso.webp",
         "srcEn": "data/images/dt-tutorial-monitoring-03-sin-acceso-en.webp",
         "alt": "Aviso de falta de acceso para usuarios no administradores",
@@ -408,40 +408,42 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Piloto de 60 días con 18 administradores. Medido con eventos de producto, registros de base de datos y Hotjar; el seguimiento, con seguimientos de administradores.",
+    "subtitle": "Piloto de 60 días con 18 administradores. Medido con eventos de producto, registros de base de datos y Hotjar; el seguimiento, con consultas a los administradores.",
     "subtitleEn": "60-day pilot with 18 admins. Measured with product events, database logs and Hotjar; follow-up measured with admin check-ins.",
     "impact": [
       {
         "icon": "👥",
-        "label": "Adopción semanal",
-        "labelEn": "Weekly adoption",
+        "label": "Adopción semanal (criterio de éxito: 65% o más)",
+        "labelEn": "Weekly adoption (Success criterion: 65% or more)",
         "metric": "78%",
-        "description": "14 de 18 administradores entraron al menos una vez por semana.",
-        "descriptionEn": "14 of 18 admins opened it at least once a week."
+        "description": "14 de 18 administradores entraron al menos una vez por semana. Sin línea base: antes no existía la herramienta.",
+        "descriptionEn": "14 of 18 admins opened it at least once a week. No baseline: the tool did not exist before."
       },
       {
         "icon": "⏱️",
-        "label": "Detección más rápida",
-        "labelEn": "Faster detection",
-        "metric": "60%",
-        "description": "De 120 h (5 días) a 48 h entre crear un operador y la primera acción del administrador. Casos de estado: 71% menos.",
-        "descriptionEn": "From 120 h (5 days) to 48 h between creating an operator and the admin's first action. Status-check tickets down 71%."
+        "label": "Detección más rápida (criterio de éxito: 50% menos, menos de 60 h)",
+        "labelEn": "Faster detection (Success criterion: 50% faster, under 60 h)",
+        "metric": "120 → 48 h",
+        "description": "60% menos: de 120 h (5 días) a 48 h entre crear un operador y la primera acción del administrador. Casos de estado: 71% menos.",
+        "descriptionEn": "60% less: from 120 h (5 days) to 48 h between creating an operator and the admin’s first action. Status-check tickets down 71%.",
+        "metricEn": "120 → 48 h"
       },
       {
         "icon": "🔎",
-        "label": "Uso de filtros y vistas",
-        "labelEn": "Filter and view usage",
+        "label": "Uso de filtros y vistas (criterio de éxito: 50% o más)",
+        "labelEn": "Filter and view usage (Success criterion: 50% or more)",
         "metric": "65%",
-        "description": "de las sesiones fue más allá de los KPIs, con filtros o la vista Por tutorial.",
-        "descriptionEn": "of sessions went beyond the KPIs, using filters or the By tutorial view."
+        "description": "de las sesiones fue más allá de los KPIs, con filtros o la vista Por tutorial. Sin línea base.",
+        "descriptionEn": "of sessions went beyond the KPIs, using filters or the By tutorial view. No baseline."
       },
       {
         "icon": "🤝",
-        "label": "Seguimiento activo",
-        "labelEn": "Active follow-up",
-        "metric": "84%",
-        "description": "de los rezagados tuvo seguimiento en 72 h desde que se atrasó (antes ~22%), según seguimientos con los administradores y telemetría de cursos.",
-        "descriptionEn": "of lagging operators got follow-up within 72 h of falling behind (up from ~22%), based on admin check-ins and course telemetry."
+        "label": "Seguimiento activo en 72 h (criterio de éxito: 70% o más)",
+        "labelEn": "Active follow-up within 72 h (Success criterion: 70% or more)",
+        "metric": "~22% → 84%",
+        "description": "de los rezagados tuvo seguimiento en 72 h desde que se atrasó (antes ~22%), según consultas a los administradores y telemetría de cursos.",
+        "descriptionEn": "of lagging operators got follow-up within 72 h of falling behind (up from ~22%), based on admin check-ins and course telemetry.",
+        "metricEn": "~22% → 84%"
       }
     ],
     "learningsTitle": "Aprendizajes clave",
@@ -451,13 +453,13 @@
         "title": "Extender un hábito existente pesa más que crear uno nuevo",
         "titleEn": "Extending an existing habit beats creating a new one",
         "description": "Los administradores ya monitoreaban a sus conductores con estadísticas. Mostrar el avance de los operadores con esa misma lógica evitó tener que enseñar una forma nueva de supervisar.",
-        "descriptionEn": "Admins already monitored drivers with stats. Showing operators' progress with that same logic avoided having to teach a new way of supervising."
+        "descriptionEn": "Admins already monitored drivers with stats. Showing operators’ progress with that same logic avoided having to teach a new way of supervising."
       },
       {
         "title": "Una queja sobre el producto escondía una necesidad de gestión",
         "titleEn": "A product complaint hid a management need",
         "description": "Lo que sonaba a «la inducción es precaria» incluía otra cosa: los administradores no podían saber quién lo hacía. La solución fue darles visibilidad, no solo mejorar los tutoriales.",
-        "descriptionEn": "What sounded like “the onboarding is precarious” included something else: admins couldn't tell who was doing it. The solution was giving them visibility, not just improving the tutorials."
+        "descriptionEn": "What sounded like “the onboarding is precarious” included something else: admins couldn’t tell who was doing it. The solution was giving them visibility, not just improving the tutorials."
       }
     ],
     "nextStepsTitle": "Próxima iteración",

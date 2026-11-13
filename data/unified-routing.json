@@ -129,8 +129,8 @@
         "number": "01",
         "title": "Acelerar la planificación",
         "titleEn": "Speed up planning",
-        "meta": "Meta: 30% menos tiempo",
-        "metaEn": "Goal: 30% less time",
+        "meta": "Criterio de éxito: 30% menos tiempo",
+        "metaEn": "Success criterion: 30% less time",
         "description": "Liberar tiempo del equipo de planificación en cada ciclo de ruteo",
         "descriptionEn": "Free up planning team time in every routing cycle",
         "kpi": "minutos desde la configuración inicial hasta confirmar y enviar las rutas a la app de conductores · Fuente: prueba comparativa en prototipo y telemetría en producción",
@@ -140,8 +140,8 @@
         "number": "02",
         "title": "Simplificar la edición manual",
         "titleEn": "Simplify manual editing",
-        "meta": "Meta: 45% menos pasos",
-        "metaEn": "Goal: 45% fewer steps",
+        "meta": "Criterio de éxito: 45% menos pasos",
+        "metaEn": "Success criterion: 45% fewer steps",
         "description": "Evitar que corregir a mano sea la parte más lenta del proceso (42% del tiempo hoy)",
         "descriptionEn": "Stop manual corrections from being the slowest part of the process (42% of time today)",
         "kpi": "clics para reasignar 15 pedidos entre rutas con restricciones · Fuente: prueba comparativa en prototipo (n = 12)",
@@ -151,8 +151,8 @@
         "number": "03",
         "title": "Reducir errores críticos",
         "titleEn": "Reduce critical errors",
-        "meta": "Meta: 60% menos errores",
-        "metaEn": "Goal: 60% fewer errors",
+        "meta": "Criterio de éxito: 60% menos errores",
+        "metaEn": "Success criterion: 60% fewer errors",
         "description": "Evitar rutas sin guardar, pedidos huérfanos y sobrecapacidad sin detectar",
         "descriptionEn": "Prevent unsaved routes, orphaned orders and undetected capacity overflows",
         "kpi": "sesiones que terminan con cambios sin guardar o restricciones sin alertar ÷ sesiones totales · Fuente: prueba comparativa en prototipo y telemetría en producción",
@@ -357,7 +357,7 @@
         "name": "Resumen de planificación",
         "nameEn": "Planning summary",
         "problem": "Info poco relevante, no escala",
-        "problemEn": "Low-relevance info, doesn't scale",
+        "problemEn": "Low-relevance info, doesn’t scale",
         "solution": "Formato tabular con métricas operativas y exportación directa",
         "solutionEn": "Tabular format with operational metrics and direct export"
       },
@@ -581,7 +581,7 @@
         "title": "Confirmar rutas",
         "titleEn": "Confirm routes",
         "description": "Puedes confirmar rutas generando una notificación push a los conductores que reciben la ruta en su app móvil para aceptarla. Pueden confirmarse de manera individual, no solo grupal, por lo que no hay que esperar a que todas las rutas estén listas.",
-        "descriptionEn": "You can confirm routes, sending a push notification to drivers who receive the route in their mobile app to accept it. Routes can be confirmed individually, not just as a group, so there's no need to wait for all routes to be ready.",
+        "descriptionEn": "You can confirm routes, sending a push notification to drivers who receive the route in their mobile app to accept it. Routes can be confirmed individually, not just as a group, so there’s no need to wait for all routes to be ready.",
         "srcs": [
           "data/images/unified-routing-mockup-7.webp",
           "data/images/unified-routing-mockup-8.webp"
@@ -609,26 +609,28 @@
     "subtitleEn": "Live results after 30 days compared with the baseline. Bulk-edit steps were measured in the prototype only.",
     "impact": [
       {
-        "metric": "32%",
-        "label": "Planificación más rápida",
-        "labelEn": "Faster planning",
-        "description": "De 24 a 16,4 min por planificación.",
-        "descriptionEn": "From 24 to 16.4 min per planning run."
+        "metric": "24 → 16,4 min",
+        "label": "Planificación más rápida (criterio de éxito: 30% menos)",
+        "labelEn": "Faster planning (Success criterion: 30% less)",
+        "description": "32% menos tiempo por planificación.",
+        "descriptionEn": "32% less time per planning run.",
+        "metricEn": "24 → 16.4 min"
       },
       {
-        "metric": "54%",
-        "label": "Menos pasos en edición masiva",
-        "labelEn": "Fewer steps in bulk edits",
-        "description": "De 28 a 13 clics para reasignar 15 pedidos. Medido en el prototipo (n = 12).",
-        "descriptionEn": "From 28 to 13 clicks to reassign 15 orders. Measured in the prototype (n = 12).",
-        "metricEn": "54%"
+        "metric": "28 → 13 clics",
+        "label": "Menos pasos en edición masiva (criterio de éxito: 45% menos)",
+        "labelEn": "Fewer steps in bulk edits (Success criterion: 45% fewer)",
+        "description": "54% menos clics para reasignar 15 pedidos. Medido en el prototipo (n = 12).",
+        "descriptionEn": "54% fewer clicks to reassign 15 orders. Measured in the prototype (n = 12).",
+        "metricEn": "28 → 13 clicks"
       },
       {
-        "metric": "75%",
-        "label": "Menos errores críticos",
-        "labelEn": "Fewer critical errors",
-        "description": "De 38% a 9,5% de las sesiones con error crítico.",
-        "descriptionEn": "From 38% to 9.5% of sessions with a critical error."
+        "metric": "38% → 9,5%",
+        "label": "Menos errores críticos (criterio de éxito: 60% menos)",
+        "labelEn": "Fewer critical errors (Success criterion: 60% fewer)",
+        "description": "75% menos: las sesiones con error crítico pasaron de 38% a 9,5%.",
+        "descriptionEn": "75% fewer: sessions with a critical error dropped from 38% to 9.5%.",
+        "metricEn": "38% → 9.5%"
       }
     ],
     "learnings": [
@@ -646,7 +648,7 @@
       },
       {
         "title": "Los datos en vivo muestran lo que el prototipo no",
-        "titleEn": "Live data shows what the prototype can't",
+        "titleEn": "Live data shows what the prototype can’t",
         "description": "Al revisar más de 60 grabaciones marcadas de Hotjar vimos un patrón cualitativo: varios despachadores dudaban al alternar entre mapa y tabla en horas punta. En el segundo ciclo sumamos el atajo Cmd/Ctrl + M y un texto de ayuda emergente (DTLM-418).",
         "descriptionEn": "Reviewing 60+ flagged Hotjar recordings showed a qualitative pattern: several dispatchers hesitated when switching between map and table at peak hours. In Sprint 2 we added the Cmd/Ctrl + M shortcut and a tooltip (DTLM-418)."
       }
@@ -676,7 +678,7 @@
     "question": "Siguiente caso: Monitoreo de tutoriales",
     "questionEn": "Next case: Tutorial monitoring",
     "description": "Panel para seguir el entrenamiento de cada equipo en la plataforma",
-    "descriptionEn": "Admin panel to track each team's platform training",
+    "descriptionEn": "Admin panel to track each team’s platform training",
     "buttonLabel": "Ver siguiente proyecto",
     "buttonLabelEn": "See next project",
     "buttonHref": "/dt-tutorial-monitoring"

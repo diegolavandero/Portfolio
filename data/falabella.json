@@ -71,13 +71,13 @@
         "name": "1 · Stock",
         "nameEn": "1 · Stock",
         "description": "Tras elegir el piso, el sistema avisaba que no había esos m² disponibles en línea.",
-        "descriptionEn": "After picking the floor, the system said those m² weren't available online."
+        "descriptionEn": "After picking the floor, the system said those m² weren’t available online."
       },
       {
         "name": "2 · Aptitud",
         "nameEn": "2 · Suitability",
         "description": "En las especificaciones se veía que no era apto para mascotas.",
-        "descriptionEn": "The specs revealed it wasn't suitable for pets."
+        "descriptionEn": "The specs revealed it wasn’t suitable for pets."
       },
       {
         "name": "3 · Venta cruzada",
@@ -102,7 +102,7 @@
     "consequencesEn": [
       "Frustration and price surprise in the cart",
       "Abandonment before payment",
-      "Returns from shortages or accessories that didn't fit"
+      "Returns from shortages or accessories that didn’t fit"
     ],
     "objectivesTitle": "Objetivos",
     "objectivesTitleEn": "Goals",
@@ -129,8 +129,8 @@
         "number": "03",
         "title": "Menos devoluciones",
         "titleEn": "Fewer returns",
-        "meta": "Meta: 19% → ~15% (20% menos, en términos relativos)",
-        "metaEn": "Goal: 19% → ~15% (20% lower in relative terms)",
+        "meta": "Criterio de éxito: 19% → ~15% (20% menos, en términos relativos)",
+        "metaEn": "Success criterion: 19% → ~15% (20% lower in relative terms)",
         "description": "Hoy cerca del 19% de las ventas en línea se devuelve. Un kit completo y coherente apunta a faltantes e incompatibilidad.",
         "descriptionEn": "Today about 19% of online sales are returned. A complete, consistent kit targets shortages and incompatibility."
       },
@@ -188,12 +188,12 @@
         "contextEn": "Below it, the cross-sell offers two mounting adhesives."
       },
       {
-        "text": "Espesor: 8.3  ·  3.2 mm",
-        "textEn": "Thickness: 8.3  ·  3.2 mm",
+        "text": "Espesor: 8,3 · 3,2 mm",
+        "textEn": "Thickness: 8.3 · 3.2 mm",
         "author": "Comparador de atributos",
         "authorEn": "Attribute comparator",
         "context": "Datos sin normalizar: no se pueden comparar de verdad.",
-        "contextEn": "Unnormalized data: can't be truly compared."
+        "contextEn": "Unnormalized data: can’t be truly compared."
       },
       {
         "text": "Arma tu Proyecto · +2",
@@ -244,7 +244,7 @@
           "El precio por m² la confunde cuando las cajas cubren áreas distintas"
         ],
         "painPointsEn": [
-          "Doesn't know what waste margin is or how much to add",
+          "Doesn’t know what waste margin is or how much to add",
           "Price per m² confuses her when boxes cover different areas"
         ],
         "behaviors": [
@@ -267,7 +267,7 @@
           "Generar un kit completo con accesorios validados para no volver a la tienda"
         ],
         "goalsEn": [
-          "Quickly calculate the exact amount for a client's project",
+          "Quickly calculate the exact amount for a client’s project",
           "Generate a complete kit with validated accessories to avoid return trips"
         ],
         "painPoints": [
@@ -276,7 +276,7 @@
         ],
         "painPointsEn": [
           "Wastes time manually calculating waste and accessories",
-          "The attribute comparator doesn't normalize units, making real comparison difficult"
+          "The attribute comparator doesn’t normalize units, making real comparison difficult"
         ],
         "behaviors": [
           "Compra en volumen, varias veces al mes",
@@ -318,7 +318,7 @@
         "name": "Confirmación",
         "nameEn": "Confirmation",
         "problem": "No sabe traducir su espacio a requisitos técnicos.",
-        "problemEn": "Can't translate their space into technical requirements.",
+        "problemEn": "Can’t translate their space into technical requirements.",
         "solution": "Tránsito, humedad y mascotas o niños se derivan por IA; el usuario confirma o corrige.",
         "solutionEn": "Traffic, moisture and pets or kids are derived by AI; the user confirms or corrects."
       },
@@ -367,7 +367,7 @@
         "title": "Ventajas y desventajas a la vista",
         "titleEn": "Pros and cons in view",
         "description": "Tres opciones (economía, resistencia, look) que explican por qué se recomiendan.",
-        "descriptionEn": "Three options (economy, durability, look) that explain why they're recommended."
+        "descriptionEn": "Three options (economy, durability, look) that explain why they’re recommended."
       }
     ],
     "decisions": [
@@ -391,9 +391,9 @@
         "title": "IA ambiental, no una funcionalidad aparte",
         "titleEn": "Ambient AI, not a separate feature",
         "justification": "La IA normaliza atributos de catálogo y deriva los supuestos de uso. Se señala con un indicador “Generado con IA” donde aporta, sin botón propio.",
-        "justificationEn": "AI normalizes catalog attributes and derives usage assumptions. It's flagged with a “Generated with AI” indicator where it helps, with no dedicated button.",
+        "justificationEn": "AI normalizes catalog attributes and derives usage assumptions. It’s flagged with a “Generated with AI” indicator where it helps, with no dedicated button.",
         "tradeoff": "El indicador no distingue entre tipos de IA; es suficiente para un producto mínimo viable.",
-        "tradeoffEn": "The indicator doesn't distinguish between AI types; enough for an MVP."
+        "tradeoffEn": "The indicator doesn’t distinguish between AI types; enough for an MVP."
       }
     ]
   },
@@ -433,7 +433,7 @@
         "title": "Invertir la lógica vale más que parchar la venta cruzada",
         "titleEn": "Inverting the logic beats patching the cross-sell",
         "description": "El problema no eran las sugerencias, sino el orden: elegir primero y validar después.",
-        "descriptionEn": "The problem wasn't the suggestions, it was the order: choosing first and validating later."
+        "descriptionEn": "The problem wasn’t the suggestions, it was the order: choosing first and validating later."
       },
       {
         "title": "Reutilizar un patrón existente baja el costo",
@@ -535,7 +535,7 @@
         "title": "Paso 3: Tus 3 opciones que sí sirven",
         "titleEn": "Step 3: Your 3 options that actually work",
         "description": "Tres proyectos de distinto precio, con por qué se recomiendan y precio final.",
-        "descriptionEn": "Three projects at different prices, with why they're recommended and a final price.",
+        "descriptionEn": "Three projects at different prices, with why they’re recommended and a final price.",
         "src": "data/images/falabella-04-opciones.webp?v=2",
         "device": "mobile",
         "badge": null,
