@@ -163,8 +163,8 @@
     "stats": [
       {
         "value": "8,4 min",
-        "description": "Tiempo promedio de ejecución pre-migración",
-        "descriptionEn": "Average execution time pre-migration",
+        "description": "Tiempo total promedio de sesión para obtener un reporte complejo antes de la migración (incluye las re-ejecuciones tras el timeout síncrono de 5 minutos del navegador)",
+        "descriptionEn": "Average total session time to obtain a complex report pre-migration (including duplicate re-runs triggered after hitting the 5-minute synchronous browser timeout)",
         "valueEn": "8.4 min"
       },
       {
@@ -277,8 +277,8 @@
     "stats": [
       {
         "value": "8,4 min",
-        "label": "Tiempo de ejecución promedio de reportes complejos pre-migración",
-        "labelEn": "Average execution time of complex reports pre-migration",
+        "label": "Tiempo total promedio de sesión para obtener un reporte complejo antes de la migración (incluye las re-ejecuciones tras el timeout síncrono de 5 minutos del navegador)",
+        "labelEn": "Average total session time to obtain a complex report pre-migration (including duplicate re-runs triggered after hitting the 5-minute synchronous browser timeout)",
         "valueEn": "8.4 min"
       },
       {
@@ -361,8 +361,8 @@
         },
         {
           "type": "negative",
-          "text": "Timeout después de 5 minutos sin mensaje accionable",
-          "textEn": "Timeout after 5 minutes without actionable message"
+          "text": "El gateway HTTP corta la conexión del navegador a los 5 minutos sin un mensaje accionable, y obliga a los usuarios a volver a lanzar la consulta",
+          "textEn": "5-minute HTTP gateway timeout cuts the browser connection without an actionable message, forcing users to re-trigger the query"
         },
         {
           "type": "positive",
@@ -568,8 +568,8 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Las métricas de descubrimiento (8,4 min de ejecución promedio, 34 timeouts en un cierre de mes y 2,8× de re-ejecuciones) se auditaron en 30 días de logs del sistema anterior y grabaciones de Hotjar. La prueba en staging fue cruzada e intrasujeto (n = 42 usuarios en dos grupos contrabalanceados de 21, durante 2 semanas: 1 semana de control síncrono y 1 semana de tratamiento asíncrono). El abandono en reportes de más de 2 min corresponde a 127 de 140 solicitudes síncronas (91%) contra 52 de 148 asíncronas (35%); la finalización de punta a punta, a 151 de 260 flujos síncronos (58%) contra 215 de 275 asíncronos (78%); las re-ejecuciones bajaron de 2,8× a 1,1×. La preferencia fue 79% (33/42) asíncrono contra 21% (9/42) síncrono. El volumen de tickets (48 → 36) compara los registros de soporte de 30 días antes y 30 días después del lanzamiento. Es una validación direccional.",
-    "subtitleEn": "Discovery metrics (8.4 min avg. execution, 34 month-end timeouts, 2.8× re-runs) were audited from 30 days of legacy server logs and Hotjar recordings. The staging test was a within-subject crossover (n = 42 users split into two counterbalanced groups of 21 over 2 weeks: 1 week synchronous control vs. 1 week asynchronous treatment). Abandonment on >2 min reports reflects 127/140 sync requests (91%) vs. 52/148 async requests (35%); end-to-end completion reflects 151/260 sync workflows (58%) vs. 215/275 async workflows (78%); duplicate re-runs dropped from 2.8× to 1.1×. Preference was 79% (33/42) async vs. 21% (9/42) sync. Support ticket volume (48 → 36) compares 30-day pre- and post-release support logs. This is directional validation.",
+    "subtitle": "Las métricas de descubrimiento (8,4 min de tiempo total de sesión por reporte complejo, 34 timeouts en un cierre de mes y 2,8× de re-ejecuciones) se auditaron en 30 días de logs del sistema anterior y grabaciones de Hotjar. La prueba en staging fue cruzada e intrasujeto (n = 42 usuarios en dos grupos contrabalanceados de 21, durante 2 semanas: 1 semana de control síncrono y 1 semana de tratamiento asíncrono). El abandono en reportes de más de 2 min corresponde a 127 de 140 solicitudes síncronas (91%) contra 52 de 148 asíncronas (35%); la finalización de punta a punta, a 151 de 260 flujos síncronos (58%) contra 215 de 275 asíncronos (78%); las re-ejecuciones bajaron de 2,8× a 1,1×. La preferencia fue 79% (33/42) asíncrono contra 21% (9/42) síncrono. El volumen de tickets (48 → 36) compara los registros de soporte de 30 días antes y 30 días después del lanzamiento. Es una validación direccional.",
+    "subtitleEn": "Discovery metrics (8.4 min avg. total session time per complex report, 34 month-end timeouts, 2.8× re-runs) were audited from 30 days of legacy server logs and Hotjar recordings. The staging test was a within-subject crossover (n = 42 users split into two counterbalanced groups of 21 over 2 weeks: 1 week synchronous control vs. 1 week asynchronous treatment). Abandonment on >2 min reports reflects 127/140 sync requests (91%) vs. 52/148 async requests (35%); end-to-end completion reflects 151/260 sync workflows (58%) vs. 215/275 async workflows (78%); duplicate re-runs dropped from 2.8× to 1.1×. Preference was 79% (33/42) async vs. 21% (9/42) sync. Support ticket volume (48 → 36) compares 30-day pre- and post-release support logs. This is directional validation.",
     "impactTitle": "Impacto medido",
     "impactTitleEn": "Measured impact",
     "impact": [
