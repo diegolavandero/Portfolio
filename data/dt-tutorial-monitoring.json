@@ -256,8 +256,8 @@
       {
         "name": "Piloto de 60 días",
         "nameEn": "60-day pilot",
-        "description": "5 cuentas, 18 administradores y 310 operadores. Combiné eventos de producto con Hotjar (mapas de calor y grabaciones).",
-        "descriptionEn": "5 accounts, 18 admins and 310 operators. I combined product events with Hotjar (heatmaps and recordings).",
+        "description": "5 cuentas, 18 administradores y 310 operadores. Medí con eventos de producto y registros de base de datos, y usé Hotjar para observar el uso de filtros y vistas.",
+        "descriptionEn": "5 accounts, 18 admins and 310 operators. I measured with product events and database logs, and used Hotjar to observe how filters and views were used.",
         "finding": "Escanean de arriba hacia abajo: KPIs, distribución y tabla. Hicieron clics repetidos sobre rezagados para enviarles un recordatorio.",
         "findingEn": "They scan top-down: KPIs, distribution and table. They rage-clicked on lagging operators to send them a reminder."
       }
@@ -400,8 +400,8 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Vista del administrador en el piloto de 60 días: 5 cuentas y 18 administradores",
-    "subtitleEn": "Admin view in the 60-day pilot: 5 accounts and 18 admins",
+    "subtitle": "Piloto de 60 días con 18 administradores. Medido con eventos de producto, registros de base de datos y Hotjar; el seguimiento, con check-ins de administradores.",
+    "subtitleEn": "60-day pilot with 18 admins. Measured with product events, database logs and Hotjar; follow-up measured with admin check-ins.",
     "impact": [
       {
         "icon": "👥",
@@ -416,8 +416,8 @@
         "label": "Detección más rápida",
         "labelEn": "Faster detection",
         "metric": "60%",
-        "description": "De 120 h (5 días) a 48 h hasta la primera acción del administrador.",
-        "descriptionEn": "From 120 h (5 days) to 48 h until the admin's first action."
+        "description": "De 120 h (5 días) a 48 h entre crear un operador y la primera acción del administrador. Tickets de estado: 71% menos.",
+        "descriptionEn": "From 120 h (5 days) to 48 h between creating an operator and the admin's first action. Status-check tickets down 71%."
       },
       {
         "icon": "🔎",
@@ -432,8 +432,8 @@
         "label": "Seguimiento activo",
         "labelEn": "Active follow-up",
         "metric": "84%",
-        "description": "de los rezagados atendidos en 72 h (antes 22%). Tickets de consulta de estado: 71% menos.",
-        "descriptionEn": "of lagging operators addressed within 72 h (up from 22%). Status-check tickets down 71%."
+        "description": "de los rezagados tuvo seguimiento en 72 h (antes 22%), según check-ins con los administradores contrastados con la telemetría de cursos.",
+        "descriptionEn": "of lagging operators got follow-up within 72 h (up from 22%), based on admin check-ins cross-checked with course telemetry."
       }
     ],
     "learningsTitle": "Aprendizajes clave",
