@@ -61,7 +61,7 @@ function Header() {
         <nav aria-label={ui.nav} className="flex flex-wrap items-center gap-x-7 gap-y-2">
           <NavLink to="/" end className={navCls}>{ui.projects}</NavLink>
           <NavLink to="/about" className={navCls}>{ui.about}</NavLink>
-          <div role="group" aria-label={ui.langGroup} className="inline-flex gap-0.5 rounded-full border border-line p-0.5">
+          <div role="group" aria-label={ui.langGroup} className="inline-flex gap-0.5 rounded-full border border-ctl p-0.5">
             {['es', 'en'].map((l) => (
               <button key={l} type="button" lang={l} aria-pressed={lang === l} onClick={() => setLang(l)}
                 className={`min-h-[36px] min-w-[44px] rounded-full font-mono text-xs font-medium tracking-[.06em] transition-colors ${lang === l ? 'bg-acc text-onacc' : 'text-ink2 hover:text-ink'}`}>
@@ -70,7 +70,7 @@ function Header() {
             ))}
           </div>
           <button type="button" onClick={toggle} aria-pressed={dark} aria-label={ui.themeDark}
-            className="grid h-9 w-11 place-items-center rounded-full border border-line text-ink2 transition-colors hover:text-ink">
+            className="grid h-9 w-11 place-items-center rounded-full border border-ctl text-ink2 transition-colors hover:text-ink">
             {dark ? <Sun /> : <Moon />}
           </button>
         </nav>

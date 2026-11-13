@@ -9,7 +9,7 @@ export default {
     extend: {
       colors: {
         paper: v('paper'), card: v('card'), head: v('head'), ink: v('ink'), ink2: v('ink2'),
-        line: v('line'), soft: v('soft'), muted: v('muted'), node: v('node'),
+        line: v('line'), ctl: v('ctl'), soft: v('soft'), muted: v('muted'), node: v('node'),
         acc: v('acc'), acctext: v('acc-text'), onacc: v('on-acc'), ok: v('ok')
       },
       fontFamily: {

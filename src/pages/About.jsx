@@ -25,7 +25,7 @@ export default function About() {
               <div className="flex items-baseline gap-2 py-3"><dt className="font-mono text-[13px] text-ink2">{ui.location}</dt><span aria-hidden="true" className="flex-1 -translate-y-1 border-b border-dotted border-line" /><dd className="m-0 font-semibold">{c.location}</dd></div>
               <div className="flex flex-wrap items-center gap-2 py-3"><dt className="font-mono text-[13px] text-ink2">{ui.email}</dt><span aria-hidden="true" className="flex-1 -translate-y-1 border-b border-dotted border-line" />
                 <dd className="m-0 flex items-center gap-2 font-semibold"><a className="link-u" href={`mailto:${c.email}`}>{c.email}</a>
-                  <button type="button" onClick={() => copy(c.email)} className="min-h-[36px] rounded-full border border-line px-3 font-mono text-xs text-ink2 hover:text-ink">{copied ? ui.copied : ui.copy}</button>
+                  <button type="button" onClick={() => copy(c.email)} className="min-h-[36px] rounded-full border border-ctl px-3 font-mono text-xs text-ink2 hover:text-ink">{copied ? ui.copied : ui.copy}</button>
                   <span className="sr-only" aria-live="polite">{copied ? ui.copied : ''}</span></dd></div>
             </dl>
               <div className="flex flex-wrap gap-x-6 py-3">

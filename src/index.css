@@ -5,15 +5,15 @@
 /* Tokens (RGB) — contraste medido en ambos temas: ver CLAUDE.md, sección v2 */
 :root {
   --paper: 247 247 247; --card: 255 255 255; --head: 255 255 255;
-  --ink: 21 24 29; --ink2: 75 82 96; --line: 220 220 218; --soft: 236 236 234;
+  --ink: 21 24 29; --ink2: 75 82 96; --line: 220 220 218; --ctl: 134 139 149; --soft: 236 236 234;
   --muted: 107 113 128; --node: 201 201 198;
   --acc: 205 33 67; --acc-text: 205 33 67; --on-acc: 255 255 255; --ok: 21 24 29;
   color-scheme: light;
 }
 .dark {
   --paper: 15 17 21; --card: 23 26 32; --head: 15 17 21;
-  --ink: 238 236 230; --ink2: 169 174 184; --line: 43 48 56; --soft: 28 32 39;
-  --muted: 140 144 153; --node: 58 63 72;
+  --ink: 238 236 230; --ink2: 169 174 184; --line: 58 64 74; --ctl: 112 118 129; --soft: 28 32 39;
+  --muted: 140 144 153; --node: 74 80 90;
   --acc: 205 33 67; --acc-text: 224 117 139; --on-acc: 255 255 255; --ok: 238 236 230;
   color-scheme: dark;
 }
