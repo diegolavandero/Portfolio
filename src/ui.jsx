@@ -35,7 +35,7 @@ export function Layout({ children }) {
       <a href="#contenido" className="absolute left-4 -top-20 z-[60] rounded bg-ink px-4 py-3 font-semibold text-paper no-underline focus:top-3">{ui.skip}</a>
       <Header />
       <main id="contenido" tabIndex={-1} className="outline-none">{children}</main>
-      <SiteFooter upButton={<a href="#top" aria-label={ui.up}
+      <SiteFooter upButton={<a href="#top" aria-label={ui.up} onClick={(e) => { e.preventDefault(); const calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches; window.scrollTo({ top: 0, behavior: calm ? 'auto' : 'smooth' }); }}
         className="fixed bottom-4 right-4 z-40 grid h-[52px] w-[52px] place-items-center rounded-full bg-acc text-onacc shadow-[0_12px_24px_-10px_rgba(21,24,29,.5)] transition-transform hover:-translate-y-0.5 sm:bottom-7 sm:right-7">
         <svg className="h-[22px] w-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path d="M12 20V5M6 11l6-6 6 6" /></svg>
       </a>} />

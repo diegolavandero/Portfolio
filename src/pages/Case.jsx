@@ -621,12 +621,23 @@ function Designs({ g }) {
 }
 
 /* ── 04 Medir ────────────────────────────────────────────────────────────── */
-function CriterionChart({ c, label, met, from, to }) {
-  const W = 300, P = 14, x = (v) => P + (v / c.max) * (W - 2 * P);
+function CriterionChart({ c, label }) {
+  // El ancho real se mide para dibujar en píxeles: así los círculos y las líneas punteadas no se deforman en anchos intermedios.
+  const ref = useRef(null);
+  const [W, setW] = useState(300);
+  useEffect(() => {
+    const el = ref.current; if (!el) return undefined;
+    const set = () => setW(Math.max(120, Math.round(el.getBoundingClientRect().width)));
+    set();
+    if (typeof ResizeObserver === 'undefined') return undefined;
+    const ro = new ResizeObserver(set); ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+  const P = 14, x = (v) => P + (v / c.max) * (W - 2 * P);
   const xf = x(c.from), xt = x(c.to);
   const band = Array.isArray(c.criterion);
   return (
-    <svg viewBox={`0 0 ${W} 56`} preserveAspectRatio="none" role="img" aria-label={label} className="block h-14 w-full overflow-visible">
+    <svg ref={ref} viewBox={`0 0 ${W} 56`} width="100%" height="56" role="img" aria-label={label} className="block h-14 w-full overflow-visible">
       <line x1={P} y1="28" x2={W - P} y2="28" stroke="rgb(var(--line))" strokeWidth="2" />
       {band
         ? <rect x={x(c.criterion[0])} y="14" width={x(c.criterion[1]) - x(c.criterion[0])} height="28" rx="2" fill="rgb(var(--acc) / .16)" stroke="rgb(var(--acc-text))" strokeWidth="1.5" strokeDasharray="3 3" />
