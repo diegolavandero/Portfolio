@@ -169,10 +169,10 @@
       {
         "name": "Observación del flujo actual",
         "nameEn": "Current-flow observation",
-        "description": "Observé a 6 operadores (2 jefes de planificación, 2 jefes de distribución y 2 despachadores senior) durante la planificación de la mañana, pensando en voz alta.",
-        "descriptionEn": "I observed 6 operators (2 heads of planning, 2 distribution managers and 2 senior dispatchers) during morning planning, thinking aloud.",
-        "finding": "Línea base: 24 min por planificación, 42% del tiempo en reasignar a mano, 38% de sesiones con error crítico y 11 cambios de contexto.",
-        "findingEn": "Baseline: 24 min per planning run, 42% of time spent reassigning by hand, 38% of sessions with a critical error and 11 context switches."
+        "description": "Observé 24 sesiones reales de planificación con 6 operadores (2 jefes de planificación, 2 jefes de distribución y 2 despachadores senior), 4 ciclos por operador, pensando en voz alta.",
+        "descriptionEn": "I observed 24 live planning sessions with 6 operators (2 heads of planning, 2 distribution managers and 2 senior dispatchers), 4 cycles per operator, thinking aloud.",
+        "finding": "Línea base: 24 min por planificación, 42% del tiempo en reasignar a mano, 38% de sesiones con error crítico (9 de 24), 11 cambios de contexto y 28 clics para reasignar ~15 pedidos.",
+        "findingEn": "Baseline: 24 min per planning run, 42% of time spent reassigning by hand, 38% of sessions with a critical error (9 of 24), 11 context switches and 28 clicks to reassign ~15 orders."
       },
       {
         "name": "Usuarios sintéticos y arquitectura",
