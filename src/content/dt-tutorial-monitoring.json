@@ -135,8 +135,8 @@
     "subtitleEn": "Switch between Summary and By tutorial, sort and filter the table, and use the variants to toggle between the admin view and a no-access user.",
     "badge": "Prototipo funcional",
     "badgeEn": "Functional prototype",
-    "srcEs": "/prototypes/dt-ds/index.html#/monitoreo",
-    "srcEn": "/prototypes/dt-ds/index.html?lang=en#/monitoreo",
+    "srcEs": "/prototypes/dt-ds/#/monitoreo",
+    "srcEn": "/prototypes/dt-ds/?lang=en#/monitoreo",
     "repoUrl": "https://github.com/diegolavandero/dt-design-system-package/tree/main/src/screens/TutorialMonitoring",
     "height": 860,
     "controls": {

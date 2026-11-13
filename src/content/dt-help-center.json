@@ -296,8 +296,8 @@
     "subtitleEn": "Open the sidebar from the tutorials chip in the top bar, or from the tutorial icon next to the “Orders/guides” description. Watch the video, take the quiz and watch your progress advance. Use the variants to see the other states.",
     "badge": "Prototipo funcional",
     "badgeEn": "Functional prototype",
-    "srcEs": "/prototypes/dt-ds/index.html#/ayuda",
-    "srcEn": "/prototypes/dt-ds/index.html?lang=en#/ayuda",
+    "srcEs": "/prototypes/dt-ds/#/ayuda",
+    "srcEn": "/prototypes/dt-ds/?lang=en#/ayuda",
     "repoUrl": "https://github.com/diegolavandero/dt-design-system-package/tree/main/src/screens/HelpCenter",
     "height": 860,
     "controls": {

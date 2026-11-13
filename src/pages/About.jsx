@@ -50,7 +50,7 @@ export default function About() {
 
       <section aria-labelledby="h-exp" className="wrap pt-24">
         <ChapterHead id="h-exp" num="02" word={pick(a, 'experienceTitle')} />
-        <ol className="tl m-0 flex list-none flex-col gap-14 p-0">
+        <ol className="tl m-0 flex list-none flex-col gap-14">
           {(a.experience || []).map((x, i) => (
             <li key={i} className="node">
               <p className="cap m-0 mb-2">{pick(x, 'period')}</p>

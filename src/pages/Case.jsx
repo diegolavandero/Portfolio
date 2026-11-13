@@ -1,7 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import { content, img, route, splitCrit, splitParen, stopNumber, useLang, usePick, useUI } from '../lib.jsx';
 import NotFound from './NotFound.jsx';
-import { Arrow, ArrowOut, Bullets, ChapterHead, Check, Count, Cross, Disclosure, Fields, Media, Metric, fitTitle } from '../ui.jsx';
+import { Arrow, ArrowOut, Bullets, ChapterHead, Check, Count, Cross, Disclosure, Fields, HeroStage, Media, Metric, fitTitle } from '../ui.jsx';
 
 export default function Case() {
   const { slug } = useParams();
@@ -39,7 +39,7 @@ export default function Case() {
 
       {hasUnderstand && (
         <section id="entender" aria-labelledby="h-entender" className="wrap pb-6 pt-24 md:pt-28">
-          <ChapterHead id="h-entender" num={chap('understand').num} word={ui.ch.understand} sub={pick(d.problemAndObjectives, 'subtitle') || ui.chSub.understand} />
+          <ChapterHead id="h-entender" num={chap('understand').num} word={ui.ch.understand} sub={pick(d.problemAndObjectives, 'subtitle') || ui.chSub.understand} fallback={ui.chSub.understand} />
           {d.problemAndObjectives && <Problem p={d.problemAndObjectives} />}
           {d.personas && <Personas p={d.personas} />}
           {d.journeyMap && <Journey j={d.journeyMap} />}
@@ -48,7 +48,7 @@ export default function Case() {
 
       {hasResearch && (
         <section id="investigar" aria-labelledby="h-investigar" className="wrap pb-6 pt-24 md:pt-28">
-          <ChapterHead id="h-investigar" num={chap('research').num} word={ui.ch.research} sub={pick(d.uxResearch, 'subtitle') || ui.chSub.research} />
+          <ChapterHead id="h-investigar" num={chap('research').num} word={ui.ch.research} sub={pick(d.uxResearch, 'subtitle') || ui.chSub.research} fallback={ui.chSub.research} />
           {d.uxResearch && <Research u={d.uxResearch} />}
           {d.quantitativeAnalysis && <Quantitative q={d.quantitativeAnalysis} />}
           {d.abTesting && <Preference a={d.abTesting} />}
@@ -60,7 +60,7 @@ export default function Case() {
 
       {hasDesign && (
         <section id="disenar" aria-labelledby="h-disenar" className="wrap pb-6 pt-24 md:pt-28">
-          <ChapterHead id="h-disenar" num={chap('design').num} word={ui.ch.design} sub={pick(d.solution, 'subtitle') || ui.chSub.design} />
+          <ChapterHead id="h-disenar" num={chap('design').num} word={ui.ch.design} sub={pick(d.solution, 'subtitle') || ui.chSub.design} fallback={ui.chSub.design} />
           {d.solution && <Solution s={d.solution} />}
           {d.livePrototype && <LivePrototype p={d.livePrototype} title={pick(d, 'title')} />}
           {d.designs && <Designs g={d.designs} />}
@@ -69,7 +69,7 @@ export default function Case() {
 
       {hasMeasure && (
         <section id="medir" aria-labelledby="h-medir" className="wrap pb-6 pt-24 md:pt-28">
-          <ChapterHead id="h-medir" num={chap('measure').num} word={ui.ch.measure} sub={pick(r, 'subtitle') || ui.chSub.measure} />
+          <ChapterHead id="h-medir" num={chap('measure').num} word={ui.ch.measure} sub={pick(r, 'subtitle') || ui.chSub.measure} fallback={ui.chSub.measure} noteLabel={ui.howMeasured} />
           <Results r={r} />
         </section>
       )}
@@ -105,16 +105,10 @@ function CaseHero({ d, slug }) {
         </h1>
         {pick(h, 'subtitle') && <p className="mt-5 max-w-[48ch] text-[19px] font-semibold leading-snug md:text-[21px]">{pick(h, 'subtitle')}</p>}
       </div>
-      <div className="grid lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]">
-        <div className="relative min-h-[260px] overflow-hidden bg-soft lg:min-h-[480px]">
-          {heroSrc && <img src={img(heroSrc)} alt={pick(d.heroImage || {}, 'placeholder') || title} className="absolute inset-0 h-full w-full object-contain p-6 lg:p-10" />}
-        </div>
-        <div className="relative flex flex-col justify-center gap-6 overflow-hidden px-6 py-10 lg:px-14">
-          <span aria-hidden="true" className="blob -bottom-52 -right-44 w-[400px] bg-soft" />
-          {pick(h, 'description') && <p className="relative m-0 max-w-[48ch] text-base leading-relaxed text-ink2">{pick(h, 'description')}</p>}
-          {specs.length > 0 && <div className="relative"><Fields items={specs} /></div>}
-        </div>
-      </div>
+      <HeroStage src={heroSrc && img(heroSrc)} alt={pick(d.heroImage || {}, 'placeholder') || title}>
+        {pick(h, 'description') && <p className="m-0 max-w-[48ch] text-base leading-relaxed text-ink2">{pick(h, 'description')}</p>}
+        {specs.length > 0 && <Fields items={specs} grid />}
+      </HeroStage>
     </header>
   );
 }

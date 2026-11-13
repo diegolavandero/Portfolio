@@ -84,7 +84,7 @@ export const UI = {
     goalsPersona: 'Objetivos', pains: 'Dolores', behaviors: 'Comportamientos', persona: 'Persona',
     of: 'de', openProto: 'Ver código del prototipo', protoTitle: 'Prototipo interactivo de', backHome: 'Volver a proyectos',
     notFoundTitle: 'Esta parada no existe', notFoundText: 'La página que buscas no está en la ruta.', stage: 'Etapa',
-    learnings: 'Aprendizajes', nextSteps: 'Próximos pasos', principles: 'Principios de diseño', decisions: 'Decisiones clave',
+    context: 'Contexto', learnings: 'Aprendizajes', nextSteps: 'Próximos pasos', principles: 'Principios de diseño', decisions: 'Decisiones clave',
     problem: 'Problema', solution: 'Solución', from: 'de', to: 'a', email: 'Correo', location: 'Ubicación', copy: 'Copiar', copied: 'Copiado'
   },
   en: {
@@ -110,7 +110,7 @@ export const UI = {
     goalsPersona: 'Goals', pains: 'Pain points', behaviors: 'Behaviors', persona: 'Persona',
     of: 'of', openProto: 'View prototype source', protoTitle: 'Interactive prototype of', backHome: 'Back to projects',
     notFoundTitle: 'This stop doesn’t exist', notFoundText: 'The page you’re looking for isn’t on the route.', stage: 'Stage',
-    learnings: 'Learnings', nextSteps: 'Next steps', principles: 'Design principles', decisions: 'Key decisions',
+    context: 'Context', learnings: 'Learnings', nextSteps: 'Next steps', principles: 'Design principles', decisions: 'Key decisions',
     problem: 'Problem', solution: 'Solution', from: 'from', to: 'to', email: 'Email', location: 'Location', copy: 'Copy', copied: 'Copied'
   }
 };

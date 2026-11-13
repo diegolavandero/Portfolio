@@ -111,17 +111,38 @@ export const fitTitle = (text, maxPx, widthPx, minPx) => {
 };
 
 /* ── Piezas compartidas ──────────────────────────────────────────────────── */
-export function ChapterHead({ id, num, word, sub }) {
+export function ChapterHead({ id, num, word, sub, fallback, noteLabel }) {
+  const ui = useUI();
+  const long = sub && fallback && sub.length > 240;
+  const lede = long ? fallback : sub;
   return (
-    <div className="mb-12 flex flex-wrap items-baseline gap-x-5 gap-y-3 md:mb-16">
-      <span className="eyebrow-no">{num}</span>
-      <h2 id={id} className="rise m-0 whitespace-nowrap text-[clamp(38px,4.2vw,58px)] font-extrabold leading-none tracking-[-.04em] text-acctext">{word}</h2>
-      {sub && <p className="m-0 max-w-[34ch] text-[17px] leading-normal text-ink2 md:ml-auto md:text-right md:text-[19px]">{sub}</p>}
+    <div className="mb-12 border-b border-line pb-10 md:mb-16">
+      <div className="flex items-baseline gap-5">
+        <span className="eyebrow-no">{num}</span>
+        <h2 id={id} className="rise m-0 whitespace-nowrap text-[clamp(38px,4.2vw,58px)] font-extrabold leading-none tracking-[-.04em] text-acctext">{word}</h2>
+      </div>
+      {lede && <p className="mb-0 mt-6 max-w-[68ch] text-[17px] leading-relaxed text-ink2 md:text-lg">{lede}</p>}
+      {long && (
+        <div className="mt-8 grid gap-x-10 gap-y-2 rounded border border-line bg-card p-6 md:grid-cols-[160px_minmax(0,1fr)] md:p-8">
+          <p className="cap m-0 text-ink">{noteLabel || ui.context}</p>
+          <p className="m-0 max-w-[80ch] text-[15px] leading-relaxed text-ink2">{sub}</p>
+        </div>
+      )}
     </div>
   );
 }
 
-export function Fields({ items }) {
+export function Fields({ items, grid = false }) {
+  if (grid) return (
+    <dl className="m-0 grid max-w-full gap-px overflow-hidden rounded-sm border border-line bg-line sm:grid-cols-2">
+      {items.map((f, i) => (
+        <div key={i} className={`flex min-w-0 flex-col gap-1 bg-card px-3.5 py-2.5${items.length % 2 && i === items.length - 1 ? ' sm:col-span-2' : ''}`}>
+          <dt className="cap text-[10px]">{f.label}</dt>
+          <dd className="m-0 font-mono text-[13px] font-medium">{f.value}</dd>
+        </div>
+      ))}
+    </dl>
+  );
   return (
     <dl className="m-0 flex w-fit max-w-full flex-wrap rounded-sm border border-line bg-card">
       {items.map((f, i) => (
@@ -176,6 +197,18 @@ export function Disclosure({ title, children }) {
 }
 
 /** Imagen sobre un círculo contenido dentro de su propio marco (nunca bajo texto). */
+/** Hero compartido (caso y destacado): captura alineada a la columna del título, texto a la derecha. */
+export function HeroStage({ src, alt, children, zoom = false }) {
+  return (
+    <div className="stage overflow-hidden">
+      <div className="stage-panel bg-soft">
+        <div>{src && <img src={src} alt={alt} className={`stage-img${zoom ? ' transition-transform duration-700 ease-out2 group-hover:scale-[1.02] origin-left' : ''}`} />}</div>
+      </div>
+      <div className="stage-side">{children}</div>
+    </div>
+  );
+}
+
 export function Media({ src, alt, device = 'desktop', accent = false, caption }) {
   const isMob = device === 'mobile';
   return (

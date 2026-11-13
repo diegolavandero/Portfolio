@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { content, home, img, splitParen, stopNumber, useLang, usePick, useUI } from '../lib.jsx';
-import { Arrow, Metric, fitTitle } from '../ui.jsx';
+import { Arrow, HeroStage, Metric, fitTitle } from '../ui.jsx';
 
 export default function Home() {
   const ui = useUI();
@@ -74,18 +74,12 @@ export default function Home() {
             <Link to={`/${f.slug}`} className="no-underline after:absolute after:inset-0 after:z-[2] after:content-['']">{pick(f, 'title')}</Link>
           </h2>
         </div>
-        <div className="grid lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]">
-          <div className="relative min-h-[260px] overflow-hidden bg-[#15181D] lg:min-h-[460px]">
-            <img src={img(f.image)} alt={`${ui.stop} 00: ${pick(f, 'title')}`} className="absolute inset-0 h-full w-full object-cover object-left-top transition-transform duration-700 ease-out2 group-hover:scale-[1.03]" />
-          </div>
-          <div className="relative flex flex-col justify-center gap-5 overflow-hidden px-6 py-10 lg:px-16">
-            <span aria-hidden="true" className="blob -bottom-48 -right-44 w-[380px] bg-soft" />
-            <p className="relative m-0 max-w-[32ch] text-[19px] font-semibold leading-snug">{pick(f, 'subtitle')}</p>
-            <div className="relative"><Metric metric={f.metric} /><p className="mt-1.5 text-base font-semibold">{pick(f, 'metricLabel')}</p></div>
-            {featuredData?.hero && <p className="relative m-0 max-w-[46ch] text-[15px] leading-relaxed text-ink2">{pick(featuredData.hero, 'description')}</p>}
-            <span aria-hidden="true" className="link-u relative inline-flex items-center gap-2.5 text-[15px] font-bold">{pick(f, 'cta')}<Arrow /></span>
-          </div>
-        </div>
+        <HeroStage src={img(f.image)} alt={`${ui.stop} 00: ${pick(f, 'title')}`} zoom>
+          <p className="m-0 max-w-[32ch] text-[19px] font-semibold leading-snug">{pick(f, 'subtitle')}</p>
+          <div><Metric metric={f.metric} /><p className="mt-1.5 text-base font-semibold">{pick(f, 'metricLabel')}</p></div>
+          {featuredData?.hero && <p className="m-0 max-w-[46ch] text-[15px] leading-relaxed text-ink2">{pick(featuredData.hero, 'description')}</p>}
+          <span aria-hidden="true" className="link-u inline-flex w-fit items-center gap-2.5 text-[15px] font-bold">{pick(f, 'cta')}<Arrow /></span>
+        </HeroStage>
       </article>
 
       {/* Filtros: mismo lenguaje que el índice de capítulos del caso */}
@@ -107,12 +101,14 @@ export default function Home() {
 
       {/* Proyectos como paradas sobre la línea de tiempo */}
       <section aria-labelledby="ch-proyectos" className="wrap pb-6 pt-20 md:pt-28">
-        <div className="mb-12 flex flex-wrap items-baseline gap-x-5 gap-y-3 md:mb-16">
-          <span className="eyebrow-no">01–{pad(projects.length)}</span>
-          <h2 id="ch-proyectos" className="rise m-0 whitespace-nowrap text-[clamp(38px,4.2vw,58px)] font-extrabold leading-none tracking-[-.04em] text-acctext">{ui.chProjects}</h2>
-          <p className="m-0 max-w-[32ch] text-[17px] text-ink2 md:ml-auto md:text-right md:text-[19px]">{ui.chProjectsSub}</p>
+        <div className="mb-12 md:mb-16">
+          <div className="flex items-baseline gap-5">
+            <span className="eyebrow-no">01–{pad(projects.length)}</span>
+            <h2 id="ch-proyectos" className="rise m-0 whitespace-nowrap text-[clamp(38px,4.2vw,58px)] font-extrabold leading-none tracking-[-.04em] text-acctext">{ui.chProjects}</h2>
+          </div>
+          <p className="mb-0 mt-6 max-w-[68ch] text-[17px] leading-relaxed text-ink2 md:text-lg">{ui.chProjectsSub}</p>
         </div>
-        <ol className="tl m-0 list-none p-0">
+        <ol className="tl m-0 list-none">
           {projects.map((p) => {
             const on = isOn(p);
             const lab = splitParen(pick(p, 'metricLabel') || (p.metrics && pick(p.metrics[0], 'label')) || '');
