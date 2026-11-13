@@ -170,7 +170,8 @@
       {
         "value": "14 días",
         "description": "hábiles (mediana) hasta crear y asignar su primera ruta sin ayuda",
-        "descriptionEn": "business days (median) until creating and assigning their first route unaided"
+        "descriptionEn": "business days (median) until creating and assigning their first route unaided",
+        "valueEn": "14 days"
       },
       {
         "value": "1,8",
