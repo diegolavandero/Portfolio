@@ -465,8 +465,8 @@
         "learningEn": "“Discrepancy” was system language: drivers searched for “problem”, “missing” or “damaged”"
       },
       {
-        "task": "Llegar a la firma digital de salida",
-        "taskEn": "Reach the digital departure signature",
+        "task": "Llegar a la firma digital de salida (diseño inicial)",
+        "taskEn": "Reach the digital departure signature (initial design)",
         "bars": [
           {
             "version": "V1",
@@ -498,8 +498,8 @@
   "solution": {
     "title": "Solución",
     "titleEn": "Solution",
-    "subtitle": "Una app móvil de validación en 4 pasos: lista de órdenes, escaneo, evidencia y firma. Diseñada para entornos de campo con guantes y presión de tiempo.",
-    "subtitleEn": "A 4-step mobile validation app: order list, scanning, evidence, and signature. Designed for field environments with gloves and time pressure.",
+    "subtitle": "Una app móvil de validación en 4 pasos: lista de órdenes, escaneo, evidencia y confirmación de cierre (firma táctil en el diseño inicial; PIN de 4 dígitos en la versión del piloto). Diseñada para entornos de campo con guantes y presión de tiempo.",
+    "subtitleEn": "A 4-step mobile validation app: order list, scanning, evidence and sign-off (tactile signature in the initial design; 4-digit PIN in the pilot version). Designed for field environments with gloves and time pressure.",
     "components": [
       {
         "number": "01",
@@ -524,10 +524,10 @@
       },
       {
         "number": "04",
-        "title": "Firma digital + evidencia",
-        "titleEn": "Digital signature + evidence",
-        "description": "Captura de firma táctil y foto de la carga como evidencia. Timestamp automático e inmutable para auditoría.",
-        "descriptionEn": "Tactile signature capture and load photo as evidence. Automatic immutable timestamp for audit."
+        "title": "Evidencia + confirmación de cierre",
+        "titleEn": "Evidence + sign-off",
+        "description": "Foto de la carga como evidencia y confirmación de cierre. El diseño inicial capturaba una firma táctil; con guantes producía re-intentos, y la versión del piloto la reemplazó por un PIN de 4 dígitos. Timestamp automático e inmutable para auditoría.",
+        "descriptionEn": "Load photo as evidence plus a sign-off step. The initial design captured a tactile signature; with gloves it produced retries, and the pilot version replaced it with a 4-digit PIN. Automatic immutable timestamp for audit."
       }
     ],
     "principlesTitle": "Principios de diseño",
@@ -551,8 +551,8 @@
         "number": "03",
         "title": "Evidencia inmutable antes de salir",
         "titleEn": "Immutable evidence before departure",
-        "description": "Foto + firma + timestamp automático son el contrato digital entre conductor, supervisor y cliente. El flujo no permite saltar estos pasos: son la trazabilidad del sistema.",
-        "descriptionEn": "Photo + signature + automatic timestamp are the digital contract between driver, supervisor and client. The flow cannot skip these steps: they are the system's traceability."
+        "description": "Foto + confirmación de cierre (firma en el diseño inicial, PIN en el piloto) + timestamp automático son el contrato digital entre conductor, supervisor y cliente. El flujo no permite saltar estos pasos: son la trazabilidad del sistema.",
+        "descriptionEn": "Photo + sign-off (signature in the initial design, PIN in the pilot) + automatic timestamp are the digital contract between driver, supervisor and client. The flow cannot skip these steps: they are the system's traceability."
       }
     ]
   },
@@ -620,10 +620,10 @@
       {
         "pairGroup": "signature-cases",
         "device": "none",
-        "title": "Firma pendiente",
-        "titleEn": "Signature pending",
-        "description": "La validación queda parcial hasta que el supervisor firma; el estado de cada orden se ve de un vistazo antes de firmar.",
-        "descriptionEn": "Validation stays partial until the supervisor signs; each order's status is visible at a glance before signing.",
+        "title": "Firma pendiente (diseño inicial)",
+        "titleEn": "Signature pending (initial design)",
+        "description": "La validación queda parcial hasta que el supervisor firma; el estado de cada orden se ve de un vistazo antes de firmar. Esta es la versión inicial; en el piloto la firma táctil se reemplazó por un PIN de confirmación.",
+        "descriptionEn": "Validation stays partial until the supervisor signs; each order's status is visible at a glance before signing. This is the initial version; in the pilot the tactile signature was replaced by a confirmation PIN.",
         "src": "data/images/load-validation-signature-empty.png",
         "alt": "Pantalla de firma digital, estado vacío antes de firmar",
         "altEn": "Digital signature screen, empty state before signing"
@@ -631,8 +631,8 @@
       {
         "pairGroup": "signature-cases",
         "device": "none",
-        "title": "Firma completada",
-        "titleEn": "Signature completed",
+        "title": "Firma completada (diseño inicial)",
+        "titleEn": "Signature completed (initial design)",
         "description": "Firma capturada en el dispositivo, con timestamp automático como evidencia inmutable de la validación.",
         "descriptionEn": "Signature captured on-device, with an automatic timestamp as immutable evidence of the validation.",
         "src": "data/images/load-validation-signature-completed.png",
