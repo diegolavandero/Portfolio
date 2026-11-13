@@ -377,7 +377,7 @@ const Renderer = {
       const contextLine = q.context ? `<p class="quote-context" ${bi(q.context, q.contextEn)}><em>${q.context}</em></p>` : '';
       return `
         <div class="quote-box">
-          <p class="quote-text" ${bi(q.text, q.textEn)}>"${q.text}"</p>
+          <p class="quote-text" ${bi(q.text, q.textEn)}>“${q.text}”</p>
           ${authorLine}
           ${contextLine}
         </div>

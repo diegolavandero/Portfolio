@@ -11,7 +11,9 @@
     "description": "Un copiloto que arma el proyecto completo (cantidad, piso y kit de instalación) según tu espacio y tu uso, y muestra el precio final antes del carro.",
     "descriptionEn": "A copilot that builds the complete project (quantity, floor and installation kit) around your space and how you use it, and shows the final price before the cart.",
     "titleAccent": "· Falabella",
-    "titleAccentEn": "· Falabella"
+    "titleAccentEn": "· Falabella",
+    "subtitle": "Del piso elegido al proyecto completo, con el precio final a la vista antes del carro",
+    "subtitleEn": "From a chosen floor to a complete project, with the final price in view before the cart"
   },
   "projectSpecs": [
     {
@@ -29,8 +31,8 @@
     {
       "label": "Alcance",
       "labelEn": "Scope",
-      "value": "Concepto → UI hi-fi",
-      "valueEn": "Concept → hi-fi UI"
+      "value": "Concepto → UI hi-fi → traspaso a ingeniería",
+      "valueEn": "Concept → hi-fi UI → engineering handoff"
     },
     {
       "label": "Equipo",
@@ -109,69 +111,44 @@
     "objectives": [
       {
         "number": "01",
-        "title": "Subir la conversión un 20%",
-        "titleEn": "Lift conversion by 20%",
-        "meta": "KPI principal · 30% → 36%",
-        "metaEn": "Main KPI · 30% → 36%",
-        "description": "Menos abandono entre la elección y el pago.",
-        "descriptionEn": "Less abandonment between choice and payment."
+        "title": "Mayor conversión",
+        "titleEn": "Higher conversion",
+        "meta": "Criterio de éxito: 20% más (30% → 36%, en términos relativos)",
+        "metaEn": "Success criterion: +20% relative lift (30% → 36%)",
+        "description": "Eliminar las sorpresas de precio en el carro (línea base de 70% de abandono) mostrando el costo completo del proyecto, con stock validado, antes de agregar al carro.",
+        "descriptionEn": "Eliminate cart price surprises (70% abandonment baseline) by showing the complete, stock-validated project cost before adding to cart.",
+        "kpi": "conversión del embudo de compra de la categoría pisos · Fuente: línea base del equipo de investigación interno de Falabella; resultado con telemetría posterior al lanzamiento compartida por Falabella",
+        "kpiEn": "purchase-funnel conversion in the flooring category · Source: baseline from Falabella’s in-house research team; result from post-launch telemetry shared by Falabella"
       },
       {
         "number": "02",
-        "title": "Precio final antes del carro",
-        "titleEn": "Final price before the cart",
-        "meta": "0 sorpresas en el carro",
-        "metaEn": "0 cart surprises",
-        "description": "El usuario ve el costo completo desde que elige.",
-        "descriptionEn": "Users see the full cost from the moment they choose."
+        "title": "Menos devoluciones en línea",
+        "titleEn": "Fewer online returns",
+        "meta": "Criterio de éxito: 20% menos devoluciones (19% → ~15%)",
+        "metaEn": "Success criterion: 20% fewer returns (19% → ~15%)",
+        "description": "Evitar faltantes y accesorios incompatibles (como adhesivo en pisos click) con el cálculo automático del kit.",
+        "descriptionEn": "Prevent shortages and incompatible accessories (such as adhesive on click-lock floors) through automated kit calculation.",
+        "kpi": "tasa de devolución de las ventas en línea de la categoría pisos · Fuente: línea base del equipo de investigación interno de Falabella; resultado con telemetría posterior al lanzamiento compartida por Falabella",
+        "kpiEn": "return rate of online sales in the flooring category · Source: baseline from Falabella’s in-house research team; result from post-launch telemetry shared by Falabella"
       },
       {
         "number": "03",
-        "title": "Menos devoluciones",
-        "titleEn": "Fewer returns",
-        "meta": "Criterio de éxito: 19% → ~15% (20% menos, en términos relativos)",
-        "metaEn": "Success criterion: 19% → ~15% (20% lower in relative terms)",
-        "description": "Hoy cerca del 19% de las ventas en línea se devuelve. Un kit completo y coherente apunta a faltantes e incompatibilidad.",
-        "descriptionEn": "Today about 19% of online sales are returned. A complete, consistent kit targets shortages and incompatibility."
-      },
-      {
-        "number": "04",
-        "title": "Menos pasos",
-        "titleEn": "Fewer steps",
-        "meta": "11 toques · antes 18+",
-        "metaEn": "11 taps · previously 18+",
-        "description": "De la entrada al carro, sin páginas de producto intermedias.",
-        "descriptionEn": "From entry to cart, with no intermediate product pages."
+        "title": "Menos pasos hasta el carro",
+        "titleEn": "Fewer steps to cart",
+        "meta": "Criterio de éxito: 12 toques o menos desde la entrada hasta el carro",
+        "metaEn": "Success criterion: ≤ 12 taps from entry to cart",
+        "description": "Convertir un recorrido fragmentado de 18+ toques en un asistente guiado, con los parámetros del espacio al inicio y sin páginas de producto intermedias.",
+        "descriptionEn": "Streamline the fragmented 18+ tap journey into a guided assistant with upfront space parameters and no intermediate product pages.",
+        "kpi": "toques desde la entrada de la categoría hasta el carro · Fuente: prueba del prototipo interactivo (n = 20), antes del lanzamiento",
+        "kpiEn": "taps from category entry to cart · Source: interactive prototype test (n = 20), before launch"
       }
     ]
   },
   "uxResearch": {
     "title": "Investigación",
     "titleEn": "Research",
-    "subtitle": "La investigación la hizo Falabella internamente. Me contrataron como diseñador externo para toda la conceptualización, los flujos y las pantallas.",
-    "subtitleEn": "The research was done in-house by Falabella. I was hired as a contractor for the full conceptualization, flows and screens.",
-    "hypothesisTitle": "Hipótesis",
-    "hypothesisTitleEn": "Hypotheses",
-    "hypothesis": [
-      "La frustración nace de elegir primero y validar después: stock, aptitud y accesorios aparecen tarde.",
-      "Si el usuario define su espacio primero y recibe un proyecto completo con precio final, baja el abandono y bajan las devoluciones."
-    ],
-    "hypothesisEn": [
-      "Frustration comes from choosing first and validating later: stock, suitability and accessories show up too late.",
-      "If users define their space first and get a complete project with a final price, abandonment and returns drop."
-    ],
-    "methodsTitle": "Metodología",
-    "methodsTitleEn": "Methodology",
-    "methods": [
-      "Auditoría de la app real: ficha de piso, comparador y venta cruzada",
-      "Análisis de “Arma tu Proyecto” en muebles como precedente",
-      "Referentes: Home Depot (calculadora y kit) y Roomvo (visualización AR)"
-    ],
-    "methodsEn": [
-      "Live app audit: flooring page, comparator and cross-sell",
-      "Analysis of “Build Your Project” in furniture as a precedent",
-      "Benchmark: Home Depot (calculator and kit) and Roomvo (AR visualization)"
-    ],
+    "subtitle": "El equipo interno de investigación y analítica de Falabella hizo el descubrimiento inicial y entregó la línea base cuantitativa. Como diseñador externo, usé esos insumos para liderar la conceptualización, los flujos de UX y la UI de alta fidelidad de punta a punta, y validé el prototipo interactivo antes del traspaso a ingeniería.",
+    "subtitleEn": "Falabella’s in-house research and analytics team ran the initial discovery and provided the quantitative baseline. As an external contractor, I used those inputs to lead the end-to-end conceptualization, UX flows and hi-fi UI, and validated the interactive prototype before engineering handoff.",
     "insightsTitle": "Hallazgos",
     "insightsTitleEn": "Findings",
     "qualitativeLabel": "Evidencia en la app",
@@ -208,14 +185,40 @@
       {
         "value": "70%",
         "valueEn": "70%",
-        "description": "abandono en el embudo de compra",
-        "descriptionEn": "purchase funnel abandonment"
+        "description": "abandono en el embudo de compra (línea base de Falabella)",
+        "descriptionEn": "purchase funnel abandonment (Falabella baseline)"
       },
       {
         "value": "34% vs 6%",
         "valueEn": "34% vs 6%",
-        "description": "perciben el piso como caro: 34% con precio por m², 6% con el precio del proyecto completo",
-        "descriptionEn": "find the flooring expensive: 34% with price per m², 6% with the full project price"
+        "description": "perciben el piso como caro: 34% con precio por m², 6% con el precio del proyecto completo (investigación interna de Falabella)",
+        "descriptionEn": "find the flooring expensive: 34% with price per m², 6% with the full project price (Falabella in-house research)"
+      }
+    ],
+    "methodCards": [
+      {
+        "name": "Investigación interna de Falabella",
+        "nameEn": "Falabella in-house research",
+        "description": "El equipo de investigación y analítica de Falabella entregó la línea base cuantitativa de la categoría. Yo entré como diseñador externo para la conceptualización, los flujos y la UI de alta fidelidad.",
+        "descriptionEn": "Falabella’s research and analytics team provided the category’s quantitative baseline. I joined as an external designer for the conceptualization, flows and hi-fi UI.",
+        "finding": "Línea base: 30% de conversión, 70% de abandono y 19% de devoluciones en la categoría",
+        "findingEn": "Baseline: 30% conversion, 70% abandonment and 19% returns in the category"
+      },
+      {
+        "name": "Auditoría de la app y precedentes",
+        "nameEn": "App audit and precedents",
+        "description": "Revisé la ficha de piso, el comparador y la venta cruzada en la app real, y analicé “Arma tu Proyecto” (muebles), Home Depot (calculadora y kit) y Roomvo (visualización AR).",
+        "descriptionEn": "I reviewed the flooring page, comparator and cross-sell in the live app, and analyzed “Build Your Project” (furniture), Home Depot (calculator and kit) and Roomvo (AR visualization).",
+        "finding": "Un piso flotante click ofrecía adhesivo; el patrón de proyecto ya existía, pero solo para decisiones estéticas",
+        "findingEn": "A click-lock floating floor offered adhesive; the project pattern already existed, but only for aesthetic decisions"
+      },
+      {
+        "name": "Prueba del prototipo interactivo",
+        "nameEn": "Interactive prototype test",
+        "description": "Validé el prototipo con 20 usuarios antes del traspaso a ingeniería.",
+        "descriptionEn": "I validated the prototype with 20 users before engineering handoff.",
+        "finding": "11 toques y de 1:15 a 5:45 min desde la entrada hasta el carro",
+        "findingEn": "11 taps and 1:15 to 5:45 min from entry to cart"
       }
     ]
   },
@@ -402,28 +405,28 @@
     "titleEn": "Results",
     "impact": [
       {
-        "metric": "18%",
-        "metricEn": "18%",
-        "label": "Mayor conversión",
-        "labelEn": "Higher conversion",
-        "description": "De 30% a 35,4%, y el abandono de 70% a 64,6%.",
-        "descriptionEn": "From 30% to 35.4%, and abandonment from 70% to 64.6%."
+        "metric": "30,0% → 35,4%",
+        "metricEn": "30.0% → 35.4%",
+        "label": "Mayor conversión (criterio de éxito: 20% más)",
+        "labelEn": "Higher conversion (Success criterion: +20%)",
+        "description": "18% más: la conversión del embudo subió y el abandono bajó de 70,0% a 64,6%. Confirmado con telemetría posterior al lanzamiento compartida por el equipo de investigación interno de Falabella.",
+        "descriptionEn": "18% more: funnel conversion rose and abandonment fell from 70.0% to 64.6%. Confirmed with post-launch telemetry shared by Falabella’s in-house research team."
       },
       {
-        "metric": "24%",
-        "metricEn": "24%",
-        "label": "Menos devoluciones en línea",
-        "labelEn": "Fewer online returns",
-        "description": "De 19% a 14,5% en la categoría. El kit completo ataca faltantes e incompatibilidad.",
-        "descriptionEn": "From 19% to 14.5% in the category. The complete kit targets shortages and incompatibility."
+        "metric": "19,0% → 14,5%",
+        "metricEn": "19.0% → 14.5%",
+        "label": "Menos devoluciones en línea (criterio de éxito: 20% menos)",
+        "labelEn": "Fewer online returns (Success criterion: 20% fewer)",
+        "description": "24% menos: la tasa de devolución de la categoría bajó tras el lanzamiento. El cálculo automático del kit apunta a los faltantes de m² y a los accesorios incompatibles.",
+        "descriptionEn": "24% fewer: the category’s return rate dropped after launch. The automated kit calculation targets m² shortages and incompatible accessories."
       },
       {
-        "metric": "11",
-        "metricEn": "11",
-        "label": "toques de entrada a carro",
-        "labelEn": "taps from entry to cart",
-        "description": "Antes 18+. Precio final visible desde la elección.",
-        "descriptionEn": "Previously 18+. Final price visible from the moment of choice."
+        "metric": "18+ → 11 toques",
+        "metricEn": "18+ → 11 taps",
+        "label": "Menos pasos hasta el carro (criterio de éxito: 12 toques o menos)",
+        "labelEn": "Fewer steps to cart (Success criterion: ≤ 12 taps)",
+        "description": "39% menos: de la entrada de la categoría al carro, en 1:15 min para usuarios ágiles y 5:45 min para quienes evalúan en detalle.",
+        "descriptionEn": "39% fewer: from category entry to cart, in 1:15 min for agile users and 5:45 min for detailed evaluators."
       }
     ],
     "learningsTitle": "Aprendizajes",
@@ -458,8 +461,8 @@
         "descriptionEn": "Track conversion, abandonment and returns to iterate on the flow."
       },
       {
-        "title": "Test de usabilidad con 5 usuarios",
-        "titleEn": "Usability test with 5 users",
+        "title": "Prueba de usabilidad del flujo en producción",
+        "titleEn": "Usability test of the live flow",
         "description": "Validar parámetros, supuestos por IA y comparación de proyectos.",
         "descriptionEn": "Validate parameters, AI assumptions and project comparison."
       },
@@ -469,7 +472,11 @@
         "description": "Modo de marca Sodimac listo; Roomvo como complemento (“cómo se ve”).",
         "descriptionEn": "Sodimac brand mode is ready; Roomvo as a complement (“how it looks”)."
       }
-    ]
+    ],
+    "impactTitle": "Impacto medido",
+    "impactTitleEn": "Measured impact",
+    "subtitle": "Línea base (conversión de 30,0%, abandono de 70,0% y devoluciones de 19,0%) y resultados posteriores al lanzamiento (conversión de 35,4% y devoluciones de 14,5%) medidos y compartidos por el equipo interno de investigación y analítica de Falabella. La reducción de pasos (18+ → 11 toques) y los tiempos (1:15 a 5:45 min) se validaron en la prueba del prototipo interactivo (n = 20 usuarios) antes del lanzamiento.",
+    "subtitleEn": "Baseline (30.0% conversion, 70.0% abandonment, 19.0% returns) and post-launch results (35.4% conversion, 14.5% returns) were measured and shared by Falabella’s in-house research and analytics team. The step reduction (18+ → 11 taps) and completion times (1:15 to 5:45 min) were validated in the interactive prototype test (n = 20 users) before launch."
   },
   "livePrototype": {
     "title": "Prototipo interactivo",
