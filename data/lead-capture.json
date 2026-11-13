@@ -484,8 +484,8 @@
         "number": "02",
         "title": "Interacción inmediata en vez de contacto diferido",
         "titleEn": "Immediate interaction over delayed contact",
-        "description": "Contacto instantáneo vs esperas prolongadas",
-        "descriptionEn": "Instant contact vs prolonged waits"
+        "description": "Contacto instantáneo, con validación y confirmación en cada paso, en lugar de esperas prolongadas",
+        "descriptionEn": "Instant contact with validation and confirmation at every step, instead of prolonged waits"
       },
       {
         "number": "03",
@@ -493,13 +493,6 @@
         "titleEn": "Visual trust through branding",
         "description": "Confianza mediante identidad visual",
         "descriptionEn": "Trust through visual identity"
-      },
-      {
-        "number": "04",
-        "title": "Retroalimentación en cada paso",
-        "titleEn": "Feedback at every step",
-        "description": "Validación y confirmación continua",
-        "descriptionEn": "Continuous validation and confirmation"
       }
     ],
     "decisionsTitle": "Funcionalidades clave",
