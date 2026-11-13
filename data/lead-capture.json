@@ -139,17 +139,6 @@
         "descriptionEn": "Shorten the time between the first click and the confirmed message",
         "kpi": "segundos entre el primer clic y la confirmación del mensaje · Fuente: prueba comparativa con prototipo (n = 20)",
         "kpiEn": "seconds between the first click and message confirmation · Source: comparative prototype test (n = 20)"
-      },
-      {
-        "number": "04",
-        "title": "Configuración sin código",
-        "titleEn": "No-code setup",
-        "meta": "Meta: menos de 5 min",
-        "metaEn": "Goal: under 5 min",
-        "description": "Que un equipo de marketing personalice el widget sin ayuda de desarrollo",
-        "descriptionEn": "Let a marketing team customize the widget without developer help",
-        "kpi": "minutos para personalizar la marca, definir los campos y previsualizar el widget · Fuente: pruebas de configuración con prototipo (n = 6)",
-        "kpiEn": "minutes to customize branding, define fields and preview the widget · Source: configuration tests on the prototype (n = 6)"
       }
     ]
   },
@@ -607,8 +596,8 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Pruebas con prototipo: contacto (20 usuarios finales) y configuración (6 perfiles de marketing). Son señales direccionales, no datos de producción.",
-    "subtitleEn": "Prototype tests: contact (20 end users) and configuration (6 marketing profiles). Directional signals, not production data.",
+    "subtitle": "Prueba comparativa con prototipo (n = 20) frente a un formulario largo. Es una señal direccional, no un dato de producción.",
+    "subtitleEn": "Comparative prototype test (n = 20) against a long form. A directional signal, not production data.",
     "impact": [
       {
         "metric": "70%",
@@ -633,14 +622,6 @@
         "labelEn": "Faster contact",
         "description": "De 68 s a 32 s entre el primer clic y el contacto confirmado.",
         "descriptionEn": "From 68 s to 32 s between the first click and confirmed contact."
-      },
-      {
-        "metric": "3,5 min",
-        "metricEn": "3.5 min",
-        "label": "Configuración sin código",
-        "labelEn": "No-code setup",
-        "description": "En promedio, 6 de 6 perfiles de marketing personalizaron marca y campos y previsualizaron el widget sin ayuda de desarrollo.",
-        "descriptionEn": "On average, 6 of 6 marketing profiles customized branding and fields and previewed the widget without developer help."
       }
     ],
     "learnings": [
@@ -659,8 +640,8 @@
       {
         "title": "La vista previa evita dudas en la configuración",
         "titleEn": "Live preview prevents setup hesitation",
-        "description": "En las pruebas de configuración (n = 6), los usuarios de marketing usaron la vista previa para verificar el contraste y el orden de los campos antes de terminar en 3,5 min.",
-        "descriptionEn": "In the configuration tests (n = 6), marketing users relied on the live preview to verify contrast and field order before finishing in 3.5 min."
+        "description": "En las pruebas de configuración (n = 6), los usuarios de marketing usaron la vista previa para verificar el contraste y el orden de los campos antes de terminar.",
+        "descriptionEn": "In the configuration tests (n = 6), marketing users relied on the live preview to verify contrast and field order before finishing."
       }
     ],
     "nextSteps": [
