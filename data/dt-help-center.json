@@ -97,8 +97,8 @@
         "metaEn": "Goal: 70% or more within 15 days",
         "description": "Que el operador nuevo termine el nivel inicial sin salir de su trabajo",
         "descriptionEn": "Get new operators through the starter level without leaving their work",
-        "kpi": "operadores nuevos que completan el nivel inicial en 15 días ÷ operadores nuevos · Fuente: eventos en Hotjar",
-        "kpiEn": "new operators completing the starter level within 15 days ÷ new operators · Source: Hotjar events"
+        "kpi": "operadores nuevos que completan el nivel inicial en 15 días ÷ operadores nuevos · Fuente: telemetría del panel lateral y de cursos",
+        "kpiEn": "new operators completing the starter level within 15 days ÷ new operators · Source: sidebar and course telemetry"
       },
       {
         "number": "02",
@@ -108,8 +108,8 @@
         "metaEn": "Goal: 25% less time (10.5 business days or fewer)",
         "description": "Que lleguen antes a operar de forma independiente",
         "descriptionEn": "Get them operating independently sooner",
-        "kpi": "mediana de días hábiles entre la creación de la cuenta y la primera ruta asignada sin ayuda · Fuente: eventos y marcas de tiempo en Hotjar",
-        "kpiEn": "median business days between account creation and the first route assigned unaided · Source: Hotjar events and timestamps"
+        "kpi": "mediana de días hábiles entre la creación de la cuenta y la primera ruta asignada sin ayuda · Fuente: registros de eventos de producto",
+        "kpiEn": "median business days between account creation and the first route assigned unaided · Source: product event logs"
       },
       {
         "number": "03",
@@ -119,8 +119,8 @@
         "metaEn": "Goal: 3.5 or more sessions per operator in month 1",
         "description": "Pasar de consultas reactivas a aprender con constancia",
         "descriptionEn": "Move from reactive lookups to steady learning",
-        "kpi": "sesiones de tutorial en el primer mes ÷ operadores nuevos activos · Fuente: atributos de usuario y eventos en Hotjar",
-        "kpiEn": "tutorial sessions in month 1 ÷ active new operators · Source: Hotjar user attributes and events"
+        "kpi": "sesiones de tutorial en el primer mes ÷ operadores nuevos activos · Fuente: telemetría del panel lateral y grabaciones de Hotjar",
+        "kpiEn": "tutorial sessions in month 1 ÷ active new operators · Source: sidebar telemetry and Hotjar recordings"
       }
     ],
     "objectivesTitle": "Objetivos medibles",
@@ -151,10 +151,10 @@
       {
         "name": "Piloto de 60 días",
         "nameEn": "60-day pilot",
-        "description": "50 operadores nuevos en 5 cuentas, comparados con la cohorte histórica. Medí con eventos personalizados y atributos de usuario en Hotjar, más mapas de calor y grabaciones.",
-        "descriptionEn": "50 new operators across 5 accounts, compared with the historical cohort. I measured with custom events and user attributes in Hotjar, plus heatmaps and recordings.",
-        "finding": "Abrían los tutoriales sobre todo desde el ícono de cada sección, no desde el catálogo de 49 tutoriales.",
-        "findingEn": "They opened tutorials mostly from each section's icon, not from the 49-tutorial catalog."
+        "description": "50 operadores nuevos en 5 cuentas, comparados con la cohorte histórica. Medí con telemetría de producto (creación de cuenta, primera ruta sin ayuda y tutoriales completados) y observé el uso con grabaciones de Hotjar.",
+        "descriptionEn": "50 new operators across 5 accounts, compared with the historical cohort. I measured with product telemetry (account creation, first unaided route and completed tutorials) and observed usage with Hotjar recordings.",
+        "finding": "Según las grabaciones, abrían los tutoriales sobre todo desde el ícono de cada sección, no desde el catálogo de 49 tutoriales.",
+        "findingEn": "Recordings showed they opened tutorials mostly from each section's icon, not from the 49-tutorial catalog."
       }
     ],
     "insightsTitle": "Línea base · cohorte histórica de las mismas 5 cuentas",
@@ -418,8 +418,8 @@
       {
         "title": "Los disparadores contextuales superan a la búsqueda",
         "titleEn": "Contextual triggers beat search",
-        "description": "Los operadores abrían los tutoriales sobre todo desde el ícono junto al título de cada sección, y no desde el catálogo completo.",
-        "descriptionEn": "Operators opened tutorials mostly from the icon next to each section title, not from the full catalog."
+        "description": "Las grabaciones de Hotjar mostraron que los operadores abrían los tutoriales sobre todo desde el ícono junto al título de cada sección, y no desde el catálogo completo.",
+        "descriptionEn": "Hotjar recordings showed operators opened tutorials mostly from the icon next to each section title, not from the full catalog."
       },
       {
         "title": "Un cuestionario que guía acompañó el hábito",
