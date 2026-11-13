@@ -105,20 +105,6 @@
       "image": "data/images/driver-ai.webp"
     },
     {
-      "eyebrow": "QUICKCOMMERCE · ESCRITORIO · 2023",
-      "eyebrowEn": "QUICKCOMMERCE · DESKTOP · 2023",
-      "title": "On-demand routing",
-      "titleEn": "On-demand routing",
-      "subtitle": "Sistema de asignación manual y automática en tiempo real",
-      "subtitleEn": "Real-time manual and automatic assignment system",
-      "metric": "38%",
-      "metricLabel": "asignación más rápida",
-      "metricLabelEn": "faster assignment",
-      "slug": "on-demand-routing",
-      "device": "desktop",
-      "image": "data/images/on-demand-routing.webp"
-    },
-    {
       "eyebrow": "DT GLOBAL · MÓVIL · 2023",
       "eyebrowEn": "DT GLOBAL · MOBILE · 2023",
       "title": "Validación de carga pre-ruta",
@@ -170,5 +156,21 @@
     "cta": "Ver código en GitHub",
     "ctaEn": "View source on GitHub",
     "url": "https://github.com/diegolavandero/Portfolio"
-  }
+  },
+  "hiddenProjects": [
+    {
+      "eyebrow": "QUICKCOMMERCE · ESCRITORIO · 2023",
+      "eyebrowEn": "QUICKCOMMERCE · DESKTOP · 2023",
+      "title": "On-demand routing",
+      "titleEn": "On-demand routing",
+      "subtitle": "Sistema de asignación manual y automática en tiempo real",
+      "subtitleEn": "Real-time manual and automatic assignment system",
+      "metric": "38%",
+      "metricLabel": "asignación más rápida",
+      "metricLabelEn": "faster assignment",
+      "slug": "on-demand-routing",
+      "device": "desktop",
+      "image": "data/images/on-demand-routing.webp"
+    }
+  ]
 }

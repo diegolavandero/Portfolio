@@ -43,7 +43,7 @@
       "dest": "/prototypes/$1"
     },
     {
-      "src": "/(about|unified-routing|dt-tutorial-monitoring|dt-help-center|lead-capture|falabella|driver-ai|on-demand-routing|load-validation|async-reports)/?",
+      "src": "/(about|unified-routing|dt-tutorial-monitoring|dt-help-center|lead-capture|falabella|driver-ai|load-validation|async-reports)/?",
       "dest": "/pages/$1.html"
     },
     {

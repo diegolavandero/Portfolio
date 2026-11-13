@@ -544,12 +544,12 @@
     ]
   },
   "cta": {
-    "question": "Siguiente caso: On-demand routing",
-    "questionEn": "Next case: On-demand routing",
-    "description": "Sistema de asignación manual y automática en tiempo real",
-    "descriptionEn": "Real-time manual and automatic assignment system",
+    "question": "Siguiente caso: Validación de carga pre-ruta",
+    "questionEn": "Next case: Pre-route load validation",
+    "description": "Sistema de verificación pre-ruta",
+    "descriptionEn": "Pre-route verification system",
     "buttonLabel": "Ver siguiente proyecto",
     "buttonLabelEn": "See next project",
-    "buttonHref": "/on-demand-routing"
+    "buttonHref": "/load-validation"
   }
 }
