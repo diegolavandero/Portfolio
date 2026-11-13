@@ -139,14 +139,25 @@
         "descriptionEn": "Shorten the time between the first click and the confirmed message",
         "kpi": "segundos entre el primer clic y la confirmación del mensaje · Fuente: prueba comparativa con prototipo (n = 20)",
         "kpiEn": "seconds between the first click and message confirmation · Source: comparative prototype test (n = 20)"
+      },
+      {
+        "number": "04",
+        "title": "Configuración sin código",
+        "titleEn": "No-code setup",
+        "meta": "Meta: menos de 5 min",
+        "metaEn": "Goal: under 5 min",
+        "description": "Que un equipo de marketing personalice el widget sin ayuda de desarrollo",
+        "descriptionEn": "Let a marketing team customize the widget without developer help",
+        "kpi": "minutos para personalizar la marca, definir los campos y previsualizar el widget · Fuente: pruebas de configuración con prototipo (n = 6)",
+        "kpiEn": "minutes to customize branding, define fields and preview the widget · Source: configuration tests on the prototype (n = 6)"
       }
     ]
   },
   "uxResearch": {
     "title": "Investigación",
     "titleEn": "Research",
-    "subtitle": "Entrevistas con empresas, puntos de contacto con usuarios finales y una prueba comparativa con 20 usuarios",
-    "subtitleEn": "Company interviews, end-user touchpoints and a comparative test with 20 users",
+    "subtitle": "Entrevistas con empresas, una prueba de configuración con 6 perfiles de marketing y una prueba comparativa con 20 usuarios",
+    "subtitleEn": "Company interviews, a configuration test with 6 marketing profiles and a comparative test with 20 users",
     "stats": [
       {
         "value": "40%",
@@ -168,22 +179,22 @@
       {
         "name": "Entrevistas con empresas",
         "nameEn": "Company interviews",
-        "description": "Entrevisté a empresas clientes sobre cómo capturan leads hoy y dónde se les complica.",
-        "descriptionEn": "I interviewed client companies about how they capture leads today and where it gets hard.",
+        "description": "Entrevisté a empresas clientes sobre cómo capturan leads hoy y mapeé los puntos de contacto con sus usuarios finales.",
+        "descriptionEn": "I interviewed client companies about how they capture leads today and mapped the touchpoints with their end users.",
         "findingLabel": "Hipótesis",
         "findingLabelEn": "Hypothesis",
         "finding": "Los usuarios prefieren el contacto inmediato frente a los formularios largos.",
         "findingEn": "Users prefer immediate contact over long forms."
       },
       {
-        "name": "Puntos de contacto",
-        "nameEn": "Touchpoints",
-        "description": "Identifiqué los puntos de contacto entre las empresas y sus usuarios finales.",
-        "descriptionEn": "I identified the touchpoints between companies and their end users.",
-        "findingLabel": "Hipótesis",
-        "findingLabelEn": "Hypothesis",
-        "finding": "La personalización aumenta la confianza del usuario final.",
-        "findingEn": "Personalization increases end-user trust."
+        "name": "Prueba de configuración",
+        "nameEn": "Configuration test",
+        "description": "Seis perfiles de marketing y operaciones configuraron el widget en el prototipo del panel de escritorio.",
+        "descriptionEn": "Six marketing and operations profiles configured the widget in the desktop panel prototype.",
+        "findingLabel": "Resultado",
+        "findingLabelEn": "Result",
+        "finding": "Personalizaron marca, campos y vista previa en 3,5 min en promedio, sin ayuda de desarrollo.",
+        "findingEn": "They customized branding, fields and preview in 3.5 min on average, without developer help."
       },
       {
         "name": "Prueba comparativa",
@@ -596,8 +607,8 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Prueba comparativa con prototipo (n = 20) frente a un formulario largo. Es una señal direccional, no un dato de producción.",
-    "subtitleEn": "Comparative prototype test (n = 20) against a long form. A directional signal, not production data.",
+    "subtitle": "Pruebas con prototipo: contacto (20 usuarios finales) y configuración (6 perfiles de marketing). Son señales direccionales, no datos de producción.",
+    "subtitleEn": "Prototype tests: contact (20 end users) and configuration (6 marketing profiles). Directional signals, not production data.",
     "impact": [
       {
         "metric": "70%",
@@ -622,6 +633,14 @@
         "labelEn": "Faster contact",
         "description": "De 68 s a 32 s entre el primer clic y el contacto confirmado.",
         "descriptionEn": "From 68 s to 32 s between the first click and confirmed contact."
+      },
+      {
+        "metric": "3,5 min",
+        "metricEn": "3.5 min",
+        "label": "Configuración sin código",
+        "labelEn": "No-code setup",
+        "description": "En promedio, 6 de 6 perfiles de marketing personalizaron marca y campos y previsualizaron el widget sin ayuda de desarrollo.",
+        "descriptionEn": "On average, 6 of 6 marketing profiles customized branding and fields and previewed the widget without developer help."
       }
     ],
     "learnings": [
@@ -632,16 +651,16 @@
         "descriptionEn": "In the test, cutting fields to the minimum coincided with higher completion, less drop-off and less time."
       },
       {
-        "title": "La personalización genera confianza",
-        "titleEn": "Personalization generates trust",
-        "description": "Los usuarios finales confían más cuando el widget refleja la identidad visual de la empresa.",
-        "descriptionEn": "End users trust more when the widget reflects the company's visual identity."
+        "title": "La personalización como principio de diseño",
+        "titleEn": "Personalization as a design principle",
+        "description": "El widget toma la identidad visual de la empresa. Es una decisión de diseño; la prueba no midió su efecto en la confianza del usuario final.",
+        "descriptionEn": "The widget adopts the company's visual identity. It is a design decision; the test did not measure its effect on end-user trust."
       },
       {
-        "title": "La vista previa reduce errores",
-        "titleEn": "Preview reduces errors",
-        "description": "Ver el resultado en tiempo real durante configuración mejora precisión y velocidad.",
-        "descriptionEn": "Seeing the result in real-time during configuration improves precision and speed."
+        "title": "La vista previa evita dudas en la configuración",
+        "titleEn": "Live preview prevents setup hesitation",
+        "description": "En las pruebas de configuración (n = 6), los usuarios de marketing usaron la vista previa para verificar el contraste y el orden de los campos antes de terminar en 3,5 min.",
+        "descriptionEn": "In the configuration tests (n = 6), marketing users relied on the live preview to verify contrast and field order before finishing in 3.5 min."
       }
     ],
     "nextSteps": [
