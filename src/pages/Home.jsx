@@ -109,55 +109,59 @@ export default function Home() {
           <p className="mb-0 mt-6 max-w-[68ch] text-[17px] leading-relaxed text-ink2 md:text-lg">{ui.chProjectsSub}</p>
         </div>
         <ol className="tl m-0 list-none">
-          {projects.map((p) => {
-            const on = isOn(p);
-            const lab = splitParen(pick(p, 'metricLabel') || (p.metrics && pick(p.metrics[0], 'label')) || '');
-            const metric = p.metric || (p.metrics && p.metrics[0].value) || '';
-            const href = p.externalUrl || `/${p.slug}`;
-            const eyebrow = pick(p, 'eyebrow');
-            const title = pick(p, 'title');
-            const image = img(lang === 'en' && p.imageEn ? p.imageEn : p.image);
-            return (
-              <li key={p.slug} hidden={!on} className="node group border-t border-line py-12 before:top-[50px] md:py-14 md:before:top-[58px]">
-                <article aria-labelledby={`t-${p.slug}`} className="relative">
-                  <p className="cap m-0"><span className="text-acctext">{ui.stop} {stopNumber(p.slug)}</span> · {eyebrow}</p>
-                  <h3 id={`t-${p.slug}`} className="mt-3 text-[clamp(26px,2.6vw,36px)] font-extrabold leading-[1.1] tracking-[-.03em] lg:whitespace-nowrap">
-                    {p.externalUrl
-                      ? <a href={href} className="no-underline transition-colors after:absolute after:inset-0 after:z-[2] after:content-[''] group-hover:text-acctext">{title}</a>
-                      : <Link to={href} className="no-underline transition-colors after:absolute after:inset-0 after:z-[2] after:content-[''] group-hover:text-acctext">{title}</Link>}
-                  </h3>
-                  <div className="mt-6 grid items-center gap-x-14 gap-y-6 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)]">
-                    <div className="flex flex-col items-start gap-4">
-                      <p className="m-0 max-w-[42ch] text-[17px] leading-relaxed text-ink2">{pick(p, 'subtitle')}</p>
-                      {metric && (
-                        <div className="flex flex-col gap-1.5">
-                          <Metric metric={metric} />
-                          <p className="m-0 max-w-[34ch] text-base font-semibold leading-snug">{lab.main}</p>
-                          {lab.ev && <span className="mt-1 w-fit rounded-sm border border-dashed border-ink2 px-2 py-1 font-mono text-xs text-ink2">{lab.ev}</span>}
+          {(() => {
+            let seen = 0;
+            return projects.map((p) => {
+              const on = isOn(p);
+              const flip = on && seen++ % 2 === 1; /* alterna solo entre los visibles */
+              const lab = splitParen(pick(p, 'metricLabel') || (p.metrics && pick(p.metrics[0], 'label')) || '');
+              const metric = p.metric || (p.metrics && p.metrics[0].value) || '';
+              const href = p.externalUrl || `/${p.slug}`;
+              const title = pick(p, 'title');
+              const image = img(lang === 'en' && p.imageEn ? p.imageEn : p.image);
+              const stretched = "no-underline transition-colors after:absolute after:inset-0 after:z-[2] after:content-[''] group-hover:text-acctext";
+              return (
+                <li key={p.slug} hidden={!on} className="node group border-t border-line py-12 before:top-[50px] md:py-14 md:before:top-[58px]">
+                  <article aria-labelledby={`t-${p.slug}`} className="relative">
+                    <p className="cap m-0"><span className="text-acctext">{ui.stop} {stopNumber(p.slug)}</span> · {pick(p, 'eyebrow')}</p>
+                    <h3 id={`t-${p.slug}`} className="mt-3 text-[clamp(26px,2.6vw,36px)] font-extrabold leading-[1.1] tracking-[-.03em] lg:whitespace-nowrap">
+                      {p.externalUrl ? <a href={href} className={stretched}>{title}</a> : <Link to={href} className={stretched}>{title}</Link>}
+                    </h3>
+                    <div className="mt-6 grid items-center gap-x-16 gap-y-6 lg:grid-cols-2">
+                      <div className="flex flex-col items-start gap-4">
+                        <p className="m-0 max-w-[42ch] text-[17px] leading-relaxed text-ink2">{pick(p, 'subtitle')}</p>
+                        {metric && (
+                          <div className="flex flex-col gap-1.5">
+                            <Metric metric={metric} />
+                            <p className="m-0 max-w-[34ch] text-base font-semibold leading-snug">{lab.main}</p>
+                            {lab.ev && <span className="mt-1 w-fit rounded-sm border border-dashed border-ink2 px-2 py-1 font-mono text-xs text-ink2">{lab.ev}</span>}
+                          </div>
+                        )}
+                        <div className="mt-2 flex flex-wrap items-center gap-x-6 gap-y-4">
+                          <span aria-hidden="true" className="link-u inline-flex items-center gap-2.5 text-[15px] font-bold">{pick(home.ctaLabels, 'viewProject')}<Arrow className="h-4 w-4 transition-transform group-hover:translate-x-1" /></span>
+                          {p.prototype && <span className="inline-flex -rotate-3 rounded-sm border-2 border-current px-2.5 py-1 font-mono text-[11px] font-medium uppercase tracking-[.12em] text-acctext outline outline-1 outline-offset-2 outline-current">{ui.stamp}</span>}
                         </div>
-                      )}
-                      <div className="mt-2 flex flex-wrap items-center gap-x-6 gap-y-4">
-                        <span aria-hidden="true" className="link-u inline-flex items-center gap-2.5 text-[15px] font-bold">{pick(home.ctaLabels, 'viewProject')}<Arrow className="h-4 w-4 transition-transform group-hover:translate-x-1" /></span>
-                        {p.prototype && <span className="inline-flex -rotate-3 rounded-sm border-2 border-current px-2.5 py-1 font-mono text-[11px] font-medium uppercase tracking-[.12em] text-acctext outline outline-1 outline-offset-2 outline-current">{ui.stamp}</span>}
+                      </div>
+                      <div className={flip ? 'lg:order-first' : ''}>
+                        <MediaThumb src={image} alt={title} device={p.device} flip={flip} />
                       </div>
                     </div>
-                    <MediaThumb src={image} alt={title} device={p.device} />
-                  </div>
-                </article>
-              </li>
-            );
-          })}
+                  </article>
+                </li>
+              );
+            });
+          })()}
         </ol>
       </section>
     </>
   );
 }
 
-function MediaThumb({ src, alt, device }) {
+function MediaThumb({ src, alt, device, flip }) {
   const isMob = device === 'mobile';
   return (
     <div className="relative py-7" aria-hidden="false">
-      <span aria-hidden="true" className={`blob top-1/2 -translate-y-1/2 ${isMob ? 'left-1/2 w-[min(80%,420px)] -translate-x-1/2 bg-acc' : 'left-0 w-[min(55%,360px)] bg-soft'}`} />
+      <span aria-hidden="true" className={`blob top-1/2 -translate-y-1/2 ${isMob ? 'left-1/2 w-[min(80%,420px)] -translate-x-1/2 bg-acc' : `${flip ? 'right-0' : 'left-0'} w-[min(55%,360px)] bg-soft`}`} />
       {isMob ? (
         <div className="relative mx-auto w-[min(230px,62%)] overflow-hidden rounded-[34px] border-[9px] border-[#15181D] bg-[#15181D] shadow-[0_30px_60px_-30px_rgba(21,24,29,.55)] transition-transform duration-500 ease-out2 group-hover:-translate-y-1.5">
           <img src={src} alt="" loading="lazy" className="block aspect-[9/19.5] w-full object-cover object-top" />

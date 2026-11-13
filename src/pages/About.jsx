@@ -30,7 +30,6 @@ export default function About() {
             </dl>
               <div className="flex flex-wrap gap-x-6 py-3">
                 <a className="link-u inline-flex min-h-[44px] items-center gap-1.5 font-semibold" href="https://www.linkedin.com/in/diegolavandero/">LinkedIn<ArrowOut /></a>
-                <a className="link-u inline-flex min-h-[44px] items-center gap-1.5 font-semibold" href={c.behanceUrl}>Behance<ArrowOut /></a>
               </div>
             </div>
           </div>

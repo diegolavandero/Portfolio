@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { content, img, route, splitCrit, splitParen, stopNumber, useLang, usePick, useUI } from '../lib.jsx';
 import NotFound from './NotFound.jsx';
@@ -545,15 +546,40 @@ function Solution({ s }) {
 function LivePrototype({ p, title }) {
   const ui = useUI();
   const pick = usePick();
-  const src = pick(p, 'src') || pick(p, 'srcEs');
   const { lang } = useLang();
-  const frameSrc = lang === 'en' ? (p.srcEn || p.srcEs) : (p.srcEs || p.srcEn);
+  const frameSrc = lang === 'en' ? (p.srcEn || p.srcEs || pick(p, 'src')) : (p.srcEs || p.srcEn || pick(p, 'src'));
+  const box = useRef(null);
+  const [fs, setFs] = useState(false);
+  const [canFs, setCanFs] = useState(false);
+  useEffect(() => {
+    setCanFs(!!document.fullscreenEnabled);
+    const on = () => setFs(document.fullscreenElement === box.current);
+    document.addEventListener('fullscreenchange', on);
+    return () => document.removeEventListener('fullscreenchange', on);
+  }, []);
+  const toggle = () => {
+    try { fs ? document.exitFullscreen() : box.current?.requestFullscreen(); } catch { /* sin soporte */ }
+  };
+  const btn = 'inline-flex min-h-[44px] items-center gap-2 rounded-sm px-3 font-mono text-[13px] font-medium text-ink2 no-underline hover:text-ink';
   return (
     <div className="mt-20">
       <SubHead title={pick(p, 'title')} sub={pick(p, 'subtitle')} />
       {pick(p, 'badge') && <p className="cap mb-4 text-acctext">{pick(p, 'badge')}</p>}
-      <div className="overflow-hidden rounded border border-line bg-card">
-        <iframe title={`${ui.protoTitle} ${title}`} src={frameSrc || src} loading="lazy" className="block w-full border-0" style={{ height: `${Math.min(Number(p.height) || 900, 1180)}px` }} />
+      <div ref={box} className="flex flex-col overflow-hidden rounded border border-line bg-card [&:fullscreen]:h-screen [&:fullscreen]:rounded-none [&:fullscreen]:border-0">
+        <div role="group" aria-label={ui.protoBar} className="flex flex-wrap items-center justify-end gap-x-2 border-b border-line bg-paper px-2">
+          {canFs && (
+            <button type="button" onClick={toggle} aria-pressed={fs} className={btn}>
+              <svg aria-hidden="true" className="h-4 w-4" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+                {fs ? <path d="M6 2v4H2M10 14v-4h4M14 6h-4V2M2 10h4v4" /> : <path d="M2 6V2h4M14 10v4h-4M10 2h4v4M6 14H2v-4" />}
+              </svg>
+              {fs ? ui.exitFullscreen : ui.fullscreen}
+            </button>
+          )}
+          <a href={frameSrc} target="_blank" rel="noopener noreferrer" className={btn}>
+            {ui.newWindow}<ArrowOut /><span className="sr-only"> ({lang === 'en' ? 'opens in a new tab' : 'se abre en una pestaña nueva'})</span>
+          </a>
+        </div>
+        <iframe title={`${ui.protoTitle} ${title}`} src={frameSrc} loading="lazy" allow="fullscreen" className={`block w-full border-0 ${fs ? 'min-h-0 flex-1' : ''}`} style={fs ? undefined : { height: `${Math.min(Number(p.height) || 900, 1180)}px` }} />
       </div>
       {pick(p, 'repoUrl') && <a href={pick(p, 'repoUrl')} className="link-u mt-4 inline-flex min-h-[44px] items-center gap-2 text-[15px] font-bold">{ui.openProto}<ArrowOut /></a>}
     </div>

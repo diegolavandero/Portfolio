@@ -96,7 +96,6 @@ function SiteFooter({ upButton }) {
         <ul className="flex flex-wrap gap-x-6 gap-y-1 text-[15px] font-semibold">
           <li><a className="link-u inline-flex min-h-[44px] items-center" href="mailto:dlavand@gmail.com">dlavand@gmail.com</a></li>
           <li><a className="link-u inline-flex min-h-[44px] items-center gap-1.5" href="https://www.linkedin.com/in/diegolavandero/">LinkedIn<ArrowOut /></a></li>
-          <li><a className="link-u inline-flex min-h-[44px] items-center gap-1.5" href="https://behance.net/dlavand0ce0">Behance<ArrowOut /></a></li>
         </ul>
       </div>
       {upButton}
