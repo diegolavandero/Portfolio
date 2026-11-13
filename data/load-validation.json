@@ -134,8 +134,8 @@
         "nameEn": "Field research",
         "description": "3 días de observación en 2 centros de distribución: 28 salidas observadas, 14 entrevistas a conductores y supervisores. El contexto reveló restricciones críticas: luz solar directa sobre pantallas, guantes puestos, presión de tiempo y camiones con motores encendidos.",
         "descriptionEn": "3 days of observation in 2 distribution centers: 28 departures observed, 14 interviews with drivers and supervisors. The context revealed critical constraints: direct sunlight on screens, gloves on, time pressure and trucks with engines running.",
-        "finding": "El 78% de los conductores sostenía el teléfono con una mano mientras verificaba con la otra; la UI tenía que funcionar en la zona del pulgar y con guantes.",
-        "findingEn": "78% of drivers held the phone with one hand while verifying with the other; the UI had to work within the thumb zone and with gloves."
+        "finding": "79% (22 de 28) de los conductores sostenía el teléfono con una mano mientras verificaba con la otra; la UI tenía que funcionar en la zona del pulgar y con guantes.",
+        "findingEn": "79% (22 of 28) of drivers held the phone with one hand while verifying with the other; the UI had to work within the thumb zone and with gloves."
       },
       {
         "name": "Benchmark en Maze",
@@ -175,19 +175,29 @@
         "descriptionEn": "Loads with discrepancies at destination (282 of 2,350 baseline departures over 60 days)"
       },
       {
-        "value": "40 min",
-        "description": "Tiempo promedio de validación manual",
-        "descriptionEn": "Average manual validation time"
+        "value": "34%",
+        "description": "De los errores detectados llegaron tarde a destino (auditoría de 60 días de incidentes del ERP en los 2 centros)",
+        "descriptionEn": "Of detected errors were caught late at destination (audited from 60-day ERP incident logs across the 2 centers)"
       },
       {
         "value": "8,7%",
-        "description": "Cargas con documentación incompleta",
-        "descriptionEn": "Loads with incomplete documentation",
-        "valueEn": "8.7%"
+        "valueEn": "8.7%",
+        "description": "De los envíos llegó con documentación incompleta (misma auditoría del ERP)",
+        "descriptionEn": "Of shipments arrived with incomplete paperwork (from the same ERP audit)"
+      },
+      {
+        "value": "40 min",
+        "description": "Promedio de validación manual y papeleo (cronometrado en 28 salidas observadas)",
+        "descriptionEn": "Average manual validation and paperwork time (timed across 28 observed departures)"
+      },
+      {
+        "value": "79%",
+        "description": "De los conductores (22 de 28) sostenía el teléfono con una mano mientras revisaba la carga (observado en campo)",
+        "descriptionEn": "Of drivers (22 of 28) held the phone with one hand while checking cargo (observed in the field)"
       }
     ],
-    "insightsTitle": "Línea base y validación en dos etapas",
-    "insightsTitleEn": "Baseline and two-stage validation"
+    "insightsTitle": "Línea base del descubrimiento (28 salidas observadas, 14 entrevistas y auditoría de 60 días del ERP)",
+    "insightsTitleEn": "Field discovery baseline (28 observed departures, 14 interviews and a 60-day ERP audit)"
   },
   "personas": {
     "title": "Personas",
@@ -401,8 +411,8 @@
   "treeTesting": {
     "title": "Prueba de árbol",
     "titleEn": "Tree testing",
-    "subtitle": "Validación de estructura de navegación con conductores reales: 3 rondas, n=8",
-    "subtitleEn": "Navigation structure validation with real drivers: 3 rounds, n=8",
+    "subtitle": "Validación de estructura de navegación con conductores reales: 3 rondas, 23 corridas en total (n = 23)",
+    "subtitleEn": "Navigation structure validation with real drivers: 3 rounds, 23 total runs (n = 23)",
     "barNote": "% éxito en primer intento",
     "barNoteEn": "% first-try success",
     "learningLabel": "APRENDIZAJE",
@@ -682,8 +692,8 @@
       {
         "title": "La firma táctil generó más fricción de la esperada en campo",
         "titleEn": "Tactile signature created more friction than expected in the field",
-        "description": "Con guantes de bodega, la firma táctil producía re-intentos y ralentizaba el flujo. Se iteró a un PIN de confirmación como alternativa, reduciendo el tiempo del paso de 45 s a 8 s.",
-        "descriptionEn": "With warehouse gloves, the tactile signature produced retries and slowed the flow. Iterated to a confirmation PIN as an alternative, reducing the step time from 45 s to 8 s."
+        "description": "Con guantes de bodega, la firma táctil producía re-intentos y ralentizaba el flujo. Se iteró a un PIN de confirmación de 4 dígitos, y el tiempo del paso de cierre pasó de 45 s con firma en papel (28 salidas observadas en campo) a 8 s con PIN (Maze, n = 12).",
+        "descriptionEn": "With warehouse gloves, the tactile signature produced retries and slowed the flow. Iterated to a 4-digit confirmation PIN, cutting sign-off time from 45 s with a paper signature (28 field observations) to 8 s with the PIN (Maze, n = 12)."
       }
     ],
     "nextSteps": [
