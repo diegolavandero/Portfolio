@@ -126,8 +126,8 @@
         "metaEn": "Pre-test target: ≥ 40% faster time-to-contact (≤ 41 s)",
         "description": "Minimizar los pasos entre el primer clic y la confirmación del mensaje con carga instantánea del widget y validación en línea.",
         "descriptionEn": "Minimize steps between initial click and message confirmation through instant widget loading and inline validation.",
-        "kpi": "mediana de segundos entre el primer clic y la confirmación del mensaje, en sesiones completadas · Fuente: prueba comparativa con prototipo (n = 20)",
-        "kpiEn": "median seconds from first click to message confirmation, across completed runs · Source: comparative prototype test (n = 20)"
+        "kpi": "promedio de segundos entre el primer clic y la confirmación del mensaje, en sesiones completadas · Fuente: prueba comparativa con prototipo (n = 20)",
+        "kpiEn": "average seconds from first click to message confirmation, across completed runs · Source: comparative prototype test (n = 20)"
       }
     ]
   },
@@ -149,8 +149,8 @@
       },
       {
         "value": "32 s",
-        "description": "mediana hasta el contacto confirmado, frente a 68 s con el formulario (solo sesiones completadas)",
-        "descriptionEn": "median to confirmed contact vs. 68 s on the form (completed runs only)"
+        "description": "promedio hasta el contacto confirmado, frente a 68 s con el formulario (solo sesiones completadas)",
+        "descriptionEn": "average to confirmed contact vs. 68 s on the form (completed runs only)"
       }
     ],
     "methodCards": [
@@ -177,8 +177,8 @@
       {
         "name": "Prueba comparativa",
         "nameEn": "Comparative test",
-        "description": "Probé el widget en un prototipo de Figma con 20 usuarios finales, frente a un formulario largo tradicional.",
-        "descriptionEn": "I tested the widget in a Figma prototype with 20 end users, against a traditional long form.",
+        "description": "20 usuarios finales probaron ambas variantes en un prototipo de Figma (el chat y un formulario largo tradicional), en orden contrabalanceado.",
+        "descriptionEn": "20 end users tested both variants in a Figma prototype (the chat and a traditional long form), in counterbalanced order.",
         "findingLabel": "Resultado",
         "findingLabelEn": "Result",
         "finding": "El chat de campos mínimos tuvo mejores resultados que el formulario en finalización, abandono y tiempo. Con n = 20 es una señal direccional, no un dato de producción.",
@@ -585,8 +585,8 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Prueba comparativa con prototipo (n = 20) frente a un formulario largo. Es una señal direccional, no un dato de producción.",
-    "subtitleEn": "Comparative prototype test (n = 20) against a long form. A directional signal, not production data.",
+    "subtitle": "Prueba intrasujeto con prototipo (n = 20, orden contrabalanceado). Es una señal direccional que justifica un A/B en producción, no una prueba concluyente. El tiempo es el promedio de las tareas completadas.",
+    "subtitleEn": "Within-subject prototype test (n = 20, counterbalanced order). A directional signal that justifies a live A/B test in production, not conclusive proof. Time is the average of completed tasks.",
     "impact": [
       {
         "metric": "50% → 70%",
@@ -601,8 +601,8 @@
         "metricEn": "68 s → 32 s",
         "label": "Velocidad de interacción (meta: 41 s o menos)",
         "labelEn": "Interaction speed (Target: ≤ 41 s)",
-        "description": "53% menos tiempo en la mediana entre el primer clic y el envío confirmado, medido en sesiones completadas (n = 14 con el chat, n = 10 con el formulario).",
-        "descriptionEn": "53% reduction in median time from initial click to confirmed send, measured across completed runs (n = 14 chat vs. n = 10 form)."
+        "description": "53% menos tiempo en promedio entre el primer clic y el envío confirmado, medido en sesiones completadas (n = 14 con el chat, n = 10 con el formulario).",
+        "descriptionEn": "53% reduction in average time from initial click to confirmed send, measured across completed runs (n = 14 chat vs. n = 10 form)."
       }
     ],
     "learnings": [
