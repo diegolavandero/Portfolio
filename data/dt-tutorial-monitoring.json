@@ -222,8 +222,8 @@
         "number": "04",
         "title": "Permitir un seguimiento accionable",
         "titleEn": "Enable actionable follow-up",
-        "meta": "Meta: 70% o más con seguimiento en 72 h",
-        "metaEn": "Goal: 70% or more followed up within 72 h",
+        "meta": "Meta: 70% o más con seguimiento en 72 h desde que se atrasan",
+        "metaEn": "Goal: 70% or more followed up within 72 h of falling behind",
         "description": "Permitir intervenir antes de que haya rotación o errores operacionales",
         "descriptionEn": "Let admins step in before turnover or operational errors occur"
       }
@@ -274,8 +274,8 @@
       },
       {
         "value": "22%",
-        "description": "de los rezagados recibió seguimiento en sus primeras 72 h",
-        "descriptionEn": "of lagging operators got follow-up in their first 72 h"
+        "description": "de los rezagados recibió seguimiento en 72 h desde que se atrasó (tickets de soporte y entrevistas)",
+        "descriptionEn": "of lagging operators got follow-up within 72 h of falling behind (support tickets and interviews)"
       },
       {
         "value": "34%",
@@ -432,8 +432,8 @@
         "label": "Seguimiento activo",
         "labelEn": "Active follow-up",
         "metric": "84%",
-        "description": "de los rezagados tuvo seguimiento en 72 h (antes 22%), según check-ins con los administradores contrastados con la telemetría de cursos.",
-        "descriptionEn": "of lagging operators got follow-up within 72 h (up from 22%), based on admin check-ins cross-checked with course telemetry."
+        "description": "de los rezagados tuvo seguimiento en 72 h desde que se atrasó (antes 22%), según check-ins con los administradores y telemetría de cursos.",
+        "descriptionEn": "of lagging operators got follow-up within 72 h of falling behind (up from 22%), based on admin check-ins and course telemetry."
       }
     ],
     "learningsTitle": "Aprendizajes clave",
