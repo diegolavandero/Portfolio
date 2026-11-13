@@ -186,11 +186,6 @@
         "descriptionEn": "Of shipments arrived with incomplete paperwork (from the same ERP audit)"
       },
       {
-        "value": "40 min",
-        "description": "Promedio de validación manual y papeleo (cronometrado en 28 salidas observadas)",
-        "descriptionEn": "Average manual validation and paperwork time (timed across 28 observed departures)"
-      },
-      {
         "value": "79%",
         "description": "De los conductores (22 de 28) sostenía el teléfono con una mano mientras revisaba la carga (observado en campo)",
         "descriptionEn": "Of drivers (22 of 28) held the phone with one hand while checking cargo (observed in the field)"
@@ -370,43 +365,7 @@
         "friction": "Carpetas físicas, escaneos inconsistentes, sin indexación útil",
         "frictionEn": "Physical folders, inconsistent scans, no useful indexing"
       }
-    ],
-    "distribution": {
-      "title": "Distribución de tiempo en el flujo original",
-      "titleEn": "Time distribution in the original flow",
-      "bars": [
-        {
-          "label": "Recuperar y leer el manifiesto",
-          "labelEn": "Retrieve and read the manifest",
-          "value": 35,
-          "color": "red"
-        },
-        {
-          "label": "Comparar físico vs lista (mentalmente)",
-          "labelEn": "Compare physical vs list (mentally)",
-          "value": 30,
-          "color": "amber"
-        },
-        {
-          "label": "Registrar y escalar discrepancias",
-          "labelEn": "Record and escalate discrepancies",
-          "value": 20,
-          "color": "amber"
-        },
-        {
-          "label": "Firma y cierre del proceso",
-          "labelEn": "Signature and process closure",
-          "value": 15,
-          "color": "green"
-        }
-      ],
-      "note": "% del tiempo total de validación (promedio 40 min pre-implementación)",
-      "noteEn": "% of total validation time (average 40 min pre-implementation)",
-      "insightLabel": "INSIGHT CLAVE",
-      "insightLabelEn": "KEY INSIGHT",
-      "insight": "El 65% del tiempo de validación ocurría en las dos primeras etapas (leer el manifiesto y compararlo con la carga), eliminables con un sistema que conecte el TMS a la lista digital y al escaneo de código de barras.",
-      "insightEn": "65% of validation time was concentrated in the first two stages (reading the manifest and matching it to the load), which a system connecting the TMS to a digital list and barcode scanning can eliminate."
-    }
+    ]
   },
   "treeTesting": {
     "title": "Prueba de árbol",
@@ -692,8 +651,8 @@
       {
         "title": "La firma táctil generó más fricción de la esperada en campo",
         "titleEn": "Tactile signature created more friction than expected in the field",
-        "description": "Con guantes de bodega, la firma táctil producía re-intentos y ralentizaba el flujo. Se iteró a un PIN de confirmación de 4 dígitos, y el tiempo del paso de cierre pasó de 45 s con firma en papel (28 salidas observadas en campo) a 8 s con PIN (Maze, n = 12).",
-        "descriptionEn": "With warehouse gloves, the tactile signature produced retries and slowed the flow. Iterated to a 4-digit confirmation PIN, cutting sign-off time from 45 s with a paper signature (28 field observations) to 8 s with the PIN (Maze, n = 12)."
+        "description": "Con guantes de bodega, la firma táctil producía re-intentos y ralentizaba el flujo. Se iteró a un PIN de confirmación de 4 dígitos, que se validó en Maze (n = 12) y se usó en el piloto.",
+        "descriptionEn": "With warehouse gloves, the tactile signature produced retries and slowed the flow. Iterated to a 4-digit confirmation PIN, which was validated in Maze (n = 12) and used in the pilot."
       }
     ],
     "nextSteps": [
@@ -706,8 +665,8 @@
       {
         "title": "Integración con WMS para pre-llenado de datos",
         "titleEn": "WMS integration for data pre-filling",
-        "description": "Conectar directamente con el WMS permitiría evitar la entrada manual del número de orden, que hoy toma 30 s por validación (con 2.400 salidas en 60 días, unas 20 horas de entrada manual).",
-        "descriptionEn": "Connecting directly to the WMS would remove manual order number entry, which today takes 30 s per validation (across 2,400 departures in 60 days, about 20 hours of manual entry)."
+        "description": "Conectar directamente con el WMS permitiría evitar la entrada manual del número de orden, un paso que hoy se repite en cada validación.",
+        "descriptionEn": "Connecting directly to the WMS would remove manual order number entry, a step that today is repeated in every validation."
       }
     ]
   },
