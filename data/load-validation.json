@@ -150,8 +150,8 @@
       {
         "name": "Piloto de campo en TestFlight",
         "nameEn": "TestFlight field pilot",
-        "description": "40 conductores activos usaron la beta de iOS en 2.400 salidas de 2 centros de distribución durante 60 días. La línea base fueron los 60 días previos (2.350 salidas).",
-        "descriptionEn": "40 active drivers used the iOS beta across 2,400 departures from 2 distribution centers over 60 days. The baseline was the prior 60 days (2,350 departures).",
+        "description": "40 conductores activos de 2 centros de distribución usaron la beta de iOS durante 60 días. Se comparan sus 2.400 salidas del piloto con sus 2.350 salidas de los 60 días previos (la misma cohorte).",
+        "descriptionEn": "40 active drivers across 2 distribution centers used the iOS beta for 60 days. Their 2,400 pilot departures are compared against their own 2,350 departures in the prior 60 days (same cohort).",
         "findingLabel": "Método",
         "findingLabelEn": "Method",
         "finding": "Validaciones, discrepancias y reclamos vienen de los registros de la app y del ERP. El diseño es pre-post sin grupo control: es una validación direccional.",
@@ -394,8 +394,8 @@
       "noteEn": "% of total validation time (average 40 min pre-implementation)",
       "insightLabel": "INSIGHT CLAVE",
       "insightLabelEn": "KEY INSIGHT",
-      "insight": "El 65% del tiempo de validación ocurría en las tareas 1–3, y las 3 eran completamente eliminables con un sistema que conecte el TMS a la lista digital y escaneo de código de barras.",
-      "insightEn": "65% of validation time occurred in tasks 1–3, and all 3 could be eliminated with a system connecting the TMS to the digital checklist and barcode scanning."
+      "insight": "El 65% del tiempo de validación ocurría en las dos primeras etapas (leer el manifiesto y compararlo con la carga), eliminables con un sistema que conecte el TMS a la lista digital y al escaneo de código de barras.",
+      "insightEn": "65% of validation time was concentrated in the first two stages (reading the manifest and matching it to the load), which a system connecting the TMS to a digital list and barcode scanning can eliminate."
     }
   },
   "treeTesting": {
@@ -635,8 +635,8 @@
   "results": {
     "title": "Resultados",
     "titleEn": "Results",
-    "subtitle": "Evaluación en dos etapas: benchmark en Maze (n = 12 conductores) y piloto de 60 días en TestFlight (n = 40 conductores, 2.400 salidas en 2 centros de distribución). TestFlight distribuyó la beta; las validaciones, discrepancias y reclamos salen de los registros de la app y del ERP. Como el piloto fue pre-post y sin grupo control, las mejoras coincidieron con el despliegue y son una validación direccional.",
-    "subtitleEn": "Two-stage evaluation combining a Maze prototype benchmark (n = 12 drivers) and a 60-day TestFlight field pilot (n = 40 drivers, 2,400 departures across 2 distribution centers). While TestFlight managed beta distribution, validation completion, discrepancies and claims were captured via backend app logs and ERP records. Because the pilot used a pre-post design without a randomized control group, operational gains coincided with the rollout and reflect directional validation.",
+    "subtitle": "Evaluación en dos etapas: benchmark en Maze (n = 12 conductores) y piloto de 60 días en TestFlight (n = 40 conductores, 2.400 salidas en 2 centros de distribución, comparadas con sus propias 2.350 salidas de los 60 días previos). TestFlight distribuyó la beta; las validaciones, discrepancias y reclamos salen de los registros de la app y del ERP. Como el piloto fue pre-post y sin grupo control, las mejoras coincidieron con el despliegue y son una validación direccional.",
+    "subtitleEn": "Two-stage evaluation combining a Maze prototype benchmark (n = 12 drivers) and a 60-day TestFlight field pilot (n = 40 drivers, 2,400 departures across 2 distribution centers, compared against the same drivers' 2,350 departures in the prior 60 days). While TestFlight managed beta distribution, validation completion, discrepancies and claims were captured via backend app logs and ERP records. Because the pilot used a pre-post design without a randomized control group, operational gains coincided with the rollout and reflect directional validation.",
     "impactTitle": "Impacto medido",
     "impactTitleEn": "Measured impact",
     "impact": [
@@ -646,8 +646,8 @@
         "metricEn": "12.0% → 6.6%",
         "label": "Menos discrepancias en destino (criterio del piloto: 40%)",
         "labelEn": "Fewer destination discrepancies (Pilot criterion: 40%)",
-        "description": "45% menos: las salidas con errores detectados en la entrega pasaron de 12,0% (282 de 2.350 salidas de línea base) a 6,6% (158 de 2.400 salidas del piloto) en 2 centros de distribución. La meta de 80% queda para el despliegue completo, cuando se cubra el 100% de las cargas.",
-        "descriptionEn": "45% fewer: shipments with errors detected at delivery shifted from 12.0% (282/2,350 baseline departures) to 6.6% (158/2,400 pilot departures) across 2 distribution centers. The 80% reduction target remains scoped for full-fleet rollout once 100% of loads are covered."
+        "description": "45% menos: las salidas con errores detectados en la entrega pasaron de 12,0% (282 de 2.350 salidas de línea base) a 6,6% (158 de 2.400 salidas del piloto). La meta de 80% sigue siendo un objetivo operativo, a evaluar con el despliegue completo de la flota.",
+        "descriptionEn": "45% fewer: shipments with errors detected at delivery shifted from 12.0% (282/2,350 baseline departures) to 6.6% (158/2,400 pilot departures). The 80% reduction target remains an operational goal to be evaluated upon full-fleet rollout."
       },
       {
         "icon": "🎫",
@@ -664,8 +664,8 @@
         "metricEn": "39.3% → 62.9%",
         "label": "Más salidas con validación completa (criterio del piloto: 55% o más)",
         "labelEn": "Full pre-route validations (Pilot criterion: ≥ 55%)",
-        "description": "1.510 de 2.400 salidas del piloto completaron los 4 pasos digitales (escaneo, foto, firma), frente a 39,3% (11 de 28 salidas observadas) en la revisión manual completa estimada en la investigación de campo. Es una comparación contra una estimación observacional (n = 28, IC 95% de ~23–58%), no un delta estadístico exacto.",
-        "descriptionEn": "1,510 of 2,400 pilot departures completed all 4 digital steps (scan, photo, signature), compared against the 39.3% (11/28 observed departures) thorough manual check estimated during field research. This is a comparison against an observational estimate (n = 28, 95% CI ~23–58%), not an exact statistical delta."
+        "description": "1.510 de 2.400 salidas del piloto completaron los 4 pasos digitales (lista, escaneo, foto y PIN de confirmación). Es la tasa medida en el piloto; el 39,3% (11 de 28 salidas observadas en campo) es solo contexto observacional previo, con IC 95% de ~23–58%, y no un delta estadístico exacto.",
+        "descriptionEn": "1,510 of 2,400 pilot departures completed all 4 digital steps (list, scan, photo and confirmation PIN). This is the rate measured in the pilot; the 39.3% (11/28 departures observed in the field) is observational context only, with a 95% CI of ~23–58%, not an exact statistical delta."
       }
     ],
     "learningsTitle": "Aprendizajes clave",
