@@ -521,6 +521,18 @@
       }
     ]
   },
+  "livePrototype": {
+    "title": "Prototipo interactivo",
+    "titleEn": "Interactive prototype",
+    "subtitle": "Recorre el asistente y llega a la consola: arrastra órdenes desde las tarjetas o el mapa a otra ruta, selecciona varias con el lazo, agrega una ruta nueva y revisa las banderas rojas cuando una ruta supera la capacidad o el tiempo prometido. El prototipo está en inglés.",
+    "subtitleEn": "Go through the wizard and reach the console: drag orders from the cards or the map to another route, select several with the lasso, add a new route, and watch the red flags when a route exceeds its capacity or promised time.",
+    "badge": "Prototipo funcional",
+    "badgeEn": "Functional prototype",
+    "srcEs": "/prototypes/dt-ds/?lang=en#/unified-routing",
+    "srcEn": "/prototypes/dt-ds/?lang=en#/unified-routing",
+    "repoUrl": "https://github.com/diegolavandero/dt-design-system-package/tree/unified-routing-prototype/src/screens/UnifiedRouting",
+    "height": 900
+  },
   "designs": {
     "title": "Pantallas",
     "titleEn": "Screens",
